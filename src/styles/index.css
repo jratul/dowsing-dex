@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans KR", system-ui, sans-serif;
+
+  /* 브랜드 / 텍스트 / 테두리 */
+  --color-brand-red: #e3350d;
+  --color-ink: #1f2024;
+  --color-ink-muted: #6b6b70;
+  --color-ink-faint: #9a9aa0;
+  --color-border: #eef0f2;
+  --color-border-strong: #ececef;
+  --color-surface-hover: #f7f7f8;
+
+  /* 18타입 색상 (Bulbapedia 표준 팔레트). 클래스명 추출 안전성을 위해
+     CSS 변수/Tailwind 유틸리티 이름은 영문 슬러그를 쓰고,
+     한글 타입명 ↔ 슬러그 매핑은 lib/typeChart.ts에서 관리한다. */
+  --color-type-normal: #a8a878;
+  --color-type-fire: #f08030;
+  --color-type-water: #6890f0;
+  --color-type-electric: #f8d030;
+  --color-type-grass: #78c850;
+  --color-type-ice: #98d8d8;
+  --color-type-fighting: #c03028;
+  --color-type-poison: #a040a0;
+  --color-type-ground: #e0c068;
+  --color-type-flying: #a890f0;
+  --color-type-psychic: #f85888;
+  --color-type-bug: #a8b820;
+  --color-type-rock: #b8a038;
+  --color-type-ghost: #705898;
+  --color-type-dragon: #7038f8;
+  --color-type-dark: #705848;
+  --color-type-steel: #b8b8d0;
+  --color-type-fairy: #ee99ac;
+
+  --radius-card: 13px;
+  --radius-button: 11px;
+  --radius-chip: 999px;
+
+  --shadow-card: 0 2px 10px rgba(20, 20, 30, 0.05);
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: #fff;
+}
