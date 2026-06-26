@@ -33,36 +33,38 @@ export function SiteHeader({ navItems, activeHref }: SiteHeaderProps) {
   }
 
   return (
-    <header className="flex h-14 items-center gap-6 border-b border-border px-4">
-      <Link to="/" className="flex items-center gap-2 text-lg font-black text-ink">
-        <PokeballIcon />
-        다우징덱스
-      </Link>
+    <header className="border-b border-border">
+      <div className="mx-auto flex h-14 max-w-6xl items-center gap-6 px-4">
+        <Link to="/" className="flex items-center gap-2 text-lg font-black text-ink">
+          <PokeballIcon />
+          다우징덱스
+        </Link>
 
-      <nav className="flex items-center gap-1">
-        {navItems.map((item) => (
-          <Link
-            key={item.href}
-            to={item.href}
-            className={cn(
-              'rounded-chip px-3 py-1.5 text-sm font-bold text-ink hover:bg-surface-hover',
-              item.href === activeHref && 'bg-brand-red/10 text-brand-red hover:bg-brand-red/10',
-            )}
-          >
-            {item.label}
-          </Link>
-        ))}
-      </nav>
+        <nav className="flex items-center gap-1">
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              to={item.href}
+              className={cn(
+                'rounded-chip px-3 py-1.5 text-sm font-bold text-ink hover:bg-surface-hover',
+                item.href === activeHref && 'bg-brand-red/10 text-brand-red hover:bg-brand-red/10',
+              )}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
 
-      <form onSubmit={handleSubmit} className="ml-auto">
-        <input
-          type="search"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="포켓몬 이름·번호 검색"
-          className="h-9 w-64 rounded-chip border border-border bg-surface-hover px-3 text-sm"
-        />
-      </form>
+        <form onSubmit={handleSubmit} className="ml-auto">
+          <input
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="포켓몬 이름·번호 검색"
+            className="h-9 w-64 rounded-chip border border-border bg-surface-hover px-3 text-sm"
+          />
+        </form>
+      </div>
     </header>
   )
 }
