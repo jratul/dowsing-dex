@@ -15,7 +15,7 @@ export function Hero({ eyebrow, title, subtitle, imageUrl, children }: HeroProps
         {eyebrow && (
           <span className="rounded-chip bg-white px-3 py-1 text-xs font-bold text-ink-muted">{eyebrow}</span>
         )}
-        <h1 className="text-3xl leading-tight font-black text-ink whitespace-pre-line">{title}</h1>
+        <h2 className="text-3xl leading-tight font-black text-ink whitespace-pre-line">{title}</h2>
         {subtitle && <p className="text-sm text-ink-muted whitespace-pre-line">{subtitle}</p>}
         {children && <div className="flex gap-2">{children}</div>}
       </div>

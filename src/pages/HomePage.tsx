@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
-import { Hero } from '../components/layout/Hero'
+import { HeroCarousel } from '../components/layout/HeroCarousel'
+import type { HeroProps } from '../components/layout/Hero'
 import { Button } from '../components/ui/Button'
 import { PokemonCard } from '../components/pokemon/PokemonCard'
 import { GuideCard } from '../components/guide/GuideCard'
@@ -9,19 +10,44 @@ import { SAMPLE_GUIDES } from '../data/sample/guides.sample'
 export function HomePage() {
   const navigate = useNavigate()
 
+  const heroSlides: HeroProps[] = [
+    {
+      eyebrow: '1세대 · 관동지방 151마리',
+      title: '포켓몬 도감과\n공략을 한곳에',
+      subtitle: '종족값·타입 상성·진화 정보부터 체육관 공략까지. 관동지방을 모험하는 트레이너를 위한 안내서.',
+      imageUrl: findSamplePokemon(6).artworkUrl,
+      children: (
+        <>
+          <Button onClick={() => navigate('/pokedex')}>도감 둘러보기 →</Button>
+          <Button variant="secondary" onClick={() => navigate('/guides')}>
+            공략 보기
+          </Button>
+        </>
+      ),
+    },
+    {
+      eyebrow: '공략',
+      title: '체육관 8개 공략\n순서까지 한 번에',
+      subtitle: '스타팅 선택부터 챔피언 로드까지, 막힐 때마다 찾아볼 수 있는 공략 모음.',
+      imageUrl: findSamplePokemon(150).artworkUrl,
+      children: (
+        <Button onClick={() => navigate('/guides')}>공략 보러가기 →</Button>
+      ),
+    },
+    {
+      eyebrow: '타입 상성',
+      title: '상성 계산기로\n전투를 유리하게',
+      subtitle: '방어 타입을 선택하면 약점·반감을 바로 계산해주는 18×18 전체 상성표.',
+      imageUrl: findSamplePokemon(25).artworkUrl,
+      children: (
+        <Button onClick={() => navigate('/types')}>타입 상성 보기 →</Button>
+      ),
+    },
+  ]
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-6">
-      <Hero
-        eyebrow="1세대 · 관동지방 151마리"
-        title={'포켓몬 도감과\n공략을 한곳에'}
-        subtitle="종족값·타입 상성·진화 정보부터 체육관 공략까지. 관동지방을 모험하는 트레이너를 위한 안내서."
-        imageUrl={findSamplePokemon(6).artworkUrl}
-      >
-        <Button onClick={() => navigate('/pokedex')}>도감 둘러보기 →</Button>
-        <Button variant="secondary" onClick={() => navigate('/guides')}>
-          공략 보기
-        </Button>
-      </Hero>
+      <HeroCarousel slides={heroSlides} />
 
       <section className="flex flex-col gap-3 py-6">
         <div className="flex items-center justify-between">
