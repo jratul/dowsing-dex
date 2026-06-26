@@ -5,6 +5,7 @@ import { StatChart } from '../components/pokemon/StatChart'
 import { TypeDefense } from '../components/pokemon/TypeDefense'
 import { EvolutionTree } from '../components/pokemon/EvolutionTree'
 import { SAMPLE_POKEMON, findEvolutionLine, findSamplePokemon } from '../data/sample/pokemon.sample'
+import { COLOR } from '../lib/typeChart'
 
 export function PokemonDetailPage() {
   const { id } = useParams<{ id: string }>()
@@ -22,30 +23,71 @@ export function PokemonDetailPage() {
   }
 
   const evolutionLine = findEvolutionLine(pokemon.id)
+  const dexNumber = String(pokemon.id).padStart(3, '0')
+  const accentColor = COLOR[pokemon.types[0]]
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-6">
-      <Card className="mb-6 flex flex-col items-center gap-3 p-6">
-        <span className="text-sm font-bold text-ink-faint">#{String(pokemon.id).padStart(3, '0')}</span>
-        {pokemon.spriteUrl && <img src={pokemon.spriteUrl} alt={pokemon.nameKo} width={120} height={120} />}
-        <h1 className="text-2xl font-black text-ink">{pokemon.nameKo}</h1>
-        {pokemon.category && <span className="text-sm text-ink-muted">{pokemon.category}</span>}
-        <div className="flex gap-2">
-          {pokemon.types.map((type) => (
-            <TypeBadge key={type} type={type} />
-          ))}
+      <Link to="/pokedex" className="mb-3 inline-block text-sm font-bold text-ink-muted hover:text-ink">
+        ← 도감으로
+      </Link>
+
+      <div className="mb-6 grid gap-4 sm:grid-cols-2">
+        <Card className="relative flex items-center justify-center overflow-hidden p-6" style={{ backgroundColor: `${accentColor}1a` }}>
+          <span className="absolute inset-0 flex items-center justify-center text-8xl font-black text-ink/5 select-none">
+            {dexNumber}
+          </span>
+          {(pokemon.artworkUrl ?? pokemon.spriteUrl) && (
+            <img
+              src={pokemon.artworkUrl ?? pokemon.spriteUrl}
+              alt={pokemon.nameKo}
+              width={180}
+              height={180}
+              className="relative z-10"
+            />
+          )}
+        </Card>
+
+        <div className="flex flex-col gap-3">
+          <div>
+            <span className="text-sm font-bold text-ink-faint">#{dexNumber}</span>
+            <h1 className="text-2xl font-black text-ink">
+              {pokemon.nameKo} <span className="text-base font-bold text-ink-faint">{pokemon.nameEn}</span>
+            </h1>
+          </div>
+          <div className="flex gap-2">
+            {pokemon.types.map((type) => (
+              <TypeBadge key={type} type={type} />
+            ))}
+          </div>
+          <div className="grid grid-cols-3 gap-2">
+            <Card className="p-3">
+              <p className="text-xs font-bold text-ink-faint">분류</p>
+              <p className="text-sm font-bold text-ink">{pokemon.category ?? '-'}</p>
+            </Card>
+            <Card className="p-3">
+              <p className="text-xs font-bold text-ink-faint">키</p>
+              <p className="text-sm font-bold text-ink">{pokemon.heightM ? `${pokemon.heightM} m` : '-'}</p>
+            </Card>
+            <Card className="p-3">
+              <p className="text-xs font-bold text-ink-faint">몸무게</p>
+              <p className="text-sm font-bold text-ink">{pokemon.weightKg ? `${pokemon.weightKg} kg` : '-'}</p>
+            </Card>
+          </div>
         </div>
-      </Card>
+      </div>
 
-      <Card className="mb-6 p-4">
-        <h2 className="mb-3 text-sm font-black text-ink-faint">종족값</h2>
-        <StatChart stats={pokemon.stats} />
-      </Card>
+      <div className="mb-6 grid gap-4 sm:grid-cols-2">
+        <Card className="p-4">
+          <h2 className="mb-3 text-sm font-black text-ink-faint">종족값 (스탯)</h2>
+          <StatChart stats={pokemon.stats} />
+        </Card>
 
-      <Card className="mb-6 p-4">
-        <h2 className="mb-3 text-sm font-black text-ink-faint">방어 상성</h2>
-        <TypeDefense types={pokemon.types} />
-      </Card>
+        <Card className="p-4">
+          <h2 className="mb-3 text-sm font-black text-ink-faint">방어 상성</h2>
+          <TypeDefense types={pokemon.types} />
+        </Card>
+      </div>
 
       {evolutionLine && (
         <Card className="p-4">

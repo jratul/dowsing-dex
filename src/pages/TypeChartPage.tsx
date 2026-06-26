@@ -4,11 +4,12 @@ import { TypeChartGrid } from '../components/type-chart/TypeChartGrid'
 
 export function TypeChartPage() {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-6">
-      <h1 className="mb-4 text-xl font-black text-ink">타입 상성</h1>
+    <div className="mx-auto max-w-6xl px-4 py-6">
+      <h1 className="mb-1 text-xl font-black text-ink">타입 상성</h1>
+      <p className="mb-4 text-sm text-ink-muted">방어할 타입을 1~2개 선택하면 약점·반감을 계산해드려요.</p>
 
       <Card className="mb-6 p-4">
-        <h2 className="mb-3 text-sm font-black text-ink-faint">방어 타입 계산기</h2>
+        <h2 className="mb-3 text-sm font-black text-ink-faint">상성 계산기 — 방어 타입 선택</h2>
         <TypeCalculator />
       </Card>
 

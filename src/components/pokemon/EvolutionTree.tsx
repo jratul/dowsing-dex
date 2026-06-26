@@ -25,7 +25,7 @@ function StageNode({
         <div
           className={cn(
             'flex h-16 w-16 items-center justify-center rounded-full border-2',
-            isCurrent ? 'border-brand-red' : 'border-border',
+            isCurrent ? 'border-brand-red bg-brand-red/10' : 'border-border',
           )}
         >
           {info.spriteUrl ? (

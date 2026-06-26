@@ -34,6 +34,34 @@
   --color-type-steel: #b8b8d0;
   --color-type-fairy: #ee99ac;
 
+  /* 공략 카테고리별 배지 색상 (배너 배경 / 텍스트). 한글 타입명과 동일한 이유로
+     영문 슬러그를 쓰고, 카테고리 ↔ 슬러그 매핑은 lib/guideCategory.ts에서 관리한다. */
+  --color-category-intro: #bbf7d0;
+  --color-category-intro-ink: #166534;
+  --color-category-strategy: #bfdbfe;
+  --color-category-strategy-ink: #1e40af;
+  --color-category-battle: #fecdd3;
+  --color-category-battle-ink: #9f1239;
+  --color-category-capture: #fde68a;
+  --color-category-capture-ink: #92400e;
+  --color-category-evolution: #ddd6fe;
+  --color-category-evolution-ink: #5b21b6;
+
+  /* 종족값 스탯별 막대 색상 */
+  --color-stat-hp: #f08030;
+  --color-stat-attack: #f8a030;
+  --color-stat-defense: #f8d030;
+  --color-stat-special-attack: #6890f0;
+  --color-stat-special-defense: #78c850;
+  --color-stat-speed: #a040a0;
+
+  /* 타입 상성 매트릭스/배지 색상 */
+  --color-matchup-weak: #22c55e;
+  --color-matchup-weak-bg: #dcfce7;
+  --color-matchup-resist: #f43f5e;
+  --color-matchup-resist-bg: #ffe4e6;
+  --color-matchup-immune: #1f2024;
+
   --radius-card: 13px;
   --radius-button: 11px;
   --radius-chip: 999px;

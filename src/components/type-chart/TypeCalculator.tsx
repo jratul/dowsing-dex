@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { TYPE_ORDER } from '../../lib/typeChart'
 import type { TypeName } from '../../types/type-chart'
-import { TypeBadge } from '../pokemon/TypeBadge'
 import { TypeDefense } from '../pokemon/TypeDefense'
+import { TypePill } from './TypePill'
 
 export interface TypeCalculatorProps {
   initialTypes?: TypeName[]
@@ -23,14 +23,7 @@ export function TypeCalculator({ initialTypes = [] }: TypeCalculatorProps) {
     <div className="flex flex-col gap-4">
       <div className="flex flex-wrap gap-2">
         {TYPE_ORDER.map((type) => (
-          <button
-            key={type}
-            type="button"
-            onClick={() => toggleType(type)}
-            className={selected.includes(type) ? '' : 'opacity-40'}
-          >
-            <TypeBadge type={type} size="sm" />
-          </button>
+          <TypePill key={type} label={type} selected={selected.includes(type)} onClick={() => toggleType(type)} />
         ))}
       </div>
 
