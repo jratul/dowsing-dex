@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { Link } from 'react-router-dom'
 import { cn } from '../../lib/cn'
 
 export interface MobileTabItem {
@@ -16,9 +17,9 @@ export function MobileTabBar({ items, activeHref }: MobileTabBarProps) {
   return (
     <nav className="flex h-14 items-center justify-around border-t border-border bg-white">
       {items.map((item) => (
-        <a
+        <Link
           key={item.href}
-          href={item.href}
+          to={item.href}
           className={cn(
             'flex flex-col items-center gap-0.5 text-xs font-bold text-ink-faint',
             item.href === activeHref && 'text-brand-red',
@@ -26,7 +27,7 @@ export function MobileTabBar({ items, activeHref }: MobileTabBarProps) {
         >
           {item.icon}
           {item.label}
-        </a>
+        </Link>
       ))}
     </nav>
   )

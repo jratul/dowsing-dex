@@ -1,22 +1,23 @@
-import { Button } from './components/ui/Button'
-import { Card } from './components/ui/Card'
-import { TypeBadge } from './components/pokemon/TypeBadge'
-import { PokemonCard } from './components/pokemon/PokemonCard'
-import { StatChart } from './components/pokemon/StatChart'
-import { TypeDefense } from './components/pokemon/TypeDefense'
-import { EvolutionTree } from './components/pokemon/EvolutionTree'
-import { TypeFilter } from './components/type-chart/TypeFilter'
-import { TypeCalculator } from './components/type-chart/TypeCalculator'
-import { TypeChartGrid } from './components/type-chart/TypeChartGrid'
-import { GuideCard } from './components/guide/GuideCard'
-import { SiteHeader } from './components/layout/SiteHeader'
-import { MobileTabBar } from './components/layout/MobileTabBar'
-import { Hero } from './components/layout/Hero'
-import { TYPE_ORDER } from './lib/typeChart'
-import { ShowcaseSection } from './dev/ShowcaseSection'
-import { SAMPLE_POKEMON, BULBASAUR_LINE, EEVEE_LINE, findSamplePokemon } from './data/sample/pokemon.sample'
-import { SAMPLE_GUIDES } from './data/sample/guides.sample'
 import { useState } from 'react'
+import { Button } from '../components/ui/Button'
+import { Card } from '../components/ui/Card'
+import { TypeBadge } from '../components/pokemon/TypeBadge'
+import { PokemonCard } from '../components/pokemon/PokemonCard'
+import { StatChart } from '../components/pokemon/StatChart'
+import { TypeDefense } from '../components/pokemon/TypeDefense'
+import { EvolutionTree } from '../components/pokemon/EvolutionTree'
+import { TypeFilter } from '../components/type-chart/TypeFilter'
+import { TypeCalculator } from '../components/type-chart/TypeCalculator'
+import { TypeChartGrid } from '../components/type-chart/TypeChartGrid'
+import { GuideCard } from '../components/guide/GuideCard'
+import { SiteHeader } from '../components/layout/SiteHeader'
+import { MobileTabBar } from '../components/layout/MobileTabBar'
+import { Hero } from '../components/layout/Hero'
+import { TYPE_ORDER } from '../lib/typeChart'
+import { ShowcaseSection } from './ShowcaseSection'
+import { SAMPLE_POKEMON, BULBASAUR_LINE, EEVEE_LINE, findSamplePokemon } from '../data/sample/pokemon.sample'
+import { SAMPLE_GUIDES } from '../data/sample/guides.sample'
+import type { TypeName } from '../types/type-chart'
 
 const NAV_ITEMS = [
   { label: '홈', href: '/' },
@@ -25,8 +26,9 @@ const NAV_ITEMS = [
   { label: '타입상성', href: '/types' },
 ]
 
-function App() {
-  const [selectedTypes, setSelectedTypes] = useState<(typeof TYPE_ORDER)[number][]>([])
+/** 모든 디자인 시스템 컴포넌트를 한 화면에서 점검하기 위한 개발용 페이지. /dev/showcase 에서만 접근. */
+export function ShowcasePage() {
+  const [selectedTypes, setSelectedTypes] = useState<TypeName[]>([])
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-6">
@@ -145,5 +147,3 @@ function App() {
     </main>
   )
 }
-
-export default App
