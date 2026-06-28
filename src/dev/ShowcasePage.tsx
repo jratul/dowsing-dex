@@ -15,7 +15,7 @@ import { MobileTabBar } from '../components/layout/MobileTabBar'
 import { Hero } from '../components/layout/Hero'
 import { TYPE_ORDER } from '../lib/typeChart'
 import { ShowcaseSection } from './ShowcaseSection'
-import { SAMPLE_POKEMON, BULBASAUR_LINE, EEVEE_LINE, findSamplePokemon } from '../data/sample/pokemon.sample'
+import { SAMPLE_POKEMON, findEvolutionLine, findSamplePokemon } from '../data/sample/pokemon.sample'
 import { SAMPLE_GUIDES } from '../data/sample/guides.sample'
 import type { TypeName } from '../types/type-chart'
 
@@ -107,10 +107,10 @@ export function ShowcasePage() {
       <ShowcaseSection title="EvolutionTree (선형 / 분기)">
         <div className="flex flex-col gap-6">
           <Card className="p-4">
-            <EvolutionTree stages={BULBASAUR_LINE} currentPokemonId={1} renderPokemon={findSamplePokemon} />
+            <EvolutionTree stages={findEvolutionLine(1) ?? []} currentPokemonId={1} renderPokemon={findSamplePokemon} />
           </Card>
           <Card className="p-4">
-            <EvolutionTree stages={EEVEE_LINE} currentPokemonId={133} renderPokemon={findSamplePokemon} />
+            <EvolutionTree stages={findEvolutionLine(133) ?? []} currentPokemonId={133} renderPokemon={findSamplePokemon} />
           </Card>
         </div>
       </ShowcaseSection>

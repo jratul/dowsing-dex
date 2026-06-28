@@ -55,6 +55,9 @@ function StageNode({
             <div key={child.pokemonId} className="flex items-center gap-3">
               <div className="flex flex-col items-center text-[10px] font-bold text-ink-faint">
                 <span>→</span>
+                {child.triggerIconUrl && (
+                  <img src={child.triggerIconUrl} alt={child.trigger ?? ''} width={24} height={24} />
+                )}
                 {child.trigger && <span>{child.trigger}</span>}
               </div>
               <StageNode stage={child} currentPokemonId={currentPokemonId} renderPokemon={renderPokemon} onSelect={onSelect} />

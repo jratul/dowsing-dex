@@ -27,4 +27,5 @@ export interface EvolutionStage {
   pokemonId: number
   children?: EvolutionStage[] // 분기 진화(이브이 등)는 children이 2개 이상
   trigger?: string // 예: "레벨 16", "달의돌"
+  triggerIconUrl?: string // 진화의돌 등 아이템 트리거일 때의 아이콘 (레벨업/교환 등은 없음)
 }
