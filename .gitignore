@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# 작업용 참고 자료(추적 안 함)
+.ref/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
