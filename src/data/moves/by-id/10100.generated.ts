@@ -196,6 +196,336 @@ export const LEARNSETS: Learnset[] = [
     ]
   },
   {
+    "generation": "7세대",
+    "version": "울트라썬·울트라문",
+    "levelUp": [
+      {
+        "moveId": 39,
+        "level": 1
+      },
+      {
+        "moveId": 84,
+        "level": 1
+      },
+      {
+        "moveId": 85,
+        "level": 1
+      },
+      {
+        "moveId": 98,
+        "level": 1
+      },
+      {
+        "moveId": 683,
+        "level": 1
+      }
+    ],
+    "machines": [
+      {
+        "moveId": 63,
+        "machine": "TM",
+        "number": 15
+      },
+      {
+        "moveId": 86,
+        "machine": "TM",
+        "number": 73
+      },
+      {
+        "moveId": 87,
+        "machine": "TM",
+        "number": 25
+      },
+      {
+        "moveId": 92,
+        "machine": "TM",
+        "number": 6
+      },
+      {
+        "moveId": 104,
+        "machine": "TM",
+        "number": 32
+      },
+      {
+        "moveId": 113,
+        "machine": "TM",
+        "number": 16
+      },
+      {
+        "moveId": 115,
+        "machine": "TM",
+        "number": 33
+      },
+      {
+        "moveId": 156,
+        "machine": "TM",
+        "number": 44
+      },
+      {
+        "moveId": 164,
+        "machine": "TM",
+        "number": 90
+      },
+      {
+        "moveId": 168,
+        "machine": "TM",
+        "number": 46
+      },
+      {
+        "moveId": 182,
+        "machine": "TM",
+        "number": 17
+      },
+      {
+        "moveId": 207,
+        "machine": "TM",
+        "number": 87
+      },
+      {
+        "moveId": 213,
+        "machine": "TM",
+        "number": 45
+      },
+      {
+        "moveId": 214,
+        "machine": "TM",
+        "number": 88
+      },
+      {
+        "moveId": 216,
+        "machine": "TM",
+        "number": 27
+      },
+      {
+        "moveId": 218,
+        "machine": "TM",
+        "number": 21
+      },
+      {
+        "moveId": 219,
+        "machine": "TM",
+        "number": 20
+      },
+      {
+        "moveId": 237,
+        "machine": "TM",
+        "number": 10
+      },
+      {
+        "moveId": 240,
+        "machine": "TM",
+        "number": 18
+      },
+      {
+        "moveId": 263,
+        "machine": "TM",
+        "number": 42
+      },
+      {
+        "moveId": 280,
+        "machine": "TM",
+        "number": 31
+      },
+      {
+        "moveId": 347,
+        "machine": "TM",
+        "number": 4
+      },
+      {
+        "moveId": 374,
+        "machine": "TM",
+        "number": 56
+      },
+      {
+        "moveId": 411,
+        "machine": "TM",
+        "number": 52
+      },
+      {
+        "moveId": 416,
+        "machine": "TM",
+        "number": 68
+      },
+      {
+        "moveId": 447,
+        "machine": "TM",
+        "number": 86
+      },
+      {
+        "moveId": 451,
+        "machine": "TM",
+        "number": 57
+      },
+      {
+        "moveId": 473,
+        "machine": "TM",
+        "number": 3
+      },
+      {
+        "moveId": 496,
+        "machine": "TM",
+        "number": 48
+      },
+      {
+        "moveId": 497,
+        "machine": "TM",
+        "number": 49
+      },
+      {
+        "moveId": 521,
+        "machine": "TM",
+        "number": 72
+      },
+      {
+        "moveId": 528,
+        "machine": "TM",
+        "number": 93
+      },
+      {
+        "moveId": 590,
+        "machine": "TM",
+        "number": 100
+      }
+    ]
+  },
+  {
+    "generation": "7세대",
+    "version": "레츠고 피카츄·이브이",
+    "levelUp": [
+      {
+        "moveId": 39,
+        "level": 1
+      },
+      {
+        "moveId": 45,
+        "level": 1
+      },
+      {
+        "moveId": 84,
+        "level": 1
+      },
+      {
+        "moveId": 104,
+        "level": 1
+      },
+      {
+        "moveId": 227,
+        "level": 1
+      },
+      {
+        "moveId": 252,
+        "level": 1
+      }
+    ],
+    "machines": [
+      {
+        "moveId": 6,
+        "machine": "TM",
+        "number": 57
+      },
+      {
+        "moveId": 9,
+        "machine": "TM",
+        "number": 23
+      },
+      {
+        "moveId": 29,
+        "machine": "TM",
+        "number": 1
+      },
+      {
+        "moveId": 63,
+        "machine": "TM",
+        "number": 48
+      },
+      {
+        "moveId": 69,
+        "machine": "TM",
+        "number": 15
+      },
+      {
+        "moveId": 85,
+        "machine": "TM",
+        "number": 36
+      },
+      {
+        "moveId": 86,
+        "machine": "TM",
+        "number": 16
+      },
+      {
+        "moveId": 87,
+        "machine": "TM",
+        "number": 38
+      },
+      {
+        "moveId": 91,
+        "machine": "TM",
+        "number": 10
+      },
+      {
+        "moveId": 92,
+        "machine": "TM",
+        "number": 27
+      },
+      {
+        "moveId": 100,
+        "machine": "TM",
+        "number": 4
+      },
+      {
+        "moveId": 113,
+        "machine": "TM",
+        "number": 6
+      },
+      {
+        "moveId": 115,
+        "machine": "TM",
+        "number": 9
+      },
+      {
+        "moveId": 156,
+        "machine": "TM",
+        "number": 5
+      },
+      {
+        "moveId": 164,
+        "machine": "TM",
+        "number": 8
+      },
+      {
+        "moveId": 182,
+        "machine": "TM",
+        "number": 7
+      },
+      {
+        "moveId": 231,
+        "machine": "TM",
+        "number": 19
+      },
+      {
+        "moveId": 263,
+        "machine": "TM",
+        "number": 12
+      },
+      {
+        "moveId": 270,
+        "machine": "TM",
+        "number": 3
+      },
+      {
+        "moveId": 280,
+        "machine": "TM",
+        "number": 13
+      },
+      {
+        "moveId": 347,
+        "machine": "TM",
+        "number": 33
+      }
+    ]
+  },
+  {
     "generation": "8세대",
     "version": "소드·실드",
     "levelUp": [

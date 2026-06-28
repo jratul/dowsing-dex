@@ -219,6 +219,222 @@ export const LEARNSETS: Learnset[] = [
     ]
   },
   {
+    "generation": "5세대",
+    "version": "블랙2·화이트2",
+    "levelUp": [
+      {
+        "moveId": 60,
+        "level": 11
+      },
+      {
+        "moveId": 94,
+        "level": 37
+      },
+      {
+        "moveId": 95,
+        "level": 19
+      },
+      {
+        "moveId": 111,
+        "level": 1
+      },
+      {
+        "moveId": 138,
+        "level": 41
+      },
+      {
+        "moveId": 149,
+        "level": 1
+      },
+      {
+        "moveId": 171,
+        "level": 29
+      },
+      {
+        "moveId": 236,
+        "level": 17
+      },
+      {
+        "moveId": 248,
+        "level": 31
+      },
+      {
+        "moveId": 281,
+        "level": 7
+      },
+      {
+        "moveId": 286,
+        "level": 13
+      },
+      {
+        "moveId": 347,
+        "level": 35
+      },
+      {
+        "moveId": 381,
+        "level": 5
+      },
+      {
+        "moveId": 428,
+        "level": 23
+      },
+      {
+        "moveId": 477,
+        "level": 43
+      },
+      {
+        "moveId": 485,
+        "level": 25
+      },
+      {
+        "moveId": 500,
+        "level": 47
+      }
+    ],
+    "machines": [
+      {
+        "moveId": 86,
+        "machine": "TM",
+        "number": 73
+      },
+      {
+        "moveId": 92,
+        "machine": "TM",
+        "number": 6
+      },
+      {
+        "moveId": 104,
+        "machine": "TM",
+        "number": 32
+      },
+      {
+        "moveId": 113,
+        "machine": "TM",
+        "number": 16
+      },
+      {
+        "moveId": 115,
+        "machine": "TM",
+        "number": 33
+      },
+      {
+        "moveId": 148,
+        "machine": "TM",
+        "number": 70
+      },
+      {
+        "moveId": 156,
+        "machine": "TM",
+        "number": 44
+      },
+      {
+        "moveId": 157,
+        "machine": "TM",
+        "number": 80
+      },
+      {
+        "moveId": 164,
+        "machine": "TM",
+        "number": 90
+      },
+      {
+        "moveId": 182,
+        "machine": "TM",
+        "number": 17
+      },
+      {
+        "moveId": 207,
+        "machine": "TM",
+        "number": 87
+      },
+      {
+        "moveId": 213,
+        "machine": "TM",
+        "number": 45
+      },
+      {
+        "moveId": 216,
+        "machine": "TM",
+        "number": 27
+      },
+      {
+        "moveId": 218,
+        "machine": "TM",
+        "number": 21
+      },
+      {
+        "moveId": 219,
+        "machine": "TM",
+        "number": 20
+      },
+      {
+        "moveId": 237,
+        "machine": "TM",
+        "number": 10
+      },
+      {
+        "moveId": 240,
+        "machine": "TM",
+        "number": 18
+      },
+      {
+        "moveId": 244,
+        "machine": "TM",
+        "number": 77
+      },
+      {
+        "moveId": 247,
+        "machine": "TM",
+        "number": 30
+      },
+      {
+        "moveId": 259,
+        "machine": "TM",
+        "number": 41
+      },
+      {
+        "moveId": 263,
+        "machine": "TM",
+        "number": 42
+      },
+      {
+        "moveId": 317,
+        "machine": "TM",
+        "number": 39
+      },
+      {
+        "moveId": 360,
+        "machine": "TM",
+        "number": 74
+      },
+      {
+        "moveId": 412,
+        "machine": "TM",
+        "number": 53
+      },
+      {
+        "moveId": 433,
+        "machine": "TM",
+        "number": 92
+      },
+      {
+        "moveId": 451,
+        "machine": "TM",
+        "number": 57
+      },
+      {
+        "moveId": 473,
+        "machine": "TM",
+        "number": 3
+      },
+      {
+        "moveId": 496,
+        "machine": "TM",
+        "number": 48
+      }
+    ]
+  },
+  {
     "generation": "6세대",
     "version": "X·Y",
     "levelUp": [
@@ -445,8 +661,455 @@ export const LEARNSETS: Learnset[] = [
     ]
   },
   {
+    "generation": "6세대",
+    "version": "오메가루비·알파사파이어",
+    "levelUp": [
+      {
+        "moveId": 60,
+        "level": 11
+      },
+      {
+        "moveId": 94,
+        "level": 37
+      },
+      {
+        "moveId": 95,
+        "level": 19
+      },
+      {
+        "moveId": 111,
+        "level": 1
+      },
+      {
+        "moveId": 138,
+        "level": 41
+      },
+      {
+        "moveId": 149,
+        "level": 1
+      },
+      {
+        "moveId": 171,
+        "level": 29
+      },
+      {
+        "moveId": 236,
+        "level": 17
+      },
+      {
+        "moveId": 248,
+        "level": 31
+      },
+      {
+        "moveId": 281,
+        "level": 7
+      },
+      {
+        "moveId": 286,
+        "level": 13
+      },
+      {
+        "moveId": 347,
+        "level": 35
+      },
+      {
+        "moveId": 381,
+        "level": 5
+      },
+      {
+        "moveId": 428,
+        "level": 23
+      },
+      {
+        "moveId": 477,
+        "level": 43
+      },
+      {
+        "moveId": 485,
+        "level": 25
+      },
+      {
+        "moveId": 500,
+        "level": 47
+      }
+    ],
+    "machines": [
+      {
+        "moveId": 86,
+        "machine": "TM",
+        "number": 73
+      },
+      {
+        "moveId": 92,
+        "machine": "TM",
+        "number": 6
+      },
+      {
+        "moveId": 104,
+        "machine": "TM",
+        "number": 32
+      },
+      {
+        "moveId": 113,
+        "machine": "TM",
+        "number": 16
+      },
+      {
+        "moveId": 115,
+        "machine": "TM",
+        "number": 33
+      },
+      {
+        "moveId": 148,
+        "machine": "TM",
+        "number": 70
+      },
+      {
+        "moveId": 156,
+        "machine": "TM",
+        "number": 44
+      },
+      {
+        "moveId": 157,
+        "machine": "TM",
+        "number": 80
+      },
+      {
+        "moveId": 164,
+        "machine": "TM",
+        "number": 90
+      },
+      {
+        "moveId": 182,
+        "machine": "TM",
+        "number": 17
+      },
+      {
+        "moveId": 207,
+        "machine": "TM",
+        "number": 87
+      },
+      {
+        "moveId": 213,
+        "machine": "TM",
+        "number": 45
+      },
+      {
+        "moveId": 216,
+        "machine": "TM",
+        "number": 27
+      },
+      {
+        "moveId": 218,
+        "machine": "TM",
+        "number": 21
+      },
+      {
+        "moveId": 219,
+        "machine": "TM",
+        "number": 20
+      },
+      {
+        "moveId": 237,
+        "machine": "TM",
+        "number": 10
+      },
+      {
+        "moveId": 240,
+        "machine": "TM",
+        "number": 18
+      },
+      {
+        "moveId": 244,
+        "machine": "TM",
+        "number": 77
+      },
+      {
+        "moveId": 247,
+        "machine": "TM",
+        "number": 30
+      },
+      {
+        "moveId": 259,
+        "machine": "TM",
+        "number": 41
+      },
+      {
+        "moveId": 263,
+        "machine": "TM",
+        "number": 42
+      },
+      {
+        "moveId": 317,
+        "machine": "TM",
+        "number": 39
+      },
+      {
+        "moveId": 360,
+        "machine": "TM",
+        "number": 74
+      },
+      {
+        "moveId": 412,
+        "machine": "TM",
+        "number": 53
+      },
+      {
+        "moveId": 433,
+        "machine": "TM",
+        "number": 92
+      },
+      {
+        "moveId": 451,
+        "machine": "TM",
+        "number": 57
+      },
+      {
+        "moveId": 473,
+        "machine": "TM",
+        "number": 3
+      },
+      {
+        "moveId": 496,
+        "machine": "TM",
+        "number": 48
+      },
+      {
+        "moveId": 590,
+        "machine": "TM",
+        "number": 100
+      },
+      {
+        "moveId": 605,
+        "machine": "TM",
+        "number": 99
+      }
+    ]
+  },
+  {
     "generation": "7세대",
     "version": "썬·문",
+    "levelUp": [
+      {
+        "moveId": 60,
+        "level": 11
+      },
+      {
+        "moveId": 94,
+        "level": 37
+      },
+      {
+        "moveId": 95,
+        "level": 19
+      },
+      {
+        "moveId": 111,
+        "level": 1
+      },
+      {
+        "moveId": 138,
+        "level": 41
+      },
+      {
+        "moveId": 149,
+        "level": 1
+      },
+      {
+        "moveId": 171,
+        "level": 29
+      },
+      {
+        "moveId": 236,
+        "level": 17
+      },
+      {
+        "moveId": 248,
+        "level": 31
+      },
+      {
+        "moveId": 281,
+        "level": 7
+      },
+      {
+        "moveId": 286,
+        "level": 13
+      },
+      {
+        "moveId": 347,
+        "level": 35
+      },
+      {
+        "moveId": 381,
+        "level": 5
+      },
+      {
+        "moveId": 428,
+        "level": 23
+      },
+      {
+        "moveId": 477,
+        "level": 43
+      },
+      {
+        "moveId": 485,
+        "level": 25
+      },
+      {
+        "moveId": 500,
+        "level": 47
+      }
+    ],
+    "machines": [
+      {
+        "moveId": 86,
+        "machine": "TM",
+        "number": 73
+      },
+      {
+        "moveId": 92,
+        "machine": "TM",
+        "number": 6
+      },
+      {
+        "moveId": 104,
+        "machine": "TM",
+        "number": 32
+      },
+      {
+        "moveId": 113,
+        "machine": "TM",
+        "number": 16
+      },
+      {
+        "moveId": 115,
+        "machine": "TM",
+        "number": 33
+      },
+      {
+        "moveId": 156,
+        "machine": "TM",
+        "number": 44
+      },
+      {
+        "moveId": 157,
+        "machine": "TM",
+        "number": 80
+      },
+      {
+        "moveId": 164,
+        "machine": "TM",
+        "number": 90
+      },
+      {
+        "moveId": 182,
+        "machine": "TM",
+        "number": 17
+      },
+      {
+        "moveId": 207,
+        "machine": "TM",
+        "number": 87
+      },
+      {
+        "moveId": 213,
+        "machine": "TM",
+        "number": 45
+      },
+      {
+        "moveId": 216,
+        "machine": "TM",
+        "number": 27
+      },
+      {
+        "moveId": 218,
+        "machine": "TM",
+        "number": 21
+      },
+      {
+        "moveId": 219,
+        "machine": "TM",
+        "number": 20
+      },
+      {
+        "moveId": 237,
+        "machine": "TM",
+        "number": 10
+      },
+      {
+        "moveId": 240,
+        "machine": "TM",
+        "number": 18
+      },
+      {
+        "moveId": 244,
+        "machine": "TM",
+        "number": 77
+      },
+      {
+        "moveId": 247,
+        "machine": "TM",
+        "number": 30
+      },
+      {
+        "moveId": 259,
+        "machine": "TM",
+        "number": 41
+      },
+      {
+        "moveId": 263,
+        "machine": "TM",
+        "number": 42
+      },
+      {
+        "moveId": 317,
+        "machine": "TM",
+        "number": 39
+      },
+      {
+        "moveId": 360,
+        "machine": "TM",
+        "number": 74
+      },
+      {
+        "moveId": 412,
+        "machine": "TM",
+        "number": 53
+      },
+      {
+        "moveId": 433,
+        "machine": "TM",
+        "number": 92
+      },
+      {
+        "moveId": 451,
+        "machine": "TM",
+        "number": 57
+      },
+      {
+        "moveId": 473,
+        "machine": "TM",
+        "number": 3
+      },
+      {
+        "moveId": 496,
+        "machine": "TM",
+        "number": 48
+      },
+      {
+        "moveId": 590,
+        "machine": "TM",
+        "number": 100
+      },
+      {
+        "moveId": 605,
+        "machine": "TM",
+        "number": 99
+      }
+    ]
+  },
+  {
+    "generation": "7세대",
+    "version": "울트라썬·울트라문",
     "levelUp": [
       {
         "moveId": 60,

@@ -6565,6 +6565,36 @@ export const ALL_MOVES: Move[] = [
     "pp": 10
   },
   {
+    "id": 827,
+    "nameKo": "dire-claw",
+    "nameEn": "dire-claw",
+    "type": "독",
+    "category": "물리",
+    "power": 80,
+    "accuracy": 100,
+    "pp": 15
+  },
+  {
+    "id": 828,
+    "nameKo": "psyshield-bash",
+    "nameEn": "psyshield-bash",
+    "type": "에스퍼",
+    "category": "물리",
+    "power": 70,
+    "accuracy": 90,
+    "pp": 10
+  },
+  {
+    "id": 830,
+    "nameKo": "stone-axe",
+    "nameEn": "stone-axe",
+    "type": "바위",
+    "category": "물리",
+    "power": 65,
+    "accuracy": 90,
+    "pp": 15
+  },
+  {
     "id": 831,
     "nameKo": "springtide-storm",
     "nameEn": "springtide-storm",
@@ -6605,6 +6635,16 @@ export const ALL_MOVES: Move[] = [
     "pp": 10
   },
   {
+    "id": 835,
+    "nameKo": "chloroblast",
+    "nameEn": "chloroblast",
+    "type": "풀",
+    "category": "특수",
+    "power": 150,
+    "accuracy": 95,
+    "pp": 5
+  },
+  {
     "id": 836,
     "nameKo": "mountain-gale",
     "nameEn": "mountain-gale",
@@ -6612,6 +6652,15 @@ export const ALL_MOVES: Move[] = [
     "category": "물리",
     "power": 100,
     "accuracy": 85,
+    "pp": 10
+  },
+  {
+    "id": 837,
+    "nameKo": "victory-dance",
+    "nameEn": "victory-dance",
+    "type": "격투",
+    "category": "상태",
+    "power": 0,
     "pp": 10
   },
   {
@@ -6635,6 +6684,16 @@ export const ALL_MOVES: Move[] = [
     "pp": 10
   },
   {
+    "id": 840,
+    "nameKo": "esper-wing",
+    "nameEn": "esper-wing",
+    "type": "에스퍼",
+    "category": "특수",
+    "power": 80,
+    "accuracy": 100,
+    "pp": 10
+  },
+  {
     "id": 841,
     "nameKo": "bitter-malice",
     "nameEn": "bitter-malice",
@@ -6652,6 +6711,36 @@ export const ALL_MOVES: Move[] = [
     "category": "상태",
     "power": 0,
     "pp": 10
+  },
+  {
+    "id": 843,
+    "nameKo": "triple-arrows",
+    "nameEn": "triple-arrows",
+    "type": "격투",
+    "category": "물리",
+    "power": 90,
+    "accuracy": 100,
+    "pp": 10
+  },
+  {
+    "id": 844,
+    "nameKo": "infernal-parade",
+    "nameEn": "infernal-parade",
+    "type": "고스트",
+    "category": "특수",
+    "power": 60,
+    "accuracy": 100,
+    "pp": 15
+  },
+  {
+    "id": 845,
+    "nameKo": "ceaseless-edge",
+    "nameEn": "ceaseless-edge",
+    "type": "악",
+    "category": "물리",
+    "power": 65,
+    "accuracy": 90,
+    "pp": 15
   },
   {
     "id": 846,

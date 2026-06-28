@@ -18,8 +18,34 @@ export const LEARNSETS: Learnset[] = [
     "machines": []
   },
   {
+    "generation": "6세대",
+    "version": "오메가루비·알파사파이어",
+    "levelUp": [
+      {
+        "moveId": 106,
+        "level": 1
+      },
+      {
+        "moveId": 182,
+        "level": 9
+      }
+    ],
+    "machines": []
+  },
+  {
     "generation": "7세대",
     "version": "썬·문",
+    "levelUp": [
+      {
+        "moveId": 106,
+        "level": 1
+      }
+    ],
+    "machines": []
+  },
+  {
+    "generation": "7세대",
+    "version": "울트라썬·울트라문",
     "levelUp": [
       {
         "moveId": 106,

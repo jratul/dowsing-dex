@@ -251,6 +251,254 @@ export const LEARNSETS: Learnset[] = [
     ]
   },
   {
+    "generation": "7세대",
+    "version": "울트라썬·울트라문",
+    "levelUp": [
+      {
+        "moveId": 49,
+        "level": 1
+      },
+      {
+        "moveId": 60,
+        "level": 1
+      },
+      {
+        "moveId": 62,
+        "level": 17
+      },
+      {
+        "moveId": 111,
+        "level": 1
+      },
+      {
+        "moveId": 170,
+        "level": 33
+      },
+      {
+        "moveId": 220,
+        "level": 65
+      },
+      {
+        "moveId": 270,
+        "level": 1
+      },
+      {
+        "moveId": 334,
+        "level": 57
+      },
+      {
+        "moveId": 376,
+        "level": 97
+      },
+      {
+        "moveId": 381,
+        "level": 9
+      },
+      {
+        "moveId": 391,
+        "level": 89
+      },
+      {
+        "moveId": 396,
+        "level": 81
+      },
+      {
+        "moveId": 429,
+        "level": 25
+      },
+      {
+        "moveId": 430,
+        "level": 41
+      },
+      {
+        "moveId": 442,
+        "level": 1
+      },
+      {
+        "moveId": 485,
+        "level": 73
+      },
+      {
+        "moveId": 508,
+        "level": 1
+      },
+      {
+        "moveId": 578,
+        "level": 1
+      },
+      {
+        "moveId": 674,
+        "level": 1
+      },
+      {
+        "moveId": 705,
+        "level": 49
+      }
+    ],
+    "machines": [
+      {
+        "moveId": 58,
+        "machine": "TM",
+        "number": 13
+      },
+      {
+        "moveId": 63,
+        "machine": "TM",
+        "number": 15
+      },
+      {
+        "moveId": 76,
+        "machine": "TM",
+        "number": 22
+      },
+      {
+        "moveId": 85,
+        "machine": "TM",
+        "number": 24
+      },
+      {
+        "moveId": 86,
+        "machine": "TM",
+        "number": 73
+      },
+      {
+        "moveId": 104,
+        "machine": "TM",
+        "number": 32
+      },
+      {
+        "moveId": 113,
+        "machine": "TM",
+        "number": 16
+      },
+      {
+        "moveId": 115,
+        "machine": "TM",
+        "number": 33
+      },
+      {
+        "moveId": 153,
+        "machine": "TM",
+        "number": 64
+      },
+      {
+        "moveId": 164,
+        "machine": "TM",
+        "number": 90
+      },
+      {
+        "moveId": 182,
+        "machine": "TM",
+        "number": 17
+      },
+      {
+        "moveId": 206,
+        "machine": "TM",
+        "number": 54
+      },
+      {
+        "moveId": 207,
+        "machine": "TM",
+        "number": 87
+      },
+      {
+        "moveId": 216,
+        "machine": "TM",
+        "number": 27
+      },
+      {
+        "moveId": 218,
+        "machine": "TM",
+        "number": 21
+      },
+      {
+        "moveId": 237,
+        "machine": "TM",
+        "number": 10
+      },
+      {
+        "moveId": 247,
+        "machine": "TM",
+        "number": 30
+      },
+      {
+        "moveId": 280,
+        "machine": "TM",
+        "number": 31
+      },
+      {
+        "moveId": 347,
+        "machine": "TM",
+        "number": 4
+      },
+      {
+        "moveId": 360,
+        "machine": "TM",
+        "number": 74
+      },
+      {
+        "moveId": 373,
+        "machine": "TM",
+        "number": 63
+      },
+      {
+        "moveId": 411,
+        "machine": "TM",
+        "number": 52
+      },
+      {
+        "moveId": 412,
+        "machine": "TM",
+        "number": 53
+      },
+      {
+        "moveId": 416,
+        "machine": "TM",
+        "number": 68
+      },
+      {
+        "moveId": 433,
+        "machine": "TM",
+        "number": 92
+      },
+      {
+        "moveId": 447,
+        "machine": "TM",
+        "number": 86
+      },
+      {
+        "moveId": 451,
+        "machine": "TM",
+        "number": 57
+      },
+      {
+        "moveId": 496,
+        "machine": "TM",
+        "number": 48
+      },
+      {
+        "moveId": 497,
+        "machine": "TM",
+        "number": 49
+      },
+      {
+        "moveId": 521,
+        "machine": "TM",
+        "number": 72
+      },
+      {
+        "moveId": 590,
+        "machine": "TM",
+        "number": 100
+      },
+      {
+        "moveId": 605,
+        "machine": "TM",
+        "number": 99
+      }
+    ]
+  },
+  {
     "generation": "8세대",
     "version": "소드·실드",
     "levelUp": [

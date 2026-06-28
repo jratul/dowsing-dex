@@ -18,6 +18,44 @@ export const LEARNSETS: Learnset[] = [
     "machines": []
   },
   {
+    "generation": "4세대",
+    "version": "플래티넘",
+    "levelUp": [
+      {
+        "moveId": 16,
+        "level": 1
+      },
+      {
+        "moveId": 230,
+        "level": 1
+      },
+      {
+        "moveId": 450,
+        "level": 13
+      }
+    ],
+    "machines": []
+  },
+  {
+    "generation": "4세대",
+    "version": "하트골드·소울실버",
+    "levelUp": [
+      {
+        "moveId": 16,
+        "level": 1
+      },
+      {
+        "moveId": 230,
+        "level": 1
+      },
+      {
+        "moveId": 450,
+        "level": 13
+      }
+    ],
+    "machines": []
+  },
+  {
     "generation": "5세대",
     "version": "블랙·화이트",
     "levelUp": [
@@ -28,6 +66,29 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 230,
         "level": 1
+      },
+      {
+        "moveId": 450,
+        "level": 13
+      }
+    ],
+    "machines": []
+  },
+  {
+    "generation": "5세대",
+    "version": "블랙2·화이트2",
+    "levelUp": [
+      {
+        "moveId": 16,
+        "level": 1
+      },
+      {
+        "moveId": 230,
+        "level": 1
+      },
+      {
+        "moveId": 405,
+        "level": 29
       },
       {
         "moveId": 450,
@@ -60,8 +121,54 @@ export const LEARNSETS: Learnset[] = [
     "machines": []
   },
   {
+    "generation": "6세대",
+    "version": "오메가루비·알파사파이어",
+    "levelUp": [
+      {
+        "moveId": 16,
+        "level": 1
+      },
+      {
+        "moveId": 230,
+        "level": 1
+      },
+      {
+        "moveId": 405,
+        "level": 29
+      },
+      {
+        "moveId": 450,
+        "level": 13
+      }
+    ],
+    "machines": []
+  },
+  {
     "generation": "7세대",
     "version": "썬·문",
+    "levelUp": [
+      {
+        "moveId": 16,
+        "level": 1
+      },
+      {
+        "moveId": 230,
+        "level": 1
+      },
+      {
+        "moveId": 405,
+        "level": 29
+      },
+      {
+        "moveId": 450,
+        "level": 13
+      }
+    ],
+    "machines": []
+  },
+  {
+    "generation": "7세대",
+    "version": "울트라썬·울트라문",
     "levelUp": [
       {
         "moveId": 16,
@@ -110,6 +217,50 @@ export const LEARNSETS: Learnset[] = [
         "number": 24
       }
     ]
+  },
+  {
+    "generation": "8세대",
+    "version": "브릴리언트다이아몬드·샤이닝펄",
+    "levelUp": [
+      {
+        "moveId": 16,
+        "level": 1
+      },
+      {
+        "moveId": 230,
+        "level": 1
+      },
+      {
+        "moveId": 450,
+        "level": 1
+      },
+      {
+        "moveId": 522,
+        "level": 1
+      }
+    ],
+    "machines": [
+      {
+        "moveId": 405,
+        "machine": "TM",
+        "number": 62
+      }
+    ]
+  },
+  {
+    "generation": "8세대",
+    "version": "레전드 아르세우스",
+    "levelUp": [
+      {
+        "moveId": 16,
+        "level": 1
+      },
+      {
+        "moveId": 522,
+        "level": 6
+      }
+    ],
+    "machines": []
   },
   {
     "generation": "9세대",

@@ -3,6 +3,131 @@ import type { Learnset } from '../../../types/move'
 
 export const LEARNSETS: Learnset[] = [
   {
+    "generation": "7세대",
+    "version": "울트라썬·울트라문",
+    "levelUp": [
+      {
+        "moveId": 31,
+        "level": 7
+      },
+      {
+        "moveId": 45,
+        "level": 1
+      },
+      {
+        "moveId": 51,
+        "level": 1
+      },
+      {
+        "moveId": 64,
+        "level": 1
+      },
+      {
+        "moveId": 92,
+        "level": 41
+      },
+      {
+        "moveId": 204,
+        "level": 19
+      },
+      {
+        "moveId": 270,
+        "level": 1
+      },
+      {
+        "moveId": 398,
+        "level": 37
+      },
+      {
+        "moveId": 406,
+        "level": 1
+      },
+      {
+        "moveId": 417,
+        "level": 31
+      },
+      {
+        "moveId": 474,
+        "level": 13
+      },
+      {
+        "moveId": 565,
+        "level": 47
+      },
+      {
+        "moveId": 599,
+        "level": 23
+      }
+    ],
+    "machines": [
+      {
+        "moveId": 156,
+        "machine": "TM",
+        "number": 44
+      },
+      {
+        "moveId": 164,
+        "machine": "TM",
+        "number": 90
+      },
+      {
+        "moveId": 182,
+        "machine": "TM",
+        "number": 17
+      },
+      {
+        "moveId": 188,
+        "machine": "TM",
+        "number": 36
+      },
+      {
+        "moveId": 214,
+        "machine": "TM",
+        "number": 88
+      },
+      {
+        "moveId": 216,
+        "machine": "TM",
+        "number": 27
+      },
+      {
+        "moveId": 218,
+        "machine": "TM",
+        "number": 21
+      },
+      {
+        "moveId": 237,
+        "machine": "TM",
+        "number": 10
+      },
+      {
+        "moveId": 263,
+        "machine": "TM",
+        "number": 42
+      },
+      {
+        "moveId": 482,
+        "machine": "TM",
+        "number": 34
+      },
+      {
+        "moveId": 496,
+        "machine": "TM",
+        "number": 48
+      },
+      {
+        "moveId": 497,
+        "machine": "TM",
+        "number": 49
+      },
+      {
+        "moveId": 590,
+        "machine": "TM",
+        "number": 100
+      }
+    ]
+  },
+  {
     "generation": "8세대",
     "version": "소드·실드",
     "levelUp": [

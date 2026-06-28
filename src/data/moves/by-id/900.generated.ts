@@ -3,6 +3,53 @@ import type { Learnset } from '../../../types/move'
 
 export const LEARNSETS: Learnset[] = [
   {
+    "generation": "8세대",
+    "version": "레전드 아르세우스",
+    "levelUp": [
+      {
+        "moveId": 14,
+        "level": 25
+      },
+      {
+        "moveId": 98,
+        "level": 1
+      },
+      {
+        "moveId": 318,
+        "level": 6
+      },
+      {
+        "moveId": 332,
+        "level": 11
+      },
+      {
+        "moveId": 370,
+        "level": 43
+      },
+      {
+        "moveId": 403,
+        "level": 18
+      },
+      {
+        "moveId": 404,
+        "level": 34
+      },
+      {
+        "moveId": 446,
+        "level": 14
+      },
+      {
+        "moveId": 458,
+        "level": 14
+      },
+      {
+        "moveId": 830,
+        "level": 29
+      }
+    ],
+    "machines": []
+  },
+  {
     "generation": "9세대",
     "version": "스칼렛·바이올렛",
     "levelUp": [

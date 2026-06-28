@@ -34,29 +34,48 @@ const REGION_EXTRA_LABEL = {
   'aqua-breed': '파도종',
 }
 
-// 세대별 대표 게임판(기술/기술머신 데이터를 가져올 기준 버전 그룹). 세대마다 게임이 여럿이라
-// 전부 다루면 조합이 폭발하므로, 한 세대당 대표 한 쌍만 기준으로 삼는다.
-const CANONICAL_VERSION_GROUP_BY_GEN = {
-  1: 'red-blue',
-  2: 'gold-silver',
-  3: 'ruby-sapphire',
-  4: 'diamond-pearl',
-  5: 'black-white',
-  6: 'x-y',
-  7: 'sun-moon',
-  8: 'sword-shield',
-  9: 'scarlet-violet',
-}
-const VERSION_LABEL_KO = {
-  1: '레드·블루',
-  2: '골드·실버',
-  3: '루비·사파이어',
-  4: '다이아몬드·펄',
-  5: '블랙·화이트',
-  6: 'X·Y',
-  7: '썬·문',
-  8: '소드·실드',
-  9: '스칼렛·바이올렛',
+// 세대별로 실제 발매된 모든 메인 버전. 같은 세대라도 버전마다 학습 기술이 다를 수 있다
+// (예: 4세대 플래티넘은 벌레먹음을 레벨 15에 배우지만 다이아몬드·펄은 배우지 않음).
+// DLC(더 아머의 섬/왕관의 설원, 더 한입 과자/달콤 마카롱)는 별도 "버전"으로 보여주면 사용자
+// 입장에서 혼란스러워 같은 기반 게임에 합쳐서 본다.
+const VERSIONS_BY_GEN = {
+  1: [
+    { label: '레드·블루', groups: ['red-blue'] },
+    { label: '옐로우', groups: ['yellow'] },
+  ],
+  2: [
+    { label: '골드·실버', groups: ['gold-silver'] },
+    { label: '크리스탈', groups: ['crystal'] },
+  ],
+  3: [
+    { label: '루비·사파이어', groups: ['ruby-sapphire'] },
+    { label: '에메랄드', groups: ['emerald'] },
+    { label: '파이어레드·리프그린', groups: ['firered-leafgreen'] },
+  ],
+  4: [
+    { label: '다이아몬드·펄', groups: ['diamond-pearl'] },
+    { label: '플래티넘', groups: ['platinum'] },
+    { label: '하트골드·소울실버', groups: ['heartgold-soulsilver'] },
+  ],
+  5: [
+    { label: '블랙·화이트', groups: ['black-white'] },
+    { label: '블랙2·화이트2', groups: ['black-2-white-2'] },
+  ],
+  6: [
+    { label: 'X·Y', groups: ['x-y'] },
+    { label: '오메가루비·알파사파이어', groups: ['omega-ruby-alpha-sapphire'] },
+  ],
+  7: [
+    { label: '썬·문', groups: ['sun-moon'] },
+    { label: '울트라썬·울트라문', groups: ['ultra-sun-ultra-moon'] },
+    { label: '레츠고 피카츄·이브이', groups: ['lets-go-pikachu-lets-go-eevee'] },
+  ],
+  8: [
+    { label: '소드·실드', groups: ['sword-shield', 'the-isle-of-armor', 'the-crown-tundra'] },
+    { label: '브릴리언트다이아몬드·샤이닝펄', groups: ['brilliant-diamond-shining-pearl'] },
+    { label: '레전드 아르세우스', groups: ['legends-arceus'] },
+  ],
+  9: [{ label: '스칼렛·바이올렛', groups: ['scarlet-violet', 'the-teal-mask', 'the-indigo-disk'] }],
 }
 const DAMAGE_CLASS_KO = { physical: '물리', special: '특수', status: '상태' }
 
@@ -284,39 +303,45 @@ async function buildMachineLookup() {
   return lookup
 }
 
-// 포켓몬의 moves 배열(이미 fetch-pokedex가 받아온 것)에서, 세대별 대표 버전의
-// 레벨업/기술머신 학습 기술만 추려 Learnset[] 으로 만든다. 알/교환/가르침 기술은 제외한다.
+// 포켓몬의 moves 배열(이미 fetch-pokedex가 받아온 것)에서, 세대별로 발매된 모든 메인
+// 버전의 레벨업/기술머신 학습 기술을 각각 추려 Learnset[] 으로 만든다. 같은 세대라도
+// 버전마다 학습 기술이 다를 수 있어(예: 4세대 플래티넘 전용 기술) 버전별로 따로 둔다.
+// 알/교환/가르침 기술은 제외한다.
 async function buildLearnsets(poke, machineLookup) {
   const learnsets = []
-  for (const [genStr, versionGroup] of Object.entries(CANONICAL_VERSION_GROUP_BY_GEN)) {
+  for (const [genStr, versions] of Object.entries(VERSIONS_BY_GEN)) {
     const generation = Number(genStr)
-    const levelUp = []
-    const machines = []
-    for (const moveEntry of poke.moves) {
-      const detail = moveEntry.version_group_details.find((d) => d.version_group.name === versionGroup)
-      if (!detail) continue
-      if (detail.move_learn_method.name === 'level-up' && detail.level_learned_at > 0) {
-        const info = await moveDetail(moveEntry.move.name)
-        levelUp.push({ moveId: info.id, level: detail.level_learned_at })
-      } else if (detail.move_learn_method.name === 'machine') {
-        const tm = machineLookup.get(`${versionGroup}|${moveEntry.move.name}`)
-        if (tm) {
+    for (const { label, groups } of versions) {
+      const levelUp = []
+      const machines = []
+      for (const moveEntry of poke.moves) {
+        const detail = moveEntry.version_group_details.find((d) => groups.includes(d.version_group.name))
+        if (!detail) continue
+        if (detail.move_learn_method.name === 'level-up' && detail.level_learned_at > 0) {
           const info = await moveDetail(moveEntry.move.name)
-          machines.push({ moveId: info.id, machine: tm.machine, number: tm.number })
+          levelUp.push({ moveId: info.id, level: detail.level_learned_at })
+        } else if (detail.move_learn_method.name === 'machine') {
+          const tm = groups.map((g) => machineLookup.get(`${g}|${moveEntry.move.name}`)).find(Boolean)
+          if (tm) {
+            const info = await moveDetail(moveEntry.move.name)
+            machines.push({ moveId: info.id, machine: tm.machine, number: tm.number })
+          }
         }
       }
+      if (levelUp.length === 0 && machines.length === 0) continue
+      learnsets.push({ generation: `${generation}세대`, version: label, levelUp, machines })
     }
-    if (levelUp.length === 0 && machines.length === 0) continue
-    learnsets.push({ generation: `${generation}세대`, version: VERSION_LABEL_KO[generation], levelUp, machines })
   }
   return learnsets
 }
 
-// 가장 최신 세대 학습셋에서 위력이 높은 기술 위주로 4개를 추천 배치로 고른다.
+// 등장한 가장 최신 세대의 대표(첫) 버전에서, 위력이 높은 기술 위주로 4개를 추천 배치로 고른다.
 function recommendedMoveset(learnsets) {
-  const latest = learnsets[learnsets.length - 1]
-  if (!latest) return []
-  const ids = [...new Set([...latest.levelUp.map((m) => m.moveId), ...latest.machines.map((m) => m.moveId)])]
+  if (learnsets.length === 0) return []
+  const latestGen = Math.max(...learnsets.map((ls) => Number(ls.generation.replace('세대', ''))))
+  const main = learnsets.find((ls) => ls.generation === `${latestGen}세대`)
+  if (!main) return []
+  const ids = [...new Set([...main.levelUp.map((m) => m.moveId), ...main.machines.map((m) => m.moveId)])]
   return ids
     .map((id) => moveDetailByIdCache.get(id))
     .filter(Boolean)
