@@ -6,6 +6,7 @@ import { StatChart } from '../components/pokemon/StatChart'
 import { TypeDefense } from '../components/pokemon/TypeDefense'
 import { EvolutionTree } from '../components/pokemon/EvolutionTree'
 import { MoveList } from '../components/pokemon/MoveList'
+import { SpriteImage } from '../components/pokemon/SpriteImage'
 import { SAMPLE_POKEMON, findEvolutionLine, findSamplePokemon } from '../data/sample/pokemon.sample'
 import { findMove, loadLearnsets } from '../data/sample/moves.sample'
 import type { Learnset } from '../types/move'
@@ -91,16 +92,16 @@ export function PokemonDetailPage() {
           <span className="absolute inset-0 flex items-center justify-center text-8xl font-black text-ink/5 select-none">
             {dexNumber}
           </span>
-          {(pokemon.artworkUrl ?? pokemon.spriteUrl) && (
-            <img
-              src={pokemon.artworkUrl ?? pokemon.spriteUrl}
-              alt={pokemon.nameKo}
-              width={180}
-              height={180}
-              decoding="async"
-              className="relative z-10"
-            />
-          )}
+          <SpriteImage
+            src={pokemon.artworkUrl ?? pokemon.spriteUrl}
+            alt={pokemon.nameKo}
+            width={180}
+            height={180}
+            loading="eager"
+            pixelated={false}
+            rounded="none"
+            className="relative z-10 h-45 w-45"
+          />
         </Card>
 
         <div className="flex flex-col gap-3">
@@ -171,16 +172,15 @@ export function PokemonDetailPage() {
           <div className="grid gap-4 sm:grid-cols-2">
             {pokemon.megaForms.map((mega) => (
               <div key={mega.label} className="flex flex-col items-center gap-2 rounded-card border border-border-strong p-4">
-                {(mega.artworkUrl ?? mega.spriteUrl) && (
-                  <img
-                    src={mega.artworkUrl ?? mega.spriteUrl}
-                    alt={mega.label}
-                    width={120}
-                    height={120}
-                    loading="lazy"
-                    decoding="async"
-                  />
-                )}
+                <SpriteImage
+                  src={mega.artworkUrl ?? mega.spriteUrl}
+                  alt={mega.label}
+                  width={120}
+                  height={120}
+                  pixelated={false}
+                  rounded="none"
+                  className="h-30 w-30"
+                />
                 <span className="text-sm font-bold text-ink">{mega.label}</span>
                 <div className="flex gap-2">
                   {mega.types.map((type) => (

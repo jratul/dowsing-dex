@@ -1,5 +1,6 @@
 import type { EvolutionStage } from '../../types/pokemon'
 import { cn } from '../../lib/cn'
+import { SpriteImage } from './SpriteImage'
 
 export interface EvolutionTreeProps {
   stages: EvolutionStage[]
@@ -36,17 +37,7 @@ function StageNode({
             isCurrent ? 'border-brand-red bg-brand-red/10' : 'border-border hover:bg-surface-hover',
           )}
         >
-          {info.spriteUrl ? (
-            <img
-              src={info.spriteUrl}
-              alt={info.nameKo}
-              width={80}
-              height={80}
-              loading="lazy"
-              decoding="async"
-              style={{ imageRendering: 'pixelated' }}
-            />
-          ) : null}
+          <SpriteImage src={info.spriteUrl} alt={info.nameKo} width={80} height={80} rounded="full" className="h-20 w-20" />
         </div>
         <span className={cn('text-xs font-bold', isCurrent ? 'text-brand-red' : 'text-ink')}>{info.nameKo}</span>
       </button>

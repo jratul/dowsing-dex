@@ -1,6 +1,7 @@
 import type { Pokemon } from '../../types/pokemon'
 import { COLOR } from '../../lib/typeChart'
 import { Card } from '../ui/Card'
+import { SpriteImage } from './SpriteImage'
 import { TypeBadge } from './TypeBadge'
 
 export interface PokemonCardProps {
@@ -19,20 +20,7 @@ export function PokemonCard({ pokemon, onClick }: PokemonCardProps) {
     >
       <div className="flex flex-col items-center gap-2">
         <span className="self-start text-xs font-bold text-ink-faint">#{String(pokemon.dexNumber).padStart(3, '0')}</span>
-        {pokemon.spriteUrl ? (
-          <img
-            src={pokemon.spriteUrl}
-            alt={pokemon.nameKo}
-            width={96}
-            height={96}
-            loading="lazy"
-            decoding="async"
-            className="h-32 w-32"
-            style={{ imageRendering: 'pixelated' }}
-          />
-        ) : (
-          <div className="h-32 w-32" />
-        )}
+        <SpriteImage src={pokemon.spriteUrl} alt={pokemon.nameKo} width={96} height={96} className="h-32 w-32" />
         <span className="text-sm font-bold text-ink">
           {pokemon.nameKo}
           {pokemon.formLabel && <span className="text-ink-faint"> ({pokemon.formLabel})</span>}
