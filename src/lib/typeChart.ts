@@ -92,6 +92,11 @@ export function profile(defTypes: TypeName[], era: TypeEra = '6세대 이후'): 
   }))
 }
 
+/** 특정 타입으로 "공격할 때"의 상성 — profile()(방어 시)과 반대 방향. */
+export function attackProfile(atk: TypeName, era: TypeEra = '6세대 이후'): TypeMatchup[] {
+  return TYPES_BY_ERA[era].map((def) => ({ type: def, m: mult(atk, def, era) }))
+}
+
 export function classifyMatchup(m: number): MatchupClass {
   if (m === 0) return 'immune'
   if (m > 1) return 'weak'
