@@ -28,7 +28,7 @@ function StageNode({
         type="button"
         onClick={onSelect ? () => onSelect(stage.pokemonId) : undefined}
         disabled={!onSelect}
-        className="flex flex-col items-center gap-1 cursor-pointer disabled:cursor-default"
+        className="flex flex-col items-center gap-1"
       >
         <div
           className={cn(

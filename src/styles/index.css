@@ -75,6 +75,13 @@ body {
   background: #fff;
 }
 
+/* Tailwind v4 프리플라이트는 button에 cursor:pointer를 자동으로 넣어주지 않으므로,
+   모든 버튼류(Radix Tabs/ToggleGroup도 button으로 렌더링됨)에 공통 적용한다.
+   disabled 버튼은 각자 쓰는 disabled:cursor-default 유틸리티가 우선 적용된다. */
+button:not(:disabled) {
+  cursor: pointer;
+}
+
 .scrollbar-hide {
   scrollbar-width: none;
   -ms-overflow-style: none;
