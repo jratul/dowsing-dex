@@ -1,8 +1,9 @@
-import { TYPE_BG_CLASS, TYPE_ORDER, TYPE_TEXT_CLASS, mult } from '../../lib/typeChart'
+import { TYPE_BG_CLASS, TYPE_TEXT_CLASS, TYPES_BY_ERA, mult, type TypeEra } from '../../lib/typeChart'
 import type { TypeName } from '../../types/type-chart'
 import { cn } from '../../lib/cn'
 
 export interface TypeChartGridProps {
+  era?: TypeEra
   highlightType?: TypeName
 }
 
@@ -28,7 +29,9 @@ function TypeChip({ type, highlight }: { type: TypeName; highlight?: boolean }) 
   )
 }
 
-export function TypeChartGrid({ highlightType }: TypeChartGridProps) {
+export function TypeChartGrid({ era = '6세대 이후', highlightType }: TypeChartGridProps) {
+  const types = TYPES_BY_ERA[era]
+
   return (
     <div className="flex flex-col gap-3">
       <p className="text-xs text-ink-faint">세로(공격) → 가로(방어) 기준.</p>
@@ -37,7 +40,7 @@ export function TypeChartGrid({ highlightType }: TypeChartGridProps) {
           <thead>
             <tr>
               <th className="sticky left-0 bg-white p-1" />
-              {TYPE_ORDER.map((def) => (
+              {types.map((def) => (
                 <th key={def} className="p-1">
                   <TypeChip type={def} highlight={def === highlightType} />
                 </th>
@@ -45,13 +48,13 @@ export function TypeChartGrid({ highlightType }: TypeChartGridProps) {
             </tr>
           </thead>
           <tbody>
-            {TYPE_ORDER.map((atk) => (
+            {types.map((atk) => (
               <tr key={atk}>
                 <th className="sticky left-0 bg-white p-1">
                   <TypeChip type={atk} highlight={atk === highlightType} />
                 </th>
-                {TYPE_ORDER.map((def) => {
-                  const m = mult(atk, def)
+                {types.map((def) => {
+                  const m = mult(atk, def, era)
                   return (
                     <td key={def} className={cn('h-8 w-10 border border-border text-center font-bold', CELL_STYLE[m])}>
                       {m === 1 ? '' : m}

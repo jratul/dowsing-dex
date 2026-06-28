@@ -1,13 +1,14 @@
-import { classifyMatchup, profile } from '../../lib/typeChart'
+import { classifyMatchup, profile, type TypeEra } from '../../lib/typeChart'
 import type { TypeName } from '../../types/type-chart'
 import { TypeBadge } from './TypeBadge'
 
 export interface TypeDefenseProps {
   types: TypeName[]
+  era?: TypeEra
 }
 
-export function TypeDefense({ types }: TypeDefenseProps) {
-  const matchups = profile(types)
+export function TypeDefense({ types, era }: TypeDefenseProps) {
+  const matchups = profile(types, era)
   const weak = matchups.filter((m) => classifyMatchup(m.m) === 'weak')
   const guarded = matchups.filter((m) => classifyMatchup(m.m) !== 'weak' && classifyMatchup(m.m) !== 'neutral')
 
