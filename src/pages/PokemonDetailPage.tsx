@@ -1,4 +1,4 @@
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { Card } from '../components/ui/Card'
 import { TypeBadge } from '../components/pokemon/TypeBadge'
 import { StatChart } from '../components/pokemon/StatChart'
@@ -12,14 +12,17 @@ import { cn } from '../lib/cn'
 
 export function PokemonDetailPage() {
   const navigate = useNavigate()
+  const location = useLocation()
   const { id } = useParams<{ id: string }>()
   const pokemon = SAMPLE_POKEMON.find((p) => p.id === Number(id))
+  // 도감 목록에서 적용했던 필터를 그대로 유지한 채 돌아가기 위한 경로(없으면 기본 도감 경로).
+  const backTo = (location.state as { backTo?: string } | null)?.backTo ?? '/pokedex'
 
   if (!pokemon) {
     return (
       <div className="mx-auto max-w-4xl px-4 py-6">
         <p className="text-sm text-ink-faint">존재하지 않는 포켓몬입니다.</p>
-        <Link to="/pokedex" className="text-sm font-bold text-brand-red">
+        <Link to={backTo} className="text-sm font-bold text-brand-red">
           도감으로 돌아가기
         </Link>
       </div>
@@ -38,12 +41,13 @@ export function PokemonDetailPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-6">
       <div className="mb-3 flex items-center justify-between">
-        <Link to="/pokedex" className="inline-block text-sm font-bold text-ink-muted hover:text-ink">
+        <Link to={backTo} className="inline-block text-sm font-bold text-ink-muted hover:text-ink">
           ← 도감으로
         </Link>
         <div className="flex gap-2">
           <Link
             to={prevPokemon ? `/pokemon/${prevPokemon.id}` : '#'}
+            state={{ backTo }}
             aria-disabled={!prevPokemon}
             className={cn(
               'rounded-chip border border-border-strong px-3 py-1.5 text-sm font-bold',
@@ -54,6 +58,7 @@ export function PokemonDetailPage() {
           </Link>
           <Link
             to={nextPokemon ? `/pokemon/${nextPokemon.id}` : '#'}
+            state={{ backTo }}
             aria-disabled={!nextPokemon}
             className={cn(
               'rounded-chip border border-border-strong px-3 py-1.5 text-sm font-bold',
@@ -131,7 +136,7 @@ export function PokemonDetailPage() {
             stages={evolutionLine}
             currentPokemonId={pokemon.id}
             renderPokemon={findSamplePokemon}
-            onSelect={(targetId) => navigate(`/pokemon/${targetId}`)}
+            onSelect={(targetId) => navigate(`/pokemon/${targetId}`, { state: { backTo } })}
           />
         </Card>
       )}

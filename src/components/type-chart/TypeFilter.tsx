@@ -1,6 +1,7 @@
 import * as ToggleGroup from '@radix-ui/react-toggle-group'
-import { TYPE_ORDER } from '../../lib/typeChart'
+import { TYPE_BG_CLASS, TYPE_ORDER, TYPE_TEXT_CLASS } from '../../lib/typeChart'
 import type { TypeName } from '../../types/type-chart'
+import { cn } from '../../lib/cn'
 
 export interface TypeFilterProps {
   selected: TypeName[]
@@ -28,15 +29,23 @@ export function TypeFilter({ selected, onChange }: TypeFilterProps) {
         onValueChange={(value) => onChange(value as TypeName[])}
         className="flex flex-wrap gap-2"
       >
-        {TYPE_ORDER.map((type) => (
-          <ToggleGroup.Item
-            key={type}
-            value={type}
-            className="rounded-chip border border-border-strong bg-white px-3 py-1.5 text-sm font-bold text-ink hover:bg-surface-hover data-[state=on]:border-ink data-[state=on]:bg-ink data-[state=on]:text-white"
-          >
-            {type}
-          </ToggleGroup.Item>
-        ))}
+        {TYPE_ORDER.map((type) => {
+          const isSelected = selected.includes(type)
+          return (
+            <ToggleGroup.Item
+              key={type}
+              value={type}
+              className={cn(
+                'rounded-chip border px-3 py-1.5 text-sm font-bold',
+                isSelected
+                  ? cn('border-transparent', TYPE_BG_CLASS[type], TYPE_TEXT_CLASS[type])
+                  : 'border-border-strong bg-white text-ink hover:bg-surface-hover',
+              )}
+            >
+              {type}
+            </ToggleGroup.Item>
+          )
+        })}
       </ToggleGroup.Root>
     </div>
   )

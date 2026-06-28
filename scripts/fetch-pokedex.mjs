@@ -46,11 +46,18 @@ const MEGA_SPECIES = [
   'diancie', 'garchomp', 'lucario', 'abomasnow',
 ]
 
+// raw.githubusercontent.com은 대량 핫링크용 CDN이 아니라 트래픽이 몰리면 이미지가
+// 간헐적으로 깨진다. jsDelivr의 GitHub 미러를 쓰면 같은 저장소 파일을 CDN으로 안정적으로 받는다.
+const SPRITES_CDN = 'https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites'
+
 function sprite(id) {
-  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
+  return `${SPRITES_CDN}/pokemon/${id}.png`
 }
 function artwork(id) {
-  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`
+  return `${SPRITES_CDN}/pokemon/other/official-artwork/${id}.png`
+}
+function toJsDelivr(rawGithubUrl) {
+  return rawGithubUrl?.replace('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites', SPRITES_CDN)
 }
 
 async function fetchJson(url) {
@@ -108,7 +115,8 @@ async function itemInfo(name) {
       const data = await fetchJson(`${BASE}/item/${name}`)
       itemInfoCache.set(name, {
         ko: data.names.find((n) => n.language.name === 'ko')?.name ?? name,
-        iconUrl: data.sprites?.default ?? undefined, // 일부 신규 아이템은 아이콘 자체가 없다(API가 null 반환)
+        // 일부 신규 아이템은 아이콘 자체가 없다(API가 null 반환). 있는 경우 jsDelivr 미러로 변환.
+        iconUrl: toJsDelivr(data.sprites?.default ?? undefined),
       })
     } catch {
       itemInfoCache.set(name, { ko: name, iconUrl: undefined })

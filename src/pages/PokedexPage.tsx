@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react'
-import { useNavigate, useSearchParams } from 'react-router-dom'
+import { useMemo } from 'react'
+import { useLocation, useNavigate, useSearchParams } from 'react-router-dom'
 import { TypeFilter } from '../components/type-chart/TypeFilter'
 import { GenerationFilter } from '../components/pokemon/GenerationFilter'
 import { PokemonCard } from '../components/pokemon/PokemonCard'
@@ -10,10 +10,33 @@ const GENERATIONS = Array.from(new Set(SAMPLE_POKEMON.map((p) => p.generation)))
 
 export function PokedexPage() {
   const navigate = useNavigate()
-  const [searchParams] = useSearchParams()
-  const [selectedTypes, setSelectedTypes] = useState<TypeName[]>([])
-  const [selectedGenerations, setSelectedGenerations] = useState<number[]>([])
-  const [query, setQuery] = useState(searchParams.get('q') ?? '')
+  const location = useLocation()
+  const [searchParams, setSearchParams] = useSearchParams()
+
+  // 필터 상태를 URL 쿼리에 그대로 보관해, 상세 페이지를 보고 돌아와도 유지되게 한다.
+  // 원본 문자열이 바뀔 때만 새 배열을 만들어야 아래 filtered useMemo가 정상적으로 메모이즈된다.
+  const typesParam = searchParams.get('types') ?? ''
+  const gensParam = searchParams.get('gens') ?? ''
+  const query = searchParams.get('q') ?? ''
+  const selectedTypes = useMemo(
+    () => (typesParam ? (typesParam.split(',') as TypeName[]) : []),
+    [typesParam],
+  )
+  const selectedGenerations = useMemo(() => (gensParam ? gensParam.split(',').map(Number) : []), [gensParam])
+
+  function updateParams(next: { q?: string; types?: TypeName[]; gens?: number[] }) {
+    const params = new URLSearchParams(searchParams)
+    const q = next.q ?? query
+    const types = next.types ?? selectedTypes
+    const gens = next.gens ?? selectedGenerations
+    if (q) params.set('q', q)
+    else params.delete('q')
+    if (types.length > 0) params.set('types', types.join(','))
+    else params.delete('types')
+    if (gens.length > 0) params.set('gens', gens.join(','))
+    else params.delete('gens')
+    setSearchParams(params, { replace: true })
+  }
 
   const filtered = useMemo(() => {
     return SAMPLE_POKEMON.filter((pokemon) => {
@@ -39,17 +62,21 @@ export function PokedexPage() {
       <input
         type="search"
         value={query}
-        onChange={(e) => setQuery(e.target.value)}
+        onChange={(e) => updateParams({ q: e.target.value })}
         placeholder="이름 또는 번호로 검색"
         className="mb-3 h-10 w-full rounded-button border border-border px-3 text-sm"
       />
 
       <div className="mb-3">
-        <GenerationFilter selected={selectedGenerations} onChange={setSelectedGenerations} generations={GENERATIONS} />
+        <GenerationFilter
+          selected={selectedGenerations}
+          onChange={(gens) => updateParams({ gens })}
+          generations={GENERATIONS}
+        />
       </div>
 
       <div className="mb-6">
-        <TypeFilter selected={selectedTypes} onChange={setSelectedTypes} />
+        <TypeFilter selected={selectedTypes} onChange={(types) => updateParams({ types })} />
       </div>
 
       {filtered.length === 0 ? (
@@ -57,7 +84,13 @@ export function PokedexPage() {
       ) : (
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6">
           {filtered.map((pokemon) => (
-            <PokemonCard key={pokemon.id} pokemon={pokemon} onClick={(id) => navigate(`/pokemon/${id}`)} />
+            <PokemonCard
+              key={pokemon.id}
+              pokemon={pokemon}
+              onClick={(id) =>
+                navigate(`/pokemon/${id}`, { state: { backTo: location.pathname + location.search } })
+              }
+            />
           ))}
         </div>
       )}
