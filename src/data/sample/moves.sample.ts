@@ -90,6 +90,37 @@ export const LEARNSETS: Record<number, Learnset[]> = {
       machines: [TM_TOXIC, TM_MEGA_DRAIN, TM_SOLAR_BEAM, TM_EARTHQUAKE, HM_CUT, HM_STRENGTH],
     },
   ],
+  // 진화체는 이전 단계에서 배운 기술(저레벨)을 그대로 이어받고, 고유 기술은 더 높은 레벨에서 배운다.
+  2: [
+    {
+      version: '레드·블루',
+      levelUp: [
+        { moveId: 1, level: 1 },
+        { moveId: 2, level: 1 },
+        { moveId: 10, level: 1 },
+        { moveId: 11, level: 1 },
+        { moveId: 12, level: 22 },
+        { moveId: 14, level: 30 },
+        { moveId: 13, level: 44 },
+      ],
+      machines: [TM_TOXIC, TM_MEGA_DRAIN, TM_SOLAR_BEAM, TM_EARTHQUAKE, HM_CUT, HM_STRENGTH],
+    },
+  ],
+  3: [
+    {
+      version: '레드·블루',
+      levelUp: [
+        { moveId: 1, level: 1 },
+        { moveId: 2, level: 1 },
+        { moveId: 10, level: 1 },
+        { moveId: 11, level: 1 },
+        { moveId: 12, level: 25 },
+        { moveId: 14, level: 33 },
+        { moveId: 13, level: 50 },
+      ],
+      machines: [TM_TOXIC, TM_MEGA_DRAIN, TM_SOLAR_BEAM, TM_EARTHQUAKE, HM_CUT, HM_STRENGTH],
+    },
+  ],
   4: [
     {
       version: '레드·블루',
@@ -100,6 +131,21 @@ export const LEARNSETS: Record<number, Learnset[]> = {
         { moveId: 70, level: 15 },
         { moveId: 32, level: 22 },
         { moveId: 31, level: 38 },
+      ],
+      machines: [TM_FIRE_PUNCH, TM_FLAMETHROWER, TM_EARTHQUAKE, HM_CUT, HM_STRENGTH],
+    },
+  ],
+  5: [
+    {
+      version: '레드·블루',
+      levelUp: [
+        { moveId: 1, level: 1 },
+        { moveId: 60, level: 1 },
+        { moveId: 30, level: 1 },
+        { moveId: 70, level: 1 },
+        { moveId: 32, level: 24 },
+        { moveId: 42, level: 36 },
+        { moveId: 31, level: 46 },
       ],
       machines: [TM_FIRE_PUNCH, TM_FLAMETHROWER, TM_EARTHQUAKE, HM_CUT, HM_STRENGTH],
     },
@@ -168,6 +214,48 @@ export const LEARNSETS: Record<number, Learnset[]> = {
       machines: [TM_TOXIC, HM_CUT, HM_STRENGTH],
     },
   ],
+  // 이브이의 분기 진화체: 저레벨 기술은 이브이와 동일하게 이어받고, 각자 속성에 맞는 고유 기술을 배운다.
+  134: [
+    {
+      version: '레드·블루',
+      levelUp: [
+        { moveId: 1, level: 1 },
+        { moveId: 60, level: 1 },
+        { moveId: 3, level: 15 },
+        { moveId: 51, level: 28 },
+        { moveId: 52, level: 45 },
+      ],
+      machines: [TM_TOXIC, TM_ICE_BEAM, HM_CUT, HM_SURF, HM_STRENGTH],
+    },
+  ],
+  135: [
+    {
+      version: '레드·블루',
+      levelUp: [
+        { moveId: 1, level: 1 },
+        { moveId: 60, level: 1 },
+        { moveId: 3, level: 15 },
+        { moveId: 61, level: 30 },
+        { moveId: 84, level: 38 },
+        { moveId: 62, level: 48 },
+      ],
+      machines: [TM_TOXIC, TM_THUNDERBOLT, HM_CUT, HM_STRENGTH],
+    },
+  ],
+  136: [
+    {
+      version: '레드·블루',
+      levelUp: [
+        { moveId: 1, level: 1 },
+        { moveId: 60, level: 1 },
+        { moveId: 3, level: 15 },
+        { moveId: 30, level: 30 },
+        { moveId: 42, level: 38 },
+        { moveId: 31, level: 48 },
+      ],
+      machines: [TM_TOXIC, TM_FLAMETHROWER, TM_FIRE_PUNCH, HM_CUT, HM_STRENGTH],
+    },
+  ],
   150: [
     {
       version: '레드·블루',
@@ -187,10 +275,16 @@ export const LEARNSETS: Record<number, Learnset[]> = {
 /** 1세대 4기 추천 배치 (입문자용 표준 구성) */
 export const RECOMMENDED_MOVESET: Record<number, number[]> = {
   1: [10, 11, 21, 13],
+  2: [11, 12, 21, 13],
+  3: [12, 21, 13, 72],
   4: [31, 42, 72, 1],
+  5: [31, 42, 72, 1],
   6: [31, 43, 42, 72],
   7: [52, 71, 1, 21],
   25: [62, 3, 84, 90],
   133: [1, 3, 60, 21],
+  134: [52, 71, 21, 51],
+  135: [62, 84, 61, 3],
+  136: [31, 42, 30, 1],
   150: [81, 71, 62, 4],
 }
