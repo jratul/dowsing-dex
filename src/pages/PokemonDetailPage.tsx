@@ -1,13 +1,16 @@
-import { Link, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { Card } from '../components/ui/Card'
 import { TypeBadge } from '../components/pokemon/TypeBadge'
 import { StatChart } from '../components/pokemon/StatChart'
 import { TypeDefense } from '../components/pokemon/TypeDefense'
 import { EvolutionTree } from '../components/pokemon/EvolutionTree'
+import { MoveList } from '../components/pokemon/MoveList'
 import { SAMPLE_POKEMON, findEvolutionLine, findSamplePokemon } from '../data/sample/pokemon.sample'
+import { LEARNSETS, RECOMMENDED_MOVESET, findMove } from '../data/sample/moves.sample'
 import { COLOR } from '../lib/typeChart'
 
 export function PokemonDetailPage() {
+  const navigate = useNavigate()
   const { id } = useParams<{ id: string }>()
   const pokemon = SAMPLE_POKEMON.find((p) => p.id === Number(id))
 
@@ -23,6 +26,7 @@ export function PokemonDetailPage() {
   }
 
   const evolutionLine = findEvolutionLine(pokemon.id)
+  const learnsets = LEARNSETS[pokemon.id]
   const dexNumber = String(pokemon.id).padStart(3, '0')
   const accentColor = COLOR[pokemon.types[0]]
 
@@ -92,7 +96,19 @@ export function PokemonDetailPage() {
       {evolutionLine && (
         <Card className="p-4">
           <h2 className="mb-3 text-sm font-black text-ink-faint">진화</h2>
-          <EvolutionTree stages={evolutionLine} currentPokemonId={pokemon.id} renderPokemon={findSamplePokemon} />
+          <EvolutionTree
+            stages={evolutionLine}
+            currentPokemonId={pokemon.id}
+            renderPokemon={findSamplePokemon}
+            onSelect={(targetId) => navigate(`/pokemon/${targetId}`)}
+          />
+        </Card>
+      )}
+
+      {learnsets && (
+        <Card className="mt-6 p-4">
+          <h2 className="mb-3 text-sm font-black text-ink-faint">기술</h2>
+          <MoveList learnsets={learnsets} findMove={findMove} recommendedMoveIds={RECOMMENDED_MOVESET[pokemon.id]} />
         </Card>
       )}
     </div>

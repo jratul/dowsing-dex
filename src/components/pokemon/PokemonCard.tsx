@@ -20,9 +20,16 @@ export function PokemonCard({ pokemon, onClick }: PokemonCardProps) {
       <div className="flex flex-col items-center gap-2">
         <span className="self-start text-xs font-bold text-ink-faint">#{String(pokemon.id).padStart(3, '0')}</span>
         {pokemon.spriteUrl ? (
-          <img src={pokemon.spriteUrl} alt={pokemon.nameKo} width={72} height={72} className="h-18 w-18" />
+          <img
+            src={pokemon.spriteUrl}
+            alt={pokemon.nameKo}
+            width={96}
+            height={96}
+            className="h-32 w-32"
+            style={{ imageRendering: 'pixelated' }}
+          />
         ) : (
-          <div className="h-18 w-18" />
+          <div className="h-32 w-32" />
         )}
         <span className="text-sm font-bold text-ink">{pokemon.nameKo}</span>
         <div className="flex gap-1.5">

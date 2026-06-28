@@ -5,35 +5,49 @@ export interface EvolutionTreeProps {
   stages: EvolutionStage[]
   currentPokemonId: number
   renderPokemon: (id: number) => { nameKo: string; spriteUrl?: string }
+  onSelect?: (id: number) => void
 }
 
 function StageNode({
   stage,
   currentPokemonId,
   renderPokemon,
+  onSelect,
 }: {
   stage: EvolutionStage
   currentPokemonId: number
   renderPokemon: (id: number) => { nameKo: string; spriteUrl?: string }
+  onSelect?: (id: number) => void
 }) {
   const info = renderPokemon(stage.pokemonId)
   const isCurrent = stage.pokemonId === currentPokemonId
 
   return (
     <div className="flex items-center gap-3">
-      <div className="flex flex-col items-center gap-1">
+      <button
+        type="button"
+        onClick={onSelect ? () => onSelect(stage.pokemonId) : undefined}
+        disabled={!onSelect}
+        className="flex flex-col items-center gap-1 disabled:cursor-default"
+      >
         <div
           className={cn(
-            'flex h-16 w-16 items-center justify-center rounded-full border-2',
-            isCurrent ? 'border-brand-red bg-brand-red/10' : 'border-border',
+            'flex h-24 w-24 items-center justify-center rounded-full border-2',
+            isCurrent ? 'border-brand-red bg-brand-red/10' : 'border-border hover:bg-surface-hover',
           )}
         >
           {info.spriteUrl ? (
-            <img src={info.spriteUrl} alt={info.nameKo} width={56} height={56} />
+            <img
+              src={info.spriteUrl}
+              alt={info.nameKo}
+              width={80}
+              height={80}
+              style={{ imageRendering: 'pixelated' }}
+            />
           ) : null}
         </div>
         <span className={cn('text-xs font-bold', isCurrent ? 'text-brand-red' : 'text-ink')}>{info.nameKo}</span>
-      </div>
+      </button>
 
       {stage.children && stage.children.length > 0 && (
         <div className="flex flex-col gap-3">
@@ -43,7 +57,7 @@ function StageNode({
                 <span>→</span>
                 {child.trigger && <span>{child.trigger}</span>}
               </div>
-              <StageNode stage={child} currentPokemonId={currentPokemonId} renderPokemon={renderPokemon} />
+              <StageNode stage={child} currentPokemonId={currentPokemonId} renderPokemon={renderPokemon} onSelect={onSelect} />
             </div>
           ))}
         </div>
@@ -52,11 +66,17 @@ function StageNode({
   )
 }
 
-export function EvolutionTree({ stages, currentPokemonId, renderPokemon }: EvolutionTreeProps) {
+export function EvolutionTree({ stages, currentPokemonId, renderPokemon, onSelect }: EvolutionTreeProps) {
   return (
-    <div className="flex flex-col gap-4 overflow-x-auto">
+    <div className="scrollbar-hide flex flex-col gap-4 overflow-x-auto">
       {stages.map((stage) => (
-        <StageNode key={stage.pokemonId} stage={stage} currentPokemonId={currentPokemonId} renderPokemon={renderPokemon} />
+        <StageNode
+          key={stage.pokemonId}
+          stage={stage}
+          currentPokemonId={currentPokemonId}
+          renderPokemon={renderPokemon}
+          onSelect={onSelect}
+        />
       ))}
     </div>
   )
