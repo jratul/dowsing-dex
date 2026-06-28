@@ -8,6 +8,7 @@ import { MoveList } from '../components/pokemon/MoveList'
 import { SAMPLE_POKEMON, findEvolutionLine, findSamplePokemon } from '../data/sample/pokemon.sample'
 import { LEARNSETS, RECOMMENDED_MOVESET, findMove } from '../data/sample/moves.sample'
 import { COLOR } from '../lib/typeChart'
+import { cn } from '../lib/cn'
 
 export function PokemonDetailPage() {
   const navigate = useNavigate()
@@ -30,11 +31,39 @@ export function PokemonDetailPage() {
   const dexNumber = String(pokemon.id).padStart(3, '0')
   const accentColor = COLOR[pokemon.types[0]]
 
+  const pokemonIndex = SAMPLE_POKEMON.findIndex((p) => p.id === pokemon.id)
+  const prevPokemon = pokemonIndex > 0 ? SAMPLE_POKEMON[pokemonIndex - 1] : undefined
+  const nextPokemon = pokemonIndex < SAMPLE_POKEMON.length - 1 ? SAMPLE_POKEMON[pokemonIndex + 1] : undefined
+
   return (
     <div className="mx-auto max-w-4xl px-4 py-6">
-      <Link to="/pokedex" className="mb-3 inline-block text-sm font-bold text-ink-muted hover:text-ink">
-        ← 도감으로
-      </Link>
+      <div className="mb-3 flex items-center justify-between">
+        <Link to="/pokedex" className="inline-block text-sm font-bold text-ink-muted hover:text-ink">
+          ← 도감으로
+        </Link>
+        <div className="flex gap-2">
+          <Link
+            to={prevPokemon ? `/pokemon/${prevPokemon.id}` : '#'}
+            aria-disabled={!prevPokemon}
+            className={cn(
+              'rounded-chip border border-border-strong px-3 py-1.5 text-sm font-bold',
+              prevPokemon ? 'text-ink hover:bg-surface-hover' : 'pointer-events-none text-ink-faint opacity-40',
+            )}
+          >
+            ← 이전
+          </Link>
+          <Link
+            to={nextPokemon ? `/pokemon/${nextPokemon.id}` : '#'}
+            aria-disabled={!nextPokemon}
+            className={cn(
+              'rounded-chip border border-border-strong px-3 py-1.5 text-sm font-bold',
+              nextPokemon ? 'text-ink hover:bg-surface-hover' : 'pointer-events-none text-ink-faint opacity-40',
+            )}
+          >
+            다음 →
+          </Link>
+        </div>
+      </div>
 
       <div className="mb-6 grid gap-4 sm:grid-cols-2">
         <Card className="relative flex items-center justify-center overflow-hidden p-6" style={{ backgroundColor: `${accentColor}1a` }}>
