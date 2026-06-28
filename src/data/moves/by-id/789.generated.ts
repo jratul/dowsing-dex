@@ -1,0 +1,55 @@
+// 이 파일은 scripts/fetch-pokedex.mjs 로 PokeAPI에서 생성됩니다. 직접 수정하지 마세요.
+import type { Learnset } from '../../../types/move'
+
+export const LEARNSETS: Learnset[] = [
+  {
+    "generation": "7세대",
+    "version": "썬·문",
+    "levelUp": [
+      {
+        "moveId": 100,
+        "level": 23
+      },
+      {
+        "moveId": 150,
+        "level": 1
+      }
+    ],
+    "machines": []
+  },
+  {
+    "generation": "8세대",
+    "version": "소드·실드",
+    "levelUp": [
+      {
+        "moveId": 100,
+        "level": 1
+      },
+      {
+        "moveId": 150,
+        "level": 1
+      }
+    ],
+    "machines": []
+  },
+  {
+    "generation": "9세대",
+    "version": "스칼렛·바이올렛",
+    "levelUp": [
+      {
+        "moveId": 100,
+        "level": 1
+      },
+      {
+        "moveId": 150,
+        "level": 1
+      }
+    ],
+    "machines": []
+  }
+]
+
+export const RECOMMENDED_MOVESET: number[] = [
+  100,
+  150
+]

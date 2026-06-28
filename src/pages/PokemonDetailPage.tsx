@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { Card } from '../components/ui/Card'
 import { TypeBadge } from '../components/pokemon/TypeBadge'
@@ -6,7 +7,8 @@ import { TypeDefense } from '../components/pokemon/TypeDefense'
 import { EvolutionTree } from '../components/pokemon/EvolutionTree'
 import { MoveList } from '../components/pokemon/MoveList'
 import { SAMPLE_POKEMON, findEvolutionLine, findSamplePokemon } from '../data/sample/pokemon.sample'
-import { LEARNSETS, RECOMMENDED_MOVESET, findMove } from '../data/sample/moves.sample'
+import { findMove, loadLearnsets } from '../data/sample/moves.sample'
+import type { Learnset } from '../types/move'
 import { COLOR } from '../lib/typeChart'
 import { cn } from '../lib/cn'
 
@@ -17,6 +19,20 @@ export function PokemonDetailPage() {
   const pokemon = SAMPLE_POKEMON.find((p) => p.id === Number(id))
   // 도감 목록에서 적용했던 필터를 그대로 유지한 채 돌아가기 위한 경로(없으면 기본 도감 경로).
   const backTo = (location.state as { backTo?: string } | null)?.backTo ?? '/pokedex'
+
+  // 포켓몬별 학습셋 파일은 상세 페이지에 들어왔을 때만 동적으로 불러온다(전체를 합치면 너무 큼).
+  const [moveData, setMoveData] = useState<{ learnsets: Learnset[]; recommended: number[] } | undefined>(undefined)
+  useEffect(() => {
+    setMoveData(undefined)
+    if (!pokemon) return
+    let cancelled = false
+    loadLearnsets(pokemon.id).then((data) => {
+      if (!cancelled) setMoveData(data)
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [pokemon])
 
   if (!pokemon) {
     return (
@@ -30,7 +46,7 @@ export function PokemonDetailPage() {
   }
 
   const evolutionLine = findEvolutionLine(pokemon.id)
-  const learnsets = LEARNSETS[pokemon.id]
+  const learnsets = moveData?.learnsets
   const dexNumber = String(pokemon.dexNumber).padStart(3, '0')
   const accentColor = COLOR[pokemon.types[0]]
 
@@ -81,6 +97,7 @@ export function PokemonDetailPage() {
               alt={pokemon.nameKo}
               width={180}
               height={180}
+              decoding="async"
               className="relative z-10"
             />
           )}
@@ -141,10 +158,10 @@ export function PokemonDetailPage() {
         </Card>
       )}
 
-      {learnsets && (
+      {learnsets && learnsets.length > 0 && (
         <Card className="mt-6 p-4">
           <h2 className="mb-3 text-sm font-black text-ink-faint">기술</h2>
-          <MoveList learnsets={learnsets} findMove={findMove} recommendedMoveIds={RECOMMENDED_MOVESET[pokemon.id]} />
+          <MoveList learnsets={learnsets} findMove={findMove} recommendedMoveIds={moveData?.recommended} />
         </Card>
       )}
 
@@ -155,7 +172,14 @@ export function PokemonDetailPage() {
             {pokemon.megaForms.map((mega) => (
               <div key={mega.label} className="flex flex-col items-center gap-2 rounded-card border border-border-strong p-4">
                 {(mega.artworkUrl ?? mega.spriteUrl) && (
-                  <img src={mega.artworkUrl ?? mega.spriteUrl} alt={mega.label} width={120} height={120} />
+                  <img
+                    src={mega.artworkUrl ?? mega.spriteUrl}
+                    alt={mega.label}
+                    width={120}
+                    height={120}
+                    loading="lazy"
+                    decoding="async"
+                  />
                 )}
                 <span className="text-sm font-bold text-ink">{mega.label}</span>
                 <div className="flex gap-2">

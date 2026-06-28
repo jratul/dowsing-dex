@@ -23,8 +23,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "씨앗 포켓몬",
     "heightM": 0.7,
     "weightKg": 6.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
   },
   {
     "id": 2,
@@ -47,8 +47,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "씨앗 포켓몬",
     "heightM": 1,
     "weightKg": 13,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/2.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/2.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/2.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png"
   },
   {
     "id": 3,
@@ -71,8 +71,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "씨앗 포켓몬",
     "heightM": 2,
     "weightKg": 100,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/3.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/3.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/3.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
     "megaForms": [
       {
         "label": "메가이상해꽃",
@@ -88,8 +88,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 120,
           "speed": 80
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10033.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10033.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10033.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10033.png"
       }
     ]
   },
@@ -113,8 +113,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "도롱뇽 포켓몬",
     "heightM": 0.6,
     "weightKg": 8.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/4.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/4.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/4.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
   },
   {
     "id": 5,
@@ -136,8 +136,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화염 포켓몬",
     "heightM": 1.1,
     "weightKg": 19,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/5.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/5.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/5.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png"
   },
   {
     "id": 6,
@@ -160,8 +160,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화염 포켓몬",
     "heightM": 1.7,
     "weightKg": 90.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/6.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/6.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/6.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
     "megaForms": [
       {
         "label": "메가리자몽 X",
@@ -177,8 +177,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 85,
           "speed": 100
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10034.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10034.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10034.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10034.png"
       },
       {
         "label": "메가리자몽 Y",
@@ -194,8 +194,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 115,
           "speed": 100
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10035.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10035.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10035.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10035.png"
       }
     ]
   },
@@ -219,8 +219,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꼬마거북 포켓몬",
     "heightM": 0.5,
     "weightKg": 9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/7.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/7.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/7.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"
   },
   {
     "id": 8,
@@ -242,8 +242,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "거북 포켓몬",
     "heightM": 1,
     "weightKg": 22.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/8.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/8.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/8.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png"
   },
   {
     "id": 9,
@@ -265,8 +265,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "껍질 포켓몬",
     "heightM": 1.6,
     "weightKg": 85.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/9.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/9.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/9.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png",
     "megaForms": [
       {
         "label": "메가거북왕",
@@ -281,8 +281,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 115,
           "speed": 78
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10036.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10036.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10036.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10036.png"
       }
     ]
   },
@@ -306,8 +306,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "애벌레 포켓몬",
     "heightM": 0.3,
     "weightKg": 2.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png"
   },
   {
     "id": 11,
@@ -329,8 +329,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "번데기 포켓몬",
     "heightM": 0.7,
     "weightKg": 9.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/11.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/11.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/11.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png"
   },
   {
     "id": 12,
@@ -353,8 +353,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "나비 포켓몬",
     "heightM": 1.1,
     "weightKg": 32,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/12.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/12.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/12.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png"
   },
   {
     "id": 13,
@@ -377,8 +377,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "송충이 포켓몬",
     "heightM": 0.3,
     "weightKg": 3.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/13.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/13.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/13.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png"
   },
   {
     "id": 14,
@@ -401,8 +401,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "번데기 포켓몬",
     "heightM": 0.6,
     "weightKg": 10,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/14.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/14.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/14.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png"
   },
   {
     "id": 15,
@@ -425,8 +425,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독벌 포켓몬",
     "heightM": 1,
     "weightKg": 29.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/15.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/15.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/15.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png",
     "megaForms": [
       {
         "label": "메가독침붕",
@@ -442,8 +442,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 80,
           "speed": 145
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10090.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10090.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10090.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10090.png"
       }
     ]
   },
@@ -468,8 +468,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "아기새 포켓몬",
     "heightM": 0.3,
     "weightKg": 1.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/16.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/16.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/16.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png"
   },
   {
     "id": 17,
@@ -492,8 +492,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "새 포켓몬",
     "heightM": 1.1,
     "weightKg": 30,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/17.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/17.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/17.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png"
   },
   {
     "id": 18,
@@ -516,8 +516,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "새 포켓몬",
     "heightM": 1.5,
     "weightKg": 39.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/18.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/18.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/18.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png",
     "megaForms": [
       {
         "label": "메가피죤투",
@@ -533,8 +533,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 80,
           "speed": 121
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10073.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10073.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10073.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10073.png"
       }
     ]
   },
@@ -558,8 +558,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쥐 포켓몬",
     "heightM": 0.3,
     "weightKg": 3.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/19.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/19.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/19.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png"
   },
   {
     "id": 20,
@@ -581,8 +581,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쥐 포켓몬",
     "heightM": 0.7,
     "weightKg": 18.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/20.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/20.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/20.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png"
   },
   {
     "id": 21,
@@ -605,8 +605,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "아기새 포켓몬",
     "heightM": 0.3,
     "weightKg": 2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/21.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/21.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/21.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png"
   },
   {
     "id": 22,
@@ -629,8 +629,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "부리 포켓몬",
     "heightM": 1.2,
     "weightKg": 38,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/22.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/22.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/22.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/22.png"
   },
   {
     "id": 23,
@@ -652,8 +652,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "뱀 포켓몬",
     "heightM": 2,
     "weightKg": 6.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/23.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/23.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/23.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png"
   },
   {
     "id": 24,
@@ -675,8 +675,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "코브라 포켓몬",
     "heightM": 3.5,
     "weightKg": 65,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/24.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/24.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/24.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png"
   },
   {
     "id": 25,
@@ -698,8 +698,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쥐 포켓몬",
     "heightM": 0.4,
     "weightKg": 6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/25.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/25.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/25.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
   },
   {
     "id": 26,
@@ -721,8 +721,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쥐 포켓몬",
     "heightM": 0.8,
     "weightKg": 30,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/26.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/26.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/26.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png"
   },
   {
     "id": 27,
@@ -744,8 +744,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쥐 포켓몬",
     "heightM": 0.6,
     "weightKg": 12,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/27.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/27.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/27.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png"
   },
   {
     "id": 28,
@@ -767,8 +767,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쥐 포켓몬",
     "heightM": 1,
     "weightKg": 29.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/28.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/28.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/28.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png"
   },
   {
     "id": 29,
@@ -790,8 +790,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독침 포켓몬",
     "heightM": 0.4,
     "weightKg": 7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/29.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/29.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/29.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png"
   },
   {
     "id": 30,
@@ -813,8 +813,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독침 포켓몬",
     "heightM": 0.8,
     "weightKg": 20,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/30.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/30.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/30.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png"
   },
   {
     "id": 31,
@@ -837,8 +837,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "드릴 포켓몬",
     "heightM": 1.3,
     "weightKg": 60,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/31.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/31.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/31.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png"
   },
   {
     "id": 32,
@@ -860,8 +860,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독침 포켓몬",
     "heightM": 0.5,
     "weightKg": 9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/32.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/32.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/32.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png"
   },
   {
     "id": 33,
@@ -883,8 +883,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독침 포켓몬",
     "heightM": 0.9,
     "weightKg": 19.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/33.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/33.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/33.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png"
   },
   {
     "id": 34,
@@ -907,8 +907,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "드릴 포켓몬",
     "heightM": 1.4,
     "weightKg": 62,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/34.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/34.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/34.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png"
   },
   {
     "id": 35,
@@ -930,8 +930,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "요정 포켓몬",
     "heightM": 0.6,
     "weightKg": 7.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/35.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/35.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/35.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png"
   },
   {
     "id": 36,
@@ -953,8 +953,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "요정 포켓몬",
     "heightM": 1.3,
     "weightKg": 40,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/36.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/36.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/36.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png"
   },
   {
     "id": 37,
@@ -976,8 +976,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "여우 포켓몬",
     "heightM": 0.6,
     "weightKg": 9.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/37.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/37.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/37.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png"
   },
   {
     "id": 38,
@@ -999,8 +999,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "여우 포켓몬",
     "heightM": 1.1,
     "weightKg": 19.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/38.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/38.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/38.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png"
   },
   {
     "id": 39,
@@ -1023,8 +1023,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풍선 포켓몬",
     "heightM": 0.5,
     "weightKg": 5.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/39.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/39.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/39.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png"
   },
   {
     "id": 40,
@@ -1047,8 +1047,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풍선 포켓몬",
     "heightM": 1,
     "weightKg": 12,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/40.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/40.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/40.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png"
   },
   {
     "id": 41,
@@ -1071,8 +1071,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "박쥐 포켓몬",
     "heightM": 0.8,
     "weightKg": 7.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/41.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/41.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/41.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png"
   },
   {
     "id": 42,
@@ -1095,8 +1095,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "박쥐 포켓몬",
     "heightM": 1.6,
     "weightKg": 55,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/42.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/42.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/42.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png"
   },
   {
     "id": 43,
@@ -1119,8 +1119,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "잡초 포켓몬",
     "heightM": 0.5,
     "weightKg": 5.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/43.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/43.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/43.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png"
   },
   {
     "id": 44,
@@ -1143,8 +1143,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "잡초 포켓몬",
     "heightM": 0.8,
     "weightKg": 8.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/44.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/44.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/44.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png"
   },
   {
     "id": 45,
@@ -1167,8 +1167,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꽃 포켓몬",
     "heightM": 1.2,
     "weightKg": 18.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/45.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/45.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/45.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png"
   },
   {
     "id": 46,
@@ -1191,8 +1191,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "버섯 포켓몬",
     "heightM": 0.3,
     "weightKg": 5.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/46.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/46.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/46.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png"
   },
   {
     "id": 47,
@@ -1215,8 +1215,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "버섯 포켓몬",
     "heightM": 1,
     "weightKg": 29.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/47.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/47.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/47.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/47.png"
   },
   {
     "id": 48,
@@ -1239,8 +1239,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "곤충 포켓몬",
     "heightM": 1,
     "weightKg": 30,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/48.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/48.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/48.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png"
   },
   {
     "id": 49,
@@ -1263,8 +1263,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독나방 포켓몬",
     "heightM": 1.5,
     "weightKg": 12.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/49.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/49.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/49.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/49.png"
   },
   {
     "id": 50,
@@ -1286,8 +1286,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "두더지 포켓몬",
     "heightM": 0.2,
     "weightKg": 0.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/50.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/50.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/50.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png"
   },
   {
     "id": 51,
@@ -1309,8 +1309,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "두더지 포켓몬",
     "heightM": 0.7,
     "weightKg": 33.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/51.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/51.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/51.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/51.png"
   },
   {
     "id": 52,
@@ -1332,8 +1332,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "요괴고양이 포켓몬",
     "heightM": 0.4,
     "weightKg": 4.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/52.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/52.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/52.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png"
   },
   {
     "id": 53,
@@ -1355,8 +1355,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "샴고양이 포켓몬",
     "heightM": 1,
     "weightKg": 32,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/53.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/53.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/53.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/53.png"
   },
   {
     "id": 54,
@@ -1378,8 +1378,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "오리 포켓몬",
     "heightM": 0.8,
     "weightKg": 19.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/54.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/54.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/54.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png"
   },
   {
     "id": 55,
@@ -1401,8 +1401,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "오리 포켓몬",
     "heightM": 1.7,
     "weightKg": 76.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/55.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/55.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/55.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png"
   },
   {
     "id": 56,
@@ -1424,8 +1424,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "돈숭이 포켓몬",
     "heightM": 0.5,
     "weightKg": 28,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/56.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/56.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/56.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/56.png"
   },
   {
     "id": 57,
@@ -1447,8 +1447,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "돈숭이 포켓몬",
     "heightM": 1,
     "weightKg": 32,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/57.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/57.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/57.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/57.png"
   },
   {
     "id": 58,
@@ -1470,8 +1470,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "강아지 포켓몬",
     "heightM": 0.7,
     "weightKg": 19,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/58.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/58.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/58.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png"
   },
   {
     "id": 59,
@@ -1493,8 +1493,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "전설 포켓몬",
     "heightM": 1.9,
     "weightKg": 155,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/59.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/59.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/59.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png"
   },
   {
     "id": 60,
@@ -1516,8 +1516,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "올챙이 포켓몬",
     "heightM": 0.6,
     "weightKg": 12.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/60.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/60.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/60.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png"
   },
   {
     "id": 61,
@@ -1539,8 +1539,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "올챙이 포켓몬",
     "heightM": 1,
     "weightKg": 20,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/61.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/61.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/61.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png"
   },
   {
     "id": 62,
@@ -1563,8 +1563,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "올챙이 포켓몬",
     "heightM": 1.3,
     "weightKg": 54,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/62.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/62.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/62.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png"
   },
   {
     "id": 63,
@@ -1586,8 +1586,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "초능력 포켓몬",
     "heightM": 0.9,
     "weightKg": 19.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/63.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/63.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/63.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png"
   },
   {
     "id": 64,
@@ -1609,8 +1609,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "초능력 포켓몬",
     "heightM": 1.3,
     "weightKg": 56.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/64.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/64.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/64.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png"
   },
   {
     "id": 65,
@@ -1632,8 +1632,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "초능력 포켓몬",
     "heightM": 1.5,
     "weightKg": 48,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/65.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/65.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/65.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png",
     "megaForms": [
       {
         "label": "메가후딘",
@@ -1648,8 +1648,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 105,
           "speed": 150
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10037.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10037.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10037.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10037.png"
       }
     ]
   },
@@ -1673,8 +1673,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "괴력 포켓몬",
     "heightM": 0.8,
     "weightKg": 19.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/66.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/66.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/66.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png"
   },
   {
     "id": 67,
@@ -1696,8 +1696,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "괴력 포켓몬",
     "heightM": 1.5,
     "weightKg": 70.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/67.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/67.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/67.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png"
   },
   {
     "id": 68,
@@ -1719,8 +1719,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "괴력 포켓몬",
     "heightM": 1.6,
     "weightKg": 130,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/68.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/68.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/68.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png"
   },
   {
     "id": 69,
@@ -1743,8 +1743,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꽃 포켓몬",
     "heightM": 0.7,
     "weightKg": 4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/69.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/69.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/69.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png"
   },
   {
     "id": 70,
@@ -1767,8 +1767,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "파리잡이 포켓몬",
     "heightM": 1,
     "weightKg": 6.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/70.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/70.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/70.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png"
   },
   {
     "id": 71,
@@ -1791,8 +1791,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "파리잡이 포켓몬",
     "heightM": 1.7,
     "weightKg": 15.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/71.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/71.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/71.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png"
   },
   {
     "id": 72,
@@ -1815,8 +1815,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "해파리 포켓몬",
     "heightM": 0.9,
     "weightKg": 45.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/72.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/72.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/72.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/72.png"
   },
   {
     "id": 73,
@@ -1839,8 +1839,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "해파리 포켓몬",
     "heightM": 1.6,
     "weightKg": 55,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/73.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/73.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/73.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/73.png"
   },
   {
     "id": 74,
@@ -1863,8 +1863,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "암석 포켓몬",
     "heightM": 0.4,
     "weightKg": 20,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/74.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/74.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/74.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png"
   },
   {
     "id": 75,
@@ -1887,8 +1887,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "암석 포켓몬",
     "heightM": 1,
     "weightKg": 105,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/75.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/75.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/75.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png"
   },
   {
     "id": 76,
@@ -1911,8 +1911,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "메가톤 포켓몬",
     "heightM": 1.4,
     "weightKg": 300,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/76.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/76.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/76.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png"
   },
   {
     "id": 77,
@@ -1934,8 +1934,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불의말 포켓몬",
     "heightM": 1,
     "weightKg": 30,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/77.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/77.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/77.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/77.png"
   },
   {
     "id": 78,
@@ -1957,8 +1957,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불의말 포켓몬",
     "heightM": 1.7,
     "weightKg": 95,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/78.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/78.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/78.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png"
   },
   {
     "id": 79,
@@ -1981,8 +1981,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "얼간이 포켓몬",
     "heightM": 1.2,
     "weightKg": 36,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/79.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/79.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/79.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/79.png"
   },
   {
     "id": 80,
@@ -2005,8 +2005,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "기생 포켓몬",
     "heightM": 1.6,
     "weightKg": 78.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/80.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/80.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/80.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/80.png",
     "megaForms": [
       {
         "label": "메가야도란",
@@ -2022,8 +2022,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 80,
           "speed": 30
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10071.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10071.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10071.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10071.png"
       }
     ]
   },
@@ -2048,8 +2048,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "자석 포켓몬",
     "heightM": 0.3,
     "weightKg": 6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/81.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/81.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/81.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png"
   },
   {
     "id": 82,
@@ -2072,8 +2072,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "자석 포켓몬",
     "heightM": 1,
     "weightKg": 60,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/82.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/82.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/82.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/82.png"
   },
   {
     "id": 83,
@@ -2096,8 +2096,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "청둥오리 포켓몬",
     "heightM": 0.8,
     "weightKg": 15,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/83.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/83.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/83.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/83.png"
   },
   {
     "id": 84,
@@ -2120,8 +2120,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쌍둥이새 포켓몬",
     "heightM": 1.4,
     "weightKg": 39.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/84.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/84.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/84.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/84.png"
   },
   {
     "id": 85,
@@ -2144,8 +2144,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "세쌍둥이새 포켓몬",
     "heightM": 1.8,
     "weightKg": 85.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/85.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/85.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/85.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png"
   },
   {
     "id": 86,
@@ -2167,8 +2167,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "강치 포켓몬",
     "heightM": 1.1,
     "weightKg": 90,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/86.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/86.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/86.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/86.png"
   },
   {
     "id": 87,
@@ -2191,8 +2191,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "강치 포켓몬",
     "heightM": 1.7,
     "weightKg": 120,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/87.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/87.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/87.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/87.png"
   },
   {
     "id": 88,
@@ -2214,8 +2214,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "진흙 포켓몬",
     "heightM": 0.9,
     "weightKg": 30,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/88.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/88.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/88.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/88.png"
   },
   {
     "id": 89,
@@ -2237,8 +2237,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "진흙 포켓몬",
     "heightM": 1.2,
     "weightKg": 30,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/89.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/89.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/89.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/89.png"
   },
   {
     "id": 90,
@@ -2260,8 +2260,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "두조개 포켓몬",
     "heightM": 0.3,
     "weightKg": 4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/90.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/90.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/90.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/90.png"
   },
   {
     "id": 91,
@@ -2284,8 +2284,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "두조개 포켓몬",
     "heightM": 1.5,
     "weightKg": 132.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/91.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/91.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/91.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/91.png"
   },
   {
     "id": 92,
@@ -2308,8 +2308,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가스 포켓몬",
     "heightM": 1.3,
     "weightKg": 0.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/92.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/92.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/92.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png"
   },
   {
     "id": 93,
@@ -2332,8 +2332,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가스 포켓몬",
     "heightM": 1.6,
     "weightKg": 0.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/93.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/93.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/93.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/93.png"
   },
   {
     "id": 94,
@@ -2356,8 +2356,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "그림자 포켓몬",
     "heightM": 1.5,
     "weightKg": 40.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/94.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/94.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/94.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png",
     "megaForms": [
       {
         "label": "메가팬텀",
@@ -2373,8 +2373,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 95,
           "speed": 130
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10038.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10038.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10038.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10038.png"
       }
     ]
   },
@@ -2399,8 +2399,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "돌뱀 포켓몬",
     "heightM": 8.8,
     "weightKg": 210,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/95.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/95.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/95.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png"
   },
   {
     "id": 96,
@@ -2422,8 +2422,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "최면 포켓몬",
     "heightM": 1,
     "weightKg": 32.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/96.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/96.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/96.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/96.png"
   },
   {
     "id": 97,
@@ -2445,8 +2445,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "최면 포켓몬",
     "heightM": 1.6,
     "weightKg": 75.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/97.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/97.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/97.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/97.png"
   },
   {
     "id": 98,
@@ -2468,8 +2468,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "게 포켓몬",
     "heightM": 0.4,
     "weightKg": 6.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/98.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/98.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/98.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/98.png"
   },
   {
     "id": 99,
@@ -2491,8 +2491,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "집게 포켓몬",
     "heightM": 1.3,
     "weightKg": 60,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/99.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/99.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/99.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/99.png"
   },
   {
     "id": 100,
@@ -2514,8 +2514,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "볼 포켓몬",
     "heightM": 0.5,
     "weightKg": 10.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/100.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/100.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/100.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png"
   },
   {
     "id": 101,
@@ -2537,8 +2537,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "볼 포켓몬",
     "heightM": 1.2,
     "weightKg": 66.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/101.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/101.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/101.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/101.png"
   },
   {
     "id": 102,
@@ -2561,8 +2561,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "알 포켓몬",
     "heightM": 0.4,
     "weightKg": 2.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/102.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/102.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/102.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/102.png"
   },
   {
     "id": 103,
@@ -2585,8 +2585,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "야자열매 포켓몬",
     "heightM": 2,
     "weightKg": 120,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/103.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/103.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/103.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/103.png"
   },
   {
     "id": 104,
@@ -2608,8 +2608,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "고독 포켓몬",
     "heightM": 0.4,
     "weightKg": 6.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/104.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/104.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/104.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/104.png"
   },
   {
     "id": 105,
@@ -2631,8 +2631,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "뼈다귀 포켓몬",
     "heightM": 1,
     "weightKg": 45,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/105.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/105.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/105.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/105.png"
   },
   {
     "id": 106,
@@ -2654,8 +2654,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "킥 포켓몬",
     "heightM": 1.5,
     "weightKg": 49.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/106.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/106.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/106.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/106.png"
   },
   {
     "id": 107,
@@ -2677,8 +2677,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "펀치 포켓몬",
     "heightM": 1.4,
     "weightKg": 50.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/107.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/107.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/107.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/107.png"
   },
   {
     "id": 108,
@@ -2700,8 +2700,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "핥기 포켓몬",
     "heightM": 1.2,
     "weightKg": 65.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/108.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/108.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/108.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/108.png"
   },
   {
     "id": 109,
@@ -2723,8 +2723,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독가스 포켓몬",
     "heightM": 0.6,
     "weightKg": 1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/109.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/109.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/109.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png"
   },
   {
     "id": 110,
@@ -2746,8 +2746,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독가스 포켓몬",
     "heightM": 1.2,
     "weightKg": 9.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/110.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/110.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/110.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/110.png"
   },
   {
     "id": 111,
@@ -2770,8 +2770,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "뿔 포켓몬",
     "heightM": 1,
     "weightKg": 115,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/111.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/111.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/111.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/111.png"
   },
   {
     "id": 112,
@@ -2794,8 +2794,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "드릴 포켓몬",
     "heightM": 1.9,
     "weightKg": 120,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/112.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/112.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/112.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/112.png"
   },
   {
     "id": 113,
@@ -2817,8 +2817,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "알 포켓몬",
     "heightM": 1.1,
     "weightKg": 34.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/113.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/113.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/113.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png"
   },
   {
     "id": 114,
@@ -2840,8 +2840,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "넝쿨 포켓몬",
     "heightM": 1,
     "weightKg": 35,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/114.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/114.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/114.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/114.png"
   },
   {
     "id": 115,
@@ -2863,8 +2863,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가족 포켓몬",
     "heightM": 2.2,
     "weightKg": 80,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/115.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/115.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/115.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png",
     "megaForms": [
       {
         "label": "메가캥카",
@@ -2879,8 +2879,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 100,
           "speed": 100
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10039.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10039.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10039.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10039.png"
       }
     ]
   },
@@ -2904,8 +2904,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "드래곤 포켓몬",
     "heightM": 0.4,
     "weightKg": 8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/116.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/116.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/116.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/116.png"
   },
   {
     "id": 117,
@@ -2927,8 +2927,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "드래곤 포켓몬",
     "heightM": 1.2,
     "weightKg": 25,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/117.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/117.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/117.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/117.png"
   },
   {
     "id": 118,
@@ -2950,8 +2950,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "금붕어 포켓몬",
     "heightM": 0.6,
     "weightKg": 15,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/118.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/118.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/118.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png"
   },
   {
     "id": 119,
@@ -2973,8 +2973,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "금붕어 포켓몬",
     "heightM": 1.3,
     "weightKg": 39,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/119.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/119.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/119.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png"
   },
   {
     "id": 120,
@@ -2996,8 +2996,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "별 포켓몬",
     "heightM": 0.8,
     "weightKg": 34.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/120.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/120.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/120.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png"
   },
   {
     "id": 121,
@@ -3020,8 +3020,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "수수께끼 포켓몬",
     "heightM": 1.1,
     "weightKg": 80,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/121.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/121.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/121.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png"
   },
   {
     "id": 122,
@@ -3044,8 +3044,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "배리어 포켓몬",
     "heightM": 1.3,
     "weightKg": 54.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/122.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/122.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/122.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/122.png"
   },
   {
     "id": 123,
@@ -3068,8 +3068,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "버마재비 포켓몬",
     "heightM": 1.5,
     "weightKg": 56,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/123.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/123.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/123.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/123.png"
   },
   {
     "id": 124,
@@ -3092,8 +3092,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "인간형태 포켓몬",
     "heightM": 1.4,
     "weightKg": 40.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/124.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/124.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/124.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/124.png"
   },
   {
     "id": 125,
@@ -3115,8 +3115,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "전기 포켓몬",
     "heightM": 1.1,
     "weightKg": 30,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/125.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/125.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/125.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/125.png"
   },
   {
     "id": 126,
@@ -3138,8 +3138,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불뿜기 포켓몬",
     "heightM": 1.3,
     "weightKg": 44.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/126.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/126.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/126.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/126.png"
   },
   {
     "id": 127,
@@ -3161,8 +3161,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "뿔집게 포켓몬",
     "heightM": 1.5,
     "weightKg": 55,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/127.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/127.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/127.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/127.png",
     "megaForms": [
       {
         "label": "메가쁘사이저",
@@ -3178,8 +3178,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 90,
           "speed": 105
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10040.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10040.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10040.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10040.png"
       }
     ]
   },
@@ -3203,8 +3203,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "성난소 포켓몬",
     "heightM": 1.4,
     "weightKg": 88.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/128.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/128.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/128.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/128.png"
   },
   {
     "id": 129,
@@ -3226,8 +3226,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "물고기 포켓몬",
     "heightM": 0.9,
     "weightKg": 10,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/129.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/129.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/129.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png"
   },
   {
     "id": 130,
@@ -3250,8 +3250,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "흉악 포켓몬",
     "heightM": 6.5,
     "weightKg": 235,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/130.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/130.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/130.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png",
     "megaForms": [
       {
         "label": "메가갸라도스",
@@ -3267,8 +3267,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 130,
           "speed": 81
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10041.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10041.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10041.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10041.png"
       }
     ]
   },
@@ -3293,8 +3293,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "탈것 포켓몬",
     "heightM": 2.5,
     "weightKg": 220,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/131.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/131.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/131.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png"
   },
   {
     "id": 132,
@@ -3316,8 +3316,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "변신 포켓몬",
     "heightM": 0.3,
     "weightKg": 4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/132.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/132.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/132.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
   },
   {
     "id": 133,
@@ -3339,8 +3339,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "진화 포켓몬",
     "heightM": 0.3,
     "weightKg": 6.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/133.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/133.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/133.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png"
   },
   {
     "id": 134,
@@ -3362,8 +3362,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "거품뿜기 포켓몬",
     "heightM": 1,
     "weightKg": 29,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/134.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/134.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/134.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png"
   },
   {
     "id": 135,
@@ -3385,8 +3385,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "번개 포켓몬",
     "heightM": 0.8,
     "weightKg": 24.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/135.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/135.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/135.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png"
   },
   {
     "id": 136,
@@ -3408,8 +3408,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불꽃 포켓몬",
     "heightM": 0.9,
     "weightKg": 25,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/136.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/136.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/136.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png"
   },
   {
     "id": 137,
@@ -3431,8 +3431,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가상 포켓몬",
     "heightM": 0.8,
     "weightKg": 36.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/137.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/137.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/137.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/137.png"
   },
   {
     "id": 138,
@@ -3455,8 +3455,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "소용돌이 포켓몬",
     "heightM": 0.4,
     "weightKg": 7.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/138.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/138.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/138.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/138.png"
   },
   {
     "id": 139,
@@ -3479,8 +3479,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "소용돌이 포켓몬",
     "heightM": 1,
     "weightKg": 35,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/139.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/139.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/139.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/139.png"
   },
   {
     "id": 140,
@@ -3503,8 +3503,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "껍질 포켓몬",
     "heightM": 0.5,
     "weightKg": 11.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/140.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/140.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/140.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/140.png"
   },
   {
     "id": 141,
@@ -3527,8 +3527,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "껍질 포켓몬",
     "heightM": 1.3,
     "weightKg": 40.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/141.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/141.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/141.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/141.png"
   },
   {
     "id": 142,
@@ -3551,8 +3551,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화석 포켓몬",
     "heightM": 1.8,
     "weightKg": 59,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/142.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/142.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/142.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png",
     "megaForms": [
       {
         "label": "메가프테라",
@@ -3568,8 +3568,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 95,
           "speed": 150
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10042.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10042.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10042.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10042.png"
       }
     ]
   },
@@ -3593,8 +3593,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "졸음 포켓몬",
     "heightM": 2.1,
     "weightKg": 460,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/143.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/143.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/143.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png"
   },
   {
     "id": 144,
@@ -3617,8 +3617,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "냉동 포켓몬",
     "heightM": 1.7,
     "weightKg": 55.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/144.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/144.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/144.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png"
   },
   {
     "id": 145,
@@ -3641,8 +3641,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "전기 포켓몬",
     "heightM": 1.6,
     "weightKg": 52.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/145.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/145.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/145.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png"
   },
   {
     "id": 146,
@@ -3665,8 +3665,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화염 포켓몬",
     "heightM": 2,
     "weightKg": 60,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/146.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/146.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/146.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/146.png"
   },
   {
     "id": 147,
@@ -3688,8 +3688,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "드래곤 포켓몬",
     "heightM": 1.8,
     "weightKg": 3.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/147.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/147.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/147.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/147.png"
   },
   {
     "id": 148,
@@ -3711,8 +3711,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "드래곤 포켓몬",
     "heightM": 4,
     "weightKg": 16.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/148.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/148.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/148.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/148.png"
   },
   {
     "id": 149,
@@ -3735,8 +3735,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "드래곤 포켓몬",
     "heightM": 2.2,
     "weightKg": 210,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/149.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/149.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/149.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png"
   },
   {
     "id": 150,
@@ -3758,8 +3758,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "유전 포켓몬",
     "heightM": 2,
     "weightKg": 122,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/150.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/150.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/150.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
     "megaForms": [
       {
         "label": "메가뮤츠 X",
@@ -3775,8 +3775,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 100,
           "speed": 130
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10043.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10043.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10043.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10043.png"
       },
       {
         "label": "메가뮤츠 Y",
@@ -3791,8 +3791,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 120,
           "speed": 140
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10044.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10044.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10044.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10044.png"
       }
     ]
   },
@@ -3816,8 +3816,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "신종 포켓몬",
     "heightM": 0.4,
     "weightKg": 4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/151.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/151.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/151.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png"
   },
   {
     "id": 152,
@@ -3839,8 +3839,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "잎사귀 포켓몬",
     "heightM": 0.9,
     "weightKg": 6.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/152.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/152.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/152.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/152.png"
   },
   {
     "id": 153,
@@ -3862,8 +3862,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "잎사귀 포켓몬",
     "heightM": 1.2,
     "weightKg": 15.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/153.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/153.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/153.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/153.png"
   },
   {
     "id": 154,
@@ -3885,8 +3885,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "허브 포켓몬",
     "heightM": 1.8,
     "weightKg": 100.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/154.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/154.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/154.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/154.png"
   },
   {
     "id": 155,
@@ -3908,8 +3908,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불쥐 포켓몬",
     "heightM": 0.5,
     "weightKg": 7.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/155.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/155.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/155.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/155.png"
   },
   {
     "id": 156,
@@ -3931,8 +3931,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화산 포켓몬",
     "heightM": 0.9,
     "weightKg": 19,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/156.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/156.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/156.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/156.png"
   },
   {
     "id": 157,
@@ -3954,8 +3954,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화산 포켓몬",
     "heightM": 1.7,
     "weightKg": 79.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/157.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/157.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/157.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/157.png"
   },
   {
     "id": 158,
@@ -3977,8 +3977,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "큰턱 포켓몬",
     "heightM": 0.6,
     "weightKg": 9.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/158.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/158.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/158.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/158.png"
   },
   {
     "id": 159,
@@ -4000,8 +4000,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "큰턱 포켓몬",
     "heightM": 1.1,
     "weightKg": 25,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/159.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/159.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/159.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/159.png"
   },
   {
     "id": 160,
@@ -4023,8 +4023,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "큰턱 포켓몬",
     "heightM": 2.3,
     "weightKg": 88.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/160.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/160.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/160.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/160.png"
   },
   {
     "id": 161,
@@ -4046,8 +4046,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "망보기 포켓몬",
     "heightM": 0.8,
     "weightKg": 6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/161.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/161.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/161.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/161.png"
   },
   {
     "id": 162,
@@ -4069,8 +4069,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "긴몸통 포켓몬",
     "heightM": 1.8,
     "weightKg": 32.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/162.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/162.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/162.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/162.png"
   },
   {
     "id": 163,
@@ -4093,8 +4093,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "부엉이 포켓몬",
     "heightM": 0.7,
     "weightKg": 21.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/163.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/163.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/163.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/163.png"
   },
   {
     "id": 164,
@@ -4117,8 +4117,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "부엉이 포켓몬",
     "heightM": 1.6,
     "weightKg": 40.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/164.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/164.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/164.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/164.png"
   },
   {
     "id": 165,
@@ -4141,8 +4141,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "별다섯 포켓몬",
     "heightM": 1,
     "weightKg": 10.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/165.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/165.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/165.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/165.png"
   },
   {
     "id": 166,
@@ -4165,8 +4165,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "별다섯 포켓몬",
     "heightM": 1.4,
     "weightKg": 35.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/166.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/166.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/166.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/166.png"
   },
   {
     "id": 167,
@@ -4189,8 +4189,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "실뿜기 포켓몬",
     "heightM": 0.5,
     "weightKg": 8.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/167.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/167.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/167.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/167.png"
   },
   {
     "id": 168,
@@ -4213,8 +4213,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "롱다리 포켓몬",
     "heightM": 1.1,
     "weightKg": 33.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/168.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/168.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/168.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/168.png"
   },
   {
     "id": 169,
@@ -4237,8 +4237,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "박쥐 포켓몬",
     "heightM": 1.8,
     "weightKg": 75,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/169.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/169.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/169.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/169.png"
   },
   {
     "id": 170,
@@ -4261,8 +4261,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "아귀 포켓몬",
     "heightM": 0.5,
     "weightKg": 12,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/170.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/170.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/170.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/170.png"
   },
   {
     "id": 171,
@@ -4285,8 +4285,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "라이트 포켓몬",
     "heightM": 1.2,
     "weightKg": 22.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/171.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/171.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/171.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/171.png"
   },
   {
     "id": 172,
@@ -4308,8 +4308,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "아기쥐 포켓몬",
     "heightM": 0.3,
     "weightKg": 2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/172.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/172.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/172.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/172.png"
   },
   {
     "id": 173,
@@ -4331,8 +4331,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "별 포켓몬",
     "heightM": 0.3,
     "weightKg": 3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/173.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/173.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/173.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/173.png"
   },
   {
     "id": 174,
@@ -4355,8 +4355,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풍선 포켓몬",
     "heightM": 0.3,
     "weightKg": 1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/174.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/174.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/174.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/174.png"
   },
   {
     "id": 175,
@@ -4378,8 +4378,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "바늘알 포켓몬",
     "heightM": 0.3,
     "weightKg": 1.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/175.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/175.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/175.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/175.png"
   },
   {
     "id": 176,
@@ -4402,8 +4402,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "행복 포켓몬",
     "heightM": 0.6,
     "weightKg": 3.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/176.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/176.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/176.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/176.png"
   },
   {
     "id": 177,
@@ -4426,8 +4426,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "아기새 포켓몬",
     "heightM": 0.2,
     "weightKg": 2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/177.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/177.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/177.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/177.png"
   },
   {
     "id": 178,
@@ -4450,8 +4450,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "정령 포켓몬",
     "heightM": 1.5,
     "weightKg": 15,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/178.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/178.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/178.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/178.png"
   },
   {
     "id": 179,
@@ -4473,8 +4473,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "솜털 포켓몬",
     "heightM": 0.6,
     "weightKg": 7.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/179.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/179.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/179.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/179.png"
   },
   {
     "id": 180,
@@ -4496,8 +4496,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "솜털 포켓몬",
     "heightM": 0.8,
     "weightKg": 13.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/180.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/180.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/180.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/180.png"
   },
   {
     "id": 181,
@@ -4519,8 +4519,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "라이트 포켓몬",
     "heightM": 1.4,
     "weightKg": 61.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/181.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/181.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/181.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/181.png",
     "megaForms": [
       {
         "label": "메가전룡",
@@ -4536,8 +4536,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 110,
           "speed": 45
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10045.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10045.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10045.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10045.png"
       }
     ]
   },
@@ -4561,8 +4561,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꽃 포켓몬",
     "heightM": 0.4,
     "weightKg": 5.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/182.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/182.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/182.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/182.png"
   },
   {
     "id": 183,
@@ -4585,8 +4585,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "물쥐 포켓몬",
     "heightM": 0.4,
     "weightKg": 8.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/183.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/183.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/183.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/183.png"
   },
   {
     "id": 184,
@@ -4609,8 +4609,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "물토끼 포켓몬",
     "heightM": 0.8,
     "weightKg": 28.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/184.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/184.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/184.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/184.png"
   },
   {
     "id": 185,
@@ -4632,8 +4632,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "흉내 포켓몬",
     "heightM": 1.2,
     "weightKg": 38,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/185.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/185.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/185.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/185.png"
   },
   {
     "id": 186,
@@ -4655,8 +4655,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "개구리 포켓몬",
     "heightM": 1.1,
     "weightKg": 33.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/186.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/186.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/186.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/186.png"
   },
   {
     "id": 187,
@@ -4679,8 +4679,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "솜풀 포켓몬",
     "heightM": 0.4,
     "weightKg": 0.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/187.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/187.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/187.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/187.png"
   },
   {
     "id": 188,
@@ -4703,8 +4703,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "솜풀 포켓몬",
     "heightM": 0.6,
     "weightKg": 1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/188.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/188.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/188.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/188.png"
   },
   {
     "id": 189,
@@ -4727,8 +4727,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "솜풀 포켓몬",
     "heightM": 0.8,
     "weightKg": 3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/189.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/189.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/189.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/189.png"
   },
   {
     "id": 190,
@@ -4750,8 +4750,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "긴꼬리 포켓몬",
     "heightM": 0.8,
     "weightKg": 11.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/190.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/190.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/190.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/190.png"
   },
   {
     "id": 191,
@@ -4773,8 +4773,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "씨앗 포켓몬",
     "heightM": 0.3,
     "weightKg": 1.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/191.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/191.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/191.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/191.png"
   },
   {
     "id": 192,
@@ -4796,8 +4796,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "태양 포켓몬",
     "heightM": 0.8,
     "weightKg": 8.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/192.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/192.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/192.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/192.png"
   },
   {
     "id": 193,
@@ -4820,8 +4820,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "얇은날개 포켓몬",
     "heightM": 1.2,
     "weightKg": 38,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/193.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/193.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/193.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/193.png"
   },
   {
     "id": 194,
@@ -4844,8 +4844,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "수어 포켓몬",
     "heightM": 0.4,
     "weightKg": 8.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/194.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/194.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/194.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/194.png"
   },
   {
     "id": 195,
@@ -4868,8 +4868,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "수어 포켓몬",
     "heightM": 1.4,
     "weightKg": 75,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/195.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/195.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/195.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/195.png"
   },
   {
     "id": 196,
@@ -4891,8 +4891,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "태양 포켓몬",
     "heightM": 0.9,
     "weightKg": 26.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/196.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/196.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/196.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/196.png"
   },
   {
     "id": 197,
@@ -4914,8 +4914,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "달빛 포켓몬",
     "heightM": 1,
     "weightKg": 27,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/197.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/197.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/197.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png"
   },
   {
     "id": 198,
@@ -4938,8 +4938,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "어둠 포켓몬",
     "heightM": 0.5,
     "weightKg": 2.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/198.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/198.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/198.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/198.png"
   },
   {
     "id": 199,
@@ -4962,8 +4962,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "임금 포켓몬",
     "heightM": 2,
     "weightKg": 79.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/199.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/199.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/199.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/199.png"
   },
   {
     "id": 200,
@@ -4985,8 +4985,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "야명 포켓몬",
     "heightM": 0.7,
     "weightKg": 1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/200.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/200.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/200.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/200.png"
   },
   {
     "id": 201,
@@ -5008,8 +5008,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "심볼 포켓몬",
     "heightM": 0.5,
     "weightKg": 5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/201.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/201.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/201.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/201.png"
   },
   {
     "id": 202,
@@ -5031,8 +5031,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "참기 포켓몬",
     "heightM": 1.3,
     "weightKg": 28.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/202.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/202.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/202.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/202.png"
   },
   {
     "id": 203,
@@ -5055,8 +5055,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "긴목 포켓몬",
     "heightM": 1.5,
     "weightKg": 41.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/203.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/203.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/203.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/203.png"
   },
   {
     "id": 204,
@@ -5078,8 +5078,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "도롱이벌레 포켓몬",
     "heightM": 0.6,
     "weightKg": 7.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/204.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/204.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/204.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/204.png"
   },
   {
     "id": 205,
@@ -5102,8 +5102,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "도롱이벌레 포켓몬",
     "heightM": 1.2,
     "weightKg": 125.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/205.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/205.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/205.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/205.png"
   },
   {
     "id": 206,
@@ -5125,8 +5125,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "땅뱀 포켓몬",
     "heightM": 1.5,
     "weightKg": 14,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/206.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/206.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/206.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/206.png"
   },
   {
     "id": 207,
@@ -5149,8 +5149,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "날전갈 포켓몬",
     "heightM": 1.1,
     "weightKg": 64.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/207.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/207.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/207.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/207.png"
   },
   {
     "id": 208,
@@ -5173,8 +5173,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "철뱀 포켓몬",
     "heightM": 9.2,
     "weightKg": 400,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/208.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/208.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/208.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/208.png",
     "megaForms": [
       {
         "label": "메가강철톤",
@@ -5190,8 +5190,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 95,
           "speed": 30
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10072.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10072.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10072.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10072.png"
       }
     ]
   },
@@ -5215,8 +5215,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "요정 포켓몬",
     "heightM": 0.6,
     "weightKg": 7.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/209.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/209.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/209.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/209.png"
   },
   {
     "id": 210,
@@ -5238,8 +5238,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "요정 포켓몬",
     "heightM": 1.4,
     "weightKg": 48.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/210.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/210.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/210.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/210.png"
   },
   {
     "id": 211,
@@ -5262,8 +5262,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풍선 포켓몬",
     "heightM": 0.5,
     "weightKg": 3.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/211.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/211.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/211.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/211.png"
   },
   {
     "id": 212,
@@ -5286,8 +5286,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "집게 포켓몬",
     "heightM": 1.8,
     "weightKg": 118,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/212.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/212.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/212.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/212.png",
     "megaForms": [
       {
         "label": "메가핫삼",
@@ -5303,8 +5303,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 100,
           "speed": 75
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10046.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10046.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10046.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10046.png"
       }
     ]
   },
@@ -5329,8 +5329,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "발효 포켓몬",
     "heightM": 0.6,
     "weightKg": 20.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/213.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/213.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/213.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/213.png"
   },
   {
     "id": 214,
@@ -5353,8 +5353,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "외뿔 포켓몬",
     "heightM": 1.5,
     "weightKg": 54,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/214.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/214.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/214.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/214.png",
     "megaForms": [
       {
         "label": "메가헤라크로스",
@@ -5370,8 +5370,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 105,
           "speed": 75
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10047.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10047.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10047.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10047.png"
       }
     ]
   },
@@ -5396,8 +5396,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "갈고리손톱 포켓몬",
     "heightM": 0.9,
     "weightKg": 28,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/215.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/215.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/215.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/215.png"
   },
   {
     "id": 216,
@@ -5419,8 +5419,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "아기곰 포켓몬",
     "heightM": 0.6,
     "weightKg": 8.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/216.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/216.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/216.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/216.png"
   },
   {
     "id": 217,
@@ -5442,8 +5442,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "동면 포켓몬",
     "heightM": 1.8,
     "weightKg": 125.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/217.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/217.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/217.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/217.png"
   },
   {
     "id": 218,
@@ -5465,8 +5465,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "용암 포켓몬",
     "heightM": 0.7,
     "weightKg": 35,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/218.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/218.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/218.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/218.png"
   },
   {
     "id": 219,
@@ -5489,8 +5489,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "용암 포켓몬",
     "heightM": 0.8,
     "weightKg": 55,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/219.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/219.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/219.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/219.png"
   },
   {
     "id": 220,
@@ -5513,8 +5513,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "산돼지 포켓몬",
     "heightM": 0.4,
     "weightKg": 6.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/220.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/220.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/220.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/220.png"
   },
   {
     "id": 221,
@@ -5537,8 +5537,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "멧돼지 포켓몬",
     "heightM": 1.1,
     "weightKg": 55.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/221.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/221.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/221.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/221.png"
   },
   {
     "id": 222,
@@ -5561,8 +5561,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "산호 포켓몬",
     "heightM": 0.6,
     "weightKg": 5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/222.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/222.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/222.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/222.png"
   },
   {
     "id": 223,
@@ -5584,8 +5584,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "분사 포켓몬",
     "heightM": 0.6,
     "weightKg": 12,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/223.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/223.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/223.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/223.png"
   },
   {
     "id": 224,
@@ -5607,8 +5607,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "분사 포켓몬",
     "heightM": 0.9,
     "weightKg": 28.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/224.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/224.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/224.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/224.png"
   },
   {
     "id": 225,
@@ -5631,8 +5631,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "배달 포켓몬",
     "heightM": 0.9,
     "weightKg": 16,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/225.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/225.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/225.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/225.png"
   },
   {
     "id": 226,
@@ -5655,8 +5655,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "연 포켓몬",
     "heightM": 2.1,
     "weightKg": 220,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/226.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/226.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/226.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/226.png"
   },
   {
     "id": 227,
@@ -5679,8 +5679,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "갑옷새 포켓몬",
     "heightM": 1.7,
     "weightKg": 50.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/227.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/227.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/227.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/227.png"
   },
   {
     "id": 228,
@@ -5703,8 +5703,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "다크 포켓몬",
     "heightM": 0.6,
     "weightKg": 10.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/228.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/228.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/228.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/228.png"
   },
   {
     "id": 229,
@@ -5727,8 +5727,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "다크 포켓몬",
     "heightM": 1.4,
     "weightKg": 35,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/229.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/229.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/229.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/229.png",
     "megaForms": [
       {
         "label": "메가헬가",
@@ -5744,8 +5744,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 90,
           "speed": 115
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10048.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10048.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10048.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10048.png"
       }
     ]
   },
@@ -5770,8 +5770,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "드래곤 포켓몬",
     "heightM": 1.8,
     "weightKg": 152,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/230.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/230.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/230.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/230.png"
   },
   {
     "id": 231,
@@ -5793,8 +5793,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "긴코 포켓몬",
     "heightM": 0.5,
     "weightKg": 33.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/231.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/231.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/231.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/231.png"
   },
   {
     "id": 232,
@@ -5816,8 +5816,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "갑옷 포켓몬",
     "heightM": 1.1,
     "weightKg": 120,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/232.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/232.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/232.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/232.png"
   },
   {
     "id": 233,
@@ -5839,8 +5839,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가상 포켓몬",
     "heightM": 0.6,
     "weightKg": 32.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/233.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/233.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/233.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/233.png"
   },
   {
     "id": 234,
@@ -5862,8 +5862,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "큰뿔 포켓몬",
     "heightM": 1.4,
     "weightKg": 71.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/234.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/234.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/234.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/234.png"
   },
   {
     "id": 235,
@@ -5885,8 +5885,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "그림장이 포켓몬",
     "heightM": 1.2,
     "weightKg": 58,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/235.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/235.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/235.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/235.png"
   },
   {
     "id": 236,
@@ -5908,8 +5908,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "싸움 포켓몬",
     "heightM": 0.7,
     "weightKg": 21,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/236.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/236.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/236.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/236.png"
   },
   {
     "id": 237,
@@ -5931,8 +5931,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "물구나무 포켓몬",
     "heightM": 1.4,
     "weightKg": 48,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/237.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/237.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/237.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/237.png"
   },
   {
     "id": 238,
@@ -5955,8 +5955,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "뽀뽀 포켓몬",
     "heightM": 0.4,
     "weightKg": 6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/238.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/238.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/238.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/238.png"
   },
   {
     "id": 239,
@@ -5978,8 +5978,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "전류 포켓몬",
     "heightM": 0.6,
     "weightKg": 23.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/239.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/239.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/239.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/239.png"
   },
   {
     "id": 240,
@@ -6001,8 +6001,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불씨 포켓몬",
     "heightM": 0.7,
     "weightKg": 21.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/240.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/240.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/240.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/240.png"
   },
   {
     "id": 241,
@@ -6024,8 +6024,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "젖소 포켓몬",
     "heightM": 1.2,
     "weightKg": 75.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/241.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/241.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/241.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/241.png"
   },
   {
     "id": 242,
@@ -6047,8 +6047,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "행복 포켓몬",
     "heightM": 1.5,
     "weightKg": 46.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/242.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/242.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/242.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/242.png"
   },
   {
     "id": 243,
@@ -6070,8 +6070,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "우뢰 포켓몬",
     "heightM": 1.9,
     "weightKg": 178,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/243.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/243.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/243.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/243.png"
   },
   {
     "id": 244,
@@ -6093,8 +6093,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화산 포켓몬",
     "heightM": 2.1,
     "weightKg": 198,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/244.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/244.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/244.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/244.png"
   },
   {
     "id": 245,
@@ -6116,8 +6116,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "오로라 포켓몬",
     "heightM": 2,
     "weightKg": 187,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/245.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/245.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/245.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/245.png"
   },
   {
     "id": 246,
@@ -6140,8 +6140,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "바위표면 포켓몬",
     "heightM": 0.6,
     "weightKg": 72,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/246.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/246.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/246.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/246.png"
   },
   {
     "id": 247,
@@ -6164,8 +6164,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "탄환 포켓몬",
     "heightM": 1.2,
     "weightKg": 152,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/247.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/247.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/247.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/247.png"
   },
   {
     "id": 248,
@@ -6188,8 +6188,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "갑옷 포켓몬",
     "heightM": 2,
     "weightKg": 202,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/248.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/248.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/248.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/248.png",
     "megaForms": [
       {
         "label": "메가마기라스",
@@ -6205,8 +6205,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 120,
           "speed": 71
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10049.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10049.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10049.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10049.png"
       }
     ]
   },
@@ -6231,8 +6231,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "잠수 포켓몬",
     "heightM": 5.2,
     "weightKg": 216,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/249.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/249.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/249.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/249.png"
   },
   {
     "id": 250,
@@ -6255,8 +6255,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "무지개색 포켓몬",
     "heightM": 3.8,
     "weightKg": 199,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/250.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/250.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/250.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/250.png"
   },
   {
     "id": 251,
@@ -6279,8 +6279,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "시간이동 포켓몬",
     "heightM": 0.6,
     "weightKg": 5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/251.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/251.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/251.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/251.png"
   },
   {
     "id": 252,
@@ -6302,8 +6302,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "숲도마뱀 포켓몬",
     "heightM": 0.5,
     "weightKg": 5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/252.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/252.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/252.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/252.png"
   },
   {
     "id": 253,
@@ -6325,8 +6325,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "숲도마뱀 포켓몬",
     "heightM": 0.9,
     "weightKg": 21.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/253.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/253.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/253.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/253.png"
   },
   {
     "id": 254,
@@ -6348,8 +6348,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "밀림 포켓몬",
     "heightM": 1.7,
     "weightKg": 52.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/254.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/254.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/254.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/254.png",
     "megaForms": [
       {
         "label": "메가나무킹",
@@ -6365,8 +6365,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 85,
           "speed": 145
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10065.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10065.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10065.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10065.png"
       }
     ]
   },
@@ -6390,8 +6390,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풋내기 포켓몬",
     "heightM": 0.4,
     "weightKg": 2.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/255.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/255.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/255.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/255.png"
   },
   {
     "id": 256,
@@ -6414,8 +6414,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꼬마닭 포켓몬",
     "heightM": 0.9,
     "weightKg": 19.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/256.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/256.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/256.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/256.png"
   },
   {
     "id": 257,
@@ -6438,8 +6438,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "맹화 포켓몬",
     "heightM": 1.9,
     "weightKg": 52,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/257.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/257.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/257.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/257.png",
     "megaForms": [
       {
         "label": "메가번치코",
@@ -6455,8 +6455,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 80,
           "speed": 100
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10050.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10050.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10050.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10050.png"
       }
     ]
   },
@@ -6480,8 +6480,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "늪물고기 포켓몬",
     "heightM": 0.4,
     "weightKg": 7.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/258.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/258.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/258.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/258.png"
   },
   {
     "id": 259,
@@ -6504,8 +6504,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "늪물고기 포켓몬",
     "heightM": 0.7,
     "weightKg": 28,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/259.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/259.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/259.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/259.png"
   },
   {
     "id": 260,
@@ -6528,8 +6528,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "늪물고기 포켓몬",
     "heightM": 1.5,
     "weightKg": 81.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/260.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/260.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/260.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/260.png",
     "megaForms": [
       {
         "label": "메가대짱이",
@@ -6545,8 +6545,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 110,
           "speed": 70
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10064.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10064.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10064.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10064.png"
       }
     ]
   },
@@ -6570,8 +6570,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "물어뜯기 포켓몬",
     "heightM": 0.5,
     "weightKg": 13.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/261.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/261.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/261.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/261.png"
   },
   {
     "id": 262,
@@ -6593,8 +6593,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "물어뜯기 포켓몬",
     "heightM": 1,
     "weightKg": 37,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/262.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/262.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/262.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/262.png"
   },
   {
     "id": 263,
@@ -6616,8 +6616,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "앙증너구리 포켓몬",
     "heightM": 0.4,
     "weightKg": 17.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/263.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/263.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/263.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/263.png"
   },
   {
     "id": 264,
@@ -6639,8 +6639,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "돌진 포켓몬",
     "heightM": 0.5,
     "weightKg": 32.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/264.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/264.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/264.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/264.png"
   },
   {
     "id": 265,
@@ -6662,8 +6662,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "애벌레 포켓몬",
     "heightM": 0.3,
     "weightKg": 3.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/265.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/265.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/265.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/265.png"
   },
   {
     "id": 266,
@@ -6685,8 +6685,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "번데기 포켓몬",
     "heightM": 0.6,
     "weightKg": 10,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/266.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/266.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/266.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/266.png"
   },
   {
     "id": 267,
@@ -6709,8 +6709,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "나비 포켓몬",
     "heightM": 1,
     "weightKg": 28.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/267.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/267.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/267.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/267.png"
   },
   {
     "id": 268,
@@ -6732,8 +6732,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "번데기 포켓몬",
     "heightM": 0.7,
     "weightKg": 11.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/268.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/268.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/268.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/268.png"
   },
   {
     "id": 269,
@@ -6756,8 +6756,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독나방 포켓몬",
     "heightM": 1.2,
     "weightKg": 31.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/269.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/269.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/269.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/269.png"
   },
   {
     "id": 270,
@@ -6780,8 +6780,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "개구리밥 포켓몬",
     "heightM": 0.5,
     "weightKg": 2.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/270.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/270.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/270.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/270.png"
   },
   {
     "id": 271,
@@ -6804,8 +6804,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "명랑함 포켓몬",
     "heightM": 1.2,
     "weightKg": 32.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/271.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/271.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/271.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/271.png"
   },
   {
     "id": 272,
@@ -6828,8 +6828,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "행복하기 포켓몬",
     "heightM": 1.5,
     "weightKg": 55,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/272.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/272.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/272.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/272.png"
   },
   {
     "id": 273,
@@ -6851,8 +6851,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "도토리 포켓몬",
     "heightM": 0.5,
     "weightKg": 4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/273.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/273.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/273.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/273.png"
   },
   {
     "id": 274,
@@ -6875,8 +6875,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꾀부리기 포켓몬",
     "heightM": 1,
     "weightKg": 28,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/274.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/274.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/274.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/274.png"
   },
   {
     "id": 275,
@@ -6899,8 +6899,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "부정하기 포켓몬",
     "heightM": 1.3,
     "weightKg": 59.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/275.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/275.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/275.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/275.png"
   },
   {
     "id": 276,
@@ -6923,8 +6923,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "아기제비 포켓몬",
     "heightM": 0.3,
     "weightKg": 2.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/276.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/276.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/276.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/276.png"
   },
   {
     "id": 277,
@@ -6947,8 +6947,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "제비 포켓몬",
     "heightM": 0.7,
     "weightKg": 19.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/277.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/277.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/277.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/277.png"
   },
   {
     "id": 278,
@@ -6971,8 +6971,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "괭이갈매기 포켓몬",
     "heightM": 0.6,
     "weightKg": 9.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/278.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/278.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/278.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/278.png"
   },
   {
     "id": 279,
@@ -6995,8 +6995,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "물새 포켓몬",
     "heightM": 1.2,
     "weightKg": 28,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/279.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/279.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/279.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/279.png"
   },
   {
     "id": 280,
@@ -7019,8 +7019,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "느낌 포켓몬",
     "heightM": 0.4,
     "weightKg": 6.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/280.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/280.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/280.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/280.png"
   },
   {
     "id": 281,
@@ -7043,8 +7043,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "감정 포켓몬",
     "heightM": 0.8,
     "weightKg": 20.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/281.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/281.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/281.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/281.png"
   },
   {
     "id": 282,
@@ -7067,8 +7067,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "포용 포켓몬",
     "heightM": 1.6,
     "weightKg": 48.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/282.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/282.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/282.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/282.png",
     "megaForms": [
       {
         "label": "메가가디안",
@@ -7084,8 +7084,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 135,
           "speed": 100
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10051.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10051.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10051.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10051.png"
       }
     ]
   },
@@ -7110,8 +7110,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "소금쟁이 포켓몬",
     "heightM": 0.5,
     "weightKg": 1.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/283.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/283.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/283.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/283.png"
   },
   {
     "id": 284,
@@ -7134,8 +7134,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "안구 포켓몬",
     "heightM": 0.8,
     "weightKg": 3.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/284.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/284.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/284.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/284.png"
   },
   {
     "id": 285,
@@ -7157,8 +7157,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "버섯 포켓몬",
     "heightM": 0.4,
     "weightKg": 4.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/285.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/285.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/285.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/285.png"
   },
   {
     "id": 286,
@@ -7181,8 +7181,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "버섯 포켓몬",
     "heightM": 1.2,
     "weightKg": 39.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/286.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/286.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/286.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/286.png"
   },
   {
     "id": 287,
@@ -7204,8 +7204,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "게으름뱅이 포켓몬",
     "heightM": 0.8,
     "weightKg": 24,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/287.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/287.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/287.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/287.png"
   },
   {
     "id": 288,
@@ -7227,8 +7227,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "성난원숭이 포켓몬",
     "heightM": 1.4,
     "weightKg": 46.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/288.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/288.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/288.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/288.png"
   },
   {
     "id": 289,
@@ -7250,8 +7250,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "나태함 포켓몬",
     "heightM": 2,
     "weightKg": 130.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/289.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/289.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/289.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/289.png"
   },
   {
     "id": 290,
@@ -7274,8 +7274,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "신참 포켓몬",
     "heightM": 0.5,
     "weightKg": 5.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/290.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/290.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/290.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/290.png"
   },
   {
     "id": 291,
@@ -7298,8 +7298,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "시노비 포켓몬",
     "heightM": 0.8,
     "weightKg": 12,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/291.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/291.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/291.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/291.png"
   },
   {
     "id": 292,
@@ -7322,8 +7322,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "허물 포켓몬",
     "heightM": 0.8,
     "weightKg": 1.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/292.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/292.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/292.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/292.png"
   },
   {
     "id": 293,
@@ -7345,8 +7345,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "속삭임 포켓몬",
     "heightM": 0.6,
     "weightKg": 16.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/293.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/293.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/293.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/293.png"
   },
   {
     "id": 294,
@@ -7368,8 +7368,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "큰목소리 포켓몬",
     "heightM": 1,
     "weightKg": 40.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/294.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/294.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/294.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/294.png"
   },
   {
     "id": 295,
@@ -7391,8 +7391,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "소음 포켓몬",
     "heightM": 1.5,
     "weightKg": 84,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/295.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/295.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/295.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/295.png"
   },
   {
     "id": 296,
@@ -7414,8 +7414,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "근성 포켓몬",
     "heightM": 1,
     "weightKg": 86.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/296.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/296.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/296.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/296.png"
   },
   {
     "id": 297,
@@ -7437,8 +7437,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "손바닥치기 포켓몬",
     "heightM": 2.3,
     "weightKg": 253.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/297.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/297.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/297.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/297.png"
   },
   {
     "id": 298,
@@ -7461,8 +7461,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "물방울 포켓몬",
     "heightM": 0.2,
     "weightKg": 2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/298.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/298.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/298.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/298.png"
   },
   {
     "id": 299,
@@ -7484,8 +7484,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "콤파스 포켓몬",
     "heightM": 1,
     "weightKg": 97,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/299.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/299.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/299.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/299.png"
   },
   {
     "id": 300,
@@ -7507,8 +7507,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "작은고양이 포켓몬",
     "heightM": 0.6,
     "weightKg": 11,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/300.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/300.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/300.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/300.png"
   },
   {
     "id": 301,
@@ -7530,8 +7530,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "새침떼기 포켓몬",
     "heightM": 1.1,
     "weightKg": 32.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/301.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/301.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/301.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png"
   },
   {
     "id": 302,
@@ -7554,8 +7554,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "어둠 포켓몬",
     "heightM": 0.5,
     "weightKg": 11,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/302.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/302.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/302.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png",
     "megaForms": [
       {
         "label": "메가깜까미",
@@ -7571,8 +7571,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 115,
           "speed": 20
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10066.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10066.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10066.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10066.png"
       }
     ]
   },
@@ -7597,8 +7597,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "배반 포켓몬",
     "heightM": 0.6,
     "weightKg": 11.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/303.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/303.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/303.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/303.png",
     "megaForms": [
       {
         "label": "메가입치트",
@@ -7614,8 +7614,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 95,
           "speed": 50
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10052.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10052.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10052.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10052.png"
       }
     ]
   },
@@ -7640,8 +7640,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "철갑옷 포켓몬",
     "heightM": 0.4,
     "weightKg": 60,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/304.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/304.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/304.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/304.png"
   },
   {
     "id": 305,
@@ -7664,8 +7664,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "철갑옷 포켓몬",
     "heightM": 0.9,
     "weightKg": 120,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/305.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/305.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/305.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/305.png"
   },
   {
     "id": 306,
@@ -7688,8 +7688,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "철갑옷 포켓몬",
     "heightM": 2.1,
     "weightKg": 360,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/306.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/306.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/306.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/306.png",
     "megaForms": [
       {
         "label": "메가보스로라",
@@ -7704,8 +7704,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 80,
           "speed": 50
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10053.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10053.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10053.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10053.png"
       }
     ]
   },
@@ -7730,8 +7730,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "명상 포켓몬",
     "heightM": 0.6,
     "weightKg": 11.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/307.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/307.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/307.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/307.png"
   },
   {
     "id": 308,
@@ -7754,8 +7754,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "명상 포켓몬",
     "heightM": 1.3,
     "weightKg": 31.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/308.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/308.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/308.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/308.png",
     "megaForms": [
       {
         "label": "메가요가램",
@@ -7771,8 +7771,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 85,
           "speed": 100
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10054.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10054.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10054.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10054.png"
       }
     ]
   },
@@ -7796,8 +7796,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "천둥번개 포켓몬",
     "heightM": 0.6,
     "weightKg": 15.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/309.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/309.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/309.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/309.png"
   },
   {
     "id": 310,
@@ -7819,8 +7819,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "방전 포켓몬",
     "heightM": 1.5,
     "weightKg": 40.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/310.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/310.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/310.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/310.png",
     "megaForms": [
       {
         "label": "메가썬더볼트",
@@ -7835,8 +7835,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 80,
           "speed": 135
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10055.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10055.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10055.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10055.png"
       }
     ]
   },
@@ -7860,8 +7860,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "응원 포켓몬",
     "heightM": 0.4,
     "weightKg": 4.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/311.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/311.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/311.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/311.png"
   },
   {
     "id": 312,
@@ -7883,8 +7883,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "응원 포켓몬",
     "heightM": 0.4,
     "weightKg": 4.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/312.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/312.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/312.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/312.png"
   },
   {
     "id": 313,
@@ -7906,8 +7906,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "반딧불 포켓몬",
     "heightM": 0.7,
     "weightKg": 17.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/313.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/313.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/313.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/313.png"
   },
   {
     "id": 314,
@@ -7929,8 +7929,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "반딧불 포켓몬",
     "heightM": 0.6,
     "weightKg": 17.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/314.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/314.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/314.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/314.png"
   },
   {
     "id": 315,
@@ -7953,8 +7953,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가시 포켓몬",
     "heightM": 0.3,
     "weightKg": 2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/315.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/315.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/315.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/315.png"
   },
   {
     "id": 316,
@@ -7976,8 +7976,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "밥통 포켓몬",
     "heightM": 0.4,
     "weightKg": 10.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/316.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/316.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/316.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/316.png"
   },
   {
     "id": 317,
@@ -7999,8 +7999,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독봉지 포켓몬",
     "heightM": 1.7,
     "weightKg": 80,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/317.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/317.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/317.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/317.png"
   },
   {
     "id": 318,
@@ -8023,8 +8023,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "사나움 포켓몬",
     "heightM": 0.8,
     "weightKg": 20.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/318.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/318.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/318.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/318.png"
   },
   {
     "id": 319,
@@ -8047,8 +8047,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "난폭 포켓몬",
     "heightM": 1.8,
     "weightKg": 88.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/319.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/319.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/319.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/319.png",
     "megaForms": [
       {
         "label": "메가샤크니아",
@@ -8064,8 +8064,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 65,
           "speed": 105
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10070.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10070.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10070.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10070.png"
       }
     ]
   },
@@ -8089,8 +8089,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "둥근고래 포켓몬",
     "heightM": 2,
     "weightKg": 130,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/320.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/320.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/320.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/320.png"
   },
   {
     "id": 321,
@@ -8112,8 +8112,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "뜸고래 포켓몬",
     "heightM": 14.5,
     "weightKg": 398,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/321.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/321.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/321.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/321.png"
   },
   {
     "id": 322,
@@ -8136,8 +8136,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "둔감 포켓몬",
     "heightM": 0.7,
     "weightKg": 24,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/322.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/322.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/322.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/322.png"
   },
   {
     "id": 323,
@@ -8160,8 +8160,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "분화 포켓몬",
     "heightM": 1.9,
     "weightKg": 220,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/323.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/323.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/323.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/323.png",
     "megaForms": [
       {
         "label": "메가폭타",
@@ -8177,8 +8177,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 105,
           "speed": 20
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10087.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10087.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10087.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10087.png"
       }
     ]
   },
@@ -8202,8 +8202,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "석탄 포켓몬",
     "heightM": 0.5,
     "weightKg": 80.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/324.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/324.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/324.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/324.png"
   },
   {
     "id": 325,
@@ -8225,8 +8225,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "튀다 포켓몬",
     "heightM": 0.7,
     "weightKg": 30.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/325.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/325.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/325.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/325.png"
   },
   {
     "id": 326,
@@ -8248,8 +8248,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "조작 포켓몬",
     "heightM": 0.9,
     "weightKg": 71.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/326.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/326.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/326.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/326.png"
   },
   {
     "id": 327,
@@ -8271,8 +8271,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "얼룩팬더 포켓몬",
     "heightM": 1.1,
     "weightKg": 5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/327.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/327.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/327.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/327.png"
   },
   {
     "id": 328,
@@ -8294,8 +8294,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "개미지옥 포켓몬",
     "heightM": 0.7,
     "weightKg": 15,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/328.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/328.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/328.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/328.png"
   },
   {
     "id": 329,
@@ -8318,8 +8318,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "진동 포켓몬",
     "heightM": 1.1,
     "weightKg": 15.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/329.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/329.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/329.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/329.png"
   },
   {
     "id": 330,
@@ -8342,8 +8342,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "정령 포켓몬",
     "heightM": 2,
     "weightKg": 82,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/330.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/330.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/330.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/330.png"
   },
   {
     "id": 331,
@@ -8365,8 +8365,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "선인장 포켓몬",
     "heightM": 0.4,
     "weightKg": 51.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/331.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/331.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/331.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/331.png"
   },
   {
     "id": 332,
@@ -8389,8 +8389,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "허수아비 포켓몬",
     "heightM": 1.3,
     "weightKg": 77.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/332.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/332.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/332.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/332.png"
   },
   {
     "id": 333,
@@ -8413,8 +8413,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "솜새 포켓몬",
     "heightM": 0.4,
     "weightKg": 1.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/333.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/333.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/333.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/333.png"
   },
   {
     "id": 334,
@@ -8437,8 +8437,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "허밍 포켓몬",
     "heightM": 1.1,
     "weightKg": 20.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/334.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/334.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/334.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/334.png",
     "megaForms": [
       {
         "label": "메가파비코리",
@@ -8454,8 +8454,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 105,
           "speed": 80
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10067.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10067.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10067.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10067.png"
       }
     ]
   },
@@ -8479,8 +8479,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "고양이족제비 포켓몬",
     "heightM": 1.3,
     "weightKg": 40.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/335.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/335.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/335.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/335.png"
   },
   {
     "id": 336,
@@ -8502,8 +8502,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "송곳뱀 포켓몬",
     "heightM": 2.7,
     "weightKg": 52.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/336.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/336.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/336.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/336.png"
   },
   {
     "id": 337,
@@ -8526,8 +8526,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "별똥별 포켓몬",
     "heightM": 1,
     "weightKg": 168,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/337.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/337.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/337.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/337.png"
   },
   {
     "id": 338,
@@ -8550,8 +8550,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "별똥별 포켓몬",
     "heightM": 1.2,
     "weightKg": 154,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/338.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/338.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/338.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/338.png"
   },
   {
     "id": 339,
@@ -8574,8 +8574,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "수염물고기 포켓몬",
     "heightM": 0.4,
     "weightKg": 1.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/339.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/339.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/339.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/339.png"
   },
   {
     "id": 340,
@@ -8598,8 +8598,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "수염물고기 포켓몬",
     "heightM": 0.9,
     "weightKg": 23.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/340.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/340.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/340.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/340.png"
   },
   {
     "id": 341,
@@ -8621,8 +8621,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "건달 포켓몬",
     "heightM": 0.6,
     "weightKg": 11.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/341.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/341.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/341.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/341.png"
   },
   {
     "id": 342,
@@ -8645,8 +8645,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불량배 포켓몬",
     "heightM": 1.1,
     "weightKg": 32.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/342.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/342.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/342.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/342.png"
   },
   {
     "id": 343,
@@ -8669,8 +8669,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "토우 포켓몬",
     "heightM": 0.5,
     "weightKg": 21.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/343.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/343.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/343.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/343.png"
   },
   {
     "id": 344,
@@ -8693,8 +8693,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "토우 포켓몬",
     "heightM": 1.5,
     "weightKg": 108,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/344.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/344.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/344.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/344.png"
   },
   {
     "id": 345,
@@ -8717,8 +8717,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "바다나리 포켓몬",
     "heightM": 1,
     "weightKg": 23.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/345.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/345.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/345.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/345.png"
   },
   {
     "id": 346,
@@ -8741,8 +8741,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "바위단지 포켓몬",
     "heightM": 1.5,
     "weightKg": 60.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/346.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/346.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/346.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/346.png"
   },
   {
     "id": 347,
@@ -8765,8 +8765,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "고대새우 포켓몬",
     "heightM": 0.7,
     "weightKg": 12.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/347.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/347.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/347.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/347.png"
   },
   {
     "id": 348,
@@ -8789,8 +8789,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "갑주 포켓몬",
     "heightM": 1.5,
     "weightKg": 68.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/348.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/348.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/348.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/348.png"
   },
   {
     "id": 349,
@@ -8812,8 +8812,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "물고기 포켓몬",
     "heightM": 0.6,
     "weightKg": 7.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/349.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/349.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/349.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/349.png"
   },
   {
     "id": 350,
@@ -8835,8 +8835,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "사랑 포켓몬",
     "heightM": 6.2,
     "weightKg": 162,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/350.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/350.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/350.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/350.png"
   },
   {
     "id": 351,
@@ -8858,8 +8858,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "날씨 포켓몬",
     "heightM": 0.3,
     "weightKg": 0.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/351.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/351.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/351.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/351.png"
   },
   {
     "id": 352,
@@ -8881,8 +8881,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "색변화 포켓몬",
     "heightM": 1,
     "weightKg": 22,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/352.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/352.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/352.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/352.png"
   },
   {
     "id": 353,
@@ -8904,8 +8904,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "인형 포켓몬",
     "heightM": 0.6,
     "weightKg": 2.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/353.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/353.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/353.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/353.png"
   },
   {
     "id": 354,
@@ -8927,8 +8927,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "봉제인형 포켓몬",
     "heightM": 1.1,
     "weightKg": 12.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/354.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/354.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/354.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/354.png",
     "megaForms": [
       {
         "label": "메가다크펫",
@@ -8943,8 +8943,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 83,
           "speed": 75
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10056.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10056.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10056.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10056.png"
       }
     ]
   },
@@ -8968,8 +8968,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "마중 포켓몬",
     "heightM": 0.8,
     "weightKg": 15,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/355.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/355.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/355.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/355.png"
   },
   {
     "id": 356,
@@ -8991,8 +8991,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "손짓 포켓몬",
     "heightM": 1.6,
     "weightKg": 30.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/356.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/356.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/356.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/356.png"
   },
   {
     "id": 357,
@@ -9015,8 +9015,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "후르츠 포켓몬",
     "heightM": 2,
     "weightKg": 100,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/357.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/357.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/357.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/357.png"
   },
   {
     "id": 358,
@@ -9038,8 +9038,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풍경 포켓몬",
     "heightM": 0.6,
     "weightKg": 1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/358.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/358.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/358.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/358.png"
   },
   {
     "id": 359,
@@ -9061,8 +9061,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "재난 포켓몬",
     "heightM": 1.2,
     "weightKg": 47,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/359.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/359.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/359.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/359.png",
     "megaForms": [
       {
         "label": "메가앱솔",
@@ -9077,8 +9077,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 60,
           "speed": 115
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10057.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10057.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10057.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10057.png"
       }
     ]
   },
@@ -9102,8 +9102,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "명랑 포켓몬",
     "heightM": 0.6,
     "weightKg": 14,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/360.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/360.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/360.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/360.png"
   },
   {
     "id": 361,
@@ -9125,8 +9125,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "눈우산 포켓몬",
     "heightM": 0.7,
     "weightKg": 16.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/361.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/361.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/361.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/361.png"
   },
   {
     "id": 362,
@@ -9148,8 +9148,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "얼굴 포켓몬",
     "heightM": 1.5,
     "weightKg": 256.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/362.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/362.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/362.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/362.png",
     "megaForms": [
       {
         "label": "메가얼음귀신",
@@ -9164,8 +9164,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 80,
           "speed": 100
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10074.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10074.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10074.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10074.png"
       }
     ]
   },
@@ -9190,8 +9190,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "손뼉 포켓몬",
     "heightM": 0.8,
     "weightKg": 39.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/363.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/363.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/363.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/363.png"
   },
   {
     "id": 364,
@@ -9214,8 +9214,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "공돌리기 포켓몬",
     "heightM": 1.1,
     "weightKg": 87.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/364.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/364.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/364.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/364.png"
   },
   {
     "id": 365,
@@ -9238,8 +9238,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "얼음깨기 포켓몬",
     "heightM": 1.4,
     "weightKg": 150.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/365.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/365.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/365.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/365.png"
   },
   {
     "id": 366,
@@ -9261,8 +9261,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "두조개 포켓몬",
     "heightM": 0.4,
     "weightKg": 52.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/366.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/366.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/366.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/366.png"
   },
   {
     "id": 367,
@@ -9284,8 +9284,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "깊은바다 포켓몬",
     "heightM": 1.7,
     "weightKg": 27,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/367.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/367.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/367.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/367.png"
   },
   {
     "id": 368,
@@ -9307,8 +9307,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "남해 포켓몬",
     "heightM": 1.8,
     "weightKg": 22.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/368.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/368.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/368.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/368.png"
   },
   {
     "id": 369,
@@ -9331,8 +9331,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "장수 포켓몬",
     "heightM": 1,
     "weightKg": 23.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/369.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/369.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/369.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/369.png"
   },
   {
     "id": 370,
@@ -9354,8 +9354,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "랑데부 포켓몬",
     "heightM": 0.6,
     "weightKg": 8.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/370.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/370.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/370.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/370.png"
   },
   {
     "id": 371,
@@ -9377,8 +9377,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "돌머리 포켓몬",
     "heightM": 0.6,
     "weightKg": 42.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/371.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/371.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/371.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/371.png"
   },
   {
     "id": 372,
@@ -9400,8 +9400,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "인내 포켓몬",
     "heightM": 1.1,
     "weightKg": 110.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/372.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/372.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/372.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/372.png"
   },
   {
     "id": 373,
@@ -9424,8 +9424,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "드래곤 포켓몬",
     "heightM": 1.5,
     "weightKg": 102.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/373.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/373.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/373.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/373.png",
     "megaForms": [
       {
         "label": "메가보만다",
@@ -9441,8 +9441,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 90,
           "speed": 120
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10089.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10089.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10089.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10089.png"
       }
     ]
   },
@@ -9467,8 +9467,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "철공 포켓몬",
     "heightM": 0.6,
     "weightKg": 95.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/374.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/374.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/374.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/374.png"
   },
   {
     "id": 375,
@@ -9491,8 +9491,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "철발톱 포켓몬",
     "heightM": 1.2,
     "weightKg": 202.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/375.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/375.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/375.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/375.png"
   },
   {
     "id": 376,
@@ -9515,8 +9515,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "무쇠다리 포켓몬",
     "heightM": 1.6,
     "weightKg": 550,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/376.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/376.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/376.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/376.png",
     "megaForms": [
       {
         "label": "메가메타그로스",
@@ -9532,8 +9532,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 110,
           "speed": 110
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10076.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10076.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10076.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10076.png"
       }
     ]
   },
@@ -9557,8 +9557,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "바위산 포켓몬",
     "heightM": 1.7,
     "weightKg": 230,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/377.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/377.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/377.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/377.png"
   },
   {
     "id": 378,
@@ -9580,8 +9580,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "빙산 포켓몬",
     "heightM": 1.8,
     "weightKg": 175,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/378.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/378.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/378.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/378.png"
   },
   {
     "id": 379,
@@ -9603,8 +9603,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쇠철 포켓몬",
     "heightM": 1.9,
     "weightKg": 205,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/379.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/379.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/379.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/379.png"
   },
   {
     "id": 380,
@@ -9627,8 +9627,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "무한 포켓몬",
     "heightM": 1.4,
     "weightKg": 40,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/380.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/380.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/380.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/380.png",
     "megaForms": [
       {
         "label": "메가라티아스",
@@ -9644,8 +9644,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 150,
           "speed": 110
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10062.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10062.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10062.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10062.png"
       }
     ]
   },
@@ -9670,8 +9670,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "무한 포켓몬",
     "heightM": 2,
     "weightKg": 60,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/381.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/381.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/381.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/381.png",
     "megaForms": [
       {
         "label": "메가라티오스",
@@ -9687,8 +9687,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 120,
           "speed": 110
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10063.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10063.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10063.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10063.png"
       }
     ]
   },
@@ -9712,8 +9712,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "해저 포켓몬",
     "heightM": 4.5,
     "weightKg": 352,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/382.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/382.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/382.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/382.png"
   },
   {
     "id": 383,
@@ -9735,8 +9735,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "대륙 포켓몬",
     "heightM": 3.5,
     "weightKg": 950,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/383.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/383.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/383.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/383.png"
   },
   {
     "id": 384,
@@ -9759,8 +9759,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "천공 포켓몬",
     "heightM": 7,
     "weightKg": 206.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/384.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/384.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/384.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png",
     "megaForms": [
       {
         "label": "메가레쿠쟈",
@@ -9776,8 +9776,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 100,
           "speed": 115
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10079.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10079.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10079.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10079.png"
       }
     ]
   },
@@ -9802,8 +9802,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "희망사항 포켓몬",
     "heightM": 0.3,
     "weightKg": 1.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/385.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/385.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/385.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/385.png"
   },
   {
     "id": 386,
@@ -9825,8 +9825,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "DNA 포켓몬",
     "heightM": 1.7,
     "weightKg": 60.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/386.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/386.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/386.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/386.png"
   },
   {
     "id": 387,
@@ -9848,8 +9848,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "어린잎 포켓몬",
     "heightM": 0.4,
     "weightKg": 10.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/387.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/387.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/387.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/387.png"
   },
   {
     "id": 388,
@@ -9871,8 +9871,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "나무숲 포켓몬",
     "heightM": 1.1,
     "weightKg": 97,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/388.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/388.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/388.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/388.png"
   },
   {
     "id": 389,
@@ -9895,8 +9895,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "대륙 포켓몬",
     "heightM": 2.2,
     "weightKg": 310,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/389.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/389.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/389.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/389.png"
   },
   {
     "id": 390,
@@ -9918,8 +9918,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꼬마원숭이 포켓몬",
     "heightM": 0.5,
     "weightKg": 6.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/390.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/390.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/390.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/390.png"
   },
   {
     "id": 391,
@@ -9942,8 +9942,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "개구쟁이 포켓몬",
     "heightM": 0.9,
     "weightKg": 22,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/391.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/391.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/391.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/391.png"
   },
   {
     "id": 392,
@@ -9966,8 +9966,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화염 포켓몬",
     "heightM": 1.2,
     "weightKg": 55,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/392.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/392.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/392.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/392.png"
   },
   {
     "id": 393,
@@ -9989,8 +9989,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "펭귄 포켓몬",
     "heightM": 0.4,
     "weightKg": 5.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/393.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/393.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/393.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/393.png"
   },
   {
     "id": 394,
@@ -10012,8 +10012,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "펭귄 포켓몬",
     "heightM": 0.8,
     "weightKg": 23,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/394.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/394.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/394.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/394.png"
   },
   {
     "id": 395,
@@ -10036,8 +10036,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "황제 포켓몬",
     "heightM": 1.7,
     "weightKg": 84.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/395.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/395.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/395.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/395.png"
   },
   {
     "id": 396,
@@ -10060,8 +10060,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "찌르레기 포켓몬",
     "heightM": 0.3,
     "weightKg": 2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/396.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/396.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/396.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/396.png"
   },
   {
     "id": 397,
@@ -10084,8 +10084,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "찌르레기 포켓몬",
     "heightM": 0.6,
     "weightKg": 15.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/397.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/397.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/397.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/397.png"
   },
   {
     "id": 398,
@@ -10108,8 +10108,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "맹금 포켓몬",
     "heightM": 1.2,
     "weightKg": 24.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/398.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/398.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/398.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/398.png"
   },
   {
     "id": 399,
@@ -10131,8 +10131,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "둥글쥐 포켓몬",
     "heightM": 0.5,
     "weightKg": 20,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/399.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/399.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/399.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/399.png"
   },
   {
     "id": 400,
@@ -10155,8 +10155,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "비버 포켓몬",
     "heightM": 1,
     "weightKg": 31.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/400.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/400.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/400.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/400.png"
   },
   {
     "id": 401,
@@ -10178,8 +10178,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "귀뚜라미 포켓몬",
     "heightM": 0.3,
     "weightKg": 2.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/401.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/401.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/401.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/401.png"
   },
   {
     "id": 402,
@@ -10201,8 +10201,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "귀뚜라미 포켓몬",
     "heightM": 1,
     "weightKg": 25.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/402.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/402.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/402.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/402.png"
   },
   {
     "id": 403,
@@ -10224,8 +10224,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "섬광 포켓몬",
     "heightM": 0.5,
     "weightKg": 9.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/403.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/403.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/403.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/403.png"
   },
   {
     "id": 404,
@@ -10247,8 +10247,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "전광 포켓몬",
     "heightM": 0.9,
     "weightKg": 30.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/404.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/404.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/404.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/404.png"
   },
   {
     "id": 405,
@@ -10270,8 +10270,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "안광 포켓몬",
     "heightM": 1.4,
     "weightKg": 42,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/405.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/405.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/405.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/405.png"
   },
   {
     "id": 406,
@@ -10294,8 +10294,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꽃봉오리 포켓몬",
     "heightM": 0.2,
     "weightKg": 1.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/406.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/406.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/406.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/406.png"
   },
   {
     "id": 407,
@@ -10318,8 +10318,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "부케 포켓몬",
     "heightM": 0.9,
     "weightKg": 14.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/407.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/407.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/407.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/407.png"
   },
   {
     "id": 408,
@@ -10341,8 +10341,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "박치기 포켓몬",
     "heightM": 0.9,
     "weightKg": 31.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/408.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/408.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/408.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/408.png"
   },
   {
     "id": 409,
@@ -10364,8 +10364,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "박치기 포켓몬",
     "heightM": 1.6,
     "weightKg": 102.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/409.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/409.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/409.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/409.png"
   },
   {
     "id": 410,
@@ -10388,8 +10388,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "실드 포켓몬",
     "heightM": 0.5,
     "weightKg": 57,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/410.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/410.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/410.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/410.png"
   },
   {
     "id": 411,
@@ -10412,8 +10412,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "실드 포켓몬",
     "heightM": 1.3,
     "weightKg": 149.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/411.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/411.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/411.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/411.png"
   },
   {
     "id": 412,
@@ -10435,8 +10435,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "도롱이벌레 포켓몬",
     "heightM": 0.2,
     "weightKg": 3.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/412.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/412.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/412.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/412.png"
   },
   {
     "id": 413,
@@ -10459,8 +10459,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "도롱이벌레 포켓몬",
     "heightM": 0.5,
     "weightKg": 6.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/413.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/413.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/413.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/413.png"
   },
   {
     "id": 414,
@@ -10483,8 +10483,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "나방 포켓몬",
     "heightM": 0.9,
     "weightKg": 23.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/414.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/414.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/414.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/414.png"
   },
   {
     "id": 415,
@@ -10507,8 +10507,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꼬마벌 포켓몬",
     "heightM": 0.3,
     "weightKg": 5.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/415.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/415.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/415.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/415.png"
   },
   {
     "id": 416,
@@ -10531,8 +10531,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "벌집 포켓몬",
     "heightM": 1.2,
     "weightKg": 38.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/416.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/416.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/416.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/416.png"
   },
   {
     "id": 417,
@@ -10554,8 +10554,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "전기다람쥐 포켓몬",
     "heightM": 0.4,
     "weightKg": 3.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/417.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/417.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/417.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/417.png"
   },
   {
     "id": 418,
@@ -10577,8 +10577,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "바다족제비 포켓몬",
     "heightM": 0.7,
     "weightKg": 29.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/418.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/418.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/418.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/418.png"
   },
   {
     "id": 419,
@@ -10600,8 +10600,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "바다족제비 포켓몬",
     "heightM": 1.1,
     "weightKg": 33.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/419.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/419.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/419.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/419.png"
   },
   {
     "id": 420,
@@ -10623,8 +10623,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "버찌 포켓몬",
     "heightM": 0.4,
     "weightKg": 3.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/420.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/420.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/420.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/420.png"
   },
   {
     "id": 421,
@@ -10646,8 +10646,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "벚꽃 포켓몬",
     "heightM": 0.5,
     "weightKg": 9.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/421.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/421.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/421.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/421.png"
   },
   {
     "id": 422,
@@ -10669,8 +10669,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "갯민숭달팽이 포켓몬",
     "heightM": 0.3,
     "weightKg": 6.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/422.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/422.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/422.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/422.png"
   },
   {
     "id": 423,
@@ -10693,8 +10693,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "갯민숭달팽이 포켓몬",
     "heightM": 0.9,
     "weightKg": 29.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/423.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/423.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/423.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/423.png"
   },
   {
     "id": 424,
@@ -10716,8 +10716,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "긴꼬리 포켓몬",
     "heightM": 1.2,
     "weightKg": 20.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/424.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/424.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/424.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/424.png"
   },
   {
     "id": 425,
@@ -10740,8 +10740,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풍선 포켓몬",
     "heightM": 0.4,
     "weightKg": 1.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/425.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/425.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/425.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/425.png"
   },
   {
     "id": 426,
@@ -10764,8 +10764,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "기구 포켓몬",
     "heightM": 1.2,
     "weightKg": 15,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/426.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/426.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/426.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/426.png"
   },
   {
     "id": 427,
@@ -10787,8 +10787,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "토끼 포켓몬",
     "heightM": 0.4,
     "weightKg": 5.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/427.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/427.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/427.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/427.png"
   },
   {
     "id": 428,
@@ -10810,8 +10810,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "토끼 포켓몬",
     "heightM": 1.2,
     "weightKg": 33.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/428.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/428.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/428.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/428.png",
     "megaForms": [
       {
         "label": "메가이어롭",
@@ -10827,8 +10827,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 96,
           "speed": 135
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10088.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10088.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10088.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10088.png"
       }
     ]
   },
@@ -10852,8 +10852,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "매지컬 포켓몬",
     "heightM": 0.9,
     "weightKg": 4.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/429.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/429.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/429.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/429.png"
   },
   {
     "id": 430,
@@ -10876,8 +10876,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "큰형님 포켓몬",
     "heightM": 0.9,
     "weightKg": 27.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/430.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/430.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/430.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/430.png"
   },
   {
     "id": 431,
@@ -10899,8 +10899,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "내숭 포켓몬",
     "heightM": 0.5,
     "weightKg": 3.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/431.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/431.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/431.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/431.png"
   },
   {
     "id": 432,
@@ -10922,8 +10922,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "얼룩고양이 포켓몬",
     "heightM": 1,
     "weightKg": 43.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/432.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/432.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/432.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/432.png"
   },
   {
     "id": 433,
@@ -10945,8 +10945,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "방울 포켓몬",
     "heightM": 0.2,
     "weightKg": 0.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/433.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/433.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/433.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/433.png"
   },
   {
     "id": 434,
@@ -10969,8 +10969,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "스컹크 포켓몬",
     "heightM": 0.4,
     "weightKg": 19.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/434.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/434.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/434.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/434.png"
   },
   {
     "id": 435,
@@ -10993,8 +10993,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "스컹크 포켓몬",
     "heightM": 1,
     "weightKg": 38,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/435.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/435.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/435.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/435.png"
   },
   {
     "id": 436,
@@ -11017,8 +11017,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "청동 포켓몬",
     "heightM": 0.5,
     "weightKg": 60.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/436.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/436.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/436.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/436.png"
   },
   {
     "id": 437,
@@ -11041,8 +11041,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "동탁 포켓몬",
     "heightM": 1.3,
     "weightKg": 187,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/437.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/437.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/437.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/437.png"
   },
   {
     "id": 438,
@@ -11064,8 +11064,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "분재 포켓몬",
     "heightM": 0.5,
     "weightKg": 15,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/438.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/438.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/438.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/438.png"
   },
   {
     "id": 439,
@@ -11088,8 +11088,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "따라하기 포켓몬",
     "heightM": 0.6,
     "weightKg": 13,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/439.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/439.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/439.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/439.png"
   },
   {
     "id": 440,
@@ -11111,8 +11111,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "소꿉놀이 포켓몬",
     "heightM": 0.6,
     "weightKg": 24.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/440.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/440.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/440.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/440.png"
   },
   {
     "id": 441,
@@ -11135,8 +11135,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "음표 포켓몬",
     "heightM": 0.5,
     "weightKg": 1.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/441.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/441.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/441.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/441.png"
   },
   {
     "id": 442,
@@ -11159,8 +11159,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "봉인 포켓몬",
     "heightM": 1,
     "weightKg": 108,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/442.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/442.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/442.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/442.png"
   },
   {
     "id": 443,
@@ -11183,8 +11183,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "육지상어 포켓몬",
     "heightM": 0.7,
     "weightKg": 20.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/443.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/443.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/443.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/443.png"
   },
   {
     "id": 444,
@@ -11207,8 +11207,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "동굴 포켓몬",
     "heightM": 1.4,
     "weightKg": 56,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/444.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/444.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/444.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/444.png"
   },
   {
     "id": 445,
@@ -11231,8 +11231,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "마하 포켓몬",
     "heightM": 1.9,
     "weightKg": 95,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/445.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/445.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/445.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/445.png",
     "megaForms": [
       {
         "label": "메가한카리아스",
@@ -11248,8 +11248,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 95,
           "speed": 92
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10058.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10058.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10058.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10058.png"
       }
     ]
   },
@@ -11273,8 +11273,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "대식가 포켓몬",
     "heightM": 0.6,
     "weightKg": 105,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/446.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/446.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/446.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/446.png"
   },
   {
     "id": 447,
@@ -11296,8 +11296,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "파문 포켓몬",
     "heightM": 0.7,
     "weightKg": 20.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/447.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/447.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/447.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/447.png"
   },
   {
     "id": 448,
@@ -11320,8 +11320,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "파동 포켓몬",
     "heightM": 1.2,
     "weightKg": 54,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/448.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/448.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/448.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png",
     "megaForms": [
       {
         "label": "메가루카리오",
@@ -11337,8 +11337,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 70,
           "speed": 112
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10059.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10059.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10059.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10059.png"
       }
     ]
   },
@@ -11362,8 +11362,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "하마 포켓몬",
     "heightM": 0.8,
     "weightKg": 49.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/449.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/449.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/449.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/449.png"
   },
   {
     "id": 450,
@@ -11385,8 +11385,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "중량 포켓몬",
     "heightM": 2,
     "weightKg": 300,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/450.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/450.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/450.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/450.png"
   },
   {
     "id": 451,
@@ -11409,8 +11409,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "전갈 포켓몬",
     "heightM": 0.8,
     "weightKg": 12,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/451.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/451.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/451.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/451.png"
   },
   {
     "id": 452,
@@ -11433,8 +11433,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "요괴전갈 포켓몬",
     "heightM": 1.3,
     "weightKg": 61.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/452.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/452.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/452.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/452.png"
   },
   {
     "id": 453,
@@ -11457,8 +11457,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독설 포켓몬",
     "heightM": 0.7,
     "weightKg": 23,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/453.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/453.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/453.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/453.png"
   },
   {
     "id": 454,
@@ -11481,8 +11481,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독설 포켓몬",
     "heightM": 1.3,
     "weightKg": 44.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/454.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/454.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/454.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/454.png"
   },
   {
     "id": 455,
@@ -11504,8 +11504,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "벌레잡이 포켓몬",
     "heightM": 1.4,
     "weightKg": 27,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/455.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/455.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/455.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/455.png"
   },
   {
     "id": 456,
@@ -11527,8 +11527,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "비어 포켓몬",
     "heightM": 0.4,
     "weightKg": 7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/456.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/456.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/456.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/456.png"
   },
   {
     "id": 457,
@@ -11550,8 +11550,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "네온 포켓몬",
     "heightM": 1.2,
     "weightKg": 24,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/457.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/457.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/457.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/457.png"
   },
   {
     "id": 458,
@@ -11574,8 +11574,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "연 포켓몬",
     "heightM": 1,
     "weightKg": 65,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/458.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/458.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/458.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/458.png"
   },
   {
     "id": 459,
@@ -11598,8 +11598,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "얼음나무 포켓몬",
     "heightM": 1,
     "weightKg": 50.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/459.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/459.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/459.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/459.png"
   },
   {
     "id": 460,
@@ -11622,8 +11622,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "얼음나무 포켓몬",
     "heightM": 2.2,
     "weightKg": 135.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/460.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/460.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/460.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/460.png",
     "megaForms": [
       {
         "label": "메가눈설왕",
@@ -11639,8 +11639,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 105,
           "speed": 30
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10060.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10060.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10060.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10060.png"
       }
     ]
   },
@@ -11665,8 +11665,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "갈고리손톱 포켓몬",
     "heightM": 1.1,
     "weightKg": 34,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/461.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/461.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/461.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/461.png"
   },
   {
     "id": 462,
@@ -11689,8 +11689,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "자기장 포켓몬",
     "heightM": 1.2,
     "weightKg": 180,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/462.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/462.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/462.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/462.png"
   },
   {
     "id": 463,
@@ -11712,8 +11712,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "핥기 포켓몬",
     "heightM": 1.7,
     "weightKg": 140,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/463.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/463.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/463.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/463.png"
   },
   {
     "id": 464,
@@ -11736,8 +11736,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "드릴 포켓몬",
     "heightM": 2.4,
     "weightKg": 282.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/464.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/464.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/464.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/464.png"
   },
   {
     "id": 465,
@@ -11759,8 +11759,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "넝쿨 포켓몬",
     "heightM": 2,
     "weightKg": 128.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/465.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/465.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/465.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/465.png"
   },
   {
     "id": 466,
@@ -11782,8 +11782,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "뇌전 포켓몬",
     "heightM": 1.8,
     "weightKg": 138.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/466.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/466.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/466.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/466.png"
   },
   {
     "id": 467,
@@ -11805,8 +11805,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "폭염 포켓몬",
     "heightM": 1.6,
     "weightKg": 68,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/467.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/467.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/467.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/467.png"
   },
   {
     "id": 468,
@@ -11829,8 +11829,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "축복 포켓몬",
     "heightM": 1.5,
     "weightKg": 38,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/468.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/468.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/468.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/468.png"
   },
   {
     "id": 469,
@@ -11853,8 +11853,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "깨비잠자리 포켓몬",
     "heightM": 1.9,
     "weightKg": 51.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/469.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/469.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/469.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/469.png"
   },
   {
     "id": 470,
@@ -11876,8 +11876,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "심록 포켓몬",
     "heightM": 1,
     "weightKg": 25.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/470.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/470.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/470.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/470.png"
   },
   {
     "id": 471,
@@ -11899,8 +11899,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "신설 포켓몬",
     "heightM": 0.8,
     "weightKg": 25.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/471.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/471.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/471.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/471.png"
   },
   {
     "id": 472,
@@ -11923,8 +11923,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "송곳니전갈 포켓몬",
     "heightM": 2,
     "weightKg": 42.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/472.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/472.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/472.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/472.png"
   },
   {
     "id": 473,
@@ -11947,8 +11947,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "2개송곳니 포켓몬",
     "heightM": 2.5,
     "weightKg": 291,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/473.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/473.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/473.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/473.png"
   },
   {
     "id": 474,
@@ -11970,8 +11970,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가상 포켓몬",
     "heightM": 0.9,
     "weightKg": 34,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/474.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/474.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/474.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/474.png"
   },
   {
     "id": 475,
@@ -11994,8 +11994,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "검 포켓몬",
     "heightM": 1.6,
     "weightKg": 52,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/475.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/475.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/475.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/475.png",
     "megaForms": [
       {
         "label": "메가엘레이드",
@@ -12011,8 +12011,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 115,
           "speed": 110
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10068.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10068.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10068.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10068.png"
       }
     ]
   },
@@ -12037,8 +12037,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "콤파스 포켓몬",
     "heightM": 1.4,
     "weightKg": 340,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/476.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/476.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/476.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/476.png"
   },
   {
     "id": 477,
@@ -12060,8 +12060,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "움켜쥠 포켓몬",
     "heightM": 2.2,
     "weightKg": 106.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/477.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/477.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/477.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/477.png"
   },
   {
     "id": 478,
@@ -12084,8 +12084,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "설국 포켓몬",
     "heightM": 1.3,
     "weightKg": 26.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/478.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/478.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/478.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/478.png"
   },
   {
     "id": 479,
@@ -12108,8 +12108,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "플라스마 포켓몬",
     "heightM": 0.3,
     "weightKg": 0.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/479.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/479.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/479.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/479.png"
   },
   {
     "id": 480,
@@ -12131,8 +12131,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "지식 포켓몬",
     "heightM": 0.3,
     "weightKg": 0.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/480.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/480.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/480.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/480.png"
   },
   {
     "id": 481,
@@ -12154,8 +12154,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "감정 포켓몬",
     "heightM": 0.3,
     "weightKg": 0.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/481.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/481.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/481.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/481.png"
   },
   {
     "id": 482,
@@ -12177,8 +12177,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "의지 포켓몬",
     "heightM": 0.3,
     "weightKg": 0.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/482.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/482.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/482.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/482.png"
   },
   {
     "id": 483,
@@ -12201,8 +12201,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "시간 포켓몬",
     "heightM": 5.4,
     "weightKg": 683,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/483.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/483.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/483.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/483.png"
   },
   {
     "id": 484,
@@ -12225,8 +12225,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "공간 포켓몬",
     "heightM": 4.2,
     "weightKg": 336,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/484.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/484.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/484.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/484.png"
   },
   {
     "id": 485,
@@ -12249,8 +12249,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화구 포켓몬",
     "heightM": 1.7,
     "weightKg": 430,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/485.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/485.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/485.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/485.png"
   },
   {
     "id": 486,
@@ -12272,8 +12272,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "거대 포켓몬",
     "heightM": 3.7,
     "weightKg": 420,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/486.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/486.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/486.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/486.png"
   },
   {
     "id": 487,
@@ -12296,8 +12296,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "반골 포켓몬",
     "heightM": 4.5,
     "weightKg": 750,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/487.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/487.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/487.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/487.png"
   },
   {
     "id": 488,
@@ -12319,8 +12319,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "초승달 포켓몬",
     "heightM": 1.5,
     "weightKg": 85.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/488.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/488.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/488.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/488.png"
   },
   {
     "id": 489,
@@ -12342,8 +12342,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "해양 포켓몬",
     "heightM": 0.4,
     "weightKg": 3.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/489.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/489.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/489.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/489.png"
   },
   {
     "id": 490,
@@ -12365,8 +12365,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "회유 포켓몬",
     "heightM": 0.3,
     "weightKg": 1.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/490.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/490.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/490.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/490.png"
   },
   {
     "id": 491,
@@ -12388,8 +12388,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "암흑 포켓몬",
     "heightM": 1.5,
     "weightKg": 50.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/491.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/491.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/491.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/491.png"
   },
   {
     "id": 492,
@@ -12411,8 +12411,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "감사 포켓몬",
     "heightM": 0.2,
     "weightKg": 2.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/492.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/492.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/492.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/492.png"
   },
   {
     "id": 493,
@@ -12434,8 +12434,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "창조 포켓몬",
     "heightM": 3.2,
     "weightKg": 320,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/493.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/493.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/493.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/493.png"
   },
   {
     "id": 494,
@@ -12458,8 +12458,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "승리 포켓몬",
     "heightM": 0.4,
     "weightKg": 4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/494.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/494.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/494.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/494.png"
   },
   {
     "id": 495,
@@ -12481,8 +12481,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풀뱀 포켓몬",
     "heightM": 0.6,
     "weightKg": 8.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/495.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/495.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/495.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/495.png"
   },
   {
     "id": 496,
@@ -12504,8 +12504,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풀뱀 포켓몬",
     "heightM": 0.8,
     "weightKg": 16,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/496.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/496.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/496.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/496.png"
   },
   {
     "id": 497,
@@ -12527,8 +12527,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "로열 포켓몬",
     "heightM": 3.3,
     "weightKg": 63,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/497.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/497.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/497.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/497.png"
   },
   {
     "id": 498,
@@ -12550,8 +12550,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불돼지 포켓몬",
     "heightM": 0.5,
     "weightKg": 9.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/498.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/498.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/498.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/498.png"
   },
   {
     "id": 499,
@@ -12574,8 +12574,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불돼지 포켓몬",
     "heightM": 1,
     "weightKg": 55.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/499.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/499.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/499.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/499.png"
   },
   {
     "id": 500,
@@ -12598,8 +12598,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "큰불돼지 포켓몬",
     "heightM": 1.6,
     "weightKg": 150,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/500.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/500.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/500.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/500.png"
   },
   {
     "id": 501,
@@ -12621,8 +12621,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "해달 포켓몬",
     "heightM": 0.5,
     "weightKg": 5.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/501.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/501.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/501.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/501.png"
   },
   {
     "id": 502,
@@ -12644,8 +12644,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "수행 포켓몬",
     "heightM": 0.8,
     "weightKg": 24.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/502.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/502.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/502.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/502.png"
   },
   {
     "id": 503,
@@ -12667,8 +12667,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "관록 포켓몬",
     "heightM": 1.5,
     "weightKg": 94.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/503.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/503.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/503.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/503.png"
   },
   {
     "id": 504,
@@ -12690,8 +12690,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "망보기 포켓몬",
     "heightM": 0.5,
     "weightKg": 11.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/504.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/504.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/504.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/504.png"
   },
   {
     "id": 505,
@@ -12713,8 +12713,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "경계 포켓몬",
     "heightM": 1.1,
     "weightKg": 27,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/505.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/505.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/505.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/505.png"
   },
   {
     "id": 506,
@@ -12736,8 +12736,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "강아지 포켓몬",
     "heightM": 0.4,
     "weightKg": 4.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/506.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/506.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/506.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/506.png"
   },
   {
     "id": 507,
@@ -12759,8 +12759,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "충견 포켓몬",
     "heightM": 0.9,
     "weightKg": 14.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/507.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/507.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/507.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/507.png"
   },
   {
     "id": 508,
@@ -12782,8 +12782,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "관대 포켓몬",
     "heightM": 1.2,
     "weightKg": 61,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/508.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/508.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/508.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/508.png"
   },
   {
     "id": 509,
@@ -12805,8 +12805,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "성악 포켓몬",
     "heightM": 0.4,
     "weightKg": 10.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/509.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/509.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/509.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/509.png"
   },
   {
     "id": 510,
@@ -12828,8 +12828,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "냉혹 포켓몬",
     "heightM": 1.1,
     "weightKg": 37.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/510.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/510.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/510.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/510.png"
   },
   {
     "id": 511,
@@ -12851,8 +12851,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풀원숭이 포켓몬",
     "heightM": 0.6,
     "weightKg": 10.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/511.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/511.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/511.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/511.png"
   },
   {
     "id": 512,
@@ -12874,8 +12874,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가시원숭이 포켓몬",
     "heightM": 1.1,
     "weightKg": 30.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/512.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/512.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/512.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/512.png"
   },
   {
     "id": 513,
@@ -12897,8 +12897,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "고온 포켓몬",
     "heightM": 0.6,
     "weightKg": 11,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/513.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/513.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/513.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/513.png"
   },
   {
     "id": 514,
@@ -12920,8 +12920,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불티 포켓몬",
     "heightM": 1,
     "weightKg": 28,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/514.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/514.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/514.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/514.png"
   },
   {
     "id": 515,
@@ -12943,8 +12943,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "물뿌리기 포켓몬",
     "heightM": 0.6,
     "weightKg": 13.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/515.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/515.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/515.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/515.png"
   },
   {
     "id": 516,
@@ -12966,8 +12966,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "방수 포켓몬",
     "heightM": 1,
     "weightKg": 29,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/516.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/516.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/516.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/516.png"
   },
   {
     "id": 517,
@@ -12989,8 +12989,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꿈먹기 포켓몬",
     "heightM": 0.6,
     "weightKg": 23.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/517.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/517.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/517.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/517.png"
   },
   {
     "id": 518,
@@ -13012,8 +13012,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꿈결 포켓몬",
     "heightM": 1.1,
     "weightKg": 60.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/518.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/518.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/518.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/518.png"
   },
   {
     "id": 519,
@@ -13036,8 +13036,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "아기비둘기 포켓몬",
     "heightM": 0.3,
     "weightKg": 2.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/519.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/519.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/519.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/519.png"
   },
   {
     "id": 520,
@@ -13060,8 +13060,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "들비둘기 포켓몬",
     "heightM": 0.6,
     "weightKg": 15,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/520.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/520.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/520.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/520.png"
   },
   {
     "id": 521,
@@ -13084,8 +13084,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "프라이드 포켓몬",
     "heightM": 1.2,
     "weightKg": 29,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/521.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/521.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/521.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/521.png"
   },
   {
     "id": 522,
@@ -13107,8 +13107,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "하전 포켓몬",
     "heightM": 0.8,
     "weightKg": 29.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/522.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/522.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/522.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/522.png"
   },
   {
     "id": 523,
@@ -13130,8 +13130,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "뇌전 포켓몬",
     "heightM": 1.6,
     "weightKg": 79.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/523.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/523.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/523.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/523.png"
   },
   {
     "id": 524,
@@ -13153,8 +13153,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "맨틀 포켓몬",
     "heightM": 0.4,
     "weightKg": 18,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/524.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/524.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/524.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/524.png"
   },
   {
     "id": 525,
@@ -13176,8 +13176,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "광석 포켓몬",
     "heightM": 0.9,
     "weightKg": 102,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/525.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/525.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/525.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/525.png"
   },
   {
     "id": 526,
@@ -13199,8 +13199,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "고압 포켓몬",
     "heightM": 1.7,
     "weightKg": 260,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/526.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/526.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/526.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/526.png"
   },
   {
     "id": 527,
@@ -13223,8 +13223,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "박쥐 포켓몬",
     "heightM": 0.4,
     "weightKg": 2.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/527.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/527.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/527.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/527.png"
   },
   {
     "id": 528,
@@ -13247,8 +13247,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "구애 포켓몬",
     "heightM": 0.9,
     "weightKg": 10.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/528.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/528.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/528.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/528.png"
   },
   {
     "id": 529,
@@ -13270,8 +13270,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "두더지 포켓몬",
     "heightM": 0.3,
     "weightKg": 8.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/529.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/529.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/529.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/529.png"
   },
   {
     "id": 530,
@@ -13294,8 +13294,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "땅밑 포켓몬",
     "heightM": 0.7,
     "weightKg": 40.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/530.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/530.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/530.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/530.png"
   },
   {
     "id": 531,
@@ -13317,8 +13317,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "히어링 포켓몬",
     "heightM": 1.1,
     "weightKg": 31,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/531.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/531.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/531.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/531.png",
     "megaForms": [
       {
         "label": "메가다부니",
@@ -13334,8 +13334,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 126,
           "speed": 50
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10069.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10069.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10069.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10069.png"
       }
     ]
   },
@@ -13359,8 +13359,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "근골 포켓몬",
     "heightM": 0.6,
     "weightKg": 12.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/532.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/532.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/532.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/532.png"
   },
   {
     "id": 533,
@@ -13382,8 +13382,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "근골 포켓몬",
     "heightM": 1.2,
     "weightKg": 40,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/533.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/533.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/533.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/533.png"
   },
   {
     "id": 534,
@@ -13405,8 +13405,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "근골 포켓몬",
     "heightM": 1.4,
     "weightKg": 87,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/534.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/534.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/534.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/534.png"
   },
   {
     "id": 535,
@@ -13428,8 +13428,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "올챙이 포켓몬",
     "heightM": 0.5,
     "weightKg": 4.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/535.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/535.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/535.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/535.png"
   },
   {
     "id": 536,
@@ -13452,8 +13452,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "진동 포켓몬",
     "heightM": 0.8,
     "weightKg": 17,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/536.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/536.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/536.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/536.png"
   },
   {
     "id": 537,
@@ -13476,8 +13476,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "진동 포켓몬",
     "heightM": 1.5,
     "weightKg": 62,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/537.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/537.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/537.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/537.png"
   },
   {
     "id": 538,
@@ -13499,8 +13499,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "유도 포켓몬",
     "heightM": 1.3,
     "weightKg": 55.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/538.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/538.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/538.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/538.png"
   },
   {
     "id": 539,
@@ -13522,8 +13522,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "태권도 포켓몬",
     "heightM": 1.4,
     "weightKg": 51,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/539.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/539.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/539.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/539.png"
   },
   {
     "id": 540,
@@ -13546,8 +13546,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "재봉 포켓몬",
     "heightM": 0.3,
     "weightKg": 2.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/540.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/540.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/540.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/540.png"
   },
   {
     "id": 541,
@@ -13570,8 +13570,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "잎숨기 포켓몬",
     "heightM": 0.5,
     "weightKg": 7.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/541.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/541.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/541.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/541.png"
   },
   {
     "id": 542,
@@ -13594,8 +13594,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "육아 포켓몬",
     "heightM": 1.2,
     "weightKg": 20.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/542.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/542.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/542.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/542.png"
   },
   {
     "id": 543,
@@ -13618,8 +13618,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "지네 포켓몬",
     "heightM": 0.4,
     "weightKg": 5.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/543.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/543.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/543.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/543.png"
   },
   {
     "id": 544,
@@ -13642,8 +13642,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "눈썹지네 포켓몬",
     "heightM": 1.2,
     "weightKg": 58.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/544.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/544.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/544.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/544.png"
   },
   {
     "id": 545,
@@ -13666,8 +13666,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "메가지네 포켓몬",
     "heightM": 2.5,
     "weightKg": 200.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/545.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/545.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/545.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/545.png"
   },
   {
     "id": 546,
@@ -13690,8 +13690,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "솜뭉치 포켓몬",
     "heightM": 0.3,
     "weightKg": 0.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/546.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/546.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/546.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/546.png"
   },
   {
     "id": 547,
@@ -13714,8 +13714,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "바람숨기 포켓몬",
     "heightM": 0.7,
     "weightKg": 6.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/547.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/547.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/547.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/547.png"
   },
   {
     "id": 548,
@@ -13737,8 +13737,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "뿌리 포켓몬",
     "heightM": 0.5,
     "weightKg": 6.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/548.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/548.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/548.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/548.png"
   },
   {
     "id": 549,
@@ -13760,8 +13760,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꽃장식 포켓몬",
     "heightM": 1.1,
     "weightKg": 16.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/549.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/549.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/549.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/549.png"
   },
   {
     "id": 550,
@@ -13783,8 +13783,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "흉포 포켓몬",
     "heightM": 1,
     "weightKg": 18,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/550.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/550.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/550.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/550.png"
   },
   {
     "id": 551,
@@ -13807,8 +13807,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "사막악어 포켓몬",
     "heightM": 0.7,
     "weightKg": 15.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/551.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/551.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/551.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/551.png"
   },
   {
     "id": 552,
@@ -13831,8 +13831,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "사막악어 포켓몬",
     "heightM": 1,
     "weightKg": 33.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/552.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/552.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/552.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/552.png"
   },
   {
     "id": 553,
@@ -13855,8 +13855,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "위협 포켓몬",
     "heightM": 1.5,
     "weightKg": 96.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/553.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/553.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/553.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/553.png"
   },
   {
     "id": 554,
@@ -13878,8 +13878,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "달마 포켓몬",
     "heightM": 0.6,
     "weightKg": 37.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/554.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/554.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/554.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/554.png"
   },
   {
     "id": 555,
@@ -13901,8 +13901,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "염상 포켓몬",
     "heightM": 1.3,
     "weightKg": 92.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/555.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/555.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/555.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/555.png"
   },
   {
     "id": 556,
@@ -13924,8 +13924,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "선인장 포켓몬",
     "heightM": 1,
     "weightKg": 28,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/556.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/556.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/556.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/556.png"
   },
   {
     "id": 557,
@@ -13948,8 +13948,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "돌집 포켓몬",
     "heightM": 0.3,
     "weightKg": 14.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/557.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/557.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/557.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/557.png"
   },
   {
     "id": 558,
@@ -13972,8 +13972,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "바위집 포켓몬",
     "heightM": 1.4,
     "weightKg": 200,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/558.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/558.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/558.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/558.png"
   },
   {
     "id": 559,
@@ -13996,8 +13996,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "탈피 포켓몬",
     "heightM": 0.6,
     "weightKg": 11.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/559.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/559.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/559.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/559.png"
   },
   {
     "id": 560,
@@ -14020,8 +14020,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "악당 포켓몬",
     "heightM": 1.1,
     "weightKg": 30,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/560.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/560.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/560.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/560.png"
   },
   {
     "id": 561,
@@ -14044,8 +14044,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "흡사새 포켓몬",
     "heightM": 1.4,
     "weightKg": 14,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/561.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/561.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/561.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/561.png"
   },
   {
     "id": 562,
@@ -14067,8 +14067,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "영혼 포켓몬",
     "heightM": 0.5,
     "weightKg": 1.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/562.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/562.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/562.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/562.png"
   },
   {
     "id": 563,
@@ -14090,8 +14090,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "관 포켓몬",
     "heightM": 1.7,
     "weightKg": 76.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/563.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/563.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/563.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/563.png"
   },
   {
     "id": 564,
@@ -14114,8 +14114,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "옛날거북 포켓몬",
     "heightM": 0.7,
     "weightKg": 16.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/564.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/564.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/564.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/564.png"
   },
   {
     "id": 565,
@@ -14138,8 +14138,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "옛날거북 포켓몬",
     "heightM": 1.2,
     "weightKg": 81,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/565.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/565.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/565.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/565.png"
   },
   {
     "id": 566,
@@ -14162,8 +14162,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "최초새 포켓몬",
     "heightM": 0.5,
     "weightKg": 9.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/566.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/566.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/566.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/566.png"
   },
   {
     "id": 567,
@@ -14186,8 +14186,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "최초새 포켓몬",
     "heightM": 1.4,
     "weightKg": 32,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/567.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/567.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/567.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/567.png"
   },
   {
     "id": 568,
@@ -14209,8 +14209,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쓰레기봉투 포켓몬",
     "heightM": 0.6,
     "weightKg": 31,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/568.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/568.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/568.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/568.png"
   },
   {
     "id": 569,
@@ -14232,8 +14232,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쓰레기장 포켓몬",
     "heightM": 1.9,
     "weightKg": 107.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/569.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/569.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/569.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/569.png"
   },
   {
     "id": 570,
@@ -14255,8 +14255,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "나쁜여우 포켓몬",
     "heightM": 0.7,
     "weightKg": 12.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/570.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/570.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/570.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/570.png"
   },
   {
     "id": 571,
@@ -14278,8 +14278,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "요괴여우 포켓몬",
     "heightM": 1.6,
     "weightKg": 81.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/571.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/571.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/571.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/571.png"
   },
   {
     "id": 572,
@@ -14301,8 +14301,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "친칠라 포켓몬",
     "heightM": 0.4,
     "weightKg": 5.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/572.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/572.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/572.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/572.png"
   },
   {
     "id": 573,
@@ -14324,8 +14324,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "스카프 포켓몬",
     "heightM": 0.5,
     "weightKg": 7.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/573.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/573.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/573.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/573.png"
   },
   {
     "id": 574,
@@ -14347,8 +14347,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "응시 포켓몬",
     "heightM": 0.4,
     "weightKg": 5.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/574.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/574.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/574.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/574.png"
   },
   {
     "id": 575,
@@ -14370,8 +14370,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "조작 포켓몬",
     "heightM": 0.7,
     "weightKg": 18,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/575.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/575.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/575.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/575.png"
   },
   {
     "id": 576,
@@ -14393,8 +14393,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "천체 포켓몬",
     "heightM": 1.5,
     "weightKg": 44,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/576.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/576.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/576.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/576.png"
   },
   {
     "id": 577,
@@ -14416,8 +14416,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "세포 포켓몬",
     "heightM": 0.3,
     "weightKg": 1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/577.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/577.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/577.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/577.png"
   },
   {
     "id": 578,
@@ -14439,8 +14439,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "분할 포켓몬",
     "heightM": 0.6,
     "weightKg": 8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/578.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/578.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/578.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/578.png"
   },
   {
     "id": 579,
@@ -14462,8 +14462,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "증폭 포켓몬",
     "heightM": 1,
     "weightKg": 20.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/579.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/579.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/579.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/579.png"
   },
   {
     "id": 580,
@@ -14486,8 +14486,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "물새 포켓몬",
     "heightM": 0.5,
     "weightKg": 5.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/580.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/580.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/580.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/580.png"
   },
   {
     "id": 581,
@@ -14510,8 +14510,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "백조 포켓몬",
     "heightM": 1.3,
     "weightKg": 24.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/581.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/581.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/581.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/581.png"
   },
   {
     "id": 582,
@@ -14533,8 +14533,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "신설 포켓몬",
     "heightM": 0.4,
     "weightKg": 5.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/582.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/582.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/582.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/582.png"
   },
   {
     "id": 583,
@@ -14556,8 +14556,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "빙설 포켓몬",
     "heightM": 1.1,
     "weightKg": 41,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/583.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/583.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/583.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/583.png"
   },
   {
     "id": 584,
@@ -14579,8 +14579,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "블리자드 포켓몬",
     "heightM": 1.3,
     "weightKg": 57.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/584.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/584.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/584.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/584.png"
   },
   {
     "id": 585,
@@ -14603,8 +14603,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "계절 포켓몬",
     "heightM": 0.6,
     "weightKg": 19.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/585.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/585.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/585.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/585.png"
   },
   {
     "id": 586,
@@ -14627,8 +14627,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "계절 포켓몬",
     "heightM": 1.9,
     "weightKg": 92.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/586.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/586.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/586.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/586.png"
   },
   {
     "id": 587,
@@ -14651,8 +14651,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "하늘다람쥐 포켓몬",
     "heightM": 0.4,
     "weightKg": 5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/587.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/587.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/587.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/587.png"
   },
   {
     "id": 588,
@@ -14674,8 +14674,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "덥석물기 포켓몬",
     "heightM": 0.5,
     "weightKg": 5.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/588.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/588.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/588.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/588.png"
   },
   {
     "id": 589,
@@ -14698,8 +14698,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "기병 포켓몬",
     "heightM": 1,
     "weightKg": 33,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/589.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/589.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/589.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/589.png"
   },
   {
     "id": 590,
@@ -14722,8 +14722,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "버섯 포켓몬",
     "heightM": 0.2,
     "weightKg": 1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/590.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/590.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/590.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/590.png"
   },
   {
     "id": 591,
@@ -14746,8 +14746,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "버섯 포켓몬",
     "heightM": 0.6,
     "weightKg": 10.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/591.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/591.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/591.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/591.png"
   },
   {
     "id": 592,
@@ -14770,8 +14770,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "부유 포켓몬",
     "heightM": 1.2,
     "weightKg": 33,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/592.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/592.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/592.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/592.png"
   },
   {
     "id": 593,
@@ -14794,8 +14794,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "부유 포켓몬",
     "heightM": 2.2,
     "weightKg": 135,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/593.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/593.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/593.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/593.png"
   },
   {
     "id": 594,
@@ -14817,8 +14817,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "돌보기 포켓몬",
     "heightM": 1.2,
     "weightKg": 31.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/594.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/594.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/594.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/594.png"
   },
   {
     "id": 595,
@@ -14841,8 +14841,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "들러붙기 포켓몬",
     "heightM": 0.1,
     "weightKg": 0.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/595.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/595.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/595.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/595.png"
   },
   {
     "id": 596,
@@ -14865,8 +14865,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "전기거미 포켓몬",
     "heightM": 0.8,
     "weightKg": 14.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/596.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/596.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/596.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/596.png"
   },
   {
     "id": 597,
@@ -14889,8 +14889,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가시열매 포켓몬",
     "heightM": 0.6,
     "weightKg": 18.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/597.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/597.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/597.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/597.png"
   },
   {
     "id": 598,
@@ -14913,8 +14913,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가시공 포켓몬",
     "heightM": 1,
     "weightKg": 110,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/598.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/598.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/598.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/598.png"
   },
   {
     "id": 599,
@@ -14936,8 +14936,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "톱니바퀴 포켓몬",
     "heightM": 0.3,
     "weightKg": 21,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/599.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/599.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/599.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/599.png"
   },
   {
     "id": 600,
@@ -14959,8 +14959,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "톱니바퀴 포켓몬",
     "heightM": 0.6,
     "weightKg": 51,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/600.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/600.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/600.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/600.png"
   },
   {
     "id": 601,
@@ -14982,8 +14982,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "톱니바퀴 포켓몬",
     "heightM": 0.6,
     "weightKg": 81,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/601.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/601.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/601.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/601.png"
   },
   {
     "id": 602,
@@ -15005,8 +15005,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "전기물고기 포켓몬",
     "heightM": 0.2,
     "weightKg": 0.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/602.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/602.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/602.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/602.png"
   },
   {
     "id": 603,
@@ -15028,8 +15028,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "전기물고기 포켓몬",
     "heightM": 1.2,
     "weightKg": 22,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/603.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/603.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/603.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/603.png"
   },
   {
     "id": 604,
@@ -15051,8 +15051,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "전기물고기 포켓몬",
     "heightM": 2.1,
     "weightKg": 80.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/604.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/604.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/604.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/604.png"
   },
   {
     "id": 605,
@@ -15074,8 +15074,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "브레인 포켓몬",
     "heightM": 0.5,
     "weightKg": 9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/605.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/605.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/605.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/605.png"
   },
   {
     "id": 606,
@@ -15097,8 +15097,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "브레인 포켓몬",
     "heightM": 1,
     "weightKg": 34.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/606.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/606.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/606.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/606.png"
   },
   {
     "id": 607,
@@ -15121,8 +15121,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "양초 포켓몬",
     "heightM": 0.3,
     "weightKg": 3.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/607.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/607.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/607.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/607.png"
   },
   {
     "id": 608,
@@ -15145,8 +15145,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "램프 포켓몬",
     "heightM": 0.6,
     "weightKg": 13,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/608.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/608.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/608.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/608.png"
   },
   {
     "id": 609,
@@ -15169,8 +15169,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "권유 포켓몬",
     "heightM": 1,
     "weightKg": 34.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/609.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/609.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/609.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/609.png"
   },
   {
     "id": 610,
@@ -15192,8 +15192,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "이빨 포켓몬",
     "heightM": 0.6,
     "weightKg": 18,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/610.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/610.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/610.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/610.png"
   },
   {
     "id": 611,
@@ -15215,8 +15215,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "도끼턱 포켓몬",
     "heightM": 1,
     "weightKg": 36,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/611.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/611.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/611.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/611.png"
   },
   {
     "id": 612,
@@ -15238,8 +15238,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "도끼턱 포켓몬",
     "heightM": 1.8,
     "weightKg": 105.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/612.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/612.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/612.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/612.png"
   },
   {
     "id": 613,
@@ -15261,8 +15261,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "빙결 포켓몬",
     "heightM": 0.5,
     "weightKg": 8.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/613.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/613.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/613.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/613.png"
   },
   {
     "id": 614,
@@ -15284,8 +15284,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "동결 포켓몬",
     "heightM": 2.6,
     "weightKg": 260,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/614.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/614.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/614.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/614.png"
   },
   {
     "id": 615,
@@ -15307,8 +15307,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "결정 포켓몬",
     "heightM": 1.1,
     "weightKg": 148,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/615.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/615.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/615.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/615.png"
   },
   {
     "id": 616,
@@ -15330,8 +15330,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "달팽이 포켓몬",
     "heightM": 0.4,
     "weightKg": 7.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/616.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/616.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/616.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/616.png"
   },
   {
     "id": 617,
@@ -15353,8 +15353,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "탈껍질 포켓몬",
     "heightM": 0.8,
     "weightKg": 25.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/617.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/617.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/617.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/617.png"
   },
   {
     "id": 618,
@@ -15377,8 +15377,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "트랩 포켓몬",
     "heightM": 0.7,
     "weightKg": 11,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/618.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/618.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/618.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/618.png"
   },
   {
     "id": 619,
@@ -15400,8 +15400,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "무술 포켓몬",
     "heightM": 0.9,
     "weightKg": 20,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/619.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/619.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/619.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/619.png"
   },
   {
     "id": 620,
@@ -15423,8 +15423,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "무술 포켓몬",
     "heightM": 1.4,
     "weightKg": 35.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/620.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/620.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/620.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/620.png"
   },
   {
     "id": 621,
@@ -15446,8 +15446,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "동굴 포켓몬",
     "heightM": 1.6,
     "weightKg": 139,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/621.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/621.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/621.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/621.png"
   },
   {
     "id": 622,
@@ -15470,8 +15470,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "골렘 포켓몬",
     "heightM": 1,
     "weightKg": 92,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/622.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/622.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/622.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/622.png"
   },
   {
     "id": 623,
@@ -15494,8 +15494,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "골렘 포켓몬",
     "heightM": 2.8,
     "weightKg": 330,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/623.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/623.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/623.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/623.png"
   },
   {
     "id": 624,
@@ -15518,8 +15518,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "날붙이 포켓몬",
     "heightM": 0.5,
     "weightKg": 10.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/624.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/624.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/624.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/624.png"
   },
   {
     "id": 625,
@@ -15542,8 +15542,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "도인 포켓몬",
     "heightM": 1.6,
     "weightKg": 70,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/625.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/625.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/625.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/625.png"
   },
   {
     "id": 626,
@@ -15565,8 +15565,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "박치기소 포켓몬",
     "heightM": 1.6,
     "weightKg": 94.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/626.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/626.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/626.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/626.png"
   },
   {
     "id": 627,
@@ -15589,8 +15589,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "새끼독수리 포켓몬",
     "heightM": 0.5,
     "weightKg": 10.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/627.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/627.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/627.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/627.png"
   },
   {
     "id": 628,
@@ -15613,8 +15613,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "용맹 포켓몬",
     "heightM": 1.5,
     "weightKg": 41,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/628.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/628.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/628.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/628.png"
   },
   {
     "id": 629,
@@ -15637,8 +15637,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "기저귀 포켓몬",
     "heightM": 0.5,
     "weightKg": 9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/629.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/629.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/629.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/629.png"
   },
   {
     "id": 630,
@@ -15661,8 +15661,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "뼈독수리 포켓몬",
     "heightM": 1.2,
     "weightKg": 39.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/630.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/630.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/630.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/630.png"
   },
   {
     "id": 631,
@@ -15684,8 +15684,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "개미핥기 포켓몬",
     "heightM": 1.4,
     "weightKg": 58,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/631.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/631.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/631.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/631.png"
   },
   {
     "id": 632,
@@ -15708,8 +15708,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "철개미 포켓몬",
     "heightM": 0.3,
     "weightKg": 33,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/632.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/632.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/632.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/632.png"
   },
   {
     "id": 633,
@@ -15732,8 +15732,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "폭거 포켓몬",
     "heightM": 0.8,
     "weightKg": 17.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/633.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/633.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/633.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/633.png"
   },
   {
     "id": 634,
@@ -15756,8 +15756,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "흉포 포켓몬",
     "heightM": 1.4,
     "weightKg": 50,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/634.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/634.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/634.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/634.png"
   },
   {
     "id": 635,
@@ -15780,8 +15780,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "난폭 포켓몬",
     "heightM": 1.8,
     "weightKg": 160,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/635.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/635.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/635.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/635.png"
   },
   {
     "id": 636,
@@ -15804,8 +15804,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "횃불 포켓몬",
     "heightM": 1.1,
     "weightKg": 28.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/636.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/636.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/636.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/636.png"
   },
   {
     "id": 637,
@@ -15828,8 +15828,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "태양 포켓몬",
     "heightM": 1.6,
     "weightKg": 46,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/637.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/637.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/637.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/637.png"
   },
   {
     "id": 638,
@@ -15852,8 +15852,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "철심 포켓몬",
     "heightM": 2.1,
     "weightKg": 250,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/638.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/638.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/638.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/638.png"
   },
   {
     "id": 639,
@@ -15876,8 +15876,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "암굴 포켓몬",
     "heightM": 1.9,
     "weightKg": 260,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/639.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/639.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/639.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/639.png"
   },
   {
     "id": 640,
@@ -15900,8 +15900,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "초원 포켓몬",
     "heightM": 2,
     "weightKg": 200,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/640.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/640.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/640.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/640.png"
   },
   {
     "id": 641,
@@ -15923,8 +15923,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "선풍 포켓몬",
     "heightM": 1.5,
     "weightKg": 63,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/641.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/641.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/641.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/641.png"
   },
   {
     "id": 642,
@@ -15947,8 +15947,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "뇌격 포켓몬",
     "heightM": 1.5,
     "weightKg": 61,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/642.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/642.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/642.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/642.png"
   },
   {
     "id": 643,
@@ -15971,8 +15971,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "백양 포켓몬",
     "heightM": 3.2,
     "weightKg": 330,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/643.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/643.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/643.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/643.png"
   },
   {
     "id": 644,
@@ -15995,8 +15995,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "흑음 포켓몬",
     "heightM": 2.9,
     "weightKg": 345,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/644.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/644.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/644.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/644.png"
   },
   {
     "id": 645,
@@ -16019,8 +16019,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풍요 포켓몬",
     "heightM": 1.5,
     "weightKg": 68,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/645.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/645.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/645.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/645.png"
   },
   {
     "id": 646,
@@ -16043,8 +16043,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "경계 포켓몬",
     "heightM": 3,
     "weightKg": 325,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/646.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/646.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/646.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/646.png"
   },
   {
     "id": 647,
@@ -16067,8 +16067,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "망아지 포켓몬",
     "heightM": 1.4,
     "weightKg": 48.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/647.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/647.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/647.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/647.png"
   },
   {
     "id": 648,
@@ -16091,8 +16091,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "선율 포켓몬",
     "heightM": 0.6,
     "weightKg": 6.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/648.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/648.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/648.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/648.png"
   },
   {
     "id": 649,
@@ -16115,8 +16115,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "고생대 포켓몬",
     "heightM": 1.5,
     "weightKg": 82.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/649.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/649.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/649.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/649.png"
   },
   {
     "id": 650,
@@ -16138,8 +16138,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "밤송이 포켓몬",
     "heightM": 0.4,
     "weightKg": 9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/650.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/650.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/650.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/650.png"
   },
   {
     "id": 651,
@@ -16161,8 +16161,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가시갑옷 포켓몬",
     "heightM": 0.7,
     "weightKg": 29,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/651.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/651.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/651.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/651.png"
   },
   {
     "id": 652,
@@ -16185,8 +16185,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가시갑옷 포켓몬",
     "heightM": 1.6,
     "weightKg": 90,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/652.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/652.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/652.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/652.png"
   },
   {
     "id": 653,
@@ -16208,8 +16208,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "여우 포켓몬",
     "heightM": 0.4,
     "weightKg": 9.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/653.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/653.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/653.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/653.png"
   },
   {
     "id": 654,
@@ -16231,8 +16231,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "여우 포켓몬",
     "heightM": 1,
     "weightKg": 14.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/654.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/654.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/654.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/654.png"
   },
   {
     "id": 655,
@@ -16255,8 +16255,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "여우 포켓몬",
     "heightM": 1.5,
     "weightKg": 39,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/655.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/655.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/655.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/655.png"
   },
   {
     "id": 656,
@@ -16278,8 +16278,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "거품개구리 포켓몬",
     "heightM": 0.3,
     "weightKg": 7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/656.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/656.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/656.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/656.png"
   },
   {
     "id": 657,
@@ -16301,8 +16301,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "거품개구리 포켓몬",
     "heightM": 0.6,
     "weightKg": 10.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/657.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/657.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/657.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/657.png"
   },
   {
     "id": 658,
@@ -16325,8 +16325,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "시노비 포켓몬",
     "heightM": 1.5,
     "weightKg": 40,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/658.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/658.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/658.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/658.png"
   },
   {
     "id": 659,
@@ -16348,8 +16348,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "땅구멍파기 포켓몬",
     "heightM": 0.4,
     "weightKg": 5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/659.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/659.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/659.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/659.png"
   },
   {
     "id": 660,
@@ -16372,8 +16372,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "땅구멍파기 포켓몬",
     "heightM": 1,
     "weightKg": 42.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/660.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/660.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/660.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/660.png"
   },
   {
     "id": 661,
@@ -16396,8 +16396,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "울새 포켓몬",
     "heightM": 0.3,
     "weightKg": 1.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/661.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/661.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/661.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/661.png"
   },
   {
     "id": 662,
@@ -16420,8 +16420,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불티 포켓몬",
     "heightM": 0.7,
     "weightKg": 16,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/662.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/662.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/662.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/662.png"
   },
   {
     "id": 663,
@@ -16444,8 +16444,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "열화 포켓몬",
     "heightM": 1.2,
     "weightKg": 24.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/663.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/663.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/663.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/663.png"
   },
   {
     "id": 664,
@@ -16467,8 +16467,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가루뿜기 포켓몬",
     "heightM": 0.3,
     "weightKg": 2.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/664.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/664.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/664.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/664.png"
   },
   {
     "id": 665,
@@ -16490,8 +16490,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가루뿜기 포켓몬",
     "heightM": 0.3,
     "weightKg": 8.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/665.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/665.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/665.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/665.png"
   },
   {
     "id": 666,
@@ -16514,8 +16514,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "인분 포켓몬",
     "heightM": 1.2,
     "weightKg": 17,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/666.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/666.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/666.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/666.png"
   },
   {
     "id": 667,
@@ -16538,8 +16538,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "어린사자 포켓몬",
     "heightM": 0.6,
     "weightKg": 13.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/667.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/667.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/667.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/667.png"
   },
   {
     "id": 668,
@@ -16562,8 +16562,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "임금 포켓몬",
     "heightM": 1.5,
     "weightKg": 81.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/668.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/668.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/668.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/668.png"
   },
   {
     "id": 669,
@@ -16585,8 +16585,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "한송이 포켓몬",
     "heightM": 0.1,
     "weightKg": 0.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/669.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/669.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/669.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/669.png"
   },
   {
     "id": 670,
@@ -16608,8 +16608,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "한송이 포켓몬",
     "heightM": 0.2,
     "weightKg": 0.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/670.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/670.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/670.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/670.png"
   },
   {
     "id": 671,
@@ -16631,8 +16631,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가든 포켓몬",
     "heightM": 1.1,
     "weightKg": 10,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/671.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/671.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/671.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/671.png"
   },
   {
     "id": 672,
@@ -16654,8 +16654,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "라이드 포켓몬",
     "heightM": 0.9,
     "weightKg": 31,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/672.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/672.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/672.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/672.png"
   },
   {
     "id": 673,
@@ -16677,8 +16677,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "라이드 포켓몬",
     "heightM": 1.7,
     "weightKg": 91,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/673.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/673.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/673.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/673.png"
   },
   {
     "id": 674,
@@ -16700,8 +16700,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "개구쟁이 포켓몬",
     "heightM": 0.6,
     "weightKg": 8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/674.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/674.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/674.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/674.png"
   },
   {
     "id": 675,
@@ -16724,8 +16724,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "무서운얼굴 포켓몬",
     "heightM": 2.1,
     "weightKg": 136,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/675.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/675.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/675.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/675.png"
   },
   {
     "id": 676,
@@ -16747,8 +16747,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "푸들 포켓몬",
     "heightM": 1.2,
     "weightKg": 28,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/676.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/676.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/676.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/676.png"
   },
   {
     "id": 677,
@@ -16770,8 +16770,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "자제 포켓몬",
     "heightM": 0.3,
     "weightKg": 3.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/677.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/677.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/677.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/677.png"
   },
   {
     "id": 678,
@@ -16793,8 +16793,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "억제 포켓몬",
     "heightM": 0.6,
     "weightKg": 8.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/678.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/678.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/678.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/678.png"
   },
   {
     "id": 679,
@@ -16817,8 +16817,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "도검 포켓몬",
     "heightM": 0.8,
     "weightKg": 2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/679.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/679.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/679.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/679.png"
   },
   {
     "id": 680,
@@ -16841,8 +16841,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "도검 포켓몬",
     "heightM": 0.8,
     "weightKg": 4.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/680.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/680.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/680.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/680.png"
   },
   {
     "id": 681,
@@ -16865,8 +16865,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "왕검 포켓몬",
     "heightM": 1.7,
     "weightKg": 53,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/681.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/681.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/681.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/681.png"
   },
   {
     "id": 682,
@@ -16888,8 +16888,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "향수 포켓몬",
     "heightM": 0.2,
     "weightKg": 0.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/682.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/682.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/682.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/682.png"
   },
   {
     "id": 683,
@@ -16911,8 +16911,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "방향 포켓몬",
     "heightM": 0.8,
     "weightKg": 15.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/683.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/683.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/683.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/683.png"
   },
   {
     "id": 684,
@@ -16934,8 +16934,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "솜사탕 포켓몬",
     "heightM": 0.4,
     "weightKg": 3.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/684.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/684.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/684.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/684.png"
   },
   {
     "id": 685,
@@ -16957,8 +16957,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "휩 포켓몬",
     "heightM": 0.8,
     "weightKg": 5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/685.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/685.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/685.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/685.png"
   },
   {
     "id": 686,
@@ -16981,8 +16981,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "회전 포켓몬",
     "heightM": 0.4,
     "weightKg": 3.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/686.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/686.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/686.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/686.png"
   },
   {
     "id": 687,
@@ -17005,8 +17005,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "역전 포켓몬",
     "heightM": 1.5,
     "weightKg": 47,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/687.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/687.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/687.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/687.png"
   },
   {
     "id": 688,
@@ -17029,8 +17029,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "두손 포켓몬",
     "heightM": 0.5,
     "weightKg": 31,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/688.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/688.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/688.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/688.png"
   },
   {
     "id": 689,
@@ -17053,8 +17053,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "집합 포켓몬",
     "heightM": 1.3,
     "weightKg": 96,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/689.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/689.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/689.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/689.png"
   },
   {
     "id": 690,
@@ -17077,8 +17077,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풀모방 포켓몬",
     "heightM": 0.5,
     "weightKg": 7.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/690.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/690.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/690.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/690.png"
   },
   {
     "id": 691,
@@ -17101,8 +17101,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풀모방 포켓몬",
     "heightM": 1.8,
     "weightKg": 81.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/691.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/691.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/691.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/691.png"
   },
   {
     "id": 692,
@@ -17124,8 +17124,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "물대포 포켓몬",
     "heightM": 0.5,
     "weightKg": 8.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/692.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/692.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/692.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/692.png"
   },
   {
     "id": 693,
@@ -17147,8 +17147,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "런처 포켓몬",
     "heightM": 1.3,
     "weightKg": 35.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/693.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/693.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/693.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/693.png"
   },
   {
     "id": 694,
@@ -17171,8 +17171,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "발전 포켓몬",
     "heightM": 0.5,
     "weightKg": 6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/694.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/694.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/694.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/694.png"
   },
   {
     "id": 695,
@@ -17195,8 +17195,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "발전 포켓몬",
     "heightM": 1,
     "weightKg": 21,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/695.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/695.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/695.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/695.png"
   },
   {
     "id": 696,
@@ -17219,8 +17219,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "유군 포켓몬",
     "heightM": 0.8,
     "weightKg": 26,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/696.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/696.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/696.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/696.png"
   },
   {
     "id": 697,
@@ -17243,8 +17243,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "폭군 포켓몬",
     "heightM": 2.5,
     "weightKg": 270,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/697.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/697.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/697.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/697.png"
   },
   {
     "id": 698,
@@ -17267,8 +17267,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "툰드라 포켓몬",
     "heightM": 1.3,
     "weightKg": 25.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/698.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/698.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/698.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/698.png"
   },
   {
     "id": 699,
@@ -17291,8 +17291,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "툰드라 포켓몬",
     "heightM": 2.7,
     "weightKg": 225,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/699.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/699.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/699.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/699.png"
   },
   {
     "id": 700,
@@ -17314,8 +17314,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "연결 포켓몬",
     "heightM": 1,
     "weightKg": 23.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/700.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/700.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/700.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png"
   },
   {
     "id": 701,
@@ -17338,8 +17338,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "레슬링 포켓몬",
     "heightM": 0.8,
     "weightKg": 21.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/701.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/701.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/701.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/701.png"
   },
   {
     "id": 702,
@@ -17362,8 +17362,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "안테나 포켓몬",
     "heightM": 0.2,
     "weightKg": 2.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/702.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/702.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/702.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/702.png"
   },
   {
     "id": 703,
@@ -17386,8 +17386,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "보석 포켓몬",
     "heightM": 0.3,
     "weightKg": 5.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/703.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/703.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/703.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/703.png"
   },
   {
     "id": 704,
@@ -17409,8 +17409,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "연체 포켓몬",
     "heightM": 0.3,
     "weightKg": 2.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/704.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/704.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/704.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/704.png"
   },
   {
     "id": 705,
@@ -17432,8 +17432,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "연체 포켓몬",
     "heightM": 0.8,
     "weightKg": 17.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/705.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/705.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/705.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/705.png"
   },
   {
     "id": 706,
@@ -17455,8 +17455,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "드래곤 포켓몬",
     "heightM": 2,
     "weightKg": 150.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/706.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/706.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/706.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/706.png"
   },
   {
     "id": 707,
@@ -17479,8 +17479,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "열쇠꾸러미 포켓몬",
     "heightM": 0.2,
     "weightKg": 3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/707.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/707.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/707.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/707.png"
   },
   {
     "id": 708,
@@ -17503,8 +17503,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "그루터기 포켓몬",
     "heightM": 0.4,
     "weightKg": 7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/708.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/708.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/708.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/708.png"
   },
   {
     "id": 709,
@@ -17527,8 +17527,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "고목 포켓몬",
     "heightM": 1.5,
     "weightKg": 71,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/709.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/709.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/709.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/709.png"
   },
   {
     "id": 710,
@@ -17551,8 +17551,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "호박 포켓몬",
     "heightM": 0.4,
     "weightKg": 5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/710.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/710.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/710.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/710.png"
   },
   {
     "id": 711,
@@ -17575,8 +17575,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "호박 포켓몬",
     "heightM": 0.9,
     "weightKg": 12.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/711.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/711.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/711.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/711.png"
   },
   {
     "id": 712,
@@ -17598,8 +17598,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "얼음덩이 포켓몬",
     "heightM": 1,
     "weightKg": 99.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/712.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/712.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/712.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/712.png"
   },
   {
     "id": 713,
@@ -17621,8 +17621,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "빙산 포켓몬",
     "heightM": 2,
     "weightKg": 505,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/713.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/713.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/713.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/713.png"
   },
   {
     "id": 714,
@@ -17645,8 +17645,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "음파 포켓몬",
     "heightM": 0.5,
     "weightKg": 8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/714.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/714.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/714.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/714.png"
   },
   {
     "id": 715,
@@ -17669,8 +17669,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "음파 포켓몬",
     "heightM": 1.5,
     "weightKg": 85,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/715.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/715.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/715.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/715.png"
   },
   {
     "id": 716,
@@ -17692,8 +17692,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "생명 포켓몬",
     "heightM": 3,
     "weightKg": 215,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/716.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/716.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/716.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/716.png"
   },
   {
     "id": 717,
@@ -17716,8 +17716,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "파괴 포켓몬",
     "heightM": 5.8,
     "weightKg": 203,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/717.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/717.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/717.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/717.png"
   },
   {
     "id": 718,
@@ -17740,8 +17740,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "질서 포켓몬",
     "heightM": 5,
     "weightKg": 305,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/718.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/718.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/718.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/718.png"
   },
   {
     "id": 719,
@@ -17764,8 +17764,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "보석 포켓몬",
     "heightM": 0.7,
     "weightKg": 8.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/719.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/719.png",
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/719.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/719.png",
     "megaForms": [
       {
         "label": "메가디안시",
@@ -17781,8 +17781,8 @@ export const ALL_POKEMON: Pokemon[] = [
           "specialDefense": 110,
           "speed": 110
         },
-        "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10075.png",
-        "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10075.png"
+        "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10075.png",
+        "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10075.png"
       }
     ]
   },
@@ -17807,8 +17807,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "장난 포켓몬",
     "heightM": 0.5,
     "weightKg": 9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/720.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/720.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/720.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/720.png"
   },
   {
     "id": 721,
@@ -17831,8 +17831,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "스팀 포켓몬",
     "heightM": 1.7,
     "weightKg": 195,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/721.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/721.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/721.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/721.png"
   },
   {
     "id": 722,
@@ -17855,8 +17855,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풀깃 포켓몬",
     "heightM": 0.3,
     "weightKg": 1.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/722.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/722.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/722.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/722.png"
   },
   {
     "id": 723,
@@ -17879,8 +17879,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "칼날깃 포켓몬",
     "heightM": 0.7,
     "weightKg": 16,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/723.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/723.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/723.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/723.png"
   },
   {
     "id": 724,
@@ -17903,8 +17903,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화살깃 포켓몬",
     "heightM": 1.6,
     "weightKg": 36.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/724.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/724.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/724.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/724.png"
   },
   {
     "id": 725,
@@ -17926,8 +17926,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불고양이 포켓몬",
     "heightM": 0.4,
     "weightKg": 4.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/725.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/725.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/725.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/725.png"
   },
   {
     "id": 726,
@@ -17949,8 +17949,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불고양이 포켓몬",
     "heightM": 0.7,
     "weightKg": 25,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/726.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/726.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/726.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/726.png"
   },
   {
     "id": 727,
@@ -17973,8 +17973,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "힐 포켓몬",
     "heightM": 1.8,
     "weightKg": 83,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/727.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/727.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/727.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/727.png"
   },
   {
     "id": 728,
@@ -17996,8 +17996,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "강치 포켓몬",
     "heightM": 0.4,
     "weightKg": 7.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/728.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/728.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/728.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/728.png"
   },
   {
     "id": 729,
@@ -18019,8 +18019,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "아이돌 포켓몬",
     "heightM": 0.6,
     "weightKg": 17.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/729.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/729.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/729.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/729.png"
   },
   {
     "id": 730,
@@ -18043,8 +18043,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "솔리스트 포켓몬",
     "heightM": 1.8,
     "weightKg": 44,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/730.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/730.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/730.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/730.png"
   },
   {
     "id": 731,
@@ -18067,8 +18067,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "딱따구리 포켓몬",
     "heightM": 0.3,
     "weightKg": 1.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/731.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/731.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/731.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/731.png"
   },
   {
     "id": 732,
@@ -18091,8 +18091,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "나팔입 포켓몬",
     "heightM": 0.6,
     "weightKg": 14.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/732.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/732.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/732.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/732.png"
   },
   {
     "id": 733,
@@ -18115,8 +18115,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "대포 포켓몬",
     "heightM": 1.1,
     "weightKg": 26,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/733.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/733.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/733.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/733.png"
   },
   {
     "id": 734,
@@ -18138,8 +18138,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "순회 포켓몬",
     "heightM": 0.4,
     "weightKg": 6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/734.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/734.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/734.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/734.png"
   },
   {
     "id": 735,
@@ -18161,8 +18161,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "잠복 포켓몬",
     "heightM": 0.7,
     "weightKg": 14.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/735.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/735.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/735.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/735.png"
   },
   {
     "id": 736,
@@ -18184,8 +18184,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "유충 포켓몬",
     "heightM": 0.4,
     "weightKg": 4.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/736.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/736.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/736.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/736.png"
   },
   {
     "id": 737,
@@ -18208,8 +18208,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "배터리 포켓몬",
     "heightM": 0.5,
     "weightKg": 10.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/737.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/737.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/737.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/737.png"
   },
   {
     "id": 738,
@@ -18232,8 +18232,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "뿔집게 포켓몬",
     "heightM": 1.5,
     "weightKg": 45,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/738.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/738.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/738.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/738.png"
   },
   {
     "id": 739,
@@ -18255,8 +18255,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "권투 포켓몬",
     "heightM": 0.6,
     "weightKg": 7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/739.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/739.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/739.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/739.png"
   },
   {
     "id": 740,
@@ -18279,8 +18279,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "털게 포켓몬",
     "heightM": 1.7,
     "weightKg": 180,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/740.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/740.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/740.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/740.png"
   },
   {
     "id": 741,
@@ -18303,8 +18303,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "댄스 포켓몬",
     "heightM": 0.6,
     "weightKg": 3.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/741.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/741.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/741.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/741.png"
   },
   {
     "id": 742,
@@ -18327,8 +18327,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "재니등에 포켓몬",
     "heightM": 0.1,
     "weightKg": 0.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/742.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/742.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/742.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/742.png"
   },
   {
     "id": 743,
@@ -18351,8 +18351,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "재니등에 포켓몬",
     "heightM": 0.2,
     "weightKg": 0.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/743.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/743.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/743.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/743.png"
   },
   {
     "id": 744,
@@ -18374,8 +18374,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "강아지 포켓몬",
     "heightM": 0.5,
     "weightKg": 9.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/744.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/744.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/744.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/744.png"
   },
   {
     "id": 745,
@@ -18397,8 +18397,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "늑대 포켓몬",
     "heightM": 0.8,
     "weightKg": 25,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/745.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/745.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/745.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/745.png"
   },
   {
     "id": 746,
@@ -18420,8 +18420,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "잔물고기 포켓몬",
     "heightM": 0.2,
     "weightKg": 0.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/746.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/746.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/746.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/746.png"
   },
   {
     "id": 747,
@@ -18444,8 +18444,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "깨비사리 포켓몬",
     "heightM": 0.4,
     "weightKg": 8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/747.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/747.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/747.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/747.png"
   },
   {
     "id": 748,
@@ -18468,8 +18468,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "깨비사리 포켓몬",
     "heightM": 0.7,
     "weightKg": 14.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/748.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/748.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/748.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/748.png"
   },
   {
     "id": 749,
@@ -18491,8 +18491,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "당나귀 포켓몬",
     "heightM": 1,
     "weightKg": 110,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/749.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/749.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/749.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/749.png"
   },
   {
     "id": 750,
@@ -18514,8 +18514,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "만마 포켓몬",
     "heightM": 2.5,
     "weightKg": 920,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/750.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/750.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/750.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/750.png"
   },
   {
     "id": 751,
@@ -18538,8 +18538,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "수포 포켓몬",
     "heightM": 0.3,
     "weightKg": 4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/751.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/751.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/751.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/751.png"
   },
   {
     "id": 752,
@@ -18562,8 +18562,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "수포 포켓몬",
     "heightM": 1.8,
     "weightKg": 82,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/752.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/752.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/752.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/752.png"
   },
   {
     "id": 753,
@@ -18585,8 +18585,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풀사마귀 포켓몬",
     "heightM": 0.3,
     "weightKg": 1.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/753.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/753.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/753.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/753.png"
   },
   {
     "id": 754,
@@ -18608,8 +18608,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꽃사마귀 포켓몬",
     "heightM": 0.9,
     "weightKg": 18.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/754.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/754.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/754.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/754.png"
   },
   {
     "id": 755,
@@ -18632,8 +18632,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "발광 포켓몬",
     "heightM": 0.2,
     "weightKg": 1.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/755.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/755.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/755.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/755.png"
   },
   {
     "id": 756,
@@ -18656,8 +18656,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "발광 포켓몬",
     "heightM": 1,
     "weightKg": 11.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/756.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/756.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/756.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/756.png"
   },
   {
     "id": 757,
@@ -18680,8 +18680,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독도마뱀 포켓몬",
     "heightM": 0.6,
     "weightKg": 4.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/757.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/757.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/757.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/757.png"
   },
   {
     "id": 758,
@@ -18704,8 +18704,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독도마뱀 포켓몬",
     "heightM": 1.2,
     "weightKg": 22.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/758.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/758.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/758.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/758.png"
   },
   {
     "id": 759,
@@ -18728,8 +18728,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "바둥바둥 포켓몬",
     "heightM": 0.5,
     "weightKg": 6.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/759.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/759.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/759.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/759.png"
   },
   {
     "id": 760,
@@ -18752,8 +18752,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "강한완력 포켓몬",
     "heightM": 2.1,
     "weightKg": 135,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/760.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/760.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/760.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/760.png"
   },
   {
     "id": 761,
@@ -18775,8 +18775,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "후르츠 포켓몬",
     "heightM": 0.3,
     "weightKg": 3.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/761.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/761.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/761.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/761.png"
   },
   {
     "id": 762,
@@ -18798,8 +18798,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "후르츠 포켓몬",
     "heightM": 0.7,
     "weightKg": 8.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/762.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/762.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/762.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/762.png"
   },
   {
     "id": 763,
@@ -18821,8 +18821,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "후르츠 포켓몬",
     "heightM": 1.2,
     "weightKg": 21.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/763.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/763.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/763.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/763.png"
   },
   {
     "id": 764,
@@ -18844,8 +18844,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꽃따기 포켓몬",
     "heightM": 0.1,
     "weightKg": 0.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/764.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/764.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/764.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/764.png"
   },
   {
     "id": 765,
@@ -18868,8 +18868,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "현자 포켓몬",
     "heightM": 1.5,
     "weightKg": 76,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/765.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/765.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/765.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/765.png"
   },
   {
     "id": 766,
@@ -18891,8 +18891,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "연계 포켓몬",
     "heightM": 2,
     "weightKg": 82.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/766.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/766.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/766.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/766.png"
   },
   {
     "id": 767,
@@ -18915,8 +18915,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "주행 포켓몬",
     "heightM": 0.5,
     "weightKg": 12,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/767.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/767.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/767.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/767.png"
   },
   {
     "id": 768,
@@ -18939,8 +18939,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "장갑 포켓몬",
     "heightM": 2,
     "weightKg": 108,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/768.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/768.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/768.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/768.png"
   },
   {
     "id": 769,
@@ -18963,8 +18963,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "모래산 포켓몬",
     "heightM": 0.5,
     "weightKg": 70,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/769.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/769.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/769.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/769.png"
   },
   {
     "id": 770,
@@ -18987,8 +18987,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "모래성 포켓몬",
     "heightM": 1.3,
     "weightKg": 250,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/770.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/770.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/770.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/770.png"
   },
   {
     "id": 771,
@@ -19010,8 +19010,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "해삼 포켓몬",
     "heightM": 0.3,
     "weightKg": 1.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/771.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/771.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/771.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/771.png"
   },
   {
     "id": 772,
@@ -19033,8 +19033,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "인공 포켓몬",
     "heightM": 1.9,
     "weightKg": 120.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/772.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/772.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/772.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/772.png"
   },
   {
     "id": 773,
@@ -19056,8 +19056,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "인공 포켓몬",
     "heightM": 2.3,
     "weightKg": 100.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/773.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/773.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/773.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/773.png"
   },
   {
     "id": 774,
@@ -19080,8 +19080,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "유성 포켓몬",
     "heightM": 0.3,
     "weightKg": 40,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/774.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/774.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/774.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/774.png"
   },
   {
     "id": 775,
@@ -19103,8 +19103,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꿈결 포켓몬",
     "heightM": 0.4,
     "weightKg": 19.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/775.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/775.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/775.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/775.png"
   },
   {
     "id": 776,
@@ -19127,8 +19127,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "폭발거북 포켓몬",
     "heightM": 2,
     "weightKg": 212,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/776.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/776.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/776.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/776.png"
   },
   {
     "id": 777,
@@ -19151,8 +19151,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "동글동글 포켓몬",
     "heightM": 0.3,
     "weightKg": 3.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/777.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/777.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/777.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/777.png"
   },
   {
     "id": 778,
@@ -19175,8 +19175,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "탈 포켓몬",
     "heightM": 0.2,
     "weightKg": 0.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/778.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/778.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/778.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/778.png"
   },
   {
     "id": 779,
@@ -19199,8 +19199,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "이갈기 포켓몬",
     "heightM": 0.9,
     "weightKg": 19,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/779.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/779.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/779.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/779.png"
   },
   {
     "id": 780,
@@ -19223,8 +19223,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "느긋누긋 포켓몬",
     "heightM": 3,
     "weightKg": 185,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/780.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/780.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/780.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/780.png"
   },
   {
     "id": 781,
@@ -19247,8 +19247,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "해초조각 포켓몬",
     "heightM": 3.9,
     "weightKg": 210,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/781.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/781.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/781.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/781.png"
   },
   {
     "id": 782,
@@ -19270,8 +19270,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "비늘 포켓몬",
     "heightM": 0.6,
     "weightKg": 29.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/782.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/782.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/782.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/782.png"
   },
   {
     "id": 783,
@@ -19294,8 +19294,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "비늘 포켓몬",
     "heightM": 1.2,
     "weightKg": 47,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/783.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/783.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/783.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/783.png"
   },
   {
     "id": 784,
@@ -19318,8 +19318,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "비늘 포켓몬",
     "heightM": 1.6,
     "weightKg": 78.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/784.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/784.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/784.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/784.png"
   },
   {
     "id": 785,
@@ -19342,8 +19342,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "토속신 포켓몬",
     "heightM": 1.8,
     "weightKg": 20.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/785.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/785.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/785.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/785.png"
   },
   {
     "id": 786,
@@ -19366,8 +19366,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "토속신 포켓몬",
     "heightM": 1.2,
     "weightKg": 18.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/786.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/786.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/786.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/786.png"
   },
   {
     "id": 787,
@@ -19390,8 +19390,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "토속신 포켓몬",
     "heightM": 1.9,
     "weightKg": 45.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/787.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/787.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/787.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/787.png"
   },
   {
     "id": 788,
@@ -19414,8 +19414,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "토속신 포켓몬",
     "heightM": 1.3,
     "weightKg": 21.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/788.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/788.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/788.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/788.png"
   },
   {
     "id": 789,
@@ -19437,8 +19437,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "성운 포켓몬",
     "heightM": 0.2,
     "weightKg": 0.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/789.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/789.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/789.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/789.png"
   },
   {
     "id": 790,
@@ -19460,8 +19460,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "원시성 포켓몬",
     "heightM": 0.1,
     "weightKg": 999.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/790.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/790.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/790.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/790.png"
   },
   {
     "id": 791,
@@ -19484,8 +19484,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "일륜 포켓몬",
     "heightM": 3.4,
     "weightKg": 230,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/791.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/791.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/791.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/791.png"
   },
   {
     "id": 792,
@@ -19508,8 +19508,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "월륜 포켓몬",
     "heightM": 4,
     "weightKg": 120,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/792.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/792.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/792.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/792.png"
   },
   {
     "id": 793,
@@ -19532,8 +19532,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "기생 포켓몬",
     "heightM": 1.2,
     "weightKg": 55.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/793.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/793.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/793.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/793.png"
   },
   {
     "id": 794,
@@ -19556,8 +19556,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "팽창 포켓몬",
     "heightM": 2.4,
     "weightKg": 333.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/794.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/794.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/794.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/794.png"
   },
   {
     "id": 795,
@@ -19580,8 +19580,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "염미 포켓몬",
     "heightM": 1.8,
     "weightKg": 25,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/795.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/795.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/795.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/795.png"
   },
   {
     "id": 796,
@@ -19603,8 +19603,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "전기장식 포켓몬",
     "heightM": 3.8,
     "weightKg": 100,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/796.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/796.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/796.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/796.png"
   },
   {
     "id": 797,
@@ -19627,8 +19627,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쏴올리기 포켓몬",
     "heightM": 9.2,
     "weightKg": 999.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/797.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/797.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/797.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/797.png"
   },
   {
     "id": 798,
@@ -19651,8 +19651,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "발도 포켓몬",
     "heightM": 0.3,
     "weightKg": 0.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/798.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/798.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/798.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/798.png"
   },
   {
     "id": 799,
@@ -19675,8 +19675,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "악식성 포켓몬",
     "heightM": 5.5,
     "weightKg": 888,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/799.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/799.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/799.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/799.png"
   },
   {
     "id": 800,
@@ -19698,8 +19698,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "프리즘 포켓몬",
     "heightM": 2.4,
     "weightKg": 230,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/800.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/800.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/800.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/800.png"
   },
   {
     "id": 801,
@@ -19722,8 +19722,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "인조 포켓몬",
     "heightM": 1,
     "weightKg": 80.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/801.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/801.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/801.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/801.png"
   },
   {
     "id": 802,
@@ -19746,8 +19746,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "그림자살이 포켓몬",
     "heightM": 0.7,
     "weightKg": 22.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/802.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/802.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/802.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/802.png"
   },
   {
     "id": 803,
@@ -19769,8 +19769,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독침 포켓몬",
     "heightM": 0.6,
     "weightKg": 1.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/803.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/803.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/803.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/803.png"
   },
   {
     "id": 804,
@@ -19793,8 +19793,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독침 포켓몬",
     "heightM": 3.6,
     "weightKg": 150,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/804.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/804.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/804.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/804.png"
   },
   {
     "id": 805,
@@ -19817,8 +19817,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "돌담 포켓몬",
     "heightM": 5.5,
     "weightKg": 820,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/805.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/805.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/805.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/805.png"
   },
   {
     "id": 806,
@@ -19841,8 +19841,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불꽃놀이 포켓몬",
     "heightM": 1.8,
     "weightKg": 13,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/806.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/806.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/806.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/806.png"
   },
   {
     "id": 807,
@@ -19864,8 +19864,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "신뢰 포켓몬",
     "heightM": 1.5,
     "weightKg": 44.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/807.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/807.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/807.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/807.png"
   },
   {
     "id": 808,
@@ -19887,8 +19887,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "너트 포켓몬",
     "heightM": 0.2,
     "weightKg": 8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/808.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/808.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/808.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/808.png"
   },
   {
     "id": 809,
@@ -19910,8 +19910,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "너트 포켓몬",
     "heightM": 2.5,
     "weightKg": 800,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/809.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/809.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/809.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/809.png"
   },
   {
     "id": 810,
@@ -19933,8 +19933,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꼬마원숭이 포켓몬",
     "heightM": 0.3,
     "weightKg": 5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/810.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/810.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/810.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/810.png"
   },
   {
     "id": 811,
@@ -19956,8 +19956,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "비트 포켓몬",
     "heightM": 0.7,
     "weightKg": 14,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/811.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/811.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/811.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/811.png"
   },
   {
     "id": 812,
@@ -19979,8 +19979,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "드러머 포켓몬",
     "heightM": 2.1,
     "weightKg": 90,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/812.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/812.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/812.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/812.png"
   },
   {
     "id": 813,
@@ -20002,8 +20002,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "토끼 포켓몬",
     "heightM": 0.3,
     "weightKg": 4.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/813.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/813.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/813.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/813.png"
   },
   {
     "id": 814,
@@ -20025,8 +20025,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "토끼 포켓몬",
     "heightM": 0.6,
     "weightKg": 9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/814.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/814.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/814.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/814.png"
   },
   {
     "id": 815,
@@ -20048,8 +20048,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "스트라이커 포켓몬",
     "heightM": 1.4,
     "weightKg": 33,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/815.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/815.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/815.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/815.png"
   },
   {
     "id": 816,
@@ -20071,8 +20071,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "물도마뱀 포켓몬",
     "heightM": 0.3,
     "weightKg": 4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/816.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/816.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/816.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/816.png"
   },
   {
     "id": 817,
@@ -20094,8 +20094,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "물도마뱀 포켓몬",
     "heightM": 0.7,
     "weightKg": 11.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/817.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/817.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/817.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/817.png"
   },
   {
     "id": 818,
@@ -20117,8 +20117,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "에이전트 포켓몬",
     "heightM": 1.9,
     "weightKg": 45.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/818.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/818.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/818.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/818.png"
   },
   {
     "id": 819,
@@ -20140,8 +20140,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "볼가득 포켓몬",
     "heightM": 0.3,
     "weightKg": 2.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/819.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/819.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/819.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/819.png"
   },
   {
     "id": 820,
@@ -20163,8 +20163,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "욕심쟁이 포켓몬",
     "heightM": 0.6,
     "weightKg": 6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/820.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/820.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/820.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/820.png"
   },
   {
     "id": 821,
@@ -20186,8 +20186,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "아기새 포켓몬",
     "heightM": 0.2,
     "weightKg": 1.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/821.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/821.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/821.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/821.png"
   },
   {
     "id": 822,
@@ -20209,8 +20209,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "까마귀 포켓몬",
     "heightM": 0.8,
     "weightKg": 16,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/822.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/822.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/822.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/822.png"
   },
   {
     "id": 823,
@@ -20233,8 +20233,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "까마귀 포켓몬",
     "heightM": 2.2,
     "weightKg": 75,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/823.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/823.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/823.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/823.png"
   },
   {
     "id": 824,
@@ -20256,8 +20256,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "유충 포켓몬",
     "heightM": 0.4,
     "weightKg": 8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/824.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/824.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/824.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/824.png"
   },
   {
     "id": 825,
@@ -20280,8 +20280,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "레이돔 포켓몬",
     "heightM": 0.4,
     "weightKg": 19.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/825.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/825.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/825.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/825.png"
   },
   {
     "id": 826,
@@ -20304,8 +20304,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "칠성 포켓몬",
     "heightM": 0.4,
     "weightKg": 40.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/826.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/826.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/826.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/826.png"
   },
   {
     "id": 827,
@@ -20327,8 +20327,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "여우 포켓몬",
     "heightM": 0.6,
     "weightKg": 8.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/827.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/827.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/827.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/827.png"
   },
   {
     "id": 828,
@@ -20350,8 +20350,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "여우 포켓몬",
     "heightM": 1.2,
     "weightKg": 19.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/828.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/828.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/828.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/828.png"
   },
   {
     "id": 829,
@@ -20373,8 +20373,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꽃장식 포켓몬",
     "heightM": 0.4,
     "weightKg": 2.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/829.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/829.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/829.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/829.png"
   },
   {
     "id": 830,
@@ -20396,8 +20396,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "솜장식 포켓몬",
     "heightM": 0.5,
     "weightKg": 2.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/830.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/830.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/830.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/830.png"
   },
   {
     "id": 831,
@@ -20419,8 +20419,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "양 포켓몬",
     "heightM": 0.6,
     "weightKg": 6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/831.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/831.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/831.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/831.png"
   },
   {
     "id": 832,
@@ -20442,8 +20442,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "양 포켓몬",
     "heightM": 1.3,
     "weightKg": 43,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/832.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/832.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/832.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/832.png"
   },
   {
     "id": 833,
@@ -20465,8 +20465,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "물고늘어지기 포켓몬",
     "heightM": 0.3,
     "weightKg": 8.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/833.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/833.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/833.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/833.png"
   },
   {
     "id": 834,
@@ -20489,8 +20489,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "물어뜯기 포켓몬",
     "heightM": 1,
     "weightKg": 115.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/834.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/834.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/834.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/834.png"
   },
   {
     "id": 835,
@@ -20512,8 +20512,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "강아지 포켓몬",
     "heightM": 0.3,
     "weightKg": 13.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/835.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/835.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/835.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/835.png"
   },
   {
     "id": 836,
@@ -20535,8 +20535,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "개 포켓몬",
     "heightM": 1,
     "weightKg": 34,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/836.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/836.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/836.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/836.png"
   },
   {
     "id": 837,
@@ -20558,8 +20558,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "석탄 포켓몬",
     "heightM": 0.3,
     "weightKg": 12,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/837.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/837.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/837.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/837.png"
   },
   {
     "id": 838,
@@ -20582,8 +20582,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "석탄 포켓몬",
     "heightM": 1.1,
     "weightKg": 78,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/838.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/838.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/838.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/838.png"
   },
   {
     "id": 839,
@@ -20606,8 +20606,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "석탄 포켓몬",
     "heightM": 2.8,
     "weightKg": 310.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/839.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/839.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/839.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/839.png"
   },
   {
     "id": 840,
@@ -20630,8 +20630,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "사과살이 포켓몬",
     "heightM": 0.2,
     "weightKg": 0.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/840.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/840.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/840.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/840.png"
   },
   {
     "id": 841,
@@ -20654,8 +20654,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "사과날개 포켓몬",
     "heightM": 0.3,
     "weightKg": 1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/841.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/841.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/841.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/841.png"
   },
   {
     "id": 842,
@@ -20678,8 +20678,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "사과즙 포켓몬",
     "heightM": 0.4,
     "weightKg": 13,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/842.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/842.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/842.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/842.png"
   },
   {
     "id": 843,
@@ -20701,8 +20701,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "모래뱀 포켓몬",
     "heightM": 2.2,
     "weightKg": 7.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/843.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/843.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/843.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/843.png"
   },
   {
     "id": 844,
@@ -20724,8 +20724,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "모래뱀 포켓몬",
     "heightM": 3.8,
     "weightKg": 65.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/844.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/844.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/844.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/844.png"
   },
   {
     "id": 845,
@@ -20748,8 +20748,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "그대로삼키기 포켓몬",
     "heightM": 0.8,
     "weightKg": 18,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/845.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/845.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/845.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/845.png"
   },
   {
     "id": 846,
@@ -20771,8 +20771,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "돌격 포켓몬",
     "heightM": 0.5,
     "weightKg": 1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/846.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/846.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/846.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/846.png"
   },
   {
     "id": 847,
@@ -20794,8 +20794,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꼬치 포켓몬",
     "heightM": 1.3,
     "weightKg": 30,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/847.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/847.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/847.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/847.png"
   },
   {
     "id": 848,
@@ -20818,8 +20818,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "젖먹이 포켓몬",
     "heightM": 0.4,
     "weightKg": 11,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/848.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/848.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/848.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/848.png"
   },
   {
     "id": 849,
@@ -20842,8 +20842,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "펑크 포켓몬",
     "heightM": 1.6,
     "weightKg": 40,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/849.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/849.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/849.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/849.png"
   },
   {
     "id": 850,
@@ -20866,8 +20866,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "발열 포켓몬",
     "heightM": 0.7,
     "weightKg": 1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/850.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/850.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/850.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/850.png"
   },
   {
     "id": 851,
@@ -20890,8 +20890,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "발열 포켓몬",
     "heightM": 3,
     "weightKg": 120,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/851.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/851.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/851.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/851.png"
   },
   {
     "id": 852,
@@ -20913,8 +20913,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "떼쟁이 포켓몬",
     "heightM": 0.6,
     "weightKg": 4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/852.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/852.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/852.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/852.png"
   },
   {
     "id": 853,
@@ -20936,8 +20936,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "유술 포켓몬",
     "heightM": 1.6,
     "weightKg": 39,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/853.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/853.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/853.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/853.png"
   },
   {
     "id": 854,
@@ -20959,8 +20959,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "홍차 포켓몬",
     "heightM": 0.1,
     "weightKg": 0.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/854.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/854.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/854.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/854.png"
   },
   {
     "id": 855,
@@ -20982,8 +20982,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "홍차 포켓몬",
     "heightM": 0.2,
     "weightKg": 0.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/855.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/855.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/855.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/855.png"
   },
   {
     "id": 856,
@@ -21005,8 +21005,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "차분 포켓몬",
     "heightM": 0.4,
     "weightKg": 3.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/856.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/856.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/856.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/856.png"
   },
   {
     "id": 857,
@@ -21028,8 +21028,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "정숙 포켓몬",
     "heightM": 0.6,
     "weightKg": 4.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/857.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/857.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/857.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/857.png"
   },
   {
     "id": 858,
@@ -21052,8 +21052,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "정적 포켓몬",
     "heightM": 2.1,
     "weightKg": 5.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/858.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/858.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/858.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/858.png"
   },
   {
     "id": 859,
@@ -21076,8 +21076,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꾀부리기 포켓몬",
     "heightM": 0.4,
     "weightKg": 5.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/859.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/859.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/859.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/859.png"
   },
   {
     "id": 860,
@@ -21100,8 +21100,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "성악 포켓몬",
     "heightM": 0.8,
     "weightKg": 12.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/860.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/860.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/860.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/860.png"
   },
   {
     "id": 861,
@@ -21124,8 +21124,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "벌크업 포켓몬",
     "heightM": 1.5,
     "weightKg": 61,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/861.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/861.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/861.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/861.png"
   },
   {
     "id": 862,
@@ -21148,8 +21148,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "정지 포켓몬",
     "heightM": 1.6,
     "weightKg": 46,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/862.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/862.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/862.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/862.png"
   },
   {
     "id": 863,
@@ -21171,8 +21171,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "바이킹 포켓몬",
     "heightM": 0.8,
     "weightKg": 28,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/863.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/863.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/863.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/863.png"
   },
   {
     "id": 864,
@@ -21194,8 +21194,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "산호 포켓몬",
     "heightM": 1,
     "weightKg": 0.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/864.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/864.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/864.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/864.png"
   },
   {
     "id": 865,
@@ -21217,8 +21217,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "청둥오리 포켓몬",
     "heightM": 0.8,
     "weightKg": 117,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/865.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/865.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/865.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/865.png"
   },
   {
     "id": 866,
@@ -21241,8 +21241,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "코미디언 포켓몬",
     "heightM": 1.5,
     "weightKg": 58.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/866.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/866.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/866.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/866.png"
   },
   {
     "id": 867,
@@ -21265,8 +21265,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "원념 포켓몬",
     "heightM": 1.6,
     "weightKg": 66.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/867.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/867.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/867.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/867.png"
   },
   {
     "id": 868,
@@ -21288,8 +21288,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "크림 포켓몬",
     "heightM": 0.2,
     "weightKg": 0.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/868.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/868.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/868.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/868.png"
   },
   {
     "id": 869,
@@ -21311,8 +21311,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "크림 포켓몬",
     "heightM": 0.3,
     "weightKg": 0.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/869.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/869.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/869.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/869.png"
   },
   {
     "id": 870,
@@ -21334,8 +21334,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "진형 포켓몬",
     "heightM": 3,
     "weightKg": 62,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/870.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/870.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/870.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/870.png"
   },
   {
     "id": 871,
@@ -21357,8 +21357,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "성게 포켓몬",
     "heightM": 0.3,
     "weightKg": 1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/871.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/871.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/871.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/871.png"
   },
   {
     "id": 872,
@@ -21381,8 +21381,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "애벌레 포켓몬",
     "heightM": 0.3,
     "weightKg": 3.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/872.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/872.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/872.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/872.png"
   },
   {
     "id": 873,
@@ -21405,8 +21405,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "얼음나방 포켓몬",
     "heightM": 1.3,
     "weightKg": 42,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/873.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/873.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/873.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/873.png"
   },
   {
     "id": 874,
@@ -21428,8 +21428,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "거석 포켓몬",
     "heightM": 2.5,
     "weightKg": 520,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/874.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/874.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/874.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/874.png"
   },
   {
     "id": 875,
@@ -21451,8 +21451,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "펭귄 포켓몬",
     "heightM": 1.4,
     "weightKg": 89,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/875.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/875.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/875.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/875.png"
   },
   {
     "id": 876,
@@ -21475,8 +21475,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "감정 포켓몬",
     "heightM": 0.9,
     "weightKg": 28,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/876.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/876.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/876.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/876.png"
   },
   {
     "id": 877,
@@ -21499,8 +21499,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "양면 포켓몬",
     "heightM": 0.3,
     "weightKg": 3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/877.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/877.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/877.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/877.png"
   },
   {
     "id": 878,
@@ -21522,8 +21522,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "동상 포켓몬",
     "heightM": 1.2,
     "weightKg": 100,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/878.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/878.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/878.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/878.png"
   },
   {
     "id": 879,
@@ -21545,8 +21545,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "동상 포켓몬",
     "heightM": 3,
     "weightKg": 650,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/879.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/879.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/879.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/879.png"
   },
   {
     "id": 880,
@@ -21569,8 +21569,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화석 포켓몬",
     "heightM": 1.8,
     "weightKg": 190,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/880.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/880.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/880.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/880.png"
   },
   {
     "id": 881,
@@ -21593,8 +21593,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화석 포켓몬",
     "heightM": 2.3,
     "weightKg": 150,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/881.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/881.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/881.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/881.png"
   },
   {
     "id": 882,
@@ -21617,8 +21617,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화석 포켓몬",
     "heightM": 2.3,
     "weightKg": 215,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/882.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/882.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/882.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/882.png"
   },
   {
     "id": 883,
@@ -21641,8 +21641,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화석 포켓몬",
     "heightM": 2,
     "weightKg": 175,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/883.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/883.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/883.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/883.png"
   },
   {
     "id": 884,
@@ -21665,8 +21665,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "합금 포켓몬",
     "heightM": 1.8,
     "weightKg": 40,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/884.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/884.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/884.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/884.png"
   },
   {
     "id": 885,
@@ -21689,8 +21689,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "원망 포켓몬",
     "heightM": 0.5,
     "weightKg": 2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/885.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/885.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/885.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/885.png"
   },
   {
     "id": 886,
@@ -21713,8 +21713,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "돌보미 포켓몬",
     "heightM": 1.4,
     "weightKg": 11,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/886.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/886.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/886.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/886.png"
   },
   {
     "id": 887,
@@ -21737,8 +21737,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "스텔스 포켓몬",
     "heightM": 3,
     "weightKg": 50,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/887.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/887.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/887.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/887.png"
   },
   {
     "id": 888,
@@ -21760,8 +21760,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "강자 포켓몬",
     "heightM": 2.8,
     "weightKg": 110,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/888.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/888.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/888.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/888.png"
   },
   {
     "id": 889,
@@ -21783,8 +21783,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "강자 포켓몬",
     "heightM": 2.9,
     "weightKg": 210,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/889.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/889.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/889.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/889.png"
   },
   {
     "id": 890,
@@ -21807,8 +21807,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "거대 포켓몬",
     "heightM": 20,
     "weightKg": 950,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/890.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/890.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/890.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/890.png"
   },
   {
     "id": 891,
@@ -21830,8 +21830,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "권법 포켓몬",
     "heightM": 0.6,
     "weightKg": 12,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/891.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/891.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/891.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/891.png"
   },
   {
     "id": 892,
@@ -21854,8 +21854,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "권법 포켓몬",
     "heightM": 1.9,
     "weightKg": 105,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/892.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/892.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/892.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/892.png"
   },
   {
     "id": 893,
@@ -21878,8 +21878,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "나쁜원숭이 포켓몬",
     "heightM": 1.8,
     "weightKg": 70,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/893.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/893.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/893.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/893.png"
   },
   {
     "id": 894,
@@ -21901,8 +21901,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "일렉트론 포켓몬",
     "heightM": 1.2,
     "weightKg": 145,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/894.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/894.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/894.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/894.png"
   },
   {
     "id": 895,
@@ -21924,8 +21924,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "용옥 포켓몬",
     "heightM": 2.1,
     "weightKg": 200,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/895.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/895.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/895.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/895.png"
   },
   {
     "id": 896,
@@ -21947,8 +21947,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "사나운말 포켓몬",
     "heightM": 2.2,
     "weightKg": 800,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/896.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/896.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/896.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/896.png"
   },
   {
     "id": 897,
@@ -21970,8 +21970,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "빠른말 포켓몬",
     "heightM": 2,
     "weightKg": 44.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/897.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/897.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/897.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/897.png"
   },
   {
     "id": 898,
@@ -21994,8 +21994,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "킹 포켓몬",
     "heightM": 1.1,
     "weightKg": 7.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/898.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/898.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/898.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/898.png"
   },
   {
     "id": 899,
@@ -22018,8 +22018,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "큰뿔 포켓몬",
     "heightM": 1.8,
     "weightKg": 95.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/899.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/899.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/899.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/899.png"
   },
   {
     "id": 900,
@@ -22042,8 +22042,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "큰도끼 포켓몬",
     "heightM": 1.8,
     "weightKg": 89,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/900.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/900.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/900.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/900.png"
   },
   {
     "id": 901,
@@ -22066,8 +22066,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "이탄 포켓몬",
     "heightM": 2.4,
     "weightKg": 290,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/901.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/901.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/901.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/901.png"
   },
   {
     "id": 902,
@@ -22090,8 +22090,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "큰물고기 포켓몬",
     "heightM": 3,
     "weightKg": 110,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/902.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/902.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/902.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/902.png"
   },
   {
     "id": 903,
@@ -22114,8 +22114,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "클라이밍 포켓몬",
     "heightM": 1.3,
     "weightKg": 43,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/903.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/903.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/903.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/903.png"
   },
   {
     "id": 904,
@@ -22138,8 +22138,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "침붕포켓몬몬 포켓몬",
     "heightM": 2.5,
     "weightKg": 60.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/904.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/904.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/904.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/904.png"
   },
   {
     "id": 905,
@@ -22162,8 +22162,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "애증 포켓몬",
     "heightM": 1.6,
     "weightKg": 48,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/905.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/905.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/905.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/905.png"
   },
   {
     "id": 906,
@@ -22185,8 +22185,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풀고양이 포켓몬",
     "heightM": 0.4,
     "weightKg": 4.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/906.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/906.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/906.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/906.png"
   },
   {
     "id": 907,
@@ -22208,8 +22208,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풀고양이 포켓몬",
     "heightM": 0.9,
     "weightKg": 12.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/907.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/907.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/907.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/907.png"
   },
   {
     "id": 908,
@@ -22232,8 +22232,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "매지션 포켓몬",
     "heightM": 1.5,
     "weightKg": 31.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/908.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/908.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/908.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/908.png"
   },
   {
     "id": 909,
@@ -22255,8 +22255,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불꽃악어 포켓몬",
     "heightM": 0.4,
     "weightKg": 9.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/909.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/909.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/909.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/909.png"
   },
   {
     "id": 910,
@@ -22278,8 +22278,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불꽃악어 포켓몬",
     "heightM": 1,
     "weightKg": 30.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/910.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/910.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/910.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/910.png"
   },
   {
     "id": 911,
@@ -22302,8 +22302,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "싱어 포켓몬",
     "heightM": 1.6,
     "weightKg": 326.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/911.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/911.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/911.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/911.png"
   },
   {
     "id": 912,
@@ -22325,8 +22325,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꼬마오리 포켓몬",
     "heightM": 0.5,
     "weightKg": 6.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/912.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/912.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/912.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/912.png"
   },
   {
     "id": 913,
@@ -22348,8 +22348,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "레슨 포켓몬",
     "heightM": 1.2,
     "weightKg": 21.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/913.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/913.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/913.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/913.png"
   },
   {
     "id": 914,
@@ -22372,8 +22372,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "댄서 포켓몬",
     "heightM": 1.8,
     "weightKg": 61.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/914.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/914.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/914.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/914.png"
   },
   {
     "id": 915,
@@ -22395,8 +22395,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "돼지 포켓몬",
     "heightM": 0.5,
     "weightKg": 10.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/915.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/915.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/915.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/915.png"
   },
   {
     "id": 916,
@@ -22418,8 +22418,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "돼지 포켓몬",
     "heightM": 1,
     "weightKg": 120,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/916.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/916.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/916.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/916.png"
   },
   {
     "id": 917,
@@ -22441,8 +22441,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "실타래 포켓몬",
     "heightM": 0.3,
     "weightKg": 4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/917.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/917.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/917.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/917.png"
   },
   {
     "id": 918,
@@ -22464,8 +22464,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "트랩 포켓몬",
     "heightM": 1,
     "weightKg": 16.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/918.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/918.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/918.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/918.png"
   },
   {
     "id": 919,
@@ -22487,8 +22487,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "메뚜기 포켓몬",
     "heightM": 0.2,
     "weightKg": 1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/919.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/919.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/919.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/919.png"
   },
   {
     "id": 920,
@@ -22511,8 +22511,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "메뚜기 포켓몬",
     "heightM": 1,
     "weightKg": 17.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/920.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/920.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/920.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/920.png"
   },
   {
     "id": 921,
@@ -22534,8 +22534,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쥐 포켓몬",
     "heightM": 0.3,
     "weightKg": 2.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/921.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/921.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/921.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/921.png"
   },
   {
     "id": 922,
@@ -22558,8 +22558,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쥐 포켓몬",
     "heightM": 0.4,
     "weightKg": 6.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/922.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/922.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/922.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/922.png"
   },
   {
     "id": 923,
@@ -22582,8 +22582,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "손길 포켓몬",
     "heightM": 0.9,
     "weightKg": 41,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/923.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/923.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/923.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/923.png"
   },
   {
     "id": 924,
@@ -22605,8 +22605,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "커플 포켓몬",
     "heightM": 0.3,
     "weightKg": 1.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/924.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/924.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/924.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/924.png"
   },
   {
     "id": 925,
@@ -22628,8 +22628,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패밀리 포켓몬",
     "heightM": 0.3,
     "weightKg": 2.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/925.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/925.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/925.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/925.png"
   },
   {
     "id": 926,
@@ -22651,8 +22651,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "강아지 포켓몬",
     "heightM": 0.3,
     "weightKg": 10.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/926.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/926.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/926.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/926.png"
   },
   {
     "id": 927,
@@ -22674,8 +22674,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "개 포켓몬",
     "heightM": 0.5,
     "weightKg": 14.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/927.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/927.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/927.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/927.png"
   },
   {
     "id": 928,
@@ -22698,8 +22698,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "올리브 포켓몬",
     "heightM": 0.3,
     "weightKg": 6.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/928.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/928.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/928.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/928.png"
   },
   {
     "id": 929,
@@ -22722,8 +22722,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "올리브 포켓몬",
     "heightM": 0.6,
     "weightKg": 11.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/929.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/929.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/929.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/929.png"
   },
   {
     "id": 930,
@@ -22746,8 +22746,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "올리브 포켓몬",
     "heightM": 1.4,
     "weightKg": 48.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/930.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/930.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/930.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/930.png"
   },
   {
     "id": 931,
@@ -22770,8 +22770,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "잉꼬 포켓몬",
     "heightM": 0.6,
     "weightKg": 2.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/931.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/931.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/931.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/931.png"
   },
   {
     "id": 932,
@@ -22793,8 +22793,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "암염 포켓몬",
     "heightM": 0.4,
     "weightKg": 16,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/932.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/932.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/932.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/932.png"
   },
   {
     "id": 933,
@@ -22816,8 +22816,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "암염 포켓몬",
     "heightM": 0.6,
     "weightKg": 105,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/933.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/933.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/933.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/933.png"
   },
   {
     "id": 934,
@@ -22839,8 +22839,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "암염 포켓몬",
     "heightM": 2.3,
     "weightKg": 240,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/934.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/934.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/934.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/934.png"
   },
   {
     "id": 935,
@@ -22862,8 +22862,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불의아이 포켓몬",
     "heightM": 0.6,
     "weightKg": 10.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/935.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/935.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/935.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/935.png"
   },
   {
     "id": 936,
@@ -22886,8 +22886,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불의전사 포켓몬",
     "heightM": 1.5,
     "weightKg": 85,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/936.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/936.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/936.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/936.png"
   },
   {
     "id": 937,
@@ -22910,8 +22910,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불의검사 포켓몬",
     "heightM": 1.6,
     "weightKg": 62,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/937.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/937.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/937.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/937.png"
   },
   {
     "id": 938,
@@ -22933,8 +22933,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "전기올챙이 포켓몬",
     "heightM": 0.3,
     "weightKg": 0.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/938.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/938.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/938.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/938.png"
   },
   {
     "id": 939,
@@ -22956,8 +22956,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "전기개구리 포켓몬",
     "heightM": 1.2,
     "weightKg": 113,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/939.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/939.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/939.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/939.png"
   },
   {
     "id": 940,
@@ -22980,8 +22980,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "바다제비 포켓몬",
     "heightM": 0.4,
     "weightKg": 3.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/940.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/940.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/940.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/940.png"
   },
   {
     "id": 941,
@@ -23004,8 +23004,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "군함조 포켓몬",
     "heightM": 1.4,
     "weightKg": 38.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/941.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/941.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/941.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/941.png"
   },
   {
     "id": 942,
@@ -23027,8 +23027,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "애송이 포켓몬",
     "heightM": 0.5,
     "weightKg": 16,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/942.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/942.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/942.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/942.png"
   },
   {
     "id": 943,
@@ -23050,8 +23050,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "두목 포켓몬",
     "heightM": 1.1,
     "weightKg": 61,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/943.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/943.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/943.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/943.png"
   },
   {
     "id": 944,
@@ -23074,8 +23074,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독쥐 포켓몬",
     "heightM": 0.2,
     "weightKg": 0.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/944.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/944.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/944.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/944.png"
   },
   {
     "id": 945,
@@ -23098,8 +23098,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독원숭이 포켓몬",
     "heightM": 0.7,
     "weightKg": 27.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/945.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/945.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/945.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/945.png"
   },
   {
     "id": 946,
@@ -23122,8 +23122,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "회전초 포켓몬",
     "heightM": 0.6,
     "weightKg": 0.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/946.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/946.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/946.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/946.png"
   },
   {
     "id": 947,
@@ -23146,8 +23146,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "회전초 포켓몬",
     "heightM": 1.2,
     "weightKg": 6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/947.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/947.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/947.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/947.png"
   },
   {
     "id": 948,
@@ -23170,8 +23170,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "목이버섯 포켓몬",
     "heightM": 0.9,
     "weightKg": 33,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/948.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/948.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/948.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/948.png"
   },
   {
     "id": 949,
@@ -23194,8 +23194,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "목이버섯 포켓몬",
     "heightM": 1.9,
     "weightKg": 58,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/949.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/949.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/949.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/949.png"
   },
   {
     "id": 950,
@@ -23217,8 +23217,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "매복 포켓몬",
     "heightM": 1.3,
     "weightKg": 79,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/950.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/950.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/950.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/950.png"
   },
   {
     "id": 951,
@@ -23240,8 +23240,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "하바네로 포켓몬",
     "heightM": 0.3,
     "weightKg": 3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/951.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/951.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/951.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/951.png"
   },
   {
     "id": 952,
@@ -23264,8 +23264,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "하바네로 포켓몬",
     "heightM": 0.9,
     "weightKg": 15,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/952.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/952.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/952.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/952.png"
   },
   {
     "id": 953,
@@ -23287,8 +23287,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "굴리기 포켓몬",
     "heightM": 0.2,
     "weightKg": 1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/953.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/953.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/953.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/953.png"
   },
   {
     "id": 954,
@@ -23311,8 +23311,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "굴리기 포켓몬",
     "heightM": 0.3,
     "weightKg": 3.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/954.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/954.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/954.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/954.png"
   },
   {
     "id": 955,
@@ -23334,8 +23334,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "프릴 포켓몬",
     "heightM": 0.2,
     "weightKg": 1.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/955.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/955.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/955.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/955.png"
   },
   {
     "id": 956,
@@ -23357,8 +23357,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "타조 포켓몬",
     "heightM": 1.9,
     "weightKg": 90,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/956.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/956.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/956.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/956.png"
   },
   {
     "id": 957,
@@ -23381,8 +23381,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "대장장이 포켓몬",
     "heightM": 0.4,
     "weightKg": 8.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/957.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/957.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/957.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/957.png"
   },
   {
     "id": 958,
@@ -23405,8 +23405,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "해머 포켓몬",
     "heightM": 0.7,
     "weightKg": 59.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/958.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/958.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/958.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/958.png"
   },
   {
     "id": 959,
@@ -23429,8 +23429,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "해머 포켓몬",
     "heightM": 0.7,
     "weightKg": 112.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/959.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/959.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/959.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/959.png"
   },
   {
     "id": 960,
@@ -23452,8 +23452,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "정원장어 포켓몬",
     "heightM": 1.2,
     "weightKg": 1.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/960.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/960.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/960.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/960.png"
   },
   {
     "id": 961,
@@ -23475,8 +23475,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "정원장어 포켓몬",
     "heightM": 1.2,
     "weightKg": 5.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/961.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/961.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/961.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/961.png"
   },
   {
     "id": 962,
@@ -23499,8 +23499,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "낙하물 포켓몬",
     "heightM": 1.5,
     "weightKg": 42.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/962.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/962.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/962.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/962.png"
   },
   {
     "id": 963,
@@ -23522,8 +23522,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "돌고래 포켓몬",
     "heightM": 1.3,
     "weightKg": 60.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/963.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/963.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/963.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/963.png"
   },
   {
     "id": 964,
@@ -23545,8 +23545,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "돌고래 포켓몬",
     "heightM": 1.3,
     "weightKg": 60.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/964.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/964.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/964.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/964.png"
   },
   {
     "id": 965,
@@ -23569,8 +23569,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "단기통 포켓몬",
     "heightM": 1,
     "weightKg": 35,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/965.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/965.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/965.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/965.png"
   },
   {
     "id": 966,
@@ -23593,8 +23593,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "다기통 포켓몬",
     "heightM": 1.8,
     "weightKg": 120,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/966.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/966.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/966.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/966.png"
   },
   {
     "id": 967,
@@ -23617,8 +23617,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "라이드 포켓몬",
     "heightM": 1.6,
     "weightKg": 63,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/967.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/967.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/967.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/967.png"
   },
   {
     "id": 968,
@@ -23640,8 +23640,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "지렁이 포켓몬",
     "heightM": 2.5,
     "weightKg": 310,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/968.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/968.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/968.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/968.png"
   },
   {
     "id": 969,
@@ -23664,8 +23664,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "광석 포켓몬",
     "heightM": 0.7,
     "weightKg": 8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/969.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/969.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/969.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/969.png"
   },
   {
     "id": 970,
@@ -23688,8 +23688,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "광석 포켓몬",
     "heightM": 1.5,
     "weightKg": 45,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/970.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/970.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/970.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/970.png"
   },
   {
     "id": 971,
@@ -23711,8 +23711,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "유령개 포켓몬",
     "heightM": 0.6,
     "weightKg": 35,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/971.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/971.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/971.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/971.png"
   },
   {
     "id": 972,
@@ -23734,8 +23734,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "유령개 포켓몬",
     "heightM": 2,
     "weightKg": 15,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/972.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/972.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/972.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/972.png"
   },
   {
     "id": 973,
@@ -23758,8 +23758,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "싱크로 포켓몬",
     "heightM": 1.6,
     "weightKg": 37,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/973.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/973.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/973.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/973.png"
   },
   {
     "id": 974,
@@ -23781,8 +23781,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "육지고래 포켓몬",
     "heightM": 1.2,
     "weightKg": 45,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/974.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/974.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/974.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/974.png"
   },
   {
     "id": 975,
@@ -23804,8 +23804,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "육지고래 포켓몬",
     "heightM": 4.5,
     "weightKg": 700,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/975.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/975.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/975.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/975.png"
   },
   {
     "id": 976,
@@ -23828,8 +23828,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "분리 포켓몬",
     "heightM": 2.5,
     "weightKg": 90,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/976.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/976.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/976.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/976.png"
   },
   {
     "id": 977,
@@ -23851,8 +23851,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "큰메기 포켓몬",
     "heightM": 12,
     "weightKg": 220,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/977.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/977.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/977.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/977.png"
   },
   {
     "id": 978,
@@ -23875,8 +23875,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "의태 포켓몬",
     "heightM": 0.3,
     "weightKg": 8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/978.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/978.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/978.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/978.png"
   },
   {
     "id": 979,
@@ -23899,8 +23899,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "분노숭이 포켓몬",
     "heightM": 1.2,
     "weightKg": 56,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/979.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/979.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/979.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/979.png"
   },
   {
     "id": 980,
@@ -23923,8 +23923,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가시물고기 포켓몬",
     "heightM": 1.8,
     "weightKg": 223,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/980.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/980.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/980.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/980.png"
   },
   {
     "id": 981,
@@ -23947,8 +23947,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "긴목 포켓몬",
     "heightM": 3.2,
     "weightKg": 160,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/981.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/981.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/981.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/981.png"
   },
   {
     "id": 982,
@@ -23970,8 +23970,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "땅뱀 포켓몬",
     "heightM": 3.6,
     "weightKg": 39.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/982.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/982.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/982.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/982.png"
   },
   {
     "id": 983,
@@ -23994,8 +23994,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "대도 포켓몬",
     "heightM": 2,
     "weightKg": 120,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/983.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/983.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/983.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/983.png"
   },
   {
     "id": 984,
@@ -24018,8 +24018,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 2.2,
     "weightKg": 320,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/984.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/984.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/984.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/984.png"
   },
   {
     "id": 985,
@@ -24042,8 +24042,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 1.2,
     "weightKg": 8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/985.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/985.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/985.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/985.png"
   },
   {
     "id": 986,
@@ -24066,8 +24066,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 1.2,
     "weightKg": 21,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/986.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/986.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/986.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/986.png"
   },
   {
     "id": 987,
@@ -24090,8 +24090,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 1.4,
     "weightKg": 4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/987.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/987.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/987.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/987.png"
   },
   {
     "id": 988,
@@ -24114,8 +24114,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 3.2,
     "weightKg": 92,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/988.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/988.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/988.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/988.png"
   },
   {
     "id": 989,
@@ -24138,8 +24138,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 2.3,
     "weightKg": 60,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/989.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/989.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/989.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/989.png"
   },
   {
     "id": 990,
@@ -24162,8 +24162,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 0.9,
     "weightKg": 240,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/990.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/990.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/990.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/990.png"
   },
   {
     "id": 991,
@@ -24186,8 +24186,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 0.6,
     "weightKg": 11,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/991.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/991.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/991.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/991.png"
   },
   {
     "id": 992,
@@ -24210,8 +24210,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 1.8,
     "weightKg": 380.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/992.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/992.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/992.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/992.png"
   },
   {
     "id": 993,
@@ -24234,8 +24234,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 1.3,
     "weightKg": 111,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/993.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/993.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/993.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/993.png"
   },
   {
     "id": 994,
@@ -24258,8 +24258,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 1.2,
     "weightKg": 36,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/994.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/994.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/994.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/994.png"
   },
   {
     "id": 995,
@@ -24282,8 +24282,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 1.6,
     "weightKg": 303,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/995.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/995.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/995.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/995.png"
   },
   {
     "id": 996,
@@ -24306,8 +24306,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "얼음지느러미 포켓몬",
     "heightM": 0.5,
     "weightKg": 17,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/996.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/996.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/996.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/996.png"
   },
   {
     "id": 997,
@@ -24330,8 +24330,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "얼음지느러미 포켓몬",
     "heightM": 0.8,
     "weightKg": 30,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/997.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/997.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/997.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/997.png"
   },
   {
     "id": 998,
@@ -24354,8 +24354,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "빙룡 포켓몬",
     "heightM": 2.1,
     "weightKg": 210,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/998.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/998.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/998.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/998.png"
   },
   {
     "id": 999,
@@ -24377,8 +24377,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "보물상자 포켓몬",
     "heightM": 0.3,
     "weightKg": 5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/999.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/999.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/999.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/999.png"
   },
   {
     "id": 1000,
@@ -24401,8 +24401,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "보물생명체 포켓몬",
     "heightM": 1.2,
     "weightKg": 30,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1000.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1000.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1000.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1000.png"
   },
   {
     "id": 1001,
@@ -24425,8 +24425,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "재액 포켓몬",
     "heightM": 1.5,
     "weightKg": 74.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1001.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1001.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1001.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1001.png"
   },
   {
     "id": 1002,
@@ -24449,8 +24449,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "재액 포켓몬",
     "heightM": 1.9,
     "weightKg": 152.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1002.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1002.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1002.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1002.png"
   },
   {
     "id": 1003,
@@ -24473,8 +24473,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "재액 포켓몬",
     "heightM": 2.7,
     "weightKg": 699.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1003.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1003.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1003.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1003.png"
   },
   {
     "id": 1004,
@@ -24497,8 +24497,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "재액 포켓몬",
     "heightM": 0.4,
     "weightKg": 4.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1004.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1004.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1004.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1004.png"
   },
   {
     "id": 1005,
@@ -24521,8 +24521,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 2,
     "weightKg": 380,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1005.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1005.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1005.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1005.png"
   },
   {
     "id": 1006,
@@ -24545,8 +24545,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 1.4,
     "weightKg": 35,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1006.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1006.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1006.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1006.png"
   },
   {
     "id": 1007,
@@ -24569,8 +24569,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 2.5,
     "weightKg": 303,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1007.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1007.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1007.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1007.png"
   },
   {
     "id": 1008,
@@ -24593,8 +24593,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 3.5,
     "weightKg": 240,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1008.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1008.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1008.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1008.png"
   },
   {
     "id": 1009,
@@ -24617,8 +24617,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 3.5,
     "weightKg": 280,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1009.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1009.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1009.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1009.png"
   },
   {
     "id": 1010,
@@ -24641,8 +24641,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 1.5,
     "weightKg": 125,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1010.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1010.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1010.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1010.png"
   },
   {
     "id": 1011,
@@ -24665,8 +24665,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "사과사탕 포켓몬",
     "heightM": 0.4,
     "weightKg": 9.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1011.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1011.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1011.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1011.png"
   },
   {
     "id": 1012,
@@ -24689,8 +24689,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "말차 포켓몬",
     "heightM": 0.1,
     "weightKg": 1.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1012.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1012.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1012.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1012.png"
   },
   {
     "id": 1013,
@@ -24713,8 +24713,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "말차 포켓몬",
     "heightM": 0.2,
     "weightKg": 2.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1013.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1013.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1013.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1013.png"
   },
   {
     "id": 1014,
@@ -24737,8 +24737,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "수하 포켓몬",
     "heightM": 1.8,
     "weightKg": 92.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1014.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1014.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1014.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1014.png"
   },
   {
     "id": 1015,
@@ -24761,8 +24761,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "수하 포켓몬",
     "heightM": 1,
     "weightKg": 12.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1015.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1015.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1015.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1015.png"
   },
   {
     "id": 1016,
@@ -24785,8 +24785,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "수하 포켓몬",
     "heightM": 1.4,
     "weightKg": 30.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1016.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1016.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1016.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1016.png"
   },
   {
     "id": 1017,
@@ -24808,8 +24808,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "가면 포켓몬",
     "heightM": 1.2,
     "weightKg": 39.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1017.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1017.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1017.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1017.png"
   },
   {
     "id": 1018,
@@ -24832,8 +24832,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "합금 포켓몬",
     "heightM": 2,
     "weightKg": 60,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1018.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1018.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1018.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1018.png"
   },
   {
     "id": 1019,
@@ -24856,8 +24856,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "사과이무기 포켓몬",
     "heightM": 1.8,
     "weightKg": 93,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1019.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1019.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1019.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1019.png"
   },
   {
     "id": 1020,
@@ -24880,8 +24880,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 3.5,
     "weightKg": 590,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1020.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1020.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1020.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1020.png"
   },
   {
     "id": 1021,
@@ -24904,8 +24904,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 5.2,
     "weightKg": 480,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1021.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1021.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1021.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1021.png"
   },
   {
     "id": 1022,
@@ -24928,8 +24928,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 1.5,
     "weightKg": 162.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1022.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1022.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1022.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1022.png"
   },
   {
     "id": 1023,
@@ -24952,8 +24952,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "패러독스 포켓몬",
     "heightM": 1.6,
     "weightKg": 156,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1023.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1023.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1023.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1023.png"
   },
   {
     "id": 1024,
@@ -24975,8 +24975,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "테라스탈 포켓몬",
     "heightM": 0.2,
     "weightKg": 6.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1024.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1024.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1024.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1024.png"
   },
   {
     "id": 1025,
@@ -24999,8 +24999,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "지배 포켓몬",
     "heightM": 0.3,
     "weightKg": 0.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/1025.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/1025.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1025.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1025.png"
   },
   {
     "id": 10091,
@@ -25024,8 +25024,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쥐 포켓몬",
     "heightM": 0.3,
     "weightKg": 3.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10091.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10091.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10091.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10091.png"
   },
   {
     "id": 10092,
@@ -25049,8 +25049,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쥐 포켓몬",
     "heightM": 0.7,
     "weightKg": 25.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10092.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10092.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10092.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10092.png"
   },
   {
     "id": 10100,
@@ -25074,8 +25074,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쥐 포켓몬",
     "heightM": 0.7,
     "weightKg": 21,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10100.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10100.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10100.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10100.png"
   },
   {
     "id": 10101,
@@ -25099,8 +25099,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쥐 포켓몬",
     "heightM": 0.7,
     "weightKg": 40,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10101.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10101.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10101.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10101.png"
   },
   {
     "id": 10102,
@@ -25124,8 +25124,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "쥐 포켓몬",
     "heightM": 1.2,
     "weightKg": 55,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10102.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10102.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10102.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10102.png"
   },
   {
     "id": 10103,
@@ -25148,8 +25148,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "여우 포켓몬",
     "heightM": 0.6,
     "weightKg": 9.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10103.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10103.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10103.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10103.png"
   },
   {
     "id": 10104,
@@ -25173,8 +25173,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "여우 포켓몬",
     "heightM": 1.1,
     "weightKg": 19.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10104.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10104.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10104.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10104.png"
   },
   {
     "id": 10105,
@@ -25198,8 +25198,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "두더지 포켓몬",
     "heightM": 0.2,
     "weightKg": 1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10105.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10105.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10105.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10105.png"
   },
   {
     "id": 10106,
@@ -25223,8 +25223,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "두더지 포켓몬",
     "heightM": 0.7,
     "weightKg": 66.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10106.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10106.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10106.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10106.png"
   },
   {
     "id": 10107,
@@ -25247,8 +25247,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "요괴고양이 포켓몬",
     "heightM": 0.4,
     "weightKg": 4.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10107.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10107.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10107.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10107.png"
   },
   {
     "id": 10108,
@@ -25271,8 +25271,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "샴고양이 포켓몬",
     "heightM": 1.1,
     "weightKg": 33,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10108.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10108.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10108.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10108.png"
   },
   {
     "id": 10109,
@@ -25296,8 +25296,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "암석 포켓몬",
     "heightM": 0.4,
     "weightKg": 20.3,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10109.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10109.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10109.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10109.png"
   },
   {
     "id": 10110,
@@ -25321,8 +25321,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "암석 포켓몬",
     "heightM": 1,
     "weightKg": 110,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10110.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10110.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10110.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10110.png"
   },
   {
     "id": 10111,
@@ -25346,8 +25346,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "메가톤 포켓몬",
     "heightM": 1.7,
     "weightKg": 316,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10111.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10111.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10111.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10111.png"
   },
   {
     "id": 10112,
@@ -25371,8 +25371,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "진흙 포켓몬",
     "heightM": 0.7,
     "weightKg": 42,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10112.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10112.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10112.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10112.png"
   },
   {
     "id": 10113,
@@ -25396,8 +25396,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "진흙 포켓몬",
     "heightM": 1,
     "weightKg": 52,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10113.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10113.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10113.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10113.png"
   },
   {
     "id": 10114,
@@ -25421,8 +25421,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "야자열매 포켓몬",
     "heightM": 10.9,
     "weightKg": 415.6,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10114.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10114.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10114.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10114.png"
   },
   {
     "id": 10115,
@@ -25446,8 +25446,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "뼈다귀 포켓몬",
     "heightM": 1,
     "weightKg": 34,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10115.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10115.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10115.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10115.png"
   },
   {
     "id": 10161,
@@ -25470,8 +25470,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "요괴고양이 포켓몬",
     "heightM": 0.4,
     "weightKg": 7.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10161.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10161.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10161.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10161.png"
   },
   {
     "id": 10162,
@@ -25494,8 +25494,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불의말 포켓몬",
     "heightM": 0.8,
     "weightKg": 24,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10162.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10162.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10162.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10162.png"
   },
   {
     "id": 10163,
@@ -25519,8 +25519,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "불의말 포켓몬",
     "heightM": 1.7,
     "weightKg": 80,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10163.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10163.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10163.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10163.png"
   },
   {
     "id": 10164,
@@ -25543,8 +25543,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "얼간이 포켓몬",
     "heightM": 1.2,
     "weightKg": 36,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10164.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10164.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10164.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10164.png"
   },
   {
     "id": 10165,
@@ -25568,8 +25568,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "기생 포켓몬",
     "heightM": 1.6,
     "weightKg": 70.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10165.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10165.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10165.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10165.png"
   },
   {
     "id": 10166,
@@ -25592,8 +25592,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "청둥오리 포켓몬",
     "heightM": 0.8,
     "weightKg": 42,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10166.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10166.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10166.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10166.png"
   },
   {
     "id": 10167,
@@ -25617,8 +25617,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "독가스 포켓몬",
     "heightM": 3,
     "weightKg": 16,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10167.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10167.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10167.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10167.png"
   },
   {
     "id": 10168,
@@ -25642,8 +25642,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "배리어 포켓몬",
     "heightM": 1.4,
     "weightKg": 56.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10168.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10168.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10168.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10168.png"
   },
   {
     "id": 10169,
@@ -25667,8 +25667,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "냉동 포켓몬",
     "heightM": 1.7,
     "weightKg": 50.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10169.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10169.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10169.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10169.png"
   },
   {
     "id": 10170,
@@ -25692,8 +25692,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "전기 포켓몬",
     "heightM": 1.6,
     "weightKg": 58.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10170.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10170.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10170.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10170.png"
   },
   {
     "id": 10171,
@@ -25717,8 +25717,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화염 포켓몬",
     "heightM": 2,
     "weightKg": 66,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10171.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10171.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10171.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10171.png"
   },
   {
     "id": 10172,
@@ -25742,8 +25742,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "임금 포켓몬",
     "heightM": 1.8,
     "weightKg": 79.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10172.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10172.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10172.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10172.png"
   },
   {
     "id": 10173,
@@ -25766,8 +25766,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "산호 포켓몬",
     "heightM": 0.6,
     "weightKg": 0.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10173.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10173.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10173.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10173.png"
   },
   {
     "id": 10174,
@@ -25791,8 +25791,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "앙증너구리 포켓몬",
     "heightM": 0.4,
     "weightKg": 17.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10174.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10174.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10174.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10174.png"
   },
   {
     "id": 10175,
@@ -25816,8 +25816,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "돌진 포켓몬",
     "heightM": 0.5,
     "weightKg": 32.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10175.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10175.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10175.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10175.png"
   },
   {
     "id": 10176,
@@ -25840,8 +25840,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "달마 포켓몬",
     "heightM": 0.7,
     "weightKg": 40,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10176.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10176.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10176.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10176.png"
   },
   {
     "id": 10177,
@@ -25864,8 +25864,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "염상 포켓몬",
     "heightM": 1.7,
     "weightKg": 120,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10177.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10177.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10177.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10177.png"
   },
   {
     "id": 10179,
@@ -25889,8 +25889,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "영혼 포켓몬",
     "heightM": 0.5,
     "weightKg": 1.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10179.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10179.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10179.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10179.png"
   },
   {
     "id": 10180,
@@ -25914,8 +25914,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "트랩 포켓몬",
     "heightM": 0.7,
     "weightKg": 20.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10180.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10180.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10180.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10180.png"
   },
   {
     "id": 10229,
@@ -25939,8 +25939,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "강아지 포켓몬",
     "heightM": 0.8,
     "weightKg": 22.7,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10229.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10229.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10229.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10229.png"
   },
   {
     "id": 10230,
@@ -25964,8 +25964,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "전설 포켓몬",
     "heightM": 2,
     "weightKg": 168,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10230.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10230.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10230.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10230.png"
   },
   {
     "id": 10231,
@@ -25989,8 +25989,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "볼 포켓몬",
     "heightM": 0.5,
     "weightKg": 13,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10231.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10231.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10231.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10231.png"
   },
   {
     "id": 10232,
@@ -26014,8 +26014,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "볼 포켓몬",
     "heightM": 1.2,
     "weightKg": 71,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10232.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10232.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10232.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10232.png"
   },
   {
     "id": 10233,
@@ -26039,8 +26039,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화산 포켓몬",
     "heightM": 1.6,
     "weightKg": 69.8,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10233.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10233.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10233.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10233.png"
   },
   {
     "id": 10234,
@@ -26064,8 +26064,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "풍선 포켓몬",
     "heightM": 0.5,
     "weightKg": 3.9,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10234.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10234.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10234.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10234.png"
   },
   {
     "id": 10235,
@@ -26089,8 +26089,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "갈고리손톱 포켓몬",
     "heightM": 0.9,
     "weightKg": 27,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10235.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10235.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10235.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10235.png"
   },
   {
     "id": 10236,
@@ -26114,8 +26114,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "관록 포켓몬",
     "heightM": 1.5,
     "weightKg": 58.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10236.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10236.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10236.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10236.png"
   },
   {
     "id": 10237,
@@ -26139,8 +26139,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "꽃장식 포켓몬",
     "heightM": 1.2,
     "weightKg": 19.2,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10237.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10237.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10237.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10237.png"
   },
   {
     "id": 10238,
@@ -26164,8 +26164,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "나쁜여우 포켓몬",
     "heightM": 0.7,
     "weightKg": 12.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10238.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10238.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10238.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10238.png"
   },
   {
     "id": 10239,
@@ -26189,8 +26189,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "요괴여우 포켓몬",
     "heightM": 1.6,
     "weightKg": 73,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10239.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10239.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10239.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10239.png"
   },
   {
     "id": 10240,
@@ -26214,8 +26214,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "용맹 포켓몬",
     "heightM": 1.7,
     "weightKg": 43.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10240.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10240.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10240.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10240.png"
   },
   {
     "id": 10241,
@@ -26239,8 +26239,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "연체 포켓몬",
     "heightM": 0.7,
     "weightKg": 68.5,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10241.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10241.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10241.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10241.png"
   },
   {
     "id": 10242,
@@ -26264,8 +26264,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "드래곤 포켓몬",
     "heightM": 1.7,
     "weightKg": 334.1,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10242.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10242.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10242.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10242.png"
   },
   {
     "id": 10243,
@@ -26289,8 +26289,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "빙산 포켓몬",
     "heightM": 1.4,
     "weightKg": 262.4,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10243.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10243.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10243.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10243.png"
   },
   {
     "id": 10244,
@@ -26314,8 +26314,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "화살깃 포켓몬",
     "heightM": 1.6,
     "weightKg": 37,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10244.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10244.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10244.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10244.png"
   },
   {
     "id": 10250,
@@ -26338,8 +26338,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "성난소 포켓몬",
     "heightM": 1.4,
     "weightKg": 115,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10250.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10250.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10250.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10250.png"
   },
   {
     "id": 10251,
@@ -26363,8 +26363,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "성난소 포켓몬",
     "heightM": 1.4,
     "weightKg": 85,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10251.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10251.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10251.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10251.png"
   },
   {
     "id": 10252,
@@ -26388,8 +26388,8 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "성난소 포켓몬",
     "heightM": 1.4,
     "weightKg": 110,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10252.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10252.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10252.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10252.png"
   },
   {
     "id": 10253,
@@ -26413,40 +26413,23 @@ export const ALL_POKEMON: Pokemon[] = [
     "category": "수어 포켓몬",
     "heightM": 0.4,
     "weightKg": 11,
-    "spriteUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/10253.png",
-    "artworkUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/pokemon/other/official-artwork/10253.png"
+    "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10253.png",
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10253.png"
   }
 ]
 
 export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   [
     {
-      "pokemonId": 7,
+      "pokemonId": 13,
       "children": [
         {
-          "pokemonId": 8,
-          "trigger": "레벨 16",
+          "pokemonId": 14,
+          "trigger": "레벨 7",
           "children": [
             {
-              "pokemonId": 9,
-              "trigger": "레벨 36"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 16,
-      "children": [
-        {
-          "pokemonId": 17,
-          "trigger": "레벨 18",
-          "children": [
-            {
-              "pokemonId": 18,
-              "trigger": "레벨 36"
+              "pokemonId": 15,
+              "trigger": "레벨 10"
             }
           ]
         }
@@ -26472,17 +26455,45 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 13,
+      "pokemonId": 10,
       "children": [
         {
-          "pokemonId": 14,
+          "pokemonId": 11,
           "trigger": "레벨 7",
           "children": [
             {
-              "pokemonId": 15,
+              "pokemonId": 12,
               "trigger": "레벨 10"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 16,
+      "children": [
+        {
+          "pokemonId": 17,
+          "trigger": "레벨 18",
+          "children": [
+            {
+              "pokemonId": 18,
+              "trigger": "레벨 36"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 21,
+      "children": [
+        {
+          "pokemonId": 22,
+          "trigger": "레벨 20"
         }
       ]
     }
@@ -26506,17 +26517,28 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 10,
+      "pokemonId": 7,
       "children": [
         {
-          "pokemonId": 11,
-          "trigger": "레벨 7",
+          "pokemonId": 8,
+          "trigger": "레벨 16",
           "children": [
             {
-              "pokemonId": 12,
-              "trigger": "레벨 10"
+              "pokemonId": 9,
+              "trigger": "레벨 36"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 23,
+      "children": [
+        {
+          "pokemonId": 24,
+          "trigger": "레벨 22"
         }
       ]
     }
@@ -26539,146 +26561,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 10092,
           "trigger": "레벨 20 · 밤"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 21,
-      "children": [
-        {
-          "pokemonId": 22,
-          "trigger": "레벨 20"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 23,
-      "children": [
-        {
-          "pokemonId": 24,
-          "trigger": "레벨 22"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 27,
-      "children": [
-        {
-          "pokemonId": 28,
-          "trigger": "레벨 22"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 172,
-      "children": [
-        {
-          "pokemonId": 25,
-          "trigger": "레벨업 · 친밀도 220 이상",
-          "children": [
-            {
-              "pokemonId": 26,
-              "trigger": "천둥의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/thunder-stone.png"
-            },
-            {
-              "pokemonId": 10100,
-              "trigger": "천둥의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/thunder-stone.png"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 10101,
-      "children": [
-        {
-          "pokemonId": 10102,
-          "trigger": "얼음의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/ice-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 29,
-      "children": [
-        {
-          "pokemonId": 30,
-          "trigger": "레벨 16",
-          "children": [
-            {
-              "pokemonId": 31,
-              "trigger": "달의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/moon-stone.png"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 32,
-      "children": [
-        {
-          "pokemonId": 33,
-          "trigger": "레벨 16",
-          "children": [
-            {
-              "pokemonId": 34,
-              "trigger": "달의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/moon-stone.png"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 174,
-      "children": [
-        {
-          "pokemonId": 39,
-          "trigger": "레벨업 · 친밀도 160 이상",
-          "children": [
-            {
-              "pokemonId": 40,
-              "trigger": "달의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/moon-stone.png"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 173,
-      "children": [
-        {
-          "pokemonId": 35,
-          "trigger": "레벨업 · 친밀도 160 이상",
-          "children": [
-            {
-              "pokemonId": 36,
-              "trigger": "달의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/moon-stone.png"
-            }
-          ]
         }
       ]
     }
@@ -26713,24 +26595,70 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 37,
+      "pokemonId": 32,
       "children": [
         {
-          "pokemonId": 38,
-          "trigger": "불꽃의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/fire-stone.png"
+          "pokemonId": 33,
+          "trigger": "레벨 16",
+          "children": [
+            {
+              "pokemonId": 34,
+              "trigger": "달의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
+            }
+          ]
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 10103,
+      "pokemonId": 172,
       "children": [
         {
-          "pokemonId": 10104,
-          "trigger": "얼음의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/ice-stone.png"
+          "pokemonId": 25,
+          "trigger": "레벨업 · 친밀도 220 이상",
+          "children": [
+            {
+              "pokemonId": 26,
+              "trigger": "천둥의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/thunder-stone.png"
+            },
+            {
+              "pokemonId": 10100,
+              "trigger": "천둥의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/thunder-stone.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 29,
+      "children": [
+        {
+          "pokemonId": 30,
+          "trigger": "레벨 16",
+          "children": [
+            {
+              "pokemonId": 31,
+              "trigger": "달의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 27,
+      "children": [
+        {
+          "pokemonId": 28,
+          "trigger": "레벨 22"
         }
       ]
     }
@@ -26759,6 +26687,24 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 174,
+      "children": [
+        {
+          "pokemonId": 39,
+          "trigger": "레벨업 · 친밀도 160 이상",
+          "children": [
+            {
+              "pokemonId": 40,
+              "trigger": "달의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 48,
       "children": [
         {
@@ -26770,43 +26716,33 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 54,
+      "pokemonId": 10101,
       "children": [
         {
-          "pokemonId": 55,
-          "trigger": "레벨 33"
+          "pokemonId": 10102,
+          "trigger": "얼음의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/ice-stone.png"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 56,
+      "pokemonId": 43,
       "children": [
         {
-          "pokemonId": 57,
-          "trigger": "레벨 28",
+          "pokemonId": 44,
+          "trigger": "레벨 21",
           "children": [
             {
-              "pokemonId": 979,
-              "trigger": "특정 기술 사용"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 63,
-      "children": [
-        {
-          "pokemonId": 64,
-          "trigger": "레벨 16",
-          "children": [
+              "pokemonId": 45,
+              "trigger": "리프의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
+            },
             {
-              "pokemonId": 65,
-              "trigger": "교환"
+              "pokemonId": 182,
+              "trigger": "태양의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
             }
           ]
         }
@@ -26848,12 +26784,65 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 37,
+      "children": [
+        {
+          "pokemonId": 38,
+          "trigger": "불꽃의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/fire-stone.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 10103,
+      "children": [
+        {
+          "pokemonId": 10104,
+          "trigger": "얼음의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/ice-stone.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 173,
+      "children": [
+        {
+          "pokemonId": 35,
+          "trigger": "레벨업 · 친밀도 160 이상",
+          "children": [
+            {
+              "pokemonId": 36,
+              "trigger": "달의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 54,
+      "children": [
+        {
+          "pokemonId": 55,
+          "trigger": "레벨 33"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 58,
       "children": [
         {
           "pokemonId": 59,
           "trigger": "불꽃의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/fire-stone.png"
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/fire-stone.png"
         }
       ]
     }
@@ -26865,28 +26854,57 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 10230,
           "trigger": "불꽃의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/fire-stone.png"
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/fire-stone.png"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 43,
+      "pokemonId": 56,
       "children": [
         {
-          "pokemonId": 44,
+          "pokemonId": 57,
+          "trigger": "레벨 28",
+          "children": [
+            {
+              "pokemonId": 979,
+              "trigger": "특정 기술 사용"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 63,
+      "children": [
+        {
+          "pokemonId": 64,
+          "trigger": "레벨 16",
+          "children": [
+            {
+              "pokemonId": 65,
+              "trigger": "교환"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 69,
+      "children": [
+        {
+          "pokemonId": 70,
           "trigger": "레벨 21",
           "children": [
             {
-              "pokemonId": 45,
+              "pokemonId": 71,
               "trigger": "리프의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/leaf-stone.png"
-            },
-            {
-              "pokemonId": 182,
-              "trigger": "태양의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/sun-stone.png"
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
             }
           ]
         }
@@ -26912,18 +26930,88 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 69,
+      "pokemonId": 72,
       "children": [
         {
-          "pokemonId": 70,
-          "trigger": "레벨 21",
+          "pokemonId": 73,
+          "trigger": "레벨 30"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 10166,
+      "children": [
+        {
+          "pokemonId": 865,
+          "trigger": "한 전투에서 급소 3회"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 84,
+      "children": [
+        {
+          "pokemonId": 85,
+          "trigger": "레벨 31"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 77,
+      "children": [
+        {
+          "pokemonId": 78,
+          "trigger": "레벨 40"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 10162,
+      "children": [
+        {
+          "pokemonId": 10163,
+          "trigger": "레벨 40"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 60,
+      "children": [
+        {
+          "pokemonId": 61,
+          "trigger": "레벨 25",
           "children": [
             {
-              "pokemonId": 71,
-              "trigger": "리프의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/leaf-stone.png"
+              "pokemonId": 62,
+              "trigger": "물의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/water-stone.png"
+            },
+            {
+              "pokemonId": 186,
+              "trigger": "교환 · 소지: 왕의징표석"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 86,
+      "children": [
+        {
+          "pokemonId": 87,
+          "trigger": "레벨 34"
         }
       ]
     }
@@ -26975,17 +27063,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 72,
-      "children": [
-        {
-          "pokemonId": 73,
-          "trigger": "레벨 30"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 81,
       "children": [
         {
@@ -26997,72 +27074,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "레벨업"
             }
           ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 84,
-      "children": [
-        {
-          "pokemonId": 85,
-          "trigger": "레벨 31"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 77,
-      "children": [
-        {
-          "pokemonId": 78,
-          "trigger": "레벨 40"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 10162,
-      "children": [
-        {
-          "pokemonId": 10163,
-          "trigger": "레벨 40"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 60,
-      "children": [
-        {
-          "pokemonId": 61,
-          "trigger": "레벨 25",
-          "children": [
-            {
-              "pokemonId": 62,
-              "trigger": "물의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/water-stone.png"
-            },
-            {
-              "pokemonId": 186,
-              "trigger": "교환 · 소지: 왕의징표석"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 86,
-      "children": [
-        {
-          "pokemonId": 87,
-          "trigger": "레벨 34"
         }
       ]
     }
@@ -27084,23 +27095,12 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 10166,
-      "children": [
-        {
-          "pokemonId": 865,
-          "trigger": "한 전투에서 급소 3회"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 90,
       "children": [
         {
           "pokemonId": 91,
           "trigger": "물의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/water-stone.png"
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/water-stone.png"
         }
       ]
     }
@@ -27124,11 +27124,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 98,
+      "pokemonId": 96,
       "children": [
         {
-          "pokemonId": 99,
-          "trigger": "레벨 28"
+          "pokemonId": 97,
+          "trigger": "레벨 26"
         }
       ]
     }
@@ -27157,17 +27157,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 96,
-      "children": [
-        {
-          "pokemonId": 97,
-          "trigger": "레벨 26"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 100,
       "children": [
         {
@@ -27184,7 +27173,18 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 10232,
           "trigger": "리프의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/leaf-stone.png"
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 95,
+      "children": [
+        {
+          "pokemonId": 208,
+          "trigger": "교환 · 소지: 금속코트"
         }
       ]
     }
@@ -27196,27 +27196,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 103,
           "trigger": "리프의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/leaf-stone.png"
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
         },
         {
           "pokemonId": 10114,
           "trigger": "리프의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/leaf-stone.png"
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 104,
+      "pokemonId": 98,
       "children": [
         {
-          "pokemonId": 105,
+          "pokemonId": 99,
           "trigger": "레벨 28"
-        },
-        {
-          "pokemonId": 10115,
-          "trigger": "레벨 28 · 밤"
         }
       ]
     }
@@ -27238,30 +27234,15 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 236,
+      "pokemonId": 104,
       "children": [
         {
-          "pokemonId": 106,
-          "trigger": "레벨 20 · 공격>방어"
+          "pokemonId": 105,
+          "trigger": "레벨 28"
         },
         {
-          "pokemonId": 107,
-          "trigger": "레벨 20 · 공격<방어"
-        },
-        {
-          "pokemonId": 237,
-          "trigger": "레벨 20 · 공격=방어"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 95,
-      "children": [
-        {
-          "pokemonId": 208,
-          "trigger": "교환 · 소지: 금속코트"
+          "pokemonId": 10115,
+          "trigger": "레벨 28 · 밤"
         }
       ]
     }
@@ -27277,6 +27258,25 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 10167,
           "trigger": "레벨 35"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 236,
+      "children": [
+        {
+          "pokemonId": 106,
+          "trigger": "레벨 20 · 공격>방어"
+        },
+        {
+          "pokemonId": 107,
+          "trigger": "레벨 20 · 공격<방어"
+        },
+        {
+          "pokemonId": 237,
+          "trigger": "레벨 20 · 공격=방어"
         }
       ]
     }
@@ -27311,34 +27311,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 440,
-      "children": [
-        {
-          "pokemonId": 113,
-          "trigger": "레벨업 · 낮 · 소지: 동글동글돌",
-          "children": [
-            {
-              "pokemonId": 242,
-              "trigger": "레벨업 · 친밀도 160 이상"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 114,
-      "children": [
-        {
-          "pokemonId": 465,
-          "trigger": "레벨업 · 원시의힘 습득"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 118,
       "children": [
         {
@@ -27350,23 +27322,29 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 238,
+      "pokemonId": 120,
       "children": [
         {
-          "pokemonId": 124,
-          "trigger": "레벨 30"
+          "pokemonId": 121,
+          "trigger": "물의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/water-stone.png"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 120,
+      "pokemonId": 440,
       "children": [
         {
-          "pokemonId": 121,
-          "trigger": "물의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/water-stone.png"
+          "pokemonId": 113,
+          "trigger": "레벨업 · 낮 · 소지: 동글동글돌",
+          "children": [
+            {
+              "pokemonId": 242,
+              "trigger": "레벨업 · 친밀도 160 이상"
+            }
+          ]
         }
       ]
     }
@@ -27416,6 +27394,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 114,
+      "children": [
+        {
+          "pokemonId": 465,
+          "trigger": "레벨업 · 원시의힘 습득"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 239,
       "children": [
         {
@@ -27433,6 +27422,59 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 133,
+      "children": [
+        {
+          "pokemonId": 134,
+          "trigger": "물의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/water-stone.png"
+        },
+        {
+          "pokemonId": 135,
+          "trigger": "천둥의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/thunder-stone.png"
+        },
+        {
+          "pokemonId": 136,
+          "trigger": "불꽃의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/fire-stone.png"
+        },
+        {
+          "pokemonId": 196,
+          "trigger": "레벨업 · 친밀도 160 이상 · 낮"
+        },
+        {
+          "pokemonId": 197,
+          "trigger": "레벨업 · 친밀도 160 이상 · 밤"
+        },
+        {
+          "pokemonId": 470,
+          "trigger": "레벨업"
+        },
+        {
+          "pokemonId": 471,
+          "trigger": "레벨업"
+        },
+        {
+          "pokemonId": 700,
+          "trigger": "레벨업 · 어픽션 2 이상 · 페어리 타입 기술 습득"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 238,
+      "children": [
+        {
+          "pokemonId": 124,
+          "trigger": "레벨 30"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 240,
       "children": [
         {
@@ -27444,6 +27486,28 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "교환 · 소지: 마그마부스터"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 138,
+      "children": [
+        {
+          "pokemonId": 139,
+          "trigger": "레벨 40"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 140,
+      "children": [
+        {
+          "pokemonId": 141,
+          "trigger": "레벨 40"
         }
       ]
     }
@@ -27482,92 +27546,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 133,
-      "children": [
-        {
-          "pokemonId": 134,
-          "trigger": "물의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/water-stone.png"
-        },
-        {
-          "pokemonId": 135,
-          "trigger": "천둥의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/thunder-stone.png"
-        },
-        {
-          "pokemonId": 136,
-          "trigger": "불꽃의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/fire-stone.png"
-        },
-        {
-          "pokemonId": 196,
-          "trigger": "레벨업 · 친밀도 160 이상 · 낮"
-        },
-        {
-          "pokemonId": 197,
-          "trigger": "레벨업 · 친밀도 160 이상 · 밤"
-        },
-        {
-          "pokemonId": 470,
-          "trigger": "레벨업"
-        },
-        {
-          "pokemonId": 471,
-          "trigger": "레벨업"
-        },
-        {
-          "pokemonId": 700,
-          "trigger": "레벨업 · 어픽션 2 이상 · 페어리 타입 기술 습득"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 138,
-      "children": [
-        {
-          "pokemonId": 139,
-          "trigger": "레벨 40"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 140,
-      "children": [
-        {
-          "pokemonId": 141,
-          "trigger": "레벨 40"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 446,
       "children": [
         {
           "pokemonId": 143,
           "trigger": "레벨업 · 친밀도 160 이상"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 147,
-      "children": [
-        {
-          "pokemonId": 148,
-          "trigger": "레벨 30",
-          "children": [
-            {
-              "pokemonId": 149,
-              "trigger": "레벨 55"
-            }
-          ]
         }
       ]
     }
@@ -27591,17 +27574,56 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 137,
+      "pokemonId": 147,
       "children": [
         {
-          "pokemonId": 233,
-          "trigger": "교환 · 소지: 업그레이드",
+          "pokemonId": 148,
+          "trigger": "레벨 30",
           "children": [
             {
-              "pokemonId": 474,
-              "trigger": "교환 · 소지: 괴상한패치"
+              "pokemonId": 149,
+              "trigger": "레벨 55"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 158,
+      "children": [
+        {
+          "pokemonId": 159,
+          "trigger": "레벨 18",
+          "children": [
+            {
+              "pokemonId": 160,
+              "trigger": "레벨 30"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 161,
+      "children": [
+        {
+          "pokemonId": 162,
+          "trigger": "레벨 15"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 163,
+      "children": [
+        {
+          "pokemonId": 164,
+          "trigger": "레벨 20"
         }
       ]
     }
@@ -27629,45 +27651,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 161,
-      "children": [
-        {
-          "pokemonId": 162,
-          "trigger": "레벨 15"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 158,
-      "children": [
-        {
-          "pokemonId": 159,
-          "trigger": "레벨 18",
-          "children": [
-            {
-              "pokemonId": 160,
-              "trigger": "레벨 30"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 163,
-      "children": [
-        {
-          "pokemonId": 164,
-          "trigger": "레벨 20"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 165,
       "children": [
         {
@@ -27679,22 +27662,45 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 167,
+      "pokemonId": 170,
       "children": [
         {
-          "pokemonId": 168,
-          "trigger": "레벨 22"
+          "pokemonId": 171,
+          "trigger": "레벨 27"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 170,
+      "pokemonId": 298,
       "children": [
         {
-          "pokemonId": 171,
-          "trigger": "레벨 27"
+          "pokemonId": 183,
+          "trigger": "레벨업 · 친밀도 160 이상",
+          "children": [
+            {
+              "pokemonId": 184,
+              "trigger": "레벨 18"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 137,
+      "children": [
+        {
+          "pokemonId": 233,
+          "trigger": "교환 · 소지: 업그레이드",
+          "children": [
+            {
+              "pokemonId": 474,
+              "trigger": "교환 · 소지: 괴상한패치"
+            }
+          ]
         }
       ]
     }
@@ -27729,57 +27735,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 298,
+      "pokemonId": 167,
       "children": [
         {
-          "pokemonId": 183,
-          "trigger": "레벨업 · 친밀도 160 이상",
-          "children": [
-            {
-              "pokemonId": 184,
-              "trigger": "레벨 18"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 438,
-      "children": [
-        {
-          "pokemonId": 185,
-          "trigger": "레벨업 · 흉내내기 습득"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 187,
-      "children": [
-        {
-          "pokemonId": 188,
-          "trigger": "레벨 18",
-          "children": [
-            {
-              "pokemonId": 189,
-              "trigger": "레벨 27"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 191,
-      "children": [
-        {
-          "pokemonId": 192,
-          "trigger": "태양의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/sun-stone.png"
+          "pokemonId": 168,
+          "trigger": "레벨 22"
         }
       ]
     }
@@ -27795,7 +27755,24 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
             {
               "pokemonId": 468,
               "trigger": "빛의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/shiny-stone.png"
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/shiny-stone.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 187,
+      "children": [
+        {
+          "pokemonId": 188,
+          "trigger": "레벨 18",
+          "children": [
+            {
+              "pokemonId": 189,
+              "trigger": "레벨 27"
             }
           ]
         }
@@ -27837,6 +27814,29 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 191,
+      "children": [
+        {
+          "pokemonId": 192,
+          "trigger": "태양의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 438,
+      "children": [
+        {
+          "pokemonId": 185,
+          "trigger": "레벨업 · 흉내내기 습득"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 190,
       "children": [
         {
@@ -27859,18 +27859,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 198,
-      "children": [
-        {
-          "pokemonId": 430,
-          "trigger": "어둠의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/dusk-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 204,
       "children": [
         {
@@ -27882,23 +27870,24 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 200,
+      "pokemonId": 198,
       "children": [
         {
-          "pokemonId": 429,
+          "pokemonId": 430,
           "trigger": "어둠의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/dusk-stone.png"
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/dusk-stone.png"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 203,
+      "pokemonId": 200,
       "children": [
         {
-          "pokemonId": 981,
-          "trigger": "레벨업 · twin-beam 습득"
+          "pokemonId": 429,
+          "trigger": "어둠의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/dusk-stone.png"
         }
       ]
     }
@@ -27916,11 +27905,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 207,
+      "pokemonId": 203,
       "children": [
         {
-          "pokemonId": 472,
-          "trigger": "레벨업 · 밤 · 소지: 예리한이빨"
+          "pokemonId": 981,
+          "trigger": "레벨업 · twin-beam 습득"
         }
       ]
     }
@@ -27938,11 +27927,39 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 207,
+      "children": [
+        {
+          "pokemonId": 472,
+          "trigger": "레벨업 · 밤 · 소지: 예리한이빨"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 206,
       "children": [
         {
           "pokemonId": 982,
           "trigger": "레벨업 · hyper-drill 습득"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 216,
+      "children": [
+        {
+          "pokemonId": 217,
+          "trigger": "레벨 30",
+          "children": [
+            {
+              "pokemonId": 901,
+              "trigger": "peat-block 사용 · 밤"
+            }
+          ]
         }
       ]
     }
@@ -27988,50 +28005,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 216,
-      "children": [
-        {
-          "pokemonId": 217,
-          "trigger": "레벨 30",
-          "children": [
-            {
-              "pokemonId": 901,
-              "trigger": "peat-block 사용 · 밤"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 10173,
-      "children": [
-        {
-          "pokemonId": 864,
-          "trigger": "레벨 38"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 458,
       "children": [
         {
           "pokemonId": 226,
           "trigger": "레벨업 · 파티에 특정 포켓몬 동반"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 228,
-      "children": [
-        {
-          "pokemonId": 229,
-          "trigger": "레벨 24"
         }
       ]
     }
@@ -28082,6 +28060,28 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 10173,
+      "children": [
+        {
+          "pokemonId": 864,
+          "trigger": "레벨 38"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 228,
+      "children": [
+        {
+          "pokemonId": 229,
+          "trigger": "레벨 24"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 246,
       "children": [
         {
@@ -28116,14 +28116,14 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 252,
+      "pokemonId": 258,
       "children": [
         {
-          "pokemonId": 253,
+          "pokemonId": 259,
           "trigger": "레벨 16",
           "children": [
             {
-              "pokemonId": 254,
+              "pokemonId": 260,
               "trigger": "레벨 36"
             }
           ]
@@ -28133,14 +28133,14 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 258,
+      "pokemonId": 252,
       "children": [
         {
-          "pokemonId": 259,
+          "pokemonId": 253,
           "trigger": "레벨 16",
           "children": [
             {
-              "pokemonId": 260,
+              "pokemonId": 254,
               "trigger": "레벨 36"
             }
           ]
@@ -28188,6 +28188,24 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 270,
+      "children": [
+        {
+          "pokemonId": 271,
+          "trigger": "레벨 14",
+          "children": [
+            {
+              "pokemonId": 272,
+              "trigger": "물의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/water-stone.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 263,
       "children": [
         {
@@ -28227,35 +28245,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 270,
-      "children": [
-        {
-          "pokemonId": 271,
-          "trigger": "레벨 14",
-          "children": [
-            {
-              "pokemonId": 272,
-              "trigger": "물의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/water-stone.png"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 278,
-      "children": [
-        {
-          "pokemonId": 279,
-          "trigger": "레벨 25"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 273,
       "children": [
         {
@@ -28265,7 +28254,7 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
             {
               "pokemonId": 275,
               "trigger": "리프의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/leaf-stone.png"
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
             }
           ]
         }
@@ -28279,6 +28268,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 277,
           "trigger": "레벨 22"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 278,
+      "children": [
+        {
+          "pokemonId": 279,
+          "trigger": "레벨 25"
         }
       ]
     }
@@ -28369,32 +28369,9 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
             {
               "pokemonId": 475,
               "trigger": "각성의돌 사용 · 수컷",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/dawn-stone.png"
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/dawn-stone.png"
             }
           ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 300,
-      "children": [
-        {
-          "pokemonId": 301,
-          "trigger": "달의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/moon-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 296,
-      "children": [
-        {
-          "pokemonId": 297,
-          "trigger": "레벨 24"
         }
       ]
     }
@@ -28406,6 +28383,29 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 476,
           "trigger": "레벨업"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 300,
+      "children": [
+        {
+          "pokemonId": 301,
+          "trigger": "달의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 296,
+      "children": [
+        {
+          "pokemonId": 297,
+          "trigger": "레벨 24"
         }
       ]
     }
@@ -28460,7 +28460,7 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
             {
               "pokemonId": 407,
               "trigger": "빛의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/shiny-stone.png"
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/shiny-stone.png"
             }
           ]
         }
@@ -28491,22 +28491,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 320,
+      "pokemonId": 322,
       "children": [
         {
-          "pokemonId": 321,
-          "trigger": "레벨 40"
+          "pokemonId": 323,
+          "trigger": "레벨 33"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 322,
+      "pokemonId": 320,
       "children": [
         {
-          "pokemonId": 323,
-          "trigger": "레벨 33"
+          "pokemonId": 321,
+          "trigger": "레벨 40"
         }
       ]
     }
@@ -28541,17 +28541,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 331,
-      "children": [
-        {
-          "pokemonId": 332,
-          "trigger": "레벨 32"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 333,
       "children": [
         {
@@ -28579,6 +28568,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 342,
           "trigger": "레벨 30"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 331,
+      "children": [
+        {
+          "pokemonId": 332,
+          "trigger": "레벨 32"
         }
       ]
     }
@@ -28651,23 +28651,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 363,
-      "children": [
-        {
-          "pokemonId": 364,
-          "trigger": "레벨 32",
-          "children": [
-            {
-              "pokemonId": 365,
-              "trigger": "레벨 44"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 361,
       "children": [
         {
@@ -28677,7 +28660,7 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 478,
           "trigger": "각성의돌 사용 · 암컷",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/dawn-stone.png"
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/dawn-stone.png"
         }
       ]
     }
@@ -28693,6 +28676,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
             {
               "pokemonId": 477,
               "trigger": "교환 · 소지: 영계의천"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 363,
+      "children": [
+        {
+          "pokemonId": 364,
+          "trigger": "레벨 32",
+          "children": [
+            {
+              "pokemonId": 365,
+              "trigger": "레벨 44"
             }
           ]
         }
@@ -28735,21 +28735,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 366,
-      "children": [
-        {
-          "pokemonId": 367,
-          "trigger": "교환 · 소지: 심해의이빨"
-        },
-        {
-          "pokemonId": 368,
-          "trigger": "교환 · 소지: 심해의비늘"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 387,
       "children": [
         {
@@ -28767,6 +28752,21 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 366,
+      "children": [
+        {
+          "pokemonId": 367,
+          "trigger": "교환 · 소지: 심해의이빨"
+        },
+        {
+          "pokemonId": 368,
+          "trigger": "교환 · 소지: 심해의비늘"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 390,
       "children": [
         {
@@ -28775,6 +28775,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
           "children": [
             {
               "pokemonId": 392,
+              "trigger": "레벨 36"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 393,
+      "children": [
+        {
+          "pokemonId": 394,
+          "trigger": "레벨 16",
+          "children": [
+            {
+              "pokemonId": 395,
               "trigger": "레벨 36"
             }
           ]
@@ -28801,17 +28818,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 393,
+      "pokemonId": 401,
       "children": [
         {
-          "pokemonId": 394,
-          "trigger": "레벨 16",
-          "children": [
-            {
-              "pokemonId": 395,
-              "trigger": "레벨 36"
-            }
-          ]
+          "pokemonId": 402,
+          "trigger": "레벨 10"
         }
       ]
     }
@@ -28823,17 +28834,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 400,
           "trigger": "레벨 15"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 401,
-      "children": [
-        {
-          "pokemonId": 402,
-          "trigger": "레벨 10"
         }
       ]
     }
@@ -28857,15 +28857,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 412,
+      "pokemonId": 408,
       "children": [
         {
-          "pokemonId": 413,
-          "trigger": "레벨 20 · 암컷"
-        },
-        {
-          "pokemonId": 414,
-          "trigger": "레벨 20 · 수컷"
+          "pokemonId": 409,
+          "trigger": "레벨 30"
         }
       ]
     }
@@ -28883,11 +28879,15 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 408,
+      "pokemonId": 412,
       "children": [
         {
-          "pokemonId": 409,
-          "trigger": "레벨 30"
+          "pokemonId": 413,
+          "trigger": "레벨 20 · 암컷"
+        },
+        {
+          "pokemonId": 414,
+          "trigger": "레벨 20 · 수컷"
         }
       ]
     }
@@ -28916,17 +28916,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 422,
-      "children": [
-        {
-          "pokemonId": 423,
-          "trigger": "레벨 30"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 420,
       "children": [
         {
@@ -28938,11 +28927,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 425,
+      "pokemonId": 422,
       "children": [
         {
-          "pokemonId": 426,
-          "trigger": "레벨 28"
+          "pokemonId": 423,
+          "trigger": "레벨 30"
         }
       ]
     }
@@ -28960,11 +28949,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 434,
+      "pokemonId": 425,
       "children": [
         {
-          "pokemonId": 435,
-          "trigger": "레벨 34"
+          "pokemonId": 426,
+          "trigger": "레벨 28"
         }
       ]
     }
@@ -28976,6 +28965,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 432,
           "trigger": "레벨 38"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 434,
+      "children": [
+        {
+          "pokemonId": 435,
+          "trigger": "레벨 34"
         }
       ]
     }
@@ -29032,22 +29032,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 453,
+      "pokemonId": 451,
       "children": [
         {
-          "pokemonId": 454,
-          "trigger": "레벨 37"
+          "pokemonId": 452,
+          "trigger": "레벨 40"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 451,
+      "pokemonId": 453,
       "children": [
         {
-          "pokemonId": 452,
-          "trigger": "레벨 40"
+          "pokemonId": 454,
+          "trigger": "레벨 37"
         }
       ]
     }
@@ -29131,23 +29131,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 506,
-      "children": [
-        {
-          "pokemonId": 507,
-          "trigger": "레벨 16",
-          "children": [
-            {
-              "pokemonId": 508,
-              "trigger": "레벨 32"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 504,
       "children": [
         {
@@ -29170,12 +29153,29 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 506,
+      "children": [
+        {
+          "pokemonId": 507,
+          "trigger": "레벨 16",
+          "children": [
+            {
+              "pokemonId": 508,
+              "trigger": "레벨 32"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 511,
       "children": [
         {
           "pokemonId": 512,
           "trigger": "리프의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/leaf-stone.png"
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
         }
       ]
     }
@@ -29187,7 +29187,7 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 514,
           "trigger": "불꽃의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/fire-stone.png"
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/fire-stone.png"
         }
       ]
     }
@@ -29199,7 +29199,19 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 516,
           "trigger": "물의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/water-stone.png"
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/water-stone.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 517,
+      "children": [
+        {
+          "pokemonId": 518,
+          "trigger": "달의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
         }
       ]
     }
@@ -29217,18 +29229,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "레벨 32"
             }
           ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 517,
-      "children": [
-        {
-          "pokemonId": 518,
-          "trigger": "달의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/moon-stone.png"
         }
       ]
     }
@@ -29336,18 +29336,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 546,
-      "children": [
-        {
-          "pokemonId": 547,
-          "trigger": "태양의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/sun-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 543,
       "children": [
         {
@@ -29365,17 +29353,29 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 546,
+      "children": [
+        {
+          "pokemonId": 547,
+          "trigger": "태양의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 548,
       "children": [
         {
           "pokemonId": 549,
           "trigger": "태양의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/sun-stone.png"
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
         },
         {
           "pokemonId": 10237,
           "trigger": "태양의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/sun-stone.png"
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
         }
       ]
     }
@@ -29410,33 +29410,34 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 554,
+      "children": [
+        {
+          "pokemonId": 555,
+          "trigger": "레벨 35"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 10176,
+      "children": [
+        {
+          "pokemonId": 10177,
+          "trigger": "얼음의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/ice-stone.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 559,
       "children": [
         {
           "pokemonId": 560,
           "trigger": "레벨 39"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 562,
-      "children": [
-        {
-          "pokemonId": 563,
-          "trigger": "레벨 34"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 10179,
-      "children": [
-        {
-          "pokemonId": 867,
-          "trigger": "데미지 49 이상 받고 특정 장소 통과"
         }
       ]
     }
@@ -29465,23 +29466,33 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 568,
+      "pokemonId": 562,
       "children": [
         {
-          "pokemonId": 569,
-          "trigger": "레벨 36"
+          "pokemonId": 563,
+          "trigger": "레벨 34"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 572,
+      "pokemonId": 10179,
       "children": [
         {
-          "pokemonId": 573,
-          "trigger": "빛의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/shiny-stone.png"
+          "pokemonId": 867,
+          "trigger": "데미지 49 이상 받고 특정 장소 통과"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 568,
+      "children": [
+        {
+          "pokemonId": 569,
+          "trigger": "레벨 36"
         }
       ]
     }
@@ -29505,22 +29516,40 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 570,
+      "pokemonId": 572,
       "children": [
         {
-          "pokemonId": 571,
-          "trigger": "레벨 30"
+          "pokemonId": 573,
+          "trigger": "빛의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/shiny-stone.png"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 10238,
+      "pokemonId": 577,
       "children": [
         {
-          "pokemonId": 10239,
-          "trigger": "레벨 30"
+          "pokemonId": 578,
+          "trigger": "레벨 32",
+          "children": [
+            {
+              "pokemonId": 579,
+              "trigger": "레벨 41"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 580,
+      "children": [
+        {
+          "pokemonId": 581,
+          "trigger": "레벨 35"
         }
       ]
     }
@@ -29555,62 +29584,33 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 580,
-      "children": [
-        {
-          "pokemonId": 581,
-          "trigger": "레벨 35"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 577,
-      "children": [
-        {
-          "pokemonId": 578,
-          "trigger": "레벨 32",
-          "children": [
-            {
-              "pokemonId": 579,
-              "trigger": "레벨 41"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 554,
-      "children": [
-        {
-          "pokemonId": 555,
-          "trigger": "레벨 35"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 10176,
-      "children": [
-        {
-          "pokemonId": 10177,
-          "trigger": "얼음의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/ice-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 588,
       "children": [
         {
           "pokemonId": 589,
           "trigger": "교환"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 570,
+      "children": [
+        {
+          "pokemonId": 571,
+          "trigger": "레벨 30"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 10238,
+      "children": [
+        {
+          "pokemonId": 10239,
+          "trigger": "레벨 30"
         }
       ]
     }
@@ -29661,23 +29661,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 599,
-      "children": [
-        {
-          "pokemonId": 600,
-          "trigger": "레벨 38",
-          "children": [
-            {
-              "pokemonId": 601,
-              "trigger": "레벨 49"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 602,
       "children": [
         {
@@ -29687,25 +29670,7 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
             {
               "pokemonId": 604,
               "trigger": "천둥의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/thunder-stone.png"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 607,
-      "children": [
-        {
-          "pokemonId": 608,
-          "trigger": "레벨 41",
-          "children": [
-            {
-              "pokemonId": 609,
-              "trigger": "어둠의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/dusk-stone.png"
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/thunder-stone.png"
             }
           ]
         }
@@ -29725,6 +29690,24 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 607,
+      "children": [
+        {
+          "pokemonId": 608,
+          "trigger": "레벨 41",
+          "children": [
+            {
+              "pokemonId": 609,
+              "trigger": "어둠의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/dusk-stone.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 610,
       "children": [
         {
@@ -29734,6 +29717,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
             {
               "pokemonId": 612,
               "trigger": "레벨 48"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 599,
+      "children": [
+        {
+          "pokemonId": 600,
+          "trigger": "레벨 38",
+          "children": [
+            {
+              "pokemonId": 601,
+              "trigger": "레벨 49"
             }
           ]
         }
@@ -29803,6 +29803,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 629,
+      "children": [
+        {
+          "pokemonId": 630,
+          "trigger": "레벨 54"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 627,
       "children": [
         {
@@ -29811,17 +29822,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         },
         {
           "pokemonId": 10240,
-          "trigger": "레벨 54"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 629,
-      "children": [
-        {
-          "pokemonId": 630,
           "trigger": "레벨 54"
         }
       ]
@@ -29973,7 +29973,7 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
             {
               "pokemonId": 671,
               "trigger": "빛의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/shiny-stone.png"
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/shiny-stone.png"
             }
           ]
         }
@@ -29987,17 +29987,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 673,
           "trigger": "레벨 32"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 674,
-      "children": [
-        {
-          "pokemonId": 675,
-          "trigger": "레벨 32 · 파티에 악 타입 동반"
         }
       ]
     }
@@ -30024,7 +30013,7 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
             {
               "pokemonId": 681,
               "trigger": "어둠의돌 사용",
-              "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/dusk-stone.png"
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/dusk-stone.png"
             }
           ]
         }
@@ -30033,11 +30022,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 686,
+      "pokemonId": 674,
       "children": [
         {
-          "pokemonId": 687,
-          "trigger": "레벨 30 · 기기를 거꾸로"
+          "pokemonId": 675,
+          "trigger": "레벨 32 · 파티에 악 타입 동반"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 690,
+      "children": [
+        {
+          "pokemonId": 691,
+          "trigger": "레벨 48"
         }
       ]
     }
@@ -30055,11 +30055,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 690,
+      "pokemonId": 686,
       "children": [
         {
-          "pokemonId": 691,
-          "trigger": "레벨 48"
+          "pokemonId": 687,
+          "trigger": "레벨 30 · 기기를 거꾸로"
         }
       ]
     }
@@ -30082,18 +30082,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 683,
           "trigger": "교환 · 소지: 향기주머니"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 694,
-      "children": [
-        {
-          "pokemonId": 695,
-          "trigger": "태양의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/sun-stone.png"
         }
       ]
     }
@@ -30171,22 +30159,27 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 708,
+      "pokemonId": 694,
       "children": [
         {
-          "pokemonId": 709,
-          "trigger": "교환"
+          "pokemonId": 695,
+          "trigger": "태양의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 710,
+      "pokemonId": 712,
       "children": [
         {
-          "pokemonId": 711,
-          "trigger": "교환"
+          "pokemonId": 713,
+          "trigger": "레벨 37"
+        },
+        {
+          "pokemonId": 10243,
+          "trigger": "레벨 37"
         }
       ]
     }
@@ -30204,15 +30197,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 712,
+      "pokemonId": 710,
       "children": [
         {
-          "pokemonId": 713,
-          "trigger": "레벨 37"
-        },
+          "pokemonId": 711,
+          "trigger": "교환"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 708,
+      "children": [
         {
-          "pokemonId": 10243,
-          "trigger": "레벨 37"
+          "pokemonId": 709,
+          "trigger": "교환"
         }
       ]
     }
@@ -30363,22 +30363,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 751,
+      "pokemonId": 749,
       "children": [
         {
-          "pokemonId": 752,
-          "trigger": "레벨 22"
+          "pokemonId": 750,
+          "trigger": "레벨 30"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 749,
+      "pokemonId": 751,
       "children": [
         {
-          "pokemonId": 750,
-          "trigger": "레벨 30"
+          "pokemonId": 752,
+          "trigger": "레벨 22"
         }
       ]
     }
@@ -30440,6 +30440,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 772,
+      "children": [
+        {
+          "pokemonId": 773,
+          "trigger": "레벨업 · 친밀도 160 이상"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 761,
       "children": [
         {
@@ -30462,17 +30473,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 770,
           "trigger": "레벨 42"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 772,
-      "children": [
-        {
-          "pokemonId": 773,
-          "trigger": "레벨업 · 친밀도 160 이상"
         }
       ]
     }
@@ -30517,17 +30517,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 803,
-      "children": [
-        {
-          "pokemonId": 804,
-          "trigger": "레벨업 · 용의파동 습득"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 810,
       "children": [
         {
@@ -30539,6 +30528,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "레벨 35"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 803,
+      "children": [
+        {
+          "pokemonId": 804,
+          "trigger": "레벨업 · 용의파동 습득"
         }
       ]
     }
@@ -30579,6 +30579,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 824,
+      "children": [
+        {
+          "pokemonId": 825,
+          "trigger": "레벨 10",
+          "children": [
+            {
+              "pokemonId": 826,
+              "trigger": "레벨 30"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 819,
       "children": [
         {
@@ -30607,23 +30624,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 824,
-      "children": [
-        {
-          "pokemonId": 825,
-          "trigger": "레벨 10",
-          "children": [
-            {
-              "pokemonId": 826,
-              "trigger": "레벨 30"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 827,
       "children": [
         {
@@ -30635,33 +30635,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 829,
-      "children": [
-        {
-          "pokemonId": 830,
-          "trigger": "레벨 20"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 831,
       "children": [
         {
           "pokemonId": 832,
           "trigger": "레벨 24"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 833,
-      "children": [
-        {
-          "pokemonId": 834,
-          "trigger": "레벨 22"
         }
       ]
     }
@@ -30696,11 +30674,44 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 833,
+      "children": [
+        {
+          "pokemonId": 834,
+          "trigger": "레벨 22"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 843,
       "children": [
         {
           "pokemonId": 844,
           "trigger": "레벨 36"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 829,
+      "children": [
+        {
+          "pokemonId": 830,
+          "trigger": "레벨 20"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 850,
+      "children": [
+        {
+          "pokemonId": 851,
+          "trigger": "레벨 28"
         }
       ]
     }
@@ -30729,11 +30740,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 850,
+      "pokemonId": 859,
       "children": [
         {
-          "pokemonId": 851,
-          "trigger": "레벨 28"
+          "pokemonId": 860,
+          "trigger": "레벨 32",
+          "children": [
+            {
+              "pokemonId": 861,
+              "trigger": "레벨 42"
+            }
+          ]
         }
       ]
     }
@@ -30748,23 +30765,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
           "children": [
             {
               "pokemonId": 858,
-              "trigger": "레벨 42"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 859,
-      "children": [
-        {
-          "pokemonId": 860,
-          "trigger": "레벨 32",
-          "children": [
-            {
-              "pokemonId": 861,
               "trigger": "레벨 42"
             }
           ]
@@ -30910,23 +30910,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 912,
-      "children": [
-        {
-          "pokemonId": 913,
-          "trigger": "레벨 16",
-          "children": [
-            {
-              "pokemonId": 914,
-              "trigger": "레벨 36"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 909,
       "children": [
         {
@@ -30944,11 +30927,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 915,
+      "pokemonId": 912,
       "children": [
         {
-          "pokemonId": 916,
-          "trigger": "레벨 18"
+          "pokemonId": 913,
+          "trigger": "레벨 16",
+          "children": [
+            {
+              "pokemonId": 914,
+              "trigger": "레벨 36"
+            }
+          ]
         }
       ]
     }
@@ -30960,6 +30949,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 918,
           "trigger": "레벨 15"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 915,
+      "children": [
+        {
+          "pokemonId": 916,
+          "trigger": "레벨 18"
         }
       ]
     }
@@ -31016,23 +31016,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 928,
-      "children": [
-        {
-          "pokemonId": 929,
-          "trigger": "레벨 25",
-          "children": [
-            {
-              "pokemonId": 930,
-              "trigger": "레벨 35"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 932,
       "children": [
         {
@@ -31050,23 +31033,29 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 938,
+      "pokemonId": 928,
       "children": [
         {
-          "pokemonId": 939,
-          "trigger": "천둥의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/thunder-stone.png"
+          "pokemonId": 929,
+          "trigger": "레벨 25",
+          "children": [
+            {
+              "pokemonId": 930,
+              "trigger": "레벨 35"
+            }
+          ]
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 942,
+      "pokemonId": 938,
       "children": [
         {
-          "pokemonId": 943,
-          "trigger": "레벨 30"
+          "pokemonId": 939,
+          "trigger": "천둥의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/thunder-stone.png"
         }
       ]
     }
@@ -31078,6 +31067,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 941,
           "trigger": "레벨 25"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 942,
+      "children": [
+        {
+          "pokemonId": 943,
+          "trigger": "레벨 30"
         }
       ]
     }
@@ -31122,18 +31122,7 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 952,
           "trigger": "불꽃의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/fire-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 955,
-      "children": [
-        {
-          "pokemonId": 956,
-          "trigger": "레벨 35"
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/fire-stone.png"
         }
       ]
     }
@@ -31145,6 +31134,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 954,
           "trigger": "레벨업"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 955,
+      "children": [
+        {
+          "pokemonId": 956,
+          "trigger": "레벨 35"
         }
       ]
     }
@@ -31205,17 +31205,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 965,
-      "children": [
-        {
-          "pokemonId": 966,
-          "trigger": "레벨 40"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 969,
       "children": [
         {
@@ -31238,23 +31227,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 974,
+      "pokemonId": 965,
       "children": [
         {
-          "pokemonId": 975,
-          "trigger": "얼음의돌 사용",
-          "triggerIconUrl": "https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites/items/ice-stone.png"
+          "pokemonId": 966,
+          "trigger": "레벨 40"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 999,
+      "pokemonId": 974,
       "children": [
         {
-          "pokemonId": 1000,
-          "trigger": "코인 999개 모으기"
+          "pokemonId": 975,
+          "trigger": "얼음의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/ice-stone.png"
         }
       ]
     }
@@ -31272,6 +31261,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "레벨 54"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 999,
+      "children": [
+        {
+          "pokemonId": 1000,
+          "trigger": "코인 999개 모으기"
         }
       ]
     }

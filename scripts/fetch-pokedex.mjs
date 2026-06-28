@@ -34,6 +34,32 @@ const REGION_EXTRA_LABEL = {
   'aqua-breed': '파도종',
 }
 
+// 세대별 대표 게임판(기술/기술머신 데이터를 가져올 기준 버전 그룹). 세대마다 게임이 여럿이라
+// 전부 다루면 조합이 폭발하므로, 한 세대당 대표 한 쌍만 기준으로 삼는다.
+const CANONICAL_VERSION_GROUP_BY_GEN = {
+  1: 'red-blue',
+  2: 'gold-silver',
+  3: 'ruby-sapphire',
+  4: 'diamond-pearl',
+  5: 'black-white',
+  6: 'x-y',
+  7: 'sun-moon',
+  8: 'sword-shield',
+  9: 'scarlet-violet',
+}
+const VERSION_LABEL_KO = {
+  1: '레드·블루',
+  2: '골드·실버',
+  3: '루비·사파이어',
+  4: '다이아몬드·펄',
+  5: '블랙·화이트',
+  6: 'X·Y',
+  7: '썬·문',
+  8: '소드·실드',
+  9: '스칼렛·바이올렛',
+}
+const DAMAGE_CLASS_KO = { physical: '물리', special: '특수', status: '상태' }
+
 // 실제 게임에 존재하는 메가진화 보유 종(46종, 총 48폼: 리자몽·뮤츠만 X/Y 2종).
 // PokeAPI의 varieties에는 가공 데이터(예: 라이츄·앱솔·가챔프·루카리오의 가짜 "-mega-z" 폼)가
 // 섞여 있어, 검증된 종 목록 + "{종}-mega"/"-mega-x"/"-mega-y" 정확한 슬러그만 허용한다.
@@ -46,9 +72,11 @@ const MEGA_SPECIES = [
   'diancie', 'garchomp', 'lucario', 'abomasnow',
 ]
 
-// raw.githubusercontent.com은 대량 핫링크용 CDN이 아니라 트래픽이 몰리면 이미지가
-// 간헐적으로 깨진다. jsDelivr의 GitHub 미러를 쓰면 같은 저장소 파일을 CDN으로 안정적으로 받는다.
-const SPRITES_CDN = 'https://cdn.jsdelivr.net/gh/PokeAPI/sprites/sprites'
+// raw.githubusercontent.com은 대량 핫링크용 CDN이 아니다. jsDelivr는 더 빠르지만
+// PokeAPI/sprites 저장소가 50MB 제한을 넘어서 8세대 이후/리전폼/메가진화(높은 ID)
+// 이미지를 영구적으로 403 처리한다 — 확인 결과 id 721(7세대)까지는 되고 809부터 막힘.
+// statically.io는 같은 저장소를 같은 용량 제한 없이 미러링해 전체 ID 범위가 정상 동작한다.
+const SPRITES_CDN = 'https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites'
 
 function sprite(id) {
   return `${SPRITES_CDN}/pokemon/${id}.png`
@@ -56,7 +84,7 @@ function sprite(id) {
 function artwork(id) {
   return `${SPRITES_CDN}/pokemon/other/official-artwork/${id}.png`
 }
-function toJsDelivr(rawGithubUrl) {
+function toStaticallyCdn(rawGithubUrl) {
   return rawGithubUrl?.replace('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites', SPRITES_CDN)
 }
 
@@ -116,7 +144,7 @@ async function itemInfo(name) {
       itemInfoCache.set(name, {
         ko: data.names.find((n) => n.language.name === 'ko')?.name ?? name,
         // 일부 신규 아이템은 아이콘 자체가 없다(API가 null 반환). 있는 경우 jsDelivr 미러로 변환.
-        iconUrl: toJsDelivr(data.sprites?.default ?? undefined),
+        iconUrl: toStaticallyCdn(data.sprites?.default ?? undefined),
       })
     } catch {
       itemInfoCache.set(name, { ko: name, iconUrl: undefined })
@@ -218,7 +246,88 @@ async function describeEvolutionDetail(detail) {
   return { trigger: parts.join(' · '), triggerIconUrl }
 }
 
+// ---------- 기술(무브셋) ----------
+const moveDetailCache = new Map() // name -> info
+const moveDetailByIdCache = new Map() // id -> info
+async function moveDetail(name) {
+  if (!moveDetailCache.has(name)) {
+    const data = await fetchJson(`${BASE}/move/${name}`)
+    const info = {
+      id: data.id,
+      nameKo: data.names.find((n) => n.language.name === 'ko')?.name ?? data.name,
+      nameEn: data.name,
+      type: EN_TO_KO_TYPE[data.type.name],
+      category: DAMAGE_CLASS_KO[data.damage_class.name],
+      power: data.power ?? undefined,
+      accuracy: data.accuracy ?? undefined,
+      pp: data.pp,
+    }
+    moveDetailCache.set(name, info)
+    moveDetailByIdCache.set(info.id, info)
+  }
+  return moveDetailCache.get(name)
+}
+
+// 기술머신 전체 목록을 한 번에 받아 (버전그룹, 기술) -> TM/HM 번호 매핑을 만든다.
+// /machine 목록 엔드포인트는 URL만 주므로 2300여 건을 개별로 가져와야 한다.
+async function buildMachineLookup() {
+  console.error('기술머신(TM/HM) 목록 가져오는 중...')
+  const list = await fetchJson(`${BASE}/machine/?limit=3000`)
+  const lookup = new Map()
+  await mapWithConcurrency(list.results, 20, async ({ url }) => {
+    const m = await fetchJson(url)
+    const match = m.item.name.match(/^(tm|hm)(\d+)$/)
+    if (!match) return
+    lookup.set(`${m.version_group.name}|${m.move.name}`, { machine: match[1].toUpperCase(), number: Number(match[2]) })
+  })
+  console.error(`기술머신 ${lookup.size}건 매핑 완료`)
+  return lookup
+}
+
+// 포켓몬의 moves 배열(이미 fetch-pokedex가 받아온 것)에서, 세대별 대표 버전의
+// 레벨업/기술머신 학습 기술만 추려 Learnset[] 으로 만든다. 알/교환/가르침 기술은 제외한다.
+async function buildLearnsets(poke, machineLookup) {
+  const learnsets = []
+  for (const [genStr, versionGroup] of Object.entries(CANONICAL_VERSION_GROUP_BY_GEN)) {
+    const generation = Number(genStr)
+    const levelUp = []
+    const machines = []
+    for (const moveEntry of poke.moves) {
+      const detail = moveEntry.version_group_details.find((d) => d.version_group.name === versionGroup)
+      if (!detail) continue
+      if (detail.move_learn_method.name === 'level-up' && detail.level_learned_at > 0) {
+        const info = await moveDetail(moveEntry.move.name)
+        levelUp.push({ moveId: info.id, level: detail.level_learned_at })
+      } else if (detail.move_learn_method.name === 'machine') {
+        const tm = machineLookup.get(`${versionGroup}|${moveEntry.move.name}`)
+        if (tm) {
+          const info = await moveDetail(moveEntry.move.name)
+          machines.push({ moveId: info.id, machine: tm.machine, number: tm.number })
+        }
+      }
+    }
+    if (levelUp.length === 0 && machines.length === 0) continue
+    learnsets.push({ generation: `${generation}세대`, version: VERSION_LABEL_KO[generation], levelUp, machines })
+  }
+  return learnsets
+}
+
+// 가장 최신 세대 학습셋에서 위력이 높은 기술 위주로 4개를 추천 배치로 고른다.
+function recommendedMoveset(learnsets) {
+  const latest = learnsets[learnsets.length - 1]
+  if (!latest) return []
+  const ids = [...new Set([...latest.levelUp.map((m) => m.moveId), ...latest.machines.map((m) => m.moveId)])]
+  return ids
+    .map((id) => moveDetailByIdCache.get(id))
+    .filter(Boolean)
+    .sort((a, b) => (b.power ?? -1) - (a.power ?? -1))
+    .slice(0, 4)
+    .map((m) => m.id)
+}
+
 async function main() {
+  const machineLookup = await buildMachineLookup()
+
   console.error(`포켓몬 1~${TOTAL_SPECIES}종 + 리전폼 가져오는 중...`)
   const speciesIds = Array.from({ length: TOTAL_SPECIES }, (_, i) => i + 1)
 
@@ -227,6 +336,8 @@ async function main() {
 
   const pokemonOut = []
   const idToDexNumber = new Map() // 고유 pokemon id -> 국가도감 번호 (진화 트리 표시용)
+  const learnsetsByPokemonId = new Map()
+  const recommendedByPokemonId = new Map()
 
   await mapWithConcurrency(speciesIds, 14, async (speciesId) => {
     const species = await fetchJson(`${BASE}/pokemon-species/${speciesId}`)
@@ -271,6 +382,12 @@ async function main() {
       pokemonOut.push(entry)
       idToDexNumber.set(poke.id, speciesId)
       varietyEntries.push({ name: varietyName, id: poke.id, isDefault })
+
+      const learnsets = await buildLearnsets(poke, machineLookup)
+      if (learnsets.length > 0) {
+        learnsetsByPokemonId.set(poke.id, learnsets)
+        recommendedByPokemonId.set(poke.id, recommendedMoveset(learnsets))
+      }
     }
 
     speciesInfoMap.set(speciesId, {
@@ -399,6 +516,38 @@ async function main() {
 
   await fs.writeFile(new URL('../src/data/pokedex/pokedex.generated.ts', import.meta.url), lines.join('\n'), 'utf8')
   console.error(`완료: ${pokemonOut.length}종(폼 포함), 진화선 ${evolutionLines.length}개`)
+
+  // 기술 사전(ALL_MOVES)은 가볍게 한 파일로 두지만, 포켓몬별 학습셋은 1082종 전체를 한 파일에
+  // 합치면 19MB(gzip 후에도 500KB+)가 되어 상세 페이지 진입 시 매번 통째로 받게 된다.
+  // 포켓몬 1종당 파일을 나눠 import.meta.glob으로 그 포켓몬을 볼 때만 불러오게 한다.
+  const allMoves = [...moveDetailByIdCache.values()].sort((a, b) => a.id - b.id)
+
+  const movesDir = new URL('../src/data/moves/', import.meta.url)
+  const byIdDir = new URL('by-id/', movesDir)
+  await fs.mkdir(byIdDir, { recursive: true })
+
+  const dictLines = []
+  dictLines.push('// 이 파일은 scripts/fetch-pokedex.mjs 로 PokeAPI에서 생성됩니다. 직접 수정하지 마세요.')
+  dictLines.push("import type { Move } from '../../types/move'")
+  dictLines.push('')
+  dictLines.push(`export const ALL_MOVES: Move[] = ${JSON.stringify(allMoves, null, 2)}`)
+  dictLines.push('')
+  await fs.writeFile(new URL('all-moves.generated.ts', movesDir), dictLines.join('\n'), 'utf8')
+
+  for (const [pokemonId, learnsets] of learnsetsByPokemonId) {
+    const recommended = recommendedByPokemonId.get(pokemonId) ?? []
+    const lines2 = []
+    lines2.push('// 이 파일은 scripts/fetch-pokedex.mjs 로 PokeAPI에서 생성됩니다. 직접 수정하지 마세요.')
+    lines2.push("import type { Learnset } from '../../../types/move'")
+    lines2.push('')
+    lines2.push(`export const LEARNSETS: Learnset[] = ${JSON.stringify(learnsets, null, 2)}`)
+    lines2.push('')
+    lines2.push(`export const RECOMMENDED_MOVESET: number[] = ${JSON.stringify(recommended, null, 2)}`)
+    lines2.push('')
+    await fs.writeFile(new URL(`${pokemonId}.generated.ts`, byIdDir), lines2.join('\n'), 'utf8')
+  }
+
+  console.error(`기술 데이터 완료: 기술 ${allMoves.length}개, 학습셋 보유 포켓몬 ${learnsetsByPokemonId.size}종`)
 }
 
 main().catch((err) => {

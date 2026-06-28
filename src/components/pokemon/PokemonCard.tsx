@@ -25,6 +25,8 @@ export function PokemonCard({ pokemon, onClick }: PokemonCardProps) {
             alt={pokemon.nameKo}
             width={96}
             height={96}
+            loading="lazy"
+            decoding="async"
             className="h-32 w-32"
             style={{ imageRendering: 'pixelated' }}
           />

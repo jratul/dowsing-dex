@@ -1,0 +1,515 @@
+// 이 파일은 scripts/fetch-pokedex.mjs 로 PokeAPI에서 생성됩니다. 직접 수정하지 마세요.
+import type { Learnset } from '../../../types/move'
+
+export const LEARNSETS: Learnset[] = [
+  {
+    "generation": "8세대",
+    "version": "소드·실드",
+    "levelUp": [
+      {
+        "moveId": 44,
+        "level": 1
+      },
+      {
+        "moveId": 207,
+        "level": 20
+      },
+      {
+        "moveId": 252,
+        "level": 1
+      },
+      {
+        "moveId": 259,
+        "level": 28
+      },
+      {
+        "moveId": 260,
+        "level": 1
+      },
+      {
+        "moveId": 313,
+        "level": 12
+      },
+      {
+        "moveId": 339,
+        "level": 1
+      },
+      {
+        "moveId": 359,
+        "level": 64
+      },
+      {
+        "moveId": 372,
+        "level": 16
+      },
+      {
+        "moveId": 389,
+        "level": 24
+      },
+      {
+        "moveId": 399,
+        "level": 35
+      },
+      {
+        "moveId": 417,
+        "level": 40
+      },
+      {
+        "moveId": 492,
+        "level": 56
+      },
+      {
+        "moveId": 583,
+        "level": 48
+      },
+      {
+        "moveId": 590,
+        "level": 1
+      },
+      {
+        "moveId": 612,
+        "level": 1
+      },
+      {
+        "moveId": 793,
+        "level": 1
+      }
+    ],
+    "machines": [
+      {
+        "moveId": 5,
+        "machine": "TM",
+        "number": 0
+      },
+      {
+        "moveId": 7,
+        "machine": "TM",
+        "number": 3
+      },
+      {
+        "moveId": 8,
+        "machine": "TM",
+        "number": 4
+      },
+      {
+        "moveId": 9,
+        "machine": "TM",
+        "number": 5
+      },
+      {
+        "moveId": 25,
+        "machine": "TM",
+        "number": 1
+      },
+      {
+        "moveId": 63,
+        "machine": "TM",
+        "number": 8
+      },
+      {
+        "moveId": 86,
+        "machine": "TM",
+        "number": 14
+      },
+      {
+        "moveId": 113,
+        "machine": "TM",
+        "number": 17
+      },
+      {
+        "moveId": 115,
+        "machine": "TM",
+        "number": 18
+      },
+      {
+        "moveId": 156,
+        "machine": "TM",
+        "number": 21
+      },
+      {
+        "moveId": 168,
+        "machine": "TM",
+        "number": 23
+      },
+      {
+        "moveId": 173,
+        "machine": "TM",
+        "number": 24
+      },
+      {
+        "moveId": 182,
+        "machine": "TM",
+        "number": 25
+      },
+      {
+        "moveId": 184,
+        "machine": "TM",
+        "number": 26
+      },
+      {
+        "moveId": 213,
+        "machine": "TM",
+        "number": 31
+      },
+      {
+        "moveId": 263,
+        "machine": "TM",
+        "number": 39
+      },
+      {
+        "moveId": 279,
+        "machine": "TM",
+        "number": 42
+      },
+      {
+        "moveId": 280,
+        "machine": "TM",
+        "number": 43
+      },
+      {
+        "moveId": 384,
+        "machine": "TM",
+        "number": 60
+      },
+      {
+        "moveId": 409,
+        "machine": "TM",
+        "number": 63
+      },
+      {
+        "moveId": 416,
+        "machine": "TM",
+        "number": 9
+      },
+      {
+        "moveId": 421,
+        "machine": "TM",
+        "number": 65
+      },
+      {
+        "moveId": 472,
+        "machine": "TM",
+        "number": 71
+      },
+      {
+        "moveId": 490,
+        "machine": "TM",
+        "number": 75
+      },
+      {
+        "moveId": 496,
+        "machine": "TM",
+        "number": 76
+      },
+      {
+        "moveId": 514,
+        "machine": "TM",
+        "number": 79
+      },
+      {
+        "moveId": 577,
+        "machine": "TM",
+        "number": 87
+      },
+      {
+        "moveId": 707,
+        "machine": "TM",
+        "number": 98
+      }
+    ]
+  },
+  {
+    "generation": "9세대",
+    "version": "스칼렛·바이올렛",
+    "levelUp": [
+      {
+        "moveId": 44,
+        "level": 1
+      },
+      {
+        "moveId": 207,
+        "level": 20
+      },
+      {
+        "moveId": 252,
+        "level": 1
+      },
+      {
+        "moveId": 259,
+        "level": 28
+      },
+      {
+        "moveId": 260,
+        "level": 1
+      },
+      {
+        "moveId": 313,
+        "level": 12
+      },
+      {
+        "moveId": 339,
+        "level": 1
+      },
+      {
+        "moveId": 359,
+        "level": 64
+      },
+      {
+        "moveId": 372,
+        "level": 16
+      },
+      {
+        "moveId": 389,
+        "level": 24
+      },
+      {
+        "moveId": 399,
+        "level": 35
+      },
+      {
+        "moveId": 417,
+        "level": 40
+      },
+      {
+        "moveId": 492,
+        "level": 56
+      },
+      {
+        "moveId": 583,
+        "level": 48
+      },
+      {
+        "moveId": 590,
+        "level": 1
+      },
+      {
+        "moveId": 793,
+        "level": 1
+      }
+    ],
+    "machines": [
+      {
+        "moveId": 7,
+        "machine": "TM",
+        "number": 67
+      },
+      {
+        "moveId": 8,
+        "machine": "TM",
+        "number": 69
+      },
+      {
+        "moveId": 9,
+        "machine": "TM",
+        "number": 68
+      },
+      {
+        "moveId": 34,
+        "machine": "TM",
+        "number": 66
+      },
+      {
+        "moveId": 36,
+        "machine": "TM",
+        "number": 1
+      },
+      {
+        "moveId": 63,
+        "machine": "TM",
+        "number": 163
+      },
+      {
+        "moveId": 67,
+        "machine": "TM",
+        "number": 12
+      },
+      {
+        "moveId": 86,
+        "machine": "TM",
+        "number": 82
+      },
+      {
+        "moveId": 113,
+        "machine": "TM",
+        "number": 75
+      },
+      {
+        "moveId": 115,
+        "machine": "TM",
+        "number": 74
+      },
+      {
+        "moveId": 118,
+        "machine": "TM",
+        "number": 80
+      },
+      {
+        "moveId": 141,
+        "machine": "TM",
+        "number": 95
+      },
+      {
+        "moveId": 156,
+        "machine": "TM",
+        "number": 85
+      },
+      {
+        "moveId": 164,
+        "machine": "TM",
+        "number": 103
+      },
+      {
+        "moveId": 168,
+        "machine": "TM",
+        "number": 18
+      },
+      {
+        "moveId": 182,
+        "machine": "TM",
+        "number": 7
+      },
+      {
+        "moveId": 184,
+        "machine": "TM",
+        "number": 6
+      },
+      {
+        "moveId": 203,
+        "machine": "TM",
+        "number": 47
+      },
+      {
+        "moveId": 214,
+        "machine": "TM",
+        "number": 70
+      },
+      {
+        "moveId": 242,
+        "machine": "TM",
+        "number": 108
+      },
+      {
+        "moveId": 263,
+        "machine": "TM",
+        "number": 25
+      },
+      {
+        "moveId": 264,
+        "machine": "TM",
+        "number": 192
+      },
+      {
+        "moveId": 269,
+        "machine": "TM",
+        "number": 87
+      },
+      {
+        "moveId": 271,
+        "machine": "TM",
+        "number": 109
+      },
+      {
+        "moveId": 280,
+        "machine": "TM",
+        "number": 58
+      },
+      {
+        "moveId": 286,
+        "machine": "TM",
+        "number": 92
+      },
+      {
+        "moveId": 374,
+        "machine": "TM",
+        "number": 43
+      },
+      {
+        "moveId": 409,
+        "machine": "TM",
+        "number": 73
+      },
+      {
+        "moveId": 411,
+        "machine": "TM",
+        "number": 158
+      },
+      {
+        "moveId": 416,
+        "machine": "TM",
+        "number": 152
+      },
+      {
+        "moveId": 421,
+        "machine": "TM",
+        "number": 61
+      },
+      {
+        "moveId": 490,
+        "machine": "TM",
+        "number": 39
+      },
+      {
+        "moveId": 577,
+        "machine": "TM",
+        "number": 37
+      },
+      {
+        "moveId": 581,
+        "machine": "TM",
+        "number": 139
+      },
+      {
+        "moveId": 605,
+        "machine": "TM",
+        "number": 79
+      },
+      {
+        "moveId": 675,
+        "machine": "TM",
+        "number": 221
+      },
+      {
+        "moveId": 707,
+        "machine": "TM",
+        "number": 84
+      },
+      {
+        "moveId": 776,
+        "machine": "TM",
+        "number": 89
+      },
+      {
+        "moveId": 807,
+        "machine": "TM",
+        "number": 195
+      },
+      {
+        "moveId": 808,
+        "machine": "TM",
+        "number": 199
+      },
+      {
+        "moveId": 851,
+        "machine": "TM",
+        "number": 171
+      },
+      {
+        "moveId": 885,
+        "machine": "TM",
+        "number": 20
+      },
+      {
+        "moveId": 886,
+        "machine": "TM",
+        "number": 22
+      }
+    ]
+  }
+]
+
+export const RECOMMENDED_MOVESET: number[] = [
+  63,
+  264,
+  416,
+  411
+]

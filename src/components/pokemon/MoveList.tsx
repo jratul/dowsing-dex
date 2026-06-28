@@ -1,11 +1,10 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import * as Tabs from '@radix-ui/react-tabs'
 import type { Generation, Learnset, Move } from '../../types/move'
 import { TypeBadge } from './TypeBadge'
 import { cn } from '../../lib/cn'
 
-/** 현재는 1세대 데이터만 있지만, 추후 세대가 늘어나면 이 배열에 추가한다. */
-const GENERATIONS: Generation[] = ['1세대']
+const GENERATION_ORDER: Generation[] = ['1세대', '2세대', '3세대', '4세대', '5세대', '6세대', '7세대', '8세대', '9세대']
 
 export interface MoveListProps {
   learnsets: Learnset[]
@@ -42,14 +41,28 @@ function MoveTableHeader() {
 }
 
 export function MoveList({ learnsets, findMove, recommendedMoveIds }: MoveListProps) {
-  const [generation, setGeneration] = useState<Generation>(GENERATIONS[0])
+  const generations = useMemo(
+    () => GENERATION_ORDER.filter((gen) => learnsets.some((ls) => ls.generation === gen)),
+    [learnsets],
+  )
+  const [generation, setGeneration] = useState<Generation>(generations[0])
   const [versionIndex, setVersionIndex] = useState(0)
-  const learnset = learnsets[versionIndex]
+
+  const activeGeneration = generations.includes(generation) ? generation : generations[0]
+  const learnsetsForGeneration = learnsets.filter((ls) => ls.generation === activeGeneration)
+  const learnset = learnsetsForGeneration[versionIndex] ?? learnsetsForGeneration[0]
+
+  function handleGenerationChange(value: string) {
+    setGeneration(value as Generation)
+    setVersionIndex(0)
+  }
+
+  if (!learnset) return null
 
   return (
-    <Tabs.Root value={generation} onValueChange={(value) => setGeneration(value as Generation)}>
+    <Tabs.Root value={activeGeneration} onValueChange={handleGenerationChange}>
       <Tabs.List className="mb-4 flex gap-2 overflow-x-auto">
-        {GENERATIONS.map((gen) => (
+        {generations.map((gen) => (
           <Tabs.Trigger
             key={gen}
             value={gen}
@@ -63,7 +76,7 @@ export function MoveList({ learnsets, findMove, recommendedMoveIds }: MoveListPr
         ))}
       </Tabs.List>
 
-      <Tabs.Content value={generation} className="flex flex-col gap-4">
+      <Tabs.Content value={activeGeneration} className="flex flex-col gap-4">
         {recommendedMoveIds && recommendedMoveIds.length > 0 && (
           <div className="flex flex-col gap-2">
             <h3 className="text-xs font-black text-ink-faint">추천 기술 배치</h3>
@@ -85,9 +98,9 @@ export function MoveList({ learnsets, findMove, recommendedMoveIds }: MoveListPr
           </div>
         )}
 
-        {learnsets.length > 1 && (
+        {learnsetsForGeneration.length > 1 && (
           <div className="flex gap-2">
-            {learnsets.map((ls, i) => (
+            {learnsetsForGeneration.map((ls, i) => (
               <button
                 key={ls.version}
                 type="button"
