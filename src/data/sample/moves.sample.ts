@@ -87,7 +87,7 @@ export const LEARNSETS: Record<number, Learnset[]> = {
         { moveId: 12, level: 20 },
         { moveId: 13, level: 32 },
       ],
-      machines: [TM_TOXIC, TM_MEGA_DRAIN, TM_SOLAR_BEAM, TM_EARTHQUAKE],
+      machines: [TM_TOXIC, TM_MEGA_DRAIN, TM_SOLAR_BEAM, TM_EARTHQUAKE, HM_CUT, HM_STRENGTH],
     },
   ],
   4: [
@@ -142,7 +142,7 @@ export const LEARNSETS: Record<number, Learnset[]> = {
         { moveId: 84, level: 24 },
         { moveId: 62, level: 33 },
       ],
-      machines: [TM_THUNDERBOLT, HM_CUT, HM_FLY],
+      machines: [TM_THUNDERBOLT, HM_CUT, HM_FLY, HM_STRENGTH],
     },
     {
       version: '피카츄',
@@ -154,7 +154,7 @@ export const LEARNSETS: Record<number, Learnset[]> = {
         { moveId: 84, level: 24 },
         { moveId: 62, level: 31 },
       ],
-      machines: [TM_THUNDERBOLT, HM_CUT, HM_SURF],
+      machines: [TM_THUNDERBOLT, HM_CUT, HM_SURF, HM_STRENGTH],
     },
   ],
   133: [
@@ -165,7 +165,7 @@ export const LEARNSETS: Record<number, Learnset[]> = {
         { moveId: 60, level: 1 },
         { moveId: 3, level: 15 },
       ],
-      machines: [TM_TOXIC, HM_CUT],
+      machines: [TM_TOXIC, HM_CUT, HM_STRENGTH],
     },
   ],
   150: [
@@ -179,7 +179,7 @@ export const LEARNSETS: Record<number, Learnset[]> = {
         { moveId: 4, level: 39 },
         { moveId: 81, level: 53 },
       ],
-      machines: [TM_ICE_BEAM, TM_THUNDERBOLT, TM_FLAMETHROWER, TM_EARTHQUAKE, HM_CUT, HM_SURF],
+      machines: [TM_ICE_BEAM, TM_THUNDERBOLT, TM_FLAMETHROWER, TM_EARTHQUAKE, HM_CUT, HM_SURF, HM_STRENGTH],
     },
   ],
 }
