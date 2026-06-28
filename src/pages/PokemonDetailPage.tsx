@@ -28,7 +28,7 @@ export function PokemonDetailPage() {
 
   const evolutionLine = findEvolutionLine(pokemon.id)
   const learnsets = LEARNSETS[pokemon.id]
-  const dexNumber = String(pokemon.id).padStart(3, '0')
+  const dexNumber = String(pokemon.dexNumber).padStart(3, '0')
   const accentColor = COLOR[pokemon.types[0]]
 
   const pokemonIndex = SAMPLE_POKEMON.findIndex((p) => p.id === pokemon.id)
@@ -83,7 +83,9 @@ export function PokemonDetailPage() {
 
         <div className="flex flex-col gap-3">
           <div>
-            <span className="text-sm font-bold text-ink-faint">#{dexNumber}</span>
+            <span className="text-sm font-bold text-ink-faint">
+              #{dexNumber} · {pokemon.generation}세대{pokemon.formLabel && ` · ${pokemon.formLabel}`}
+            </span>
             <h1 className="text-2xl font-black text-ink">
               {pokemon.nameKo} <span className="text-base font-bold text-ink-faint">{pokemon.nameEn}</span>
             </h1>
@@ -138,6 +140,28 @@ export function PokemonDetailPage() {
         <Card className="mt-6 p-4">
           <h2 className="mb-3 text-sm font-black text-ink-faint">기술</h2>
           <MoveList learnsets={learnsets} findMove={findMove} recommendedMoveIds={RECOMMENDED_MOVESET[pokemon.id]} />
+        </Card>
+      )}
+
+      {pokemon.megaForms && pokemon.megaForms.length > 0 && (
+        <Card className="mt-6 p-4">
+          <h2 className="mb-3 text-sm font-black text-ink-faint">메가진화</h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {pokemon.megaForms.map((mega) => (
+              <div key={mega.label} className="flex flex-col items-center gap-2 rounded-card border border-border-strong p-4">
+                {(mega.artworkUrl ?? mega.spriteUrl) && (
+                  <img src={mega.artworkUrl ?? mega.spriteUrl} alt={mega.label} width={120} height={120} />
+                )}
+                <span className="text-sm font-bold text-ink">{mega.label}</span>
+                <div className="flex gap-2">
+                  {mega.types.map((type) => (
+                    <TypeBadge key={type} type={type} />
+                  ))}
+                </div>
+                <StatChart stats={mega.stats} />
+              </div>
+            ))}
+          </div>
         </Card>
       )}
     </div>

@@ -53,7 +53,7 @@ function StageNode({
         <div className="flex flex-col gap-3">
           {stage.children.map((child) => (
             <div key={child.pokemonId} className="flex items-center gap-3">
-              <div className="flex flex-col items-center text-[10px] font-bold text-ink-faint">
+              <div className="flex shrink-0 flex-col items-center whitespace-nowrap text-[10px] font-bold text-ink-faint">
                 <span>→</span>
                 {child.triggerIconUrl && (
                   <img src={child.triggerIconUrl} alt={child.trigger ?? ''} width={24} height={24} />

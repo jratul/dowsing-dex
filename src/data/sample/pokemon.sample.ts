@@ -1,10 +1,10 @@
 import type { EvolutionStage } from '../../types/pokemon'
-import { GEN1_EVOLUTION_LINES, GEN1_POKEMON } from '../pokedex/gen1.generated'
+import { ALL_EVOLUTION_LINES, ALL_POKEMON } from '../pokedex/pokedex.generated'
 
-/** 1세대(관동지방) 151종 전체 도감 데이터. PokeAPI 기반으로 scripts/fetch-gen1.mjs가 생성한다. */
-export const SAMPLE_POKEMON = GEN1_POKEMON
+/** 1~9세대(전국도감 1025종 + 리전폼) 전체 도감 데이터. PokeAPI 기반으로 scripts/fetch-pokedex.mjs가 생성한다. */
+export const SAMPLE_POKEMON = ALL_POKEMON
 
-const EVOLUTION_LINES: EvolutionStage[][] = GEN1_EVOLUTION_LINES
+const EVOLUTION_LINES: EvolutionStage[][] = ALL_EVOLUTION_LINES
 
 export function findSamplePokemon(id: number) {
   const pokemon = SAMPLE_POKEMON.find((p) => p.id === id)

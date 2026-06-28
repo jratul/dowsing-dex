@@ -1,27 +1,32 @@
 import { useMemo, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { TypeFilter } from '../components/type-chart/TypeFilter'
+import { GenerationFilter } from '../components/pokemon/GenerationFilter'
 import { PokemonCard } from '../components/pokemon/PokemonCard'
 import { SAMPLE_POKEMON } from '../data/sample/pokemon.sample'
 import type { TypeName } from '../types/type-chart'
+
+const GENERATIONS = Array.from(new Set(SAMPLE_POKEMON.map((p) => p.generation))).sort((a, b) => a - b)
 
 export function PokedexPage() {
   const navigate = useNavigate()
   const [searchParams] = useSearchParams()
   const [selectedTypes, setSelectedTypes] = useState<TypeName[]>([])
+  const [selectedGenerations, setSelectedGenerations] = useState<number[]>([])
   const [query, setQuery] = useState(searchParams.get('q') ?? '')
 
   const filtered = useMemo(() => {
     return SAMPLE_POKEMON.filter((pokemon) => {
       const matchesType = selectedTypes.length === 0 || selectedTypes.some((type) => pokemon.types.includes(type))
+      const matchesGeneration = selectedGenerations.length === 0 || selectedGenerations.includes(pokemon.generation)
       const matchesQuery =
         query.trim() === '' ||
         pokemon.nameKo.includes(query) ||
         pokemon.nameEn.toLowerCase().includes(query.toLowerCase()) ||
-        String(pokemon.id).includes(query)
-      return matchesType && matchesQuery
+        String(pokemon.dexNumber).includes(query)
+      return matchesType && matchesGeneration && matchesQuery
     })
-  }, [selectedTypes, query])
+  }, [selectedTypes, selectedGenerations, query])
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-6">
@@ -29,7 +34,7 @@ export function PokedexPage() {
         <h1 className="text-xl font-black text-ink">포켓몬 도감</h1>
         <span className="text-sm font-bold text-brand-red">{filtered.length}마리</span>
       </div>
-      <p className="mb-4 text-sm text-ink-muted">타입을 눌러 필터링하거나 이름·번호로 검색하세요.</p>
+      <p className="mb-4 text-sm text-ink-muted">타입·세대를 눌러 필터링하거나 이름·번호로 검색하세요.</p>
 
       <input
         type="search"
@@ -38,6 +43,10 @@ export function PokedexPage() {
         placeholder="이름 또는 번호로 검색"
         className="mb-3 h-10 w-full rounded-button border border-border px-3 text-sm"
       />
+
+      <div className="mb-3">
+        <GenerationFilter selected={selectedGenerations} onChange={setSelectedGenerations} generations={GENERATIONS} />
+      </div>
 
       <div className="mb-6">
         <TypeFilter selected={selectedTypes} onChange={setSelectedTypes} />
