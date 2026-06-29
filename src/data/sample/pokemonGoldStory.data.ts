@@ -18,9 +18,9 @@ export const GOLD_STORY_FINAL_ROLES: RoleRow[] = [
 ]
 
 export const GOLD_STORY_GOALS = [
-  '조토 스토리 진행',
+  '성도 스토리 진행',
   '사천왕 클리어',
-  '칸토 진행',
+  '관동 진행',
   '레드전 대비',
   '비전머신과 기술머신 배분 최적화',
 ]
@@ -291,7 +291,7 @@ export const GOLD_STORY_STAGES: PartyStage[] = [
     ],
   },
   {
-    title: '칸토 및 레드전 최종',
+    title: '관동 및 레드전 최종',
     members: ['블레이범', '전룡', '갸라도스', '윤겔라', '크로뱃', '고우스트'],
     goals: [
       '우츠동의 역할을 전룡과 갸라도스가 대체한다.',
@@ -388,7 +388,7 @@ export const GOLD_STORY_SUMMARY_TABLE: { stage: string; strategy: string }[] = [
   { stage: '초반', strategy: '브케인, 메리프, 모다피, 주뱃 중심으로 안정화' },
   { stage: '중반', strategy: '윤겔라와 붉은 갸라도스 합류로 전력 완성' },
   { stage: '사천왕', strategy: '윤겔라 냉동펀치, 전룡 전기 기술, 블레이범 불꽃 기술 활용' },
-  { stage: '칸토', strategy: '우츠동의 역할을 줄이고 고우스트 육성' },
+  { stage: '관동', strategy: '우츠동의 역할을 줄이고 고우스트 육성' },
   { stage: '레드전', strategy: '고우스트로 잠만보 봉쇄, 블레이범 지진으로 피카츄 처리' },
 ]
 

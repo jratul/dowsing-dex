@@ -22,6 +22,6 @@ export const SAMPLE_GUIDES: Guide[] = [
     title: '포켓몬 골드버전 스토리 엔트리 공략',
     iconPokemonId: 157,
     relatedPokemonIds: [157, 181, 130, 64, 169, 93],
-    summary: '조토 스토리부터 사천왕, 칸토, 레드전까지 추천 엔트리와 기술 배치 정리.',
+    summary: '성도 스토리부터 사천왕, 관동, 레드전까지 추천 엔트리와 기술 배치 정리.',
   },
 ]
