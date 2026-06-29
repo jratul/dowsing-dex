@@ -6,6 +6,7 @@ import { StatChart } from '../components/pokemon/StatChart'
 import { TypeDefense } from '../components/pokemon/TypeDefense'
 import { EvolutionTree } from '../components/pokemon/EvolutionTree'
 import { MoveList } from '../components/pokemon/MoveList'
+import { EncounterLocationList } from '../components/pokemon/EncounterLocationList'
 import { SpriteImage } from '../components/pokemon/SpriteImage'
 import { SAMPLE_POKEMON, findEvolutionLine, findSamplePokemon } from '../data/sample/pokemon.sample'
 import { findMove, loadLearnsets } from '../data/sample/moves.sample'
@@ -184,6 +185,13 @@ export function PokemonDetailPage() {
         <Card className="mt-6 p-4">
           <h2 className="mb-3 text-sm font-black text-ink-faint">기술</h2>
           <MoveList learnsets={learnsets} findMove={findMove} recommendedMoveIds={moveData?.recommended} />
+        </Card>
+      )}
+
+      {pokemon.encounterLocations && pokemon.encounterLocations.length > 0 && (
+        <Card className="mt-6 p-4">
+          <h2 className="mb-3 text-sm font-black text-ink-faint">출현 장소</h2>
+          <EncounterLocationList locations={pokemon.encounterLocations} />
         </Card>
       )}
 

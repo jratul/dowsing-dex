@@ -24,6 +24,13 @@ export interface Ability {
   isHidden: boolean
 }
 
+export interface EncounterLocation {
+  generation: number
+  version: string // 예: "루비·사파이어", "플래티넘", "팔파크"
+  location?: string // 야생 출현 장소(없으면 "교환"/"이벤트" 등 unavailable 사유만 있음)
+  unavailable: boolean // 해당 버전에서는 야생으로 직접 잡을 수 없음(교환/이벤트/도구로만 획득 등)
+}
+
 export interface Pokemon {
   id: number // PokeAPI 고유 포켓몬 ID. 리전폼은 전국도감 번호와 다름 (예: 알로라 라이츄 = 10100)
   dexNumber: number // 전국도감 번호. 같은 종의 리전폼끼리는 값이 같다
@@ -41,6 +48,7 @@ export interface Pokemon {
   artworkUrl?: string
   megaForms?: MegaForm[] // 실존하는 메가진화만 (배틀 중 임시 폼이라 별도 도감 카드 없이 상세 페이지에 표기)
   abilities?: Ability[]
+  encounterLocations?: EncounterLocation[]
 }
 
 export interface EvolutionStage {

@@ -133,6 +133,176 @@ async function mapWithConcurrency(items, limit, fn) {
   return results
 }
 
+// ---------- 출현 장소 (포켓몬 갤러리 한국어 위키 스크래핑) ----------
+// PokeAPI의 encounter 데이터는 지역명에 한글 로컬라이즈가 전혀 없어 위키에서 직접 가져온다.
+// 공식 API가 아니므로 동시성을 낮게 유지하고 재시도 간격을 길게 둔다.
+const WIKI_API = 'https://pokemon.fandom.com/ko/api.php'
+
+// 공식 API가 아닌 위키이므로 메인 species 루프(동시성 14)에 얹혀 그대로 요청하지 않고
+// 별도의 작은 동시성 큐로 제한한다.
+const WIKI_CONCURRENCY = 4
+let wikiActive = 0
+const wikiQueue = []
+function runWithWikiLimit(fn) {
+  return new Promise((resolve, reject) => {
+    wikiQueue.push({ fn, resolve, reject })
+    pumpWikiQueue()
+  })
+}
+function pumpWikiQueue() {
+  while (wikiActive < WIKI_CONCURRENCY && wikiQueue.length > 0) {
+    const { fn, resolve, reject } = wikiQueue.shift()
+    wikiActive++
+    fn()
+      .then(resolve, reject)
+      .finally(() => {
+        wikiActive--
+        pumpWikiQueue()
+      })
+  }
+}
+
+async function fetchWikitext(title) {
+  return runWithWikiLimit(async () => {
+    const url = `${WIKI_API}?action=parse&page=${encodeURIComponent(title)}&prop=wikitext&format=json`
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        const res = await fetch(url, { headers: { 'User-Agent': 'dowsing-dex-data-build/1.0 (one-time offline script)' } })
+        if (!res.ok) throw new Error(`HTTP ${res.status}`)
+        const json = await res.json()
+        if (json.error) return null // 페이지 없음 등 — 재시도할 필요 없는 에러
+        return json.parse.wikitext['*']
+      } catch (err) {
+        if (attempt === 2) throw err
+        await new Promise((r) => setTimeout(r, 800 * (attempt + 1)))
+      }
+    }
+  })
+}
+
+function extractWikiSection(wikitext, heading) {
+  const re = new RegExp(`={2,4}\\s*${heading}\\s*={2,4}([\\s\\S]*?)(?=\\n={2,4}[^=]|$)`)
+  const m = wikitext.match(re)
+  return m ? m[1] : null
+}
+
+function stripWikiLink(text) {
+  return text.replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, '$2').replace(/\[\[([^\]]+)\]\]/g, '$1')
+}
+
+function cleanLocationText(raw) {
+  let s = raw
+  s = s.replace(/\{\{tt\|[^|]*\|([^}]*)\}\}/g, ' ($1)')
+  s = s.replace(/<sup>.*?<\/sup>/g, '')
+  s = s.replace(/<sub>(.*?)<\/sub>/g, '($1)')
+  s = s.replace(/<small>(.*?)<\/small>/g, '$1')
+  s = s.replace(/<br\s*\/?>/g, ', ')
+  s = stripWikiLink(s)
+  s = s.replace(/\{\{[^{}]*\}\}/g, '')
+  s = s.replace(/\s+/g, ' ').replace(/\s*,\s*/g, ', ')
+  return s.trim()
+}
+
+// "{{출현장소/출현1|버전=X|장소=...}}" 호출 하나의 끝(닫는 }})을 중첩된 [[ ]]/{{ }}를 고려해
+// 정확히 찾는다. 단순 정규식으로 첫 "}}"에서 끊으면 장소= 값 속 중첩 템플릿/링크가 잘린다.
+function findWikiTemplateCalls(text) {
+  const calls = []
+  const startRe = /\{\{(출현장소\/출현(?:1|2)(?:\/미출현)?)\|/g
+  let sm
+  while ((sm = startRe.exec(text))) {
+    let depth = 1
+    let i = sm.index + sm[0].length
+    const bodyStart = i
+    while (i < text.length && depth > 0) {
+      if (text.startsWith('{{', i) || text.startsWith('[[', i)) {
+        depth++
+        i += 2
+      } else if (text.startsWith('}}', i) || text.startsWith(']]', i)) {
+        depth--
+        i += 2
+      } else {
+        i++
+      }
+    }
+    calls.push({ name: sm[1], paramsStr: text.slice(bodyStart, i - 2) })
+    startRe.lastIndex = i
+  }
+  return calls
+}
+
+function splitWikiParams(paramsStr) {
+  const parts = []
+  let depth = 0
+  let buf = ''
+  for (let i = 0; i < paramsStr.length; i++) {
+    if (paramsStr.startsWith('{{', i) || paramsStr.startsWith('[[', i)) {
+      depth++
+      buf += paramsStr.slice(i, i + 2)
+      i++
+      continue
+    }
+    if (paramsStr.startsWith('}}', i) || paramsStr.startsWith(']]', i)) {
+      depth--
+      buf += paramsStr.slice(i, i + 2)
+      i++
+      continue
+    }
+    if (paramsStr[i] === '|' && depth === 0) {
+      parts.push(buf)
+      buf = ''
+      continue
+    }
+    buf += paramsStr[i]
+  }
+  parts.push(buf)
+  return parts
+}
+
+function parseEncounterSection(sectionText) {
+  const out = []
+  const genBlocks = sectionText.split(/\{\{출현장소\/세대\|세대=(\d+)\}\}/).slice(1)
+  for (let i = 0; i < genBlocks.length; i += 2) {
+    const generation = Number(genBlocks[i])
+    const body = genBlocks[i + 1]
+    for (const { name, paramsStr } of findWikiTemplateCalls(body)) {
+      const unavailable = name.includes('미출현')
+      const params = {}
+      for (const part of splitWikiParams(paramsStr)) {
+        const eq = part.indexOf('=')
+        if (eq === -1) continue
+        params[part.slice(0, eq).trim()] = part.slice(eq + 1).trim()
+      }
+      if (!params['버전']) continue
+      const version = params['버전2'] ? `${params['버전']}·${params['버전2']}` : params['버전']
+      out.push({
+        generation,
+        version,
+        unavailable,
+        location: params['장소'] ? cleanLocationText(params['장소']) : undefined,
+      })
+    }
+  }
+  return out
+}
+
+const encounterLocationCache = new Map() // nameKo -> EncounterLocation[]
+async function encounterLocations(nameKo) {
+  if (encounterLocationCache.has(nameKo)) return encounterLocationCache.get(nameKo)
+  let result = []
+  try {
+    let wikitext = await fetchWikitext(`${nameKo}_(포켓몬)`)
+    if (!wikitext) wikitext = await fetchWikitext(nameKo)
+    if (wikitext) {
+      const section = extractWikiSection(wikitext, '출현장소')
+      if (section) result = parseEncounterSection(section)
+    }
+  } catch (err) {
+    console.error(`출현 장소 가져오기 실패(${nameKo}): ${err.message}`)
+  }
+  encounterLocationCache.set(nameKo, result)
+  return result
+}
+
 function idFromUrl(url) {
   const m = url.match(/\/(\d+)\/?$/)
   return m ? Number(m[1]) : null
@@ -425,6 +595,9 @@ async function main() {
         4,
         async (a) => ({ ...(await abilityInfo(a.ability.name)), isHidden: a.is_hidden }),
       )
+      // 출현 장소는 종(species) 단위 위키 문서에서 가져온다. 리전폼은 위키 문서 구조가
+      // 다른 경우가 많아 일단 기본형에만 채운다.
+      const locations = isDefault ? await encounterLocations(nameKo) : []
       const entry = {
         id: poke.id,
         dexNumber: speciesId,
@@ -440,6 +613,7 @@ async function main() {
         spriteUrl: sprite(poke.id),
         artworkUrl: artwork(poke.id),
         abilities,
+        encounterLocations: locations.length > 0 ? locations : undefined,
       }
       pokemonOut.push(entry)
       idToDexNumber.set(poke.id, speciesId)
