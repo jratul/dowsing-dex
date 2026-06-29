@@ -16,4 +16,12 @@ export const SAMPLE_GUIDES: Guide[] = [
     relatedPokemonIds: [134, 135, 136],
     summary: '진화의돌 종류별로 어떤 타입이 되는지 정리했습니다.',
   },
+  {
+    slug: 'pokemon-gold-story',
+    category: '공략',
+    title: '포켓몬 골드버전 스토리 엔트리 공략',
+    iconPokemonId: 157,
+    relatedPokemonIds: [157, 181, 130, 64, 169, 93],
+    summary: '조토 스토리부터 사천왕, 칸토, 레드전까지 추천 엔트리와 기술 배치 정리.',
+  },
 ]

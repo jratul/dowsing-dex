@@ -15,6 +15,13 @@ export const router = createBrowserRouter([
       },
       { path: '/guides', lazy: () => import('./pages/GuideListPage').then((m) => ({ Component: m.GuideListPage })) },
       {
+        // 표/이미지가 풍부한 전용 레이아웃이 필요한 공략은 :slug 동적 라우트보다 구체적인
+        // 정적 경로로 먼저 선언해 전용 페이지 컴포넌트를 사용한다.
+        path: '/guides/pokemon-gold-story',
+        lazy: () =>
+          import('./pages/PokemonGoldStoryGuidePage').then((m) => ({ Component: m.PokemonGoldStoryGuidePage })),
+      },
+      {
         path: '/guides/:slug',
         lazy: () => import('./pages/GuideDetailPage').then((m) => ({ Component: m.GuideDetailPage })),
       },
