@@ -132,6 +132,27 @@ export function PokemonDetailPage() {
               <p className="text-sm font-bold text-ink">{pokemon.weightKg ? `${pokemon.weightKg} kg` : '-'}</p>
             </Card>
           </div>
+
+          {pokemon.abilities && pokemon.abilities.length > 0 && (
+            <Card className="p-3">
+              <p className="mb-1.5 text-xs font-bold text-ink-faint">특성</p>
+              <div className="flex flex-col gap-1.5">
+                {pokemon.abilities.map((ability) => (
+                  <div key={ability.nameEn}>
+                    <span className="text-sm font-bold text-ink">
+                      {ability.nameKo}
+                      {ability.isHidden && (
+                        <span className="ml-1.5 rounded-chip bg-surface-hover px-1.5 py-0.5 text-[10px] font-bold text-ink-faint">
+                          숨겨진 특성
+                        </span>
+                      )}
+                    </span>
+                    {ability.effectKo && <p className="text-xs text-ink-muted">{ability.effectKo}</p>}
+                  </div>
+                ))}
+              </div>
+            </Card>
+          )}
         </div>
       </div>
 

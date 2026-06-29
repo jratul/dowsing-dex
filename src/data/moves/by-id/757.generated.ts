@@ -65,6 +65,16 @@ export const LEARNSETS: Learnset[] = [
     ],
     "machines": [
       {
+        "moveId": 53,
+        "machine": "TM",
+        "number": 35
+      },
+      {
+        "moveId": 92,
+        "machine": "TM",
+        "number": 6
+      },
+      {
         "moveId": 104,
         "machine": "TM",
         "number": 32
@@ -185,6 +195,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 65
       },
       {
+        "moveId": 474,
+        "machine": "TM",
+        "number": 9
+      },
+      {
         "moveId": 482,
         "machine": "TM",
         "number": 34
@@ -204,7 +219,8 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 100
       }
-    ]
+    ],
+    "tutor": []
   },
   {
     "generation": "7세대",
@@ -269,6 +285,16 @@ export const LEARNSETS: Learnset[] = [
     ],
     "machines": [
       {
+        "moveId": 53,
+        "machine": "TM",
+        "number": 35
+      },
+      {
+        "moveId": 92,
+        "machine": "TM",
+        "number": 6
+      },
+      {
         "moveId": 104,
         "machine": "TM",
         "number": 32
@@ -389,6 +415,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 65
       },
       {
+        "moveId": 474,
+        "machine": "TM",
+        "number": 9
+      },
+      {
         "moveId": 482,
         "machine": "TM",
         "number": 34
@@ -407,6 +438,38 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 590,
         "machine": "TM",
         "number": 100
+      }
+    ],
+    "tutor": [
+      {
+        "moveId": 173
+      },
+      {
+        "moveId": 231
+      },
+      {
+        "moveId": 257
+      },
+      {
+        "moveId": 270
+      },
+      {
+        "moveId": 282
+      },
+      {
+        "moveId": 289
+      },
+      {
+        "moveId": 343
+      },
+      {
+        "moveId": 406
+      },
+      {
+        "moveId": 441
+      },
+      {
+        "moveId": 492
       }
     ]
   },
@@ -543,9 +606,22 @@ export const LEARNSETS: Learnset[] = [
         "number": 65
       },
       {
+        "moveId": 474,
+        "machine": "TM",
+        "number": 74
+      },
+      {
         "moveId": 496,
         "machine": "TM",
         "number": 76
+      }
+    ],
+    "tutor": [
+      {
+        "moveId": 799
+      },
+      {
+        "moveId": 806
       }
     ]
   },
@@ -613,9 +689,19 @@ export const LEARNSETS: Learnset[] = [
         "number": 1
       },
       {
+        "moveId": 53,
+        "machine": "TM",
+        "number": 125
+      },
+      {
         "moveId": 86,
         "machine": "TM",
         "number": 82
+      },
+      {
+        "moveId": 92,
+        "machine": "TM",
+        "number": 175
       },
       {
         "moveId": 97,
@@ -668,6 +754,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 148
       },
       {
+        "moveId": 189,
+        "machine": "TM",
+        "number": 5
+      },
+      {
         "moveId": 203,
         "machine": "TM",
         "number": 47
@@ -713,6 +804,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 181
       },
       {
+        "moveId": 283,
+        "machine": "TM",
+        "number": 205
+      },
+      {
         "moveId": 315,
         "machine": "TM",
         "number": 157
@@ -748,6 +844,16 @@ export const LEARNSETS: Learnset[] = [
         "number": 83
       },
       {
+        "moveId": 406,
+        "machine": "TM",
+        "number": 115
+      },
+      {
+        "moveId": 417,
+        "machine": "TM",
+        "number": 140
+      },
+      {
         "moveId": 421,
         "machine": "TM",
         "number": 61
@@ -761,6 +867,11 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 441,
         "machine": "TM",
         "number": 102
+      },
+      {
+        "moveId": 474,
+        "machine": "TM",
+        "number": 45
       },
       {
         "moveId": 482,
@@ -807,7 +918,8 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 207
       }
-    ]
+    ],
+    "tutor": []
   }
 ]
 

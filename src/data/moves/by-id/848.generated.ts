@@ -62,7 +62,8 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 76
       }
-    ]
+    ],
+    "tutor": []
   },
   {
     "generation": "9세대",
@@ -135,11 +136,22 @@ export const LEARNSETS: Learnset[] = [
         "number": 25
       },
       {
+        "moveId": 283,
+        "machine": "TM",
+        "number": 205
+      },
+      {
+        "moveId": 319,
+        "machine": "TM",
+        "number": 223
+      },
+      {
         "moveId": 851,
         "machine": "TM",
         "number": 171
       }
-    ]
+    ],
+    "tutor": []
   }
 ]
 

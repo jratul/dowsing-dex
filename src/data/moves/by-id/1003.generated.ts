@@ -101,6 +101,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 163
       },
       {
+        "moveId": 89,
+        "machine": "TM",
+        "number": 149
+      },
+      {
         "moveId": 91,
         "machine": "TM",
         "number": 55
@@ -111,9 +116,19 @@ export const LEARNSETS: Learnset[] = [
         "number": 85
       },
       {
+        "moveId": 157,
+        "machine": "TM",
+        "number": 86
+      },
+      {
         "moveId": 164,
         "machine": "TM",
         "number": 103
+      },
+      {
+        "moveId": 180,
+        "machine": "TM",
+        "number": 177
       },
       {
         "moveId": 182,
@@ -129,6 +144,11 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 189,
         "machine": "TM",
         "number": 5
+      },
+      {
+        "moveId": 191,
+        "machine": "TM",
+        "number": 90
       },
       {
         "moveId": 201,
@@ -156,14 +176,29 @@ export const LEARNSETS: Learnset[] = [
         "number": 25
       },
       {
+        "moveId": 269,
+        "machine": "TM",
+        "number": 87
+      },
+      {
         "moveId": 317,
         "machine": "TM",
         "number": 36
       },
       {
+        "moveId": 328,
+        "machine": "TM",
+        "number": 176
+      },
+      {
         "moveId": 341,
         "machine": "TM",
         "number": 35
+      },
+      {
+        "moveId": 399,
+        "machine": "TM",
+        "number": 94
       },
       {
         "moveId": 414,
@@ -201,9 +236,24 @@ export const LEARNSETS: Learnset[] = [
         "number": 29
       },
       {
+        "moveId": 523,
+        "machine": "TM",
+        "number": 28
+      },
+      {
         "moveId": 555,
         "machine": "TM",
         "number": 30
+      },
+      {
+        "moveId": 675,
+        "machine": "TM",
+        "number": 221
+      },
+      {
+        "moveId": 707,
+        "machine": "TM",
+        "number": 84
       },
       {
         "moveId": 776,
@@ -220,7 +270,8 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 171
       }
-    ]
+    ],
+    "tutor": []
   }
 ]
 

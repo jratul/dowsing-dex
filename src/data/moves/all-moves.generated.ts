@@ -3170,6 +3170,16 @@ export const ALL_MOVES: Move[] = [
     "pp": 25
   },
   {
+    "id": 344,
+    "nameKo": "볼트태클",
+    "nameEn": "volt-tackle",
+    "type": "전기",
+    "category": "물리",
+    "power": 120,
+    "accuracy": 100,
+    "pp": 15
+  },
+  {
     "id": 345,
     "nameKo": "메지컬리프",
     "nameEn": "magical-leaf",
@@ -5703,6 +5713,44 @@ export const ALL_MOVES: Move[] = [
     "pp": 10
   },
   {
+    "id": 661,
+    "nameKo": "토치카",
+    "nameEn": "baneful-bunker",
+    "type": "독",
+    "category": "상태",
+    "pp": 10
+  },
+  {
+    "id": 662,
+    "nameKo": "그림자꿰매기",
+    "nameEn": "spirit-shackle",
+    "type": "고스트",
+    "category": "물리",
+    "power": 80,
+    "accuracy": 100,
+    "pp": 10
+  },
+  {
+    "id": 663,
+    "nameKo": "DD래리어트",
+    "nameEn": "darkest-lariat",
+    "type": "악",
+    "category": "물리",
+    "power": 85,
+    "accuracy": 100,
+    "pp": 10
+  },
+  {
+    "id": 664,
+    "nameKo": "물거품아리아",
+    "nameEn": "sparkling-aria",
+    "type": "물",
+    "category": "특수",
+    "power": 90,
+    "accuracy": 100,
+    "pp": 10
+  },
+  {
     "id": 665,
     "nameKo": "아이스해머",
     "nameEn": "ice-hammer",
@@ -5916,12 +5964,42 @@ export const ALL_MOVES: Move[] = [
     "pp": 10
   },
   {
+    "id": 688,
+    "nameKo": "트로피컬킥",
+    "nameEn": "trop-kick",
+    "type": "풀",
+    "category": "물리",
+    "power": 70,
+    "accuracy": 100,
+    "pp": 15
+  },
+  {
     "id": 689,
     "nameKo": "지휘",
     "nameEn": "instruct",
     "type": "에스퍼",
     "category": "상태",
     "pp": 15
+  },
+  {
+    "id": 690,
+    "nameKo": "부리캐논",
+    "nameEn": "beak-blast",
+    "type": "비행",
+    "category": "물리",
+    "power": 100,
+    "accuracy": 100,
+    "pp": 15
+  },
+  {
+    "id": 691,
+    "nameKo": "스케일노이즈",
+    "nameEn": "clanging-scales",
+    "type": "드래곤",
+    "category": "특수",
+    "power": 110,
+    "accuracy": 100,
+    "pp": 5
   },
   {
     "id": 692,
@@ -6042,6 +6120,26 @@ export const ALL_MOVES: Move[] = [
     "pp": 10
   },
   {
+    "id": 713,
+    "nameKo": "메테오드라이브",
+    "nameEn": "sunsteel-strike",
+    "type": "강철",
+    "category": "물리",
+    "power": 100,
+    "accuracy": 100,
+    "pp": 5
+  },
+  {
+    "id": 714,
+    "nameKo": "섀도레이",
+    "nameEn": "moongeist-beam",
+    "type": "고스트",
+    "category": "특수",
+    "power": 100,
+    "accuracy": 100,
+    "pp": 5
+  },
+  {
     "id": 715,
     "nameKo": "눈물그렁그렁",
     "nameEn": "tearful-look",
@@ -6066,6 +6164,16 @@ export const ALL_MOVES: Move[] = [
     "type": "페어리",
     "category": "특수",
     "accuracy": 90,
+    "pp": 10
+  },
+  {
+    "id": 718,
+    "nameKo": "멀티어택",
+    "nameEn": "multi-attack",
+    "type": "노말",
+    "category": "물리",
+    "power": 120,
+    "accuracy": 100,
     "pp": 10
   },
   {
@@ -6119,6 +6227,16 @@ export const ALL_MOVES: Move[] = [
     "pp": 5
   },
   {
+    "id": 745,
+    "nameKo": "노려맞히기",
+    "nameEn": "snipe-shot",
+    "type": "물",
+    "category": "특수",
+    "power": 80,
+    "accuracy": 100,
+    "pp": 15
+  },
+  {
     "id": 746,
     "nameKo": "물고버티기",
     "nameEn": "jaw-lock",
@@ -6145,6 +6263,15 @@ export const ALL_MOVES: Move[] = [
     "pp": 5
   },
   {
+    "id": 749,
+    "nameKo": "타르숏",
+    "nameEn": "tar-shot",
+    "type": "바위",
+    "category": "상태",
+    "accuracy": 100,
+    "pp": 15
+  },
+  {
     "id": 750,
     "nameKo": "마법가루",
     "nameEn": "magic-powder",
@@ -6152,6 +6279,33 @@ export const ALL_MOVES: Move[] = [
     "category": "상태",
     "accuracy": 100,
     "pp": 20
+  },
+  {
+    "id": 751,
+    "nameKo": "드래곤애로",
+    "nameEn": "dragon-darts",
+    "type": "드래곤",
+    "category": "물리",
+    "power": 50,
+    "accuracy": 100,
+    "pp": 10
+  },
+  {
+    "id": 752,
+    "nameKo": "다과회",
+    "nameEn": "teatime",
+    "type": "노말",
+    "category": "상태",
+    "pp": 10
+  },
+  {
+    "id": 753,
+    "nameKo": "문어굳히기",
+    "nameEn": "octolock",
+    "type": "격투",
+    "category": "상태",
+    "accuracy": 100,
+    "pp": 15
   },
   {
     "id": 754,
@@ -6202,6 +6356,24 @@ export const ALL_MOVES: Move[] = [
     "pp": 10
   },
   {
+    "id": 777,
+    "nameKo": "데코레이션",
+    "nameEn": "decorate",
+    "type": "페어리",
+    "category": "상태",
+    "pp": 15
+  },
+  {
+    "id": 778,
+    "nameKo": "드럼어택",
+    "nameEn": "drum-beating",
+    "type": "풀",
+    "category": "물리",
+    "power": 80,
+    "accuracy": 100,
+    "pp": 10
+  },
+  {
     "id": 779,
     "nameKo": "집게덫",
     "nameEn": "snap-trap",
@@ -6210,6 +6382,16 @@ export const ALL_MOVES: Move[] = [
     "power": 35,
     "accuracy": 100,
     "pp": 15
+  },
+  {
+    "id": 780,
+    "nameKo": "화염볼",
+    "nameEn": "pyro-ball",
+    "type": "불꽃",
+    "category": "물리",
+    "power": 120,
+    "accuracy": 90,
+    "pp": 5
   },
   {
     "id": 783,
@@ -6300,6 +6482,15 @@ export const ALL_MOVES: Move[] = [
     "pp": 10
   },
   {
+    "id": 792,
+    "nameKo": "블로킹",
+    "nameEn": "obstruct",
+    "type": "악",
+    "category": "상태",
+    "accuracy": 100,
+    "pp": 10
+  },
+  {
     "id": 793,
     "nameKo": "사죄의찌르기",
     "nameEn": "false-surrender",
@@ -6376,6 +6567,16 @@ export const ALL_MOVES: Move[] = [
     "category": "특수",
     "power": 120,
     "accuracy": 90,
+    "pp": 10
+  },
+  {
+    "id": 801,
+    "nameKo": "셸암즈",
+    "nameEn": "shell-side-arm",
+    "type": "독",
+    "category": "특수",
+    "power": 90,
+    "accuracy": 100,
     "pp": 10
   },
   {
@@ -6459,6 +6660,15 @@ export const ALL_MOVES: Move[] = [
     "pp": 5
   },
   {
+    "id": 810,
+    "nameKo": "부식가스",
+    "nameEn": "corrosive-gas",
+    "type": "독",
+    "category": "상태",
+    "accuracy": 100,
+    "pp": 40
+  },
+  {
     "id": 811,
     "nameKo": "코칭",
     "nameEn": "coaching",
@@ -6515,6 +6725,16 @@ export const ALL_MOVES: Move[] = [
     "pp": 10
   },
   {
+    "id": 817,
+    "nameKo": "암흑강타",
+    "nameEn": "wicked-blow",
+    "type": "악",
+    "category": "물리",
+    "power": 75,
+    "accuracy": 100,
+    "pp": 5
+  },
+  {
     "id": 819,
     "nameKo": "썬더프리즌",
     "nameEn": "thunder-cage",
@@ -6565,6 +6785,16 @@ export const ALL_MOVES: Move[] = [
     "pp": 10
   },
   {
+    "id": 826,
+    "nameKo": "섬뜩한주문",
+    "nameEn": "eerie-spell",
+    "type": "에스퍼",
+    "category": "특수",
+    "power": 80,
+    "accuracy": 100,
+    "pp": 5
+  },
+  {
     "id": 827,
     "nameKo": "dire-claw",
     "nameEn": "dire-claw",
@@ -6582,6 +6812,15 @@ export const ALL_MOVES: Move[] = [
     "category": "물리",
     "power": 70,
     "accuracy": 90,
+    "pp": 10
+  },
+  {
+    "id": 829,
+    "nameKo": "power-shift",
+    "nameEn": "power-shift",
+    "type": "노말",
+    "category": "상태",
+    "power": 0,
     "pp": 10
   },
   {

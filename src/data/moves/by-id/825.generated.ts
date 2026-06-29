@@ -7,6 +7,18 @@ export const LEARNSETS: Learnset[] = [
     "version": "소드·실드",
     "levelUp": [
       {
+        "moveId": 93,
+        "level": 1
+      },
+      {
+        "moveId": 113,
+        "level": 1
+      },
+      {
+        "moveId": 115,
+        "level": 1
+      },
+      {
         "moveId": 522,
         "level": 1
       }
@@ -16,6 +28,16 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 76,
         "machine": "TM",
         "number": 11
+      },
+      {
+        "moveId": 113,
+        "machine": "TM",
+        "number": 17
+      },
+      {
+        "moveId": 115,
+        "machine": "TM",
+        "number": 18
       },
       {
         "moveId": 156,
@@ -97,13 +119,18 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 91
       }
+    ],
+    "tutor": [
+      {
+        "moveId": 797
+      }
     ]
   }
 ]
 
 export const RECOMMENDED_MOVESET: number[] = [
   76,
+  797,
   263,
-  496,
-  522
+  496
 ]

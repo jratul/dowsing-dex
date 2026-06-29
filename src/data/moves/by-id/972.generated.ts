@@ -74,9 +74,24 @@ export const LEARNSETS: Learnset[] = [
         "number": 1
       },
       {
+        "moveId": 38,
+        "machine": "TM",
+        "number": 204
+      },
+      {
+        "moveId": 46,
+        "machine": "TM",
+        "number": 172
+      },
+      {
         "moveId": 63,
         "machine": "TM",
         "number": 163
+      },
+      {
+        "moveId": 91,
+        "machine": "TM",
+        "number": 55
       },
       {
         "moveId": 101,
@@ -87,6 +102,11 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 109,
         "machine": "TM",
         "number": 17
+      },
+      {
+        "moveId": 156,
+        "machine": "TM",
+        "number": 85
       },
       {
         "moveId": 164,
@@ -124,6 +144,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 47
       },
       {
+        "moveId": 204,
+        "machine": "TM",
+        "number": 2
+      },
+      {
         "moveId": 214,
         "machine": "TM",
         "number": 70
@@ -144,6 +169,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 49
       },
       {
+        "moveId": 242,
+        "machine": "TM",
+        "number": 108
+      },
+      {
         "moveId": 247,
         "machine": "TM",
         "number": 114
@@ -162,6 +192,11 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 263,
         "machine": "TM",
         "number": 25
+      },
+      {
+        "moveId": 270,
+        "machine": "TM",
+        "number": 130
       },
       {
         "moveId": 271,
@@ -214,6 +249,16 @@ export const LEARNSETS: Learnset[] = [
         "number": 30
       },
       {
+        "moveId": 566,
+        "machine": "TM",
+        "number": 151
+      },
+      {
+        "moveId": 583,
+        "machine": "TM",
+        "number": 127
+      },
+      {
         "moveId": 706,
         "machine": "TM",
         "number": 63
@@ -238,7 +283,8 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 171
       }
-    ]
+    ],
+    "tutor": []
   }
 ]
 

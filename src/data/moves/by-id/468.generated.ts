@@ -259,7 +259,8 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 86
       }
-    ]
+    ],
+    "tutor": []
   },
   {
     "generation": "4세대",
@@ -518,6 +519,50 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 86
       }
+    ],
+    "tutor": [
+      {
+        "moveId": 129
+      },
+      {
+        "moveId": 173
+      },
+      {
+        "moveId": 189
+      },
+      {
+        "moveId": 205
+      },
+      {
+        "moveId": 239
+      },
+      {
+        "moveId": 246
+      },
+      {
+        "moveId": 257
+      },
+      {
+        "moveId": 271
+      },
+      {
+        "moveId": 283
+      },
+      {
+        "moveId": 314
+      },
+      {
+        "moveId": 324
+      },
+      {
+        "moveId": 387
+      },
+      {
+        "moveId": 428
+      },
+      {
+        "moveId": 466
+      }
     ]
   },
   {
@@ -772,6 +817,65 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 86
       }
+    ],
+    "tutor": [
+      {
+        "moveId": 29
+      },
+      {
+        "moveId": 129
+      },
+      {
+        "moveId": 143
+      },
+      {
+        "moveId": 173
+      },
+      {
+        "moveId": 189
+      },
+      {
+        "moveId": 205
+      },
+      {
+        "moveId": 215
+      },
+      {
+        "moveId": 239
+      },
+      {
+        "moveId": 246
+      },
+      {
+        "moveId": 257
+      },
+      {
+        "moveId": 271
+      },
+      {
+        "moveId": 277
+      },
+      {
+        "moveId": 283
+      },
+      {
+        "moveId": 314
+      },
+      {
+        "moveId": 324
+      },
+      {
+        "moveId": 366
+      },
+      {
+        "moveId": 387
+      },
+      {
+        "moveId": 428
+      },
+      {
+        "moveId": 466
+      }
     ]
   },
   {
@@ -1001,7 +1105,8 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 83
       }
-    ]
+    ],
+    "tutor": []
   },
   {
     "generation": "5세대",
@@ -1229,6 +1334,56 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 526,
         "machine": "TM",
         "number": 83
+      }
+    ],
+    "tutor": [
+      {
+        "moveId": 143
+      },
+      {
+        "moveId": 173
+      },
+      {
+        "moveId": 214
+      },
+      {
+        "moveId": 215
+      },
+      {
+        "moveId": 257
+      },
+      {
+        "moveId": 271
+      },
+      {
+        "moveId": 277
+      },
+      {
+        "moveId": 283
+      },
+      {
+        "moveId": 304
+      },
+      {
+        "moveId": 324
+      },
+      {
+        "moveId": 343
+      },
+      {
+        "moveId": 355
+      },
+      {
+        "moveId": 366
+      },
+      {
+        "moveId": 387
+      },
+      {
+        "moveId": 409
+      },
+      {
+        "moveId": 428
       }
     ]
   },
@@ -1473,7 +1628,8 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 99
       }
-    ]
+    ],
+    "tutor": []
   },
   {
     "generation": "6세대",
@@ -1721,6 +1877,62 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 99
       }
+    ],
+    "tutor": [
+      {
+        "moveId": 143
+      },
+      {
+        "moveId": 173
+      },
+      {
+        "moveId": 215
+      },
+      {
+        "moveId": 257
+      },
+      {
+        "moveId": 264
+      },
+      {
+        "moveId": 271
+      },
+      {
+        "moveId": 277
+      },
+      {
+        "moveId": 283
+      },
+      {
+        "moveId": 304
+      },
+      {
+        "moveId": 324
+      },
+      {
+        "moveId": 343
+      },
+      {
+        "moveId": 351
+      },
+      {
+        "moveId": 352
+      },
+      {
+        "moveId": 366
+      },
+      {
+        "moveId": 387
+      },
+      {
+        "moveId": 409
+      },
+      {
+        "moveId": 428
+      },
+      {
+        "moveId": 495
+      }
     ]
   },
   {
@@ -1949,7 +2161,8 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 99
       }
-    ]
+    ],
+    "tutor": []
   },
   {
     "generation": "7세대",
@@ -2177,6 +2390,71 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 99
       }
+    ],
+    "tutor": [
+      {
+        "moveId": 143
+      },
+      {
+        "moveId": 173
+      },
+      {
+        "moveId": 215
+      },
+      {
+        "moveId": 257
+      },
+      {
+        "moveId": 264
+      },
+      {
+        "moveId": 271
+      },
+      {
+        "moveId": 277
+      },
+      {
+        "moveId": 283
+      },
+      {
+        "moveId": 304
+      },
+      {
+        "moveId": 324
+      },
+      {
+        "moveId": 343
+      },
+      {
+        "moveId": 351
+      },
+      {
+        "moveId": 352
+      },
+      {
+        "moveId": 366
+      },
+      {
+        "moveId": 387
+      },
+      {
+        "moveId": 409
+      },
+      {
+        "moveId": 428
+      },
+      {
+        "moveId": 432
+      },
+      {
+        "moveId": 477
+      },
+      {
+        "moveId": 495
+      },
+      {
+        "moveId": 673
+      }
     ]
   },
   {
@@ -2249,6 +2527,10 @@ export const LEARNSETS: Learnset[] = [
       },
       {
         "moveId": 396,
+        "level": 1
+      },
+      {
+        "moveId": 403,
         "level": 1
       },
       {
@@ -2326,6 +2608,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 25
       },
       {
+        "moveId": 204,
+        "machine": "TM",
+        "number": 29
+      },
+      {
         "moveId": 211,
         "machine": "TM",
         "number": 30
@@ -2334,6 +2621,11 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 213,
         "machine": "TM",
         "number": 31
+      },
+      {
+        "moveId": 219,
+        "machine": "TM",
+        "number": 19
       },
       {
         "moveId": 240,
@@ -2376,6 +2668,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 59
       },
       {
+        "moveId": 403,
+        "machine": "TM",
+        "number": 95
+      },
+      {
         "moveId": 409,
         "machine": "TM",
         "number": 63
@@ -2409,6 +2706,11 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 684,
         "machine": "TM",
         "number": 96
+      }
+    ],
+    "tutor": [
+      {
+        "moveId": 814
       }
     ]
   },
@@ -2485,6 +2787,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 403,
+        "level": 1
+      },
+      {
         "moveId": 495,
         "level": 1
       },
@@ -2528,7 +2834,8 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 21
       }
-    ]
+    ],
+    "tutor": []
   },
   {
     "generation": "8세대",
@@ -2571,7 +2878,8 @@ export const LEARNSETS: Learnset[] = [
         "level": 25
       }
     ],
-    "machines": []
+    "machines": [],
+    "tutor": []
   }
 ]
 

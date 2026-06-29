@@ -17,6 +17,13 @@ export interface MegaForm {
   artworkUrl?: string
 }
 
+export interface Ability {
+  nameKo: string
+  nameEn: string
+  effectKo?: string
+  isHidden: boolean
+}
+
 export interface Pokemon {
   id: number // PokeAPI 고유 포켓몬 ID. 리전폼은 전국도감 번호와 다름 (예: 알로라 라이츄 = 10100)
   dexNumber: number // 전국도감 번호. 같은 종의 리전폼끼리는 값이 같다
@@ -33,6 +40,7 @@ export interface Pokemon {
   spriteUrl?: string
   artworkUrl?: string
   megaForms?: MegaForm[] // 실존하는 메가진화만 (배틀 중 임시 폼이라 별도 도감 카드 없이 상세 페이지에 표기)
+  abilities?: Ability[]
 }
 
 export interface EvolutionStage {

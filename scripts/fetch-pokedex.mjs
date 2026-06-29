@@ -154,7 +154,20 @@ function typesFromPokemon(poke) {
   return [...poke.types].sort((a, b) => a.slot - b.slot).map((t) => EN_TO_KO_TYPE[t.type.name])
 }
 
-// ---------- 한글 이름 캐시(아이템/기술) ----------
+// ---------- 한글 이름 캐시(특성/아이템/기술) ----------
+const abilityInfoCache = new Map()
+async function abilityInfo(name) {
+  if (!abilityInfoCache.has(name)) {
+    const data = await fetchJson(`${BASE}/ability/${name}`)
+    abilityInfoCache.set(name, {
+      nameKo: data.names.find((n) => n.language.name === 'ko')?.name ?? data.name,
+      nameEn: data.name,
+      effectKo: data.flavor_text_entries.find((f) => f.language.name === 'ko')?.flavor_text.replace(/\n/g, ' '),
+    })
+  }
+  return abilityInfoCache.get(name)
+}
+
 const itemInfoCache = new Map()
 async function itemInfo(name) {
   if (!itemInfoCache.has(name)) {
@@ -304,9 +317,9 @@ async function buildMachineLookup() {
 }
 
 // 포켓몬의 moves 배열(이미 fetch-pokedex가 받아온 것)에서, 세대별로 발매된 모든 메인
-// 버전의 레벨업/기술머신 학습 기술을 각각 추려 Learnset[] 으로 만든다. 같은 세대라도
+// 버전의 레벨업/기술머신/가르침 학습 기술을 각각 추려 Learnset[] 으로 만든다. 같은 세대라도
 // 버전마다 학습 기술이 다를 수 있어(예: 4세대 플래티넘 전용 기술) 버전별로 따로 둔다.
-// 알/교환/가르침 기술은 제외한다.
+// 알/교환 기술은 제외한다.
 async function buildLearnsets(poke, machineLookup) {
   const learnsets = []
   for (const [genStr, versions] of Object.entries(VERSIONS_BY_GEN)) {
@@ -314,22 +327,38 @@ async function buildLearnsets(poke, machineLookup) {
     for (const { label, groups } of versions) {
       const levelUp = []
       const machines = []
+      const tutor = []
+      const seenTutorIds = new Set()
       for (const moveEntry of poke.moves) {
-        const detail = moveEntry.version_group_details.find((d) => groups.includes(d.version_group.name))
-        if (!detail) continue
-        if (detail.move_learn_method.name === 'level-up' && detail.level_learned_at > 0) {
+        const details = moveEntry.version_group_details.filter((d) => groups.includes(d.version_group.name))
+        if (details.length === 0) continue
+
+        const levelUpDetail = details.find((d) => d.move_learn_method.name === 'level-up' && d.level_learned_at > 0)
+        if (levelUpDetail) {
           const info = await moveDetail(moveEntry.move.name)
-          levelUp.push({ moveId: info.id, level: detail.level_learned_at })
-        } else if (detail.move_learn_method.name === 'machine') {
+          levelUp.push({ moveId: info.id, level: levelUpDetail.level_learned_at })
+        }
+
+        const machineDetail = details.find((d) => d.move_learn_method.name === 'machine')
+        if (machineDetail) {
           const tm = groups.map((g) => machineLookup.get(`${g}|${moveEntry.move.name}`)).find(Boolean)
           if (tm) {
             const info = await moveDetail(moveEntry.move.name)
             machines.push({ moveId: info.id, machine: tm.machine, number: tm.number })
           }
         }
+
+        const tutorDetail = details.find((d) => d.move_learn_method.name === 'tutor')
+        if (tutorDetail) {
+          const info = await moveDetail(moveEntry.move.name)
+          if (!seenTutorIds.has(info.id)) {
+            seenTutorIds.add(info.id)
+            tutor.push({ moveId: info.id })
+          }
+        }
       }
-      if (levelUp.length === 0 && machines.length === 0) continue
-      learnsets.push({ generation: `${generation}세대`, version: label, levelUp, machines })
+      if (levelUp.length === 0 && machines.length === 0 && tutor.length === 0) continue
+      learnsets.push({ generation: `${generation}세대`, version: label, levelUp, machines, tutor })
     }
   }
   return learnsets
@@ -341,7 +370,9 @@ function recommendedMoveset(learnsets) {
   const latestGen = Math.max(...learnsets.map((ls) => Number(ls.generation.replace('세대', ''))))
   const main = learnsets.find((ls) => ls.generation === `${latestGen}세대`)
   if (!main) return []
-  const ids = [...new Set([...main.levelUp.map((m) => m.moveId), ...main.machines.map((m) => m.moveId)])]
+  const ids = [
+    ...new Set([...main.levelUp.map((m) => m.moveId), ...main.machines.map((m) => m.moveId), ...main.tutor.map((m) => m.moveId)]),
+  ]
   return ids
     .map((id) => moveDetailByIdCache.get(id))
     .filter(Boolean)
@@ -389,6 +420,11 @@ async function main() {
 
       const poke = await fetchJson(variety.pokemon.url)
       const nameEn = species.names.find((n) => n.language.name === 'en')?.name ?? poke.name
+      const abilities = await mapWithConcurrency(
+        [...poke.abilities].sort((a, b) => a.slot - b.slot),
+        4,
+        async (a) => ({ ...(await abilityInfo(a.ability.name)), isHidden: a.is_hidden }),
+      )
       const entry = {
         id: poke.id,
         dexNumber: speciesId,
@@ -403,6 +439,7 @@ async function main() {
         weightKg: poke.weight / 10,
         spriteUrl: sprite(poke.id),
         artworkUrl: artwork(poke.id),
+        abilities,
       }
       pokemonOut.push(entry)
       idToDexNumber.set(poke.id, speciesId)
@@ -534,7 +571,17 @@ async function main() {
   lines.push('// 이 파일은 scripts/fetch-pokedex.mjs 로 PokeAPI에서 생성됩니다. 직접 수정하지 마세요.')
   lines.push("import type { EvolutionStage, Pokemon } from '../../types/pokemon'")
   lines.push('')
-  lines.push(`export const ALL_POKEMON: Pokemon[] = ${JSON.stringify(pokemonOut, null, 2)}`)
+  // 1082개 객체를 하나의 배열 리터럴로 Pokemon[]에 타입 체크하면 TS2590(너무 복잡한 유니온
+  // 타입) 에러가 난다. 작은 묶음으로 나눠 각각 타입 체크한 뒤 합치면 이 한계를 피할 수 있다.
+  const POKEMON_CHUNK_SIZE = 100
+  const pokemonChunkNames = []
+  for (let i = 0; i < pokemonOut.length; i += POKEMON_CHUNK_SIZE) {
+    const chunkName = `POKEMON_CHUNK_${pokemonChunkNames.length}`
+    pokemonChunkNames.push(chunkName)
+    lines.push(`const ${chunkName}: Pokemon[] = ${JSON.stringify(pokemonOut.slice(i, i + POKEMON_CHUNK_SIZE), null, 2)}`)
+    lines.push('')
+  }
+  lines.push(`export const ALL_POKEMON: Pokemon[] = [${pokemonChunkNames.map((n) => `...${n}`).join(', ')}]`)
   lines.push('')
   lines.push(`export const ALL_EVOLUTION_LINES: EvolutionStage[][] = ${JSON.stringify(evolutionLines, null, 2)}`)
   lines.push('')

@@ -93,6 +93,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 19
       },
       {
+        "moveId": 240,
+        "machine": "TM",
+        "number": 33
+      },
+      {
         "moveId": 250,
         "machine": "TM",
         "number": 36
@@ -123,6 +128,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 53
       },
       {
+        "moveId": 369,
+        "machine": "TM",
+        "number": 56
+      },
+      {
         "moveId": 374,
         "machine": "TM",
         "number": 59
@@ -131,6 +141,11 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 496,
         "machine": "TM",
         "number": 76
+      }
+    ],
+    "tutor": [
+      {
+        "moveId": 518
       }
     ]
   },
@@ -205,6 +220,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 75
       },
       {
+        "moveId": 114,
+        "machine": "TM",
+        "number": 174
+      },
+      {
         "moveId": 115,
         "machine": "TM",
         "number": 74
@@ -250,6 +270,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 132
       },
       {
+        "moveId": 240,
+        "machine": "TM",
+        "number": 50
+      },
+      {
         "moveId": 250,
         "machine": "TM",
         "number": 208
@@ -275,6 +300,16 @@ export const LEARNSETS: Learnset[] = [
         "number": 35
       },
       {
+        "moveId": 352,
+        "machine": "TM",
+        "number": 11
+      },
+      {
+        "moveId": 369,
+        "machine": "TM",
+        "number": 60
+      },
+      {
         "moveId": 374,
         "machine": "TM",
         "number": 43
@@ -283,6 +318,11 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 518,
         "machine": "TM",
         "number": 145
+      },
+      {
+        "moveId": 710,
+        "machine": "TM",
+        "number": 110
       },
       {
         "moveId": 851,
@@ -294,7 +334,8 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 22
       }
-    ]
+    ],
+    "tutor": []
   }
 ]
 

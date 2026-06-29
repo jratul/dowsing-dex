@@ -27,9 +27,14 @@ export interface MachineMove {
   number: number
 }
 
+export interface TutorMove {
+  moveId: number
+}
+
 export interface Learnset {
   generation: Generation
   version: string
   levelUp: LevelUpMove[]
   machines: MachineMove[]
+  tutor: TutorMove[]
 }

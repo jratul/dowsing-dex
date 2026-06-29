@@ -83,9 +83,19 @@ export const LEARNSETS: Learnset[] = [
         "number": 66
       },
       {
+        "moveId": 36,
+        "machine": "TM",
+        "number": 1
+      },
+      {
         "moveId": 38,
         "machine": "TM",
         "number": 204
+      },
+      {
+        "moveId": 58,
+        "machine": "TM",
+        "number": 135
       },
       {
         "moveId": 59,
@@ -128,6 +138,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 6
       },
       {
+        "moveId": 196,
+        "machine": "TM",
+        "number": 34
+      },
+      {
         "moveId": 200,
         "machine": "TM",
         "number": 156
@@ -151,6 +166,11 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 240,
         "machine": "TM",
         "number": 50
+      },
+      {
+        "moveId": 242,
+        "machine": "TM",
+        "number": 108
       },
       {
         "moveId": 263,
@@ -178,6 +198,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 187
       },
       {
+        "moveId": 337,
+        "machine": "TM",
+        "number": 78
+      },
+      {
         "moveId": 349,
         "machine": "TM",
         "number": 100
@@ -203,6 +228,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 9
       },
       {
+        "moveId": 423,
+        "machine": "TM",
+        "number": 10
+      },
+      {
         "moveId": 428,
         "machine": "TM",
         "number": 59
@@ -223,6 +253,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 28
       },
       {
+        "moveId": 525,
+        "machine": "TM",
+        "number": 44
+      },
+      {
         "moveId": 667,
         "machine": "TM",
         "number": 186
@@ -238,6 +273,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 89
       },
       {
+        "moveId": 784,
+        "machine": "TM",
+        "number": 222
+      },
+      {
         "moveId": 799,
         "machine": "TM",
         "number": 200
@@ -248,11 +288,17 @@ export const LEARNSETS: Learnset[] = [
         "number": 171
       },
       {
+        "moveId": 883,
+        "machine": "TM",
+        "number": 52
+      },
+      {
         "moveId": 913,
         "machine": "TM",
         "number": 226
       }
-    ]
+    ],
+    "tutor": []
   }
 ]
 

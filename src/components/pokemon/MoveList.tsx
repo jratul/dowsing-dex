@@ -144,6 +144,19 @@ export function MoveList({ learnsets, findMove, recommendedMoveIds }: MoveListPr
             </div>
           </div>
         )}
+
+        {learnset.tutor.length > 0 && (
+          <div className="flex flex-col gap-2">
+            <h3 className="text-xs font-black text-ink-faint">가르침으로 배우는 기술</h3>
+            <MoveTableHeader />
+            <div className="flex flex-col">
+              {learnset.tutor.map(({ moveId }) => {
+                const move = findMove(moveId)
+                return move ? <MoveRow key={moveId} leading="-" move={move} /> : null
+              })}
+            </div>
+          </div>
+        )}
       </Tabs.Content>
     </Tabs.Root>
   )

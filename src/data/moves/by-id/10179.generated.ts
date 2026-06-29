@@ -93,6 +93,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 24
       },
       {
+        "moveId": 182,
+        "machine": "TM",
+        "number": 25
+      },
+      {
         "moveId": 201,
         "machine": "TM",
         "number": 32
@@ -156,14 +161,29 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 496,
         "machine": "TM",
         "number": 76
+      },
+      {
+        "moveId": 506,
+        "machine": "TM",
+        "number": 77
+      },
+      {
+        "moveId": 693,
+        "machine": "TM",
+        "number": 97
+      }
+    ],
+    "tutor": [
+      {
+        "moveId": 809
       }
     ]
   }
 ]
 
 export const RECOMMENDED_MOVESET: number[] = [
+  809,
   89,
   21,
-  247,
-  157
+  247
 ]

@@ -135,6 +135,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 76
       },
       {
+        "moveId": 506,
+        "machine": "TM",
+        "number": 77
+      },
+      {
         "moveId": 523,
         "machine": "TM",
         "number": 81
@@ -153,6 +158,11 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 707,
         "machine": "TM",
         "number": 98
+      }
+    ],
+    "tutor": [
+      {
+        "moveId": 808
       }
     ]
   },
@@ -224,6 +234,16 @@ export const LEARNSETS: Learnset[] = [
         "number": 66
       },
       {
+        "moveId": 36,
+        "machine": "TM",
+        "number": 1
+      },
+      {
+        "moveId": 38,
+        "machine": "TM",
+        "number": 204
+      },
+      {
         "moveId": 63,
         "machine": "TM",
         "number": 163
@@ -234,9 +254,24 @@ export const LEARNSETS: Learnset[] = [
         "number": 120
       },
       {
+        "moveId": 97,
+        "machine": "TM",
+        "number": 4
+      },
+      {
         "moveId": 101,
         "machine": "TM",
         "number": 42
+      },
+      {
+        "moveId": 109,
+        "machine": "TM",
+        "number": 17
+      },
+      {
+        "moveId": 114,
+        "machine": "TM",
+        "number": 174
       },
       {
         "moveId": 129,
@@ -289,6 +324,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 108
       },
       {
+        "moveId": 247,
+        "machine": "TM",
+        "number": 114
+      },
+      {
         "moveId": 261,
         "machine": "TM",
         "number": 107
@@ -324,9 +364,19 @@ export const LEARNSETS: Learnset[] = [
         "number": 152
       },
       {
+        "moveId": 417,
+        "machine": "TM",
+        "number": 140
+      },
+      {
         "moveId": 492,
         "machine": "TM",
         "number": 62
+      },
+      {
+        "moveId": 506,
+        "machine": "TM",
+        "number": 29
       },
       {
         "moveId": 523,
@@ -368,7 +418,8 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 171
       }
-    ]
+    ],
+    "tutor": []
   }
 ]
 

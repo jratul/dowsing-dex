@@ -73,6 +73,16 @@ export const LEARNSETS: Learnset[] = [
     ],
     "machines": [
       {
+        "moveId": 36,
+        "machine": "TM",
+        "number": 1
+      },
+      {
+        "moveId": 60,
+        "machine": "TM",
+        "number": 16
+      },
+      {
         "moveId": 63,
         "machine": "TM",
         "number": 163
@@ -81,6 +91,11 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 91,
         "machine": "TM",
         "number": 55
+      },
+      {
+        "moveId": 94,
+        "machine": "TM",
+        "number": 120
       },
       {
         "moveId": 109,
@@ -158,6 +173,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 49
       },
       {
+        "moveId": 244,
+        "machine": "TM",
+        "number": 203
+      },
+      {
         "moveId": 247,
         "machine": "TM",
         "number": 114
@@ -228,6 +248,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 105
       },
       {
+        "moveId": 405,
+        "machine": "TM",
+        "number": 162
+      },
+      {
         "moveId": 408,
         "machine": "TM",
         "number": 101
@@ -263,6 +288,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 102
       },
       {
+        "moveId": 450,
+        "machine": "TM",
+        "number": 182
+      },
+      {
         "moveId": 473,
         "machine": "TM",
         "number": 54
@@ -278,6 +308,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 41
       },
       {
+        "moveId": 522,
+        "machine": "TM",
+        "number": 15
+      },
+      {
         "moveId": 605,
         "machine": "TM",
         "number": 79
@@ -286,6 +321,11 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 678,
         "machine": "TM",
         "number": 138
+      },
+      {
+        "moveId": 679,
+        "machine": "TM",
+        "number": 185
       },
       {
         "moveId": 797,
@@ -317,7 +357,8 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 228
       }
-    ]
+    ],
+    "tutor": []
   }
 ]
 

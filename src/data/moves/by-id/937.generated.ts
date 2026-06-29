@@ -69,6 +69,11 @@ export const LEARNSETS: Learnset[] = [
     ],
     "machines": [
       {
+        "moveId": 14,
+        "machine": "TM",
+        "number": 88
+      },
+      {
         "moveId": 36,
         "machine": "TM",
         "number": 1
@@ -77,6 +82,16 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 53,
         "machine": "TM",
         "number": 125
+      },
+      {
+        "moveId": 83,
+        "machine": "TM",
+        "number": 24
+      },
+      {
+        "moveId": 101,
+        "machine": "TM",
+        "number": 42
       },
       {
         "moveId": 109,
@@ -159,6 +174,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 118
       },
       {
+        "moveId": 261,
+        "machine": "TM",
+        "number": 107
+      },
+      {
         "moveId": 263,
         "machine": "TM",
         "number": 25
@@ -209,6 +229,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 43
       },
       {
+        "moveId": 394,
+        "machine": "TM",
+        "number": 165
+      },
+      {
         "moveId": 398,
         "machine": "TM",
         "number": 83
@@ -224,9 +249,19 @@ export const LEARNSETS: Learnset[] = [
         "number": 184
       },
       {
+        "moveId": 421,
+        "machine": "TM",
+        "number": 61
+      },
+      {
         "moveId": 442,
         "machine": "TM",
         "number": 99
+      },
+      {
+        "moveId": 488,
+        "machine": "TM",
+        "number": 38
       },
       {
         "moveId": 500,
@@ -244,6 +279,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 151
       },
       {
+        "moveId": 669,
+        "machine": "TM",
+        "number": 190
+      },
+      {
         "moveId": 675,
         "machine": "TM",
         "number": 221
@@ -258,13 +298,14 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 171
       }
-    ]
+    ],
+    "tutor": []
   }
 ]
 
 export const RECOMMENDED_MOVESET: number[] = [
   315,
+  669,
   394,
-  370,
-  126
+  370
 ]

@@ -1,7 +1,7 @@
 // 이 파일은 scripts/fetch-pokedex.mjs 로 PokeAPI에서 생성됩니다. 직접 수정하지 마세요.
 import type { EvolutionStage, Pokemon } from '../../types/pokemon'
 
-export const ALL_POKEMON: Pokemon[] = [
+const POKEMON_CHUNK_0: Pokemon[] = [
   {
     "id": 1,
     "dexNumber": 1,
@@ -24,7 +24,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 6.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 2,
@@ -48,7 +62,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 13,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/2.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 3,
@@ -73,6 +101,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 100,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/3.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가이상해꽃",
@@ -114,7 +156,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 8.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/4.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "선파워",
+        "nameEn": "solar-power",
+        "effectKo": "맑으면 HP가 줄지만 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 5,
@@ -137,7 +193,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 19,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/5.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "선파워",
+        "nameEn": "solar-power",
+        "effectKo": "맑으면 HP가 줄지만 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 6,
@@ -162,6 +232,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 90.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/6.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "선파워",
+        "nameEn": "solar-power",
+        "effectKo": "맑으면 HP가 줄지만 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가리자몽 X",
@@ -220,7 +304,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/7.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "젖은접시",
+        "nameEn": "rain-dish",
+        "effectKo": "비가 올 때 조금씩 HP를 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 8,
@@ -243,7 +341,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 22.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/8.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "젖은접시",
+        "nameEn": "rain-dish",
+        "effectKo": "비가 올 때 조금씩 HP를 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 9,
@@ -267,6 +379,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 85.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/9.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "젖은접시",
+        "nameEn": "rain-dish",
+        "effectKo": "비가 올 때 조금씩 HP를 회복한다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가거북왕",
@@ -307,7 +433,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 2.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png",
+    "abilities": [
+      {
+        "nameKo": "인분",
+        "nameEn": "shield-dust",
+        "effectKo": "기술의 추가 효과를 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 11,
@@ -330,7 +470,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 9.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/11.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/11.png",
+    "abilities": [
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 12,
@@ -354,7 +502,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 32,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/12.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png",
+    "abilities": [
+      {
+        "nameKo": "복안",
+        "nameEn": "compound-eyes",
+        "effectKo": "기술의 명중률이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "색안경",
+        "nameEn": "tinted-lens",
+        "effectKo": "효과가 별로인 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 13,
@@ -378,7 +540,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 3.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/13.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/13.png",
+    "abilities": [
+      {
+        "nameKo": "인분",
+        "nameEn": "shield-dust",
+        "effectKo": "기술의 추가 효과를 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 14,
@@ -402,7 +578,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 10,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/14.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png",
+    "abilities": [
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 15,
@@ -427,6 +611,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 29.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/15.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가독침붕",
@@ -469,7 +667,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 1.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/16.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/16.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "갈지자걸음",
+        "nameEn": "tangled-feet",
+        "effectKo": "혼란에 빠져있으면 회피하기 쉬워진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "부풀린가슴",
+        "nameEn": "big-pecks",
+        "effectKo": "방어를 떨어뜨리는 공격을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 17,
@@ -493,7 +711,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 30,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/17.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/17.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "갈지자걸음",
+        "nameEn": "tangled-feet",
+        "effectKo": "혼란에 빠져있으면 회피하기 쉬워진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "부풀린가슴",
+        "nameEn": "big-pecks",
+        "effectKo": "방어를 떨어뜨리는 공격을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 18,
@@ -518,6 +756,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 39.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/18.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/18.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "갈지자걸음",
+        "nameEn": "tangled-feet",
+        "effectKo": "혼란에 빠져있으면 회피하기 쉬워진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "부풀린가슴",
+        "nameEn": "big-pecks",
+        "effectKo": "방어를 떨어뜨리는 공격을 받지 않는다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가피죤투",
@@ -559,7 +817,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 3.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/19.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 20,
@@ -582,7 +860,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 18.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/20.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/20.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 21,
@@ -606,7 +904,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/21.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 22,
@@ -630,7 +942,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 38,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/22.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/22.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/22.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 23,
@@ -653,7 +979,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 6.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/23.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/23.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 24,
@@ -676,7 +1022,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.5,
     "weightKg": 65,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/24.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/24.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 25,
@@ -699,7 +1065,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/25.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
+    "abilities": [
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 26,
@@ -722,7 +1102,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 30,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/26.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png",
+    "abilities": [
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 27,
@@ -745,7 +1139,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 12,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/27.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png",
+    "abilities": [
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래헤치기",
+        "nameEn": "sand-rush",
+        "effectKo": "모래바람으로 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 28,
@@ -768,7 +1176,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 29.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/28.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png",
+    "abilities": [
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래헤치기",
+        "nameEn": "sand-rush",
+        "effectKo": "모래바람으로 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 29,
@@ -791,7 +1213,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/29.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/29.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 30,
@@ -814,7 +1256,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 20,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/30.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/30.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 31,
@@ -838,7 +1300,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 60,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/31.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 32,
@@ -861,7 +1343,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/32.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 33,
@@ -884,7 +1386,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 19.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/33.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/33.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 34,
@@ -908,7 +1430,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 62,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/34.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 35,
@@ -931,7 +1473,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 7.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/35.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/35.png",
+    "abilities": [
+      {
+        "nameKo": "헤롱헤롱바디",
+        "nameEn": "cute-charm",
+        "effectKo": "스치면 헤롱헤롱 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매직가드",
+        "nameEn": "magic-guard",
+        "effectKo": "공격 이외에는 데미지를 입지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "프렌드가드",
+        "nameEn": "friend-guard",
+        "effectKo": "같은 편의 데미지를 줄일 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 36,
@@ -954,7 +1516,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 40,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/36.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/36.png",
+    "abilities": [
+      {
+        "nameKo": "헤롱헤롱바디",
+        "nameEn": "cute-charm",
+        "effectKo": "스치면 헤롱헤롱 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매직가드",
+        "nameEn": "magic-guard",
+        "effectKo": "공격 이외에는 데미지를 입지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "천진",
+        "nameEn": "unaware",
+        "effectKo": "상대의 능력 변화를 무시한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 37,
@@ -977,7 +1559,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 9.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/37.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png",
+    "abilities": [
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "가뭄",
+        "nameEn": "drought",
+        "effectKo": "배틀에 나가면 햇살이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 38,
@@ -1000,7 +1596,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 19.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/38.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png",
+    "abilities": [
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "가뭄",
+        "nameEn": "drought",
+        "effectKo": "배틀에 나가면 햇살이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 39,
@@ -1024,7 +1634,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 5.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/39.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/39.png",
+    "abilities": [
+      {
+        "nameKo": "헤롱헤롱바디",
+        "nameEn": "cute-charm",
+        "effectKo": "스치면 헤롱헤롱 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "승기",
+        "nameEn": "competitive",
+        "effectKo": "능력이 떨어지면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "프렌드가드",
+        "nameEn": "friend-guard",
+        "effectKo": "같은 편의 데미지를 줄일 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 40,
@@ -1048,7 +1678,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 12,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/40.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/40.png",
+    "abilities": [
+      {
+        "nameKo": "헤롱헤롱바디",
+        "nameEn": "cute-charm",
+        "effectKo": "스치면 헤롱헤롱 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "승기",
+        "nameEn": "competitive",
+        "effectKo": "능력이 떨어지면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 41,
@@ -1072,7 +1722,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 7.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/41.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/41.png",
+    "abilities": [
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 42,
@@ -1096,7 +1760,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 55,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/42.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/42.png",
+    "abilities": [
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 43,
@@ -1120,7 +1798,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 5.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/43.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/43.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 44,
@@ -1144,7 +1836,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 8.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/44.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "악취",
+        "nameEn": "stench",
+        "effectKo": "악취 때문에 상대가 풀죽을 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 45,
@@ -1168,7 +1874,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 18.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/45.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/45.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "포자",
+        "nameEn": "effect-spore",
+        "effectKo": "스치면 독, 마비, 잠듦 상태가 될 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 46,
@@ -1192,7 +1912,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 5.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/46.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/46.png",
+    "abilities": [
+      {
+        "nameKo": "포자",
+        "nameEn": "effect-spore",
+        "effectKo": "스치면 독, 마비, 잠듦 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "건조피부",
+        "nameEn": "dry-skin",
+        "effectKo": "더우면 HP가 줄어든다. 물로 HP를 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 47,
@@ -1216,7 +1956,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 29.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/47.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/47.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/47.png",
+    "abilities": [
+      {
+        "nameKo": "포자",
+        "nameEn": "effect-spore",
+        "effectKo": "스치면 독, 마비, 잠듦 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "건조피부",
+        "nameEn": "dry-skin",
+        "effectKo": "더우면 HP가 줄어든다. 물로 HP를 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 48,
@@ -1240,7 +2000,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 30,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/48.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png",
+    "abilities": [
+      {
+        "nameKo": "복안",
+        "nameEn": "compound-eyes",
+        "effectKo": "기술의 명중률이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "색안경",
+        "nameEn": "tinted-lens",
+        "effectKo": "효과가 별로인 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 49,
@@ -1264,7 +2044,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 12.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/49.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/49.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/49.png",
+    "abilities": [
+      {
+        "nameKo": "인분",
+        "nameEn": "shield-dust",
+        "effectKo": "기술의 추가 효과를 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "색안경",
+        "nameEn": "tinted-lens",
+        "effectKo": "효과가 별로인 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "미라클스킨",
+        "nameEn": "wonder-skin",
+        "effectKo": "변화 기술을 받기 어려운 몸으로 되어 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 50,
@@ -1287,7 +2087,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 0.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/50.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/50.png",
+    "abilities": [
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "개미지옥",
+        "nameEn": "arena-trap",
+        "effectKo": "배틀에서 상대를 도망칠 수 없게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래의힘",
+        "nameEn": "sand-force",
+        "effectKo": "모래바람으로 위력이 올라가는 기술이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 51,
@@ -1310,7 +2130,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 33.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/51.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/51.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/51.png",
+    "abilities": [
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "개미지옥",
+        "nameEn": "arena-trap",
+        "effectKo": "배틀에서 상대를 도망칠 수 없게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래의힘",
+        "nameEn": "sand-force",
+        "effectKo": "모래바람으로 위력이 올라가는 기술이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 52,
@@ -1333,7 +2173,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 4.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/52.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/52.png",
+    "abilities": [
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 53,
@@ -1356,7 +2216,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 32,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/53.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/53.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/53.png",
+    "abilities": [
+      {
+        "nameKo": "유연",
+        "nameEn": "limber",
+        "effectKo": "마비 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 54,
@@ -1379,7 +2259,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 19.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/54.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/54.png",
+    "abilities": [
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날씨부정",
+        "nameEn": "cloud-nine",
+        "effectKo": "날씨의 영향이 없어진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 55,
@@ -1402,7 +2302,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 76.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/55.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/55.png",
+    "abilities": [
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날씨부정",
+        "nameEn": "cloud-nine",
+        "effectKo": "날씨의 영향이 없어진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 56,
@@ -1425,7 +2345,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 28,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/56.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/56.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/56.png",
+    "abilities": [
+      {
+        "nameKo": "의기양양",
+        "nameEn": "vital-spirit",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "분노의경혈",
+        "nameEn": "anger-point",
+        "effectKo": "급소에 맞으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "오기",
+        "nameEn": "defiant",
+        "effectKo": "능력이 떨어지면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 57,
@@ -1448,7 +2388,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 32,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/57.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/57.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/57.png",
+    "abilities": [
+      {
+        "nameKo": "의기양양",
+        "nameEn": "vital-spirit",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "분노의경혈",
+        "nameEn": "anger-point",
+        "effectKo": "급소에 맞으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "오기",
+        "nameEn": "defiant",
+        "effectKo": "능력이 떨어지면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 58,
@@ -1471,7 +2431,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 19,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/58.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/58.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정의의마음",
+        "nameEn": "justified",
+        "effectKo": "악 기술을 받으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 59,
@@ -1494,7 +2474,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.9,
     "weightKg": 155,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/59.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정의의마음",
+        "nameEn": "justified",
+        "effectKo": "악 기술을 받으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 60,
@@ -1517,7 +2517,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 12.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/60.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/60.png",
+    "abilities": [
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 61,
@@ -1540,7 +2560,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 20,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/61.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/61.png",
+    "abilities": [
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 62,
@@ -1564,7 +2604,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 54,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/62.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/62.png",
+    "abilities": [
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 63,
@@ -1587,7 +2647,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 19.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/63.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/63.png",
+    "abilities": [
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매직가드",
+        "nameEn": "magic-guard",
+        "effectKo": "공격 이외에는 데미지를 입지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 64,
@@ -1610,7 +2690,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 56.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/64.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/64.png",
+    "abilities": [
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매직가드",
+        "nameEn": "magic-guard",
+        "effectKo": "공격 이외에는 데미지를 입지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 65,
@@ -1634,6 +2734,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 48,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/65.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png",
+    "abilities": [
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매직가드",
+        "nameEn": "magic-guard",
+        "effectKo": "공격 이외에는 데미지를 입지 않는다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가후딘",
@@ -1674,7 +2794,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 19.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/66.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png",
+    "abilities": [
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "노가드",
+        "nameEn": "no-guard",
+        "effectKo": "서로의 기술이 반드시 맞는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불굴의마음",
+        "nameEn": "steadfast",
+        "effectKo": "풀죽을 때마다 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 67,
@@ -1697,7 +2837,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 70.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/67.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/67.png",
+    "abilities": [
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "노가드",
+        "nameEn": "no-guard",
+        "effectKo": "서로의 기술이 반드시 맞는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불굴의마음",
+        "nameEn": "steadfast",
+        "effectKo": "풀죽을 때마다 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 68,
@@ -1720,7 +2880,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 130,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/68.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png",
+    "abilities": [
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "노가드",
+        "nameEn": "no-guard",
+        "effectKo": "서로의 기술이 반드시 맞는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불굴의마음",
+        "nameEn": "steadfast",
+        "effectKo": "풀죽을 때마다 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 69,
@@ -1744,7 +2924,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/69.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/69.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 70,
@@ -1768,7 +2962,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 6.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/70.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/70.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 71,
@@ -1792,7 +3000,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 15.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/71.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/71.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 72,
@@ -1816,7 +3038,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 45.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/72.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/72.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/72.png",
+    "abilities": [
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "해감액",
+        "nameEn": "liquid-ooze",
+        "effectKo": "흡수한 상대의 HP를 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "젖은접시",
+        "nameEn": "rain-dish",
+        "effectKo": "비가 올 때 조금씩 HP를 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 73,
@@ -1840,7 +3082,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 55,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/73.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/73.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/73.png",
+    "abilities": [
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "해감액",
+        "nameEn": "liquid-ooze",
+        "effectKo": "흡수한 상대의 HP를 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "젖은접시",
+        "nameEn": "rain-dish",
+        "effectKo": "비가 올 때 조금씩 HP를 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 74,
@@ -1864,7 +3126,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 20,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/74.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/74.png",
+    "abilities": [
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 75,
@@ -1888,7 +3170,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 105,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/75.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/75.png",
+    "abilities": [
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 76,
@@ -1912,7 +3214,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 300,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/76.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png",
+    "abilities": [
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 77,
@@ -1935,7 +3257,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 30,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/77.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/77.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/77.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 78,
@@ -1958,7 +3300,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 95,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/78.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/78.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 79,
@@ -1982,7 +3344,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 36,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/79.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/79.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/79.png",
+    "abilities": [
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 80,
@@ -2007,6 +3389,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 78.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/80.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/80.png",
+    "abilities": [
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가야도란",
@@ -2049,7 +3451,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/81.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png",
+    "abilities": [
+      {
+        "nameKo": "자력",
+        "nameEn": "magnet-pull",
+        "effectKo": "강철의 포켓몬을 도망칠 수 없게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "애널라이즈",
+        "nameEn": "analytic",
+        "effectKo": "제일 마지막에 기술을 쓰면 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 82,
@@ -2073,7 +3495,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 60,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/82.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/82.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/82.png",
+    "abilities": [
+      {
+        "nameKo": "자력",
+        "nameEn": "magnet-pull",
+        "effectKo": "강철의 포켓몬을 도망칠 수 없게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "애널라이즈",
+        "nameEn": "analytic",
+        "effectKo": "제일 마지막에 기술을 쓰면 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 83,
@@ -2097,7 +3539,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 15,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/83.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/83.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/83.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "오기",
+        "nameEn": "defiant",
+        "effectKo": "능력이 떨어지면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 84,
@@ -2121,7 +3583,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 39.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/84.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/84.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/84.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "일찍기상",
+        "nameEn": "early-bird",
+        "effectKo": "잠듦 상태에서 빨리 깨어난다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "갈지자걸음",
+        "nameEn": "tangled-feet",
+        "effectKo": "혼란에 빠져있으면 회피하기 쉬워진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 85,
@@ -2145,7 +3627,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 85.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/85.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "일찍기상",
+        "nameEn": "early-bird",
+        "effectKo": "잠듦 상태에서 빨리 깨어난다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "갈지자걸음",
+        "nameEn": "tangled-feet",
+        "effectKo": "혼란에 빠져있으면 회피하기 쉬워진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 86,
@@ -2168,7 +3670,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 90,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/86.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/86.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/86.png",
+    "abilities": [
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 87,
@@ -2192,7 +3714,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 120,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/87.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/87.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/87.png",
+    "abilities": [
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 88,
@@ -2215,7 +3757,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 30,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/88.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/88.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/88.png",
+    "abilities": [
+      {
+        "nameKo": "악취",
+        "nameEn": "stench",
+        "effectKo": "악취 때문에 상대가 풀죽을 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "점착",
+        "nameEn": "sticky-hold",
+        "effectKo": "달라붙어서 도구를 지킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "독수",
+        "nameEn": "poison-touch",
+        "effectKo": "접촉하기만 해도 상대를 독 상태로 만들 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 89,
@@ -2238,7 +3800,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 30,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/89.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/89.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/89.png",
+    "abilities": [
+      {
+        "nameKo": "악취",
+        "nameEn": "stench",
+        "effectKo": "악취 때문에 상대가 풀죽을 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "점착",
+        "nameEn": "sticky-hold",
+        "effectKo": "달라붙어서 도구를 지킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "독수",
+        "nameEn": "poison-touch",
+        "effectKo": "접촉하기만 해도 상대를 독 상태로 만들 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 90,
@@ -2261,7 +3843,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/90.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/90.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/90.png",
+    "abilities": [
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스킬링크",
+        "nameEn": "skill-link",
+        "effectKo": "연속 기술을 많이 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 91,
@@ -2285,7 +3887,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 132.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/91.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/91.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/91.png",
+    "abilities": [
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스킬링크",
+        "nameEn": "skill-link",
+        "effectKo": "연속 기술을 많이 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 92,
@@ -2309,7 +3931,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 0.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/92.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/92.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 93,
@@ -2333,7 +3963,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 0.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/93.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/93.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/93.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 94,
@@ -2358,6 +3996,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 40.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/94.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png",
+    "abilities": [
+      {
+        "nameKo": "저주받은바디",
+        "nameEn": "cursed-body",
+        "effectKo": "공격받으면 가끔 상대를 사슬묶기 상태로 만든다.",
+        "isHidden": false
+      }
+    ],
     "megaForms": [
       {
         "label": "메가팬텀",
@@ -2400,7 +4046,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 8.8,
     "weightKg": 210,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/95.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png",
+    "abilities": [
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 96,
@@ -2423,7 +4089,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 32.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/96.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/96.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/96.png",
+    "abilities": [
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "예지몽",
+        "nameEn": "forewarn",
+        "effectKo": "상대가 지닌 기술을 꿰뚫어볼 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 97,
@@ -2446,7 +4132,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 75.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/97.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/97.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/97.png",
+    "abilities": [
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "예지몽",
+        "nameEn": "forewarn",
+        "effectKo": "상대가 지닌 기술을 꿰뚫어볼 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 98,
@@ -2469,7 +4175,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 6.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/98.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/98.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/98.png",
+    "abilities": [
+      {
+        "nameKo": "괴력집게",
+        "nameEn": "hyper-cutter",
+        "effectKo": "상대가 공격을 떨어뜨리지 못한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 99,
@@ -2492,7 +4218,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 60,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/99.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/99.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/99.png",
+    "abilities": [
+      {
+        "nameKo": "괴력집게",
+        "nameEn": "hyper-cutter",
+        "effectKo": "상대가 공격을 떨어뜨리지 못한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 100,
@@ -2515,8 +4261,31 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 10.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/100.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png"
-  },
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/100.png",
+    "abilities": [
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "유폭",
+        "nameEn": "aftermath",
+        "effectKo": "기절할 때 스친 상대에게 데미지를 준다.",
+        "isHidden": true
+      }
+    ]
+  }
+]
+
+const POKEMON_CHUNK_1: Pokemon[] = [
   {
     "id": 101,
     "dexNumber": 101,
@@ -2538,7 +4307,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 66.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/101.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/101.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/101.png",
+    "abilities": [
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "유폭",
+        "nameEn": "aftermath",
+        "effectKo": "기절할 때 스친 상대에게 데미지를 준다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 102,
@@ -2562,7 +4351,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 2.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/102.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/102.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/102.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수확",
+        "nameEn": "harvest",
+        "effectKo": "사용한 나무열매를 몇 번이고 만들어 낸다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 103,
@@ -2586,7 +4389,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 120,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/103.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/103.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/103.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수확",
+        "nameEn": "harvest",
+        "effectKo": "사용한 나무열매를 몇 번이고 만들어 낸다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 104,
@@ -2609,7 +4426,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 6.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/104.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/104.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/104.png",
+    "abilities": [
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "전투무장",
+        "nameEn": "battle-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 105,
@@ -2632,7 +4469,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 45,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/105.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/105.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/105.png",
+    "abilities": [
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "전투무장",
+        "nameEn": "battle-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 106,
@@ -2655,7 +4512,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 49.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/106.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/106.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/106.png",
+    "abilities": [
+      {
+        "nameKo": "유연",
+        "nameEn": "limber",
+        "effectKo": "마비 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "이판사판",
+        "nameEn": "reckless",
+        "effectKo": "반동 데미지를 받는 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 107,
@@ -2678,7 +4555,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 50.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/107.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/107.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/107.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 108,
@@ -2701,7 +4598,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 65.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/108.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/108.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/108.png",
+    "abilities": [
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날씨부정",
+        "nameEn": "cloud-nine",
+        "effectKo": "날씨의 영향이 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 109,
@@ -2724,7 +4641,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/109.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/109.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "화학변화가스",
+        "nameEn": "neutralizing-gas",
+        "effectKo": "화학변화가스를 가진 포켓몬이 배틀에 나와 있으면 모든 포켓몬이 가진 특성의 효과가 사라지거나 발동하지 않게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "악취",
+        "nameEn": "stench",
+        "effectKo": "악취 때문에 상대가 풀죽을 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 110,
@@ -2747,7 +4684,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 9.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/110.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/110.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/110.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "화학변화가스",
+        "nameEn": "neutralizing-gas",
+        "effectKo": "화학변화가스를 가진 포켓몬이 배틀에 나와 있으면 모든 포켓몬이 가진 특성의 효과가 사라지거나 발동하지 않게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "악취",
+        "nameEn": "stench",
+        "effectKo": "악취 때문에 상대가 풀죽을 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 111,
@@ -2771,7 +4728,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 115,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/111.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/111.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/111.png",
+    "abilities": [
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "이판사판",
+        "nameEn": "reckless",
+        "effectKo": "반동 데미지를 받는 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 112,
@@ -2795,7 +4772,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.9,
     "weightKg": 120,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/112.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/112.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/112.png",
+    "abilities": [
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "이판사판",
+        "nameEn": "reckless",
+        "effectKo": "반동 데미지를 받는 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 113,
@@ -2818,7 +4815,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 34.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/113.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/113.png",
+    "abilities": [
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "하늘의은총",
+        "nameEn": "serene-grace",
+        "effectKo": "기술의 추가 효과가 나오기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "치유의마음",
+        "nameEn": "healer",
+        "effectKo": "같은 편의 상태 이상을 가끔 회복시킨다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 114,
@@ -2841,7 +4858,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 35,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/114.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/114.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/114.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 115,
@@ -2865,6 +4902,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 80,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/115.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png",
+    "abilities": [
+      {
+        "nameKo": "일찍기상",
+        "nameEn": "early-bird",
+        "effectKo": "잠듦 상태에서 빨리 깨어난다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "배짱",
+        "nameEn": "scrappy",
+        "effectKo": "고스트타입에 노말 기술이 맞는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가캥카",
@@ -2905,7 +4962,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/116.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/116.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/116.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 117,
@@ -2928,7 +5005,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 25,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/117.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/117.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/117.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 118,
@@ -2951,7 +5048,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 15,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/118.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/118.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수의베일",
+        "nameEn": "water-veil",
+        "effectKo": "화상 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 119,
@@ -2974,7 +5091,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 39,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/119.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/119.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수의베일",
+        "nameEn": "water-veil",
+        "effectKo": "화상 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 120,
@@ -2997,7 +5134,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 34.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/120.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png",
+    "abilities": [
+      {
+        "nameKo": "발광",
+        "nameEn": "illuminate",
+        "effectKo": "야생 포켓몬과 만나기 쉬워진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "애널라이즈",
+        "nameEn": "analytic",
+        "effectKo": "제일 마지막에 기술을 쓰면 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 121,
@@ -3021,7 +5178,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 80,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/121.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/121.png",
+    "abilities": [
+      {
+        "nameKo": "발광",
+        "nameEn": "illuminate",
+        "effectKo": "야생 포켓몬과 만나기 쉬워진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "애널라이즈",
+        "nameEn": "analytic",
+        "effectKo": "제일 마지막에 기술을 쓰면 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 122,
@@ -3045,7 +5222,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 54.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/122.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/122.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/122.png",
+    "abilities": [
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "필터",
+        "nameEn": "filter",
+        "effectKo": "효과가 굉장한 기술의 위력을 약하게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 123,
@@ -3069,7 +5266,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 56,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/123.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/123.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/123.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불굴의마음",
+        "nameEn": "steadfast",
+        "effectKo": "풀죽을 때마다 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 124,
@@ -3093,7 +5310,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 40.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/124.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/124.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/124.png",
+    "abilities": [
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "예지몽",
+        "nameEn": "forewarn",
+        "effectKo": "상대가 지닌 기술을 꿰뚫어볼 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "건조피부",
+        "nameEn": "dry-skin",
+        "effectKo": "더우면 HP가 줄어든다. 물로 HP를 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 125,
@@ -3116,7 +5353,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 30,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/125.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/125.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/125.png",
+    "abilities": [
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의기양양",
+        "nameEn": "vital-spirit",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 126,
@@ -3139,7 +5390,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 44.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/126.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/126.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/126.png",
+    "abilities": [
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의기양양",
+        "nameEn": "vital-spirit",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 127,
@@ -3163,6 +5428,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 55,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/127.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/127.png",
+    "abilities": [
+      {
+        "nameKo": "괴력집게",
+        "nameEn": "hyper-cutter",
+        "effectKo": "상대가 공격을 떨어뜨리지 못한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자기과신",
+        "nameEn": "moxie",
+        "effectKo": "상대를 쓰러뜨리면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가쁘사이저",
@@ -3204,7 +5489,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 88.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/128.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/128.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/128.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "분노의경혈",
+        "nameEn": "anger-point",
+        "effectKo": "급소에 맞으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 129,
@@ -3227,7 +5532,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 10,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/129.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/129.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 130,
@@ -3252,6 +5571,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 235,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/130.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자기과신",
+        "nameEn": "moxie",
+        "effectKo": "상대를 쓰러뜨리면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가갸라도스",
@@ -3294,7 +5627,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.5,
     "weightKg": 220,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/131.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png",
+    "abilities": [
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 132,
@@ -3317,7 +5670,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/132.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png",
+    "abilities": [
+      {
+        "nameKo": "유연",
+        "nameEn": "limber",
+        "effectKo": "마비 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "괴짜",
+        "nameEn": "imposter",
+        "effectKo": "눈앞의 포켓몬으로 변신해버린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 133,
@@ -3340,7 +5707,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 6.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/133.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "적응력",
+        "nameEn": "adaptability",
+        "effectKo": "타입이 같은 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위험예지",
+        "nameEn": "anticipation",
+        "effectKo": "상대가 지닌 위험한 기술을 감지한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 134,
@@ -3363,7 +5750,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 29,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/134.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png",
+    "abilities": [
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 135,
@@ -3386,7 +5787,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 24.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/135.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png",
+    "abilities": [
+      {
+        "nameKo": "축전",
+        "nameEn": "volt-absorb",
+        "effectKo": "전기를 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "속보",
+        "nameEn": "quick-feet",
+        "effectKo": "상태 이상이 되면 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 136,
@@ -3409,7 +5824,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 25,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/136.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png",
+    "abilities": [
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 137,
@@ -3432,7 +5861,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 36.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/137.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/137.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/137.png",
+    "abilities": [
+      {
+        "nameKo": "트레이스",
+        "nameEn": "trace",
+        "effectKo": "상대와 같은 특성이 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "다운로드",
+        "nameEn": "download",
+        "effectKo": "상대의 능력을 보고 능력치를 바꾼다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "애널라이즈",
+        "nameEn": "analytic",
+        "effectKo": "제일 마지막에 기술을 쓰면 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 138,
@@ -3456,7 +5905,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 7.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/138.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/138.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/138.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 139,
@@ -3480,7 +5949,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 35,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/139.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/139.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/139.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 140,
@@ -3504,7 +5993,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 11.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/140.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/140.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/140.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "전투무장",
+        "nameEn": "battle-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 141,
@@ -3528,7 +6037,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 40.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/141.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/141.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/141.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "전투무장",
+        "nameEn": "battle-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 142,
@@ -3553,6 +6082,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 59,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/142.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png",
+    "abilities": [
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가프테라",
@@ -3594,7 +6143,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.1,
     "weightKg": 460,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/143.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png",
+    "abilities": [
+      {
+        "nameKo": "면역",
+        "nameEn": "immunity",
+        "effectKo": "독 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 144,
@@ -3618,7 +6187,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 55.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/144.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈숨기",
+        "nameEn": "snow-cloak",
+        "effectKo": "날씨가 싸라기눈일 때 회피율이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 145,
@@ -3642,7 +6225,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 52.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/145.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 146,
@@ -3666,7 +6263,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 60,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/146.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/146.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/146.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 147,
@@ -3689,7 +6300,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 3.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/147.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/147.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/147.png",
+    "abilities": [
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "이상한비늘",
+        "nameEn": "marvel-scale",
+        "effectKo": "상태 이상이 되면 방어가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 148,
@@ -3712,7 +6337,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 4,
     "weightKg": 16.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/148.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/148.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/148.png",
+    "abilities": [
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "이상한비늘",
+        "nameEn": "marvel-scale",
+        "effectKo": "상태 이상이 되면 방어가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 149,
@@ -3736,7 +6375,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.2,
     "weightKg": 210,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/149.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png",
+    "abilities": [
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "멀티스케일",
+        "nameEn": "multiscale",
+        "effectKo": "HP가 꽉 찼을 때 데미지가 줄어든다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 150,
@@ -3760,6 +6413,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 122,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/150.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가뮤츠 X",
@@ -3817,7 +6484,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/151.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png",
+    "abilities": [
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 152,
@@ -3840,7 +6515,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 6.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/152.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/152.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/152.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 153,
@@ -3863,7 +6552,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 15.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/153.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/153.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/153.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 154,
@@ -3886,7 +6589,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 100.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/154.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/154.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/154.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 155,
@@ -3909,7 +6626,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 7.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/155.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/155.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/155.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 156,
@@ -3932,7 +6663,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 19,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/156.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/156.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/156.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 157,
@@ -3955,7 +6700,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 79.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/157.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/157.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/157.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 158,
@@ -3978,7 +6737,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 9.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/158.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/158.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/158.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 159,
@@ -4001,7 +6774,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 25,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/159.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/159.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/159.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 160,
@@ -4024,7 +6811,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.3,
     "weightKg": 88.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/160.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/160.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/160.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 161,
@@ -4047,7 +6848,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/161.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/161.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/161.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 162,
@@ -4070,7 +6891,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 32.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/162.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/162.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/162.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 163,
@@ -4094,7 +6935,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 21.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/163.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/163.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/163.png",
+    "abilities": [
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "색안경",
+        "nameEn": "tinted-lens",
+        "effectKo": "효과가 별로인 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 164,
@@ -4118,7 +6979,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 40.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/164.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/164.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/164.png",
+    "abilities": [
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "색안경",
+        "nameEn": "tinted-lens",
+        "effectKo": "효과가 별로인 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 165,
@@ -4142,7 +7023,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 10.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/165.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/165.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/165.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "일찍기상",
+        "nameEn": "early-bird",
+        "effectKo": "잠듦 상태에서 빨리 깨어난다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 166,
@@ -4166,7 +7067,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 35.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/166.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/166.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/166.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "일찍기상",
+        "nameEn": "early-bird",
+        "effectKo": "잠듦 상태에서 빨리 깨어난다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 167,
@@ -4190,7 +7111,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 8.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/167.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/167.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/167.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 168,
@@ -4214,7 +7155,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 33.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/168.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/168.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/168.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 169,
@@ -4238,7 +7199,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 75,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/169.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/169.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/169.png",
+    "abilities": [
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 170,
@@ -4262,7 +7237,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 12,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/170.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/170.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/170.png",
+    "abilities": [
+      {
+        "nameKo": "축전",
+        "nameEn": "volt-absorb",
+        "effectKo": "전기를 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "발광",
+        "nameEn": "illuminate",
+        "effectKo": "야생 포켓몬과 만나기 쉬워진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 171,
@@ -4286,7 +7281,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 22.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/171.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/171.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/171.png",
+    "abilities": [
+      {
+        "nameKo": "축전",
+        "nameEn": "volt-absorb",
+        "effectKo": "전기를 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "발광",
+        "nameEn": "illuminate",
+        "effectKo": "야생 포켓몬과 만나기 쉬워진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 172,
@@ -4309,7 +7324,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/172.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/172.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/172.png",
+    "abilities": [
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 173,
@@ -4332,7 +7361,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/173.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/173.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/173.png",
+    "abilities": [
+      {
+        "nameKo": "헤롱헤롱바디",
+        "nameEn": "cute-charm",
+        "effectKo": "스치면 헤롱헤롱 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매직가드",
+        "nameEn": "magic-guard",
+        "effectKo": "공격 이외에는 데미지를 입지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "프렌드가드",
+        "nameEn": "friend-guard",
+        "effectKo": "같은 편의 데미지를 줄일 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 174,
@@ -4356,7 +7405,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/174.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/174.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/174.png",
+    "abilities": [
+      {
+        "nameKo": "헤롱헤롱바디",
+        "nameEn": "cute-charm",
+        "effectKo": "스치면 헤롱헤롱 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "승기",
+        "nameEn": "competitive",
+        "effectKo": "능력이 떨어지면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "프렌드가드",
+        "nameEn": "friend-guard",
+        "effectKo": "같은 편의 데미지를 줄일 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 175,
@@ -4379,7 +7448,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 1.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/175.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/175.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/175.png",
+    "abilities": [
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "하늘의은총",
+        "nameEn": "serene-grace",
+        "effectKo": "기술의 추가 효과가 나오기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "대운",
+        "nameEn": "super-luck",
+        "effectKo": "상대의 급소에 공격이 맞기 쉽다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 176,
@@ -4403,7 +7492,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 3.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/176.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/176.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/176.png",
+    "abilities": [
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "하늘의은총",
+        "nameEn": "serene-grace",
+        "effectKo": "기술의 추가 효과가 나오기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "대운",
+        "nameEn": "super-luck",
+        "effectKo": "상대의 급소에 공격이 맞기 쉽다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 177,
@@ -4427,7 +7536,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/177.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/177.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/177.png",
+    "abilities": [
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "일찍기상",
+        "nameEn": "early-bird",
+        "effectKo": "잠듦 상태에서 빨리 깨어난다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매직미러",
+        "nameEn": "magic-bounce",
+        "effectKo": "변화 기술을 되받아칠 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 178,
@@ -4451,7 +7580,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 15,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/178.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/178.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/178.png",
+    "abilities": [
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "일찍기상",
+        "nameEn": "early-bird",
+        "effectKo": "잠듦 상태에서 빨리 깨어난다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매직미러",
+        "nameEn": "magic-bounce",
+        "effectKo": "변화 기술을 되받아칠 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 179,
@@ -4474,7 +7623,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 7.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/179.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/179.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/179.png",
+    "abilities": [
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "플러스",
+        "nameEn": "plus",
+        "effectKo": "플러스나 마이너스가 있으면 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 180,
@@ -4497,7 +7660,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 13.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/180.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/180.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/180.png",
+    "abilities": [
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "플러스",
+        "nameEn": "plus",
+        "effectKo": "플러스나 마이너스가 있으면 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 181,
@@ -4521,6 +7698,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 61.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/181.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/181.png",
+    "abilities": [
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "플러스",
+        "nameEn": "plus",
+        "effectKo": "플러스나 마이너스가 있으면 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가전룡",
@@ -4562,7 +7753,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 5.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/182.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/182.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/182.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "치유의마음",
+        "nameEn": "healer",
+        "effectKo": "같은 편의 상태 이상을 가끔 회복시킨다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 183,
@@ -4586,7 +7791,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 8.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/183.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/183.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/183.png",
+    "abilities": [
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "천하장사",
+        "nameEn": "huge-power",
+        "effectKo": "물리공격의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 184,
@@ -4610,7 +7835,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 28.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/184.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/184.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/184.png",
+    "abilities": [
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "천하장사",
+        "nameEn": "huge-power",
+        "effectKo": "물리공격의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 185,
@@ -4633,7 +7878,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 38,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/185.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/185.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/185.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 186,
@@ -4656,7 +7921,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 33.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/186.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/186.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/186.png",
+    "abilities": [
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "잔비",
+        "nameEn": "drizzle",
+        "effectKo": "배틀에 나가면 비를 내린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 187,
@@ -4680,7 +7965,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 0.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/187.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/187.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/187.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 188,
@@ -4704,7 +8009,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/188.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/188.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/188.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 189,
@@ -4728,7 +8053,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/189.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/189.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/189.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 190,
@@ -4751,7 +8096,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 11.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/190.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/190.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/190.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스킬링크",
+        "nameEn": "skill-link",
+        "effectKo": "연속 기술을 많이 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 191,
@@ -4774,7 +8139,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 1.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/191.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/191.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/191.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "선파워",
+        "nameEn": "solar-power",
+        "effectKo": "맑으면 HP가 줄지만 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "일찍기상",
+        "nameEn": "early-bird",
+        "effectKo": "잠듦 상태에서 빨리 깨어난다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 192,
@@ -4797,7 +8182,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 8.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/192.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/192.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/192.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "선파워",
+        "nameEn": "solar-power",
+        "effectKo": "맑으면 HP가 줄지만 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "일찍기상",
+        "nameEn": "early-bird",
+        "effectKo": "잠듦 상태에서 빨리 깨어난다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 193,
@@ -4821,7 +8226,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 38,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/193.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/193.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/193.png",
+    "abilities": [
+      {
+        "nameKo": "가속",
+        "nameEn": "speed-boost",
+        "effectKo": "조금씩 스피드가 높아진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "복안",
+        "nameEn": "compound-eyes",
+        "effectKo": "기술의 명중률이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 194,
@@ -4845,7 +8270,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 8.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/194.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/194.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/194.png",
+    "abilities": [
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "천진",
+        "nameEn": "unaware",
+        "effectKo": "상대의 능력 변화를 무시한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 195,
@@ -4869,7 +8314,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 75,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/195.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/195.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/195.png",
+    "abilities": [
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "천진",
+        "nameEn": "unaware",
+        "effectKo": "상대의 능력 변화를 무시한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 196,
@@ -4892,7 +8357,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 26.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/196.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/196.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/196.png",
+    "abilities": [
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매직미러",
+        "nameEn": "magic-bounce",
+        "effectKo": "변화 기술을 되받아칠 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 197,
@@ -4915,7 +8394,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 27,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/197.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/197.png",
+    "abilities": [
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 198,
@@ -4939,7 +8432,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 2.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/198.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/198.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/198.png",
+    "abilities": [
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "대운",
+        "nameEn": "super-luck",
+        "effectKo": "상대의 급소에 공격이 맞기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 199,
@@ -4963,7 +8476,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 79.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/199.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/199.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/199.png",
+    "abilities": [
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 200,
@@ -4986,8 +8519,19 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/200.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/200.png"
-  },
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/200.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
+  }
+]
+
+const POKEMON_CHUNK_2: Pokemon[] = [
   {
     "id": 201,
     "dexNumber": 201,
@@ -5009,7 +8553,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/201.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/201.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/201.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 202,
@@ -5032,7 +8584,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 28.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/202.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/202.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/202.png",
+    "abilities": [
+      {
+        "nameKo": "그림자밟기",
+        "nameEn": "shadow-tag",
+        "effectKo": "상대의 그림자를 밟아 도망칠 수 없게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 203,
@@ -5056,7 +8622,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 41.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/203.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/203.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/203.png",
+    "abilities": [
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "일찍기상",
+        "nameEn": "early-bird",
+        "effectKo": "잠듦 상태에서 빨리 깨어난다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 204,
@@ -5079,7 +8665,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 7.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/204.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/204.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/204.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 205,
@@ -5103,7 +8703,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 125.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/205.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/205.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/205.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 206,
@@ -5126,7 +8740,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 14,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/206.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/206.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/206.png",
+    "abilities": [
+      {
+        "nameKo": "하늘의은총",
+        "nameEn": "serene-grace",
+        "effectKo": "기술의 추가 효과가 나오기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 207,
@@ -5150,7 +8784,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 64.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/207.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/207.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/207.png",
+    "abilities": [
+      {
+        "nameKo": "괴력집게",
+        "nameEn": "hyper-cutter",
+        "effectKo": "상대가 공격을 떨어뜨리지 못한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "면역",
+        "nameEn": "immunity",
+        "effectKo": "독 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 208,
@@ -5175,6 +8829,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 400,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/208.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/208.png",
+    "abilities": [
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가강철톤",
@@ -5216,7 +8890,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 7.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/209.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/209.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/209.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 210,
@@ -5239,7 +8933,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 48.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/210.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/210.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/210.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "속보",
+        "nameEn": "quick-feet",
+        "effectKo": "상태 이상이 되면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 211,
@@ -5263,7 +8977,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 3.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/211.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/211.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/211.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 212,
@@ -5288,6 +9022,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 118,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/212.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/212.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "라이트메탈",
+        "nameEn": "light-metal",
+        "effectKo": "자신의 무게가 절반이 된다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가핫삼",
@@ -5330,7 +9084,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 20.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/213.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/213.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/213.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "심술꾸러기",
+        "nameEn": "contrary",
+        "effectKo": "능력의 변화가 역전된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 214,
@@ -5355,6 +9129,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 54,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/214.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/214.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자기과신",
+        "nameEn": "moxie",
+        "effectKo": "상대를 쓰러뜨리면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가헤라크로스",
@@ -5397,7 +9191,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 28,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/215.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/215.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/215.png",
+    "abilities": [
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "나쁜손버릇",
+        "nameEn": "pickpocket",
+        "effectKo": "닿은 상대로부터 도구를 훔친다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 216,
@@ -5420,7 +9234,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 8.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/216.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/216.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/216.png",
+    "abilities": [
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "속보",
+        "nameEn": "quick-feet",
+        "effectKo": "상태 이상이 되면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "꿀모으기",
+        "nameEn": "honey-gather",
+        "effectKo": "달콤한꿀을 모아서 올 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 217,
@@ -5443,7 +9277,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 125.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/217.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/217.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/217.png",
+    "abilities": [
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "속보",
+        "nameEn": "quick-feet",
+        "effectKo": "상태 이상이 되면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 218,
@@ -5466,7 +9320,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 35,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/218.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/218.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/218.png",
+    "abilities": [
+      {
+        "nameKo": "마그마의무장",
+        "nameEn": "magma-armor",
+        "effectKo": "얼음 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 219,
@@ -5490,7 +9364,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 55,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/219.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/219.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/219.png",
+    "abilities": [
+      {
+        "nameKo": "마그마의무장",
+        "nameEn": "magma-armor",
+        "effectKo": "얼음 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 220,
@@ -5514,7 +9408,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 6.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/220.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/220.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/220.png",
+    "abilities": [
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈숨기",
+        "nameEn": "snow-cloak",
+        "effectKo": "날씨가 싸라기눈일 때 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 221,
@@ -5538,7 +9452,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 55.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/221.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/221.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/221.png",
+    "abilities": [
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈숨기",
+        "nameEn": "snow-cloak",
+        "effectKo": "날씨가 싸라기눈일 때 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 222,
@@ -5562,7 +9496,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/222.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/222.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/222.png",
+    "abilities": [
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 223,
@@ -5585,7 +9539,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 12,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/223.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/223.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/223.png",
+    "abilities": [
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "변덕쟁이",
+        "nameEn": "moody",
+        "effectKo": "능력이 오르락내리락한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 224,
@@ -5608,7 +9582,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 28.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/224.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/224.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/224.png",
+    "abilities": [
+      {
+        "nameKo": "흡반",
+        "nameEn": "suction-cups",
+        "effectKo": "교체시키는 기술이나 도구의 효과를 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "변덕쟁이",
+        "nameEn": "moody",
+        "effectKo": "능력이 오르락내리락한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 225,
@@ -5632,7 +9626,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 16,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/225.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/225.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/225.png",
+    "abilities": [
+      {
+        "nameKo": "의기양양",
+        "nameEn": "vital-spirit",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 226,
@@ -5656,7 +9670,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.1,
     "weightKg": 220,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/226.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/226.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/226.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수의베일",
+        "nameEn": "water-veil",
+        "effectKo": "화상 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 227,
@@ -5680,7 +9714,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 50.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/227.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/227.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/227.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 228,
@@ -5704,7 +9758,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 10.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/228.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/228.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/228.png",
+    "abilities": [
+      {
+        "nameKo": "일찍기상",
+        "nameEn": "early-bird",
+        "effectKo": "잠듦 상태에서 빨리 깨어난다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 229,
@@ -5729,6 +9803,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 35,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/229.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/229.png",
+    "abilities": [
+      {
+        "nameKo": "일찍기상",
+        "nameEn": "early-bird",
+        "effectKo": "잠듦 상태에서 빨리 깨어난다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가헬가",
@@ -5771,7 +9865,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 152,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/230.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/230.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/230.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 231,
@@ -5794,7 +9908,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 33.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/231.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/231.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/231.png",
+    "abilities": [
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 232,
@@ -5817,7 +9945,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 120,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/232.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/232.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/232.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 233,
@@ -5840,7 +9982,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 32.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/233.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/233.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/233.png",
+    "abilities": [
+      {
+        "nameKo": "트레이스",
+        "nameEn": "trace",
+        "effectKo": "상대와 같은 특성이 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "다운로드",
+        "nameEn": "download",
+        "effectKo": "상대의 능력을 보고 능력치를 바꾼다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "애널라이즈",
+        "nameEn": "analytic",
+        "effectKo": "제일 마지막에 기술을 쓰면 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 234,
@@ -5863,7 +10025,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 71.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/234.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/234.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/234.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 235,
@@ -5886,7 +10068,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 58,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/235.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/235.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/235.png",
+    "abilities": [
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "변덕쟁이",
+        "nameEn": "moody",
+        "effectKo": "능력이 오르락내리락한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 236,
@@ -5909,7 +10111,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 21,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/236.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/236.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/236.png",
+    "abilities": [
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불굴의마음",
+        "nameEn": "steadfast",
+        "effectKo": "풀죽을 때마다 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의기양양",
+        "nameEn": "vital-spirit",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 237,
@@ -5932,7 +10154,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 48,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/237.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/237.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/237.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불굴의마음",
+        "nameEn": "steadfast",
+        "effectKo": "풀죽을 때마다 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 238,
@@ -5956,7 +10198,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/238.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/238.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/238.png",
+    "abilities": [
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "예지몽",
+        "nameEn": "forewarn",
+        "effectKo": "상대가 지닌 기술을 꿰뚫어볼 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 239,
@@ -5979,7 +10241,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 23.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/239.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/239.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/239.png",
+    "abilities": [
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의기양양",
+        "nameEn": "vital-spirit",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 240,
@@ -6002,7 +10278,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 21.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/240.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/240.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/240.png",
+    "abilities": [
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의기양양",
+        "nameEn": "vital-spirit",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 241,
@@ -6025,7 +10315,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 75.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/241.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/241.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/241.png",
+    "abilities": [
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "배짱",
+        "nameEn": "scrappy",
+        "effectKo": "고스트타입에 노말 기술이 맞는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 242,
@@ -6048,7 +10358,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 46.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/242.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/242.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/242.png",
+    "abilities": [
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "하늘의은총",
+        "nameEn": "serene-grace",
+        "effectKo": "기술의 추가 효과가 나오기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "치유의마음",
+        "nameEn": "healer",
+        "effectKo": "같은 편의 상태 이상을 가끔 회복시킨다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 243,
@@ -6071,7 +10401,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.9,
     "weightKg": 178,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/243.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/243.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/243.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 244,
@@ -6094,7 +10438,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.1,
     "weightKg": 198,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/244.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/244.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/244.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 245,
@@ -6117,7 +10475,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 187,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/245.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/245.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/245.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 246,
@@ -6141,7 +10513,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 72,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/246.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/246.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/246.png",
+    "abilities": [
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 247,
@@ -6165,7 +10551,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 152,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/247.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/247.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/247.png",
+    "abilities": [
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 248,
@@ -6190,6 +10584,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 202,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/248.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/248.png",
+    "abilities": [
+      {
+        "nameKo": "모래날림",
+        "nameEn": "sand-stream",
+        "effectKo": "배틀에서 모래바람을 일으킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가마기라스",
@@ -6232,7 +10640,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 5.2,
     "weightKg": 216,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/249.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/249.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/249.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "멀티스케일",
+        "nameEn": "multiscale",
+        "effectKo": "HP가 꽉 찼을 때 데미지가 줄어든다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 250,
@@ -6256,7 +10678,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.8,
     "weightKg": 199,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/250.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/250.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/250.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 251,
@@ -6280,7 +10716,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/251.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/251.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/251.png",
+    "abilities": [
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 252,
@@ -6303,7 +10747,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/252.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/252.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/252.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 253,
@@ -6326,7 +10784,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 21.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/253.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/253.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/253.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 254,
@@ -6350,6 +10822,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 52.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/254.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/254.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가나무킹",
@@ -6391,7 +10877,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 2.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/255.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/255.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/255.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "가속",
+        "nameEn": "speed-boost",
+        "effectKo": "조금씩 스피드가 높아진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 256,
@@ -6415,7 +10915,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 19.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/256.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/256.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/256.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "가속",
+        "nameEn": "speed-boost",
+        "effectKo": "조금씩 스피드가 높아진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 257,
@@ -6440,6 +10954,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 52,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/257.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/257.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "가속",
+        "nameEn": "speed-boost",
+        "effectKo": "조금씩 스피드가 높아진다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가번치코",
@@ -6481,7 +11009,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 7.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/258.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/258.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/258.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 259,
@@ -6505,7 +11047,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 28,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/259.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/259.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/259.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 260,
@@ -6530,6 +11086,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 81.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/260.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/260.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가대짱이",
@@ -6571,7 +11141,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 13.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/261.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/261.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/261.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "속보",
+        "nameEn": "quick-feet",
+        "effectKo": "상태 이상이 되면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 262,
@@ -6594,7 +11184,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 37,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/262.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/262.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/262.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "속보",
+        "nameEn": "quick-feet",
+        "effectKo": "상태 이상이 되면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자기과신",
+        "nameEn": "moxie",
+        "effectKo": "상대를 쓰러뜨리면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 263,
@@ -6617,7 +11227,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 17.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/263.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/263.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/263.png",
+    "abilities": [
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "속보",
+        "nameEn": "quick-feet",
+        "effectKo": "상태 이상이 되면 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 264,
@@ -6640,7 +11270,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 32.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/264.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/264.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/264.png",
+    "abilities": [
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "속보",
+        "nameEn": "quick-feet",
+        "effectKo": "상태 이상이 되면 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 265,
@@ -6663,7 +11313,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 3.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/265.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/265.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/265.png",
+    "abilities": [
+      {
+        "nameKo": "인분",
+        "nameEn": "shield-dust",
+        "effectKo": "기술의 추가 효과를 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 266,
@@ -6686,7 +11350,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 10,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/266.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/266.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/266.png",
+    "abilities": [
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 267,
@@ -6710,7 +11382,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 28.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/267.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/267.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/267.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 268,
@@ -6733,7 +11419,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 11.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/268.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/268.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/268.png",
+    "abilities": [
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 269,
@@ -6757,7 +11451,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 31.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/269.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/269.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/269.png",
+    "abilities": [
+      {
+        "nameKo": "인분",
+        "nameEn": "shield-dust",
+        "effectKo": "기술의 추가 효과를 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "복안",
+        "nameEn": "compound-eyes",
+        "effectKo": "기술의 명중률이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 270,
@@ -6781,7 +11489,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 2.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/270.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/270.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/270.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "젖은접시",
+        "nameEn": "rain-dish",
+        "effectKo": "비가 올 때 조금씩 HP를 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 271,
@@ -6805,7 +11533,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 32.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/271.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/271.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/271.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "젖은접시",
+        "nameEn": "rain-dish",
+        "effectKo": "비가 올 때 조금씩 HP를 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 272,
@@ -6829,7 +11577,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 55,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/272.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/272.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/272.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "젖은접시",
+        "nameEn": "rain-dish",
+        "effectKo": "비가 올 때 조금씩 HP를 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 273,
@@ -6852,7 +11620,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/273.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/273.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/273.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "일찍기상",
+        "nameEn": "early-bird",
+        "effectKo": "잠듦 상태에서 빨리 깨어난다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "나쁜손버릇",
+        "nameEn": "pickpocket",
+        "effectKo": "닿은 상대로부터 도구를 훔친다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 274,
@@ -6876,7 +11664,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 28,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/274.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/274.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/274.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "일찍기상",
+        "nameEn": "early-bird",
+        "effectKo": "잠듦 상태에서 빨리 깨어난다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "나쁜손버릇",
+        "nameEn": "pickpocket",
+        "effectKo": "닿은 상대로부터 도구를 훔친다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 275,
@@ -6900,7 +11708,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 59.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/275.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/275.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/275.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "바람타기",
+        "nameEn": "wind-rider",
+        "isHidden": false
+      },
+      {
+        "nameKo": "나쁜손버릇",
+        "nameEn": "pickpocket",
+        "effectKo": "닿은 상대로부터 도구를 훔친다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 276,
@@ -6924,7 +11751,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 2.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/276.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/276.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/276.png",
+    "abilities": [
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "배짱",
+        "nameEn": "scrappy",
+        "effectKo": "고스트타입에 노말 기술이 맞는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 277,
@@ -6948,7 +11789,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 19.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/277.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/277.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/277.png",
+    "abilities": [
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "배짱",
+        "nameEn": "scrappy",
+        "effectKo": "고스트타입에 노말 기술이 맞는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 278,
@@ -6972,7 +11827,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 9.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/278.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/278.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/278.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "젖은접시",
+        "nameEn": "rain-dish",
+        "effectKo": "비가 올 때 조금씩 HP를 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 279,
@@ -6996,7 +11871,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 28,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/279.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/279.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/279.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "잔비",
+        "nameEn": "drizzle",
+        "effectKo": "배틀에 나가면 비를 내린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "젖은접시",
+        "nameEn": "rain-dish",
+        "effectKo": "비가 올 때 조금씩 HP를 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 280,
@@ -7020,7 +11915,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 6.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/280.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/280.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/280.png",
+    "abilities": [
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "트레이스",
+        "nameEn": "trace",
+        "effectKo": "상대와 같은 특성이 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 281,
@@ -7044,7 +11959,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 20.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/281.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/281.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/281.png",
+    "abilities": [
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "트레이스",
+        "nameEn": "trace",
+        "effectKo": "상대와 같은 특성이 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 282,
@@ -7069,6 +12004,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 48.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/282.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/282.png",
+    "abilities": [
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "트레이스",
+        "nameEn": "trace",
+        "effectKo": "상대와 같은 특성이 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가가디안",
@@ -7111,7 +12066,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 1.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/283.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/283.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/283.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "젖은접시",
+        "nameEn": "rain-dish",
+        "effectKo": "비가 올 때 조금씩 HP를 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 284,
@@ -7135,7 +12104,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 3.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/284.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/284.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/284.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 285,
@@ -7158,7 +12141,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 4.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/285.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/285.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/285.png",
+    "abilities": [
+      {
+        "nameKo": "포자",
+        "nameEn": "effect-spore",
+        "effectKo": "스치면 독, 마비, 잠듦 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "포이즌힐",
+        "nameEn": "poison-heal",
+        "effectKo": "독 상태가 되면 HP를 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "속보",
+        "nameEn": "quick-feet",
+        "effectKo": "상태 이상이 되면 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 286,
@@ -7182,7 +12185,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 39.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/286.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/286.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/286.png",
+    "abilities": [
+      {
+        "nameKo": "포자",
+        "nameEn": "effect-spore",
+        "effectKo": "스치면 독, 마비, 잠듦 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "포이즌힐",
+        "nameEn": "poison-heal",
+        "effectKo": "독 상태가 되면 HP를 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 287,
@@ -7205,7 +12228,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 24,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/287.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/287.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/287.png",
+    "abilities": [
+      {
+        "nameKo": "게으름",
+        "nameEn": "truant",
+        "effectKo": "연속으로 공격할 수 없다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 288,
@@ -7228,7 +12259,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 46.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/288.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/288.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/288.png",
+    "abilities": [
+      {
+        "nameKo": "의기양양",
+        "nameEn": "vital-spirit",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 289,
@@ -7251,7 +12290,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 130.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/289.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/289.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/289.png",
+    "abilities": [
+      {
+        "nameKo": "게으름",
+        "nameEn": "truant",
+        "effectKo": "연속으로 공격할 수 없다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 290,
@@ -7275,7 +12322,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 5.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/290.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/290.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/290.png",
+    "abilities": [
+      {
+        "nameKo": "복안",
+        "nameEn": "compound-eyes",
+        "effectKo": "기술의 명중률이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 291,
@@ -7299,7 +12360,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 12,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/291.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/291.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/291.png",
+    "abilities": [
+      {
+        "nameKo": "가속",
+        "nameEn": "speed-boost",
+        "effectKo": "조금씩 스피드가 높아진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 292,
@@ -7323,7 +12398,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 1.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/292.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/292.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/292.png",
+    "abilities": [
+      {
+        "nameKo": "불가사의부적",
+        "nameEn": "wonder-guard",
+        "effectKo": "효과가 굉장한 기술밖에 맞지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 293,
@@ -7346,7 +12429,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 16.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/293.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/293.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/293.png",
+    "abilities": [
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 294,
@@ -7369,7 +12466,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 40.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/294.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/294.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/294.png",
+    "abilities": [
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "배짱",
+        "nameEn": "scrappy",
+        "effectKo": "고스트타입에 노말 기술이 맞는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 295,
@@ -7392,7 +12503,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 84,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/295.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/295.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/295.png",
+    "abilities": [
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "배짱",
+        "nameEn": "scrappy",
+        "effectKo": "고스트타입에 노말 기술이 맞는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 296,
@@ -7415,7 +12540,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 86.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/296.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/296.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/296.png",
+    "abilities": [
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 297,
@@ -7438,7 +12583,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.3,
     "weightKg": 253.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/297.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/297.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/297.png",
+    "abilities": [
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 298,
@@ -7462,7 +12627,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/298.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/298.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/298.png",
+    "abilities": [
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "천하장사",
+        "nameEn": "huge-power",
+        "effectKo": "물리공격의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 299,
@@ -7485,7 +12670,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 97,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/299.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/299.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/299.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자력",
+        "nameEn": "magnet-pull",
+        "effectKo": "강철의 포켓몬을 도망칠 수 없게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래의힘",
+        "nameEn": "sand-force",
+        "effectKo": "모래바람으로 위력이 올라가는 기술이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 300,
@@ -7508,8 +12713,31 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 11,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/300.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/300.png"
-  },
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/300.png",
+    "abilities": [
+      {
+        "nameKo": "헤롱헤롱바디",
+        "nameEn": "cute-charm",
+        "effectKo": "스치면 헤롱헤롱 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "노말스킨",
+        "nameEn": "normalize",
+        "effectKo": "쓴 기술이 모두 노말타입이 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "미라클스킨",
+        "nameEn": "wonder-skin",
+        "effectKo": "변화 기술을 받기 어려운 몸으로 되어 있다.",
+        "isHidden": true
+      }
+    ]
+  }
+]
+
+const POKEMON_CHUNK_3: Pokemon[] = [
   {
     "id": 301,
     "dexNumber": 301,
@@ -7531,7 +12759,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 32.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/301.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/301.png",
+    "abilities": [
+      {
+        "nameKo": "헤롱헤롱바디",
+        "nameEn": "cute-charm",
+        "effectKo": "스치면 헤롱헤롱 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "노말스킨",
+        "nameEn": "normalize",
+        "effectKo": "쓴 기술이 모두 노말타입이 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "미라클스킨",
+        "nameEn": "wonder-skin",
+        "effectKo": "변화 기술을 받기 어려운 몸으로 되어 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 302,
@@ -7556,6 +12804,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 11,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/302.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/302.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "시간벌기",
+        "nameEn": "stall",
+        "effectKo": "상대보다 재빨라도 행동이 느려진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가깜까미",
@@ -7599,6 +12867,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 11.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/303.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/303.png",
+    "abilities": [
+      {
+        "nameKo": "괴력집게",
+        "nameEn": "hyper-cutter",
+        "effectKo": "상대가 공격을 떨어뜨리지 못한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가입치트",
@@ -7641,7 +12929,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 60,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/304.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/304.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/304.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "헤비메탈",
+        "nameEn": "heavy-metal",
+        "effectKo": "자신의 무게가 2배가 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 305,
@@ -7665,7 +12973,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 120,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/305.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/305.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/305.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "헤비메탈",
+        "nameEn": "heavy-metal",
+        "effectKo": "자신의 무게가 2배가 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 306,
@@ -7690,6 +13018,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 360,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/306.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/306.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "헤비메탈",
+        "nameEn": "heavy-metal",
+        "effectKo": "자신의 무게가 2배가 된다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가보스로라",
@@ -7731,7 +13079,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 11.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/307.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/307.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/307.png",
+    "abilities": [
+      {
+        "nameKo": "순수한힘",
+        "nameEn": "pure-power",
+        "effectKo": "물리공격의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 308,
@@ -7756,6 +13118,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 31.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/308.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/308.png",
+    "abilities": [
+      {
+        "nameKo": "순수한힘",
+        "nameEn": "pure-power",
+        "effectKo": "물리공격의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가요가램",
@@ -7797,7 +13173,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 15.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/309.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/309.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/309.png",
+    "abilities": [
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이너스",
+        "nameEn": "minus",
+        "effectKo": "플러스나 마이너스가 있으면 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 310,
@@ -7821,6 +13217,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 40.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/310.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/310.png",
+    "abilities": [
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이너스",
+        "nameEn": "minus",
+        "effectKo": "플러스나 마이너스가 있으면 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가썬더볼트",
@@ -7861,7 +13277,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 4.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/311.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/311.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/311.png",
+    "abilities": [
+      {
+        "nameKo": "플러스",
+        "nameEn": "plus",
+        "effectKo": "플러스나 마이너스가 있으면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 312,
@@ -7884,7 +13314,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 4.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/312.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/312.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/312.png",
+    "abilities": [
+      {
+        "nameKo": "마이너스",
+        "nameEn": "minus",
+        "effectKo": "플러스나 마이너스가 있으면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "축전",
+        "nameEn": "volt-absorb",
+        "effectKo": "전기를 받으면 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 313,
@@ -7907,7 +13351,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 17.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/313.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/313.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/313.png",
+    "abilities": [
+      {
+        "nameKo": "발광",
+        "nameEn": "illuminate",
+        "effectKo": "야생 포켓몬과 만나기 쉬워진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 314,
@@ -7930,7 +13394,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 17.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/314.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/314.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/314.png",
+    "abilities": [
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "색안경",
+        "nameEn": "tinted-lens",
+        "effectKo": "효과가 별로인 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 315,
@@ -7954,7 +13438,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/315.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/315.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/315.png",
+    "abilities": [
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 316,
@@ -7977,7 +13481,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 10.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/316.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/316.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/316.png",
+    "abilities": [
+      {
+        "nameKo": "해감액",
+        "nameEn": "liquid-ooze",
+        "effectKo": "흡수한 상대의 HP를 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "점착",
+        "nameEn": "sticky-hold",
+        "effectKo": "달라붙어서 도구를 지킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 317,
@@ -8000,7 +13524,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 80,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/317.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/317.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/317.png",
+    "abilities": [
+      {
+        "nameKo": "해감액",
+        "nameEn": "liquid-ooze",
+        "effectKo": "흡수한 상대의 HP를 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "점착",
+        "nameEn": "sticky-hold",
+        "effectKo": "달라붙어서 도구를 지킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 318,
@@ -8024,7 +13568,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 20.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/318.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/318.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/318.png",
+    "abilities": [
+      {
+        "nameKo": "까칠한피부",
+        "nameEn": "rough-skin",
+        "effectKo": "접촉한 상대에게 상처를 입힌다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "가속",
+        "nameEn": "speed-boost",
+        "effectKo": "조금씩 스피드가 높아진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 319,
@@ -8049,6 +13607,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 88.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/319.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/319.png",
+    "abilities": [
+      {
+        "nameKo": "까칠한피부",
+        "nameEn": "rough-skin",
+        "effectKo": "접촉한 상대에게 상처를 입힌다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "가속",
+        "nameEn": "speed-boost",
+        "effectKo": "조금씩 스피드가 높아진다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가샤크니아",
@@ -8090,7 +13662,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 130,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/320.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/320.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/320.png",
+    "abilities": [
+      {
+        "nameKo": "수의베일",
+        "nameEn": "water-veil",
+        "effectKo": "화상 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 321,
@@ -8113,7 +13705,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 14.5,
     "weightKg": 398,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/321.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/321.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/321.png",
+    "abilities": [
+      {
+        "nameKo": "수의베일",
+        "nameEn": "water-veil",
+        "effectKo": "화상 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 322,
@@ -8137,7 +13749,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 24,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/322.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/322.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/322.png",
+    "abilities": [
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "단순",
+        "nameEn": "simple",
+        "effectKo": "능력 변화가 여느 때보다 심하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 323,
@@ -8162,6 +13794,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 220,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/323.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/323.png",
+    "abilities": [
+      {
+        "nameKo": "마그마의무장",
+        "nameEn": "magma-armor",
+        "effectKo": "얼음 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "하드록",
+        "nameEn": "solid-rock",
+        "effectKo": "효과가 굉장한 기술의 위력을 약하게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "분노의경혈",
+        "nameEn": "anger-point",
+        "effectKo": "급소에 맞으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가폭타",
@@ -8203,7 +13855,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 80.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/324.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/324.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/324.png",
+    "abilities": [
+      {
+        "nameKo": "하얀연기",
+        "nameEn": "white-smoke",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "가뭄",
+        "nameEn": "drought",
+        "effectKo": "배틀에 나가면 햇살이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 325,
@@ -8226,7 +13898,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 30.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/325.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/325.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/325.png",
+    "abilities": [
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 326,
@@ -8249,7 +13941,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 71.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/326.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/326.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/326.png",
+    "abilities": [
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 327,
@@ -8272,7 +13984,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/327.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/327.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/327.png",
+    "abilities": [
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "갈지자걸음",
+        "nameEn": "tangled-feet",
+        "effectKo": "혼란에 빠져있으면 회피하기 쉬워진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "심술꾸러기",
+        "nameEn": "contrary",
+        "effectKo": "능력의 변화가 역전된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 328,
@@ -8295,7 +14027,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 15,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/328.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/328.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/328.png",
+    "abilities": [
+      {
+        "nameKo": "괴력집게",
+        "nameEn": "hyper-cutter",
+        "effectKo": "상대가 공격을 떨어뜨리지 못한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "개미지옥",
+        "nameEn": "arena-trap",
+        "effectKo": "배틀에서 상대를 도망칠 수 없게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 329,
@@ -8319,7 +14071,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 15.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/329.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/329.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/329.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 330,
@@ -8343,7 +14103,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 82,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/330.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/330.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/330.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 331,
@@ -8366,7 +14134,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 51.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/331.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/331.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/331.png",
+    "abilities": [
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 332,
@@ -8390,7 +14172,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 77.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/332.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/332.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/332.png",
+    "abilities": [
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 333,
@@ -8414,7 +14210,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 1.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/333.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/333.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/333.png",
+    "abilities": [
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날씨부정",
+        "nameEn": "cloud-nine",
+        "effectKo": "날씨의 영향이 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 334,
@@ -8439,6 +14249,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 20.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/334.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/334.png",
+    "abilities": [
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날씨부정",
+        "nameEn": "cloud-nine",
+        "effectKo": "날씨의 영향이 없어진다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가파비코리",
@@ -8480,7 +14304,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 40.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/335.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/335.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/335.png",
+    "abilities": [
+      {
+        "nameKo": "면역",
+        "nameEn": "immunity",
+        "effectKo": "독 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "독폭주",
+        "nameEn": "toxic-boost",
+        "effectKo": "독 상태일 때 물리공격의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 336,
@@ -8503,7 +14341,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.7,
     "weightKg": 52.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/336.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/336.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/336.png",
+    "abilities": [
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 337,
@@ -8527,7 +14379,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 168,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/337.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/337.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/337.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 338,
@@ -8551,7 +14411,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 154,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/338.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/338.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/338.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 339,
@@ -8575,7 +14443,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 1.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/339.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/339.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/339.png",
+    "abilities": [
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위험예지",
+        "nameEn": "anticipation",
+        "effectKo": "상대가 지닌 위험한 기술을 감지한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 340,
@@ -8599,7 +14487,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 23.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/340.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/340.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/340.png",
+    "abilities": [
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위험예지",
+        "nameEn": "anticipation",
+        "effectKo": "상대가 지닌 위험한 기술을 감지한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 341,
@@ -8622,7 +14530,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 11.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/341.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/341.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/341.png",
+    "abilities": [
+      {
+        "nameKo": "괴력집게",
+        "nameEn": "hyper-cutter",
+        "effectKo": "상대가 공격을 떨어뜨리지 못한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "적응력",
+        "nameEn": "adaptability",
+        "effectKo": "타입이 같은 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 342,
@@ -8646,7 +14574,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 32.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/342.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/342.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/342.png",
+    "abilities": [
+      {
+        "nameKo": "괴력집게",
+        "nameEn": "hyper-cutter",
+        "effectKo": "상대가 공격을 떨어뜨리지 못한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "적응력",
+        "nameEn": "adaptability",
+        "effectKo": "타입이 같은 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 343,
@@ -8670,7 +14618,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 21.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/343.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/343.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/343.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 344,
@@ -8694,7 +14650,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 108,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/344.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/344.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/344.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 345,
@@ -8718,7 +14682,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 23.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/345.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/345.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/345.png",
+    "abilities": [
+      {
+        "nameKo": "흡반",
+        "nameEn": "suction-cups",
+        "effectKo": "교체시키는 기술이나 도구의 효과를 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마중물",
+        "nameEn": "storm-drain",
+        "effectKo": "물을 끌어모아 특수공격을 올린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 346,
@@ -8742,7 +14720,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 60.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/346.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/346.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/346.png",
+    "abilities": [
+      {
+        "nameKo": "흡반",
+        "nameEn": "suction-cups",
+        "effectKo": "교체시키는 기술이나 도구의 효과를 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마중물",
+        "nameEn": "storm-drain",
+        "effectKo": "물을 끌어모아 특수공격을 올린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 347,
@@ -8766,7 +14758,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 12.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/347.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/347.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/347.png",
+    "abilities": [
+      {
+        "nameKo": "전투무장",
+        "nameEn": "battle-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 348,
@@ -8790,7 +14796,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 68.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/348.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/348.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/348.png",
+    "abilities": [
+      {
+        "nameKo": "전투무장",
+        "nameEn": "battle-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 349,
@@ -8813,7 +14833,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 7.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/349.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/349.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/349.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "적응력",
+        "nameEn": "adaptability",
+        "effectKo": "타입이 같은 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 350,
@@ -8836,7 +14876,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 6.2,
     "weightKg": 162,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/350.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/350.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/350.png",
+    "abilities": [
+      {
+        "nameKo": "이상한비늘",
+        "nameEn": "marvel-scale",
+        "effectKo": "상태 이상이 되면 방어가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "승기",
+        "nameEn": "competitive",
+        "effectKo": "능력이 떨어지면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "헤롱헤롱바디",
+        "nameEn": "cute-charm",
+        "effectKo": "스치면 헤롱헤롱 상태가 될 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 351,
@@ -8859,7 +14919,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 0.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/351.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/351.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/351.png",
+    "abilities": [
+      {
+        "nameKo": "기분파",
+        "nameEn": "forecast",
+        "effectKo": "날씨에 따라 캐스퐁이 변화한다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 352,
@@ -8882,7 +14950,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 22,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/352.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/352.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/352.png",
+    "abilities": [
+      {
+        "nameKo": "변색",
+        "nameEn": "color-change",
+        "effectKo": "받은 기술의 타입으로 변화한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "변환자재",
+        "nameEn": "protean",
+        "effectKo": "사용한 기술과 같은 타입으로 변화한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 353,
@@ -8905,7 +14987,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 2.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/353.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/353.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/353.png",
+    "abilities": [
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저주받은바디",
+        "nameEn": "cursed-body",
+        "effectKo": "공격받으면 가끔 상대를 사슬묶기 상태로 만든다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 354,
@@ -8929,6 +15031,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 12.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/354.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/354.png",
+    "abilities": [
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저주받은바디",
+        "nameEn": "cursed-body",
+        "effectKo": "공격받으면 가끔 상대를 사슬묶기 상태로 만든다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가다크펫",
@@ -8969,7 +15091,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 15,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/355.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/355.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/355.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 356,
@@ -8992,7 +15128,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 30.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/356.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/356.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/356.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 357,
@@ -9016,7 +15166,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 100,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/357.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/357.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/357.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "선파워",
+        "nameEn": "solar-power",
+        "effectKo": "맑으면 HP가 줄지만 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수확",
+        "nameEn": "harvest",
+        "effectKo": "사용한 나무열매를 몇 번이고 만들어 낸다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 358,
@@ -9039,7 +15209,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/358.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/358.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/358.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 359,
@@ -9063,6 +15241,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 47,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/359.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/359.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "대운",
+        "nameEn": "super-luck",
+        "effectKo": "상대의 급소에 공격이 맞기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정의의마음",
+        "nameEn": "justified",
+        "effectKo": "악 기술을 받으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가앱솔",
@@ -9103,7 +15301,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 14,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/360.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/360.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/360.png",
+    "abilities": [
+      {
+        "nameKo": "그림자밟기",
+        "nameEn": "shadow-tag",
+        "effectKo": "상대의 그림자를 밟아 도망칠 수 없게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 361,
@@ -9126,7 +15338,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 16.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/361.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/361.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/361.png",
+    "abilities": [
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "변덕쟁이",
+        "nameEn": "moody",
+        "effectKo": "능력이 오르락내리락한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 362,
@@ -9150,6 +15382,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 256.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/362.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/362.png",
+    "abilities": [
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "변덕쟁이",
+        "nameEn": "moody",
+        "effectKo": "능력이 오르락내리락한다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가얼음귀신",
@@ -9191,7 +15443,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 39.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/363.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/363.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/363.png",
+    "abilities": [
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 364,
@@ -9215,7 +15487,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 87.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/364.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/364.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/364.png",
+    "abilities": [
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 365,
@@ -9239,7 +15531,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 150.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/365.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/365.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/365.png",
+    "abilities": [
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 366,
@@ -9262,7 +15574,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 52.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/366.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/366.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/366.png",
+    "abilities": [
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 367,
@@ -9285,7 +15611,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 27,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/367.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/367.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/367.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수의베일",
+        "nameEn": "water-veil",
+        "effectKo": "화상 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 368,
@@ -9308,7 +15648,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 22.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/368.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/368.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/368.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 369,
@@ -9332,7 +15686,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 23.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/369.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/369.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/369.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 370,
@@ -9355,7 +15729,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 8.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/370.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/370.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/370.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 371,
@@ -9378,7 +15766,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 42.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/371.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/371.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/371.png",
+    "abilities": [
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 372,
@@ -9401,7 +15803,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 110.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/372.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/372.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/372.png",
+    "abilities": [
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 373,
@@ -9426,6 +15842,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 102.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/373.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/373.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자기과신",
+        "nameEn": "moxie",
+        "effectKo": "상대를 쓰러뜨리면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가보만다",
@@ -9468,7 +15898,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 95.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/374.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/374.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/374.png",
+    "abilities": [
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "라이트메탈",
+        "nameEn": "light-metal",
+        "effectKo": "자신의 무게가 절반이 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 375,
@@ -9492,7 +15936,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 202.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/375.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/375.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/375.png",
+    "abilities": [
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "라이트메탈",
+        "nameEn": "light-metal",
+        "effectKo": "자신의 무게가 절반이 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 376,
@@ -9517,6 +15975,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 550,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/376.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/376.png",
+    "abilities": [
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "라이트메탈",
+        "nameEn": "light-metal",
+        "effectKo": "자신의 무게가 절반이 된다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가메타그로스",
@@ -9558,7 +16030,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 230,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/377.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/377.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/377.png",
+    "abilities": [
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 378,
@@ -9581,7 +16067,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 175,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/378.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/378.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/378.png",
+    "abilities": [
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 379,
@@ -9604,7 +16104,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.9,
     "weightKg": 205,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/379.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/379.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/379.png",
+    "abilities": [
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "라이트메탈",
+        "nameEn": "light-metal",
+        "effectKo": "자신의 무게가 절반이 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 380,
@@ -9629,6 +16143,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 40,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/380.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/380.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ],
     "megaForms": [
       {
         "label": "메가라티아스",
@@ -9672,6 +16194,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 60,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/381.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/381.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ],
     "megaForms": [
       {
         "label": "메가라티오스",
@@ -9713,7 +16243,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 4.5,
     "weightKg": 352,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/382.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/382.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/382.png",
+    "abilities": [
+      {
+        "nameKo": "잔비",
+        "nameEn": "drizzle",
+        "effectKo": "배틀에 나가면 비를 내린다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 383,
@@ -9736,7 +16274,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.5,
     "weightKg": 950,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/383.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/383.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/383.png",
+    "abilities": [
+      {
+        "nameKo": "가뭄",
+        "nameEn": "drought",
+        "effectKo": "배틀에 나가면 햇살이 강해진다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 384,
@@ -9761,6 +16307,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 206.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/384.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png",
+    "abilities": [
+      {
+        "nameKo": "에어록",
+        "nameEn": "air-lock",
+        "effectKo": "날씨의 영향이 없어진다.",
+        "isHidden": false
+      }
+    ],
     "megaForms": [
       {
         "label": "메가레쿠쟈",
@@ -9803,7 +16357,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 1.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/385.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/385.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/385.png",
+    "abilities": [
+      {
+        "nameKo": "하늘의은총",
+        "nameEn": "serene-grace",
+        "effectKo": "기술의 추가 효과가 나오기 쉽다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 386,
@@ -9826,7 +16388,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 60.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/386.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/386.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/386.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 387,
@@ -9849,7 +16419,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 10.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/387.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/387.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/387.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 388,
@@ -9872,7 +16456,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 97,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/388.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/388.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/388.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 389,
@@ -9896,7 +16494,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.2,
     "weightKg": 310,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/389.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/389.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/389.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 390,
@@ -9919,7 +16531,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 6.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/390.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/390.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/390.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 391,
@@ -9943,7 +16569,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 22,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/391.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/391.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/391.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 392,
@@ -9967,7 +16607,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 55,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/392.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/392.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/392.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 393,
@@ -9990,7 +16644,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 5.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/393.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/393.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/393.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "승기",
+        "nameEn": "competitive",
+        "effectKo": "능력이 떨어지면 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 394,
@@ -10013,7 +16681,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 23,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/394.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/394.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/394.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "승기",
+        "nameEn": "competitive",
+        "effectKo": "능력이 떨어지면 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 395,
@@ -10037,7 +16719,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 84.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/395.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/395.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/395.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "승기",
+        "nameEn": "competitive",
+        "effectKo": "능력이 떨어지면 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 396,
@@ -10061,7 +16757,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/396.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/396.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/396.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "이판사판",
+        "nameEn": "reckless",
+        "effectKo": "반동 데미지를 받는 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 397,
@@ -10085,7 +16795,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 15.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/397.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/397.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/397.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "이판사판",
+        "nameEn": "reckless",
+        "effectKo": "반동 데미지를 받는 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 398,
@@ -10109,7 +16833,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 24.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/398.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/398.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/398.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "이판사판",
+        "nameEn": "reckless",
+        "effectKo": "반동 데미지를 받는 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 399,
@@ -10132,7 +16870,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 20,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/399.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/399.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/399.png",
+    "abilities": [
+      {
+        "nameKo": "단순",
+        "nameEn": "simple",
+        "effectKo": "능력 변화가 여느 때보다 심하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "천진",
+        "nameEn": "unaware",
+        "effectKo": "상대의 능력 변화를 무시한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "변덕쟁이",
+        "nameEn": "moody",
+        "effectKo": "능력이 오르락내리락한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 400,
@@ -10156,8 +16914,31 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 31.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/400.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/400.png"
-  },
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/400.png",
+    "abilities": [
+      {
+        "nameKo": "단순",
+        "nameEn": "simple",
+        "effectKo": "능력 변화가 여느 때보다 심하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "천진",
+        "nameEn": "unaware",
+        "effectKo": "상대의 능력 변화를 무시한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "변덕쟁이",
+        "nameEn": "moody",
+        "effectKo": "능력이 오르락내리락한다.",
+        "isHidden": true
+      }
+    ]
+  }
+]
+
+const POKEMON_CHUNK_4: Pokemon[] = [
   {
     "id": 401,
     "dexNumber": 401,
@@ -10179,7 +16960,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 2.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/401.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/401.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/401.png",
+    "abilities": [
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 402,
@@ -10202,7 +16997,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 25.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/402.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/402.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/402.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 403,
@@ -10225,7 +17034,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 9.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/403.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/403.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/403.png",
+    "abilities": [
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 404,
@@ -10248,7 +17077,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 30.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/404.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/404.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/404.png",
+    "abilities": [
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 405,
@@ -10271,7 +17120,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 42,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/405.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/405.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/405.png",
+    "abilities": [
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 406,
@@ -10295,7 +17164,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 1.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/406.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/406.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/406.png",
+    "abilities": [
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 407,
@@ -10319,7 +17208,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 14.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/407.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/407.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/407.png",
+    "abilities": [
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 408,
@@ -10342,7 +17251,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 31.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/408.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/408.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/408.png",
+    "abilities": [
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 409,
@@ -10365,7 +17288,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 102.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/409.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/409.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/409.png",
+    "abilities": [
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 410,
@@ -10389,7 +17326,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 57,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/410.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/410.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/410.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 411,
@@ -10413,7 +17364,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 149.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/411.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/411.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/411.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 412,
@@ -10436,7 +17401,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 3.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/412.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/412.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/412.png",
+    "abilities": [
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 413,
@@ -10460,7 +17439,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 6.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/413.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/413.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/413.png",
+    "abilities": [
+      {
+        "nameKo": "위험예지",
+        "nameEn": "anticipation",
+        "effectKo": "상대가 지닌 위험한 기술을 감지한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 414,
@@ -10484,7 +17477,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 23.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/414.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/414.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/414.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "색안경",
+        "nameEn": "tinted-lens",
+        "effectKo": "효과가 별로인 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 415,
@@ -10508,7 +17515,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 5.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/415.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/415.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/415.png",
+    "abilities": [
+      {
+        "nameKo": "꿀모으기",
+        "nameEn": "honey-gather",
+        "effectKo": "달콤한꿀을 모아서 올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 416,
@@ -10532,7 +17553,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 38.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/416.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/416.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/416.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 417,
@@ -10555,7 +17590,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 3.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/417.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/417.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/417.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "축전",
+        "nameEn": "volt-absorb",
+        "effectKo": "전기를 받으면 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 418,
@@ -10578,7 +17633,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 29.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/418.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/418.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/418.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수의베일",
+        "nameEn": "water-veil",
+        "effectKo": "화상 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 419,
@@ -10601,7 +17670,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 33.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/419.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/419.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/419.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수의베일",
+        "nameEn": "water-veil",
+        "effectKo": "화상 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 420,
@@ -10624,7 +17707,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 3.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/420.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/420.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/420.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 421,
@@ -10647,7 +17738,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 9.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/421.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/421.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/421.png",
+    "abilities": [
+      {
+        "nameKo": "플라워기프트",
+        "nameEn": "flower-gift",
+        "effectKo": "맑을 때 자신과 같은 편이 강해진다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 422,
@@ -10670,7 +17769,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 6.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/422.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/422.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/422.png",
+    "abilities": [
+      {
+        "nameKo": "점착",
+        "nameEn": "sticky-hold",
+        "effectKo": "달라붙어서 도구를 지킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마중물",
+        "nameEn": "storm-drain",
+        "effectKo": "물을 끌어모아 특수공격을 올린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래의힘",
+        "nameEn": "sand-force",
+        "effectKo": "모래바람으로 위력이 올라가는 기술이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 423,
@@ -10694,7 +17813,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 29.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/423.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/423.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/423.png",
+    "abilities": [
+      {
+        "nameKo": "점착",
+        "nameEn": "sticky-hold",
+        "effectKo": "달라붙어서 도구를 지킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마중물",
+        "nameEn": "storm-drain",
+        "effectKo": "물을 끌어모아 특수공격을 올린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래의힘",
+        "nameEn": "sand-force",
+        "effectKo": "모래바람으로 위력이 올라가는 기술이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 424,
@@ -10717,7 +17856,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 20.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/424.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/424.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/424.png",
+    "abilities": [
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스킬링크",
+        "nameEn": "skill-link",
+        "effectKo": "연속 기술을 많이 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 425,
@@ -10741,7 +17900,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 1.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/425.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/425.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/425.png",
+    "abilities": [
+      {
+        "nameKo": "유폭",
+        "nameEn": "aftermath",
+        "effectKo": "기절할 때 스친 상대에게 데미지를 준다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "열폭주",
+        "nameEn": "flare-boost",
+        "effectKo": "화상 상태일 때 특수공격의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 426,
@@ -10765,7 +17944,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 15,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/426.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/426.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/426.png",
+    "abilities": [
+      {
+        "nameKo": "유폭",
+        "nameEn": "aftermath",
+        "effectKo": "기절할 때 스친 상대에게 데미지를 준다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "열폭주",
+        "nameEn": "flare-boost",
+        "effectKo": "화상 상태일 때 특수공격의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 427,
@@ -10788,7 +17987,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 5.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/427.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/427.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/427.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "서투름",
+        "nameEn": "klutz",
+        "effectKo": "지니고 있는 도구를 쓸 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "유연",
+        "nameEn": "limber",
+        "effectKo": "마비 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 428,
@@ -10812,6 +18031,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 33.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/428.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/428.png",
+    "abilities": [
+      {
+        "nameKo": "헤롱헤롱바디",
+        "nameEn": "cute-charm",
+        "effectKo": "스치면 헤롱헤롱 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "서투름",
+        "nameEn": "klutz",
+        "effectKo": "지니고 있는 도구를 쓸 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "유연",
+        "nameEn": "limber",
+        "effectKo": "마비 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가이어롭",
@@ -10853,7 +18092,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 4.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/429.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/429.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/429.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 430,
@@ -10877,7 +18124,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 27.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/430.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/430.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/430.png",
+    "abilities": [
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "대운",
+        "nameEn": "super-luck",
+        "effectKo": "상대의 급소에 공격이 맞기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자기과신",
+        "nameEn": "moxie",
+        "effectKo": "상대를 쓰러뜨리면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 431,
@@ -10900,7 +18167,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 3.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/431.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/431.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/431.png",
+    "abilities": [
+      {
+        "nameKo": "유연",
+        "nameEn": "limber",
+        "effectKo": "마비 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 432,
@@ -10923,7 +18210,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 43.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/432.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/432.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/432.png",
+    "abilities": [
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "오기",
+        "nameEn": "defiant",
+        "effectKo": "능력이 떨어지면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 433,
@@ -10946,7 +18253,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 0.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/433.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/433.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/433.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 434,
@@ -10970,7 +18285,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 19.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/434.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/434.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/434.png",
+    "abilities": [
+      {
+        "nameKo": "악취",
+        "nameEn": "stench",
+        "effectKo": "악취 때문에 상대가 풀죽을 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "유폭",
+        "nameEn": "aftermath",
+        "effectKo": "기절할 때 스친 상대에게 데미지를 준다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 435,
@@ -10994,7 +18329,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 38,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/435.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/435.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/435.png",
+    "abilities": [
+      {
+        "nameKo": "악취",
+        "nameEn": "stench",
+        "effectKo": "악취 때문에 상대가 풀죽을 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "유폭",
+        "nameEn": "aftermath",
+        "effectKo": "기절할 때 스친 상대에게 데미지를 준다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 436,
@@ -11018,7 +18373,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 60.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/436.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/436.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/436.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "내열",
+        "nameEn": "heatproof",
+        "effectKo": "불꽃 기술의 위력을 약하게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "헤비메탈",
+        "nameEn": "heavy-metal",
+        "effectKo": "자신의 무게가 2배가 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 437,
@@ -11042,7 +18417,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 187,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/437.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/437.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/437.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "내열",
+        "nameEn": "heatproof",
+        "effectKo": "불꽃 기술의 위력을 약하게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "헤비메탈",
+        "nameEn": "heavy-metal",
+        "effectKo": "자신의 무게가 2배가 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 438,
@@ -11065,7 +18460,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 15,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/438.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/438.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/438.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 439,
@@ -11089,7 +18504,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 13,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/439.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/439.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/439.png",
+    "abilities": [
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "필터",
+        "nameEn": "filter",
+        "effectKo": "효과가 굉장한 기술의 위력을 약하게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 440,
@@ -11112,7 +18547,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 24.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/440.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/440.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/440.png",
+    "abilities": [
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "하늘의은총",
+        "nameEn": "serene-grace",
+        "effectKo": "기술의 추가 효과가 나오기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "프렌드가드",
+        "nameEn": "friend-guard",
+        "effectKo": "같은 편의 데미지를 줄일 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 441,
@@ -11136,7 +18591,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 1.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/441.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/441.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/441.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "갈지자걸음",
+        "nameEn": "tangled-feet",
+        "effectKo": "혼란에 빠져있으면 회피하기 쉬워진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "부풀린가슴",
+        "nameEn": "big-pecks",
+        "effectKo": "방어를 떨어뜨리는 공격을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 442,
@@ -11160,7 +18635,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 108,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/442.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/442.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/442.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 443,
@@ -11184,7 +18673,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 20.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/443.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/443.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/443.png",
+    "abilities": [
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "까칠한피부",
+        "nameEn": "rough-skin",
+        "effectKo": "접촉한 상대에게 상처를 입힌다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 444,
@@ -11208,7 +18711,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 56,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/444.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/444.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/444.png",
+    "abilities": [
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "까칠한피부",
+        "nameEn": "rough-skin",
+        "effectKo": "접촉한 상대에게 상처를 입힌다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 445,
@@ -11233,6 +18750,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 95,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/445.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/445.png",
+    "abilities": [
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "까칠한피부",
+        "nameEn": "rough-skin",
+        "effectKo": "접촉한 상대에게 상처를 입힌다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가한카리아스",
@@ -11274,7 +18805,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 105,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/446.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/446.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/446.png",
+    "abilities": [
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 447,
@@ -11297,7 +18848,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 20.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/447.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/447.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/447.png",
+    "abilities": [
+      {
+        "nameKo": "불굴의마음",
+        "nameEn": "steadfast",
+        "effectKo": "풀죽을 때마다 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 448,
@@ -11322,6 +18893,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 54,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/448.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png",
+    "abilities": [
+      {
+        "nameKo": "불굴의마음",
+        "nameEn": "steadfast",
+        "effectKo": "풀죽을 때마다 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정의의마음",
+        "nameEn": "justified",
+        "effectKo": "악 기술을 받으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가루카리오",
@@ -11363,7 +18954,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 49.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/449.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/449.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/449.png",
+    "abilities": [
+      {
+        "nameKo": "모래날림",
+        "nameEn": "sand-stream",
+        "effectKo": "배틀에서 모래바람을 일으킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래의힘",
+        "nameEn": "sand-force",
+        "effectKo": "모래바람으로 위력이 올라가는 기술이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 450,
@@ -11386,7 +18991,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 300,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/450.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/450.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/450.png",
+    "abilities": [
+      {
+        "nameKo": "모래날림",
+        "nameEn": "sand-stream",
+        "effectKo": "배틀에서 모래바람을 일으킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래의힘",
+        "nameEn": "sand-force",
+        "effectKo": "모래바람으로 위력이 올라가는 기술이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 451,
@@ -11410,7 +19029,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 12,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/451.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/451.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/451.png",
+    "abilities": [
+      {
+        "nameKo": "전투무장",
+        "nameEn": "battle-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 452,
@@ -11434,7 +19073,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 61.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/452.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/452.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/452.png",
+    "abilities": [
+      {
+        "nameKo": "전투무장",
+        "nameEn": "battle-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 453,
@@ -11458,7 +19117,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 23,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/453.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/453.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/453.png",
+    "abilities": [
+      {
+        "nameKo": "위험예지",
+        "nameEn": "anticipation",
+        "effectKo": "상대가 지닌 위험한 기술을 감지한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "건조피부",
+        "nameEn": "dry-skin",
+        "effectKo": "더우면 HP가 줄어든다. 물로 HP를 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "독수",
+        "nameEn": "poison-touch",
+        "effectKo": "접촉하기만 해도 상대를 독 상태로 만들 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 454,
@@ -11482,7 +19161,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 44.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/454.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/454.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/454.png",
+    "abilities": [
+      {
+        "nameKo": "위험예지",
+        "nameEn": "anticipation",
+        "effectKo": "상대가 지닌 위험한 기술을 감지한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "건조피부",
+        "nameEn": "dry-skin",
+        "effectKo": "더우면 HP가 줄어든다. 물로 HP를 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "독수",
+        "nameEn": "poison-touch",
+        "effectKo": "접촉하기만 해도 상대를 독 상태로 만들 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 455,
@@ -11505,7 +19204,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 27,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/455.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/455.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/455.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 456,
@@ -11528,7 +19235,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/456.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/456.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/456.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마중물",
+        "nameEn": "storm-drain",
+        "effectKo": "물을 끌어모아 특수공격을 올린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수의베일",
+        "nameEn": "water-veil",
+        "effectKo": "화상 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 457,
@@ -11551,7 +19278,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 24,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/457.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/457.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/457.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마중물",
+        "nameEn": "storm-drain",
+        "effectKo": "물을 끌어모아 특수공격을 올린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수의베일",
+        "nameEn": "water-veil",
+        "effectKo": "화상 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 458,
@@ -11575,7 +19322,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 65,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/458.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/458.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/458.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수의베일",
+        "nameEn": "water-veil",
+        "effectKo": "화상 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 459,
@@ -11599,7 +19366,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 50.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/459.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/459.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/459.png",
+    "abilities": [
+      {
+        "nameKo": "눈퍼뜨리기",
+        "nameEn": "snow-warning",
+        "effectKo": "배틀에 나가면 싸라기눈을 내리게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 460,
@@ -11624,6 +19405,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 135.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/460.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/460.png",
+    "abilities": [
+      {
+        "nameKo": "눈퍼뜨리기",
+        "nameEn": "snow-warning",
+        "effectKo": "배틀에 나가면 싸라기눈을 내리게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가눈설왕",
@@ -11666,7 +19461,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 34,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/461.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/461.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/461.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "나쁜손버릇",
+        "nameEn": "pickpocket",
+        "effectKo": "닿은 상대로부터 도구를 훔친다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 462,
@@ -11690,7 +19499,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 180,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/462.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/462.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/462.png",
+    "abilities": [
+      {
+        "nameKo": "자력",
+        "nameEn": "magnet-pull",
+        "effectKo": "강철의 포켓몬을 도망칠 수 없게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "애널라이즈",
+        "nameEn": "analytic",
+        "effectKo": "제일 마지막에 기술을 쓰면 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 463,
@@ -11713,7 +19542,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 140,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/463.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/463.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/463.png",
+    "abilities": [
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날씨부정",
+        "nameEn": "cloud-nine",
+        "effectKo": "날씨의 영향이 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 464,
@@ -11737,7 +19586,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.4,
     "weightKg": 282.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/464.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/464.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/464.png",
+    "abilities": [
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "하드록",
+        "nameEn": "solid-rock",
+        "effectKo": "효과가 굉장한 기술의 위력을 약하게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "이판사판",
+        "nameEn": "reckless",
+        "effectKo": "반동 데미지를 받는 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 465,
@@ -11760,7 +19629,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 128.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/465.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/465.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/465.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 466,
@@ -11783,7 +19672,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 138.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/466.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/466.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/466.png",
+    "abilities": [
+      {
+        "nameKo": "전기엔진",
+        "nameEn": "motor-drive",
+        "effectKo": "전기를 받으면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의기양양",
+        "nameEn": "vital-spirit",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 467,
@@ -11806,7 +19709,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 68,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/467.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/467.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/467.png",
+    "abilities": [
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의기양양",
+        "nameEn": "vital-spirit",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 468,
@@ -11830,7 +19747,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 38,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/468.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/468.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/468.png",
+    "abilities": [
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "하늘의은총",
+        "nameEn": "serene-grace",
+        "effectKo": "기술의 추가 효과가 나오기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "대운",
+        "nameEn": "super-luck",
+        "effectKo": "상대의 급소에 공격이 맞기 쉽다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 469,
@@ -11854,7 +19791,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.9,
     "weightKg": 51.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/469.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/469.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/469.png",
+    "abilities": [
+      {
+        "nameKo": "가속",
+        "nameEn": "speed-boost",
+        "effectKo": "조금씩 스피드가 높아진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "색안경",
+        "nameEn": "tinted-lens",
+        "effectKo": "효과가 별로인 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 470,
@@ -11877,7 +19834,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 25.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/470.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/470.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/470.png",
+    "abilities": [
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 471,
@@ -11900,7 +19871,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 25.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/471.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/471.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/471.png",
+    "abilities": [
+      {
+        "nameKo": "눈숨기",
+        "nameEn": "snow-cloak",
+        "effectKo": "날씨가 싸라기눈일 때 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 472,
@@ -11924,7 +19909,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 42.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/472.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/472.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/472.png",
+    "abilities": [
+      {
+        "nameKo": "괴력집게",
+        "nameEn": "hyper-cutter",
+        "effectKo": "상대가 공격을 떨어뜨리지 못한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "포이즌힐",
+        "nameEn": "poison-heal",
+        "effectKo": "독 상태가 되면 HP를 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 473,
@@ -11948,7 +19953,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.5,
     "weightKg": 291,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/473.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/473.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/473.png",
+    "abilities": [
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈숨기",
+        "nameEn": "snow-cloak",
+        "effectKo": "날씨가 싸라기눈일 때 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 474,
@@ -11971,7 +19996,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 34,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/474.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/474.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/474.png",
+    "abilities": [
+      {
+        "nameKo": "적응력",
+        "nameEn": "adaptability",
+        "effectKo": "타입이 같은 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "다운로드",
+        "nameEn": "download",
+        "effectKo": "상대의 능력을 보고 능력치를 바꾼다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "애널라이즈",
+        "nameEn": "analytic",
+        "effectKo": "제일 마지막에 기술을 쓰면 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 475,
@@ -11996,6 +20041,25 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 52,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/475.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/475.png",
+    "abilities": [
+      {
+        "nameKo": "불굴의마음",
+        "nameEn": "steadfast",
+        "effectKo": "풀죽을 때마다 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "예리함",
+        "nameEn": "sharpness",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정의의마음",
+        "nameEn": "justified",
+        "effectKo": "악 기술을 받으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가엘레이드",
@@ -12038,7 +20102,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 340,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/476.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/476.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/476.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자력",
+        "nameEn": "magnet-pull",
+        "effectKo": "강철의 포켓몬을 도망칠 수 없게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래의힘",
+        "nameEn": "sand-force",
+        "effectKo": "모래바람으로 위력이 올라가는 기술이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 477,
@@ -12061,7 +20145,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.2,
     "weightKg": 106.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/477.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/477.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/477.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 478,
@@ -12085,7 +20183,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 26.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/478.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/478.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/478.png",
+    "abilities": [
+      {
+        "nameKo": "눈숨기",
+        "nameEn": "snow-cloak",
+        "effectKo": "날씨가 싸라기눈일 때 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저주받은바디",
+        "nameEn": "cursed-body",
+        "effectKo": "공격받으면 가끔 상대를 사슬묶기 상태로 만든다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 479,
@@ -12109,7 +20221,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 0.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/479.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/479.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/479.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 480,
@@ -12132,7 +20252,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 0.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/480.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/480.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/480.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 481,
@@ -12155,7 +20283,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 0.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/481.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/481.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/481.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 482,
@@ -12178,7 +20314,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 0.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/482.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/482.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/482.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 483,
@@ -12202,7 +20346,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 5.4,
     "weightKg": 683,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/483.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/483.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/483.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 484,
@@ -12226,7 +20384,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 4.2,
     "weightKg": 336,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/484.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/484.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/484.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 485,
@@ -12250,7 +20422,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 430,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/485.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/485.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/485.png",
+    "abilities": [
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 486,
@@ -12273,7 +20459,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.7,
     "weightKg": 420,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/486.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/486.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/486.png",
+    "abilities": [
+      {
+        "nameKo": "슬로스타트",
+        "nameEn": "slow-start",
+        "effectKo": "공격과 스피드가 잠시 동안 절반이 된다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 487,
@@ -12297,7 +20491,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 4.5,
     "weightKg": 750,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/487.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/487.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/487.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 488,
@@ -12320,7 +20528,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 85.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/488.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/488.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/488.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 489,
@@ -12343,7 +20559,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 3.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/489.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/489.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/489.png",
+    "abilities": [
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 490,
@@ -12366,7 +20590,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 1.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/490.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/490.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/490.png",
+    "abilities": [
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 491,
@@ -12389,7 +20621,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 50.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/491.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/491.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/491.png",
+    "abilities": [
+      {
+        "nameKo": "나이트메어",
+        "nameEn": "bad-dreams",
+        "effectKo": "잠들어 있는 상대의 HP를 줄인다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 492,
@@ -12412,7 +20652,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 2.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/492.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/492.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/492.png",
+    "abilities": [
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 493,
@@ -12435,7 +20683,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.2,
     "weightKg": 320,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/493.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/493.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/493.png",
+    "abilities": [
+      {
+        "nameKo": "멀티타입",
+        "nameEn": "multitype",
+        "effectKo": "지니고 있는 플레이트에 따라 타입이 바뀐다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 494,
@@ -12459,7 +20715,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/494.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/494.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/494.png",
+    "abilities": [
+      {
+        "nameKo": "승리의별",
+        "nameEn": "victory-star",
+        "effectKo": "자신과 같은 편의 명중률이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 495,
@@ -12482,7 +20746,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 8.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/495.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/495.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/495.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "심술꾸러기",
+        "nameEn": "contrary",
+        "effectKo": "능력의 변화가 역전된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 496,
@@ -12505,7 +20783,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 16,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/496.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/496.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/496.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "심술꾸러기",
+        "nameEn": "contrary",
+        "effectKo": "능력의 변화가 역전된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 497,
@@ -12528,7 +20820,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.3,
     "weightKg": 63,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/497.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/497.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/497.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "심술꾸러기",
+        "nameEn": "contrary",
+        "effectKo": "능력의 변화가 역전된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 498,
@@ -12551,7 +20857,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 9.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/498.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/498.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/498.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 499,
@@ -12575,7 +20895,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 55.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/499.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/499.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/499.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 500,
@@ -12599,8 +20933,25 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 150,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/500.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/500.png"
-  },
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/500.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "이판사판",
+        "nameEn": "reckless",
+        "effectKo": "반동 데미지를 받는 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
+  }
+]
+
+const POKEMON_CHUNK_5: Pokemon[] = [
   {
     "id": 501,
     "dexNumber": 501,
@@ -12622,7 +20973,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 5.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/501.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/501.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/501.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 502,
@@ -12645,7 +21010,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 24.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/502.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/502.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/502.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 503,
@@ -12668,7 +21047,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 94.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/503.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/503.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/503.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 504,
@@ -12691,7 +21084,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 11.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/504.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/504.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/504.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "애널라이즈",
+        "nameEn": "analytic",
+        "effectKo": "제일 마지막에 기술을 쓰면 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 505,
@@ -12714,7 +21127,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 27,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/505.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/505.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/505.png",
+    "abilities": [
+      {
+        "nameKo": "발광",
+        "nameEn": "illuminate",
+        "effectKo": "야생 포켓몬과 만나기 쉬워진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "애널라이즈",
+        "nameEn": "analytic",
+        "effectKo": "제일 마지막에 기술을 쓰면 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 506,
@@ -12737,7 +21170,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 4.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/506.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/506.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/506.png",
+    "abilities": [
+      {
+        "nameKo": "의기양양",
+        "nameEn": "vital-spirit",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 507,
@@ -12760,7 +21213,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 14.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/507.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/507.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/507.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래헤치기",
+        "nameEn": "sand-rush",
+        "effectKo": "모래바람으로 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "배짱",
+        "nameEn": "scrappy",
+        "effectKo": "고스트타입에 노말 기술이 맞는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 508,
@@ -12783,7 +21256,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 61,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/508.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/508.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/508.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래헤치기",
+        "nameEn": "sand-rush",
+        "effectKo": "모래바람으로 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "배짱",
+        "nameEn": "scrappy",
+        "effectKo": "고스트타입에 노말 기술이 맞는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 509,
@@ -12806,7 +21299,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 10.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/509.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/509.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/509.png",
+    "abilities": [
+      {
+        "nameKo": "유연",
+        "nameEn": "limber",
+        "effectKo": "마비 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 510,
@@ -12829,7 +21342,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 37.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/510.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/510.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/510.png",
+    "abilities": [
+      {
+        "nameKo": "유연",
+        "nameEn": "limber",
+        "effectKo": "마비 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 511,
@@ -12852,7 +21385,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 10.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/511.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/511.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/511.png",
+    "abilities": [
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 512,
@@ -12875,7 +21422,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 30.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/512.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/512.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/512.png",
+    "abilities": [
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 513,
@@ -12898,7 +21459,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 11,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/513.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/513.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/513.png",
+    "abilities": [
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 514,
@@ -12921,7 +21496,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 28,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/514.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/514.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/514.png",
+    "abilities": [
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 515,
@@ -12944,7 +21533,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 13.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/515.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/515.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/515.png",
+    "abilities": [
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 516,
@@ -12967,7 +21570,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 29,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/516.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/516.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/516.png",
+    "abilities": [
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 517,
@@ -12990,7 +21607,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 23.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/517.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/517.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/517.png",
+    "abilities": [
+      {
+        "nameKo": "예지몽",
+        "nameEn": "forewarn",
+        "effectKo": "상대가 지닌 기술을 꿰뚫어볼 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 518,
@@ -13013,7 +21650,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 60.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/518.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/518.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/518.png",
+    "abilities": [
+      {
+        "nameKo": "예지몽",
+        "nameEn": "forewarn",
+        "effectKo": "상대가 지닌 기술을 꿰뚫어볼 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 519,
@@ -13037,7 +21694,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 2.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/519.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/519.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/519.png",
+    "abilities": [
+      {
+        "nameKo": "부풀린가슴",
+        "nameEn": "big-pecks",
+        "effectKo": "방어를 떨어뜨리는 공격을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "대운",
+        "nameEn": "super-luck",
+        "effectKo": "상대의 급소에 공격이 맞기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 520,
@@ -13061,7 +21738,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 15,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/520.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/520.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/520.png",
+    "abilities": [
+      {
+        "nameKo": "부풀린가슴",
+        "nameEn": "big-pecks",
+        "effectKo": "방어를 떨어뜨리는 공격을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "대운",
+        "nameEn": "super-luck",
+        "effectKo": "상대의 급소에 공격이 맞기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 521,
@@ -13085,7 +21782,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 29,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/521.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/521.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/521.png",
+    "abilities": [
+      {
+        "nameKo": "부풀린가슴",
+        "nameEn": "big-pecks",
+        "effectKo": "방어를 떨어뜨리는 공격을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "대운",
+        "nameEn": "super-luck",
+        "effectKo": "상대의 급소에 공격이 맞기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 522,
@@ -13108,7 +21825,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 29.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/522.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/522.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/522.png",
+    "abilities": [
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "전기엔진",
+        "nameEn": "motor-drive",
+        "effectKo": "전기를 받으면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 523,
@@ -13131,7 +21868,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 79.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/523.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/523.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/523.png",
+    "abilities": [
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "전기엔진",
+        "nameEn": "motor-drive",
+        "effectKo": "전기를 받으면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 524,
@@ -13154,7 +21911,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 18,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/524.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/524.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/524.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래의힘",
+        "nameEn": "sand-force",
+        "effectKo": "모래바람으로 위력이 올라가는 기술이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 525,
@@ -13177,7 +21954,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 102,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/525.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/525.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/525.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래의힘",
+        "nameEn": "sand-force",
+        "effectKo": "모래바람으로 위력이 올라가는 기술이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 526,
@@ -13200,7 +21997,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 260,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/526.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/526.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/526.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래날림",
+        "nameEn": "sand-stream",
+        "effectKo": "배틀에서 모래바람을 일으킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래의힘",
+        "nameEn": "sand-force",
+        "effectKo": "모래바람으로 위력이 올라가는 기술이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 527,
@@ -13224,7 +22041,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 2.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/527.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/527.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/527.png",
+    "abilities": [
+      {
+        "nameKo": "천진",
+        "nameEn": "unaware",
+        "effectKo": "상대의 능력 변화를 무시한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "서투름",
+        "nameEn": "klutz",
+        "effectKo": "지니고 있는 도구를 쓸 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "단순",
+        "nameEn": "simple",
+        "effectKo": "능력 변화가 여느 때보다 심하다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 528,
@@ -13248,7 +22085,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 10.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/528.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/528.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/528.png",
+    "abilities": [
+      {
+        "nameKo": "천진",
+        "nameEn": "unaware",
+        "effectKo": "상대의 능력 변화를 무시한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "서투름",
+        "nameEn": "klutz",
+        "effectKo": "지니고 있는 도구를 쓸 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "단순",
+        "nameEn": "simple",
+        "effectKo": "능력 변화가 여느 때보다 심하다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 529,
@@ -13271,7 +22128,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 8.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/529.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/529.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/529.png",
+    "abilities": [
+      {
+        "nameKo": "모래헤치기",
+        "nameEn": "sand-rush",
+        "effectKo": "모래바람으로 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래의힘",
+        "nameEn": "sand-force",
+        "effectKo": "모래바람으로 위력이 올라가는 기술이 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 530,
@@ -13295,7 +22172,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 40.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/530.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/530.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/530.png",
+    "abilities": [
+      {
+        "nameKo": "모래헤치기",
+        "nameEn": "sand-rush",
+        "effectKo": "모래바람으로 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래의힘",
+        "nameEn": "sand-force",
+        "effectKo": "모래바람으로 위력이 올라가는 기술이 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 531,
@@ -13319,6 +22216,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 31,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/531.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/531.png",
+    "abilities": [
+      {
+        "nameKo": "치유의마음",
+        "nameEn": "healer",
+        "effectKo": "같은 편의 상태 이상을 가끔 회복시킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "서투름",
+        "nameEn": "klutz",
+        "effectKo": "지니고 있는 도구를 쓸 수 없다.",
+        "isHidden": true
+      }
+    ],
     "megaForms": [
       {
         "label": "메가다부니",
@@ -13360,7 +22277,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 12.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/532.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/532.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/532.png",
+    "abilities": [
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 533,
@@ -13383,7 +22320,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 40,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/533.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/533.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/533.png",
+    "abilities": [
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 534,
@@ -13406,7 +22363,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 87,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/534.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/534.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/534.png",
+    "abilities": [
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 535,
@@ -13429,7 +22406,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 4.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/535.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/535.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/535.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 536,
@@ -13453,7 +22450,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 17,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/536.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/536.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/536.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 537,
@@ -13477,7 +22494,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 62,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/537.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/537.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/537.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "독수",
+        "nameEn": "poison-touch",
+        "effectKo": "접촉하기만 해도 상대를 독 상태로 만들 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 538,
@@ -13500,7 +22537,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 55.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/538.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/538.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/538.png",
+    "abilities": [
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 539,
@@ -13523,7 +22580,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 51,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/539.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/539.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/539.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 540,
@@ -13547,7 +22624,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 2.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/540.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/540.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/540.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 541,
@@ -13571,7 +22668,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 7.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/541.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/541.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/541.png",
+    "abilities": [
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 542,
@@ -13595,7 +22712,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 20.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/542.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/542.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/542.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 543,
@@ -13619,7 +22756,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 5.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/543.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/543.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/543.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "가속",
+        "nameEn": "speed-boost",
+        "effectKo": "조금씩 스피드가 높아진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 544,
@@ -13643,7 +22800,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 58.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/544.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/544.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/544.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "가속",
+        "nameEn": "speed-boost",
+        "effectKo": "조금씩 스피드가 높아진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 545,
@@ -13667,7 +22844,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.5,
     "weightKg": 200.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/545.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/545.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/545.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "가속",
+        "nameEn": "speed-boost",
+        "effectKo": "조금씩 스피드가 높아진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 546,
@@ -13691,7 +22888,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 0.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/546.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/546.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/546.png",
+    "abilities": [
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 547,
@@ -13715,7 +22932,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 6.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/547.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/547.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/547.png",
+    "abilities": [
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 548,
@@ -13738,7 +22975,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 6.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/548.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/548.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/548.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 549,
@@ -13761,7 +23018,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 16.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/549.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/549.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/549.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 550,
@@ -13784,7 +23061,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 18,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/550.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/550.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/550.png",
+    "abilities": [
+      {
+        "nameKo": "이판사판",
+        "nameEn": "reckless",
+        "effectKo": "반동 데미지를 받는 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "적응력",
+        "nameEn": "adaptability",
+        "effectKo": "타입이 같은 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 551,
@@ -13808,7 +23105,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 15.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/551.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/551.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/551.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자기과신",
+        "nameEn": "moxie",
+        "effectKo": "상대를 쓰러뜨리면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "분노의경혈",
+        "nameEn": "anger-point",
+        "effectKo": "급소에 맞으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 552,
@@ -13832,7 +23149,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 33.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/552.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/552.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/552.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자기과신",
+        "nameEn": "moxie",
+        "effectKo": "상대를 쓰러뜨리면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "분노의경혈",
+        "nameEn": "anger-point",
+        "effectKo": "급소에 맞으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 553,
@@ -13856,7 +23193,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 96.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/553.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/553.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/553.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자기과신",
+        "nameEn": "moxie",
+        "effectKo": "상대를 쓰러뜨리면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "분노의경혈",
+        "nameEn": "anger-point",
+        "effectKo": "급소에 맞으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 554,
@@ -13879,7 +23236,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 37.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/554.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/554.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/554.png",
+    "abilities": [
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 555,
@@ -13902,7 +23273,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 92.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/555.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/555.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/555.png",
+    "abilities": [
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "달마모드",
+        "nameEn": "zen-mode",
+        "effectKo": "위급할 때 모습이 변화한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 556,
@@ -13925,7 +23310,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 28,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/556.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/556.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/556.png",
+    "abilities": [
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마중물",
+        "nameEn": "storm-drain",
+        "effectKo": "물을 끌어모아 특수공격을 올린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 557,
@@ -13949,7 +23354,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 14.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/557.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/557.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/557.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 558,
@@ -13973,7 +23398,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 200,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/558.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/558.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/558.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 559,
@@ -13997,7 +23442,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 11.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/559.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/559.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/559.png",
+    "abilities": [
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자기과신",
+        "nameEn": "moxie",
+        "effectKo": "상대를 쓰러뜨리면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 560,
@@ -14021,7 +23486,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 30,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/560.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/560.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/560.png",
+    "abilities": [
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자기과신",
+        "nameEn": "moxie",
+        "effectKo": "상대를 쓰러뜨리면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 561,
@@ -14045,7 +23530,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 14,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/561.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/561.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/561.png",
+    "abilities": [
+      {
+        "nameKo": "미라클스킨",
+        "nameEn": "wonder-skin",
+        "effectKo": "변화 기술을 받기 어려운 몸으로 되어 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매직가드",
+        "nameEn": "magic-guard",
+        "effectKo": "공격 이외에는 데미지를 입지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "색안경",
+        "nameEn": "tinted-lens",
+        "effectKo": "효과가 별로인 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 562,
@@ -14068,7 +23573,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 1.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/562.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/562.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/562.png",
+    "abilities": [
+      {
+        "nameKo": "미라",
+        "nameEn": "mummy",
+        "effectKo": "상대의 기술을 받으면 상대를 미라로 만든다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 563,
@@ -14091,7 +23604,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 76.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/563.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/563.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/563.png",
+    "abilities": [
+      {
+        "nameKo": "미라",
+        "nameEn": "mummy",
+        "effectKo": "상대의 기술을 받으면 상대를 미라로 만든다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 564,
@@ -14115,7 +23636,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 16.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/564.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/564.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/564.png",
+    "abilities": [
+      {
+        "nameKo": "하드록",
+        "nameEn": "solid-rock",
+        "effectKo": "효과가 굉장한 기술의 위력을 약하게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 565,
@@ -14139,7 +23680,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 81,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/565.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/565.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/565.png",
+    "abilities": [
+      {
+        "nameKo": "하드록",
+        "nameEn": "solid-rock",
+        "effectKo": "효과가 굉장한 기술의 위력을 약하게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 566,
@@ -14163,7 +23724,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 9.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/566.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/566.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/566.png",
+    "abilities": [
+      {
+        "nameKo": "무기력",
+        "nameEn": "defeatist",
+        "effectKo": "HP가 절반이 되면 능력이 떨어진다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 567,
@@ -14187,7 +23756,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 32,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/567.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/567.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/567.png",
+    "abilities": [
+      {
+        "nameKo": "무기력",
+        "nameEn": "defeatist",
+        "effectKo": "HP가 절반이 되면 능력이 떨어진다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 568,
@@ -14210,7 +23787,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 31,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/568.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/568.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/568.png",
+    "abilities": [
+      {
+        "nameKo": "악취",
+        "nameEn": "stench",
+        "effectKo": "악취 때문에 상대가 풀죽을 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "점착",
+        "nameEn": "sticky-hold",
+        "effectKo": "달라붙어서 도구를 지킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "유폭",
+        "nameEn": "aftermath",
+        "effectKo": "기절할 때 스친 상대에게 데미지를 준다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 569,
@@ -14233,7 +23830,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.9,
     "weightKg": 107.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/569.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/569.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/569.png",
+    "abilities": [
+      {
+        "nameKo": "악취",
+        "nameEn": "stench",
+        "effectKo": "악취 때문에 상대가 풀죽을 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "유폭",
+        "nameEn": "aftermath",
+        "effectKo": "기절할 때 스친 상대에게 데미지를 준다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 570,
@@ -14256,7 +23873,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 12.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/570.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/570.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/570.png",
+    "abilities": [
+      {
+        "nameKo": "일루전",
+        "nameEn": "illusion",
+        "effectKo": "뒤의 포켓몬으로 둔갑하여 나온다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 571,
@@ -14279,7 +23904,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 81.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/571.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/571.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/571.png",
+    "abilities": [
+      {
+        "nameKo": "일루전",
+        "nameEn": "illusion",
+        "effectKo": "뒤의 포켓몬으로 둔갑하여 나온다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 572,
@@ -14302,7 +23935,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 5.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/572.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/572.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/572.png",
+    "abilities": [
+      {
+        "nameKo": "헤롱헤롱바디",
+        "nameEn": "cute-charm",
+        "effectKo": "스치면 헤롱헤롱 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스킬링크",
+        "nameEn": "skill-link",
+        "effectKo": "연속 기술을 많이 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 573,
@@ -14325,7 +23978,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 7.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/573.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/573.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/573.png",
+    "abilities": [
+      {
+        "nameKo": "헤롱헤롱바디",
+        "nameEn": "cute-charm",
+        "effectKo": "스치면 헤롱헤롱 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스킬링크",
+        "nameEn": "skill-link",
+        "effectKo": "연속 기술을 많이 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 574,
@@ -14348,7 +24021,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 5.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/574.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/574.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/574.png",
+    "abilities": [
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "승기",
+        "nameEn": "competitive",
+        "effectKo": "능력이 떨어지면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "그림자밟기",
+        "nameEn": "shadow-tag",
+        "effectKo": "상대의 그림자를 밟아 도망칠 수 없게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 575,
@@ -14371,7 +24064,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 18,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/575.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/575.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/575.png",
+    "abilities": [
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "승기",
+        "nameEn": "competitive",
+        "effectKo": "능력이 떨어지면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "그림자밟기",
+        "nameEn": "shadow-tag",
+        "effectKo": "상대의 그림자를 밟아 도망칠 수 없게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 576,
@@ -14394,7 +24107,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 44,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/576.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/576.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/576.png",
+    "abilities": [
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "승기",
+        "nameEn": "competitive",
+        "effectKo": "능력이 떨어지면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "그림자밟기",
+        "nameEn": "shadow-tag",
+        "effectKo": "상대의 그림자를 밟아 도망칠 수 없게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 577,
@@ -14417,7 +24150,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/577.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/577.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/577.png",
+    "abilities": [
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매직가드",
+        "nameEn": "magic-guard",
+        "effectKo": "공격 이외에는 데미지를 입지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 578,
@@ -14440,7 +24193,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/578.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/578.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/578.png",
+    "abilities": [
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매직가드",
+        "nameEn": "magic-guard",
+        "effectKo": "공격 이외에는 데미지를 입지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 579,
@@ -14463,7 +24236,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 20.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/579.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/579.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/579.png",
+    "abilities": [
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매직가드",
+        "nameEn": "magic-guard",
+        "effectKo": "공격 이외에는 데미지를 입지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 580,
@@ -14487,7 +24280,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 5.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/580.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/580.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/580.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "부풀린가슴",
+        "nameEn": "big-pecks",
+        "effectKo": "방어를 떨어뜨리는 공격을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 581,
@@ -14511,7 +24324,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 24.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/581.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/581.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/581.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "부풀린가슴",
+        "nameEn": "big-pecks",
+        "effectKo": "방어를 떨어뜨리는 공격을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 582,
@@ -14534,7 +24367,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 5.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/582.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/582.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/582.png",
+    "abilities": [
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈숨기",
+        "nameEn": "snow-cloak",
+        "effectKo": "날씨가 싸라기눈일 때 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 583,
@@ -14557,7 +24410,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 41,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/583.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/583.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/583.png",
+    "abilities": [
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈숨기",
+        "nameEn": "snow-cloak",
+        "effectKo": "날씨가 싸라기눈일 때 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 584,
@@ -14580,7 +24453,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 57.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/584.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/584.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/584.png",
+    "abilities": [
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈퍼뜨리기",
+        "nameEn": "snow-warning",
+        "effectKo": "배틀에 나가면 싸라기눈을 내리게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 585,
@@ -14604,7 +24497,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 19.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/585.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/585.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/585.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "하늘의은총",
+        "nameEn": "serene-grace",
+        "effectKo": "기술의 추가 효과가 나오기 쉽다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 586,
@@ -14628,7 +24541,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.9,
     "weightKg": 92.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/586.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/586.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/586.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "하늘의은총",
+        "nameEn": "serene-grace",
+        "effectKo": "기술의 추가 효과가 나오기 쉽다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 587,
@@ -14652,7 +24585,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/587.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/587.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/587.png",
+    "abilities": [
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "전기엔진",
+        "nameEn": "motor-drive",
+        "effectKo": "전기를 받으면 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 588,
@@ -14675,7 +24622,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 5.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/588.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/588.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/588.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "노가드",
+        "nameEn": "no-guard",
+        "effectKo": "서로의 기술이 반드시 맞는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 589,
@@ -14699,7 +24666,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 33,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/589.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/589.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/589.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 590,
@@ -14723,7 +24710,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/590.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/590.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/590.png",
+    "abilities": [
+      {
+        "nameKo": "포자",
+        "nameEn": "effect-spore",
+        "effectKo": "스치면 독, 마비, 잠듦 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 591,
@@ -14747,7 +24748,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 10.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/591.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/591.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/591.png",
+    "abilities": [
+      {
+        "nameKo": "포자",
+        "nameEn": "effect-spore",
+        "effectKo": "스치면 독, 마비, 잠듦 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 592,
@@ -14771,7 +24786,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 33,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/592.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/592.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/592.png",
+    "abilities": [
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저주받은바디",
+        "nameEn": "cursed-body",
+        "effectKo": "공격받으면 가끔 상대를 사슬묶기 상태로 만든다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 593,
@@ -14795,7 +24830,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.2,
     "weightKg": 135,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/593.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/593.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/593.png",
+    "abilities": [
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저주받은바디",
+        "nameEn": "cursed-body",
+        "effectKo": "공격받으면 가끔 상대를 사슬묶기 상태로 만든다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 594,
@@ -14818,7 +24873,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 31.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/594.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/594.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/594.png",
+    "abilities": [
+      {
+        "nameKo": "치유의마음",
+        "nameEn": "healer",
+        "effectKo": "같은 편의 상태 이상을 가끔 회복시킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 595,
@@ -14842,7 +24917,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.1,
     "weightKg": 0.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/595.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/595.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/595.png",
+    "abilities": [
+      {
+        "nameKo": "복안",
+        "nameEn": "compound-eyes",
+        "effectKo": "기술의 명중률이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 596,
@@ -14866,7 +24961,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 14.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/596.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/596.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/596.png",
+    "abilities": [
+      {
+        "nameKo": "복안",
+        "nameEn": "compound-eyes",
+        "effectKo": "기술의 명중률이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 597,
@@ -14890,7 +25005,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 18.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/597.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/597.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/597.png",
+    "abilities": [
+      {
+        "nameKo": "철가시",
+        "nameEn": "iron-barbs",
+        "effectKo": "접촉한 상대에게 상처를 입힌다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 598,
@@ -14914,7 +25037,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 110,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/598.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/598.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/598.png",
+    "abilities": [
+      {
+        "nameKo": "철가시",
+        "nameEn": "iron-barbs",
+        "effectKo": "접촉한 상대에게 상처를 입힌다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위험예지",
+        "nameEn": "anticipation",
+        "effectKo": "상대가 지닌 위험한 기술을 감지한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 599,
@@ -14937,7 +25074,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 21,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/599.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/599.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/599.png",
+    "abilities": [
+      {
+        "nameKo": "플러스",
+        "nameEn": "plus",
+        "effectKo": "플러스나 마이너스가 있으면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이너스",
+        "nameEn": "minus",
+        "effectKo": "플러스나 마이너스가 있으면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 600,
@@ -14960,8 +25117,31 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 51,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/600.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/600.png"
-  },
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/600.png",
+    "abilities": [
+      {
+        "nameKo": "플러스",
+        "nameEn": "plus",
+        "effectKo": "플러스나 마이너스가 있으면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이너스",
+        "nameEn": "minus",
+        "effectKo": "플러스나 마이너스가 있으면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": true
+      }
+    ]
+  }
+]
+
+const POKEMON_CHUNK_6: Pokemon[] = [
   {
     "id": 601,
     "dexNumber": 601,
@@ -14983,7 +25163,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 81,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/601.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/601.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/601.png",
+    "abilities": [
+      {
+        "nameKo": "플러스",
+        "nameEn": "plus",
+        "effectKo": "플러스나 마이너스가 있으면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이너스",
+        "nameEn": "minus",
+        "effectKo": "플러스나 마이너스가 있으면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 602,
@@ -15006,7 +25206,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 0.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/602.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/602.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/602.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 603,
@@ -15029,7 +25237,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 22,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/603.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/603.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/603.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 604,
@@ -15052,7 +25268,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.1,
     "weightKg": 80.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/604.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/604.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/604.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 605,
@@ -15075,7 +25299,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/605.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/605.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/605.png",
+    "abilities": [
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "애널라이즈",
+        "nameEn": "analytic",
+        "effectKo": "제일 마지막에 기술을 쓰면 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 606,
@@ -15098,7 +25342,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 34.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/606.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/606.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/606.png",
+    "abilities": [
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "애널라이즈",
+        "nameEn": "analytic",
+        "effectKo": "제일 마지막에 기술을 쓰면 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 607,
@@ -15122,7 +25386,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 3.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/607.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/607.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/607.png",
+    "abilities": [
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 608,
@@ -15146,7 +25430,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 13,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/608.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/608.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/608.png",
+    "abilities": [
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 609,
@@ -15170,7 +25474,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 34.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/609.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/609.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/609.png",
+    "abilities": [
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 610,
@@ -15193,7 +25517,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 18,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/610.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/610.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/610.png",
+    "abilities": [
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 611,
@@ -15216,7 +25560,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 36,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/611.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/611.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/611.png",
+    "abilities": [
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 612,
@@ -15239,7 +25603,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 105.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/612.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/612.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/612.png",
+    "abilities": [
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 613,
@@ -15262,7 +25646,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 8.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/613.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/613.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/613.png",
+    "abilities": [
+      {
+        "nameKo": "눈숨기",
+        "nameEn": "snow-cloak",
+        "effectKo": "날씨가 싸라기눈일 때 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈치우기",
+        "nameEn": "slush-rush",
+        "effectKo": "날씨가 싸라기눈일 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 614,
@@ -15285,7 +25689,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.6,
     "weightKg": 260,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/614.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/614.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/614.png",
+    "abilities": [
+      {
+        "nameKo": "눈숨기",
+        "nameEn": "snow-cloak",
+        "effectKo": "날씨가 싸라기눈일 때 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈치우기",
+        "nameEn": "slush-rush",
+        "effectKo": "날씨가 싸라기눈일 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 615,
@@ -15308,7 +25732,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 148,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/615.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/615.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/615.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 616,
@@ -15331,7 +25763,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 7.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/616.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/616.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/616.png",
+    "abilities": [
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 617,
@@ -15354,7 +25806,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 25.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/617.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/617.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/617.png",
+    "abilities": [
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "점착",
+        "nameEn": "sticky-hold",
+        "effectKo": "달라붙어서 도구를 지킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 618,
@@ -15378,7 +25850,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 11,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/618.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/618.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/618.png",
+    "abilities": [
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "유연",
+        "nameEn": "limber",
+        "effectKo": "마비 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 619,
@@ -15401,7 +25893,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 20,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/619.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/619.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/619.png",
+    "abilities": [
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "이판사판",
+        "nameEn": "reckless",
+        "effectKo": "반동 데미지를 받는 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 620,
@@ -15424,7 +25936,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 35.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/620.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/620.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/620.png",
+    "abilities": [
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "이판사판",
+        "nameEn": "reckless",
+        "effectKo": "반동 데미지를 받는 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 621,
@@ -15447,7 +25979,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 139,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/621.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/621.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/621.png",
+    "abilities": [
+      {
+        "nameKo": "까칠한피부",
+        "nameEn": "rough-skin",
+        "effectKo": "접촉한 상대에게 상처를 입힌다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 622,
@@ -15471,7 +26023,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 92,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/622.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/622.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/622.png",
+    "abilities": [
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "서투름",
+        "nameEn": "klutz",
+        "effectKo": "지니고 있는 도구를 쓸 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "노가드",
+        "nameEn": "no-guard",
+        "effectKo": "서로의 기술이 반드시 맞는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 623,
@@ -15495,7 +26067,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.8,
     "weightKg": 330,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/623.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/623.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/623.png",
+    "abilities": [
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "서투름",
+        "nameEn": "klutz",
+        "effectKo": "지니고 있는 도구를 쓸 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "노가드",
+        "nameEn": "no-guard",
+        "effectKo": "서로의 기술이 반드시 맞는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 624,
@@ -15519,7 +26111,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 10.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/624.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/624.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/624.png",
+    "abilities": [
+      {
+        "nameKo": "오기",
+        "nameEn": "defiant",
+        "effectKo": "능력이 떨어지면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 625,
@@ -15543,7 +26155,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 70,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/625.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/625.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/625.png",
+    "abilities": [
+      {
+        "nameKo": "오기",
+        "nameEn": "defiant",
+        "effectKo": "능력이 떨어지면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 626,
@@ -15566,7 +26198,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 94.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/626.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/626.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/626.png",
+    "abilities": [
+      {
+        "nameKo": "이판사판",
+        "nameEn": "reckless",
+        "effectKo": "반동 데미지를 받는 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 627,
@@ -15590,7 +26242,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 10.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/627.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/627.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/627.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 628,
@@ -15614,7 +26286,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 41,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/628.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/628.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/628.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "오기",
+        "nameEn": "defiant",
+        "effectKo": "능력이 떨어지면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 629,
@@ -15638,7 +26330,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/629.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/629.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/629.png",
+    "abilities": [
+      {
+        "nameKo": "부풀린가슴",
+        "nameEn": "big-pecks",
+        "effectKo": "방어를 떨어뜨리는 공격을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 630,
@@ -15662,7 +26374,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 39.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/630.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/630.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/630.png",
+    "abilities": [
+      {
+        "nameKo": "부풀린가슴",
+        "nameEn": "big-pecks",
+        "effectKo": "방어를 떨어뜨리는 공격을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 631,
@@ -15685,7 +26417,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 58,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/631.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/631.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/631.png",
+    "abilities": [
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "하얀연기",
+        "nameEn": "white-smoke",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 632,
@@ -15709,7 +26461,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 33,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/632.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/632.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/632.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "게으름",
+        "nameEn": "truant",
+        "effectKo": "연속으로 공격할 수 없다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 633,
@@ -15733,7 +26505,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 17.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/633.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/633.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/633.png",
+    "abilities": [
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 634,
@@ -15757,7 +26537,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 50,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/634.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/634.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/634.png",
+    "abilities": [
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 635,
@@ -15781,7 +26569,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 160,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/635.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/635.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/635.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 636,
@@ -15805,7 +26601,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 28.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/636.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/636.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/636.png",
+    "abilities": [
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 637,
@@ -15829,7 +26639,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 46,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/637.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/637.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/637.png",
+    "abilities": [
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 638,
@@ -15853,7 +26677,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.1,
     "weightKg": 250,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/638.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/638.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/638.png",
+    "abilities": [
+      {
+        "nameKo": "정의의마음",
+        "nameEn": "justified",
+        "effectKo": "악 기술을 받으면 공격이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 639,
@@ -15877,7 +26709,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.9,
     "weightKg": 260,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/639.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/639.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/639.png",
+    "abilities": [
+      {
+        "nameKo": "정의의마음",
+        "nameEn": "justified",
+        "effectKo": "악 기술을 받으면 공격이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 640,
@@ -15901,7 +26741,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 200,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/640.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/640.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/640.png",
+    "abilities": [
+      {
+        "nameKo": "정의의마음",
+        "nameEn": "justified",
+        "effectKo": "악 기술을 받으면 공격이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 641,
@@ -15924,7 +26772,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 63,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/641.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/641.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/641.png",
+    "abilities": [
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "오기",
+        "nameEn": "defiant",
+        "effectKo": "능력이 떨어지면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 642,
@@ -15948,7 +26810,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 61,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/642.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/642.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/642.png",
+    "abilities": [
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "오기",
+        "nameEn": "defiant",
+        "effectKo": "능력이 떨어지면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 643,
@@ -15972,7 +26848,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.2,
     "weightKg": 330,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/643.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/643.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/643.png",
+    "abilities": [
+      {
+        "nameKo": "터보블레이즈",
+        "nameEn": "turboblaze",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 644,
@@ -15996,7 +26880,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.9,
     "weightKg": 345,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/644.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/644.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/644.png",
+    "abilities": [
+      {
+        "nameKo": "테라볼티지",
+        "nameEn": "teravolt",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 645,
@@ -16020,7 +26912,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 68,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/645.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/645.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/645.png",
+    "abilities": [
+      {
+        "nameKo": "모래의힘",
+        "nameEn": "sand-force",
+        "effectKo": "모래바람으로 위력이 올라가는 기술이 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 646,
@@ -16044,7 +26950,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3,
     "weightKg": 325,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/646.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/646.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/646.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 647,
@@ -16068,7 +26982,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 48.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/647.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/647.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/647.png",
+    "abilities": [
+      {
+        "nameKo": "정의의마음",
+        "nameEn": "justified",
+        "effectKo": "악 기술을 받으면 공격이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 648,
@@ -16092,7 +27014,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 6.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/648.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/648.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/648.png",
+    "abilities": [
+      {
+        "nameKo": "하늘의은총",
+        "nameEn": "serene-grace",
+        "effectKo": "기술의 추가 효과가 나오기 쉽다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 649,
@@ -16116,7 +27046,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 82.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/649.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/649.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/649.png",
+    "abilities": [
+      {
+        "nameKo": "다운로드",
+        "nameEn": "download",
+        "effectKo": "상대의 능력을 보고 능력치를 바꾼다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 650,
@@ -16139,7 +27077,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/650.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/650.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/650.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방탄",
+        "nameEn": "bulletproof",
+        "effectKo": "구슬이나 폭탄에 맞지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 651,
@@ -16162,7 +27114,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 29,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/651.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/651.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/651.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방탄",
+        "nameEn": "bulletproof",
+        "effectKo": "구슬이나 폭탄에 맞지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 652,
@@ -16186,7 +27152,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 90,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/652.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/652.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/652.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방탄",
+        "nameEn": "bulletproof",
+        "effectKo": "구슬이나 폭탄에 맞지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 653,
@@ -16209,7 +27189,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 9.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/653.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/653.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/653.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매지션",
+        "nameEn": "magician",
+        "effectKo": "기술을 맞은 상대의 도구를 빼앗아 버린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 654,
@@ -16232,7 +27226,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 14.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/654.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/654.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/654.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매지션",
+        "nameEn": "magician",
+        "effectKo": "기술을 맞은 상대의 도구를 빼앗아 버린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 655,
@@ -16256,7 +27264,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 39,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/655.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/655.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/655.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매지션",
+        "nameEn": "magician",
+        "effectKo": "기술을 맞은 상대의 도구를 빼앗아 버린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 656,
@@ -16279,7 +27301,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/656.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/656.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/656.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "변환자재",
+        "nameEn": "protean",
+        "effectKo": "사용한 기술과 같은 타입으로 변화한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 657,
@@ -16302,7 +27338,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 10.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/657.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/657.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/657.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "변환자재",
+        "nameEn": "protean",
+        "effectKo": "사용한 기술과 같은 타입으로 변화한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 658,
@@ -16326,7 +27376,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 40,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/658.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/658.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/658.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "변환자재",
+        "nameEn": "protean",
+        "effectKo": "사용한 기술과 같은 타입으로 변화한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 659,
@@ -16349,7 +27413,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/659.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/659.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/659.png",
+    "abilities": [
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "볼주머니",
+        "nameEn": "cheek-pouch",
+        "effectKo": "나무열매를 먹으면 HP도 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "천하장사",
+        "nameEn": "huge-power",
+        "effectKo": "물리공격의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 660,
@@ -16373,7 +27457,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 42.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/660.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/660.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/660.png",
+    "abilities": [
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "볼주머니",
+        "nameEn": "cheek-pouch",
+        "effectKo": "나무열매를 먹으면 HP도 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "천하장사",
+        "nameEn": "huge-power",
+        "effectKo": "물리공격의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 661,
@@ -16397,7 +27501,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 1.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/661.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/661.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/661.png",
+    "abilities": [
+      {
+        "nameKo": "부풀린가슴",
+        "nameEn": "big-pecks",
+        "effectKo": "방어를 떨어뜨리는 공격을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "질풍날개",
+        "nameEn": "gale-wings",
+        "effectKo": "비행타입의 기술이 먼저 나오게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 662,
@@ -16421,7 +27539,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 16,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/662.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/662.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/662.png",
+    "abilities": [
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "질풍날개",
+        "nameEn": "gale-wings",
+        "effectKo": "비행타입의 기술이 먼저 나오게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 663,
@@ -16445,7 +27577,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 24.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/663.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/663.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/663.png",
+    "abilities": [
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "질풍날개",
+        "nameEn": "gale-wings",
+        "effectKo": "비행타입의 기술이 먼저 나오게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 664,
@@ -16468,7 +27614,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 2.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/664.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/664.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/664.png",
+    "abilities": [
+      {
+        "nameKo": "인분",
+        "nameEn": "shield-dust",
+        "effectKo": "기술의 추가 효과를 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "복안",
+        "nameEn": "compound-eyes",
+        "effectKo": "기술의 명중률이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "프렌드가드",
+        "nameEn": "friend-guard",
+        "effectKo": "같은 편의 데미지를 줄일 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 665,
@@ -16491,7 +27657,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 8.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/665.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/665.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/665.png",
+    "abilities": [
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "프렌드가드",
+        "nameEn": "friend-guard",
+        "effectKo": "같은 편의 데미지를 줄일 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 666,
@@ -16515,7 +27695,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 17,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/666.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/666.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/666.png",
+    "abilities": [
+      {
+        "nameKo": "인분",
+        "nameEn": "shield-dust",
+        "effectKo": "기술의 추가 효과를 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "복안",
+        "nameEn": "compound-eyes",
+        "effectKo": "기술의 명중률이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "프렌드가드",
+        "nameEn": "friend-guard",
+        "effectKo": "같은 편의 데미지를 줄일 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 667,
@@ -16539,7 +27739,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 13.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/667.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/667.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/667.png",
+    "abilities": [
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자기과신",
+        "nameEn": "moxie",
+        "effectKo": "상대를 쓰러뜨리면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 668,
@@ -16563,7 +27783,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 81.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/668.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/668.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/668.png",
+    "abilities": [
+      {
+        "nameKo": "투쟁심",
+        "nameEn": "rivalry",
+        "effectKo": "상대와 성별이 같으면 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자기과신",
+        "nameEn": "moxie",
+        "effectKo": "상대를 쓰러뜨리면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 669,
@@ -16586,7 +27826,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.1,
     "weightKg": 0.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/669.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/669.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/669.png",
+    "abilities": [
+      {
+        "nameKo": "플라워베일",
+        "nameEn": "flower-veil",
+        "effectKo": "같은 편의 풀타입 포켓몬은 능력이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "공생",
+        "nameEn": "symbiosis",
+        "effectKo": "같은 편에게 도구를 건넬 수 있게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 670,
@@ -16609,7 +27863,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 0.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/670.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/670.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/670.png",
+    "abilities": [
+      {
+        "nameKo": "플라워베일",
+        "nameEn": "flower-veil",
+        "effectKo": "같은 편의 풀타입 포켓몬은 능력이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "공생",
+        "nameEn": "symbiosis",
+        "effectKo": "같은 편에게 도구를 건넬 수 있게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 671,
@@ -16632,7 +27900,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 10,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/671.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/671.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/671.png",
+    "abilities": [
+      {
+        "nameKo": "플라워베일",
+        "nameEn": "flower-veil",
+        "effectKo": "같은 편의 풀타입 포켓몬은 능력이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "공생",
+        "nameEn": "symbiosis",
+        "effectKo": "같은 편에게 도구를 건넬 수 있게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 672,
@@ -16655,7 +27937,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 31,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/672.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/672.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/672.png",
+    "abilities": [
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "풀모피",
+        "nameEn": "grass-pelt",
+        "effectKo": "그래스필드일 때 방어가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 673,
@@ -16678,7 +27974,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 91,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/673.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/673.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/673.png",
+    "abilities": [
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "풀모피",
+        "nameEn": "grass-pelt",
+        "effectKo": "그래스필드일 때 방어가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 674,
@@ -16701,7 +28011,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/674.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/674.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/674.png",
+    "abilities": [
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "배짱",
+        "nameEn": "scrappy",
+        "effectKo": "고스트타입에 노말 기술이 맞는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 675,
@@ -16725,7 +28055,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.1,
     "weightKg": 136,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/675.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/675.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/675.png",
+    "abilities": [
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "배짱",
+        "nameEn": "scrappy",
+        "effectKo": "고스트타입에 노말 기술이 맞는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 676,
@@ -16748,7 +28098,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 28,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/676.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/676.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/676.png",
+    "abilities": [
+      {
+        "nameKo": "퍼코트",
+        "nameEn": "fur-coat",
+        "effectKo": "물리 기술의 데미지가 절반이 된다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 677,
@@ -16771,7 +28129,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 3.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/677.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/677.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/677.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 678,
@@ -16794,7 +28172,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 8.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/678.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/678.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/678.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 679,
@@ -16818,7 +28216,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/679.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/679.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/679.png",
+    "abilities": [
+      {
+        "nameKo": "노가드",
+        "nameEn": "no-guard",
+        "effectKo": "서로의 기술이 반드시 맞는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 680,
@@ -16842,7 +28248,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 4.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/680.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/680.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/680.png",
+    "abilities": [
+      {
+        "nameKo": "노가드",
+        "nameEn": "no-guard",
+        "effectKo": "서로의 기술이 반드시 맞는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 681,
@@ -16866,7 +28280,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 53,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/681.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/681.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/681.png",
+    "abilities": [
+      {
+        "nameKo": "배틀스위치",
+        "nameEn": "stance-change",
+        "effectKo": "배틀모드에서 모습이 바뀐다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 682,
@@ -16889,7 +28311,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 0.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/682.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/682.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/682.png",
+    "abilities": [
+      {
+        "nameKo": "치유의마음",
+        "nameEn": "healer",
+        "effectKo": "같은 편의 상태 이상을 가끔 회복시킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아로마베일",
+        "nameEn": "aroma-veil",
+        "effectKo": "같은 편으로 향하는 멘탈 공격을 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 683,
@@ -16912,7 +28348,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 15.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/683.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/683.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/683.png",
+    "abilities": [
+      {
+        "nameKo": "치유의마음",
+        "nameEn": "healer",
+        "effectKo": "같은 편의 상태 이상을 가끔 회복시킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아로마베일",
+        "nameEn": "aroma-veil",
+        "effectKo": "같은 편으로 향하는 멘탈 공격을 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 684,
@@ -16935,7 +28385,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 3.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/684.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/684.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/684.png",
+    "abilities": [
+      {
+        "nameKo": "스위트베일",
+        "nameEn": "sweet-veil",
+        "effectKo": "같은 편의 포켓몬이 잠들지 않게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 685,
@@ -16958,7 +28422,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/685.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/685.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/685.png",
+    "abilities": [
+      {
+        "nameKo": "스위트베일",
+        "nameEn": "sweet-veil",
+        "effectKo": "같은 편의 포켓몬이 잠들지 않게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 686,
@@ -16982,7 +28460,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 3.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/686.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/686.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/686.png",
+    "abilities": [
+      {
+        "nameKo": "심술꾸러기",
+        "nameEn": "contrary",
+        "effectKo": "능력의 변화가 역전된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "흡반",
+        "nameEn": "suction-cups",
+        "effectKo": "교체시키는 기술이나 도구의 효과를 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 687,
@@ -17006,7 +28504,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 47,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/687.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/687.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/687.png",
+    "abilities": [
+      {
+        "nameKo": "심술꾸러기",
+        "nameEn": "contrary",
+        "effectKo": "능력의 변화가 역전된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "흡반",
+        "nameEn": "suction-cups",
+        "effectKo": "교체시키는 기술이나 도구의 효과를 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 688,
@@ -17030,7 +28548,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 31,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/688.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/688.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/688.png",
+    "abilities": [
+      {
+        "nameKo": "단단한발톱",
+        "nameEn": "tough-claws",
+        "effectKo": "접촉하는 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "나쁜손버릇",
+        "nameEn": "pickpocket",
+        "effectKo": "닿은 상대로부터 도구를 훔친다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 689,
@@ -17054,7 +28592,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 96,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/689.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/689.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/689.png",
+    "abilities": [
+      {
+        "nameKo": "단단한발톱",
+        "nameEn": "tough-claws",
+        "effectKo": "접촉하는 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "나쁜손버릇",
+        "nameEn": "pickpocket",
+        "effectKo": "닿은 상대로부터 도구를 훔친다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 690,
@@ -17078,7 +28636,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 7.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/690.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/690.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/690.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "독수",
+        "nameEn": "poison-touch",
+        "effectKo": "접촉하기만 해도 상대를 독 상태로 만들 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "적응력",
+        "nameEn": "adaptability",
+        "effectKo": "타입이 같은 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 691,
@@ -17102,7 +28680,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 81.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/691.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/691.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/691.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "독수",
+        "nameEn": "poison-touch",
+        "effectKo": "접촉하기만 해도 상대를 독 상태로 만들 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "적응력",
+        "nameEn": "adaptability",
+        "effectKo": "타입이 같은 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 692,
@@ -17125,7 +28723,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 8.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/692.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/692.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/692.png",
+    "abilities": [
+      {
+        "nameKo": "메가런처",
+        "nameEn": "mega-launcher",
+        "effectKo": "파동 기술의 위력이 크다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 693,
@@ -17148,7 +28754,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 35.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/693.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/693.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/693.png",
+    "abilities": [
+      {
+        "nameKo": "메가런처",
+        "nameEn": "mega-launcher",
+        "effectKo": "파동 기술의 위력이 크다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 694,
@@ -17172,7 +28786,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/694.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/694.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/694.png",
+    "abilities": [
+      {
+        "nameKo": "건조피부",
+        "nameEn": "dry-skin",
+        "effectKo": "더우면 HP가 줄어든다. 물로 HP를 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "선파워",
+        "nameEn": "solar-power",
+        "effectKo": "맑으면 HP가 줄지만 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 695,
@@ -17196,7 +28830,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 21,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/695.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/695.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/695.png",
+    "abilities": [
+      {
+        "nameKo": "건조피부",
+        "nameEn": "dry-skin",
+        "effectKo": "더우면 HP가 줄어든다. 물로 HP를 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "선파워",
+        "nameEn": "solar-power",
+        "effectKo": "맑으면 HP가 줄지만 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 696,
@@ -17220,7 +28874,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 26,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/696.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/696.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/696.png",
+    "abilities": [
+      {
+        "nameKo": "옹골찬턱",
+        "nameEn": "strong-jaw",
+        "effectKo": "턱이 튼튼하여 무는 힘이 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 697,
@@ -17244,7 +28912,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.5,
     "weightKg": 270,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/697.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/697.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/697.png",
+    "abilities": [
+      {
+        "nameKo": "옹골찬턱",
+        "nameEn": "strong-jaw",
+        "effectKo": "턱이 튼튼하여 무는 힘이 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 698,
@@ -17268,7 +28950,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 25.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/698.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/698.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/698.png",
+    "abilities": [
+      {
+        "nameKo": "프리즈스킨",
+        "nameEn": "refrigerate",
+        "effectKo": "노말타입의 기술이 얼음타입이 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈퍼뜨리기",
+        "nameEn": "snow-warning",
+        "effectKo": "배틀에 나가면 싸라기눈을 내리게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 699,
@@ -17292,7 +28988,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.7,
     "weightKg": 225,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/699.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/699.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/699.png",
+    "abilities": [
+      {
+        "nameKo": "프리즈스킨",
+        "nameEn": "refrigerate",
+        "effectKo": "노말타입의 기술이 얼음타입이 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈퍼뜨리기",
+        "nameEn": "snow-warning",
+        "effectKo": "배틀에 나가면 싸라기눈을 내리게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 700,
@@ -17315,8 +29025,25 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 23.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/700.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png"
-  },
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png",
+    "abilities": [
+      {
+        "nameKo": "헤롱헤롱바디",
+        "nameEn": "cute-charm",
+        "effectKo": "스치면 헤롱헤롱 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "페어리스킨",
+        "nameEn": "pixilate",
+        "effectKo": "노말타입의 기술이 페어리타입이 된다.",
+        "isHidden": true
+      }
+    ]
+  }
+]
+
+const POKEMON_CHUNK_7: Pokemon[] = [
   {
     "id": 701,
     "dexNumber": 701,
@@ -17339,7 +29066,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 21.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/701.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/701.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/701.png",
+    "abilities": [
+      {
+        "nameKo": "유연",
+        "nameEn": "limber",
+        "effectKo": "마비 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 702,
@@ -17363,7 +29110,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 2.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/702.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/702.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/702.png",
+    "abilities": [
+      {
+        "nameKo": "볼주머니",
+        "nameEn": "cheek-pouch",
+        "effectKo": "나무열매를 먹으면 HP도 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "플러스",
+        "nameEn": "plus",
+        "effectKo": "플러스나 마이너스가 있으면 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 703,
@@ -17387,7 +29154,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 5.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/703.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/703.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/703.png",
+    "abilities": [
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 704,
@@ -17410,7 +29191,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 2.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/704.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/704.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/704.png",
+    "abilities": [
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "미끈미끈",
+        "nameEn": "gooey",
+        "effectKo": "접촉한 상대의 스피드를 떨어뜨린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 705,
@@ -17433,7 +29234,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 17.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/705.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/705.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/705.png",
+    "abilities": [
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "미끈미끈",
+        "nameEn": "gooey",
+        "effectKo": "접촉한 상대의 스피드를 떨어뜨린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 706,
@@ -17456,7 +29277,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 150.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/706.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/706.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/706.png",
+    "abilities": [
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉바디",
+        "nameEn": "hydration",
+        "effectKo": "비가 오면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "미끈미끈",
+        "nameEn": "gooey",
+        "effectKo": "접촉한 상대의 스피드를 떨어뜨린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 707,
@@ -17480,7 +29321,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/707.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/707.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/707.png",
+    "abilities": [
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매지션",
+        "nameEn": "magician",
+        "effectKo": "기술을 맞은 상대의 도구를 빼앗아 버린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 708,
@@ -17504,7 +29359,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/708.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/708.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/708.png",
+    "abilities": [
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수확",
+        "nameEn": "harvest",
+        "effectKo": "사용한 나무열매를 몇 번이고 만들어 낸다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 709,
@@ -17528,7 +29403,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 71,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/709.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/709.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/709.png",
+    "abilities": [
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수확",
+        "nameEn": "harvest",
+        "effectKo": "사용한 나무열매를 몇 번이고 만들어 낸다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 710,
@@ -17552,7 +29447,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/710.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/710.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/710.png",
+    "abilities": [
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 711,
@@ -17576,7 +29491,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 12.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/711.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/711.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/711.png",
+    "abilities": [
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 712,
@@ -17599,7 +29534,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 99.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/712.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/712.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/712.png",
+    "abilities": [
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 713,
@@ -17622,7 +29577,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 505,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/713.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/713.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/713.png",
+    "abilities": [
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 714,
@@ -17646,7 +29621,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/714.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/714.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/714.png",
+    "abilities": [
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 715,
@@ -17670,7 +29665,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 85,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/715.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/715.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/715.png",
+    "abilities": [
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 716,
@@ -17693,7 +29708,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3,
     "weightKg": 215,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/716.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/716.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/716.png",
+    "abilities": [
+      {
+        "nameKo": "페어리오라",
+        "nameEn": "fairy-aura",
+        "effectKo": "전원의 페어리타입 기술이 강해진다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 717,
@@ -17717,7 +29740,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 5.8,
     "weightKg": 203,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/717.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/717.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/717.png",
+    "abilities": [
+      {
+        "nameKo": "다크오라",
+        "nameEn": "dark-aura",
+        "effectKo": "전원의 악타입 기술이 강해진다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 718,
@@ -17741,7 +29772,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 5,
     "weightKg": 305,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/718.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/718.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/718.png",
+    "abilities": [
+      {
+        "nameKo": "오라브레이크",
+        "nameEn": "aura-break",
+        "effectKo": "오라의 효과가 반대가 된다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 719,
@@ -17766,6 +29805,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "weightKg": 8.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/719.png",
     "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/719.png",
+    "abilities": [
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      }
+    ],
     "megaForms": [
       {
         "label": "메가디안시",
@@ -17808,7 +29855,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/720.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/720.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/720.png",
+    "abilities": [
+      {
+        "nameKo": "매지션",
+        "nameEn": "magician",
+        "effectKo": "기술을 맞은 상대의 도구를 빼앗아 버린다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 721,
@@ -17832,7 +29887,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 195,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/721.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/721.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/721.png",
+    "abilities": [
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 722,
@@ -17856,7 +29919,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 1.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/722.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/722.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/722.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "원격",
+        "nameEn": "long-reach",
+        "effectKo": "모든 기술을 상대에게 접촉하지 않고 사용할 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 723,
@@ -17880,7 +29957,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 16,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/723.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/723.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/723.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "원격",
+        "nameEn": "long-reach",
+        "effectKo": "모든 기술을 상대에게 접촉하지 않고 사용할 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 724,
@@ -17904,7 +29995,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 36.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/724.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/724.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/724.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "원격",
+        "nameEn": "long-reach",
+        "effectKo": "모든 기술을 상대에게 접촉하지 않고 사용할 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 725,
@@ -17927,7 +30032,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 4.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/725.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/725.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/725.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 726,
@@ -17950,7 +30069,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 25,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/726.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/726.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/726.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 727,
@@ -17974,7 +30107,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 83,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/727.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/727.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/727.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 728,
@@ -17997,7 +30144,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 7.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/728.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/728.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/728.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉보이스",
+        "nameEn": "liquid-voice",
+        "effectKo": "모든 소리 기술이 물타입이 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 729,
@@ -18020,7 +30181,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 17.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/729.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/729.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/729.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉보이스",
+        "nameEn": "liquid-voice",
+        "effectKo": "모든 소리 기술이 물타입이 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 730,
@@ -18044,7 +30219,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 44,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/730.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/730.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/730.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "촉촉보이스",
+        "nameEn": "liquid-voice",
+        "effectKo": "모든 소리 기술이 물타입이 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 731,
@@ -18068,7 +30257,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 1.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/731.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/731.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/731.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스킬링크",
+        "nameEn": "skill-link",
+        "effectKo": "연속 기술을 많이 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 732,
@@ -18092,7 +30301,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 14.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/732.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/732.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/732.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스킬링크",
+        "nameEn": "skill-link",
+        "effectKo": "연속 기술을 많이 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 733,
@@ -18116,7 +30345,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 26,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/733.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/733.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/733.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스킬링크",
+        "nameEn": "skill-link",
+        "effectKo": "연속 기술을 많이 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 734,
@@ -18139,7 +30388,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/734.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/734.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/734.png",
+    "abilities": [
+      {
+        "nameKo": "잠복",
+        "nameEn": "stakeout",
+        "effectKo": "교체로 나온 상대에게 2배 데미지로 공격할 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골찬턱",
+        "nameEn": "strong-jaw",
+        "effectKo": "턱이 튼튼하여 무는 힘이 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "적응력",
+        "nameEn": "adaptability",
+        "effectKo": "타입이 같은 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 735,
@@ -18162,7 +30431,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 14.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/735.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/735.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/735.png",
+    "abilities": [
+      {
+        "nameKo": "잠복",
+        "nameEn": "stakeout",
+        "effectKo": "교체로 나온 상대에게 2배 데미지로 공격할 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골찬턱",
+        "nameEn": "strong-jaw",
+        "effectKo": "턱이 튼튼하여 무는 힘이 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "적응력",
+        "nameEn": "adaptability",
+        "effectKo": "타입이 같은 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 736,
@@ -18185,7 +30474,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 4.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/736.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/736.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/736.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 737,
@@ -18209,7 +30506,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 10.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/737.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/737.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/737.png",
+    "abilities": [
+      {
+        "nameKo": "배터리",
+        "nameEn": "battery",
+        "effectKo": "같은 편 특수 기술의 위력을 올린다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 738,
@@ -18233,7 +30538,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 45,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/738.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/738.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/738.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 739,
@@ -18256,7 +30569,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/739.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/739.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/739.png",
+    "abilities": [
+      {
+        "nameKo": "괴력집게",
+        "nameEn": "hyper-cutter",
+        "effectKo": "상대가 공격을 떨어뜨리지 못한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "분노의경혈",
+        "nameEn": "anger-point",
+        "effectKo": "급소에 맞으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 740,
@@ -18280,7 +30613,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 180,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/740.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/740.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/740.png",
+    "abilities": [
+      {
+        "nameKo": "괴력집게",
+        "nameEn": "hyper-cutter",
+        "effectKo": "상대가 공격을 떨어뜨리지 못한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "분노의경혈",
+        "nameEn": "anger-point",
+        "effectKo": "급소에 맞으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 741,
@@ -18304,7 +30657,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 3.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/741.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/741.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/741.png",
+    "abilities": [
+      {
+        "nameKo": "무희",
+        "nameEn": "dancer",
+        "effectKo": "누군가 춤 기술을 쓰면 자신도 이어서 춤 기술을 쓸 수 있다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 742,
@@ -18328,7 +30689,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.1,
     "weightKg": 0.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/742.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/742.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/742.png",
+    "abilities": [
+      {
+        "nameKo": "꿀모으기",
+        "nameEn": "honey-gather",
+        "effectKo": "달콤한꿀을 모아서 올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "인분",
+        "nameEn": "shield-dust",
+        "effectKo": "기술의 추가 효과를 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스위트베일",
+        "nameEn": "sweet-veil",
+        "effectKo": "같은 편의 포켓몬이 잠들지 않게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 743,
@@ -18352,7 +30733,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 0.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/743.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/743.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/743.png",
+    "abilities": [
+      {
+        "nameKo": "꿀모으기",
+        "nameEn": "honey-gather",
+        "effectKo": "달콤한꿀을 모아서 올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "인분",
+        "nameEn": "shield-dust",
+        "effectKo": "기술의 추가 효과를 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스위트베일",
+        "nameEn": "sweet-veil",
+        "effectKo": "같은 편의 포켓몬이 잠들지 않게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 744,
@@ -18375,7 +30776,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 9.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/744.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/744.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/744.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의기양양",
+        "nameEn": "vital-spirit",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불굴의마음",
+        "nameEn": "steadfast",
+        "effectKo": "풀죽을 때마다 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 745,
@@ -18398,7 +30819,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 25,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/745.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/745.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/745.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래헤치기",
+        "nameEn": "sand-rush",
+        "effectKo": "모래바람으로 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불굴의마음",
+        "nameEn": "steadfast",
+        "effectKo": "풀죽을 때마다 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 746,
@@ -18421,7 +30862,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 0.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/746.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/746.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/746.png",
+    "abilities": [
+      {
+        "nameKo": "어군",
+        "nameEn": "schooling",
+        "effectKo": "HP가 많을 때 무리지어 강해진다. HP가 얼마 남지 않으면 무리는 뿔뿔이 흩어진다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 747,
@@ -18445,7 +30894,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/747.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/747.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/747.png",
+    "abilities": [
+      {
+        "nameKo": "무도한행동",
+        "nameEn": "merciless",
+        "effectKo": "독 상태의 상대를 공격하면 반드시 급소에 맞는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "유연",
+        "nameEn": "limber",
+        "effectKo": "마비 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 748,
@@ -18469,7 +30938,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 14.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/748.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/748.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/748.png",
+    "abilities": [
+      {
+        "nameKo": "무도한행동",
+        "nameEn": "merciless",
+        "effectKo": "독 상태의 상대를 공격하면 반드시 급소에 맞는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "유연",
+        "nameEn": "limber",
+        "effectKo": "마비 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 749,
@@ -18492,7 +30981,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 110,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/749.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/749.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/749.png",
+    "abilities": [
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "지구력",
+        "nameEn": "stamina",
+        "effectKo": "공격을 받으면 방어가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 750,
@@ -18515,7 +31024,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.5,
     "weightKg": 920,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/750.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/750.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/750.png",
+    "abilities": [
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "지구력",
+        "nameEn": "stamina",
+        "effectKo": "공격을 받으면 방어가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 751,
@@ -18539,7 +31068,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/751.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/751.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/751.png",
+    "abilities": [
+      {
+        "nameKo": "수포",
+        "nameEn": "water-bubble",
+        "effectKo": "자신을 향하는 불꽃타입 기술의 위력을 떨어뜨린다. 화상을 입지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 752,
@@ -18563,7 +31106,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 82,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/752.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/752.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/752.png",
+    "abilities": [
+      {
+        "nameKo": "수포",
+        "nameEn": "water-bubble",
+        "effectKo": "자신을 향하는 불꽃타입 기술의 위력을 떨어뜨린다. 화상을 입지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 753,
@@ -18586,7 +31143,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 1.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/753.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/753.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/753.png",
+    "abilities": [
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "심술꾸러기",
+        "nameEn": "contrary",
+        "effectKo": "능력의 변화가 역전된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 754,
@@ -18609,7 +31180,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 18.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/754.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/754.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/754.png",
+    "abilities": [
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "심술꾸러기",
+        "nameEn": "contrary",
+        "effectKo": "능력의 변화가 역전된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 755,
@@ -18633,7 +31218,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 1.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/755.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/755.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/755.png",
+    "abilities": [
+      {
+        "nameKo": "발광",
+        "nameEn": "illuminate",
+        "effectKo": "야생 포켓몬과 만나기 쉬워진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "포자",
+        "nameEn": "effect-spore",
+        "effectKo": "스치면 독, 마비, 잠듦 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "젖은접시",
+        "nameEn": "rain-dish",
+        "effectKo": "비가 올 때 조금씩 HP를 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 756,
@@ -18657,7 +31262,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 11.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/756.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/756.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/756.png",
+    "abilities": [
+      {
+        "nameKo": "발광",
+        "nameEn": "illuminate",
+        "effectKo": "야생 포켓몬과 만나기 쉬워진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "포자",
+        "nameEn": "effect-spore",
+        "effectKo": "스치면 독, 마비, 잠듦 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "젖은접시",
+        "nameEn": "rain-dish",
+        "effectKo": "비가 올 때 조금씩 HP를 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 757,
@@ -18681,7 +31306,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 4.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/757.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/757.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/757.png",
+    "abilities": [
+      {
+        "nameKo": "부식",
+        "nameEn": "corrosion",
+        "effectKo": "강철타입이나 독타입도 독 상태로 만들 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 758,
@@ -18705,7 +31344,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 22.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/758.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/758.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/758.png",
+    "abilities": [
+      {
+        "nameKo": "부식",
+        "nameEn": "corrosion",
+        "effectKo": "강철타입이나 독타입도 독 상태로 만들 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 759,
@@ -18729,7 +31382,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 6.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/759.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/759.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/759.png",
+    "abilities": [
+      {
+        "nameKo": "복슬복슬",
+        "nameEn": "fluffy",
+        "effectKo": "상대로부터 받은 접촉하는 기술의 데미지를 반감시키지만 불꽃타입 기술의 데미지는 2배가 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "서투름",
+        "nameEn": "klutz",
+        "effectKo": "지니고 있는 도구를 쓸 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "헤롱헤롱바디",
+        "nameEn": "cute-charm",
+        "effectKo": "스치면 헤롱헤롱 상태가 될 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 760,
@@ -18753,7 +31426,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.1,
     "weightKg": 135,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/760.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/760.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/760.png",
+    "abilities": [
+      {
+        "nameKo": "복슬복슬",
+        "nameEn": "fluffy",
+        "effectKo": "상대로부터 받은 접촉하는 기술의 데미지를 반감시키지만 불꽃타입 기술의 데미지는 2배가 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "서투름",
+        "nameEn": "klutz",
+        "effectKo": "지니고 있는 도구를 쓸 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 761,
@@ -18776,7 +31469,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 3.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/761.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/761.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/761.png",
+    "abilities": [
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스위트베일",
+        "nameEn": "sweet-veil",
+        "effectKo": "같은 편의 포켓몬이 잠들지 않게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 762,
@@ -18799,7 +31512,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 8.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/762.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/762.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/762.png",
+    "abilities": [
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스위트베일",
+        "nameEn": "sweet-veil",
+        "effectKo": "같은 편의 포켓몬이 잠들지 않게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 763,
@@ -18822,7 +31555,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 21.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/763.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/763.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/763.png",
+    "abilities": [
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "여왕의위엄",
+        "nameEn": "queenly-majesty",
+        "effectKo": "상대에게 위압감을 줘서 이쪽을 향한 선제 기술을 사용할 수 없게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스위트베일",
+        "nameEn": "sweet-veil",
+        "effectKo": "같은 편의 포켓몬이 잠들지 않게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 764,
@@ -18845,7 +31598,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.1,
     "weightKg": 0.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/764.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/764.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/764.png",
+    "abilities": [
+      {
+        "nameKo": "플라워베일",
+        "nameEn": "flower-veil",
+        "effectKo": "같은 편의 풀타입 포켓몬은 능력이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "힐링시프트",
+        "nameEn": "triage",
+        "effectKo": "회복 기술을 먼저 사용할 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 765,
@@ -18869,7 +31642,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 76,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/765.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/765.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/765.png",
+    "abilities": [
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "공생",
+        "nameEn": "symbiosis",
+        "effectKo": "같은 편에게 도구를 건넬 수 있게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 766,
@@ -18892,7 +31685,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 82.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/766.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/766.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/766.png",
+    "abilities": [
+      {
+        "nameKo": "리시버",
+        "nameEn": "receiver",
+        "effectKo": "쓰러진 같은 편의 특성을 이어받아 같은 특성이 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "오기",
+        "nameEn": "defiant",
+        "effectKo": "능력이 떨어지면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 767,
@@ -18916,7 +31723,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 12,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/767.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/767.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/767.png",
+    "abilities": [
+      {
+        "nameKo": "도망태세",
+        "nameEn": "wimp-out",
+        "effectKo": "HP가 절반이 되면 황급히 도망쳐서 지닌 포켓몬으로 돌아간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 768,
@@ -18940,7 +31755,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 108,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/768.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/768.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/768.png",
+    "abilities": [
+      {
+        "nameKo": "위기회피",
+        "nameEn": "emergency-exit",
+        "effectKo": "HP가 절반이 되면 위험을 회피하기 위해 지닌 포켓몬으로 돌아간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 769,
@@ -18964,7 +31787,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 70,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/769.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/769.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/769.png",
+    "abilities": [
+      {
+        "nameKo": "꾸덕꾸덕굳기",
+        "nameEn": "water-compaction",
+        "effectKo": "물타입의 기술을 받으면 방어가 크게 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 770,
@@ -18988,7 +31825,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 250,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/770.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/770.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/770.png",
+    "abilities": [
+      {
+        "nameKo": "꾸덕꾸덕굳기",
+        "nameEn": "water-compaction",
+        "effectKo": "물타입의 기술을 받으면 방어가 크게 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 771,
@@ -19011,7 +31862,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 1.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/771.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/771.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/771.png",
+    "abilities": [
+      {
+        "nameKo": "내용물분출",
+        "nameEn": "innards-out",
+        "effectKo": "상대가 쓰러뜨렸을 때 HP의 남은 양만큼 상대에게 데미지를 준다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "천진",
+        "nameEn": "unaware",
+        "effectKo": "상대의 능력 변화를 무시한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 772,
@@ -19034,7 +31899,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.9,
     "weightKg": 120.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/772.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/772.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/772.png",
+    "abilities": [
+      {
+        "nameKo": "전투무장",
+        "nameEn": "battle-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 773,
@@ -19057,7 +31930,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.3,
     "weightKg": 100.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/773.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/773.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/773.png",
+    "abilities": [
+      {
+        "nameKo": "AR시스템",
+        "nameEn": "rks-system",
+        "effectKo": "지니고 있는 메모리로 자신의 타입이 변한다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 774,
@@ -19081,7 +31962,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 40,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/774.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/774.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/774.png",
+    "abilities": [
+      {
+        "nameKo": "리밋실드",
+        "nameEn": "shields-down",
+        "effectKo": "HP가 절반이 되면 껍질이 깨져 공격적으로 된다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 775,
@@ -19104,7 +31993,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 19.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/775.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/775.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/775.png",
+    "abilities": [
+      {
+        "nameKo": "절대안깸",
+        "nameEn": "comatose",
+        "effectKo": "항상 비몽사몽 상태로 절대 깨지 않는다. 잠든 상태로 공격할 수 있다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 776,
@@ -19128,7 +32025,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 212,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/776.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/776.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/776.png",
+    "abilities": [
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 777,
@@ -19152,7 +32057,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 3.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/777.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/777.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/777.png",
+    "abilities": [
+      {
+        "nameKo": "철가시",
+        "nameEn": "iron-barbs",
+        "effectKo": "접촉한 상대에게 상처를 입힌다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 778,
@@ -19176,7 +32101,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 0.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/778.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/778.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/778.png",
+    "abilities": [
+      {
+        "nameKo": "탈",
+        "nameEn": "disguise",
+        "effectKo": "몸을 덮는 탈로 1번 공격을 막을 수 있다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 779,
@@ -19200,7 +32133,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 19,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/779.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/779.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/779.png",
+    "abilities": [
+      {
+        "nameKo": "비비드바디",
+        "nameEn": "dazzling",
+        "effectKo": "상대를 놀라게 해서 이쪽을 향한 선제 기술을 사용할 수 없게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골찬턱",
+        "nameEn": "strong-jaw",
+        "effectKo": "턱이 튼튼하여 무는 힘이 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "미라클스킨",
+        "nameEn": "wonder-skin",
+        "effectKo": "변화 기술을 받기 어려운 몸으로 되어 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 780,
@@ -19224,7 +32177,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3,
     "weightKg": 185,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/780.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/780.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/780.png",
+    "abilities": [
+      {
+        "nameKo": "발끈",
+        "nameEn": "berserk",
+        "effectKo": "상대의 공격으로 HP가 절반이 되면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날씨부정",
+        "nameEn": "cloud-nine",
+        "effectKo": "날씨의 영향이 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 781,
@@ -19248,7 +32221,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.9,
     "weightKg": 210,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/781.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/781.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/781.png",
+    "abilities": [
+      {
+        "nameKo": "강철술사",
+        "nameEn": "steelworker",
+        "effectKo": "강철타입 기술의 위력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 782,
@@ -19271,7 +32252,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 29.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/782.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/782.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/782.png",
+    "abilities": [
+      {
+        "nameKo": "방탄",
+        "nameEn": "bulletproof",
+        "effectKo": "구슬이나 폭탄에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 783,
@@ -19295,7 +32296,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 47,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/783.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/783.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/783.png",
+    "abilities": [
+      {
+        "nameKo": "방탄",
+        "nameEn": "bulletproof",
+        "effectKo": "구슬이나 폭탄에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 784,
@@ -19319,7 +32340,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 78.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/784.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/784.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/784.png",
+    "abilities": [
+      {
+        "nameKo": "방탄",
+        "nameEn": "bulletproof",
+        "effectKo": "구슬이나 폭탄에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 785,
@@ -19343,7 +32384,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 20.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/785.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/785.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/785.png",
+    "abilities": [
+      {
+        "nameKo": "일렉트릭메이커",
+        "nameEn": "electric-surge",
+        "effectKo": "등장했을 때 일렉트릭필드를 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 786,
@@ -19367,7 +32422,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 18.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/786.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/786.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/786.png",
+    "abilities": [
+      {
+        "nameKo": "사이코메이커",
+        "nameEn": "psychic-surge",
+        "effectKo": "등장했을 때 사이코필드를 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 787,
@@ -19391,7 +32460,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.9,
     "weightKg": 45.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/787.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/787.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/787.png",
+    "abilities": [
+      {
+        "nameKo": "그래스메이커",
+        "nameEn": "grassy-surge",
+        "effectKo": "등장했을 때 그래스필드를 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 788,
@@ -19415,7 +32498,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 21.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/788.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/788.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/788.png",
+    "abilities": [
+      {
+        "nameKo": "미스트메이커",
+        "nameEn": "misty-surge",
+        "effectKo": "등장했을 때 미스트필드를 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 789,
@@ -19438,7 +32535,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 0.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/789.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/789.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/789.png",
+    "abilities": [
+      {
+        "nameKo": "천진",
+        "nameEn": "unaware",
+        "effectKo": "상대의 능력 변화를 무시한다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 790,
@@ -19461,7 +32566,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.1,
     "weightKg": 999.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/790.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/790.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/790.png",
+    "abilities": [
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 791,
@@ -19485,7 +32598,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.4,
     "weightKg": 230,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/791.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/791.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/791.png",
+    "abilities": [
+      {
+        "nameKo": "메탈프로텍트",
+        "nameEn": "full-metal-body",
+        "effectKo": "상대 기술이나 특성으로 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 792,
@@ -19509,7 +32630,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 4,
     "weightKg": 120,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/792.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/792.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/792.png",
+    "abilities": [
+      {
+        "nameKo": "스펙터가드",
+        "nameEn": "shadow-shield",
+        "effectKo": "HP가 꽉 찼을 때 받는 데미지가 줄어든다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 793,
@@ -19533,7 +32662,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 55.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/793.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/793.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/793.png",
+    "abilities": [
+      {
+        "nameKo": "비스트부스트",
+        "nameEn": "beast-boost",
+        "effectKo": "상대를 기절시켰을 때 자신의 가장 높은 능력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 794,
@@ -19557,7 +32694,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.4,
     "weightKg": 333.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/794.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/794.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/794.png",
+    "abilities": [
+      {
+        "nameKo": "비스트부스트",
+        "nameEn": "beast-boost",
+        "effectKo": "상대를 기절시켰을 때 자신의 가장 높은 능력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 795,
@@ -19581,7 +32726,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 25,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/795.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/795.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/795.png",
+    "abilities": [
+      {
+        "nameKo": "비스트부스트",
+        "nameEn": "beast-boost",
+        "effectKo": "상대를 기절시켰을 때 자신의 가장 높은 능력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 796,
@@ -19604,7 +32757,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.8,
     "weightKg": 100,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/796.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/796.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/796.png",
+    "abilities": [
+      {
+        "nameKo": "비스트부스트",
+        "nameEn": "beast-boost",
+        "effectKo": "상대를 기절시켰을 때 자신의 가장 높은 능력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 797,
@@ -19628,7 +32789,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 9.2,
     "weightKg": 999.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/797.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/797.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/797.png",
+    "abilities": [
+      {
+        "nameKo": "비스트부스트",
+        "nameEn": "beast-boost",
+        "effectKo": "상대를 기절시켰을 때 자신의 가장 높은 능력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 798,
@@ -19652,7 +32821,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 0.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/798.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/798.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/798.png",
+    "abilities": [
+      {
+        "nameKo": "비스트부스트",
+        "nameEn": "beast-boost",
+        "effectKo": "상대를 기절시켰을 때 자신의 가장 높은 능력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 799,
@@ -19676,7 +32853,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 5.5,
     "weightKg": 888,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/799.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/799.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/799.png",
+    "abilities": [
+      {
+        "nameKo": "비스트부스트",
+        "nameEn": "beast-boost",
+        "effectKo": "상대를 기절시켰을 때 자신의 가장 높은 능력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 800,
@@ -19699,8 +32884,19 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.4,
     "weightKg": 230,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/800.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/800.png"
-  },
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/800.png",
+    "abilities": [
+      {
+        "nameKo": "프리즘아머",
+        "nameEn": "prism-armor",
+        "effectKo": "효과가 굉장한 공격의 위력을 약하게 만든다.",
+        "isHidden": false
+      }
+    ]
+  }
+]
+
+const POKEMON_CHUNK_8: Pokemon[] = [
   {
     "id": 801,
     "dexNumber": 801,
@@ -19723,7 +32919,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 80.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/801.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/801.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/801.png",
+    "abilities": [
+      {
+        "nameKo": "소울하트",
+        "nameEn": "soul-heart",
+        "effectKo": "포켓몬이 기절할 때마다 특수공격이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 802,
@@ -19747,7 +32951,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 22.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/802.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/802.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/802.png",
+    "abilities": [
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 803,
@@ -19770,7 +32982,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 1.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/803.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/803.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/803.png",
+    "abilities": [
+      {
+        "nameKo": "비스트부스트",
+        "nameEn": "beast-boost",
+        "effectKo": "상대를 기절시켰을 때 자신의 가장 높은 능력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 804,
@@ -19794,7 +33014,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.6,
     "weightKg": 150,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/804.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/804.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/804.png",
+    "abilities": [
+      {
+        "nameKo": "비스트부스트",
+        "nameEn": "beast-boost",
+        "effectKo": "상대를 기절시켰을 때 자신의 가장 높은 능력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 805,
@@ -19818,7 +33046,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 5.5,
     "weightKg": 820,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/805.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/805.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/805.png",
+    "abilities": [
+      {
+        "nameKo": "비스트부스트",
+        "nameEn": "beast-boost",
+        "effectKo": "상대를 기절시켰을 때 자신의 가장 높은 능력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 806,
@@ -19842,7 +33078,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 13,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/806.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/806.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/806.png",
+    "abilities": [
+      {
+        "nameKo": "비스트부스트",
+        "nameEn": "beast-boost",
+        "effectKo": "상대를 기절시켰을 때 자신의 가장 높은 능력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 807,
@@ -19865,7 +33109,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 44.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/807.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/807.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/807.png",
+    "abilities": [
+      {
+        "nameKo": "축전",
+        "nameEn": "volt-absorb",
+        "effectKo": "전기를 받으면 회복한다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 808,
@@ -19888,7 +33140,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/808.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/808.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/808.png",
+    "abilities": [
+      {
+        "nameKo": "자력",
+        "nameEn": "magnet-pull",
+        "effectKo": "강철의 포켓몬을 도망칠 수 없게 한다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 809,
@@ -19911,7 +33171,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.5,
     "weightKg": 800,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/809.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/809.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/809.png",
+    "abilities": [
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 810,
@@ -19934,7 +33202,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/810.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/810.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/810.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "그래스메이커",
+        "nameEn": "grassy-surge",
+        "effectKo": "등장했을 때 그래스필드를 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 811,
@@ -19957,7 +33239,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 14,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/811.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/811.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/811.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "그래스메이커",
+        "nameEn": "grassy-surge",
+        "effectKo": "등장했을 때 그래스필드를 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 812,
@@ -19980,7 +33276,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.1,
     "weightKg": 90,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/812.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/812.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/812.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "그래스메이커",
+        "nameEn": "grassy-surge",
+        "effectKo": "등장했을 때 그래스필드를 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 813,
@@ -20003,7 +33313,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 4.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/813.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/813.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/813.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "리베로",
+        "nameEn": "libero",
+        "effectKo": "자신이 사용한 기술과 같은 타입으로 변화한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 814,
@@ -20026,7 +33350,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/814.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/814.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/814.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "리베로",
+        "nameEn": "libero",
+        "effectKo": "자신이 사용한 기술과 같은 타입으로 변화한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 815,
@@ -20049,7 +33387,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 33,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/815.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/815.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/815.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "리베로",
+        "nameEn": "libero",
+        "effectKo": "자신이 사용한 기술과 같은 타입으로 변화한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 816,
@@ -20072,7 +33424,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/816.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/816.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/816.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 817,
@@ -20095,7 +33461,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 11.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/817.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/817.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/817.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 818,
@@ -20118,7 +33498,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.9,
     "weightKg": 45.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/818.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/818.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/818.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스나이퍼",
+        "nameEn": "sniper",
+        "effectKo": "급소에 맞혔을 때 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 819,
@@ -20141,7 +33535,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 2.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/819.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/819.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/819.png",
+    "abilities": [
+      {
+        "nameKo": "볼주머니",
+        "nameEn": "cheek-pouch",
+        "effectKo": "나무열매를 먹으면 HP도 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 820,
@@ -20164,7 +33572,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/820.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/820.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/820.png",
+    "abilities": [
+      {
+        "nameKo": "볼주머니",
+        "nameEn": "cheek-pouch",
+        "effectKo": "나무열매를 먹으면 HP도 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 821,
@@ -20187,7 +33609,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 1.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/821.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/821.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/821.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "부풀린가슴",
+        "nameEn": "big-pecks",
+        "effectKo": "방어를 떨어뜨리는 공격을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 822,
@@ -20210,7 +33652,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 16,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/822.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/822.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/822.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "부풀린가슴",
+        "nameEn": "big-pecks",
+        "effectKo": "방어를 떨어뜨리는 공격을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 823,
@@ -20234,7 +33696,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.2,
     "weightKg": 75,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/823.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/823.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/823.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "미러아머",
+        "nameEn": "mirror-armor",
+        "effectKo": "자신이 받는 능력 다운 효과에 한해 되받아친다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 824,
@@ -20257,7 +33739,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/824.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/824.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/824.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "복안",
+        "nameEn": "compound-eyes",
+        "effectKo": "기술의 명중률이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 825,
@@ -20281,7 +33783,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 19.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/825.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/825.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/825.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "복안",
+        "nameEn": "compound-eyes",
+        "effectKo": "기술의 명중률이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 826,
@@ -20305,7 +33827,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 40.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/826.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/826.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/826.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 827,
@@ -20328,7 +33870,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 8.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/827.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/827.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/827.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "잠복",
+        "nameEn": "stakeout",
+        "effectKo": "교체로 나온 상대에게 2배 데미지로 공격할 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 828,
@@ -20351,7 +33913,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 19.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/828.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/828.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/828.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "잠복",
+        "nameEn": "stakeout",
+        "effectKo": "교체로 나온 상대에게 2배 데미지로 공격할 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 829,
@@ -20374,7 +33956,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 2.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/829.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/829.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/829.png",
+    "abilities": [
+      {
+        "nameKo": "솜털",
+        "nameEn": "cotton-down",
+        "effectKo": "공격을 받으면 솜털을 흩뿌려서 자신을 제외한 모든 포켓몬의 스피드를 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "포자",
+        "nameEn": "effect-spore",
+        "effectKo": "스치면 독, 마비, 잠듦 상태가 될 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 830,
@@ -20397,7 +33999,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 2.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/830.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/830.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/830.png",
+    "abilities": [
+      {
+        "nameKo": "솜털",
+        "nameEn": "cotton-down",
+        "effectKo": "공격을 받으면 솜털을 흩뿌려서 자신을 제외한 모든 포켓몬의 스피드를 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "포자",
+        "nameEn": "effect-spore",
+        "effectKo": "스치면 독, 마비, 잠듦 상태가 될 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 831,
@@ -20420,7 +34042,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/831.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/831.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/831.png",
+    "abilities": [
+      {
+        "nameKo": "복슬복슬",
+        "nameEn": "fluffy",
+        "effectKo": "상대로부터 받은 접촉하는 기술의 데미지를 반감시키지만 불꽃타입 기술의 데미지는 2배가 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방탄",
+        "nameEn": "bulletproof",
+        "effectKo": "구슬이나 폭탄에 맞지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 832,
@@ -20443,7 +34085,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 43,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/832.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/832.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/832.png",
+    "abilities": [
+      {
+        "nameKo": "복슬복슬",
+        "nameEn": "fluffy",
+        "effectKo": "상대로부터 받은 접촉하는 기술의 데미지를 반감시키지만 불꽃타입 기술의 데미지는 2배가 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불굴의마음",
+        "nameEn": "steadfast",
+        "effectKo": "풀죽을 때마다 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방탄",
+        "nameEn": "bulletproof",
+        "effectKo": "구슬이나 폭탄에 맞지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 833,
@@ -20466,7 +34128,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 8.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/833.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/833.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/833.png",
+    "abilities": [
+      {
+        "nameKo": "옹골찬턱",
+        "nameEn": "strong-jaw",
+        "effectKo": "턱이 튼튼하여 무는 힘이 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 834,
@@ -20490,7 +34172,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 115.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/834.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/834.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/834.png",
+    "abilities": [
+      {
+        "nameKo": "옹골찬턱",
+        "nameEn": "strong-jaw",
+        "effectKo": "턱이 튼튼하여 무는 힘이 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 835,
@@ -20513,7 +34215,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 13.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/835.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/835.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/835.png",
+    "abilities": [
+      {
+        "nameKo": "볼줍기",
+        "nameEn": "ball-fetch",
+        "effectKo": "도구를 지니고 있지 않은 경우 첫 번째로 던져서 실패한 몬스터볼을 주워온다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 836,
@@ -20536,7 +34252,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 34,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/836.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/836.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/836.png",
+    "abilities": [
+      {
+        "nameKo": "옹골찬턱",
+        "nameEn": "strong-jaw",
+        "effectKo": "턱이 튼튼하여 무는 힘이 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "승기",
+        "nameEn": "competitive",
+        "effectKo": "능력이 떨어지면 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 837,
@@ -20559,7 +34289,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 12,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/837.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/837.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/837.png",
+    "abilities": [
+      {
+        "nameKo": "증기기관",
+        "nameEn": "steam-engine",
+        "effectKo": "물타입이나 불꽃타입 기술을 받으면 스피드가 매우 크게 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "내열",
+        "nameEn": "heatproof",
+        "effectKo": "불꽃 기술의 위력을 약하게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 838,
@@ -20583,7 +34333,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 78,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/838.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/838.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/838.png",
+    "abilities": [
+      {
+        "nameKo": "증기기관",
+        "nameEn": "steam-engine",
+        "effectKo": "물타입이나 불꽃타입 기술을 받으면 스피드가 매우 크게 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 839,
@@ -20607,7 +34377,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.8,
     "weightKg": 310.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/839.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/839.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/839.png",
+    "abilities": [
+      {
+        "nameKo": "증기기관",
+        "nameEn": "steam-engine",
+        "effectKo": "물타입이나 불꽃타입 기술을 받으면 스피드가 매우 크게 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 840,
@@ -20631,7 +34421,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 0.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/840.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/840.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/840.png",
+    "abilities": [
+      {
+        "nameKo": "숙성",
+        "nameEn": "ripen",
+        "effectKo": "나무열매를 숙성시켜서 효과가 2배가 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방탄",
+        "nameEn": "bulletproof",
+        "effectKo": "구슬이나 폭탄에 맞지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 841,
@@ -20655,7 +34465,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/841.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/841.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/841.png",
+    "abilities": [
+      {
+        "nameKo": "숙성",
+        "nameEn": "ripen",
+        "effectKo": "나무열매를 숙성시켜서 효과가 2배가 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 842,
@@ -20679,7 +34509,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 13,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/842.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/842.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/842.png",
+    "abilities": [
+      {
+        "nameKo": "숙성",
+        "nameEn": "ripen",
+        "effectKo": "나무열매를 숙성시켜서 효과가 2배가 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 843,
@@ -20702,7 +34552,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.2,
     "weightKg": 7.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/843.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/843.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/843.png",
+    "abilities": [
+      {
+        "nameKo": "모래뿜기",
+        "nameEn": "sand-spit",
+        "effectKo": "공격을 받으면 모래바람을 일으킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 844,
@@ -20725,7 +34595,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.8,
     "weightKg": 65.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/844.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/844.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/844.png",
+    "abilities": [
+      {
+        "nameKo": "모래뿜기",
+        "nameEn": "sand-spit",
+        "effectKo": "공격을 받으면 모래바람을 일으킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 845,
@@ -20749,7 +34639,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 18,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/845.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/845.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/845.png",
+    "abilities": [
+      {
+        "nameKo": "그대로꿀꺽미사일",
+        "nameEn": "gulp-missile",
+        "effectKo": "파도타기나 다이빙을 쓰면 먹이를 물어온다. 데미지를 받으면 먹이를 토해내서 공격한다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 846,
@@ -20772,7 +34670,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/846.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/846.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/846.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스크루지느러미",
+        "nameEn": "propeller-tail",
+        "effectKo": "상대의 기술을 끌어모으는 특성이나 기술의 영향을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 847,
@@ -20795,7 +34707,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 30,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/847.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/847.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/847.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "스크루지느러미",
+        "nameEn": "propeller-tail",
+        "effectKo": "상대의 기술을 끌어모으는 특성이나 기술의 영향을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 848,
@@ -20819,7 +34745,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 11,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/848.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/848.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/848.png",
+    "abilities": [
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "서투름",
+        "nameEn": "klutz",
+        "effectKo": "지니고 있는 도구를 쓸 수 없다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 849,
@@ -20843,7 +34789,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 40,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/849.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/849.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/849.png",
+    "abilities": [
+      {
+        "nameKo": "펑크록",
+        "nameEn": "punk-rock",
+        "effectKo": "소리 기술의 위력이 올라간다. 상대로부터 받는 소리 기술의 데미지는 절반이 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "플러스",
+        "nameEn": "plus",
+        "effectKo": "플러스나 마이너스가 있으면 특수공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 850,
@@ -20867,7 +34833,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/850.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/850.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/850.png",
+    "abilities": [
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "하얀연기",
+        "nameEn": "white-smoke",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 851,
@@ -20891,7 +34877,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3,
     "weightKg": 120,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/851.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/851.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/851.png",
+    "abilities": [
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "하얀연기",
+        "nameEn": "white-smoke",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 852,
@@ -20914,7 +34920,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/852.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/852.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/852.png",
+    "abilities": [
+      {
+        "nameKo": "유연",
+        "nameEn": "limber",
+        "effectKo": "마비 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 853,
@@ -20937,7 +34957,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 39,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/853.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/853.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/853.png",
+    "abilities": [
+      {
+        "nameKo": "유연",
+        "nameEn": "limber",
+        "effectKo": "마비 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 854,
@@ -20960,7 +34994,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.1,
     "weightKg": 0.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/854.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/854.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/854.png",
+    "abilities": [
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저주받은바디",
+        "nameEn": "cursed-body",
+        "effectKo": "공격받으면 가끔 상대를 사슬묶기 상태로 만든다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 855,
@@ -20983,7 +35031,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 0.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/855.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/855.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/855.png",
+    "abilities": [
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저주받은바디",
+        "nameEn": "cursed-body",
+        "effectKo": "공격받으면 가끔 상대를 사슬묶기 상태로 만든다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 856,
@@ -21006,7 +35068,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 3.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/856.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/856.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/856.png",
+    "abilities": [
+      {
+        "nameKo": "치유의마음",
+        "nameEn": "healer",
+        "effectKo": "같은 편의 상태 이상을 가끔 회복시킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위험예지",
+        "nameEn": "anticipation",
+        "effectKo": "상대가 지닌 위험한 기술을 감지한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매직미러",
+        "nameEn": "magic-bounce",
+        "effectKo": "변화 기술을 되받아칠 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 857,
@@ -21029,7 +35111,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 4.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/857.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/857.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/857.png",
+    "abilities": [
+      {
+        "nameKo": "치유의마음",
+        "nameEn": "healer",
+        "effectKo": "같은 편의 상태 이상을 가끔 회복시킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위험예지",
+        "nameEn": "anticipation",
+        "effectKo": "상대가 지닌 위험한 기술을 감지한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매직미러",
+        "nameEn": "magic-bounce",
+        "effectKo": "변화 기술을 되받아칠 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 858,
@@ -21053,7 +35155,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.1,
     "weightKg": 5.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/858.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/858.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/858.png",
+    "abilities": [
+      {
+        "nameKo": "치유의마음",
+        "nameEn": "healer",
+        "effectKo": "같은 편의 상태 이상을 가끔 회복시킨다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위험예지",
+        "nameEn": "anticipation",
+        "effectKo": "상대가 지닌 위험한 기술을 감지한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "매직미러",
+        "nameEn": "magic-bounce",
+        "effectKo": "변화 기술을 되받아칠 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 859,
@@ -21077,7 +35199,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 5.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/859.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/859.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/859.png",
+    "abilities": [
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "나쁜손버릇",
+        "nameEn": "pickpocket",
+        "effectKo": "닿은 상대로부터 도구를 훔친다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 860,
@@ -21101,7 +35243,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 12.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/860.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/860.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/860.png",
+    "abilities": [
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "나쁜손버릇",
+        "nameEn": "pickpocket",
+        "effectKo": "닿은 상대로부터 도구를 훔친다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 861,
@@ -21125,7 +35287,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 61,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/861.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/861.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/861.png",
+    "abilities": [
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "나쁜손버릇",
+        "nameEn": "pickpocket",
+        "effectKo": "닿은 상대로부터 도구를 훔친다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 862,
@@ -21149,7 +35331,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 46,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/862.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/862.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/862.png",
+    "abilities": [
+      {
+        "nameKo": "이판사판",
+        "nameEn": "reckless",
+        "effectKo": "반동 데미지를 받는 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "오기",
+        "nameEn": "defiant",
+        "effectKo": "능력이 떨어지면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 863,
@@ -21172,7 +35374,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 28,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/863.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/863.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/863.png",
+    "abilities": [
+      {
+        "nameKo": "전투무장",
+        "nameEn": "battle-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "단단한발톱",
+        "nameEn": "tough-claws",
+        "effectKo": "접촉하는 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "강철정신",
+        "nameEn": "steely-spirit",
+        "effectKo": "같은 편의 강철타입 공격의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 864,
@@ -21195,7 +35417,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 0.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/864.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/864.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/864.png",
+    "abilities": [
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "멸망의바디",
+        "nameEn": "perish-body",
+        "effectKo": "접촉하는 기술을 받으면 3턴 후에 양쪽 모두 기절한다. 교체되면 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 865,
@@ -21218,7 +35454,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 117,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/865.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/865.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/865.png",
+    "abilities": [
+      {
+        "nameKo": "불굴의마음",
+        "nameEn": "steadfast",
+        "effectKo": "풀죽을 때마다 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "배짱",
+        "nameEn": "scrappy",
+        "effectKo": "고스트타입에 노말 기술이 맞는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 866,
@@ -21242,7 +35492,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 58.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/866.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/866.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/866.png",
+    "abilities": [
+      {
+        "nameKo": "갈지자걸음",
+        "nameEn": "tangled-feet",
+        "effectKo": "혼란에 빠져있으면 회피하기 쉬워진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "배리어프리",
+        "nameEn": "screen-cleaner",
+        "effectKo": "등장했을 때 상대와 같은 편의 빛의장막, 리플렉터, 오로라베일의 효과가 사라진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 867,
@@ -21266,7 +35536,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 66.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/867.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/867.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/867.png",
+    "abilities": [
+      {
+        "nameKo": "떠도는영혼",
+        "nameEn": "wandering-spirit",
+        "effectKo": "접촉하는 기술로 공격해온 포켓몬과 특성을 바꾼다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 868,
@@ -21289,7 +35567,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 0.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/868.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/868.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/868.png",
+    "abilities": [
+      {
+        "nameKo": "스위트베일",
+        "nameEn": "sweet-veil",
+        "effectKo": "같은 편의 포켓몬이 잠들지 않게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아로마베일",
+        "nameEn": "aroma-veil",
+        "effectKo": "같은 편으로 향하는 멘탈 공격을 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 869,
@@ -21312,7 +35604,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 0.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/869.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/869.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/869.png",
+    "abilities": [
+      {
+        "nameKo": "스위트베일",
+        "nameEn": "sweet-veil",
+        "effectKo": "같은 편의 포켓몬이 잠들지 않게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아로마베일",
+        "nameEn": "aroma-veil",
+        "effectKo": "같은 편으로 향하는 멘탈 공격을 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 870,
@@ -21335,7 +35641,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3,
     "weightKg": 62,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/870.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/870.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/870.png",
+    "abilities": [
+      {
+        "nameKo": "전투무장",
+        "nameEn": "battle-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "오기",
+        "nameEn": "defiant",
+        "effectKo": "능력이 떨어지면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 871,
@@ -21358,7 +35678,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/871.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/871.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/871.png",
+    "abilities": [
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "일렉트릭메이커",
+        "nameEn": "electric-surge",
+        "effectKo": "등장했을 때 일렉트릭필드를 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 872,
@@ -21382,7 +35716,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 3.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/872.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/872.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/872.png",
+    "abilities": [
+      {
+        "nameKo": "인분",
+        "nameEn": "shield-dust",
+        "effectKo": "기술의 추가 효과를 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "얼음인분",
+        "nameEn": "ice-scales",
+        "effectKo": "얼음인분의 보호를 받아 특수공격으로 받는 데미지가 절반이 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 873,
@@ -21406,7 +35754,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 42,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/873.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/873.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/873.png",
+    "abilities": [
+      {
+        "nameKo": "인분",
+        "nameEn": "shield-dust",
+        "effectKo": "기술의 추가 효과를 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "얼음인분",
+        "nameEn": "ice-scales",
+        "effectKo": "얼음인분의 보호를 받아 특수공격으로 받는 데미지가 절반이 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 874,
@@ -21429,7 +35791,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.5,
     "weightKg": 520,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/874.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/874.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/874.png",
+    "abilities": [
+      {
+        "nameKo": "파워스폿",
+        "nameEn": "power-spot",
+        "effectKo": "옆에 있기만 해도 기술의 위력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 875,
@@ -21452,7 +35822,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 89,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/875.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/875.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/875.png",
+    "abilities": [
+      {
+        "nameKo": "아이스페이스",
+        "nameEn": "ice-face",
+        "effectKo": "물리공격을 머리의 얼음이 대신 맞아주지만 모습도 바뀐다. 얼음은 싸라기눈이 내리면 원래대로 돌아온다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 876,
@@ -21476,7 +35854,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 28,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/876.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/876.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/876.png",
+    "abilities": [
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "사이코메이커",
+        "nameEn": "psychic-surge",
+        "effectKo": "등장했을 때 사이코필드를 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 877,
@@ -21500,7 +35898,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/877.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/877.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/877.png",
+    "abilities": [
+      {
+        "nameKo": "꼬르륵스위치",
+        "nameEn": "hunger-switch",
+        "effectKo": "턴이 끝날 때마다 배부른 모양, 배고픈 모양, 배부른 모양...으로 번갈아서 모습을 바꾼다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 878,
@@ -21523,7 +35929,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 100,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/878.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/878.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/878.png",
+    "abilities": [
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "헤비메탈",
+        "nameEn": "heavy-metal",
+        "effectKo": "자신의 무게가 2배가 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 879,
@@ -21546,7 +35966,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3,
     "weightKg": 650,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/879.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/879.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/879.png",
+    "abilities": [
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "헤비메탈",
+        "nameEn": "heavy-metal",
+        "effectKo": "자신의 무게가 2배가 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 880,
@@ -21570,7 +36004,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 190,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/880.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/880.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/880.png",
+    "abilities": [
+      {
+        "nameKo": "축전",
+        "nameEn": "volt-absorb",
+        "effectKo": "전기를 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래헤치기",
+        "nameEn": "sand-rush",
+        "effectKo": "모래바람으로 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 881,
@@ -21594,7 +36048,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.3,
     "weightKg": 150,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/881.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/881.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/881.png",
+    "abilities": [
+      {
+        "nameKo": "축전",
+        "nameEn": "volt-absorb",
+        "effectKo": "전기를 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈치우기",
+        "nameEn": "slush-rush",
+        "effectKo": "날씨가 싸라기눈일 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 882,
@@ -21618,7 +36092,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.3,
     "weightKg": 215,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/882.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/882.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/882.png",
+    "abilities": [
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골찬턱",
+        "nameEn": "strong-jaw",
+        "effectKo": "턱이 튼튼하여 무는 힘이 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래헤치기",
+        "nameEn": "sand-rush",
+        "effectKo": "모래바람으로 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 883,
@@ -21642,7 +36136,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 175,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/883.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/883.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/883.png",
+    "abilities": [
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈치우기",
+        "nameEn": "slush-rush",
+        "effectKo": "날씨가 싸라기눈일 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 884,
@@ -21666,7 +36180,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 40,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/884.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/884.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/884.png",
+    "abilities": [
+      {
+        "nameKo": "라이트메탈",
+        "nameEn": "light-metal",
+        "effectKo": "자신의 무게가 절반이 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "헤비메탈",
+        "nameEn": "heavy-metal",
+        "effectKo": "자신의 무게가 2배가 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "굳건한신념",
+        "nameEn": "stalwart",
+        "effectKo": "상대의 기술을 끌어모으는 특성이나 기술의 영향을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 885,
@@ -21690,7 +36224,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/885.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/885.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/885.png",
+    "abilities": [
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저주받은바디",
+        "nameEn": "cursed-body",
+        "effectKo": "공격받으면 가끔 상대를 사슬묶기 상태로 만든다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 886,
@@ -21714,7 +36268,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 11,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/886.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/886.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/886.png",
+    "abilities": [
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저주받은바디",
+        "nameEn": "cursed-body",
+        "effectKo": "공격받으면 가끔 상대를 사슬묶기 상태로 만든다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 887,
@@ -21738,7 +36312,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3,
     "weightKg": 50,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/887.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/887.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/887.png",
+    "abilities": [
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저주받은바디",
+        "nameEn": "cursed-body",
+        "effectKo": "공격받으면 가끔 상대를 사슬묶기 상태로 만든다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 888,
@@ -21761,7 +36355,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.8,
     "weightKg": 110,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/888.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/888.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/888.png",
+    "abilities": [
+      {
+        "nameKo": "불요의검",
+        "nameEn": "intrepid-sword",
+        "effectKo": "등장했을 때 공격이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 889,
@@ -21784,7 +36386,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.9,
     "weightKg": 210,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/889.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/889.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/889.png",
+    "abilities": [
+      {
+        "nameKo": "불굴의방패",
+        "nameEn": "dauntless-shield",
+        "effectKo": "등장했을 때 방어가 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 890,
@@ -21808,7 +36418,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 20,
     "weightKg": 950,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/890.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/890.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/890.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 891,
@@ -21831,7 +36449,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 12,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/891.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/891.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/891.png",
+    "abilities": [
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 892,
@@ -21855,7 +36481,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.9,
     "weightKg": 105,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/892.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/892.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/892.png",
+    "abilities": [
+      {
+        "nameKo": "보이지않는주먹",
+        "nameEn": "unseen-fist",
+        "effectKo": "상대에게 접촉하는 기술을 사용하면 방어의 효과를 무시하고 공격할 수 있다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 893,
@@ -21879,7 +36513,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 70,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/893.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/893.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/893.png",
+    "abilities": [
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 894,
@@ -21902,7 +36544,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 145,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/894.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/894.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/894.png",
+    "abilities": [
+      {
+        "nameKo": "트랜지스터",
+        "nameEn": "transistor",
+        "effectKo": "전기타입 기술의 위력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 895,
@@ -21925,7 +36575,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.1,
     "weightKg": 200,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/895.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/895.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/895.png",
+    "abilities": [
+      {
+        "nameKo": "용의턱",
+        "nameEn": "dragons-maw",
+        "effectKo": "드래곤타입 기술의 위력이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 896,
@@ -21948,7 +36606,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.2,
     "weightKg": 800,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/896.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/896.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/896.png",
+    "abilities": [
+      {
+        "nameKo": "백의울음",
+        "nameEn": "chilling-neigh",
+        "effectKo": "상대를 쓰러뜨리면 차가운 울음소리를 내면서 공격이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 897,
@@ -21971,7 +36637,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 44.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/897.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/897.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/897.png",
+    "abilities": [
+      {
+        "nameKo": "흑의울음",
+        "nameEn": "grim-neigh",
+        "effectKo": "상대를 쓰러뜨리면 무서운 울음소리를 내면서 특수공격이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 898,
@@ -21995,7 +36669,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 7.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/898.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/898.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/898.png",
+    "abilities": [
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 899,
@@ -22019,7 +36701,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 95.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/899.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/899.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/899.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 900,
@@ -22043,8 +36745,30 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 89,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/900.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/900.png"
-  },
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/900.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "예리함",
+        "nameEn": "sharpness",
+        "isHidden": true
+      }
+    ]
+  }
+]
+
+const POKEMON_CHUNK_9: Pokemon[] = [
   {
     "id": 901,
     "dexNumber": 901,
@@ -22067,7 +36791,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.4,
     "weightKg": 290,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/901.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/901.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/901.png",
+    "abilities": [
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "방탄",
+        "nameEn": "bulletproof",
+        "effectKo": "구슬이나 폭탄에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 902,
@@ -22091,7 +36835,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3,
     "weightKg": 110,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/902.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/902.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/902.png",
+    "abilities": [
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "적응력",
+        "nameEn": "adaptability",
+        "effectKo": "타입이 같은 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 903,
@@ -22115,7 +36879,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 43,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/903.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/903.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/903.png",
+    "abilities": [
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "독수",
+        "nameEn": "poison-touch",
+        "effectKo": "접촉하기만 해도 상대를 독 상태로 만들 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 904,
@@ -22139,7 +36923,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.5,
     "weightKg": 60.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/904.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/904.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/904.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 905,
@@ -22163,7 +36967,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 48,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/905.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/905.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/905.png",
+    "abilities": [
+      {
+        "nameKo": "헤롱헤롱바디",
+        "nameEn": "cute-charm",
+        "effectKo": "스치면 헤롱헤롱 상태가 될 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "심술꾸러기",
+        "nameEn": "contrary",
+        "effectKo": "능력의 변화가 역전된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 906,
@@ -22186,7 +37004,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 4.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/906.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/906.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/906.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "변환자재",
+        "nameEn": "protean",
+        "effectKo": "사용한 기술과 같은 타입으로 변화한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 907,
@@ -22209,7 +37041,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 12.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/907.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/907.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/907.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "변환자재",
+        "nameEn": "protean",
+        "effectKo": "사용한 기술과 같은 타입으로 변화한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 908,
@@ -22233,7 +37079,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 31.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/908.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/908.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/908.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "변환자재",
+        "nameEn": "protean",
+        "effectKo": "사용한 기술과 같은 타입으로 변화한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 909,
@@ -22256,7 +37116,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 9.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/909.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/909.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/909.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "천진",
+        "nameEn": "unaware",
+        "effectKo": "상대의 능력 변화를 무시한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 910,
@@ -22279,7 +37153,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 30.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/910.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/910.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/910.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "천진",
+        "nameEn": "unaware",
+        "effectKo": "상대의 능력 변화를 무시한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 911,
@@ -22303,7 +37191,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 326.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/911.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/911.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/911.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "천진",
+        "nameEn": "unaware",
+        "effectKo": "상대의 능력 변화를 무시한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 912,
@@ -22326,7 +37228,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 6.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/912.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/912.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/912.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자기과신",
+        "nameEn": "moxie",
+        "effectKo": "상대를 쓰러뜨리면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 913,
@@ -22349,7 +37265,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 21.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/913.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/913.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/913.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자기과신",
+        "nameEn": "moxie",
+        "effectKo": "상대를 쓰러뜨리면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 914,
@@ -22373,7 +37303,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 61.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/914.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/914.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/914.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자기과신",
+        "nameEn": "moxie",
+        "effectKo": "상대를 쓰러뜨리면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 915,
@@ -22396,7 +37340,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 10.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/915.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/915.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/915.png",
+    "abilities": [
+      {
+        "nameKo": "아로마베일",
+        "nameEn": "aroma-veil",
+        "effectKo": "같은 편으로 향하는 멘탈 공격을 막는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 916,
@@ -22419,7 +37383,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 120,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/916.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/916.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/916.png",
+    "abilities": [
+      {
+        "nameKo": "가시지않는향기",
+        "nameEn": "lingering-aroma",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 917,
@@ -22442,7 +37425,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/917.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/917.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/917.png",
+    "abilities": [
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "잠복",
+        "nameEn": "stakeout",
+        "effectKo": "교체로 나온 상대에게 2배 데미지로 공격할 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 918,
@@ -22465,7 +37462,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 16.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/918.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/918.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/918.png",
+    "abilities": [
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "잠복",
+        "nameEn": "stakeout",
+        "effectKo": "교체로 나온 상대에게 2배 데미지로 공격할 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 919,
@@ -22488,7 +37499,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/919.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/919.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/919.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "색안경",
+        "nameEn": "tinted-lens",
+        "effectKo": "효과가 별로인 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 920,
@@ -22512,7 +37537,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 17.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/920.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/920.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/920.png",
+    "abilities": [
+      {
+        "nameKo": "벌레의알림",
+        "nameEn": "swarm",
+        "effectKo": "위급할 때 벌레타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "색안경",
+        "nameEn": "tinted-lens",
+        "effectKo": "효과가 별로인 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 921,
@@ -22535,7 +37574,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 2.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/921.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/921.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/921.png",
+    "abilities": [
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 922,
@@ -22559,7 +37618,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 6.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/922.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/922.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/922.png",
+    "abilities": [
+      {
+        "nameKo": "축전",
+        "nameEn": "volt-absorb",
+        "effectKo": "전기를 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 923,
@@ -22583,7 +37662,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 41,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/923.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/923.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/923.png",
+    "abilities": [
+      {
+        "nameKo": "축전",
+        "nameEn": "volt-absorb",
+        "effectKo": "전기를 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "자연회복",
+        "nameEn": "natural-cure",
+        "effectKo": "배틀에서 일단 물러나면 상태 이상이 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "철주먹",
+        "nameEn": "iron-fist",
+        "effectKo": "펀치를 사용하는 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 924,
@@ -22606,7 +37705,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 1.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/924.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/924.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/924.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 925,
@@ -22629,7 +37748,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 2.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/925.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/925.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/925.png",
+    "abilities": [
+      {
+        "nameKo": "프렌드가드",
+        "nameEn": "friend-guard",
+        "effectKo": "같은 편의 데미지를 줄일 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "볼주머니",
+        "nameEn": "cheek-pouch",
+        "effectKo": "나무열매를 먹으면 HP도 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 926,
@@ -22652,7 +37791,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 10.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/926.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/926.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/926.png",
+    "abilities": [
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "서투름",
+        "nameEn": "klutz",
+        "effectKo": "지니고 있는 도구를 쓸 수 없다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 927,
@@ -22675,7 +37828,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 14.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/927.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/927.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/927.png",
+    "abilities": [
+      {
+        "nameKo": "노릇노릇바디",
+        "nameEn": "well-baked-body",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아로마베일",
+        "nameEn": "aroma-veil",
+        "effectKo": "같은 편으로 향하는 멘탈 공격을 막는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 928,
@@ -22699,7 +37865,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 6.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/928.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/928.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/928.png",
+    "abilities": [
+      {
+        "nameKo": "일찍기상",
+        "nameEn": "early-bird",
+        "effectKo": "잠듦 상태에서 빨리 깨어난다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수확",
+        "nameEn": "harvest",
+        "effectKo": "사용한 나무열매를 몇 번이고 만들어 낸다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 929,
@@ -22723,7 +37903,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 11.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/929.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/929.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/929.png",
+    "abilities": [
+      {
+        "nameKo": "일찍기상",
+        "nameEn": "early-bird",
+        "effectKo": "잠듦 상태에서 빨리 깨어난다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수확",
+        "nameEn": "harvest",
+        "effectKo": "사용한 나무열매를 몇 번이고 만들어 낸다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 930,
@@ -22747,7 +37941,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 48.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/930.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/930.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/930.png",
+    "abilities": [
+      {
+        "nameKo": "넘치는씨",
+        "nameEn": "seed-sower",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수확",
+        "nameEn": "harvest",
+        "effectKo": "사용한 나무열매를 몇 번이고 만들어 낸다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 931,
@@ -22771,7 +37978,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 2.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/931.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/931.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/931.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "근성",
+        "nameEn": "guts",
+        "effectKo": "상태 이상이 되면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 932,
@@ -22794,7 +38021,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 16,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/932.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/932.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/932.png",
+    "abilities": [
+      {
+        "nameKo": "정화의소금",
+        "nameEn": "purifying-salt",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 933,
@@ -22817,7 +38063,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 105,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/933.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/933.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/933.png",
+    "abilities": [
+      {
+        "nameKo": "정화의소금",
+        "nameEn": "purifying-salt",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 934,
@@ -22840,7 +38105,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.3,
     "weightKg": 240,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/934.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/934.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/934.png",
+    "abilities": [
+      {
+        "nameKo": "정화의소금",
+        "nameEn": "purifying-salt",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "클리어바디",
+        "nameEn": "clear-body",
+        "effectKo": "상대가 능력을 떨어뜨릴 수 없다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 935,
@@ -22863,7 +38147,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 10.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/935.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/935.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/935.png",
+    "abilities": [
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불꽃몸",
+        "nameEn": "flame-body",
+        "effectKo": "접촉한 상대에게 화상을 입힐 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 936,
@@ -22887,7 +38185,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 85,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/936.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/936.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/936.png",
+    "abilities": [
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 937,
@@ -22911,7 +38223,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 62,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/937.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/937.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/937.png",
+    "abilities": [
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 938,
@@ -22934,7 +38260,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 0.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/938.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/938.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/938.png",
+    "abilities": [
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 939,
@@ -22957,7 +38303,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 113,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/939.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/939.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/939.png",
+    "abilities": [
+      {
+        "nameKo": "전기로바꾸기",
+        "nameEn": "electromorphosis",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "습기",
+        "nameEn": "damp",
+        "effectKo": "누구도 폭발 할 수 없게 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 940,
@@ -22981,7 +38346,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 3.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/940.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/940.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/940.png",
+    "abilities": [
+      {
+        "nameKo": "풍력발전",
+        "nameEn": "wind-power",
+        "isHidden": false
+      },
+      {
+        "nameKo": "축전",
+        "nameEn": "volt-absorb",
+        "effectKo": "전기를 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "승기",
+        "nameEn": "competitive",
+        "effectKo": "능력이 떨어지면 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 941,
@@ -23005,7 +38389,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 38.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/941.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/941.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/941.png",
+    "abilities": [
+      {
+        "nameKo": "풍력발전",
+        "nameEn": "wind-power",
+        "isHidden": false
+      },
+      {
+        "nameKo": "축전",
+        "nameEn": "volt-absorb",
+        "effectKo": "전기를 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "승기",
+        "nameEn": "competitive",
+        "effectKo": "능력이 떨어지면 특수공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 942,
@@ -23028,7 +38431,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 16,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/942.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/942.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/942.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "잠복",
+        "nameEn": "stakeout",
+        "effectKo": "교체로 나온 상대에게 2배 데미지로 공격할 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 943,
@@ -23051,7 +38474,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 61,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/943.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/943.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/943.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "파수견",
+        "nameEn": "guard-dog",
+        "isHidden": false
+      },
+      {
+        "nameKo": "잠복",
+        "nameEn": "stakeout",
+        "effectKo": "교체로 나온 상대에게 2배 데미지로 공격할 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 944,
@@ -23075,7 +38517,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 0.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/944.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/944.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/944.png",
+    "abilities": [
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "나쁜손버릇",
+        "nameEn": "pickpocket",
+        "effectKo": "닿은 상대로부터 도구를 훔친다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 945,
@@ -23099,7 +38561,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 27.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/945.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/945.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/945.png",
+    "abilities": [
+      {
+        "nameKo": "곡예",
+        "nameEn": "unburden",
+        "effectKo": "도구가 없어지면 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "독수",
+        "nameEn": "poison-touch",
+        "effectKo": "접촉하기만 해도 상대를 독 상태로 만들 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "짓궂은마음",
+        "nameEn": "prankster",
+        "effectKo": "변화 기술을 먼저 쓸 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 946,
@@ -23123,7 +38605,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 0.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/946.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/946.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/946.png",
+    "abilities": [
+      {
+        "nameKo": "바람타기",
+        "nameEn": "wind-rider",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 947,
@@ -23147,7 +38642,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/947.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/947.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/947.png",
+    "abilities": [
+      {
+        "nameKo": "바람타기",
+        "nameEn": "wind-rider",
+        "isHidden": false
+      },
+      {
+        "nameKo": "틈새포착",
+        "nameEn": "infiltrator",
+        "effectKo": "상대의 벽을 뚫고 공격한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 948,
@@ -23171,7 +38679,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 33,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/948.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/948.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/948.png",
+    "abilities": [
+      {
+        "nameKo": "균사의힘",
+        "nameEn": "mycelium-might",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 949,
@@ -23195,7 +38710,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.9,
     "weightKg": 58,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/949.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/949.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/949.png",
+    "abilities": [
+      {
+        "nameKo": "균사의힘",
+        "nameEn": "mycelium-might",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 950,
@@ -23218,7 +38740,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 79,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/950.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/950.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/950.png",
+    "abilities": [
+      {
+        "nameKo": "분노의껍질",
+        "nameEn": "anger-shell",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 951,
@@ -23241,7 +38782,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/951.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/951.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/951.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "서투름",
+        "nameEn": "klutz",
+        "effectKo": "지니고 있는 도구를 쓸 수 없다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 952,
@@ -23265,7 +38826,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 15,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/952.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/952.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/952.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "불면",
+        "nameEn": "insomnia",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "변덕쟁이",
+        "nameEn": "moody",
+        "effectKo": "능력이 오르락내리락한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 953,
@@ -23288,7 +38869,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/953.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/953.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/953.png",
+    "abilities": [
+      {
+        "nameKo": "복안",
+        "nameEn": "compound-eyes",
+        "effectKo": "기술의 명중률이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 954,
@@ -23312,7 +38907,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 3.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/954.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/954.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/954.png",
+    "abilities": [
+      {
+        "nameKo": "싱크로",
+        "nameEn": "synchronize",
+        "effectKo": "독, 마비, 화상을 상대에게 옮긴다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "텔레파시",
+        "nameEn": "telepathy",
+        "effectKo": "같은 편의 공격의 낌새를 읽고 기술을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 955,
@@ -23335,7 +38944,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 1.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/955.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/955.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/955.png",
+    "abilities": [
+      {
+        "nameKo": "위험예지",
+        "nameEn": "anticipation",
+        "effectKo": "상대가 지닌 위험한 기술을 감지한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "가속",
+        "nameEn": "speed-boost",
+        "effectKo": "조금씩 스피드가 높아진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 956,
@@ -23358,7 +38987,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.9,
     "weightKg": 90,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/956.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/956.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/956.png",
+    "abilities": [
+      {
+        "nameKo": "편승",
+        "nameEn": "opportunist",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "가속",
+        "nameEn": "speed-boost",
+        "effectKo": "조금씩 스피드가 높아진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 957,
@@ -23382,7 +39030,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 8.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/957.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/957.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/957.png",
+    "abilities": [
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "나쁜손버릇",
+        "nameEn": "pickpocket",
+        "effectKo": "닿은 상대로부터 도구를 훔친다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 958,
@@ -23406,7 +39074,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 59.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/958.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/958.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/958.png",
+    "abilities": [
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "나쁜손버릇",
+        "nameEn": "pickpocket",
+        "effectKo": "닿은 상대로부터 도구를 훔친다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 959,
@@ -23430,7 +39118,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 112.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/959.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/959.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/959.png",
+    "abilities": [
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "나쁜손버릇",
+        "nameEn": "pickpocket",
+        "effectKo": "닿은 상대로부터 도구를 훔친다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 960,
@@ -23453,7 +39161,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 1.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/960.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/960.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/960.png",
+    "abilities": [
+      {
+        "nameKo": "미끈미끈",
+        "nameEn": "gooey",
+        "effectKo": "접촉한 상대의 스피드를 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 961,
@@ -23476,7 +39204,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 5.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/961.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/961.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/961.png",
+    "abilities": [
+      {
+        "nameKo": "미끈미끈",
+        "nameEn": "gooey",
+        "effectKo": "접촉한 상대의 스피드를 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 962,
@@ -23500,7 +39248,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 42.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/962.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/962.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/962.png",
+    "abilities": [
+      {
+        "nameKo": "부풀린가슴",
+        "nameEn": "big-pecks",
+        "effectKo": "방어를 떨어뜨리는 공격을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "바위나르기",
+        "nameEn": "rocky-payload",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 963,
@@ -23523,7 +39290,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 60.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/963.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/963.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/963.png",
+    "abilities": [
+      {
+        "nameKo": "수의베일",
+        "nameEn": "water-veil",
+        "effectKo": "화상 상태가 되지 않는다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 964,
@@ -23546,7 +39321,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 60.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/964.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/964.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/964.png",
+    "abilities": [
+      {
+        "nameKo": "마이티체인지",
+        "nameEn": "zero-to-hero",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 965,
@@ -23570,7 +39352,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 35,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/965.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/965.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/965.png",
+    "abilities": [
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "슬로스타트",
+        "nameEn": "slow-start",
+        "effectKo": "공격과 스피드가 잠시 동안 절반이 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 966,
@@ -23594,7 +39390,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 120,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/966.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/966.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/966.png",
+    "abilities": [
+      {
+        "nameKo": "방진",
+        "nameEn": "overcoat",
+        "effectKo": "먼지나 가루를 막는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "필터",
+        "nameEn": "filter",
+        "effectKo": "효과가 굉장한 기술의 위력을 약하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 967,
@@ -23618,7 +39428,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 63,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/967.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/967.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/967.png",
+    "abilities": [
+      {
+        "nameKo": "탈피",
+        "nameEn": "shed-skin",
+        "effectKo": "상태 이상을 회복할 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 968,
@@ -23641,7 +39465,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.5,
     "weightKg": 310,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/968.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/968.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/968.png",
+    "abilities": [
+      {
+        "nameKo": "흙먹기",
+        "nameEn": "earth-eater",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 969,
@@ -23665,7 +39502,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/969.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/969.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/969.png",
+    "abilities": [
+      {
+        "nameKo": "독치장",
+        "nameEn": "toxic-debris",
+        "isHidden": false
+      },
+      {
+        "nameKo": "부식",
+        "nameEn": "corrosion",
+        "effectKo": "강철타입이나 독타입도 독 상태로 만들 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 970,
@@ -23689,7 +39539,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 45,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/970.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/970.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/970.png",
+    "abilities": [
+      {
+        "nameKo": "독치장",
+        "nameEn": "toxic-debris",
+        "isHidden": false
+      },
+      {
+        "nameKo": "부식",
+        "nameEn": "corrosion",
+        "effectKo": "강철타입이나 독타입도 독 상태로 만들 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 971,
@@ -23712,7 +39575,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 35,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/971.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/971.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/971.png",
+    "abilities": [
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "복슬복슬",
+        "nameEn": "fluffy",
+        "effectKo": "상대로부터 받은 접촉하는 기술의 데미지를 반감시키지만 불꽃타입 기술의 데미지는 2배가 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 972,
@@ -23735,7 +39612,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 15,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/972.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/972.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/972.png",
+    "abilities": [
+      {
+        "nameKo": "모래헤치기",
+        "nameEn": "sand-rush",
+        "effectKo": "모래바람으로 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "복슬복슬",
+        "nameEn": "fluffy",
+        "effectKo": "상대로부터 받은 접촉하는 기술의 데미지를 반감시키지만 불꽃타입 기술의 데미지는 2배가 된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 973,
@@ -23759,7 +39650,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 37,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/973.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/973.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/973.png",
+    "abilities": [
+      {
+        "nameKo": "배짱",
+        "nameEn": "scrappy",
+        "effectKo": "고스트타입에 노말 기술이 맞는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "갈지자걸음",
+        "nameEn": "tangled-feet",
+        "effectKo": "혼란에 빠져있으면 회피하기 쉬워진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "협연",
+        "nameEn": "costar",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 974,
@@ -23782,7 +39692,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 45,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/974.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/974.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/974.png",
+    "abilities": [
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈숨기",
+        "nameEn": "snow-cloak",
+        "effectKo": "날씨가 싸라기눈일 때 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 975,
@@ -23805,7 +39735,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 4.5,
     "weightKg": 700,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/975.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/975.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/975.png",
+    "abilities": [
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈치우기",
+        "nameEn": "slush-rush",
+        "effectKo": "날씨가 싸라기눈일 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 976,
@@ -23829,7 +39779,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.5,
     "weightKg": 90,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/976.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/976.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/976.png",
+    "abilities": [
+      {
+        "nameKo": "틀깨기",
+        "nameEn": "mold-breaker",
+        "effectKo": "특성에 관계없이 상대에게 기술을 쓸 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "예리함",
+        "nameEn": "sharpness",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 977,
@@ -23852,7 +39815,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 12,
     "weightKg": 220,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/977.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/977.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/977.png",
+    "abilities": [
+      {
+        "nameKo": "천진",
+        "nameEn": "unaware",
+        "effectKo": "상대의 능력 변화를 무시한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "둔감",
+        "nameEn": "oblivious",
+        "effectKo": "헤롱헤롱이나 도발 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수의베일",
+        "nameEn": "water-veil",
+        "effectKo": "화상 상태가 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 978,
@@ -23876,7 +39859,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/978.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/978.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/978.png",
+    "abilities": [
+      {
+        "nameKo": "사령탑",
+        "nameEn": "commander",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마중물",
+        "nameEn": "storm-drain",
+        "effectKo": "물을 끌어모아 특수공격을 올린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 979,
@@ -23900,7 +39896,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 56,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/979.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/979.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/979.png",
+    "abilities": [
+      {
+        "nameKo": "의기양양",
+        "nameEn": "vital-spirit",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "오기",
+        "nameEn": "defiant",
+        "effectKo": "능력이 떨어지면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 980,
@@ -23924,7 +39940,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 223,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/980.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/980.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/980.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "천진",
+        "nameEn": "unaware",
+        "effectKo": "상대의 능력 변화를 무시한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 981,
@@ -23948,7 +39984,25 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.2,
     "weightKg": 160,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/981.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/981.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/981.png",
+    "abilities": [
+      {
+        "nameKo": "되새김질",
+        "nameEn": "cud-chew",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테일아머",
+        "nameEn": "armor-tail",
+        "isHidden": false
+      },
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 982,
@@ -23971,7 +40025,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.6,
     "weightKg": 39.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/982.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/982.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/982.png",
+    "abilities": [
+      {
+        "nameKo": "하늘의은총",
+        "nameEn": "serene-grace",
+        "effectKo": "기술의 추가 효과가 나오기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 983,
@@ -23995,7 +40069,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 120,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/983.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/983.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/983.png",
+    "abilities": [
+      {
+        "nameKo": "오기",
+        "nameEn": "defiant",
+        "effectKo": "능력이 떨어지면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "총대장",
+        "nameEn": "supreme-overlord",
+        "isHidden": false
+      },
+      {
+        "nameKo": "프레셔",
+        "nameEn": "pressure",
+        "effectKo": "상대가 사용하는 기술의 PP를 많이 줄인다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 984,
@@ -24019,7 +40112,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.2,
     "weightKg": 320,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/984.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/984.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/984.png",
+    "abilities": [
+      {
+        "nameKo": "고대활성",
+        "nameEn": "protosynthesis",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 985,
@@ -24043,7 +40143,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/985.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/985.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/985.png",
+    "abilities": [
+      {
+        "nameKo": "고대활성",
+        "nameEn": "protosynthesis",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 986,
@@ -24067,7 +40174,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 21,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/986.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/986.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/986.png",
+    "abilities": [
+      {
+        "nameKo": "고대활성",
+        "nameEn": "protosynthesis",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 987,
@@ -24091,7 +40205,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/987.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/987.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/987.png",
+    "abilities": [
+      {
+        "nameKo": "고대활성",
+        "nameEn": "protosynthesis",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 988,
@@ -24115,7 +40236,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.2,
     "weightKg": 92,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/988.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/988.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/988.png",
+    "abilities": [
+      {
+        "nameKo": "고대활성",
+        "nameEn": "protosynthesis",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 989,
@@ -24139,7 +40267,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.3,
     "weightKg": 60,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/989.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/989.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/989.png",
+    "abilities": [
+      {
+        "nameKo": "고대활성",
+        "nameEn": "protosynthesis",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 990,
@@ -24163,7 +40298,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 240,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/990.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/990.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/990.png",
+    "abilities": [
+      {
+        "nameKo": "쿼크차지",
+        "nameEn": "quark-drive",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 991,
@@ -24187,7 +40329,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 11,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/991.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/991.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/991.png",
+    "abilities": [
+      {
+        "nameKo": "쿼크차지",
+        "nameEn": "quark-drive",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 992,
@@ -24211,7 +40360,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 380.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/992.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/992.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/992.png",
+    "abilities": [
+      {
+        "nameKo": "쿼크차지",
+        "nameEn": "quark-drive",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 993,
@@ -24235,7 +40391,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.3,
     "weightKg": 111,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/993.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/993.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/993.png",
+    "abilities": [
+      {
+        "nameKo": "쿼크차지",
+        "nameEn": "quark-drive",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 994,
@@ -24259,7 +40422,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 36,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/994.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/994.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/994.png",
+    "abilities": [
+      {
+        "nameKo": "쿼크차지",
+        "nameEn": "quark-drive",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 995,
@@ -24283,7 +40453,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 303,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/995.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/995.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/995.png",
+    "abilities": [
+      {
+        "nameKo": "쿼크차지",
+        "nameEn": "quark-drive",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 996,
@@ -24307,7 +40484,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 17,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/996.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/996.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/996.png",
+    "abilities": [
+      {
+        "nameKo": "열교환",
+        "nameEn": "thermal-exchange",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 997,
@@ -24331,7 +40521,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 30,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/997.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/997.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/997.png",
+    "abilities": [
+      {
+        "nameKo": "열교환",
+        "nameEn": "thermal-exchange",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 998,
@@ -24355,7 +40558,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.1,
     "weightKg": 210,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/998.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/998.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/998.png",
+    "abilities": [
+      {
+        "nameKo": "열교환",
+        "nameEn": "thermal-exchange",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 999,
@@ -24378,7 +40594,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/999.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/999.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/999.png",
+    "abilities": [
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1000,
@@ -24402,8 +40626,18 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 30,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1000.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1000.png"
-  },
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1000.png",
+    "abilities": [
+      {
+        "nameKo": "황금몸",
+        "nameEn": "good-as-gold",
+        "isHidden": false
+      }
+    ]
+  }
+]
+
+const POKEMON_CHUNK_10: Pokemon[] = [
   {
     "id": 1001,
     "dexNumber": 1001,
@@ -24426,7 +40660,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 74.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1001.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1001.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1001.png",
+    "abilities": [
+      {
+        "nameKo": "재앙의목간",
+        "nameEn": "tablets-of-ruin",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1002,
@@ -24450,7 +40691,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.9,
     "weightKg": 152.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1002.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1002.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1002.png",
+    "abilities": [
+      {
+        "nameKo": "재앙의검",
+        "nameEn": "sword-of-ruin",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1003,
@@ -24474,7 +40722,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.7,
     "weightKg": 699.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1003.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1003.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1003.png",
+    "abilities": [
+      {
+        "nameKo": "재앙의그릇",
+        "nameEn": "vessel-of-ruin",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1004,
@@ -24498,7 +40753,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 4.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1004.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1004.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1004.png",
+    "abilities": [
+      {
+        "nameKo": "재앙의구슬",
+        "nameEn": "beads-of-ruin",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1005,
@@ -24522,7 +40784,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 380,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1005.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1005.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1005.png",
+    "abilities": [
+      {
+        "nameKo": "고대활성",
+        "nameEn": "protosynthesis",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1006,
@@ -24546,7 +40815,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 35,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1006.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1006.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1006.png",
+    "abilities": [
+      {
+        "nameKo": "쿼크차지",
+        "nameEn": "quark-drive",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1007,
@@ -24570,7 +40846,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2.5,
     "weightKg": 303,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1007.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1007.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1007.png",
+    "abilities": [
+      {
+        "nameKo": "진홍빛고동",
+        "nameEn": "orichalcum-pulse",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1008,
@@ -24594,7 +40877,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.5,
     "weightKg": 240,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1008.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1008.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1008.png",
+    "abilities": [
+      {
+        "nameKo": "하드론엔진",
+        "nameEn": "hadron-engine",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1009,
@@ -24618,7 +40908,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.5,
     "weightKg": 280,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1009.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1009.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1009.png",
+    "abilities": [
+      {
+        "nameKo": "고대활성",
+        "nameEn": "protosynthesis",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1010,
@@ -24642,7 +40939,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 125,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1010.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1010.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1010.png",
+    "abilities": [
+      {
+        "nameKo": "쿼크차지",
+        "nameEn": "quark-drive",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1011,
@@ -24666,7 +40970,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 9.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1011.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1011.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1011.png",
+    "abilities": [
+      {
+        "nameKo": "감미로운꿀",
+        "nameEn": "supersweet-syrup",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "점착",
+        "nameEn": "sticky-hold",
+        "effectKo": "달라붙어서 도구를 지킨다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 1012,
@@ -24690,7 +41013,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.1,
     "weightKg": 1.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1012.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1012.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1012.png",
+    "abilities": [
+      {
+        "nameKo": "대접",
+        "nameEn": "hospitality",
+        "isHidden": false
+      },
+      {
+        "nameKo": "내열",
+        "nameEn": "heatproof",
+        "effectKo": "불꽃 기술의 위력을 약하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 1013,
@@ -24714,7 +41050,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 2.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1013.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1013.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1013.png",
+    "abilities": [
+      {
+        "nameKo": "대접",
+        "nameEn": "hospitality",
+        "isHidden": false
+      },
+      {
+        "nameKo": "내열",
+        "nameEn": "heatproof",
+        "effectKo": "불꽃 기술의 위력을 약하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 1014,
@@ -24738,7 +41087,19 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 92.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1014.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1014.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1014.png",
+    "abilities": [
+      {
+        "nameKo": "독사슬",
+        "nameEn": "toxic-chain",
+        "isHidden": false
+      },
+      {
+        "nameKo": "파수견",
+        "nameEn": "guard-dog",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 1015,
@@ -24762,7 +41123,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 12.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1015.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1015.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1015.png",
+    "abilities": [
+      {
+        "nameKo": "독사슬",
+        "nameEn": "toxic-chain",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 1016,
@@ -24786,7 +41160,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 30.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1016.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1016.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1016.png",
+    "abilities": [
+      {
+        "nameKo": "독사슬",
+        "nameEn": "toxic-chain",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 1017,
@@ -24809,7 +41196,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 39.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1017.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1017.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1017.png",
+    "abilities": [
+      {
+        "nameKo": "오기",
+        "nameEn": "defiant",
+        "effectKo": "능력이 떨어지면 공격이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1018,
@@ -24833,7 +41228,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 60,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1018.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1018.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1018.png",
+    "abilities": [
+      {
+        "nameKo": "지구력",
+        "nameEn": "stamina",
+        "effectKo": "공격을 받으면 방어가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "굳건한신념",
+        "nameEn": "stalwart",
+        "effectKo": "상대의 기술을 끌어모으는 특성이나 기술의 영향을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 1019,
@@ -24857,7 +41272,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 93,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1019.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1019.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1019.png",
+    "abilities": [
+      {
+        "nameKo": "감미로운꿀",
+        "nameEn": "supersweet-syrup",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "점착",
+        "nameEn": "sticky-hold",
+        "effectKo": "달라붙어서 도구를 지킨다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 1020,
@@ -24881,7 +41315,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3.5,
     "weightKg": 590,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1020.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1020.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1020.png",
+    "abilities": [
+      {
+        "nameKo": "고대활성",
+        "nameEn": "protosynthesis",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1021,
@@ -24905,7 +41346,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 5.2,
     "weightKg": 480,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1021.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1021.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1021.png",
+    "abilities": [
+      {
+        "nameKo": "고대활성",
+        "nameEn": "protosynthesis",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1022,
@@ -24929,7 +41377,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 162.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1022.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1022.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1022.png",
+    "abilities": [
+      {
+        "nameKo": "쿼크차지",
+        "nameEn": "quark-drive",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1023,
@@ -24953,7 +41408,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 156,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1023.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1023.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1023.png",
+    "abilities": [
+      {
+        "nameKo": "쿼크차지",
+        "nameEn": "quark-drive",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1024,
@@ -24976,7 +41438,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 6.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1024.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1024.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1024.png",
+    "abilities": [
+      {
+        "nameKo": "테라체인지",
+        "nameEn": "tera-shift",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 1025,
@@ -25000,7 +41469,14 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 0.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/1025.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1025.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1025.png",
+    "abilities": [
+      {
+        "nameKo": "독조종",
+        "nameEn": "poison-puppeteer",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 10091,
@@ -25025,7 +41501,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.3,
     "weightKg": 3.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10091.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10091.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10091.png",
+    "abilities": [
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10092,
@@ -25050,7 +41546,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 25.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10092.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10092.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10092.png",
+    "abilities": [
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "두꺼운지방",
+        "nameEn": "thick-fat",
+        "effectKo": "불꽃과 얼음타입의 기술에 강하다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10100,
@@ -25075,7 +41591,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 21,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10100.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10100.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10100.png",
+    "abilities": [
+      {
+        "nameKo": "서핑테일",
+        "nameEn": "surge-surfer",
+        "effectKo": "일렉트릭필드일 때 스피드가 2배가 된다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 10101,
@@ -25100,7 +41624,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 40,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10101.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10101.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10101.png",
+    "abilities": [
+      {
+        "nameKo": "눈숨기",
+        "nameEn": "snow-cloak",
+        "effectKo": "날씨가 싸라기눈일 때 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈치우기",
+        "nameEn": "slush-rush",
+        "effectKo": "날씨가 싸라기눈일 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10102,
@@ -25125,7 +41663,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 55,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10102.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10102.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10102.png",
+    "abilities": [
+      {
+        "nameKo": "눈숨기",
+        "nameEn": "snow-cloak",
+        "effectKo": "날씨가 싸라기눈일 때 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈치우기",
+        "nameEn": "slush-rush",
+        "effectKo": "날씨가 싸라기눈일 때 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10103,
@@ -25149,7 +41701,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 9.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10103.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10103.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10103.png",
+    "abilities": [
+      {
+        "nameKo": "눈숨기",
+        "nameEn": "snow-cloak",
+        "effectKo": "날씨가 싸라기눈일 때 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈퍼뜨리기",
+        "nameEn": "snow-warning",
+        "effectKo": "배틀에 나가면 싸라기눈을 내리게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10104,
@@ -25174,7 +41740,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 19.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10104.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10104.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10104.png",
+    "abilities": [
+      {
+        "nameKo": "눈숨기",
+        "nameEn": "snow-cloak",
+        "effectKo": "날씨가 싸라기눈일 때 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "눈퍼뜨리기",
+        "nameEn": "snow-warning",
+        "effectKo": "배틀에 나가면 싸라기눈을 내리게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10105,
@@ -25199,7 +41779,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.2,
     "weightKg": 1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10105.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10105.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10105.png",
+    "abilities": [
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "컬리헤어",
+        "nameEn": "tangling-hair",
+        "effectKo": "공격으로 자신과 접촉한 상대의 스피드를 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래의힘",
+        "nameEn": "sand-force",
+        "effectKo": "모래바람으로 위력이 올라가는 기술이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10106,
@@ -25224,7 +41824,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 66.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10106.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10106.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10106.png",
+    "abilities": [
+      {
+        "nameKo": "모래숨기",
+        "nameEn": "sand-veil",
+        "effectKo": "모래바람으로 회피율이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "컬리헤어",
+        "nameEn": "tangling-hair",
+        "effectKo": "공격으로 자신과 접촉한 상대의 스피드를 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "모래의힘",
+        "nameEn": "sand-force",
+        "effectKo": "모래바람으로 위력이 올라가는 기술이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10107,
@@ -25248,7 +41868,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 4.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10107.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10107.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10107.png",
+    "abilities": [
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10108,
@@ -25272,7 +41912,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.1,
     "weightKg": 33,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10108.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10108.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10108.png",
+    "abilities": [
+      {
+        "nameKo": "퍼코트",
+        "nameEn": "fur-coat",
+        "effectKo": "물리 기술의 데미지가 절반이 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "테크니션",
+        "nameEn": "technician",
+        "effectKo": "약한 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "주눅",
+        "nameEn": "rattled",
+        "effectKo": "주눅이 들어 스피드가 올라가는 타입이 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10109,
@@ -25297,7 +41957,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 20.3,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10109.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10109.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10109.png",
+    "abilities": [
+      {
+        "nameKo": "자력",
+        "nameEn": "magnet-pull",
+        "effectKo": "강철의 포켓몬을 도망칠 수 없게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "일렉트릭스킨",
+        "nameEn": "galvanize",
+        "effectKo": "노말타입 기술이 전기타입이 된다. 위력이 조금 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10110,
@@ -25322,7 +42002,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 110,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10110.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10110.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10110.png",
+    "abilities": [
+      {
+        "nameKo": "자력",
+        "nameEn": "magnet-pull",
+        "effectKo": "강철의 포켓몬을 도망칠 수 없게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "일렉트릭스킨",
+        "nameEn": "galvanize",
+        "effectKo": "노말타입 기술이 전기타입이 된다. 위력이 조금 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10111,
@@ -25347,7 +42047,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 316,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10111.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10111.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10111.png",
+    "abilities": [
+      {
+        "nameKo": "자력",
+        "nameEn": "magnet-pull",
+        "effectKo": "강철의 포켓몬을 도망칠 수 없게 한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "일렉트릭스킨",
+        "nameEn": "galvanize",
+        "effectKo": "노말타입 기술이 전기타입이 된다. 위력이 조금 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10112,
@@ -25372,7 +42092,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 42,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10112.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10112.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10112.png",
+    "abilities": [
+      {
+        "nameKo": "독수",
+        "nameEn": "poison-touch",
+        "effectKo": "접촉하기만 해도 상대를 독 상태로 만들 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "과학의힘",
+        "nameEn": "power-of-alchemy",
+        "effectKo": "쓰러진 같은 편의 특성을 이어받아 같은 특성으로 바뀐다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10113,
@@ -25397,7 +42137,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 52,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10113.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10113.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10113.png",
+    "abilities": [
+      {
+        "nameKo": "독수",
+        "nameEn": "poison-touch",
+        "effectKo": "접촉하기만 해도 상대를 독 상태로 만들 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "과학의힘",
+        "nameEn": "power-of-alchemy",
+        "effectKo": "쓰러진 같은 편의 특성을 이어받아 같은 특성으로 바뀐다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10114,
@@ -25422,7 +42182,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 10.9,
     "weightKg": 415.6,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10114.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10114.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10114.png",
+    "abilities": [
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "수확",
+        "nameEn": "harvest",
+        "effectKo": "사용한 나무열매를 몇 번이고 만들어 낸다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10115,
@@ -25447,7 +42221,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1,
     "weightKg": 34,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10115.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10115.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10115.png",
+    "abilities": [
+      {
+        "nameKo": "저주받은바디",
+        "nameEn": "cursed-body",
+        "effectKo": "공격받으면 가끔 상대를 사슬묶기 상태로 만든다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "피뢰침",
+        "nameEn": "lightning-rod",
+        "effectKo": "전기를 끌어모아 특수공격을 올린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10161,
@@ -25471,7 +42265,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 7.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10161.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10161.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10161.png",
+    "abilities": [
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "단단한발톱",
+        "nameEn": "tough-claws",
+        "effectKo": "접촉하는 기술의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "긴장감",
+        "nameEn": "unnerve",
+        "effectKo": "상대를 긴장시켜 나무열매를 먹지 못하게 한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10162,
@@ -25495,7 +42309,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 24,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10162.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10162.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10162.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "파스텔베일",
+        "nameEn": "pastel-veil",
+        "effectKo": "자신과 같은 편이 독의 상태 이상 효과를 받지 않게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위험예지",
+        "nameEn": "anticipation",
+        "effectKo": "상대가 지닌 위험한 기술을 감지한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10163,
@@ -25520,7 +42354,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 80,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10163.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10163.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10163.png",
+    "abilities": [
+      {
+        "nameKo": "도주",
+        "nameEn": "run-away",
+        "effectKo": "야생 포켓몬으로부터 반드시 도망칠 수 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "파스텔베일",
+        "nameEn": "pastel-veil",
+        "effectKo": "자신과 같은 편이 독의 상태 이상 효과를 받지 않게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위험예지",
+        "nameEn": "anticipation",
+        "effectKo": "상대가 지닌 위험한 기술을 감지한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10164,
@@ -25544,7 +42398,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 36,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10164.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10164.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10164.png",
+    "abilities": [
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10165,
@@ -25569,7 +42443,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 70.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10165.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10165.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10165.png",
+    "abilities": [
+      {
+        "nameKo": "퀵드로",
+        "nameEn": "quick-draw",
+        "effectKo": "상대보다 먼저 행동할 수도 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10166,
@@ -25593,7 +42487,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 42,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10166.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10166.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10166.png",
+    "abilities": [
+      {
+        "nameKo": "불굴의마음",
+        "nameEn": "steadfast",
+        "effectKo": "풀죽을 때마다 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "배짱",
+        "nameEn": "scrappy",
+        "effectKo": "고스트타입에 노말 기술이 맞는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10167,
@@ -25618,7 +42526,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 3,
     "weightKg": 16,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10167.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10167.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10167.png",
+    "abilities": [
+      {
+        "nameKo": "부유",
+        "nameEn": "levitate",
+        "effectKo": "땅타입의 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "화학변화가스",
+        "nameEn": "neutralizing-gas",
+        "effectKo": "화학변화가스를 가진 포켓몬이 배틀에 나와 있으면 모든 포켓몬이 가진 특성의 효과가 사라지거나 발동하지 않게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "미스트메이커",
+        "nameEn": "misty-surge",
+        "effectKo": "등장했을 때 미스트필드를 사용한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10168,
@@ -25643,7 +42571,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 56.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10168.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10168.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10168.png",
+    "abilities": [
+      {
+        "nameKo": "의기양양",
+        "nameEn": "vital-spirit",
+        "effectKo": "잠듦 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "배리어프리",
+        "nameEn": "screen-cleaner",
+        "effectKo": "등장했을 때 상대와 같은 편의 빛의장막, 리플렉터, 오로라베일의 효과가 사라진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10169,
@@ -25668,7 +42616,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 50.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10169.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10169.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10169.png",
+    "abilities": [
+      {
+        "nameKo": "승기",
+        "nameEn": "competitive",
+        "effectKo": "능력이 떨어지면 특수공격이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 10170,
@@ -25693,7 +42649,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 58.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10170.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10170.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10170.png",
+    "abilities": [
+      {
+        "nameKo": "오기",
+        "nameEn": "defiant",
+        "effectKo": "능력이 떨어지면 공격이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 10171,
@@ -25718,7 +42682,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 66,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10171.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10171.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10171.png",
+    "abilities": [
+      {
+        "nameKo": "발끈",
+        "nameEn": "berserk",
+        "effectKo": "상대의 공격으로 HP가 절반이 되면 특수공격이 올라간다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 10172,
@@ -25743,7 +42715,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.8,
     "weightKg": 79.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10172.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10172.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10172.png",
+    "abilities": [
+      {
+        "nameKo": "기묘한약",
+        "nameEn": "curious-medicine",
+        "effectKo": "등장했을 때 조개껍질에서 약을 흩뿌려서 능력 변화를 원래대로 되돌린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "마이페이스",
+        "nameEn": "own-tempo",
+        "effectKo": "혼란 상태가 되지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "재생력",
+        "nameEn": "regenerator",
+        "effectKo": "볼에 넣으면 HP가 조금 회복된다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10173,
@@ -25767,7 +42759,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.6,
     "weightKg": 0.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10173.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10173.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10173.png",
+    "abilities": [
+      {
+        "nameKo": "깨어진갑옷",
+        "nameEn": "weak-armor",
+        "effectKo": "물리 기술을 받으면 방어가 떨어지고 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저주받은바디",
+        "nameEn": "cursed-body",
+        "effectKo": "공격받으면 가끔 상대를 사슬묶기 상태로 만든다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10174,
@@ -25792,7 +42798,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 17.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10174.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10174.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10174.png",
+    "abilities": [
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "속보",
+        "nameEn": "quick-feet",
+        "effectKo": "상태 이상이 되면 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10175,
@@ -25817,7 +42843,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 32.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10175.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10175.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10175.png",
+    "abilities": [
+      {
+        "nameKo": "픽업",
+        "nameEn": "pickup",
+        "effectKo": "도구를 주워올 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "먹보",
+        "nameEn": "gluttony",
+        "effectKo": "나무열매를 여느 때보다 빨리 사용한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "속보",
+        "nameEn": "quick-feet",
+        "effectKo": "상태 이상이 되면 스피드가 올라간다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10176,
@@ -25841,7 +42887,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 40,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10176.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10176.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10176.png",
+    "abilities": [
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10177,
@@ -25865,7 +42925,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 120,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10177.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10177.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10177.png",
+    "abilities": [
+      {
+        "nameKo": "무아지경",
+        "nameEn": "gorilla-tactics",
+        "effectKo": "공격이 올라가지만 처음에 선택한 기술 외에는 쓸 수 없게 된다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "달마모드",
+        "nameEn": "zen-mode",
+        "effectKo": "위급할 때 모습이 변화한다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10179,
@@ -25890,7 +42964,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 1.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10179.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10179.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10179.png",
+    "abilities": [
+      {
+        "nameKo": "떠도는영혼",
+        "nameEn": "wandering-spirit",
+        "effectKo": "접촉하는 기술로 공격해온 포켓몬과 특성을 바꾼다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 10180,
@@ -25915,7 +42997,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 20.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10180.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10180.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10180.png",
+    "abilities": [
+      {
+        "nameKo": "의태",
+        "nameEn": "mimicry",
+        "effectKo": "필드의 상태에 따라 포켓몬의 타입이 바뀐다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 10229,
@@ -25940,7 +43030,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.8,
     "weightKg": 22.7,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10229.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10229.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10229.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10230,
@@ -25965,7 +43075,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 2,
     "weightKg": 168,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10230.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10230.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10230.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "타오르는불꽃",
+        "nameEn": "flash-fire",
+        "effectKo": "불꽃을 받으면 불꽃 기술이 강해진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "돌머리",
+        "nameEn": "rock-head",
+        "effectKo": "부딪쳐도 반동을 받지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10231,
@@ -25990,7 +43120,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 13,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10231.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10231.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10231.png",
+    "abilities": [
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "유폭",
+        "nameEn": "aftermath",
+        "effectKo": "기절할 때 스친 상대에게 데미지를 준다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10232,
@@ -26015,7 +43165,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 71,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10232.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10232.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10232.png",
+    "abilities": [
+      {
+        "nameKo": "방음",
+        "nameEn": "soundproof",
+        "effectKo": "소리 기술을 받지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "정전기",
+        "nameEn": "static",
+        "effectKo": "접촉한 상대를 마비시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "유폭",
+        "nameEn": "aftermath",
+        "effectKo": "기절할 때 스친 상대에게 데미지를 준다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10233,
@@ -26040,7 +43210,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 69.8,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10233.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10233.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10233.png",
+    "abilities": [
+      {
+        "nameKo": "맹화",
+        "nameEn": "blaze",
+        "effectKo": "위급할 때 불꽃타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "통찰",
+        "nameEn": "frisk",
+        "effectKo": "상대가 지닌 물건을 알 수 있다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10234,
@@ -26065,7 +43249,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.5,
     "weightKg": 3.9,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10234.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10234.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10234.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "쓱쓱",
+        "nameEn": "swift-swim",
+        "effectKo": "비가 올 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10235,
@@ -26090,7 +43294,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.9,
     "weightKg": 27,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10235.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10235.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10235.png",
+    "abilities": [
+      {
+        "nameKo": "정신력",
+        "nameEn": "inner-focus",
+        "effectKo": "풀죽지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "나쁜손버릇",
+        "nameEn": "pickpocket",
+        "effectKo": "닿은 상대로부터 도구를 훔친다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10236,
@@ -26115,7 +43339,20 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.5,
     "weightKg": 58.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10236.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10236.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10236.png",
+    "abilities": [
+      {
+        "nameKo": "급류",
+        "nameEn": "torrent",
+        "effectKo": "위급할 때 물타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "예리함",
+        "nameEn": "sharpness",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10237,
@@ -26140,7 +43377,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.2,
     "weightKg": 19.2,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10237.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10237.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10237.png",
+    "abilities": [
+      {
+        "nameKo": "엽록소",
+        "nameEn": "chlorophyll",
+        "effectKo": "맑을 때 스피드가 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "의욕",
+        "nameEn": "hustle",
+        "effectKo": "공격은 높지만 빗나가기 쉽다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "리프가드",
+        "nameEn": "leaf-guard",
+        "effectKo": "맑을 때는 상태 이상이 되지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10238,
@@ -26165,7 +43422,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 12.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10238.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10238.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10238.png",
+    "abilities": [
+      {
+        "nameKo": "일루전",
+        "nameEn": "illusion",
+        "effectKo": "뒤의 포켓몬으로 둔갑하여 나온다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 10239,
@@ -26190,7 +43455,15 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 73,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10239.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10239.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10239.png",
+    "abilities": [
+      {
+        "nameKo": "일루전",
+        "nameEn": "illusion",
+        "effectKo": "뒤의 포켓몬으로 둔갑하여 나온다.",
+        "isHidden": false
+      }
+    ]
   },
   {
     "id": 10240,
@@ -26215,7 +43488,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 43.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10240.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10240.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10240.png",
+    "abilities": [
+      {
+        "nameKo": "날카로운눈",
+        "nameEn": "keen-eye",
+        "effectKo": "명중률이 떨어지지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "우격다짐",
+        "nameEn": "sheer-force",
+        "effectKo": "힘이 강해지지만 추가 효과가 없어진다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "색안경",
+        "nameEn": "tinted-lens",
+        "effectKo": "효과가 별로인 기술이 강해진다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10241,
@@ -26240,7 +43533,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.7,
     "weightKg": 68.5,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10241.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10241.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10241.png",
+    "abilities": [
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "미끈미끈",
+        "nameEn": "gooey",
+        "effectKo": "접촉한 상대의 스피드를 떨어뜨린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10242,
@@ -26265,7 +43578,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.7,
     "weightKg": 334.1,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10242.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10242.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10242.png",
+    "abilities": [
+      {
+        "nameKo": "초식",
+        "nameEn": "sap-sipper",
+        "effectKo": "풀 기술을 받으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "조가비갑옷",
+        "nameEn": "shell-armor",
+        "effectKo": "상대의 공격이 급소에 맞지 않는다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "미끈미끈",
+        "nameEn": "gooey",
+        "effectKo": "접촉한 상대의 스피드를 떨어뜨린다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10243,
@@ -26290,7 +43623,27 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 262.4,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10243.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10243.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10243.png",
+    "abilities": [
+      {
+        "nameKo": "옹골찬턱",
+        "nameEn": "strong-jaw",
+        "effectKo": "턱이 튼튼하여 무는 힘이 강하다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "아이스바디",
+        "nameEn": "ice-body",
+        "effectKo": "싸라기눈일 때 HP를 조금씩 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "옹골참",
+        "nameEn": "sturdy",
+        "effectKo": "일격으로 쓰러지지 않는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10244,
@@ -26315,7 +43668,21 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.6,
     "weightKg": 37,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10244.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10244.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10244.png",
+    "abilities": [
+      {
+        "nameKo": "심록",
+        "nameEn": "overgrow",
+        "effectKo": "위급할 때 풀타입의 위력이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "배짱",
+        "nameEn": "scrappy",
+        "effectKo": "고스트타입에 노말 기술이 맞는다.",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10250,
@@ -26339,7 +43706,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 115,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10250.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10250.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10250.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "분노의경혈",
+        "nameEn": "anger-point",
+        "effectKo": "급소에 맞으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "되새김질",
+        "nameEn": "cud-chew",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10251,
@@ -26364,7 +43750,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 85,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10251.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10251.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10251.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "분노의경혈",
+        "nameEn": "anger-point",
+        "effectKo": "급소에 맞으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "되새김질",
+        "nameEn": "cud-chew",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10252,
@@ -26389,7 +43794,26 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 1.4,
     "weightKg": 110,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10252.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10252.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10252.png",
+    "abilities": [
+      {
+        "nameKo": "위협",
+        "nameEn": "intimidate",
+        "effectKo": "상대의 공격을 떨어뜨린다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "분노의경혈",
+        "nameEn": "anger-point",
+        "effectKo": "급소에 맞으면 공격이 올라간다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "되새김질",
+        "nameEn": "cud-chew",
+        "isHidden": true
+      }
+    ]
   },
   {
     "id": 10253,
@@ -26414,45 +43838,33 @@ export const ALL_POKEMON: Pokemon[] = [
     "heightM": 0.4,
     "weightKg": 11,
     "spriteUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/10253.png",
-    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10253.png"
+    "artworkUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10253.png",
+    "abilities": [
+      {
+        "nameKo": "독가시",
+        "nameEn": "poison-point",
+        "effectKo": "접촉한 상대를 중독시킬 때가 있다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "저수",
+        "nameEn": "water-absorb",
+        "effectKo": "물을 받으면 회복한다.",
+        "isHidden": false
+      },
+      {
+        "nameKo": "천진",
+        "nameEn": "unaware",
+        "effectKo": "상대의 능력 변화를 무시한다.",
+        "isHidden": true
+      }
+    ]
   }
 ]
 
+export const ALL_POKEMON: Pokemon[] = [...POKEMON_CHUNK_0, ...POKEMON_CHUNK_1, ...POKEMON_CHUNK_2, ...POKEMON_CHUNK_3, ...POKEMON_CHUNK_4, ...POKEMON_CHUNK_5, ...POKEMON_CHUNK_6, ...POKEMON_CHUNK_7, ...POKEMON_CHUNK_8, ...POKEMON_CHUNK_9, ...POKEMON_CHUNK_10]
+
 export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
-  [
-    {
-      "pokemonId": 13,
-      "children": [
-        {
-          "pokemonId": 14,
-          "trigger": "레벨 7",
-          "children": [
-            {
-              "pokemonId": 15,
-              "trigger": "레벨 10"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 4,
-      "children": [
-        {
-          "pokemonId": 5,
-          "trigger": "레벨 16",
-          "children": [
-            {
-              "pokemonId": 6,
-              "trigger": "레벨 36"
-            }
-          ]
-        }
-      ]
-    }
-  ],
   [
     {
       "pokemonId": 10,
@@ -26463,6 +43875,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
           "children": [
             {
               "pokemonId": 12,
+              "trigger": "레벨 10"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 13,
+      "children": [
+        {
+          "pokemonId": 14,
+          "trigger": "레벨 7",
+          "children": [
+            {
+              "pokemonId": 15,
               "trigger": "레벨 10"
             }
           ]
@@ -26494,6 +43923,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 22,
           "trigger": "레벨 20"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 4,
+      "children": [
+        {
+          "pokemonId": 5,
+          "trigger": "레벨 16",
+          "children": [
+            {
+              "pokemonId": 6,
+              "trigger": "레벨 36"
+            }
+          ]
         }
       ]
     }
@@ -26534,17 +43980,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 23,
-      "children": [
-        {
-          "pokemonId": 24,
-          "trigger": "레벨 22"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 19,
       "children": [
         {
@@ -26561,6 +43996,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 10092,
           "trigger": "레벨 20 · 밤"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 23,
+      "children": [
+        {
+          "pokemonId": 24,
+          "trigger": "레벨 22"
         }
       ]
     }
@@ -26584,17 +44030,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 46,
-      "children": [
-        {
-          "pokemonId": 47,
-          "trigger": "레벨 24"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 32,
       "children": [
         {
@@ -26607,6 +44042,46 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 27,
+      "children": [
+        {
+          "pokemonId": 28,
+          "trigger": "레벨 22"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 29,
+      "children": [
+        {
+          "pokemonId": 30,
+          "trigger": "레벨 16",
+          "children": [
+            {
+              "pokemonId": 31,
+              "trigger": "달의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 46,
+      "children": [
+        {
+          "pokemonId": 47,
+          "trigger": "레벨 24"
         }
       ]
     }
@@ -26636,29 +44111,41 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 29,
+      "pokemonId": 10101,
       "children": [
         {
-          "pokemonId": 30,
-          "trigger": "레벨 16",
-          "children": [
-            {
-              "pokemonId": 31,
-              "trigger": "달의돌 사용",
-              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
-            }
-          ]
+          "pokemonId": 10102,
+          "trigger": "얼음의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/ice-stone.png"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 27,
+      "pokemonId": 48,
       "children": [
         {
-          "pokemonId": 28,
-          "trigger": "레벨 22"
+          "pokemonId": 49,
+          "trigger": "레벨 31"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 174,
+      "children": [
+        {
+          "pokemonId": 39,
+          "trigger": "레벨업 · 친밀도 160 이상",
+          "children": [
+            {
+              "pokemonId": 40,
+              "trigger": "달의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
+            }
+          ]
         }
       ]
     }
@@ -26687,47 +44174,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 174,
-      "children": [
-        {
-          "pokemonId": 39,
-          "trigger": "레벨업 · 친밀도 160 이상",
-          "children": [
-            {
-              "pokemonId": 40,
-              "trigger": "달의돌 사용",
-              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 48,
-      "children": [
-        {
-          "pokemonId": 49,
-          "trigger": "레벨 31"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 10101,
-      "children": [
-        {
-          "pokemonId": 10102,
-          "trigger": "얼음의돌 사용",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/ice-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 43,
       "children": [
         {
@@ -26745,6 +44191,59 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 173,
+      "children": [
+        {
+          "pokemonId": 35,
+          "trigger": "레벨업 · 친밀도 160 이상",
+          "children": [
+            {
+              "pokemonId": 36,
+              "trigger": "달의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 37,
+      "children": [
+        {
+          "pokemonId": 38,
+          "trigger": "불꽃의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/fire-stone.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 10103,
+      "children": [
+        {
+          "pokemonId": 10104,
+          "trigger": "얼음의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/ice-stone.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 54,
+      "children": [
+        {
+          "pokemonId": 55,
+          "trigger": "레벨 33"
         }
       ]
     }
@@ -26784,40 +44283,15 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 37,
+      "pokemonId": 63,
       "children": [
         {
-          "pokemonId": 38,
-          "trigger": "불꽃의돌 사용",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/fire-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 10103,
-      "children": [
-        {
-          "pokemonId": 10104,
-          "trigger": "얼음의돌 사용",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/ice-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 173,
-      "children": [
-        {
-          "pokemonId": 35,
-          "trigger": "레벨업 · 친밀도 160 이상",
+          "pokemonId": 64,
+          "trigger": "레벨 16",
           "children": [
             {
-              "pokemonId": 36,
-              "trigger": "달의돌 사용",
-              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
+              "pokemonId": 65,
+              "trigger": "교환"
             }
           ]
         }
@@ -26826,11 +44300,35 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 54,
+      "pokemonId": 56,
       "children": [
         {
-          "pokemonId": 55,
-          "trigger": "레벨 33"
+          "pokemonId": 57,
+          "trigger": "레벨 28",
+          "children": [
+            {
+              "pokemonId": 979,
+              "trigger": "특정 기술 사용"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 69,
+      "children": [
+        {
+          "pokemonId": 70,
+          "trigger": "레벨 21",
+          "children": [
+            {
+              "pokemonId": 71,
+              "trigger": "리프의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
+            }
+          ]
         }
       ]
     }
@@ -26855,58 +44353,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
           "pokemonId": 10230,
           "trigger": "불꽃의돌 사용",
           "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/fire-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 56,
-      "children": [
-        {
-          "pokemonId": 57,
-          "trigger": "레벨 28",
-          "children": [
-            {
-              "pokemonId": 979,
-              "trigger": "특정 기술 사용"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 63,
-      "children": [
-        {
-          "pokemonId": 64,
-          "trigger": "레벨 16",
-          "children": [
-            {
-              "pokemonId": 65,
-              "trigger": "교환"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 69,
-      "children": [
-        {
-          "pokemonId": 70,
-          "trigger": "레벨 21",
-          "children": [
-            {
-              "pokemonId": 71,
-              "trigger": "리프의돌 사용",
-              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
-            }
-          ]
         }
       ]
     }
@@ -26941,11 +44387,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 10166,
+      "pokemonId": 77,
       "children": [
         {
-          "pokemonId": 865,
-          "trigger": "한 전투에서 급소 3회"
+          "pokemonId": 78,
+          "trigger": "레벨 40"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 10162,
+      "children": [
+        {
+          "pokemonId": 10163,
+          "trigger": "레벨 40"
         }
       ]
     }
@@ -26963,22 +44420,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 77,
+      "pokemonId": 10166,
       "children": [
         {
-          "pokemonId": 78,
-          "trigger": "레벨 40"
+          "pokemonId": 865,
+          "trigger": "한 전투에서 급소 3회"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 10162,
+      "pokemonId": 86,
       "children": [
         {
-          "pokemonId": 10163,
-          "trigger": "레벨 40"
+          "pokemonId": 87,
+          "trigger": "레벨 34"
         }
       ]
     }
@@ -27007,11 +44464,44 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 86,
+      "pokemonId": 79,
       "children": [
         {
-          "pokemonId": 87,
-          "trigger": "레벨 34"
+          "pokemonId": 80,
+          "trigger": "레벨 37"
+        },
+        {
+          "pokemonId": 199,
+          "trigger": "교환 · 소지: 왕의징표석"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 81,
+      "children": [
+        {
+          "pokemonId": 82,
+          "trigger": "레벨 30",
+          "children": [
+            {
+              "pokemonId": 462,
+              "trigger": "레벨업"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 90,
+      "children": [
+        {
+          "pokemonId": 91,
+          "trigger": "물의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/water-stone.png"
         }
       ]
     }
@@ -27063,50 +44553,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 81,
-      "children": [
-        {
-          "pokemonId": 82,
-          "trigger": "레벨 30",
-          "children": [
-            {
-              "pokemonId": 462,
-              "trigger": "레벨업"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 79,
-      "children": [
-        {
-          "pokemonId": 80,
-          "trigger": "레벨 37"
-        },
-        {
-          "pokemonId": 199,
-          "trigger": "교환 · 소지: 왕의징표석"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 90,
-      "children": [
-        {
-          "pokemonId": 91,
-          "trigger": "물의돌 사용",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/water-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 92,
       "children": [
         {
@@ -27118,17 +44564,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "교환"
             }
           ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 96,
-      "children": [
-        {
-          "pokemonId": 97,
-          "trigger": "레벨 26"
         }
       ]
     }
@@ -27151,6 +44586,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 10113,
           "trigger": "레벨 38"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 96,
+      "children": [
+        {
+          "pokemonId": 97,
+          "trigger": "레벨 26"
         }
       ]
     }
@@ -27234,6 +44680,21 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 109,
+      "children": [
+        {
+          "pokemonId": 110,
+          "trigger": "레벨 35"
+        },
+        {
+          "pokemonId": 10167,
+          "trigger": "레벨 35"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 104,
       "children": [
         {
@@ -27249,15 +44710,28 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 109,
+      "pokemonId": 108,
       "children": [
         {
-          "pokemonId": 110,
-          "trigger": "레벨 35"
-        },
+          "pokemonId": 463,
+          "trigger": "레벨업 · 구르기 습득"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 111,
+      "children": [
         {
-          "pokemonId": 10167,
-          "trigger": "레벨 35"
+          "pokemonId": 112,
+          "trigger": "레벨 42",
+          "children": [
+            {
+              "pokemonId": 464,
+              "trigger": "교환 · 소지: 프로텍터"
+            }
+          ]
         }
       ]
     }
@@ -27283,51 +44757,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 111,
+      "pokemonId": 116,
       "children": [
         {
-          "pokemonId": 112,
-          "trigger": "레벨 42",
+          "pokemonId": 117,
+          "trigger": "레벨 32",
           "children": [
             {
-              "pokemonId": 464,
-              "trigger": "교환 · 소지: 프로텍터"
+              "pokemonId": 230,
+              "trigger": "교환 · 소지: 용의비늘"
             }
           ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 108,
-      "children": [
-        {
-          "pokemonId": 463,
-          "trigger": "레벨업 · 구르기 습득"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 118,
-      "children": [
-        {
-          "pokemonId": 119,
-          "trigger": "레벨 33"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 120,
-      "children": [
-        {
-          "pokemonId": 121,
-          "trigger": "물의돌 사용",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/water-stone.png"
         }
       ]
     }
@@ -27351,17 +44791,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 116,
+      "pokemonId": 118,
       "children": [
         {
-          "pokemonId": 117,
-          "trigger": "레벨 32",
-          "children": [
-            {
-              "pokemonId": 230,
-              "trigger": "교환 · 소지: 용의비늘"
-            }
-          ]
+          "pokemonId": 119,
+          "trigger": "레벨 33"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 120,
+      "children": [
+        {
+          "pokemonId": 121,
+          "trigger": "물의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/water-stone.png"
         }
       ]
     }
@@ -27422,6 +44868,34 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 240,
+      "children": [
+        {
+          "pokemonId": 126,
+          "trigger": "레벨 30",
+          "children": [
+            {
+              "pokemonId": 467,
+              "trigger": "교환 · 소지: 마그마부스터"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 238,
+      "children": [
+        {
+          "pokemonId": 124,
+          "trigger": "레벨 30"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 133,
       "children": [
         {
@@ -27458,34 +44932,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 700,
           "trigger": "레벨업 · 어픽션 2 이상 · 페어리 타입 기술 습득"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 238,
-      "children": [
-        {
-          "pokemonId": 124,
-          "trigger": "레벨 30"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 240,
-      "children": [
-        {
-          "pokemonId": 126,
-          "trigger": "레벨 30",
-          "children": [
-            {
-              "pokemonId": 467,
-              "trigger": "교환 · 소지: 마그마부스터"
-            }
-          ]
         }
       ]
     }
@@ -27591,6 +45037,27 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 155,
+      "children": [
+        {
+          "pokemonId": 156,
+          "trigger": "레벨 14",
+          "children": [
+            {
+              "pokemonId": 157,
+              "trigger": "레벨 36"
+            },
+            {
+              "pokemonId": 10233,
+              "trigger": "레벨 36"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 158,
       "children": [
         {
@@ -27630,27 +45097,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 155,
-      "children": [
-        {
-          "pokemonId": 156,
-          "trigger": "레벨 14",
-          "children": [
-            {
-              "pokemonId": 157,
-              "trigger": "레벨 36"
-            },
-            {
-              "pokemonId": 10233,
-              "trigger": "레벨 36"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 165,
       "children": [
         {
@@ -27673,34 +45119,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 298,
+      "pokemonId": 167,
       "children": [
         {
-          "pokemonId": 183,
-          "trigger": "레벨업 · 친밀도 160 이상",
-          "children": [
-            {
-              "pokemonId": 184,
-              "trigger": "레벨 18"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 137,
-      "children": [
-        {
-          "pokemonId": 233,
-          "trigger": "교환 · 소지: 업그레이드",
-          "children": [
-            {
-              "pokemonId": 474,
-              "trigger": "교환 · 소지: 괴상한패치"
-            }
-          ]
+          "pokemonId": 168,
+          "trigger": "레벨 22"
         }
       ]
     }
@@ -27718,44 +45141,15 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 179,
+      "pokemonId": 298,
       "children": [
         {
-          "pokemonId": 180,
-          "trigger": "레벨 15",
-          "children": [
-            {
-              "pokemonId": 181,
-              "trigger": "레벨 30"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 167,
-      "children": [
-        {
-          "pokemonId": 168,
-          "trigger": "레벨 22"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 175,
-      "children": [
-        {
-          "pokemonId": 176,
+          "pokemonId": 183,
           "trigger": "레벨업 · 친밀도 160 이상",
           "children": [
             {
-              "pokemonId": 468,
-              "trigger": "빛의돌 사용",
-              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/shiny-stone.png"
+              "pokemonId": 184,
+              "trigger": "레벨 18"
             }
           ]
         }
@@ -27781,11 +45175,63 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 193,
+      "pokemonId": 175,
       "children": [
         {
-          "pokemonId": 469,
-          "trigger": "레벨업 · 원시의힘 습득"
+          "pokemonId": 176,
+          "trigger": "레벨업 · 친밀도 160 이상",
+          "children": [
+            {
+              "pokemonId": 468,
+              "trigger": "빛의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/shiny-stone.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 179,
+      "children": [
+        {
+          "pokemonId": 180,
+          "trigger": "레벨 15",
+          "children": [
+            {
+              "pokemonId": 181,
+              "trigger": "레벨 30"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 137,
+      "children": [
+        {
+          "pokemonId": 233,
+          "trigger": "교환 · 소지: 업그레이드",
+          "children": [
+            {
+              "pokemonId": 474,
+              "trigger": "교환 · 소지: 괴상한패치"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 438,
+      "children": [
+        {
+          "pokemonId": 185,
+          "trigger": "레벨업 · 흉내내기 습득"
         }
       ]
     }
@@ -27826,11 +45272,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 438,
+      "pokemonId": 193,
       "children": [
         {
-          "pokemonId": 185,
-          "trigger": "레벨업 · 흉내내기 습득"
+          "pokemonId": 469,
+          "trigger": "레벨업 · 원시의힘 습득"
         }
       ]
     }
@@ -27853,6 +45299,18 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 202,
           "trigger": "레벨 15"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 200,
+      "children": [
+        {
+          "pokemonId": 429,
+          "trigger": "어둠의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/dusk-stone.png"
         }
       ]
     }
@@ -27882,18 +45340,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 200,
-      "children": [
-        {
-          "pokemonId": 429,
-          "trigger": "어둠의돌 사용",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/dusk-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 209,
       "children": [
         {
@@ -27905,72 +45351,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 203,
-      "children": [
-        {
-          "pokemonId": 981,
-          "trigger": "레벨업 · twin-beam 습득"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 218,
-      "children": [
-        {
-          "pokemonId": 219,
-          "trigger": "레벨 38"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 207,
       "children": [
         {
           "pokemonId": 472,
           "trigger": "레벨업 · 밤 · 소지: 예리한이빨"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 206,
-      "children": [
-        {
-          "pokemonId": 982,
-          "trigger": "레벨업 · hyper-drill 습득"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 216,
-      "children": [
-        {
-          "pokemonId": 217,
-          "trigger": "레벨 30",
-          "children": [
-            {
-              "pokemonId": 901,
-              "trigger": "peat-block 사용 · 밤"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 10234,
-      "children": [
-        {
-          "pokemonId": 904,
-          "trigger": "강함 스타일 기술 사용"
         }
       ]
     }
@@ -27994,11 +45379,61 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 223,
+      "pokemonId": 218,
       "children": [
         {
-          "pokemonId": 224,
-          "trigger": "레벨 25"
+          "pokemonId": 219,
+          "trigger": "레벨 38"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 10234,
+      "children": [
+        {
+          "pokemonId": 904,
+          "trigger": "강함 스타일 기술 사용"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 206,
+      "children": [
+        {
+          "pokemonId": 982,
+          "trigger": "레벨업 · hyper-drill 습득"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 203,
+      "children": [
+        {
+          "pokemonId": 981,
+          "trigger": "레벨업 · twin-beam 습득"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 216,
+      "children": [
+        {
+          "pokemonId": 217,
+          "trigger": "레벨 30",
+          "children": [
+            {
+              "pokemonId": 901,
+              "trigger": "peat-block 사용 · 밤"
+            }
+          ]
         }
       ]
     }
@@ -28010,6 +45445,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 226,
           "trigger": "레벨업 · 파티에 특정 포켓몬 동반"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 223,
+      "children": [
+        {
+          "pokemonId": 224,
+          "trigger": "레벨 25"
         }
       ]
     }
@@ -28049,17 +45495,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 234,
-      "children": [
-        {
-          "pokemonId": 899,
-          "trigger": "민첩 스타일 기술 사용"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 10173,
       "children": [
         {
@@ -28082,6 +45517,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 234,
+      "children": [
+        {
+          "pokemonId": 899,
+          "trigger": "민첩 스타일 기술 사용"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 246,
       "children": [
         {
@@ -28091,6 +45537,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
             {
               "pokemonId": 248,
               "trigger": "레벨 55"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 252,
+      "children": [
+        {
+          "pokemonId": 253,
+          "trigger": "레벨 16",
+          "children": [
+            {
+              "pokemonId": 254,
+              "trigger": "레벨 36"
             }
           ]
         }
@@ -28124,23 +45587,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
           "children": [
             {
               "pokemonId": 260,
-              "trigger": "레벨 36"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 252,
-      "children": [
-        {
-          "pokemonId": 253,
-          "trigger": "레벨 16",
-          "children": [
-            {
-              "pokemonId": 254,
               "trigger": "레벨 36"
             }
           ]
@@ -28188,24 +45634,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 270,
-      "children": [
-        {
-          "pokemonId": 271,
-          "trigger": "레벨 14",
-          "children": [
-            {
-              "pokemonId": 272,
-              "trigger": "물의돌 사용",
-              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/water-stone.png"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 263,
       "children": [
         {
@@ -28239,6 +45667,24 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 862,
           "trigger": "레벨 35 · 밤"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 270,
+      "children": [
+        {
+          "pokemonId": 271,
+          "trigger": "레벨 14",
+          "children": [
+            {
+              "pokemonId": 272,
+              "trigger": "물의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/water-stone.png"
+            }
+          ]
         }
       ]
     }
@@ -28324,21 +45770,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 290,
-      "children": [
-        {
-          "pokemonId": 291,
-          "trigger": "레벨 20"
-        },
-        {
-          "pokemonId": 292,
-          "trigger": "레벨업(빈 자리+몬스터볼 필요)"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 293,
       "children": [
         {
@@ -28350,6 +45781,21 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "레벨 40"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 290,
+      "children": [
+        {
+          "pokemonId": 291,
+          "trigger": "레벨 20"
+        },
+        {
+          "pokemonId": 292,
+          "trigger": "레벨업(빈 자리+몬스터볼 필요)"
         }
       ]
     }
@@ -28389,23 +45835,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 300,
+      "pokemonId": 296,
       "children": [
         {
-          "pokemonId": 301,
-          "trigger": "달의돌 사용",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
+          "pokemonId": 297,
+          "trigger": "레벨 24"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 296,
+      "pokemonId": 300,
       "children": [
         {
-          "pokemonId": 297,
-          "trigger": "레벨 24"
+          "pokemonId": 301,
+          "trigger": "달의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
         }
       ]
     }
@@ -28451,6 +45897,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 316,
+      "children": [
+        {
+          "pokemonId": 317,
+          "trigger": "레벨 26"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 406,
       "children": [
         {
@@ -28469,22 +45926,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 316,
+      "pokemonId": 318,
       "children": [
         {
-          "pokemonId": 317,
-          "trigger": "레벨 26"
+          "pokemonId": 319,
+          "trigger": "레벨 30"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 318,
+      "pokemonId": 325,
       "children": [
         {
-          "pokemonId": 319,
-          "trigger": "레벨 30"
+          "pokemonId": 326,
+          "trigger": "레벨 32"
         }
       ]
     }
@@ -28507,17 +45964,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 321,
           "trigger": "레벨 40"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 325,
-      "children": [
-        {
-          "pokemonId": 326,
-          "trigger": "레벨 32"
         }
       ]
     }
@@ -28574,17 +46020,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 331,
-      "children": [
-        {
-          "pokemonId": 332,
-          "trigger": "레벨 32"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 343,
       "children": [
         {
@@ -28596,11 +46031,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 345,
+      "pokemonId": 331,
       "children": [
         {
-          "pokemonId": 346,
-          "trigger": "레벨 40"
+          "pokemonId": 332,
+          "trigger": "레벨 32"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 349,
+      "children": [
+        {
+          "pokemonId": 350,
+          "trigger": "레벨업 · 아름다움 170 이상"
         }
       ]
     }
@@ -28618,11 +46064,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 349,
+      "pokemonId": 345,
       "children": [
         {
-          "pokemonId": 350,
-          "trigger": "레벨업 · 아름다움 170 이상"
+          "pokemonId": 346,
+          "trigger": "레벨 40"
         }
       ]
     }
@@ -28651,22 +46097,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 361,
-      "children": [
-        {
-          "pokemonId": 362,
-          "trigger": "레벨 42"
-        },
-        {
-          "pokemonId": 478,
-          "trigger": "각성의돌 사용 · 암컷",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/dawn-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 355,
       "children": [
         {
@@ -28678,6 +46108,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "교환 · 소지: 영계의천"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 361,
+      "children": [
+        {
+          "pokemonId": 362,
+          "trigger": "레벨 42"
+        },
+        {
+          "pokemonId": 478,
+          "trigger": "각성의돌 사용 · 암컷",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/dawn-stone.png"
         }
       ]
     }
@@ -28752,6 +46198,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 390,
+      "children": [
+        {
+          "pokemonId": 391,
+          "trigger": "레벨 14",
+          "children": [
+            {
+              "pokemonId": 392,
+              "trigger": "레벨 36"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 366,
       "children": [
         {
@@ -28767,15 +46230,15 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 390,
+      "pokemonId": 396,
       "children": [
         {
-          "pokemonId": 391,
+          "pokemonId": 397,
           "trigger": "레벨 14",
           "children": [
             {
-              "pokemonId": 392,
-              "trigger": "레벨 36"
+              "pokemonId": 398,
+              "trigger": "레벨 34"
             }
           ]
         }
@@ -28801,17 +46264,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 396,
+      "pokemonId": 399,
       "children": [
         {
-          "pokemonId": 397,
-          "trigger": "레벨 14",
-          "children": [
-            {
-              "pokemonId": 398,
-              "trigger": "레벨 34"
-            }
-          ]
+          "pokemonId": 400,
+          "trigger": "레벨 15"
         }
       ]
     }
@@ -28823,17 +46280,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 402,
           "trigger": "레벨 10"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 399,
-      "children": [
-        {
-          "pokemonId": 400,
-          "trigger": "레벨 15"
         }
       ]
     }
@@ -28905,17 +46351,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 418,
-      "children": [
-        {
-          "pokemonId": 419,
-          "trigger": "레벨 26"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 420,
       "children": [
         {
@@ -28927,33 +46362,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 422,
+      "pokemonId": 418,
       "children": [
         {
-          "pokemonId": 423,
-          "trigger": "레벨 30"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 427,
-      "children": [
-        {
-          "pokemonId": 428,
-          "trigger": "레벨업 · 친밀도 160 이상"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 425,
-      "children": [
-        {
-          "pokemonId": 426,
-          "trigger": "레벨 28"
+          "pokemonId": 419,
+          "trigger": "레벨 26"
         }
       ]
     }
@@ -28971,11 +46384,44 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 422,
+      "children": [
+        {
+          "pokemonId": 423,
+          "trigger": "레벨 30"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 434,
       "children": [
         {
           "pokemonId": 435,
           "trigger": "레벨 34"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 425,
+      "children": [
+        {
+          "pokemonId": 426,
+          "trigger": "레벨 28"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 427,
+      "children": [
+        {
+          "pokemonId": 428,
+          "trigger": "레벨업 · 친밀도 160 이상"
         }
       ]
     }
@@ -29010,22 +46456,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 447,
+      "pokemonId": 449,
       "children": [
         {
-          "pokemonId": 448,
-          "trigger": "레벨업 · 친밀도 160 이상 · 낮"
+          "pokemonId": 450,
+          "trigger": "레벨 34"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 449,
+      "pokemonId": 447,
       "children": [
         {
-          "pokemonId": 450,
-          "trigger": "레벨 34"
+          "pokemonId": 448,
+          "trigger": "레벨업 · 친밀도 160 이상 · 낮"
         }
       ]
     }
@@ -29110,6 +46556,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 504,
+      "children": [
+        {
+          "pokemonId": 505,
+          "trigger": "레벨 20"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 501,
       "children": [
         {
@@ -29125,17 +46582,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "레벨 36"
             }
           ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 504,
-      "children": [
-        {
-          "pokemonId": 505,
-          "trigger": "레벨 20"
         }
       ]
     }
@@ -29218,6 +46664,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 522,
+      "children": [
+        {
+          "pokemonId": 523,
+          "trigger": "레벨 27"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 519,
       "children": [
         {
@@ -29235,11 +46692,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 522,
+      "pokemonId": 527,
       "children": [
         {
-          "pokemonId": 523,
-          "trigger": "레벨 27"
+          "pokemonId": 528,
+          "trigger": "레벨업 · 친밀도 160 이상"
         }
       ]
     }
@@ -29257,17 +46714,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "교환"
             }
           ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 527,
-      "children": [
-        {
-          "pokemonId": 528,
-          "trigger": "레벨업 · 친밀도 160 이상"
         }
       ]
     }
@@ -29455,11 +46901,40 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 566,
+      "pokemonId": 568,
       "children": [
         {
-          "pokemonId": 567,
-          "trigger": "레벨 37"
+          "pokemonId": 569,
+          "trigger": "레벨 36"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 572,
+      "children": [
+        {
+          "pokemonId": 573,
+          "trigger": "빛의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/shiny-stone.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 574,
+      "children": [
+        {
+          "pokemonId": 575,
+          "trigger": "레벨 32",
+          "children": [
+            {
+              "pokemonId": 576,
+              "trigger": "레벨 41"
+            }
+          ]
         }
       ]
     }
@@ -29488,40 +46963,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 568,
+      "pokemonId": 566,
       "children": [
         {
-          "pokemonId": 569,
-          "trigger": "레벨 36"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 574,
-      "children": [
-        {
-          "pokemonId": 575,
-          "trigger": "레벨 32",
-          "children": [
-            {
-              "pokemonId": 576,
-              "trigger": "레벨 41"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 572,
-      "children": [
-        {
-          "pokemonId": 573,
-          "trigger": "빛의돌 사용",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/shiny-stone.png"
+          "pokemonId": 567,
+          "trigger": "레벨 37"
         }
       ]
     }
@@ -29595,6 +47041,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 590,
+      "children": [
+        {
+          "pokemonId": 591,
+          "trigger": "레벨 39"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 570,
       "children": [
         {
@@ -29611,17 +47068,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 10239,
           "trigger": "레벨 30"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 590,
-      "children": [
-        {
-          "pokemonId": 591,
-          "trigger": "레벨 39"
         }
       ]
     }
@@ -29690,6 +47136,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 599,
+      "children": [
+        {
+          "pokemonId": 600,
+          "trigger": "레벨 38",
+          "children": [
+            {
+              "pokemonId": 601,
+              "trigger": "레벨 49"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 607,
       "children": [
         {
@@ -29717,23 +47180,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
             {
               "pokemonId": 612,
               "trigger": "레벨 48"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 599,
-      "children": [
-        {
-          "pokemonId": 600,
-          "trigger": "레벨 38",
-          "children": [
-            {
-              "pokemonId": 601,
-              "trigger": "레벨 49"
             }
           ]
         }
@@ -29803,17 +47249,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 629,
-      "children": [
-        {
-          "pokemonId": 630,
-          "trigger": "레벨 54"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 627,
       "children": [
         {
@@ -29822,6 +47257,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         },
         {
           "pokemonId": 10240,
+          "trigger": "레벨 54"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 629,
+      "children": [
+        {
+          "pokemonId": 630,
           "trigger": "레벨 54"
         }
       ]
@@ -29919,23 +47365,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 661,
-      "children": [
-        {
-          "pokemonId": 662,
-          "trigger": "레벨 17",
-          "children": [
-            {
-              "pokemonId": 663,
-              "trigger": "레벨 35"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 664,
       "children": [
         {
@@ -29945,6 +47374,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
             {
               "pokemonId": 666,
               "trigger": "레벨 12"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 661,
+      "children": [
+        {
+          "pokemonId": 662,
+          "trigger": "레벨 17",
+          "children": [
+            {
+              "pokemonId": 663,
+              "trigger": "레벨 35"
             }
           ]
         }
@@ -29964,29 +47410,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 669,
+      "pokemonId": 674,
       "children": [
         {
-          "pokemonId": 670,
-          "trigger": "레벨 19",
-          "children": [
-            {
-              "pokemonId": 671,
-              "trigger": "빛의돌 사용",
-              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/shiny-stone.png"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 672,
-      "children": [
-        {
-          "pokemonId": 673,
-          "trigger": "레벨 32"
+          "pokemonId": 675,
+          "trigger": "레벨 32 · 파티에 악 타입 동반"
         }
       ]
     }
@@ -29998,6 +47426,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 678,
           "trigger": "레벨 25"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 672,
+      "children": [
+        {
+          "pokemonId": 673,
+          "trigger": "레벨 32"
         }
       ]
     }
@@ -30022,22 +47461,18 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 674,
+      "pokemonId": 669,
       "children": [
         {
-          "pokemonId": 675,
-          "trigger": "레벨 32 · 파티에 악 타입 동반"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 690,
-      "children": [
-        {
-          "pokemonId": 691,
-          "trigger": "레벨 48"
+          "pokemonId": 670,
+          "trigger": "레벨 19",
+          "children": [
+            {
+              "pokemonId": 671,
+              "trigger": "빛의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/shiny-stone.png"
+            }
+          ]
         }
       ]
     }
@@ -30049,6 +47484,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 689,
           "trigger": "레벨 39"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 690,
+      "children": [
+        {
+          "pokemonId": 691,
+          "trigger": "레벨 48"
         }
       ]
     }
@@ -30088,17 +47534,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 684,
-      "children": [
-        {
-          "pokemonId": 685,
-          "trigger": "교환 · 소지: 휘핑팝"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 696,
       "children": [
         {
@@ -30110,11 +47545,49 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 684,
+      "children": [
+        {
+          "pokemonId": 685,
+          "trigger": "교환 · 소지: 휘핑팝"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 698,
       "children": [
         {
           "pokemonId": 699,
           "trigger": "레벨 39 · 밤"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 694,
+      "children": [
+        {
+          "pokemonId": 695,
+          "trigger": "태양의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 712,
+      "children": [
+        {
+          "pokemonId": 713,
+          "trigger": "레벨 37"
+        },
+        {
+          "pokemonId": 10243,
+          "trigger": "레벨 37"
         }
       ]
     }
@@ -30159,33 +47632,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 694,
-      "children": [
-        {
-          "pokemonId": 695,
-          "trigger": "태양의돌 사용",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 712,
-      "children": [
-        {
-          "pokemonId": 713,
-          "trigger": "레벨 37"
-        },
-        {
-          "pokemonId": 10243,
-          "trigger": "레벨 37"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 714,
       "children": [
         {
@@ -30219,27 +47665,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 722,
-      "children": [
-        {
-          "pokemonId": 723,
-          "trigger": "레벨 17",
-          "children": [
-            {
-              "pokemonId": 724,
-              "trigger": "레벨 34"
-            },
-            {
-              "pokemonId": 10244,
-              "trigger": "레벨 36"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 725,
       "children": [
         {
@@ -30257,15 +47682,19 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 728,
+      "pokemonId": 722,
       "children": [
         {
-          "pokemonId": 729,
+          "pokemonId": 723,
           "trigger": "레벨 17",
           "children": [
             {
-              "pokemonId": 730,
+              "pokemonId": 724,
               "trigger": "레벨 34"
+            },
+            {
+              "pokemonId": 10244,
+              "trigger": "레벨 36"
             }
           ]
         }
@@ -30291,11 +47720,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 734,
+      "pokemonId": 728,
       "children": [
         {
-          "pokemonId": 735,
-          "trigger": "레벨 20 · 낮"
+          "pokemonId": 729,
+          "trigger": "레벨 17",
+          "children": [
+            {
+              "pokemonId": 730,
+              "trigger": "레벨 34"
+            }
+          ]
         }
       ]
     }
@@ -30313,6 +47748,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "레벨업"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 734,
+      "children": [
+        {
+          "pokemonId": 735,
+          "trigger": "레벨 20 · 낮"
         }
       ]
     }
@@ -30374,17 +47820,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 751,
-      "children": [
-        {
-          "pokemonId": 752,
-          "trigger": "레벨 22"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 753,
       "children": [
         {
@@ -30396,11 +47831,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 755,
+      "pokemonId": 751,
       "children": [
         {
-          "pokemonId": 756,
-          "trigger": "레벨 24"
+          "pokemonId": 752,
+          "trigger": "레벨 22"
         }
       ]
     }
@@ -30412,6 +47847,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 758,
           "trigger": "레벨 33 · 암컷"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 755,
+      "children": [
+        {
+          "pokemonId": 756,
+          "trigger": "레벨 24"
         }
       ]
     }
@@ -30596,17 +48042,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 819,
-      "children": [
-        {
-          "pokemonId": 820,
-          "trigger": "레벨 24"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 821,
       "children": [
         {
@@ -30618,6 +48053,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "레벨 38"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 819,
+      "children": [
+        {
+          "pokemonId": 820,
+          "trigger": "레벨 24"
         }
       ]
     }
@@ -30646,11 +48092,33 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 833,
+      "children": [
+        {
+          "pokemonId": 834,
+          "trigger": "레벨 22"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 835,
       "children": [
         {
           "pokemonId": 836,
           "trigger": "레벨 25"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 829,
+      "children": [
+        {
+          "pokemonId": 830,
+          "trigger": "레벨 20"
         }
       ]
     }
@@ -30674,33 +48142,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 833,
-      "children": [
-        {
-          "pokemonId": 834,
-          "trigger": "레벨 22"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 843,
       "children": [
         {
           "pokemonId": 844,
           "trigger": "레벨 36"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 829,
-      "children": [
-        {
-          "pokemonId": 830,
-          "trigger": "레벨 20"
         }
       ]
     }
@@ -30740,23 +48186,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 859,
-      "children": [
-        {
-          "pokemonId": 860,
-          "trigger": "레벨 32",
-          "children": [
-            {
-              "pokemonId": 861,
-              "trigger": "레벨 42"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 856,
       "children": [
         {
@@ -30779,6 +48208,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 869,
           "trigger": "특정 동작(스핀)"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 859,
+      "children": [
+        {
+          "pokemonId": 860,
+          "trigger": "레벨 32",
+          "children": [
+            {
+              "pokemonId": 861,
+              "trigger": "레벨 42"
+            }
+          ]
         }
       ]
     }
@@ -30871,22 +48317,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 884,
+      "pokemonId": 891,
       "children": [
         {
-          "pokemonId": 1018,
-          "trigger": "metal-alloy 사용"
+          "pokemonId": 892,
+          "trigger": "특정 장소를 데미지 입은 채 통과"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 891,
+      "pokemonId": 884,
       "children": [
         {
-          "pokemonId": 892,
-          "trigger": "특정 장소를 데미지 입은 채 통과"
+          "pokemonId": 1018,
+          "trigger": "metal-alloy 사용"
         }
       ]
     }
@@ -30910,14 +48356,14 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 909,
+      "pokemonId": 912,
       "children": [
         {
-          "pokemonId": 910,
+          "pokemonId": 913,
           "trigger": "레벨 16",
           "children": [
             {
-              "pokemonId": 911,
+              "pokemonId": 914,
               "trigger": "레벨 36"
             }
           ]
@@ -30927,14 +48373,14 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 912,
+      "pokemonId": 909,
       "children": [
         {
-          "pokemonId": 913,
+          "pokemonId": 910,
           "trigger": "레벨 16",
           "children": [
             {
-              "pokemonId": 914,
+              "pokemonId": 911,
               "trigger": "레벨 36"
             }
           ]
@@ -30971,6 +48417,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 920,
           "trigger": "레벨 24"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 928,
+      "children": [
+        {
+          "pokemonId": 929,
+          "trigger": "레벨 25",
+          "children": [
+            {
+              "pokemonId": 930,
+              "trigger": "레벨 35"
+            }
+          ]
         }
       ]
     }
@@ -31016,34 +48479,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 932,
+      "pokemonId": 942,
       "children": [
         {
-          "pokemonId": 933,
-          "trigger": "레벨 24",
-          "children": [
-            {
-              "pokemonId": 934,
-              "trigger": "레벨 38"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 928,
-      "children": [
-        {
-          "pokemonId": 929,
-          "trigger": "레벨 25",
-          "children": [
-            {
-              "pokemonId": 930,
-              "trigger": "레벨 35"
-            }
-          ]
+          "pokemonId": 943,
+          "trigger": "레벨 30"
         }
       ]
     }
@@ -31062,22 +48502,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 940,
+      "pokemonId": 932,
       "children": [
         {
-          "pokemonId": 941,
-          "trigger": "레벨 25"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 942,
-      "children": [
-        {
-          "pokemonId": 943,
-          "trigger": "레벨 30"
+          "pokemonId": 933,
+          "trigger": "레벨 24",
+          "children": [
+            {
+              "pokemonId": 934,
+              "trigger": "레벨 38"
+            }
+          ]
         }
       ]
     }
@@ -31095,22 +48530,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 946,
+      "pokemonId": 940,
       "children": [
         {
-          "pokemonId": 947,
-          "trigger": "레벨업"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 948,
-      "children": [
-        {
-          "pokemonId": 949,
-          "trigger": "레벨 30"
+          "pokemonId": 941,
+          "trigger": "레벨 25"
         }
       ]
     }
@@ -31140,6 +48564,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 946,
+      "children": [
+        {
+          "pokemonId": 947,
+          "trigger": "레벨업"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 955,
       "children": [
         {
@@ -31160,6 +48595,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 937,
           "trigger": "malicious-armor 사용"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 948,
+      "children": [
+        {
+          "pokemonId": 949,
+          "trigger": "레벨 30"
         }
       ]
     }
@@ -31194,33 +48640,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 963,
-      "children": [
-        {
-          "pokemonId": 964,
-          "trigger": "레벨 38"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 969,
-      "children": [
-        {
-          "pokemonId": 970,
-          "trigger": "레벨 35"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 971,
       "children": [
         {
           "pokemonId": 972,
           "trigger": "레벨 30 · 밤"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 963,
+      "children": [
+        {
+          "pokemonId": 964,
+          "trigger": "레벨 38"
         }
       ]
     }
@@ -31250,17 +48685,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 996,
+      "pokemonId": 969,
       "children": [
         {
-          "pokemonId": 997,
-          "trigger": "레벨 35",
-          "children": [
-            {
-              "pokemonId": 998,
-              "trigger": "레벨 54"
-            }
-          ]
+          "pokemonId": 970,
+          "trigger": "레벨 35"
         }
       ]
     }
@@ -31272,6 +48701,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 1000,
           "trigger": "코인 999개 모으기"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 996,
+      "children": [
+        {
+          "pokemonId": 997,
+          "trigger": "레벨 35",
+          "children": [
+            {
+              "pokemonId": 998,
+              "trigger": "레벨 54"
+            }
+          ]
         }
       ]
     }

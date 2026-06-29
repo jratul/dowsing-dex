@@ -23,7 +23,8 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       }
     ],
-    "machines": []
+    "machines": [],
+    "tutor": []
   },
   {
     "generation": "2세대",
@@ -46,7 +47,8 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       }
     ],
-    "machines": []
+    "machines": [],
+    "tutor": []
   },
   {
     "generation": "3세대",
@@ -69,7 +71,8 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       }
     ],
-    "machines": []
+    "machines": [],
+    "tutor": []
   },
   {
     "generation": "3세대",
@@ -92,7 +95,8 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       }
     ],
-    "machines": []
+    "machines": [],
+    "tutor": []
   },
   {
     "generation": "3세대",
@@ -115,7 +119,8 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       }
     ],
-    "machines": []
+    "machines": [],
+    "tutor": []
   },
   {
     "generation": "4세대",
@@ -138,7 +143,8 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       }
     ],
-    "machines": []
+    "machines": [],
+    "tutor": []
   },
   {
     "generation": "4세대",
@@ -161,7 +167,8 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       }
     ],
-    "machines": []
+    "machines": [],
+    "tutor": []
   },
   {
     "generation": "4세대",
@@ -184,7 +191,8 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       }
     ],
-    "machines": []
+    "machines": [],
+    "tutor": []
   },
   {
     "generation": "5세대",
@@ -207,7 +215,8 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       }
     ],
-    "machines": []
+    "machines": [],
+    "tutor": []
   },
   {
     "generation": "5세대",
@@ -230,7 +239,8 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       }
     ],
-    "machines": []
+    "machines": [],
+    "tutor": []
   },
   {
     "generation": "6세대",
@@ -253,7 +263,14 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       }
     ],
-    "machines": []
+    "machines": [
+      {
+        "moveId": 219,
+        "machine": "TM",
+        "number": 20
+      }
+    ],
+    "tutor": []
   },
   {
     "generation": "6세대",
@@ -276,7 +293,14 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       }
     ],
-    "machines": []
+    "machines": [
+      {
+        "moveId": 219,
+        "machine": "TM",
+        "number": 20
+      }
+    ],
+    "tutor": []
   },
   {
     "generation": "7세대",
@@ -299,7 +323,14 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       }
     ],
-    "machines": []
+    "machines": [
+      {
+        "moveId": 219,
+        "machine": "TM",
+        "number": 20
+      }
+    ],
+    "tutor": []
   },
   {
     "generation": "7세대",
@@ -322,13 +353,24 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       }
     ],
-    "machines": []
+    "machines": [
+      {
+        "moveId": 219,
+        "machine": "TM",
+        "number": 20
+      }
+    ],
+    "tutor": []
   },
   {
     "generation": "8세대",
     "version": "소드·실드",
     "levelUp": [
       {
+        "moveId": 68,
+        "level": 1
+      },
+      {
         "moveId": 133,
         "level": 1
       },
@@ -337,21 +379,49 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 194,
+        "level": 1
+      },
+      {
         "moveId": 204,
+        "level": 1
+      },
+      {
+        "moveId": 219,
         "level": 1
       },
       {
         "moveId": 227,
         "level": 1
+      },
+      {
+        "moveId": 243,
+        "level": 1
       }
     ],
-    "machines": []
+    "machines": [
+      {
+        "moveId": 204,
+        "machine": "TM",
+        "number": 29
+      },
+      {
+        "moveId": 219,
+        "machine": "TM",
+        "number": 19
+      }
+    ],
+    "tutor": []
   },
   {
     "generation": "8세대",
     "version": "브릴리언트다이아몬드·샤이닝펄",
     "levelUp": [
       {
+        "moveId": 68,
+        "level": 1
+      },
+      {
         "moveId": 133,
         "level": 1
       },
@@ -360,21 +430,34 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 194,
+        "level": 1
+      },
+      {
         "moveId": 204,
+        "level": 1
+      },
+      {
+        "moveId": 219,
         "level": 1
       },
       {
         "moveId": 227,
         "level": 1
+      },
+      {
+        "moveId": 243,
+        "level": 1
       }
     ],
-    "machines": []
+    "machines": [],
+    "tutor": []
   }
 ]
 
 export const RECOMMENDED_MOVESET: number[] = [
+  68,
   133,
   150,
-  204,
-  227
+  194
 ]

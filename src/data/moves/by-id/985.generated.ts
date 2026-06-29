@@ -88,6 +88,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 68
       },
       {
+        "moveId": 34,
+        "machine": "TM",
+        "number": 66
+      },
+      {
         "moveId": 36,
         "machine": "TM",
         "number": 1
@@ -178,6 +183,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 128
       },
       {
+        "moveId": 156,
+        "machine": "TM",
+        "number": 85
+      },
+      {
         "moveId": 164,
         "machine": "TM",
         "number": 103
@@ -223,6 +233,16 @@ export const LEARNSETS: Learnset[] = [
         "number": 50
       },
       {
+        "moveId": 241,
+        "machine": "TM",
+        "number": 49
+      },
+      {
+        "moveId": 242,
+        "machine": "TM",
+        "number": 108
+      },
+      {
         "moveId": 244,
         "machine": "TM",
         "number": 203
@@ -253,6 +273,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 92
       },
       {
+        "moveId": 304,
+        "machine": "TM",
+        "number": 117
+      },
+      {
         "moveId": 313,
         "machine": "TM",
         "number": 3
@@ -276,6 +301,11 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 352,
         "machine": "TM",
         "number": 11
+      },
+      {
+        "moveId": 360,
+        "machine": "TM",
+        "number": 180
       },
       {
         "moveId": 374,
@@ -348,6 +378,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 139
       },
       {
+        "moveId": 583,
+        "machine": "TM",
+        "number": 127
+      },
+      {
         "moveId": 605,
         "machine": "TM",
         "number": 79
@@ -356,6 +391,11 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 678,
         "machine": "TM",
         "number": 138
+      },
+      {
+        "moveId": 706,
+        "machine": "TM",
+        "number": 63
       },
       {
         "moveId": 707,
@@ -387,7 +427,8 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 228
       }
-    ]
+    ],
+    "tutor": []
   }
 ]
 

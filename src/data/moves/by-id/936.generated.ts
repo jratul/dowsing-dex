@@ -82,6 +82,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 1
       },
       {
+        "moveId": 53,
+        "machine": "TM",
+        "number": 125
+      },
+      {
         "moveId": 60,
         "machine": "TM",
         "number": 16
@@ -92,9 +97,19 @@ export const LEARNSETS: Learnset[] = [
         "number": 168
       },
       {
+        "moveId": 83,
+        "machine": "TM",
+        "number": 24
+      },
+      {
         "moveId": 94,
         "machine": "TM",
         "number": 120
+      },
+      {
+        "moveId": 101,
+        "machine": "TM",
+        "number": 42
       },
       {
         "moveId": 109,
@@ -167,6 +182,11 @@ export const LEARNSETS: Learnset[] = [
         "number": 118
       },
       {
+        "moveId": 261,
+        "machine": "TM",
+        "number": 107
+      },
+      {
         "moveId": 263,
         "machine": "TM",
         "number": 25
@@ -200,6 +220,11 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 334,
         "machine": "TM",
         "number": 104
+      },
+      {
+        "moveId": 347,
+        "machine": "TM",
+        "number": 129
       },
       {
         "moveId": 374,
@@ -247,6 +272,16 @@ export const LEARNSETS: Learnset[] = [
         "number": 161
       },
       {
+        "moveId": 473,
+        "machine": "TM",
+        "number": 54
+      },
+      {
+        "moveId": 488,
+        "machine": "TM",
+        "number": 38
+      },
+      {
         "moveId": 491,
         "machine": "TM",
         "number": 13
@@ -260,6 +295,11 @@ export const LEARNSETS: Learnset[] = [
         "moveId": 678,
         "machine": "TM",
         "number": 138
+      },
+      {
+        "moveId": 797,
+        "machine": "TM",
+        "number": 218
       },
       {
         "moveId": 800,
@@ -276,7 +316,8 @@ export const LEARNSETS: Learnset[] = [
         "machine": "TM",
         "number": 171
       }
-    ]
+    ],
+    "tutor": []
   }
 ]
 

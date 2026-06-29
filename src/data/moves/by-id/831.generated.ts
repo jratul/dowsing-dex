@@ -92,9 +92,19 @@ export const LEARNSETS: Learnset[] = [
         "number": 57
       },
       {
+        "moveId": 385,
+        "machine": "TM",
+        "number": 61
+      },
+      {
         "moveId": 496,
         "machine": "TM",
         "number": 76
+      }
+    ],
+    "tutor": [
+      {
+        "moveId": 803
       }
     ]
   }
