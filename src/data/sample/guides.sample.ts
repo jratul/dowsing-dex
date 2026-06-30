@@ -48,4 +48,28 @@ export const SAMPLE_GUIDES: Guide[] = [
     relatedPokemonIds: [34, 135, 121, 65, 94, 103],
     summary: '1세대 레드/블루 기준 돌 진화·교환 진화 추천 타이밍, 기술 배치, 스토리 추천도 정리.',
   },
+  {
+    slug: 'pokemon-heartgold-story',
+    category: '공략',
+    title: '포켓몬 하트골드버전 스토리 엔트리 공략',
+    iconPokemonId: 157,
+    relatedPokemonIds: [157, 181, 130, 214, 131, 468],
+    summary: '4세대 리메이크(HGSS) 브케인 스타팅 기준. 성도 8관+관동 8관+레드전 대응 엔트리 정리.',
+  },
+  {
+    slug: 'pokemon-emerald-story',
+    category: '공략',
+    title: '포켓몬 에메랄드버전 스토리 엔트리 공략',
+    iconPokemonId: 257,
+    relatedPokemonIds: [257, 260, 254, 282, 330, 365],
+    summary: '3세대 에메랄드 아차모·물짱이·나무지기 3종 스타팅별 탭 분리 공략. 챔피언 미라 대응 포함.',
+  },
+  {
+    slug: 'pokemon-platinum-story',
+    category: '공략',
+    title: '포켓몬 플래티넘(기라티나)버전 스토리 엔트리 공략',
+    iconPokemonId: 392,
+    relatedPokemonIds: [392, 395, 389, 405, 445, 448],
+    summary: '4세대 플래티넘 불꽃숭이·팽도리·모부기 3종 스타팅별 탭 분리 공략. 챔피언 난천 한카리아스 대응 포함.',
+  },
 ]

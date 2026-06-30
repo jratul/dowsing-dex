@@ -41,6 +41,27 @@ export const router = createBrowserRouter([
           })),
       },
       {
+        path: '/guides/pokemon-heartgold-story',
+        lazy: () =>
+          import('./pages/PokemonHeartgoldStoryGuidePage').then((m) => ({
+            Component: m.PokemonHeartgoldStoryGuidePage,
+          })),
+      },
+      {
+        path: '/guides/pokemon-emerald-story',
+        lazy: () =>
+          import('./pages/PokemonEmeraldStoryGuidePage').then((m) => ({
+            Component: m.PokemonEmeraldStoryGuidePage,
+          })),
+      },
+      {
+        path: '/guides/pokemon-platinum-story',
+        lazy: () =>
+          import('./pages/PokemonPlatinumStoryGuidePage').then((m) => ({
+            Component: m.PokemonPlatinumStoryGuidePage,
+          })),
+      },
+      {
         path: '/guides/:slug',
         lazy: () => import('./pages/GuideDetailPage').then((m) => ({ Component: m.GuideDetailPage })),
       },

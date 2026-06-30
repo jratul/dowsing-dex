@@ -1,0 +1,292 @@
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { Card } from '../components/ui/Card'
+import { PokemonCard } from '../components/pokemon/PokemonCard'
+import { SpriteImage } from '../components/pokemon/SpriteImage'
+import { GuideTable } from '../components/guide/GuideTable'
+import { PokemonLink } from '../components/guide/PokemonLink'
+import { linkifyPokemonNames } from '../lib/linkifyPokemonNames'
+import { SAMPLE_POKEMON, findSamplePokemon } from '../data/sample/pokemon.sample'
+import { CATEGORY_STYLE } from '../lib/guideCategory'
+import { cn } from '../lib/cn'
+import type { StarterGuideData } from '../data/sample/pokemonEmeraldStory.data'
+import {
+  EMERALD_GYM_COMMON_NOTE,
+  EMERALD_GOALS,
+  EMERALD_HM_TABLE,
+  EMERALD_NAME_TO_ID,
+  EMERALD_STARTERS,
+  EMERALD_TM_NOTES,
+} from '../data/sample/pokemonEmeraldStory.data'
+
+function L(text: string) {
+  return linkifyPokemonNames(text, EMERALD_NAME_TO_ID)
+}
+
+function SectionHeading({ children }: { children: string }) {
+  return <h2 className="mb-3 text-lg font-black text-ink">{children}</h2>
+}
+
+function StarterContent({ starter }: { starter: StarterGuideData }) {
+  const finalParty = starter.finalPartyIds.map((id) => SAMPLE_POKEMON.find((p) => p.id === id)).filter(Boolean)
+
+  return (
+    <div>
+      {/* 최종 파티 배너 */}
+      <div className="mb-6 grid grid-cols-3 gap-2 rounded-card bg-surface-hover px-4 py-4 sm:grid-cols-6">
+        {finalParty.map(
+          (p) =>
+            p && (
+              <div key={p.id} className="flex items-center justify-center">
+                <SpriteImage src={p.artworkUrl ?? p.spriteUrl} alt={p.nameKo} width={96} height={96} pixelated={false} rounded="none" className="h-20 w-20 sm:h-24 sm:w-24" />
+              </div>
+            ),
+        )}
+      </div>
+
+      {/* 최종 추천 엔트리 */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>최종 추천 엔트리</SectionHeading>
+        <div className="mb-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
+          {finalParty.map((p) => p && <PokemonCard key={p.id} pokemon={p} onClick={() => {}} />)}
+        </div>
+        <GuideTable
+          headers={['포켓몬', '주요 역할']}
+          rows={starter.finalRoles.map((r) => [L(r.pokemon), r.role])}
+        />
+      </Card>
+
+      {/* 포획 시점 */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>포획 시점</SectionHeading>
+        <GuideTable
+          headers={['시점', '포켓몬', '설명']}
+          rows={starter.catchTable.map((r) => [
+            r.timing,
+            <PokemonLink key={r.pokemonId} id={r.pokemonId} label={r.pokemon} />,
+            r.note,
+          ])}
+        />
+      </Card>
+
+      {/* 기술 배치 */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>기술 배치</SectionHeading>
+        <div className="space-y-6">
+          {starter.movesets.map((s) => (
+            <div key={s.pokemonId}>
+              <div className="mb-2 flex items-center gap-2">
+                <SpriteImage src={findSamplePokemon(s.pokemonId).spriteUrl} alt={s.pokemon} width={40} height={40} className="h-10 w-10" />
+                <span className="font-black text-ink">{s.pokemon}</span>
+                <span className="text-xs text-ink-faint">최종 기술 구성</span>
+              </div>
+              <div className="mb-3 flex flex-wrap gap-2">
+                {s.finalMoves.map((m) => (
+                  <span key={m} className="rounded-chip bg-brand-red/10 px-3 py-1 text-xs font-bold text-brand-red">
+                    {m}
+                  </span>
+                ))}
+              </div>
+              <GuideTable
+                headers={['기술', '용도']}
+                rows={s.moveTable.map((m) => [m.move, m.usage])}
+              />
+              {s.notes.length > 0 && (
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-ink-muted">
+                  {s.notes.map((n) => (
+                    <li key={n}>{n}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+        </div>
+      </Card>
+
+      {/* 단계별 파티 */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>단계별 파티</SectionHeading>
+        <div className="space-y-4">
+          {starter.stages.map((stage) => (
+            <div key={stage.title} className="rounded-card border border-border p-3">
+              <p className="mb-2 text-sm font-black text-ink">{stage.title}</p>
+              <div className="mb-2 flex flex-wrap gap-1">
+                {stage.members.map((m) => (
+                  <span key={m} className="rounded-chip border border-border-strong px-2 py-0.5 text-xs text-ink">
+                    {m}
+                  </span>
+                ))}
+              </div>
+              <ul className="list-disc space-y-1 pl-5 text-xs text-ink-muted">
+                {stage.goals.map((g) => (
+                  <li key={g}>{g}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </Card>
+
+      {/* 체육관 대응 */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>체육관 대응</SectionHeading>
+        <p className="mb-3 text-xs text-ink-muted">{EMERALD_GYM_COMMON_NOTE}</p>
+        <div className="space-y-4">
+          {starter.gymMatchups.map((boss) => (
+            <div key={boss.title} className="rounded-card border border-border p-3">
+              <p className="mb-1 text-sm font-black text-ink">{boss.title}</p>
+              <p className="mb-2 text-xs text-ink-muted">{boss.note}</p>
+              <GuideTable
+                headers={['상대 포켓몬', '대응책']}
+                rows={boss.rows.map((r) => [r.opponent, L(r.answer)])}
+              />
+            </div>
+          ))}
+        </div>
+      </Card>
+
+      {/* 사천왕 */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>사천왕</SectionHeading>
+        <div className="space-y-4">
+          {starter.elite4.map((boss) => (
+            <div key={boss.title} className="rounded-card border border-border p-3">
+              <p className="mb-1 text-sm font-black text-ink">{boss.title}</p>
+              <p className="mb-2 text-xs text-ink-muted">{boss.note}</p>
+              <GuideTable
+                headers={['상대 포켓몬', '대응책']}
+                rows={boss.rows.map((r) => [r.opponent, L(r.answer)])}
+              />
+            </div>
+          ))}
+        </div>
+      </Card>
+
+      {/* 챔피언 */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>{starter.champion.title}</SectionHeading>
+        <p className="mb-3 text-sm text-ink-muted">{starter.champion.note}</p>
+        <GuideTable
+          headers={['상대 포켓몬', '대응책']}
+          rows={starter.champion.rows.map((r) => [r.opponent, L(r.answer)])}
+        />
+      </Card>
+
+      {/* 요약 */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>요약</SectionHeading>
+        <GuideTable
+          headers={['구간', '전략']}
+          rows={starter.summary.map((r) => [r.stage, r.strategy])}
+        />
+      </Card>
+
+      {/* 보조 포켓몬 */}
+      {starter.support.length > 0 && (
+        <Card className="mb-6 p-4">
+          <SectionHeading>보조 포켓몬</SectionHeading>
+          <GuideTable
+            headers={['포켓몬', '역할', '획득 시점']}
+            rows={starter.support.map((r) => [
+              <PokemonLink key={r.pokemonId} id={r.pokemonId} label={r.pokemon} />,
+              r.role,
+              r.obtainedAt,
+            ])}
+          />
+        </Card>
+      )}
+
+      {/* 주의사항 */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>주의사항</SectionHeading>
+        <ul className="list-disc space-y-2 pl-5 text-sm text-ink">
+          {starter.cautions.map((c) => (
+            <li key={c}>{c}</li>
+          ))}
+        </ul>
+      </Card>
+    </div>
+  )
+}
+
+export function PokemonEmeraldStoryGuidePage() {
+  const style = CATEGORY_STYLE['공략']
+  const [selectedId, setSelectedId] = useState(EMERALD_STARTERS[0].id)
+  const activeStarter = EMERALD_STARTERS.find((s) => s.id === selectedId) ?? EMERALD_STARTERS[0]
+
+  return (
+    <div className="mx-auto max-w-4xl px-4 py-6">
+      <div className="mb-2 flex items-center gap-2">
+        <Link to="/guides" className="text-sm font-bold text-ink-muted hover:text-ink">
+          ← 공략 목록
+        </Link>
+        <span className={`rounded-chip bg-white px-2 py-0.5 text-xs font-bold ${style.pillClass}`}>공략</span>
+      </div>
+
+      <h1 className="text-2xl font-black text-ink">포켓몬 에메랄드버전 스토리 엔트리 공략</h1>
+      <p className="mb-4 text-sm text-ink-faint">다우징덱스 편집부 · 3세대(루비·사파이어·에메랄드) 공략</p>
+
+      {/* 기준 */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>기준</SectionHeading>
+        <ul className="list-disc space-y-1 pl-5 text-sm text-ink">
+          <li>대상 게임: 포켓몬스터 에메랄드버전</li>
+          <li>세대 기준: 3세대 원본(루비·사파이어·에메랄드). 오메가루비·알파사파이어 제외</li>
+          <li>특이사항: 에메랄드는 챔피언이 루비/사파이어의 쓰루기 대신 미라(물 타입)임</li>
+          <li>물리/특수 분류: 3세대에서는 타입 전체가 물리 또는 특수로 구분됨 (기술별 아님)</li>
+        </ul>
+        <p className="mt-3 text-sm font-bold text-ink-faint">목적</p>
+        <ul className="list-disc space-y-1 pl-5 text-sm text-ink">
+          {EMERALD_GOALS.map((g) => (
+            <li key={g}>{g}</li>
+          ))}
+        </ul>
+      </Card>
+
+      {/* 스타터 선택 탭 */}
+      <div className="mb-6">
+        <p className="mb-2 text-sm font-bold text-ink-faint">스타팅 포켓몬 선택</p>
+        <div className="flex gap-2 overflow-x-auto pb-1">
+          {EMERALD_STARTERS.map((s) => {
+            const p = SAMPLE_POKEMON.find((pk) => pk.id === s.starterPokemonId)
+            return (
+              <button
+                key={s.id}
+                type="button"
+                onClick={() => setSelectedId(s.id)}
+                className={cn(
+                  'flex shrink-0 items-center gap-2 rounded-chip border px-3 py-1.5 text-sm font-bold transition-colors',
+                  selectedId === s.id
+                    ? 'border-brand-red bg-brand-red text-white'
+                    : 'border-border-strong text-ink hover:border-brand-red hover:text-brand-red',
+                )}
+              >
+                {p && (
+                  <img src={p.spriteUrl} alt="" width={24} height={24} style={{ imageRendering: 'pixelated' }} className="h-6 w-6" />
+                )}
+                {s.nameKo} 스타팅
+              </button>
+            )
+          })}
+        </div>
+      </div>
+
+      {/* 공통 HM */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>HM 배분 (공통)</SectionHeading>
+        <GuideTable
+          headers={['HM', '기술', '담당', '획득처', '필요배지', '메모']}
+          rows={EMERALD_HM_TABLE.map((r) => [r.hm, r.move, L(r.pokemon), r.location, r.badge, r.note])}
+        />
+        <ul className="mt-3 list-disc space-y-1 pl-5 text-xs text-ink-muted">
+          {EMERALD_TM_NOTES.map((n) => (
+            <li key={n}>{n}</li>
+          ))}
+        </ul>
+      </Card>
+
+      {/* 스타터별 콘텐츠 */}
+      <StarterContent key={activeStarter.id} starter={activeStarter} />
+    </div>
+  )
+}
