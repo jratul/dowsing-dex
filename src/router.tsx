@@ -22,6 +22,25 @@ export const router = createBrowserRouter([
           import('./pages/PokemonGoldStoryGuidePage').then((m) => ({ Component: m.PokemonGoldStoryGuidePage })),
       },
       {
+        path: '/guides/pokemon-red-story',
+        lazy: () =>
+          import('./pages/PokemonRedStoryGuidePage').then((m) => ({ Component: m.PokemonRedStoryGuidePage })),
+      },
+      {
+        path: '/guides/pokemon-firered-story',
+        lazy: () =>
+          import('./pages/PokemonFireredStoryGuidePage').then((m) => ({
+            Component: m.PokemonFireredStoryGuidePage,
+          })),
+      },
+      {
+        path: '/guides/pokemon-red-evolution',
+        lazy: () =>
+          import('./pages/PokemonRedEvolutionGuidePage').then((m) => ({
+            Component: m.PokemonRedEvolutionGuidePage,
+          })),
+      },
+      {
         path: '/guides/:slug',
         lazy: () => import('./pages/GuideDetailPage').then((m) => ({ Component: m.GuideDetailPage })),
       },
