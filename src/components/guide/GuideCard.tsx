@@ -43,7 +43,7 @@ export function GuideCard({ guide, iconSpriteUrl, variant = 'banner' }: GuideCar
       </div>
       <div className="flex flex-col gap-1 p-4">
         <span className="text-sm font-bold text-ink">{guide.title}</span>
-        {guide.summary && <span className="line-clamp-2 text-xs text-ink-muted">{guide.summary}</span>}
+        {guide.summary && <span className="line-clamp-2 min-h-8 text-xs text-ink-muted">{guide.summary}</span>}
       </div>
     </Card>
   )
