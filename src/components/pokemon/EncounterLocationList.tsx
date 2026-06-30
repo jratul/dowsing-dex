@@ -32,9 +32,9 @@ export function EncounterLocationList({ locations }: EncounterLocationListProps)
       </Tabs.List>
 
       <Tabs.Content value={String(activeGeneration)} className="flex flex-col gap-2">
-        {items.map((item) => (
+        {items.map((item, i) => (
           <div
-            key={item.version}
+            key={`${item.version}-${i}`}
             className="flex items-start justify-between gap-3 rounded-card border border-border-strong p-3"
           >
             <span className="shrink-0 whitespace-nowrap text-xs font-bold text-ink">{item.version}</span>

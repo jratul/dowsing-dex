@@ -16,7 +16,7 @@ export function GuideCard({ guide, iconSpriteUrl, variant = 'banner' }: GuideCar
     return (
       <Card className="flex gap-3 p-3">
         <div className={cn('relative flex h-24 w-24 shrink-0 items-center justify-center rounded-button', style.bannerClass)}>
-          <span className={cn('absolute top-1 left-1 rounded-chip bg-white px-2 py-0.5 text-[10px] font-bold', style.pillClass)}>
+          <span className={cn('absolute top-1 left-1 rounded-chip bg-white px-2 py-0.5 text-xxs font-bold', style.pillClass)}>
             {guide.category}
           </span>
           {iconSpriteUrl && (

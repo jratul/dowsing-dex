@@ -143,7 +143,7 @@ export function PokemonDetailPage() {
                     <span className="text-sm font-bold text-ink">
                       {ability.nameKo}
                       {ability.isHidden && (
-                        <span className="ml-1.5 rounded-chip bg-surface-hover px-1.5 py-0.5 text-[10px] font-bold text-ink-faint">
+                        <span className="ml-1.5 rounded-chip bg-surface-hover px-1.5 py-0.5 text-xxs font-bold text-ink-faint">
                           숨겨진 특성
                         </span>
                       )}

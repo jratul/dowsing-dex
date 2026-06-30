@@ -1,0 +1,107 @@
+# 다우징덱스 (Dowsing Dex) — 개발 가이드
+
+포켓몬 한국어 팬 도감 사이트. 1~9세대 전 포켓몬의 도감 정보, 타입 상성, 기술 학습셋, 공략을 제공한다.
+
+## 기술 스택
+
+- **프레임워크**: Vite + React 19 + TypeScript
+- **라우팅**: React Router v7 (createBrowserRouter)
+- **스타일**: Tailwind CSS v4 (`@tailwindcss/vite` 플러그인, `src/styles/index.css`에 `@theme` 블록으로 토큰 정의)
+- **UI 프리미티브**: Radix UI (Tabs, ToggleGroup, Slot)
+- **클래스 합성**: `clsx` + `tailwind-merge` → `lib/cn.ts`의 `cn()`; variant는 `cva` (class-variance-authority)
+- **린터**: oxlint (`npm run lint`)
+
+## 주요 명령어
+
+```bash
+npm run dev          # 개발 서버 (Vite HMR)
+npm run build        # 프로덕션 빌드
+npm run lint         # 린트 (oxlint)
+npm run fetch:pokedex  # PokeAPI + 한국어 위키에서 데이터 생성 (수 시간 소요)
+```
+
+## 폴더 구조
+
+```
+src/
+  components/
+    ui/           # Button, Card 등 범용 프리미티브
+    pokemon/      # TypeBadge, PokemonCard, StatChart, MoveList, EncounterLocationList 등
+    type-chart/   # TypeFilter, TypeCalculator, TypeChartGrid
+    guide/        # GuideCard, GuideTable, PokemonLink
+    layout/       # SiteHeader, MobileTabBar, Hero
+  pages/          # 라우트별 페이지 컴포넌트
+  lib/
+    cn.ts                  # clsx + tailwind-merge 헬퍼
+    typeChart.ts           # 18타입 CHART, mult(), profile(), COLOR, TYPE_BG_CLASS
+    guideCategory.ts       # 공략 카테고리 스타일 매핑
+    linkifyPokemonNames.tsx # 텍스트 속 포켓몬 이름 → PokemonLink 자동 변환
+  types/          # TypeScript 인터페이스 (pokemon.ts, move.ts, guide.ts, type-chart.ts)
+  data/
+    pokedex/pokedex.generated.ts  # ALL_POKEMON (1082종+) — scripts/ 자동 생성
+    moves/all-moves.generated.ts  # ALL_MOVES 목록
+    moves/by-id/*.generated.ts    # 포켓몬별 세대/버전별 학습셋
+    sample/                       # 도우미 함수 (findSamplePokemon 등) + 공략 데이터
+  router.tsx      # 라우트 정의
+  styles/index.css  # @theme 디자인 토큰
+scripts/
+  fetch-pokedex.mjs  # PokeAPI + 한국어 위키 스크래핑 → 생성 파일 출력
+```
+
+## 데이터 생성 흐름
+
+1. `scripts/fetch-pokedex.mjs` 실행 → PokeAPI에서 포켓몬·기술·특성 데이터를 받고, 포켓몬 갤러리 한국어 위키(pokemon.fandom.com/ko)에서 출현 장소 데이터를 스크래핑
+2. `src/data/pokedex/pokedex.generated.ts` 및 `src/data/moves/` 하위 파일 생성
+3. 생성된 파일은 직접 수정하지 않는다 (`// 이 파일은 scripts/ 로 생성됩니다. 직접 수정하지 마세요.` 주석)
+
+**데이터 생성은 10만 건 이상의 PokeAPI 요청 + 위키 스크래핑을 포함하므로 수 시간이 걸린다.** 포켓몬 추가/필드 변경이 없으면 재실행 불필요.
+
+## 라우트 구조
+
+| 경로 | 컴포넌트 | 비고 |
+|---|---|---|
+| `/` | HomePage | 대표 포켓몬 캐러셀 |
+| `/pokedex` | PokedexPage | 타입 필터 + 전체 목록 |
+| `/pokemon/:id` | PokemonDetailPage | 도감 상세 |
+| `/type-chart` | TypeChartPage | 18×18 타입 상성표 + 계산기 |
+| `/guides` | GuideListPage | 공략 카드 목록 |
+| `/guides/pokemon-gold-story` | PokemonGoldStoryGuidePage | 정적 전용 라우트 (표/이미지 중심) |
+| `/guides/:slug` | GuideDetailPage | 마크다운 기반 범용 공략 |
+
+> 정적 전용 라우트는 `:slug` 동적 라우트 **앞에** 선언해야 React Router가 올바르게 매칭한다.
+
+## 디자인 토큰
+
+모든 색상·라운드·그림자는 `src/styles/index.css`의 `@theme` 블록에 CSS 변수로 정의되어 있다. Tailwind v4는 이 변수를 자동으로 유틸리티 클래스로 노출한다.
+
+- 색상: `--color-brand-red`, `--color-ink`, `--color-ink-muted`, `--color-ink-faint`, `--color-border`, `--color-border-strong`, `--color-surface-hover`
+- 18타입: `--color-type-{normal|fire|water|...}`
+- 공략 카테고리: `--color-category-{intro|strategy|battle|capture|evolution}`
+- 종족값: `--color-stat-{hp|attack|defense|special-attack|special-defense|speed}`
+- 레이아웃: `--radius-card`, `--radius-button`, `--radius-chip`, `--shadow-card`
+- 폰트: `--text-xxs` (10px) — Tailwind 기본 `text-xs`(12px)보다 작은 라벨용
+
+임의값(`text-[10px]`, `h-[300px]` 등) 대신 반드시 위 토큰 기반 유틸리티 클래스를 사용한다.
+
+## 포켓몬 한국어 명칭 규칙
+
+한국 정식 발매판 한글 명칭을 사용한다. 일본어 음역 사용 금지.
+
+| 틀린 표기 | 올바른 표기 |
+|---|---|
+| 칸토 | 관동 |
+| 조토 | 성도 |
+
+호연·신오·하나·칼로스·알로라·가라르·팔데아는 이미 정식 한글 명칭.
+
+## 타입 상성 로직
+
+`src/lib/typeChart.ts`에 18타입 전체 `CHART`, `mult(atk, def)`, `profile(defTypes)` 함수가 있다. `TypeDefense`(상세 화면)와 `TypeCalculator`(계산기)가 `profile()` 하나를 공유한다.
+
+## 공략 페이지 패턴
+
+`GuideTable` + `PokemonLink` + `linkifyPokemonNames()` 조합으로 구성한다.
+
+- `linkifyPokemonNames(text, nameToId)`: 텍스트 내 포켓몬 이름을 자동 링크로 변환. `nameToId`는 긴 이름이 먼저 매칭되도록 길이 내림차순 정렬된 Map이어야 한다.
+- 공략 전용 데이터는 `src/data/sample/` 하위에 별도 파일로 분리한다 (예: `pokemonGoldStory.data.ts`).
+- 커스텀 레이아웃이 필요한 공략은 `src/pages/`에 전용 페이지 컴포넌트를 만들고 `router.tsx`에 정적 라우트로 등록한다.

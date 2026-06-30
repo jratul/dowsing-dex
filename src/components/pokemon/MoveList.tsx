@@ -28,7 +28,7 @@ function MoveRow({ leading, move }: { leading: string; move: Move }) {
 
 function MoveTableHeader() {
   return (
-    <div className="grid grid-cols-[2.5rem_1fr_3.5rem_3rem_2.5rem_2.5rem_2rem] gap-2 border-b border-border pb-1.5 text-[10px] font-bold text-ink-faint">
+    <div className="grid grid-cols-[2.5rem_1fr_3.5rem_3rem_2.5rem_2.5rem_2rem] gap-2 border-b border-border pb-1.5 text-xxs font-bold text-ink-faint">
       <span>Lv/No</span>
       <span>기술</span>
       <span>타입</span>
@@ -89,7 +89,7 @@ export function MoveList({ learnsets, findMove, recommendedMoveIds }: MoveListPr
                     <span className="text-xs font-bold text-ink">{move.nameKo}</span>
                     <div className="flex items-center justify-between">
                       <TypeBadge type={move.type} size="sm" />
-                      <span className="text-[10px] font-bold text-ink-faint">{move.category}</span>
+                      <span className="text-xxs font-bold text-ink-faint">{move.category}</span>
                     </div>
                   </div>
                 )
