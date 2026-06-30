@@ -64,16 +64,18 @@ function StageNode({
 
 export function EvolutionTree({ stages, currentPokemonId, renderPokemon, onSelect }: EvolutionTreeProps) {
   return (
-    <div className="scrollbar-hide flex flex-col gap-4 overflow-x-auto">
-      {stages.map((stage) => (
-        <StageNode
-          key={stage.pokemonId}
-          stage={stage}
-          currentPokemonId={currentPokemonId}
-          renderPokemon={renderPokemon}
-          onSelect={onSelect}
-        />
-      ))}
+    <div className="scrollbar-hide overflow-x-auto">
+      <div className="flex flex-col gap-4 py-1">
+        {stages.map((stage) => (
+          <StageNode
+            key={stage.pokemonId}
+            stage={stage}
+            currentPokemonId={currentPokemonId}
+            renderPokemon={renderPokemon}
+            onSelect={onSelect}
+          />
+        ))}
+      </div>
     </div>
   )
 }
