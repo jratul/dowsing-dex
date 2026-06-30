@@ -53,11 +53,13 @@ export function PokemonGoldStoryGuidePage() {
       <h1 className="text-2xl font-black text-ink">포켓몬 골드버전 스토리 엔트리 공략</h1>
       <p className="mb-4 text-sm text-ink-faint">다우징덱스 편집부 · 2세대(골드·실버·크리스탈) 공략</p>
 
-      <div className={`mb-6 flex h-40 items-center justify-center gap-2 overflow-hidden rounded-card ${style.bannerClass}`}>
+      <div className={`mb-6 grid grid-cols-3 gap-2 rounded-card px-4 py-4 sm:grid-cols-6 ${style.bannerClass}`}>
         {finalParty.map(
           (p) =>
             p && (
-              <SpriteImage key={p.id} src={p.artworkUrl ?? p.spriteUrl} alt={p.nameKo} width={96} height={96} pixelated={false} rounded="none" className="h-24 w-24" />
+              <div key={p.id} className="flex items-center justify-center">
+                <SpriteImage src={p.artworkUrl ?? p.spriteUrl} alt={p.nameKo} width={96} height={96} pixelated={false} rounded="none" className="h-20 w-20 sm:h-24 sm:w-24" />
+              </div>
             ),
         )}
       </div>
