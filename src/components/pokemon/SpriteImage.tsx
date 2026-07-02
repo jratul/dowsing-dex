@@ -35,7 +35,6 @@ export function SpriteImage({
 
   return (
     <span className={cn('relative inline-block', className)}>
-      {!loaded && <span className={cn('absolute inset-0 skeleton-shimmer', roundedClass)} />}
       <img
         src={src}
         alt={alt}
