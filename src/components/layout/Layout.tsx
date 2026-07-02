@@ -8,6 +8,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: '공략', href: '/guides' },
   { label: '타입상성', href: '/types' },
   { label: '기술머신', href: '/tm' },
+  { label: '출현', href: '/encounter' },
 ]
 
 export function Layout() {
