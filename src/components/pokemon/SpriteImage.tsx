@@ -35,7 +35,7 @@ export function SpriteImage({
 
   return (
     <span className={cn('relative inline-block', className)}>
-      {!loaded && <span className={cn('absolute inset-0 animate-pulse bg-surface-hover', roundedClass)} />}
+      {!loaded && <span className={cn('absolute inset-0 skeleton-shimmer', roundedClass)} />}
       <img
         src={src}
         alt={alt}
@@ -44,7 +44,7 @@ export function SpriteImage({
         loading={loading}
         decoding="async"
         onLoad={() => setLoaded(true)}
-        className={cn('absolute inset-0 h-full w-full transition-opacity duration-300', loaded ? 'opacity-100' : 'opacity-0')}
+        className={cn('absolute inset-0 h-full w-full transition-opacity duration-500', loaded ? 'opacity-100' : 'opacity-0')}
         style={pixelated ? { imageRendering: 'pixelated' } : undefined}
       />
     </span>

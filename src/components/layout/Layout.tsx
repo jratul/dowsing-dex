@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from 'react-router-dom'
+import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom'
 import { SiteHeader, type NavItem } from './SiteHeader'
 import { MobileTabBar } from './MobileTabBar'
 
@@ -14,6 +14,7 @@ export function Layout() {
 
   return (
     <div className="flex min-h-screen flex-col">
+      <ScrollRestoration />
       <div className="hidden md:block">
         <SiteHeader navItems={NAV_ITEMS} activeHref={pathname} />
       </div>
