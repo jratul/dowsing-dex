@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "fetch:pokedex": "node scripts/fetch-pokedex.mjs"
+    "fetch:pokedex": "node scripts/fetch-pokedex.mjs",
+    "build:tm-index": "node scripts/build-tm-index.mjs"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.3.0",

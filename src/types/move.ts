@@ -38,3 +38,12 @@ export interface Learnset {
   machines: MachineMove[]
   tutor: TutorMove[]
 }
+
+export interface TmEntry {
+  generation: Generation
+  version: string
+  machine: 'TM' | 'HM'
+  number: number
+  moveId: number
+  pokemonIds: number[]
+}
