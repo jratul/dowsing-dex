@@ -75,6 +75,7 @@ body {
   font-family: var(--font-sans);
   color: var(--color-ink);
   background: #fff;
+  scrollbar-gutter: stable;
 }
 
 /* Tailwind v4 프리플라이트는 button에 cursor:pointer를 자동으로 넣어주지 않으므로,
