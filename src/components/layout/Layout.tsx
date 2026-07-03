@@ -17,7 +17,7 @@ export function Layout() {
   return (
     <div className="flex min-h-screen flex-col">
       <ScrollRestoration />
-      <div className="hidden md:block">
+      <div className="sticky top-0 z-50 hidden md:block">
         <SiteHeader navItems={NAV_ITEMS} activeHref={pathname} />
       </div>
 

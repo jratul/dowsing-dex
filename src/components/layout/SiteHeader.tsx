@@ -33,7 +33,7 @@ export function SiteHeader({ navItems, activeHref }: SiteHeaderProps) {
   }
 
   return (
-    <header className="border-b border-border">
+    <header className="border-b border-border bg-white shadow-sm">
       <div className="mx-auto flex h-14 max-w-6xl items-center gap-6 px-4">
         <Link to="/" className="flex items-center gap-2 text-lg font-black text-ink">
           <PokeballIcon />
