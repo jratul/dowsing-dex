@@ -220,8 +220,8 @@ export function EncounterPage() {
               <div className="ml-auto min-w-0 flex-1 pt-1.5 text-right">
                 {info.length > 0 ? (
                   <ul className="space-y-0.5">
-                    {info.map((s, i) => (
-                      <li key={i} className="truncate text-xs text-ink-muted" title={s}>
+                    {info.map((s) => (
+                      <li key={s} className="truncate text-xs text-ink-muted" title={s}>
                         {s}
                       </li>
                     ))}

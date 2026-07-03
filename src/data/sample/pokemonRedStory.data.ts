@@ -22,7 +22,7 @@ export const RED_STORY_GOALS = [
   '체육관 8개 클리어',
   '사천왕 및 챔피언 클리어',
   '비전머신과 기술머신 배분 최적화',
-  '1세대 원본 특유의 기술 습득·돌진화 타이밍 반영',
+  '1세대 원본 특유의 기술 습득·돌 진화 타이밍 반영',
 ]
 
 export const RED_STORY_CORE_NOTES = [

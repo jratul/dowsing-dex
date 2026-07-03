@@ -14,10 +14,11 @@
 ## 주요 명령어
 
 ```bash
-npm run dev          # 개발 서버 (Vite HMR)
-npm run build        # 프로덕션 빌드
-npm run lint         # 린트 (oxlint)
-npm run fetch:pokedex  # PokeAPI + 한국어 위키에서 데이터 생성 (수 시간 소요)
+npm run dev             # 개발 서버 (Vite HMR)
+npm run build           # 프로덕션 빌드
+npm run lint            # 린트 (oxlint)
+npm run fetch:pokedex   # PokeAPI + 한국어 위키에서 데이터 생성 (수 시간 소요)
+npm run build:tm-index  # by-id/*.generated.ts → tm-index.generated.ts 역인덱스 생성
 ```
 
 ## 폴더 구조
@@ -38,14 +39,16 @@ src/
     linkifyPokemonNames.tsx # 텍스트 속 포켓몬 이름 → PokemonLink 자동 변환
   types/          # TypeScript 인터페이스 (pokemon.ts, move.ts, guide.ts, type-chart.ts)
   data/
-    pokedex/pokedex.generated.ts  # ALL_POKEMON (1082종+) — scripts/ 자동 생성
-    moves/all-moves.generated.ts  # ALL_MOVES 목록
-    moves/by-id/*.generated.ts    # 포켓몬별 세대/버전별 학습셋
-    sample/                       # 도우미 함수 (findSamplePokemon 등) + 공략 데이터
+    pokedex/pokedex.generated.ts      # ALL_POKEMON (1082종+), ALL_EVOLUTION_LINES — scripts/ 자동 생성
+    moves/all-moves.generated.ts      # ALL_MOVES 목록
+    moves/by-id/*.generated.ts        # 포켓몬별 세대/버전별 학습셋 (1082개 파일, lazy 로드)
+    moves/tm-index.generated.ts       # TM/HM 역인덱스 (기술머신 → 배울 수 있는 포켓몬 ID 목록)
+    sample/                           # 도우미 함수 (findSamplePokemon, findMove 등) + 공략 데이터
   router.tsx      # 라우트 정의
   styles/index.css  # @theme 디자인 토큰
 scripts/
-  fetch-pokedex.mjs  # PokeAPI + 한국어 위키 스크래핑 → 생성 파일 출력
+  fetch-pokedex.mjs    # PokeAPI + 한국어 위키 스크래핑 → 생성 파일 출력
+  build-tm-index.mjs   # by-id/*.generated.ts 파싱 → tm-index.generated.ts 출력
 ```
 
 ## 데이터 생성 흐름
@@ -61,14 +64,28 @@ scripts/
 | 경로 | 컴포넌트 | 비고 |
 |---|---|---|
 | `/` | HomePage | 대표 포켓몬 캐러셀 |
-| `/pokedex` | PokedexPage | 타입 필터 + 전체 목록 |
-| `/pokemon/:id` | PokemonDetailPage | 도감 상세 |
-| `/type-chart` | TypeChartPage | 18×18 타입 상성표 + 계산기 |
+| `/pokedex` | PokedexPage | 타입·세대 필터 + 전체 목록 |
+| `/pokemon/:id` | PokemonDetailPage | 도감 상세 (스탯·기술·출현) |
+| `/types` | TypeChartPage | 18×18 타입 상성표 + 계산기 |
+| `/tm` | TmListPage | 세대·버전별 TM/HM 목록 + 배울 수 있는 포켓몬 |
+| `/encounter` | EncounterPage | 세대·버전별 야생 출현 및 포획 불가 포켓몬 |
 | `/guides` | GuideListPage | 공략 카드 목록 |
 | `/guides/pokemon-gold-story` | PokemonGoldStoryGuidePage | 정적 전용 라우트 (표/이미지 중심) |
+| `/guides/pokemon-red-story` | PokemonRedStoryGuidePage | 정적 전용 라우트 |
+| `/guides/pokemon-firered-story` | PokemonFireredStoryGuidePage | 정적 전용 라우트 |
+| `/guides/pokemon-red-evolution` | PokemonRedEvolutionGuidePage | 정적 전용 라우트 |
+| `/guides/pokemon-heartgold-story` | PokemonHeartgoldStoryGuidePage | 정적 전용 라우트 |
+| `/guides/pokemon-emerald-story` | PokemonEmeraldStoryGuidePage | 정적 전용 라우트 |
+| `/guides/pokemon-platinum-story` | PokemonPlatinumStoryGuidePage | 정적 전용 라우트 |
 | `/guides/:slug` | GuideDetailPage | 마크다운 기반 범용 공략 |
 
 > 정적 전용 라우트는 `:slug` 동적 라우트 **앞에** 선언해야 React Router가 올바르게 매칭한다.
+
+## 대용량 데이터 처리 패턴
+
+- **학습셋 lazy 로드**: `by-id/*.generated.ts` 1082개 파일은 `import.meta.glob`으로 등록하고, 상세 페이지 진입 시에만 해당 포켓몬 1개 파일을 동적 import한다 (`data/sample/moves.sample.ts`의 `loadLearnsets()`).
+- **TM 역인덱스**: `tm-index.generated.ts`(3.3MB)는 `TmListPage`를 lazy route로 처리해 해당 페이지에서만 로드. `// @ts-nocheck` + 별도 타입 파일(`types/move.ts`의 `TmEntry`)로 TS2590(union type too complex) 우회.
+- **Map 활용**: 배열 기반 선형 탐색 대신 모듈 레벨 `Map`으로 O(1) 조회. `TmListPage`의 `MOVE_MAP`/`POKEMON_MAP`, `moves.sample.ts`의 `MOVE_MAP`이 그 예.
 
 ## 디자인 토큰
 

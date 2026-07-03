@@ -47,7 +47,8 @@ export function SiteHeader({ navItems, activeHref }: SiteHeaderProps) {
               to={item.href}
               className={cn(
                 'rounded-chip px-3 py-1.5 text-sm font-bold text-ink hover:bg-surface-hover',
-                item.href === activeHref && 'bg-brand-red/10 text-brand-red hover:bg-brand-red/10',
+                (item.href === '/' ? activeHref === '/' : activeHref?.startsWith(item.href)) &&
+                  'bg-brand-red/10 text-brand-red hover:bg-brand-red/10',
               )}
             >
               {item.label}

@@ -18,7 +18,8 @@ export function PokemonDetailPage() {
   const navigate = useNavigate()
   const location = useLocation()
   const { id } = useParams<{ id: string }>()
-  const pokemon = SAMPLE_POKEMON.find((p) => p.id === Number(id))
+  const pokemonIndex = SAMPLE_POKEMON.findIndex((p) => p.id === Number(id))
+  const pokemon = pokemonIndex >= 0 ? SAMPLE_POKEMON[pokemonIndex] : undefined
   // 도감 목록에서 적용했던 필터를 그대로 유지한 채 돌아가기 위한 경로(없으면 기본 도감 경로).
   const backTo = (location.state as { backTo?: string } | null)?.backTo ?? '/pokedex'
 
@@ -52,7 +53,6 @@ export function PokemonDetailPage() {
   const dexNumber = String(pokemon.dexNumber).padStart(3, '0')
   const accentColor = COLOR[pokemon.types[0]]
 
-  const pokemonIndex = SAMPLE_POKEMON.findIndex((p) => p.id === pokemon.id)
   const prevPokemon = pokemonIndex > 0 ? SAMPLE_POKEMON[pokemonIndex - 1] : undefined
   const nextPokemon = pokemonIndex < SAMPLE_POKEMON.length - 1 ? SAMPLE_POKEMON[pokemonIndex + 1] : undefined
 

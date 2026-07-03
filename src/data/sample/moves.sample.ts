@@ -1,9 +1,11 @@
 import type { Learnset, Move } from '../../types/move'
 import { ALL_MOVES } from '../moves/all-moves.generated'
 
+const MOVE_MAP = new Map(ALL_MOVES.map((m) => [m.id, m]))
+
 /** 전체 포켓몬의 기술 사전. PokeAPI 기반으로 scripts/fetch-pokedex.mjs가 생성한다. */
 export function findMove(id: number): Move | undefined {
-  return ALL_MOVES.find((m) => m.id === id)
+  return MOVE_MAP.get(id)
 }
 
 // 포켓몬별 학습셋은 1082종을 한 파일에 합치면 너무 커서(gzip 후에도 500KB+) 포켓몬 1종당
