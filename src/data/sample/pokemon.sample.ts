@@ -1,8 +1,19 @@
 import type { EvolutionStage } from '../../types/pokemon'
 import { ALL_EVOLUTION_LINES, ALL_POKEMON } from '../pokedex/pokedex.generated'
 
+function fixSpriteUrl(url?: string): string | undefined {
+  return url?.replace(
+    'https://cdn.statically.io/gh/PokeAPI/sprites/master/',
+    'https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/',
+  )
+}
+
 /** 1~9세대(전국도감 1025종 + 리전폼) 전체 도감 데이터. PokeAPI 기반으로 scripts/fetch-pokedex.mjs가 생성한다. */
-export const SAMPLE_POKEMON = ALL_POKEMON
+export const SAMPLE_POKEMON = ALL_POKEMON.map((p) => ({
+  ...p,
+  spriteUrl: fixSpriteUrl(p.spriteUrl),
+  artworkUrl: fixSpriteUrl(p.artworkUrl),
+}))
 
 const EVOLUTION_LINES: EvolutionStage[][] = ALL_EVOLUTION_LINES
 

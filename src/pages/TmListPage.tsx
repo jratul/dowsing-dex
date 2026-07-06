@@ -2,14 +2,14 @@ import { Fragment, useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { TM_INDEX } from '../data/moves/tm-index.generated'
 import { ALL_MOVES } from '../data/moves/all-moves.generated'
-import { ALL_POKEMON } from '../data/pokedex/pokedex.generated'
+import { SAMPLE_POKEMON } from '../data/sample/pokemon.sample'
 import { TypeBadge } from '../components/pokemon/TypeBadge'
 import { cn } from '../lib/cn'
 import type { Generation, TmEntry } from '../types/move'
 
 const GENERATIONS: Generation[] = ['1세대', '2세대', '3세대', '4세대', '5세대', '6세대', '7세대', '8세대', '9세대']
 const MOVE_MAP = new Map(ALL_MOVES.map((m) => [m.id, m]))
-const POKEMON_MAP = new Map(ALL_POKEMON.map((p) => [p.id, p]))
+const POKEMON_MAP = new Map(SAMPLE_POKEMON.map((p) => [p.id, p]))
 
 const GEN_VERSIONS: Partial<Record<Generation, string[]>> = {}
 for (const entry of TM_INDEX as TmEntry[]) {
@@ -36,7 +36,7 @@ export function TmListPage() {
   const searchResult = useMemo<number | null | undefined>(() => {
     const q = search.trim()
     if (!q) return undefined
-    const found = ALL_POKEMON.find(
+    const found = SAMPLE_POKEMON.find(
       (p) => p.nameKo === q || p.nameEn.toLowerCase() === q.toLowerCase() || String(p.id) === q,
     )
     return found?.id ?? null

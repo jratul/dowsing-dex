@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ALL_POKEMON } from '../data/pokedex/pokedex.generated'
+import { SAMPLE_POKEMON } from '../data/sample/pokemon.sample'
 import { TypeBadge } from '../components/pokemon/TypeBadge'
 import { cn } from '../lib/cn'
 import type { Pokemon } from '../types/pokemon'
@@ -11,7 +11,7 @@ const GENERATIONS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 // 모듈 로드 시 한 번 계산
 const GEN_VERSION_ORDER: Record<number, string[]> = (() => {
   const cnt = new Map<string, number>()
-  for (const p of ALL_POKEMON) {
+  for (const p of SAMPLE_POKEMON) {
     for (const l of p.encounterLocations ?? []) {
       const k = `${l.generation}__${l.version}`
       cnt.set(k, (cnt.get(k) ?? 0) + 1)
@@ -54,7 +54,7 @@ export function EncounterPage() {
   const { catchableList, uncatchableList } = useMemo(() => {
     const seen = new Map<number, PokemonEntry>()
 
-    for (const p of ALL_POKEMON) {
+    for (const p of SAMPLE_POKEMON) {
       const locs = (p.encounterLocations ?? []).filter((l) => {
         if (l.generation !== selectedGen) return false
         if (selectedVersion !== 'ALL' && l.version !== selectedVersion) return false
