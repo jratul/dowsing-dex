@@ -16,7 +16,10 @@ export interface SpriteImageProps {
 const ROUNDED_CLASS = { full: 'rounded-full', card: 'rounded-card', none: '' }
 
 function fixUrl(url: string | undefined): string | undefined {
-  return url?.replace('https://cdn.statically.io/gh/', 'https://raw.githubusercontent.com/')
+  return url?.replace(
+    'https://cdn.statically.io/gh/PokeAPI/sprites/master/',
+    'https://cdn.jsdelivr.net/gh/PokeAPI/sprites@master/',
+  )
 }
 
 /** 로드되기 전까지 스켈레톤(펄스)을 보여주고, 로드되면 페이드인하는 스프라이트 이미지. */
