@@ -34,15 +34,19 @@ export function SpriteImage({
   className,
 }: SpriteImageProps) {
   const [loaded, setLoaded] = useState(false)
+  const [errored, setErrored] = useState(false)
   const roundedClass = ROUNDED_CLASS[rounded]
   const resolvedSrc = fixUrl(src)
 
-  if (!resolvedSrc) {
+  if (!resolvedSrc || errored) {
     return <span className={cn('inline-block bg-surface-hover', roundedClass, className)} />
   }
 
   return (
     <span className={cn('relative inline-block', className)}>
+      {!loaded && (
+        <span className={cn('absolute inset-0 animate-pulse bg-surface-hover', roundedClass)} />
+      )}
       <img
         src={resolvedSrc}
         alt={alt}
@@ -51,7 +55,8 @@ export function SpriteImage({
         loading={loading}
         decoding="async"
         onLoad={() => setLoaded(true)}
-        className={cn('absolute inset-0 h-full w-full transition-opacity duration-500', loaded ? 'opacity-100' : 'opacity-0')}
+        onError={() => setErrored(true)}
+        className={cn('absolute inset-0 h-full w-full transition-opacity duration-300', loaded ? 'opacity-100' : 'opacity-0')}
         style={pixelated ? { imageRendering: 'pixelated' } : undefined}
       />
     </span>
