@@ -601,6 +601,45 @@ const FIRERED_STORY_NAME_TO_ID_ENTRIES: [string, number][] = [
   ['아보크', 24],
 ]
 
+export interface TradeEvoRow {
+  pokemon: string
+  catchLocation: string
+  recommendedLevel: string
+  partyValue: string
+  note: string
+}
+
+export const FIRERED_STORY_TRADE_EVO_TABLE: TradeEvoRow[] = [
+  {
+    pokemon: '윤겔라 → 후딘',
+    catchLocation: '캐이시: 3번도로 (레벨 11~15)',
+    recommendedLevel: 'Lv.16 윤겔라 진화 후 즉시 교환',
+    partyValue: '★★★★☆ — 나시 대체 에스퍼 딜러. 스피드·특수공격 최상급',
+    note: '3세대 기준 후딘은 특수 기술(에스퍼·냉동빔·10만볼트)을 주력으로 쓴다. 캐이시를 초반에 포획해 두면 중반부터 즉시 교환 진화 가능. 나시가 있으면 중복이지만 후딘 쪽이 스피드가 훨씬 빠름.',
+  },
+  {
+    pokemon: '알통몬 → 괴력몬',
+    catchLocation: '꼬마돌: 지하 1층~챔피언로드 등 / 5·25번도로에서 알통몬 직접 포획 가능',
+    recommendedLevel: 'Lv.28 알통몬 진화 후 교환, Lv.36 이후 권장',
+    partyValue: '★★★☆☆ — 잠만보 대체 격투 딜러. 괴력(HM) 담당 겸용',
+    note: '알통몬은 Lv.36에 역습을 배우므로 그 이후 교환하면 기술 손해 없이 괴력몬으로 운용 가능. 잠만보가 이미 파티에 있다면 중복이지만, 격투 판정 기술이 없는 잠만보와 달리 괴력몬은 격투 물리 타입으로 더 다양한 상성을 커버.',
+  },
+  {
+    pokemon: '야도란 → 야도킹',
+    catchLocation: '야돈: 홍련섬 주변 낚시 / 야도란: Lv.37 자동 진화 후 교환',
+    recommendedLevel: 'Lv.37 야도란 진화 후 즉시 교환 가능',
+    partyValue: '★★☆☆☆ — 물·에스퍼 복합. 라프라스 대체 가능하지만 스피드가 느림',
+    note: '야도란은 Lv.37 자동 진화. 교환하면 야도킹으로 완성. 느린 스피드가 단점이지만 에스퍼 타입 특수기를 물 타입 포켓몬이 쓴다는 점에서 라프라스와 역할 일부 중복. 이미 라프라스·나시가 파티에 있으면 우선순위 낮음.',
+  },
+  {
+    pokemon: '배루키 → 강철톤',
+    catchLocation: '파이어레드 야생 등장 없음 (GBA 통신 교환 또는 에메랄드에서 이식 필요)',
+    recommendedLevel: '확보 즉시 교환 가능',
+    partyValue: '★★★☆☆ — 강철·바위 복합 탱커. 스토리에서 내구력 최상위권',
+    note: '파이어레드 단독 플레이에서는 포획 자체가 불가. 에메랄드 연동이나 GBA 교환이 있을 경우 채용 가능. 강철 타입의 다양한 반감 덕분에 사천왕 이후 안정적인 탱크 역할.',
+  },
+]
+
 export const FIRERED_STORY_NAME_TO_ID = new Map(
   [...FIRERED_STORY_NAME_TO_ID_ENTRIES].sort((a, b) => b[0].length - a[0].length),
 )

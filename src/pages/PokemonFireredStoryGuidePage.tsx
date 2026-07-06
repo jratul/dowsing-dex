@@ -22,6 +22,7 @@ import {
   FIRERED_STORY_NAME_TO_ID,
   FIRERED_STORY_STAGES,
   FIRERED_STORY_STONE_EVO_TABLE,
+  FIRERED_STORY_TRADE_EVO_TABLE,
   FIRERED_STORY_SUMMARY_TABLE,
   FIRERED_STORY_SUPPORT,
   FIRERED_STORY_TEMP_POKEMON,
@@ -126,7 +127,16 @@ export function PokemonFireredStoryGuidePage() {
         />
       </Card>
 
-      {/* 6. 포켓몬별 기술 배치 */}
+      {/* 6. 교환 진화 타이밍 */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>교환 진화 권장 타이밍</SectionHeading>
+        <GuideTable
+          headers={['포켓몬', '포획 위치', '권장 교환 레벨', '파티 활용도', '비고']}
+          rows={FIRERED_STORY_TRADE_EVO_TABLE.map((r) => [L(r.pokemon), r.catchLocation, r.recommendedLevel, r.partyValue, r.note])}
+        />
+      </Card>
+
+      {/* 7. 포켓몬별 기술 배치 */}
       <Card className="mb-6 p-4">
         <SectionHeading>포켓몬별 기술 배치</SectionHeading>
         <div className="flex flex-col gap-6">
