@@ -454,6 +454,46 @@ export const HG_STORY_CAUTIONS = [
   '4세대에서 기술의 물리/특수 분류가 변경되었다. 화염방사(특수), 불꽃파동(특수), 화염바퀴(물리) 등을 구분해 배정한다.',
 ]
 
+export interface EvolutionTimingRow {
+  pokemon: string
+  condition: string
+  timing: string
+  note: string
+}
+
+export const HG_STORY_EVOLUTION_TIMING: EvolutionTimingRow[] = [
+  {
+    pokemon: '브케인 → 마그케인 → 블레이범',
+    condition: 'Lv.14 / Lv.36 (자동)',
+    timing: '1관 직전 / 5~6관 사이',
+    note: '화염방사는 마그케인 Lv.34에 습득. 블레이범 Lv.36 진화 전에 화염방사를 배워 두자.',
+  },
+  {
+    pokemon: '메리프 → 보송송 → 전룡',
+    condition: 'Lv.15 / Lv.30 (자동)',
+    timing: '2~3관 / 3~4관 사이',
+    note: '자동 진화. 10만볼트는 Lv.30 이후 TM24로 배정. 육성 타이밍이 늦으면 3관 통과 후 따로 시간 내서 레벨업.',
+  },
+  {
+    pokemon: '토게피 → 토게틱',
+    condition: '친밀도 최대 후 레벨업',
+    timing: '달걀 부화 직후 Lv.5~10 내 목표',
+    note: '비타민(아연·탄산칼슘 등)·도보 이동·레벨업으로 친밀도를 빠르게 올린다. 헤어그루밍 도구 활용 가능.',
+  },
+  {
+    pokemon: '토게틱 → 토게키스',
+    condition: '빛나는돌 사용',
+    timing: '빛나는돌 획득 즉시 진화 OK',
+    note: '빛나는돌은 국립공원 포충대회 1위 보상 또는 특정 NPC 증정. 기술 가르침으로 에어슬래시·오라스피어 보완 가능. 레벨 제한 없이 사용 가능하므로 획득 즉시 진화해도 무관.',
+  },
+  {
+    pokemon: '교환진화 (윤겔라→후딘, 배루키→강철톤 등)',
+    condition: '통신 교환 필수',
+    timing: '관동 진행 중 선택적 채용',
+    note: '이 공략은 통신교환 필수 운영을 기본 파티에서 제외. 관동 진행 시 후딘·강철톤 채용을 원하면 별도 통신 교환 필요. 하트골드 내에서는 자체 진화 불가.',
+  },
+]
+
 export const HG_STORY_NAME_TO_ID: Map<string, number> = new Map(
   (
     [

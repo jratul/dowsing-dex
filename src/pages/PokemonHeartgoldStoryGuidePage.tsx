@@ -12,6 +12,7 @@ import {
   HG_STORY_CATCH_TABLE,
   HG_STORY_CHAMPION,
   HG_STORY_ELITE4,
+  HG_STORY_EVOLUTION_TIMING,
   HG_STORY_FINAL_PARTY_IDS,
   HG_STORY_FINAL_ROLES,
   HG_STORY_GOALS,
@@ -291,7 +292,16 @@ export function PokemonHeartgoldStoryGuidePage() {
         </Card>
       )}
 
-      {/* 15. 주의사항 */}
+      {/* 15. 진화 타이밍 */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>돌 진화·친밀도 진화 적정 타이밍</SectionHeading>
+        <GuideTable
+          headers={['포켓몬', '진화 조건', '적정 타이밍', '비고']}
+          rows={HG_STORY_EVOLUTION_TIMING.map((r) => [r.pokemon, r.condition, r.timing, r.note])}
+        />
+      </Card>
+
+      {/* 16. 주의사항 */}
       <Card className="mb-6 p-4">
         <SectionHeading>주의사항</SectionHeading>
         <ul className="list-disc space-y-2 pl-5 text-sm text-ink">

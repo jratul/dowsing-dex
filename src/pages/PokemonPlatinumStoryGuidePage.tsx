@@ -11,6 +11,7 @@ import { CATEGORY_STYLE } from '../lib/guideCategory'
 import { cn } from '../lib/cn'
 import type { StarterGuideData } from '../data/sample/pokemonPlatinumStory.data'
 import {
+  PLATINUM_EVOLUTION_TIMING,
   PLATINUM_GOALS,
   PLATINUM_HM_TABLE,
   PLATINUM_NAME_TO_ID,
@@ -281,6 +282,26 @@ export function PokemonPlatinumStoryGuidePage() {
             <li key={n}>{n}</li>
           ))}
         </ul>
+      </Card>
+
+      {/* 진화 타이밍 */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>돌 진화·친밀도 진화·교환 진화 적정 타이밍</SectionHeading>
+        <GuideTable
+          headers={['포켓몬', '진화 조건', '적정 타이밍', '적용 스타팅', '비고']}
+          rows={PLATINUM_EVOLUTION_TIMING.map((r) => [
+            r.pokemon,
+            r.condition,
+            r.timing,
+            <span key={r.pokemon} className={cn(
+              'rounded-chip px-2 py-0.5 text-xxs font-bold',
+              r.starters === '공통' ? 'bg-brand-red/10 text-brand-red' :
+              r.starters === '해당없음' ? 'bg-surface-hover text-ink-faint' :
+              'bg-surface-hover text-ink-muted',
+            )}>{r.starters}</span>,
+            r.note,
+          ])}
+        />
       </Card>
 
       {/* 스타터별 콘텐츠 */}
