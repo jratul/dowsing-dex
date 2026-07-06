@@ -54,7 +54,7 @@ export function GuidePageLayout({
 
         {items.length > 1 && (
           <aside className="hidden xl:block w-52 shrink-0">
-            <nav className="sticky top-6 max-h-[calc(100vh-3rem)] overflow-y-auto rounded-card border border-border bg-white p-3 shadow-card">
+            <nav className="sticky top-18 max-h-[calc(100vh-5rem)] overflow-y-auto rounded-card border border-border bg-white p-3 shadow-card">
               <p className="mb-2 text-xxs font-bold uppercase tracking-widest text-ink-faint">목차</p>
               <ul className="space-y-0.5">
                 {items.map((item) => (
