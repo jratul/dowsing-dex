@@ -61,8 +61,15 @@ export function GuidePageLayout({
                   <li key={item.id}>
                     <a
                       href={`#${item.id}`}
+                      onClick={(e) => {
+                        e.preventDefault()
+                        const el = document.getElementById(item.id)
+                        if (!el) return
+                        const top = el.getBoundingClientRect().top + window.scrollY - 72
+                        window.scrollTo({ top, behavior: 'smooth' })
+                      }}
                       className={cn(
-                        'block rounded px-2 py-1 text-xs leading-snug transition-colors',
+                        'block cursor-pointer rounded px-2 py-1 text-xs leading-snug transition-colors',
                         activeId === item.id
                           ? 'bg-brand-red/10 font-semibold text-brand-red'
                           : 'text-ink-muted hover:bg-surface-hover hover:text-ink',
