@@ -68,7 +68,7 @@ export function HomePage() {
         </div>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6">
           {popularPokemon.map((pokemon) => (
-            <PokemonCard key={pokemon.id} pokemon={pokemon} onClick={(id) => navigate(`/pokemon/${id}`)} />
+            <PokemonCard key={pokemon.id} pokemon={pokemon} to={`/pokemon/${pokemon.id}`} />
           ))}
         </div>
       </section>

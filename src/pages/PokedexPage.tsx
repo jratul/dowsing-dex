@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { useLocation, useNavigate, useSearchParams } from 'react-router-dom'
+import { useLocation, useSearchParams } from 'react-router-dom'
 import { TypeFilter } from '../components/type-chart/TypeFilter'
 import { GenerationFilter } from '../components/pokemon/GenerationFilter'
 import { PokemonCard } from '../components/pokemon/PokemonCard'
@@ -9,7 +9,6 @@ import type { TypeName } from '../types/type-chart'
 const GENERATIONS = Array.from(new Set(SAMPLE_POKEMON.map((p) => p.generation))).sort((a, b) => a - b)
 
 export function PokedexPage() {
-  const navigate = useNavigate()
   const location = useLocation()
   const [searchParams, setSearchParams] = useSearchParams()
 
@@ -87,9 +86,8 @@ export function PokedexPage() {
             <PokemonCard
               key={pokemon.id}
               pokemon={pokemon}
-              onClick={(id) =>
-                navigate(`/pokemon/${id}`, { state: { backTo: location.pathname + location.search } })
-              }
+              to={`/pokemon/${pokemon.id}`}
+              state={{ backTo: location.pathname + location.search }}
             />
           ))}
         </div>

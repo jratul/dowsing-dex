@@ -71,7 +71,7 @@ export function ShowcasePage() {
       <ShowcaseSection title="PokemonCard">
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
           {SAMPLE_POKEMON.slice(0, 4).map((pokemon) => (
-            <PokemonCard key={pokemon.id} pokemon={pokemon} />
+            <PokemonCard key={pokemon.id} pokemon={pokemon} to={`/pokemon/${pokemon.id}`} />
           ))}
         </div>
       </ShowcaseSection>

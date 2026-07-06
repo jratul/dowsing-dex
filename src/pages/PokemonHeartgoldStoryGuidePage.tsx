@@ -85,7 +85,7 @@ export function PokemonHeartgoldStoryGuidePage() {
       <Card className="mb-6 p-4">
         <SectionHeading>최종 추천 엔트리</SectionHeading>
         <div className="mb-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
-          {finalParty.map((p) => p && <PokemonCard key={p.id} pokemon={p} onClick={() => {}} />)}
+          {finalParty.map((p) => p && <PokemonCard key={p.id} pokemon={p} to={`/pokemon/${p.id}`} />)}
         </div>
         <GuideTable
           headers={['포켓몬', '주요 역할']}

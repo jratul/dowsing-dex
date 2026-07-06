@@ -1,4 +1,4 @@
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { Card } from '../components/ui/Card'
 import { PokemonCard } from '../components/pokemon/PokemonCard'
 import { SAMPLE_GUIDES } from '../data/sample/guides.sample'
@@ -7,7 +7,6 @@ import { CATEGORY_STYLE } from '../lib/guideCategory'
 import { cn } from '../lib/cn'
 
 export function GuideDetailPage() {
-  const navigate = useNavigate()
   const { slug } = useParams<{ slug: string }>()
   const guide = SAMPLE_GUIDES.find((g) => g.slug === slug)
 
@@ -61,7 +60,7 @@ export function GuideDetailPage() {
           <h2 className="text-sm font-black text-ink-faint">관련 포켓몬</h2>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {relatedPokemon.map((pokemon) => (
-              <PokemonCard key={pokemon.id} pokemon={pokemon} onClick={(id) => navigate(`/pokemon/${id}`)} />
+              <PokemonCard key={pokemon.id} pokemon={pokemon} to={`/pokemon/${pokemon.id}`} />
             ))}
           </div>
         </section>

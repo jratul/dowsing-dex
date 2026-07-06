@@ -10,6 +10,9 @@ export interface MoveListProps {
   learnsets: Learnset[]
   findMove: (id: number) => Move | undefined
   recommendedMoveIds?: number[]
+  /** 외부에서 세대를 제어할 때 전달. 없으면 내부 state 사용. */
+  generation?: Generation
+  onGenerationChange?: (gen: Generation) => void
 }
 
 function MoveRow({ leading, move }: { leading: string; move: Move }) {
@@ -40,20 +43,30 @@ function MoveTableHeader() {
   )
 }
 
-export function MoveList({ learnsets, findMove, recommendedMoveIds }: MoveListProps) {
+export function MoveList({ learnsets, findMove, recommendedMoveIds, generation, onGenerationChange }: MoveListProps) {
+  const controlled = generation !== undefined
+
   const generations = useMemo(
     () => GENERATION_ORDER.filter((gen) => learnsets.some((ls) => ls.generation === gen)),
     [learnsets],
   )
-  const [generation, setGeneration] = useState<Generation>(generations[0])
+  const [internalGen, setInternalGen] = useState<Generation>(generations[0])
   const [versionIndex, setVersionIndex] = useState(0)
 
-  const activeGeneration = generations.includes(generation) ? generation : generations[0]
+  const activeGeneration = controlled
+    ? (generations.includes(generation!) ? generation! : generations[0])
+    : (generations.includes(internalGen) ? internalGen : generations[0])
+
   const learnsetsForGeneration = learnsets.filter((ls) => ls.generation === activeGeneration)
   const learnset = learnsetsForGeneration[versionIndex] ?? learnsetsForGeneration[0]
 
   function handleGenerationChange(value: string) {
-    setGeneration(value as Generation)
+    const gen = value as Generation
+    if (controlled) {
+      onGenerationChange?.(gen)
+    } else {
+      setInternalGen(gen)
+    }
     setVersionIndex(0)
   }
 
@@ -61,22 +74,24 @@ export function MoveList({ learnsets, findMove, recommendedMoveIds }: MoveListPr
 
   return (
     <Tabs.Root value={activeGeneration} onValueChange={handleGenerationChange}>
-      <Tabs.List className="mb-4 flex gap-2 overflow-x-auto">
-        {generations.map((gen) => (
-          <Tabs.Trigger
-            key={gen}
-            value={gen}
-            className={cn(
-              'shrink-0 rounded-chip border border-border-strong px-3 py-1.5 text-xs font-bold text-ink',
-              'data-[state=active]:border-brand-red data-[state=active]:bg-brand-red data-[state=active]:text-white',
-            )}
-          >
-            {gen}
-          </Tabs.Trigger>
-        ))}
-      </Tabs.List>
+      {!controlled && (
+        <Tabs.List className="mb-4 flex gap-2 overflow-x-auto">
+          {generations.map((gen) => (
+            <Tabs.Trigger
+              key={gen}
+              value={gen}
+              className={cn(
+                'shrink-0 rounded-chip border border-border-strong px-3 py-1.5 text-xs font-bold text-ink',
+                'data-[state=active]:border-brand-red data-[state=active]:bg-brand-red data-[state=active]:text-white',
+              )}
+            >
+              {gen}
+            </Tabs.Trigger>
+          ))}
+        </Tabs.List>
+      )}
 
-      <Tabs.Content value={activeGeneration} className="flex flex-col gap-4">
+      <Tabs.Content value={activeGeneration} className="flex flex-col gap-4" forceMount>
         {recommendedMoveIds && recommendedMoveIds.length > 0 && (
           <div className="flex flex-col gap-2">
             <h3 className="text-xs font-black text-ink-faint">추천 기술 배치</h3>
