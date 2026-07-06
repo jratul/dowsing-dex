@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import type React from 'react'
 import * as Tabs from '@radix-ui/react-tabs'
 import type { Generation, Learnset, Move } from '../../types/move'
 import { TypeBadge } from './TypeBadge'
@@ -17,7 +18,7 @@ export interface MoveListProps {
 
 function MoveRow({ leading, move }: { leading: string; move: Move }) {
   return (
-    <div className="grid grid-cols-[2.5rem_1fr_3.5rem_3rem_2.5rem_2.5rem_2rem] items-center gap-2 py-1.5 text-xs">
+    <div className="grid grid-cols-[2.5rem_minmax(6rem,1fr)_3.5rem_3rem_2.5rem_2.5rem_2rem] items-center gap-2 py-1.5 text-xs">
       <span className="font-bold text-ink-faint">{leading}</span>
       <span className="font-bold text-ink">{move.nameKo}</span>
       <TypeBadge type={move.type} size="sm" />
@@ -31,7 +32,7 @@ function MoveRow({ leading, move }: { leading: string; move: Move }) {
 
 function MoveTableHeader() {
   return (
-    <div className="grid grid-cols-[2.5rem_1fr_3.5rem_3rem_2.5rem_2.5rem_2rem] gap-2 border-b border-border pb-1.5 text-xxs font-bold text-ink-faint">
+    <div className="grid grid-cols-[2.5rem_minmax(6rem,1fr)_3.5rem_3rem_2.5rem_2.5rem_2rem] gap-2 border-b border-border pb-1.5 text-xxs font-bold text-ink-faint">
       <span>Lv/No</span>
       <span>기술</span>
       <span>타입</span>
@@ -39,6 +40,20 @@ function MoveTableHeader() {
       <span className="text-right">위력</span>
       <span className="text-right">명중</span>
       <span className="text-right">PP</span>
+    </div>
+  )
+}
+
+function MoveTableSection({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div className="flex flex-col gap-2">
+      <h3 className="text-xs font-black text-ink-faint">{title}</h3>
+      <div className="overflow-x-auto">
+        <div className="min-w-[24rem]">
+          <MoveTableHeader />
+          <div className="flex flex-col">{children}</div>
+        </div>
+      </div>
     </div>
   )
 }
@@ -131,46 +146,34 @@ export function MoveList({ learnsets, findMove, recommendedMoveIds, generation, 
           </div>
         )}
 
-        <div className="flex flex-col gap-2">
-          <h3 className="text-xs font-black text-ink-faint">레벨업으로 배우는 기술</h3>
-          <MoveTableHeader />
-          <div className="flex flex-col">
-            {learnset.levelUp
-              .slice()
-              .sort((a, b) => a.level - b.level)
-              .map(({ moveId, level }) => {
-                const move = findMove(moveId)
-                return move ? <MoveRow key={moveId} leading={`Lv${level}`} move={move} /> : null
-              })}
-          </div>
-        </div>
+        <MoveTableSection title="레벨업으로 배우는 기술">
+          {learnset.levelUp
+            .slice()
+            .sort((a, b) => a.level - b.level)
+            .map(({ moveId, level }) => {
+              const move = findMove(moveId)
+              return move ? <MoveRow key={moveId} leading={`Lv${level}`} move={move} /> : null
+            })}
+        </MoveTableSection>
 
         {learnset.machines.length > 0 && (
-          <div className="flex flex-col gap-2">
-            <h3 className="text-xs font-black text-ink-faint">기술머신으로 배우는 기술</h3>
-            <MoveTableHeader />
-            <div className="flex flex-col">
-              {learnset.machines.map(({ moveId, machine, number }) => {
-                const move = findMove(moveId)
-                return move ? (
-                  <MoveRow key={moveId} leading={`${machine}${number.toString().padStart(2, '0')}`} move={move} />
-                ) : null
-              })}
-            </div>
-          </div>
+          <MoveTableSection title="기술머신으로 배우는 기술">
+            {learnset.machines.map(({ moveId, machine, number }) => {
+              const move = findMove(moveId)
+              return move ? (
+                <MoveRow key={moveId} leading={`${machine}${number.toString().padStart(2, '0')}`} move={move} />
+              ) : null
+            })}
+          </MoveTableSection>
         )}
 
         {learnset.tutor.length > 0 && (
-          <div className="flex flex-col gap-2">
-            <h3 className="text-xs font-black text-ink-faint">가르침으로 배우는 기술</h3>
-            <MoveTableHeader />
-            <div className="flex flex-col">
-              {learnset.tutor.map(({ moveId }) => {
-                const move = findMove(moveId)
-                return move ? <MoveRow key={moveId} leading="-" move={move} /> : null
-              })}
-            </div>
-          </div>
+          <MoveTableSection title="가르침으로 배우는 기술">
+            {learnset.tutor.map(({ moveId }) => {
+              const move = findMove(moveId)
+              return move ? <MoveRow key={moveId} leading="-" move={move} /> : null
+            })}
+          </MoveTableSection>
         )}
       </Tabs.Content>
     </Tabs.Root>
