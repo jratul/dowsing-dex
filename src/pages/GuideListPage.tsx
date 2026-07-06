@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import * as Tabs from '@radix-ui/react-tabs'
 import { GuideCard } from '../components/guide/GuideCard'
 import { SAMPLE_GUIDES } from '../data/sample/guides.sample'
@@ -10,7 +10,6 @@ import { cn } from '../lib/cn'
 const CATEGORIES: ('전체' | GuideCategory)[] = ['전체', '입문', '공략', '대전', '포획', '진화']
 
 export function GuideListPage() {
-  const navigate = useNavigate()
   const [category, setCategory] = useState<string>('전체')
 
   const guides = category === '전체' ? SAMPLE_GUIDES : SAMPLE_GUIDES.filter((g) => g.category === category)
@@ -41,9 +40,9 @@ export function GuideListPage() {
           ) : (
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {guides.map((guide) => (
-                <button key={guide.slug} type="button" onClick={() => navigate(`/guides/${guide.slug}`)} className="text-left">
+                <Link key={guide.slug} to={`/guides/${guide.slug}`}>
                   <GuideCard variant="row" guide={guide} iconSpriteUrl={findSamplePokemon(guide.iconPokemonId).spriteUrl} />
-                </button>
+                </Link>
               ))}
             </div>
           )}

@@ -7,6 +7,7 @@ import { PokemonLink } from '../components/guide/PokemonLink'
 import { linkifyPokemonNames } from '../lib/linkifyPokemonNames'
 import { SAMPLE_POKEMON, findSamplePokemon } from '../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../lib/guideCategory'
+import { cn } from '../lib/cn'
 import {
   FIRERED_STORY_CAUTIONS,
   FIRERED_STORY_CATCH_TABLE,
@@ -118,22 +119,44 @@ export function PokemonFireredStoryGuidePage() {
         />
       </Card>
 
-      {/* 5. 돌 진화 타이밍 */}
+      {/* 5. 돌 진화 종합 */}
       <Card className="mb-6 p-4">
-        <SectionHeading>돌 진화 타이밍</SectionHeading>
-        <GuideTable
-          headers={['포켓몬', '진화 도구', '권장 진화 타이밍', '이유']}
-          rows={FIRERED_STORY_STONE_EVO_TABLE.map((r) => [L(r.pokemon), r.item, r.timing, r.reason])}
-        />
+        <SectionHeading>돌 진화 포켓몬 종합 (관동 전체)</SectionHeading>
+        <p className="mb-3 text-sm text-ink-muted">달의돌·천둥의돌·리프의돌·물의돌·불꽃의돌로 진화하는 관동 포켓몬 전체 목록이다. 파이어레드 단독 입수 불가인 경우 리프그린 교환이 필요하다.</p>
+        <div className="overflow-x-auto">
+          <GuideTable
+            headers={['진화 전', '진화 후', '돌', '파이어레드 입수', '권장 타이밍', '이유']}
+            rows={FIRERED_STORY_STONE_EVO_TABLE.map((r) => [
+              L(r.before),
+              L(r.after),
+              r.stone,
+              <span key={r.pokemonId} className={cn(
+                'rounded-chip px-2 py-0.5 text-xxs font-bold whitespace-nowrap',
+                r.available.includes('교환') ? 'bg-surface-hover text-ink-faint' : 'bg-brand-red/10 text-brand-red',
+              )}>{r.available}</span>,
+              r.timing,
+              r.reason,
+            ])}
+          />
+        </div>
       </Card>
 
-      {/* 6. 교환 진화 타이밍 */}
+      {/* 6. 교환 진화 종합 */}
       <Card className="mb-6 p-4">
-        <SectionHeading>교환 진화 권장 타이밍</SectionHeading>
-        <GuideTable
-          headers={['포켓몬', '포획 위치', '권장 교환 레벨', '파티 활용도', '비고']}
-          rows={FIRERED_STORY_TRADE_EVO_TABLE.map((r) => [L(r.pokemon), r.catchLocation, r.recommendedLevel, r.partyValue, r.note])}
-        />
+        <SectionHeading>교환 진화 포켓몬 종합 (관동 전체)</SectionHeading>
+        <p className="mb-3 text-sm text-ink-muted">파이어레드에서 교환으로 진화하는 관동 포켓몬 전체 목록이다. 야도킹·배루키→강철톤은 특수 아이템(킹의돌·메탈코트) 지참이 필요하다.</p>
+        <div className="overflow-x-auto">
+          <GuideTable
+            headers={['진화 전', '진화 후', '포획 위치', '권장 타이밍', '비고']}
+            rows={FIRERED_STORY_TRADE_EVO_TABLE.map((r) => [
+              L(r.before),
+              L(r.after),
+              r.catchLocation,
+              r.timing,
+              r.note,
+            ])}
+          />
+        </div>
       </Card>
 
       {/* 7. 포켓몬별 기술 배치 */}
