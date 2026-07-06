@@ -15,6 +15,10 @@ export interface SpriteImageProps {
 
 const ROUNDED_CLASS = { full: 'rounded-full', card: 'rounded-card', none: '' }
 
+function fixUrl(url: string | undefined): string | undefined {
+  return url?.replace('https://cdn.statically.io/gh/', 'https://raw.githubusercontent.com/')
+}
+
 /** 로드되기 전까지 스켈레톤(펄스)을 보여주고, 로드되면 페이드인하는 스프라이트 이미지. */
 export function SpriteImage({
   src,
@@ -28,15 +32,16 @@ export function SpriteImage({
 }: SpriteImageProps) {
   const [loaded, setLoaded] = useState(false)
   const roundedClass = ROUNDED_CLASS[rounded]
+  const resolvedSrc = fixUrl(src)
 
-  if (!src) {
+  if (!resolvedSrc) {
     return <span className={cn('inline-block bg-surface-hover', roundedClass, className)} />
   }
 
   return (
     <span className={cn('relative inline-block', className)}>
       <img
-        src={src}
+        src={resolvedSrc}
         alt={alt}
         width={width}
         height={height}
