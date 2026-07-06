@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { GuidePageLayout } from '../components/guide/GuidePageLayout'
 import { Card } from '../components/ui/Card'
 import { SpriteImage } from '../components/pokemon/SpriteImage'
 import { GuideTable } from '../components/guide/GuideTable'
@@ -43,7 +44,7 @@ export function PokemonRedEvolutionGuidePage() {
   const style = CATEGORY_STYLE['진화']
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-6">
+    <GuidePageLayout>
       <div className="mb-2 flex items-center gap-2">
         <Link to="/guides" className="text-sm font-bold text-ink-muted hover:text-ink">
           ← 공략 목록
@@ -325,6 +326,6 @@ export function PokemonRedEvolutionGuidePage() {
           ])}
         />
       </Card>
-    </div>
+    </GuidePageLayout>
   )
 }

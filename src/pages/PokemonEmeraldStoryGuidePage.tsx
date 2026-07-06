@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { GuidePageLayout } from '../components/guide/GuidePageLayout'
 import { Card } from '../components/ui/Card'
 import { PokemonCard } from '../components/pokemon/PokemonCard'
 import { SpriteImage } from '../components/pokemon/SpriteImage'
@@ -215,7 +216,7 @@ export function PokemonEmeraldStoryGuidePage() {
   const activeStarter = EMERALD_STARTERS.find((s) => s.id === selectedId) ?? EMERALD_STARTERS[0]
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-6">
+    <GuidePageLayout refreshKey={selectedId}>
       <div className="mb-2 flex items-center gap-2">
         <Link to="/guides" className="text-sm font-bold text-ink-muted hover:text-ink">
           ← 공략 목록
@@ -287,6 +288,6 @@ export function PokemonEmeraldStoryGuidePage() {
 
       {/* 스타터별 콘텐츠 */}
       <StarterContent key={activeStarter.id} starter={activeStarter} />
-    </div>
+    </GuidePageLayout>
   )
 }

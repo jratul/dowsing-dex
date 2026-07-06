@@ -8,6 +8,7 @@ import { linkifyPokemonNames } from '../lib/linkifyPokemonNames'
 import { SAMPLE_POKEMON, findSamplePokemon } from '../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../lib/guideCategory'
 import { cn } from '../lib/cn'
+import { GuidePageLayout } from '../components/guide/GuidePageLayout'
 import {
   FIRERED_STORY_CAUTIONS,
   FIRERED_STORY_CATCH_TABLE,
@@ -45,7 +46,7 @@ export function PokemonFireredStoryGuidePage() {
   const finalParty = FIRERED_STORY_FINAL_PARTY_IDS.map((id) => SAMPLE_POKEMON.find((p) => p.id === id)).filter(Boolean)
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-6">
+    <GuidePageLayout>
       <div className="mb-2 flex items-center gap-2">
         <Link to="/guides" className="text-sm font-bold text-ink-muted hover:text-ink">
           ← 공략 목록
@@ -350,6 +351,6 @@ export function PokemonFireredStoryGuidePage() {
           ))}
         </ul>
       </Card>
-    </div>
+    </GuidePageLayout>
   )
 }
