@@ -26,6 +26,14 @@ export const SAMPLE_GUIDES: Guide[] = [
     summary: '3세대 파이리 스타팅 기준. 잠만보·나시를 포함한 6마리 엔트리와 돌 진화 타이밍 정리.',
   },
   {
+    slug: 'pokemon-firered-sevii-islands',
+    category: '공략',
+    title: '파이어레드 클리어 후 일곱섬 스토리 공략',
+    iconPokemonId: 219,
+    relatedPokemonIds: [219, 201, 124, 147, 218, 220],
+    summary: '챔피언 클리어 후 트라이패스·레인보우패스 단계별 퀘스트, 팀 로켓 소탕, 전국도감 해제 절차 정리.',
+  },
+  {
     slug: 'pokemon-red-evolution',
     category: '진화',
     title: '포켓몬스터 1세대 돌 진화·교환 진화 추천 타이밍 가이드',

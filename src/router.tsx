@@ -34,6 +34,13 @@ export const router = createBrowserRouter([
           })),
       },
       {
+        path: '/guides/pokemon-firered-sevii-islands',
+        lazy: () =>
+          import('./pages/PokemonFireredSeviiIslandsGuidePage').then((m) => ({
+            Component: m.PokemonFireredSeviiIslandsGuidePage,
+          })),
+      },
+      {
         path: '/guides/pokemon-red-evolution',
         lazy: () =>
           import('./pages/PokemonRedEvolutionGuidePage').then((m) => ({
