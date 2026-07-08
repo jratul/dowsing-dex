@@ -65,4 +65,12 @@ export const SAMPLE_GUIDES: Guide[] = [
     relatedPokemonIds: [392, 395, 389, 405, 445, 448],
     summary: '4세대 플래티넘 불꽃숭이·팽도리·모부기 3종 스타팅별 탭 분리 공략. 챔피언 난천 한카리아스 대응 포함.',
   },
+  {
+    slug: 'pokemon-platinum-progress',
+    category: '공략',
+    title: '플래티넘 진행 조건 가이드 — 어디서 뭘 해야 길이 열리나',
+    iconPokemonId: 487,
+    relatedPokemonIds: [487, 392, 395, 389, 400, 445],
+    summary: '체육관 사전 조건, HM 취득·배지 요건, 갤럭시단 이벤트 흐름, 막히는 포인트 Q&A. 길이 막혔을 때 한 번에 확인.',
+  },
 ]
