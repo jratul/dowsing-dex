@@ -1,11 +1,13 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { Layout } from './components/layout/Layout'
+import { RouteErrorBoundary } from './components/layout/RouteErrorBoundary'
 
 // 도감 데이터(1000여 종)가 포함된 페이지는 lazy import로 분리해, 진입 시 전체를 한 번에
 // 받지 않고 해당 라우트에 진입할 때만 필요한 청크를 받도록 한다.
 export const router = createBrowserRouter([
   {
     element: <Layout />,
+    errorElement: <RouteErrorBoundary />,
     children: [
       { path: '/', lazy: () => import('./pages/HomePage').then((m) => ({ Component: m.HomePage })) },
       { path: '/pokedex', lazy: () => import('./pages/PokedexPage').then((m) => ({ Component: m.PokedexPage })) },
