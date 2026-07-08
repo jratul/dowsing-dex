@@ -12,7 +12,7 @@ export function GuideDetailPage() {
 
   if (!guide) {
     return (
-      <div className="mx-auto max-w-5xl px-4 py-6">
+      <div className="px-4 py-6">
         <p className="text-sm text-ink-faint">존재하지 않는 공략입니다.</p>
         <Link to="/guides" className="text-sm font-bold text-brand-red">
           공략 목록으로 돌아가기
@@ -26,7 +26,7 @@ export function GuideDetailPage() {
   const iconSpriteUrl = findSamplePokemon(guide.iconPokemonId).spriteUrl
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-6">
+    <div className="px-4 py-6">
       <div className="mb-2 flex items-center gap-2">
         <Link to="/guides" className="text-sm font-bold text-ink-muted hover:text-ink">
           ← 공략 목록

@@ -52,7 +52,7 @@ export function HomePage() {
   ]
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-6">
+    <div className="px-4 py-6">
       <HeroCarousel slides={heroSlides} />
 
       <section className="flex flex-col gap-3 py-6">

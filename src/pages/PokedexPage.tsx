@@ -51,7 +51,7 @@ export function PokedexPage() {
   }, [selectedTypes, selectedGenerations, query])
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-6">
+    <div className="px-4 py-6">
       <div className="mb-4 flex items-baseline gap-2">
         <h1 className="text-xl font-black text-ink">포켓몬 도감</h1>
         <span className="text-sm font-bold text-brand-red">{filtered.length}마리</span>

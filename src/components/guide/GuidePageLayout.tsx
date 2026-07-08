@@ -46,7 +46,7 @@ export function GuidePageLayout({
   }, [refreshKey]) // refreshKey가 바뀔 때(탭 전환 등) 재감지
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-6">
+    <div className="px-4 py-6">
       <div className="flex gap-8">
         <div ref={contentRef} className="min-w-0 flex-1">
           {children}

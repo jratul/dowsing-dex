@@ -97,7 +97,7 @@ export function EncounterPage() {
   const list = tab === 'catchable' ? catchableList : uncatchableList
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-6">
+    <div className="px-4 py-6">
       <h1 className="mb-1 text-2xl font-black text-ink">출현 포켓몬</h1>
       <p className="mb-5 text-sm text-ink-faint">세대·버전별 야생 출현 포켓몬과 포획 불가 포켓몬 목록</p>
 

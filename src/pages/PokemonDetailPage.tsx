@@ -10,6 +10,7 @@ import { EncounterLocationList } from '../components/pokemon/EncounterLocationLi
 import { SpriteImage } from '../components/pokemon/SpriteImage'
 import { SAMPLE_POKEMON, findEvolutionLine, findSamplePokemon } from '../data/sample/pokemon.sample'
 import { findMove, loadLearnsets } from '../data/sample/moves.sample'
+import { EvolutionMoveComparison } from '../components/pokemon/EvolutionMoveComparison'
 import type { EvolutionStage } from '../types/pokemon'
 import type { Generation, Learnset } from '../types/move'
 import { COLOR } from '../lib/typeChart'
@@ -33,14 +34,12 @@ export function PokemonDetailPage() {
 
   const [moveData, setMoveData] = useState<{ learnsets: Learnset[]; recommended: number[] } | undefined>(undefined)
   const [selectedGeneration, setSelectedGeneration] = useState<Generation | null>(null)
-  const [compareId, setCompareId] = useState<number>(Number(id))
-  const [compareMoveData, setCompareMoveData] = useState<{ learnsets: Learnset[]; recommended: number[] } | undefined>(undefined)
+  const [familyLearnsets, setFamilyLearnsets] = useState<Map<number, { learnsets: Learnset[]; recommended: number[] }>>(new Map())
 
   useEffect(() => {
     setMoveData(undefined)
     setSelectedGeneration(null)
-    setCompareId(Number(id))
-    setCompareMoveData(undefined)
+    setFamilyLearnsets(new Map())
     if (!pokemon) return
     let cancelled = false
     loadLearnsets(pokemon.id).then((data) => {
@@ -49,20 +48,7 @@ export function PokemonDetailPage() {
     return () => { cancelled = true }
   }, [pokemon, id])
 
-  // 다른 진화 가족 선택 시 해당 포켓몬 학습셋 로드
-  useEffect(() => {
-    if (!pokemon || compareId === pokemon.id) return
-    setCompareMoveData(undefined)
-    let cancelled = false
-    loadLearnsets(compareId).then((data) => {
-      if (!cancelled) setCompareMoveData(data)
-    })
-    return () => { cancelled = true }
-  }, [compareId, pokemon])
-
   const learnsets = moveData?.learnsets
-  const activeMoveData = compareId === pokemon?.id ? moveData : compareMoveData
-  const activeLearnsets = activeMoveData?.learnsets
 
   // 기술 세대와 출현 세대의 합집합으로 공유 탭 목록을 구성한다.
   const moveGenerations: Generation[] = useMemo(
@@ -87,9 +73,21 @@ export function PokemonDetailPage() {
     [evolutionLine, pokemon],
   )
 
+  useEffect(() => {
+    if (evolutionFamilyIds.length <= 1) return
+    setFamilyLearnsets(new Map())
+    let cancelled = false
+    evolutionFamilyIds.forEach((famId) => {
+      loadLearnsets(famId).then((data) => {
+        if (!cancelled && data) setFamilyLearnsets((prev) => new Map(prev).set(famId, data))
+      })
+    })
+    return () => { cancelled = true }
+  }, [evolutionFamilyIds])
+
   if (!pokemon) {
     return (
-      <div className="mx-auto max-w-5xl px-4 py-6">
+      <div className="px-4 py-6">
         <p className="text-sm text-ink-faint">존재하지 않는 포켓몬입니다.</p>
         <Link to={backTo} className="text-sm font-bold text-brand-red">
           도감으로 돌아가기
@@ -111,7 +109,7 @@ export function PokemonDetailPage() {
   const activeGeneration = `${activeGenNum}세대` as Generation
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-6">
+    <div className="px-4 py-6">
       <div className="mb-3 flex items-center justify-between">
         <Link to={backTo} className="inline-block text-sm font-bold text-ink-muted hover:text-ink">
           ← 도감으로
@@ -235,44 +233,15 @@ export function PokemonDetailPage() {
         </Card>
       )}
 
-      {/* 진화 계열 기술 비교 선택 UI — 진화 가족이 2명 이상일 때만 표시 */}
-      {evolutionFamilyIds.length > 1 && learnsets && learnsets.length > 0 && (
+      {/* 진화 계열 기술 비교 — 가족이 2명 이상일 때만 표시 */}
+      {evolutionFamilyIds.length > 1 && (
         <Card className="mt-6 p-4">
           <h2 className="mb-3 text-sm font-black text-ink-faint">진화 계열 기술 비교</h2>
-          <div className="flex flex-wrap gap-2">
-            {evolutionFamilyIds.map((famId) => {
-              const p = findSamplePokemon(famId)
-              const isActive = compareId === famId
-              return (
-                <button
-                  key={famId}
-                  type="button"
-                  onClick={() => setCompareId(famId)}
-                  className={cn(
-                    'flex items-center gap-1.5 rounded-card border px-2 py-1.5 text-xs font-bold transition-colors',
-                    isActive
-                      ? 'border-brand-red bg-brand-red/10 text-brand-red'
-                      : 'border-border-strong text-ink-muted hover:border-brand-red hover:text-brand-red',
-                  )}
-                >
-                  <SpriteImage src={p.spriteUrl} alt={p.nameKo} width={28} height={28} className="h-7 w-7 shrink-0" />
-                  <span>{p.nameKo}</span>
-                </button>
-              )
-            })}
-          </div>
-          {compareMoveData === undefined && compareId !== pokemon.id && (
-            <p className="mt-3 text-xs text-ink-faint">기술 데이터 불러오는 중…</p>
-          )}
-          {activeLearnsets && activeLearnsets.length > 0 && (
-            <div className="mt-4">
-              <MoveList
-                learnsets={activeLearnsets}
-                findMove={findMove}
-                recommendedMoveIds={compareId === pokemon.id ? moveData?.recommended : undefined}
-              />
-            </div>
-          )}
+          <EvolutionMoveComparison
+            familyMembers={evolutionFamilyIds.map((famId) => ({ id: famId, ...findSamplePokemon(famId) }))}
+            familyLearnsets={familyLearnsets}
+            findMove={findMove}
+          />
         </Card>
       )}
 
