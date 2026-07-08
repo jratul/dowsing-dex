@@ -264,7 +264,7 @@ export function PokemonPlatinumStoryGuidePage() {
                 {p && (
                   <img src={p.spriteUrl} alt="" width={24} height={24} style={{ imageRendering: 'pixelated' }} className="h-6 w-6" />
                 )}
-                {s.nameKo} 스타팅
+                {s.id === 'yunjinseok' ? s.nameKo : `${s.nameKo} 스타팅`}
               </button>
             )
           })}
