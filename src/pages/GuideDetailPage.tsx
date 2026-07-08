@@ -12,7 +12,7 @@ export function GuideDetailPage() {
 
   if (!guide) {
     return (
-      <div className="px-4 py-6">
+      <div className="mx-auto w-full lg:w-4/5 px-4 py-6">
         <p className="text-sm text-ink-faint">존재하지 않는 공략입니다.</p>
         <Link to="/guides" className="text-sm font-bold text-brand-red">
           공략 목록으로 돌아가기

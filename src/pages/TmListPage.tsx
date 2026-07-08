@@ -53,7 +53,7 @@ export function TmListPage() {
   }, [selectedGen, selectedVersion, machineFilter, searchResult])
 
   return (
-    <div className="px-4 py-6">
+    <div className="mx-auto w-full lg:w-4/5 px-4 py-6">
       <h1 className="mb-1 text-2xl font-black text-ink">기술머신 목록</h1>
       <p className="mb-5 text-sm text-ink-faint">세대·버전별 TM/HM과 배울 수 있는 포켓몬 목록</p>
 

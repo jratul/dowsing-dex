@@ -15,7 +15,7 @@ export function GuideListPage() {
   const guides = category === '전체' ? SAMPLE_GUIDES : SAMPLE_GUIDES.filter((g) => g.category === category)
 
   return (
-    <div className="px-4 py-6">
+    <div className="mx-auto w-full lg:w-4/5 px-4 py-6">
       <h1 className="mb-4 text-xl font-black text-ink">게임 공략</h1>
 
       <Tabs.Root value={category} onValueChange={setCategory}>

@@ -12,7 +12,7 @@ export function TypeChartPage() {
   const [era, setEra] = useState<TypeEra>('6세대 이후')
 
   return (
-    <div className="px-4 py-6">
+    <div className="mx-auto w-full lg:w-4/5 px-4 py-6">
       <h1 className="mb-1 text-xl font-black text-ink">타입 상성</h1>
       <p className="mb-4 text-sm text-ink-muted">타입을 하나 선택하면 공격·방어 상성을 한눈에 계산해드려요.</p>
 

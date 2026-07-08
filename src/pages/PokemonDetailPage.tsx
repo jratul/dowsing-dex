@@ -87,7 +87,7 @@ export function PokemonDetailPage() {
 
   if (!pokemon) {
     return (
-      <div className="px-4 py-6">
+      <div className="mx-auto w-full lg:w-4/5 px-4 py-6">
         <p className="text-sm text-ink-faint">존재하지 않는 포켓몬입니다.</p>
         <Link to={backTo} className="text-sm font-bold text-brand-red">
           도감으로 돌아가기
@@ -109,7 +109,7 @@ export function PokemonDetailPage() {
   const activeGeneration = `${activeGenNum}세대` as Generation
 
   return (
-    <div className="px-4 py-6">
+    <div className="mx-auto w-full lg:w-4/5 px-4 py-6">
       <div className="mb-3 flex items-center justify-between">
         <Link to={backTo} className="inline-block text-sm font-bold text-ink-muted hover:text-ink">
           ← 도감으로
