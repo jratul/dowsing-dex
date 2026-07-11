@@ -162,7 +162,9 @@ function StarterContent({ starter }: { starter: StarterGuideData }) {
                   <p className="text-sm font-black text-ink">{boss.title}</p>
                 </div>
                 {cityImg && (
-                  <img src={cityImg} alt="" className="w-full" />
+                  <div className="flex justify-center bg-surface-hover p-2">
+                    <img src={cityImg} alt="" className="max-h-56 w-auto max-w-full" />
+                  </div>
                 )}
                 <div className="p-3">
                   <p className="mb-2 text-xs text-ink-muted">{boss.note}</p>
@@ -291,7 +293,9 @@ export function PokemonPlatinumStoryGuidePage() {
           <p className="text-xs font-bold text-ink-faint">게임 시작 지점</p>
           <p className="text-sm font-black text-ink">마사고시티 — 박사 연구소 · 포켓몬 도감 입수</p>
         </div>
-        <img src="/images/guides/platinum/sandgem.png" alt="마사고시티" className="w-full" />
+        <div className="flex justify-center bg-surface-hover p-2">
+          <img src="/images/guides/platinum/sandgem.png" alt="마사고시티" className="max-h-56 w-auto max-w-full" />
+        </div>
       </div>
 
       {/* 스타터 선택 탭 */}
