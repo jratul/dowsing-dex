@@ -226,6 +226,28 @@ export function PokemonPlatinumStoryGuidePage() {
       <h1 className="text-2xl font-black text-ink">포켓몬 플래티넘(기라티나)버전 스토리 엔트리 공략</h1>
       <p className="mb-4 text-sm text-ink-faint">다우징덱스 편집부 · 4세대(다이아몬드·펄·플래티넘) 공략</p>
 
+      {/* 신오지방 마을 갤러리 */}
+      <div className="mb-6 overflow-x-auto">
+        <div className="flex gap-2" style={{ minWidth: 'max-content' }}>
+          {[
+            { src: '/images/guides/platinum/twinleaf.png', label: '쌍둥이마을' },
+            { src: '/images/guides/platinum/sandgem.png', label: '마사고시티' },
+            { src: '/images/guides/platinum/hearthome.png', label: '연고시티 (3관)' },
+            { src: '/images/guides/platinum/veilstone.png', label: '장막시티 (4관)' },
+            { src: '/images/guides/platinum/pastoria.png', label: '들판시티 (5관)' },
+            { src: '/images/guides/platinum/snowpoint.png', label: '선단시티 (7관)' },
+            { src: '/images/guides/platinum/sunyshore.png', label: '물가시티 (8관)' },
+          ].map(({ src, label }) => (
+            <div key={label} className="relative shrink-0 overflow-hidden rounded-card">
+              <img src={src} alt={label} className="h-32 w-auto object-cover" />
+              <div className="absolute bottom-0 left-0 right-0 bg-black/50 px-2 py-1">
+                <span className="text-xxs font-bold text-white">{label}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* 기준 */}
       <Card className="mb-6 p-4">
         <SectionHeading>기준</SectionHeading>

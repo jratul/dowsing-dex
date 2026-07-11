@@ -8,6 +8,7 @@ export const SAMPLE_GUIDES: Guide[] = [
     iconPokemonId: 157,
     relatedPokemonIds: [157, 181, 130, 64, 169, 93],
     summary: '성도 스토리부터 사천왕, 관동, 레드전까지 추천 엔트리와 기술 배치 정리.',
+    bannerImageUrl: '/images/guides/gold-boxart.png',
   },
   {
     slug: 'pokemon-red-story',
@@ -16,6 +17,7 @@ export const SAMPLE_GUIDES: Guide[] = [
     iconPokemonId: 6,
     relatedPokemonIds: [6, 34, 135, 131, 64, 85],
     summary: '1세대 파이리 스타팅 기준. 두트리오·윤겔라를 포함한 6마리 엔트리와 HM/TM 배분 정리.',
+    bannerImageUrl: '/images/guides/red-boxart.png',
   },
   {
     slug: 'pokemon-firered-story',
@@ -24,6 +26,7 @@ export const SAMPLE_GUIDES: Guide[] = [
     iconPokemonId: 6,
     relatedPokemonIds: [6, 34, 135, 131, 143, 103],
     summary: '3세대 파이리 스타팅 기준. 잠만보·나시를 포함한 6마리 엔트리와 돌 진화 타이밍 정리.',
+    bannerImageUrl: '/images/guides/firered-boxart.png',
   },
   {
     slug: 'pokemon-firered-sevii-islands',
@@ -32,6 +35,7 @@ export const SAMPLE_GUIDES: Guide[] = [
     iconPokemonId: 219,
     relatedPokemonIds: [219, 201, 124, 147, 218, 220],
     summary: '챔피언 클리어 후 트라이패스·레인보우패스 단계별 퀘스트, 팀 로켓 소탕, 전국도감 해제 절차 정리.',
+    bannerImageUrl: '/images/guides/firered-boxart.png',
   },
   {
     slug: 'pokemon-red-evolution',
@@ -40,6 +44,7 @@ export const SAMPLE_GUIDES: Guide[] = [
     iconPokemonId: 34,
     relatedPokemonIds: [34, 135, 121, 65, 94, 103],
     summary: '1세대 레드/블루 기준 돌 진화·교환 진화 추천 타이밍, 기술 배치, 스토리 추천도 정리.',
+    bannerImageUrl: '/images/guides/red-boxart.png',
   },
   {
     slug: 'pokemon-heartgold-story',
@@ -48,6 +53,7 @@ export const SAMPLE_GUIDES: Guide[] = [
     iconPokemonId: 157,
     relatedPokemonIds: [157, 181, 130, 214, 131, 468],
     summary: '4세대 리메이크(HGSS) 브케인 스타팅 기준. 성도 8관+관동 8관+레드전 대응 엔트리 정리.',
+    bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
   },
   {
     slug: 'pokemon-emerald-story',
@@ -56,6 +62,7 @@ export const SAMPLE_GUIDES: Guide[] = [
     iconPokemonId: 257,
     relatedPokemonIds: [257, 260, 254, 282, 330, 365],
     summary: '3세대 에메랄드 아차모·물짱이·나무지기 3종 스타팅별 탭 분리 공략. 챔피언 미라 대응 포함.',
+    bannerImageUrl: '/images/guides/emerald-boxart.jpg',
   },
   {
     slug: 'pokemon-platinum-story',
@@ -64,6 +71,7 @@ export const SAMPLE_GUIDES: Guide[] = [
     iconPokemonId: 392,
     relatedPokemonIds: [392, 395, 389, 405, 445, 448],
     summary: '4세대 플래티넘 불꽃숭이·팽도리·모부기 3종 스타팅별 탭 분리 공략. 챔피언 난천 한카리아스 대응 포함.',
+    bannerImageUrl: '/images/guides/platinum-boxart.png',
   },
   {
     slug: 'pokemon-platinum-progress',
@@ -72,5 +80,6 @@ export const SAMPLE_GUIDES: Guide[] = [
     iconPokemonId: 487,
     relatedPokemonIds: [487, 392, 395, 389, 400, 445],
     summary: '체육관 사전 조건, HM 취득·배지 요건, 갤럭시단 이벤트 흐름, 막히는 포인트 Q&A. 길이 막혔을 때 한 번에 확인.',
+    bannerImageUrl: '/images/guides/platinum-boxart.png',
   },
 ]

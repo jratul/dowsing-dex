@@ -8,4 +8,5 @@ export interface Guide {
   relatedPokemonIds?: number[]
   body?: string[]
   summary?: string
+  bannerImageUrl?: string
 }
