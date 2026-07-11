@@ -158,16 +158,11 @@ function StarterContent({ starter }: { starter: StarterGuideData }) {
             const cityImg = getGymCityImage(boss.title)
             return (
               <div key={boss.title} className="overflow-hidden rounded-card border border-border">
-                {cityImg ? (
-                  <div className="relative h-24 overflow-hidden">
-                    <img src={cityImg} alt="" className="h-full w-full object-cover object-top" />
-                    <div className="absolute inset-0 bg-linear-to-r from-black/70 to-black/20" />
-                    <p className="absolute inset-0 flex items-center px-3 text-sm font-black text-white">{boss.title}</p>
-                  </div>
-                ) : (
-                  <div className="border-b border-border bg-surface-hover px-3 py-2">
-                    <p className="text-sm font-black text-ink">{boss.title}</p>
-                  </div>
+                <div className="border-b border-border bg-surface-hover px-3 py-2">
+                  <p className="text-sm font-black text-ink">{boss.title}</p>
+                </div>
+                {cityImg && (
+                  <img src={cityImg} alt="" className="w-full" />
                 )}
                 <div className="p-3">
                   <p className="mb-2 text-xs text-ink-muted">{boss.note}</p>
@@ -291,16 +286,12 @@ export function PokemonPlatinumStoryGuidePage() {
       </Card>
 
       {/* 마사고시티 — 게임 시작 지점 */}
-      <div className="relative mb-6 h-36 overflow-hidden rounded-card">
-        <img src="/images/guides/platinum/sandgem.png" alt="마사고시티" className="h-full w-full object-cover object-top" />
-        <div className="absolute inset-0 bg-linear-to-r from-black/60 to-transparent" />
-        <div className="absolute inset-0 flex items-center px-4">
-          <div>
-            <p className="text-xs font-bold text-white/70">게임 시작 지점</p>
-            <p className="text-lg font-black text-white">마사고시티</p>
-            <p className="text-xs text-white/60">박사 연구소 · 포켓몬 도감 입수</p>
-          </div>
+      <div className="mb-6 overflow-hidden rounded-card border border-border">
+        <div className="border-b border-border bg-surface-hover px-3 py-2">
+          <p className="text-xs font-bold text-ink-faint">게임 시작 지점</p>
+          <p className="text-sm font-black text-ink">마사고시티 — 박사 연구소 · 포켓몬 도감 입수</p>
         </div>
+        <img src="/images/guides/platinum/sandgem.png" alt="마사고시티" className="w-full" />
       </div>
 
       {/* 스타터 선택 탭 */}
