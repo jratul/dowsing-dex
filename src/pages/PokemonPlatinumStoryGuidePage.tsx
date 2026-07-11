@@ -24,6 +24,19 @@ function L(text: string) {
   return linkifyPokemonNames(text, PLATINUM_NAME_TO_ID)
 }
 
+const GYM_CITY_IMAGE: Record<string, string> = {
+  '연고시티': '/images/guides/platinum/hearthome.png',
+  '장막시티': '/images/guides/platinum/veilstone.png',
+  '들판시티': '/images/guides/platinum/pastoria.png',
+  '선단시티': '/images/guides/platinum/snowpoint.png',
+  '물가시티': '/images/guides/platinum/sunyshore.png',
+}
+
+function getGymCityImage(title: string): string | undefined {
+  const city = title.match(/\(([^)]+)\)/)?.[1]
+  return city ? GYM_CITY_IMAGE[city] : undefined
+}
+
 function SectionHeading({ children }: { children: string }) {
   return <h2 className="mb-3 text-lg font-black text-ink">{children}</h2>
 }
@@ -132,16 +145,31 @@ function StarterContent({ starter }: { starter: StarterGuideData }) {
       <Card className="mb-6 p-4">
         <SectionHeading>체육관 대응</SectionHeading>
         <div className="space-y-4">
-          {starter.gymMatchups.map((boss) => (
-            <div key={boss.title} className="rounded-card border border-border p-3">
-              <p className="mb-1 text-sm font-black text-ink">{boss.title}</p>
-              <p className="mb-2 text-xs text-ink-muted">{boss.note}</p>
-              <GuideTable
-                headers={['상대 포켓몬', '대응책']}
-                rows={boss.rows.map((r) => [r.opponent, L(r.answer)])}
-              />
-            </div>
-          ))}
+          {starter.gymMatchups.map((boss) => {
+            const cityImg = getGymCityImage(boss.title)
+            return (
+              <div key={boss.title} className="overflow-hidden rounded-card border border-border">
+                {cityImg ? (
+                  <div className="relative h-24 overflow-hidden">
+                    <img src={cityImg} alt="" className="h-full w-full object-cover object-top" />
+                    <div className="absolute inset-0 bg-linear-to-r from-black/70 to-black/20" />
+                    <p className="absolute inset-0 flex items-center px-3 text-sm font-black text-white">{boss.title}</p>
+                  </div>
+                ) : (
+                  <div className="border-b border-border bg-surface-hover px-3 py-2">
+                    <p className="text-sm font-black text-ink">{boss.title}</p>
+                  </div>
+                )}
+                <div className="p-3">
+                  <p className="mb-2 text-xs text-ink-muted">{boss.note}</p>
+                  <GuideTable
+                    headers={['상대 포켓몬', '대응책']}
+                    rows={boss.rows.map((r) => [r.opponent, L(r.answer)])}
+                  />
+                </div>
+              </div>
+            )
+          })}
         </div>
       </Card>
 
@@ -216,35 +244,23 @@ export function PokemonPlatinumStoryGuidePage() {
 
   return (
     <GuidePageLayout refreshKey={selectedId}>
-      <div className="mb-2 flex items-center gap-2">
-        <Link to="/guides" className="text-sm font-bold text-ink-muted hover:text-ink">
-          ← 공략 목록
-        </Link>
-        <span className={`rounded-chip bg-white px-2 py-0.5 text-xs font-bold ${style.pillClass}`}>공략</span>
-      </div>
-
-      <h1 className="text-2xl font-black text-ink">포켓몬 플래티넘(기라티나)버전 스토리 엔트리 공략</h1>
-      <p className="mb-4 text-sm text-ink-faint">다우징덱스 편집부 · 4세대(다이아몬드·펄·플래티넘) 공략</p>
-
-      {/* 신오지방 마을 갤러리 */}
-      <div className="mb-6 overflow-x-auto">
-        <div className="flex gap-2" style={{ minWidth: 'max-content' }}>
-          {[
-            { src: '/images/guides/platinum/twinleaf.png', label: '쌍둥이마을' },
-            { src: '/images/guides/platinum/sandgem.png', label: '마사고시티' },
-            { src: '/images/guides/platinum/hearthome.png', label: '연고시티 (3관)' },
-            { src: '/images/guides/platinum/veilstone.png', label: '장막시티 (4관)' },
-            { src: '/images/guides/platinum/pastoria.png', label: '들판시티 (5관)' },
-            { src: '/images/guides/platinum/snowpoint.png', label: '선단시티 (7관)' },
-            { src: '/images/guides/platinum/sunyshore.png', label: '물가시티 (8관)' },
-          ].map(({ src, label }) => (
-            <div key={label} className="relative shrink-0 overflow-hidden rounded-card">
-              <img src={src} alt={label} className="h-32 w-auto object-cover" />
-              <div className="absolute bottom-0 left-0 right-0 bg-black/50 px-2 py-1">
-                <span className="text-xxs font-bold text-white">{label}</span>
-              </div>
-            </div>
-          ))}
+      {/* 페이지 헤더 — 쌍둥이마을 배경 */}
+      <div className="relative mb-6 h-44 overflow-hidden rounded-card sm:h-52">
+        <img
+          src="/images/guides/platinum/twinleaf.png"
+          alt="쌍둥이마을"
+          className="h-full w-full object-cover object-top"
+        />
+        <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent" />
+        <div className="absolute top-3 left-3 flex items-center gap-2">
+          <Link to="/guides" className="rounded-chip bg-black/40 px-2 py-1 text-xs font-bold text-white/80 hover:text-white">
+            ← 공략 목록
+          </Link>
+          <span className={`rounded-chip bg-white px-2 py-0.5 text-xs font-bold ${style.pillClass}`}>공략</span>
+        </div>
+        <div className="absolute bottom-4 left-4 right-4">
+          <h1 className="text-xl font-black text-white sm:text-2xl">포켓몬 플래티넘(기라티나)버전 스토리 엔트리 공략</h1>
+          <p className="mt-1 text-xs text-white/70">다우징덱스 편집부 · 4세대(다이아몬드·펄·플래티넘) 공략</p>
         </div>
       </div>
 
@@ -264,6 +280,19 @@ export function PokemonPlatinumStoryGuidePage() {
           ))}
         </ul>
       </Card>
+
+      {/* 마사고시티 — 게임 시작 지점 */}
+      <div className="relative mb-6 h-36 overflow-hidden rounded-card">
+        <img src="/images/guides/platinum/sandgem.png" alt="마사고시티" className="h-full w-full object-cover object-top" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/60 to-transparent" />
+        <div className="absolute inset-0 flex items-center px-4">
+          <div>
+            <p className="text-xs font-bold text-white/70">게임 시작 지점</p>
+            <p className="text-lg font-black text-white">마사고시티</p>
+            <p className="text-xs text-white/60">박사 연구소 · 포켓몬 도감 입수</p>
+          </div>
+        </div>
+      </div>
 
       {/* 스타터 선택 탭 */}
       <div className="mb-6">
