@@ -35,6 +35,15 @@ function L(text: string) {
   return linkifyPokemonNames(text, RED_STORY_NAME_TO_ID)
 }
 
+function HowBadge({ how }: { how: string }) {
+  if (how.startsWith('HM')) return <span className="inline-block rounded bg-red-100 px-1.5 py-0.5 text-xxs font-bold text-red-700 dark:bg-red-900/40 dark:text-red-300">{how}</span>
+  if (how.startsWith('TM')) return <span className="inline-block rounded bg-blue-100 px-1.5 py-0.5 text-xxs font-bold text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">{how}</span>
+  if (how.startsWith('Lv.')) return <span className="inline-block rounded bg-green-100 px-1.5 py-0.5 text-xxs font-bold text-green-700 dark:bg-green-900/40 dark:text-green-300">{how}</span>
+  if (how === '기술가르침') return <span className="inline-block rounded bg-purple-100 px-1.5 py-0.5 text-xxs font-bold text-purple-700 dark:bg-purple-900/40 dark:text-purple-300">{how}</span>
+  if (how === '번식기술') return <span className="inline-block rounded bg-orange-100 px-1.5 py-0.5 text-xxs font-bold text-orange-700 dark:bg-orange-900/40 dark:text-orange-300">{how}</span>
+  return <span className="inline-block rounded bg-surface-hover px-1.5 py-0.5 text-xxs font-bold text-ink-muted">{how}</span>
+}
+
 function SectionHeading({ children }: { children: string }) {
   return <h2 className="mb-3 text-lg font-black text-ink">{children}</h2>
 }
@@ -147,7 +156,7 @@ export function PokemonRedStoryGuidePage() {
                   ))}
                 </ul>
 
-                <GuideTable headers={['기술', '용도']} rows={m.moveTable.map((t) => [t.move, t.usage])} />
+                <GuideTable headers={['기술', '습득', '용도']} rows={m.moveTable.map((t) => [t.move, <HowBadge key={t.move} how={t.how} />, t.usage])} />
 
                 <p className="mt-3 mb-1 text-xs font-bold text-ink-faint">메모</p>
                 <ul className="list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
