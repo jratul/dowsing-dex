@@ -45,7 +45,7 @@ export interface MoveSetSection {
   pokemonId: number
   pokemon: string
   finalMoves: string[]
-  moveTable: { move: string; usage: string }[]
+  moveTable: { move: string; how: string; usage: string }[]
   notes: string[]
 }
 
@@ -55,11 +55,11 @@ export const HG_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '블레이범',
     finalMoves: ['화염방사', '솔라빔 / 번개펀치', '지진', '불꽃파동 / 스피드스타'],
     moveTable: [
-      { move: '화염방사', usage: '주력 불꽃 특수기. 4세대에서도 여전히 안정적' },
-      { move: '솔라빔', usage: '물·바위 타입 처리. 맑은날씨 TM 연계 가능' },
-      { move: '번개펀치', usage: '물·비행 타입 물리 견제기' },
-      { move: '지진', usage: '레드 피카츄 처리. 독·바위·전기 타입 견제' },
-      { move: '불꽃파동', usage: '화염방사 전까지 주력 불꽃기' },
+      { move: '화염방사', how: 'Lv.습득', usage: '주력 불꽃 특수기. 4세대에서도 여전히 안정적' },
+      { move: '솔라빔', how: 'TM22', usage: '물·바위 타입 처리. 맑은날씨 TM 연계 가능' },
+      { move: '번개펀치', how: '기술가르침', usage: '물·비행 타입 물리 견제기' },
+      { move: '지진', how: 'TM26', usage: '레드 피카츄 처리. 독·바위·전기 타입 견제' },
+      { move: '불꽃파동', how: 'Lv.습득', usage: '화염방사 전까지 주력 불꽃기' },
     ],
     notes: [
       '4세대에서 블레이범은 격투 타입(2세대 비공식)이 아닌 순수 불꽃 타입이다.',
@@ -72,11 +72,11 @@ export const HG_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '전룡',
     finalMoves: ['10만볼트', '전기자석파', '빛의장막', '파동탄 / 번개펀치'],
     moveTable: [
-      { move: '10만볼트', usage: '주력 전기 특수기. 화력과 명중률이 균형 잡힘' },
-      { move: '전기자석파', usage: '마비 유틸. 보스전 안정화' },
-      { move: '빛의장막', usage: '파티 특수 방어 지원. 레드전 안정성 증가' },
-      { move: '파동탄', usage: '노말 타입 특수기. 4세대 출력 안정' },
-      { move: '번개펀치', usage: '물리 전기기. 특수방어가 높은 상대 대응' },
+      { move: '10만볼트', how: 'TM24', usage: '주력 전기 특수기. 화력과 명중률이 균형 잡힘' },
+      { move: '전기자석파', how: 'TM', usage: '마비 유틸. 보스전 안정화' },
+      { move: '빛의장막', how: 'TM04', usage: '파티 특수 방어 지원. 레드전 안정성 증가' },
+      { move: '파동탄', how: 'Lv.습득', usage: '노말 타입 특수기. 4세대 출력 안정' },
+      { move: '번개펀치', how: '기술가르침', usage: '물리 전기기. 특수방어가 높은 상대 대응' },
     ],
     notes: [
       '전룡은 성도에서 메리프를 빠르게 육성해야 한다. 느리지만 내구가 좋아 스토리에 잘 맞는다.',
@@ -89,12 +89,12 @@ export const HG_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '갸라도스',
     finalMoves: ['파도타기', '폭포오르기', '괴력', '아이언테일 / 얼다바람'],
     moveTable: [
-      { move: '파도타기', usage: 'HM03. 주력 물 특수기 겸 이동' },
-      { move: '폭포오르기', usage: 'HM07. 후반 진행 필수' },
-      { move: '괴력', usage: 'HM04. 이동 및 물리 공격' },
-      { move: '바다회오리', usage: '소용돌이섬 진행용 임시 비전. 이후 삭제' },
-      { move: '아이언테일', usage: '바위·얼음 타입 물리 견제' },
-      { move: '얼다바람', usage: '목호 드래곤 보조 견제. 류옹 격파 보상' },
+      { move: '파도타기', how: 'HM03', usage: 'HM03. 주력 물 특수기 겸 이동' },
+      { move: '폭포오르기', how: 'HM07', usage: 'HM07. 후반 진행 필수' },
+      { move: '괴력', how: 'HM04', usage: 'HM04. 이동 및 물리 공격' },
+      { move: '바다회오리', how: 'HM06', usage: '소용돌이섬 진행용 임시 비전. 이후 삭제' },
+      { move: '아이언테일', how: 'TM23', usage: '바위·얼음 타입 물리 견제' },
+      { move: '얼다바람', how: 'TM16', usage: '목호 드래곤 보조 견제. 류옹 격파 보상' },
     ],
     notes: [
       '갸라도스는 파도타기·폭포오르기·괴력을 배워 HM 담당으로 최적이다.',
@@ -107,10 +107,10 @@ export const HG_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '헤라크로스',
     finalMoves: ['메가폰', '닫기 / 클로즈컴뱃', '사이코커터', '공중날기 / 독찌르기'],
     moveTable: [
-      { move: '메가폰', usage: '노말 물리기. 친밀도 높을수록 강력. HG에서 유용' },
-      { move: '닫기 / 클로즈컴뱃', usage: '격투 물리기. 방어/특방이 낮아지지만 매우 강력' },
-      { move: '사이코커터', usage: '독 타입 견제. 에스퍼 물리기' },
-      { move: '독찌르기', usage: '독 물리기. 독 상태이상 효과' },
+      { move: '메가폰', how: 'Lv.습득', usage: '노말 물리기. 친밀도 높을수록 강력. HG에서 유용' },
+      { move: '닫기 / 클로즈컴뱃', how: 'Lv.습득', usage: '격투 물리기. 방어/특방이 낮아지지만 매우 강력' },
+      { move: '사이코커터', how: '기술가르침', usage: '독 타입 견제. 에스퍼 물리기' },
+      { move: '독찌르기', how: 'TM', usage: '독 물리기. 독 상태이상 효과' },
     ],
     notes: [
       '헤라크로스는 HG 전용 박치기 나무 포획 포켓몬. SS에서는 쁘사이저가 나온다.',
@@ -123,11 +123,11 @@ export const HG_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '라프라스',
     finalMoves: ['파도타기 / 냉동빔', '얼음기둥', '번개', '노래 / 이상한빛'],
     moveTable: [
-      { move: '냉동빔', usage: '주력 얼음 특수기. 드래곤·풀 타입 처리' },
-      { move: '얼음기둥', usage: '냉동빔보다 강력한 얼음 특수기. TM 획득 권장' },
-      { move: '번개', usage: '물 타입에게 효과적인 전기기. 명중 불안정' },
-      { move: '파도타기', usage: '보조 물 기술. 갸라도스에 파도타기가 있으면 선택' },
-      { move: '노래', usage: '수면 보조 유틸. 포획 및 보스전 안정화' },
+      { move: '냉동빔', how: 'Lv.습득', usage: '주력 얼음 특수기. 드래곤·풀 타입 처리' },
+      { move: '얼음기둥', how: 'TM79', usage: '냉동빔보다 강력한 얼음 특수기. TM 획득 권장' },
+      { move: '번개', how: 'TM25', usage: '물 타입에게 효과적인 전기기. 명중 불안정' },
+      { move: '파도타기', how: 'HM03', usage: '보조 물 기술. 갸라도스에 파도타기가 있으면 선택' },
+      { move: '노래', how: 'Lv.습득', usage: '수면 보조 유틸. 포획 및 보스전 안정화' },
     ],
     notes: [
       '라프라스는 연결동굴에서 매주 금요일에 한 마리 무상 획득 가능.',
@@ -140,11 +140,11 @@ export const HG_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '토게키스',
     finalMoves: ['에어슬래시', '오라스피어', '파도타기', '빛의장막 / 소원빌기'],
     moveTable: [
-      { move: '에어슬래시', usage: '비행 특수기. 30% 풀죽음 효과. 4세대에서 강력' },
-      { move: '오라스피어', usage: '격투 특수기. 빗나가지 않는 기술. 악·바위 타입 처리' },
-      { move: '파도타기', usage: '물 특수기 보조. 갸라도스와 분담 가능' },
-      { move: '빛의장막', usage: '파티 지원. 전룡과 분담 가능' },
-      { move: '소원빌기', usage: 'HP 회복 유틸. 파티 안정성 증가' },
+      { move: '에어슬래시', how: 'Lv.습득', usage: '비행 특수기. 30% 풀죽음 효과. 4세대에서 강력' },
+      { move: '오라스피어', how: 'Lv.습득', usage: '격투 특수기. 빗나가지 않는 기술. 악·바위 타입 처리' },
+      { move: '파도타기', how: 'HM03', usage: '물 특수기 보조. 갸라도스와 분담 가능' },
+      { move: '빛의장막', how: 'TM04', usage: '파티 지원. 전룡과 분담 가능' },
+      { move: '소원빌기', how: 'Lv.습득', usage: 'HP 회복 유틸. 파티 안정성 증가' },
     ],
     notes: [
       '토게피 → 토게틱(친밀도) → 토게키스(빛나는돌). 빛나는돌은 4세대에 추가된 진화 아이템.',

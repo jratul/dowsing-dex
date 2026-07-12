@@ -101,7 +101,7 @@ export interface MoveSetSection {
   pokemonId: number
   pokemon: string
   finalMoves: string[]
-  moveTable: { move: string; usage: string }[]
+  moveTable: { move: string; how: string; usage: string }[]
   notes: string[]
 }
 
@@ -111,13 +111,13 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '리자몽',
     finalMoves: ['화염방사', '공중날기 / 날개치기', '베어가르기', '드래곤클로 / 깨트리다 / 강철날개'],
     moveTable: [
-      { move: '화염방사', usage: '주력 불꽃 기술. 리자드 계열 레벨업으로 습득 가능' },
-      { move: '공중날기', usage: '이동용 비전머신 및 격투·풀 타입 처리' },
-      { move: '날개치기', usage: '공중날기보다 전투 템포가 빠른 비행 기술' },
-      { move: '베어가르기', usage: '안정적인 노말 물리 공격' },
-      { move: '드래곤클로', usage: '챔피언로드에서 획득. 드래곤 견제 보조' },
-      { move: '깨트리다', usage: '바위·노말·얼음 타입 견제 보조' },
-      { move: '강철날개', usage: '바위 타입 견제 보조. 명중률은 다소 불안정' },
+      { move: '화염방사', how: 'Lv.습득', usage: '주력 불꽃 기술. 리자드 계열 레벨업으로 습득 가능' },
+      { move: '공중날기', how: 'HM02', usage: '이동용 비전머신 및 격투·풀 타입 처리' },
+      { move: '날개치기', how: 'Lv.습득', usage: '공중날기보다 전투 템포가 빠른 비행 기술' },
+      { move: '베어가르기', how: 'Lv.습득', usage: '안정적인 노말 물리 공격' },
+      { move: '드래곤클로', how: 'TM02', usage: '챔피언로드에서 획득. 드래곤 견제 보조' },
+      { move: '깨트리다', how: 'TM31', usage: '바위·노말·얼음 타입 견제 보조' },
+      { move: '강철날개', how: 'TM', usage: '바위 타입 견제 보조. 명중률은 다소 불안정' },
     ],
     notes: [
       '파이리는 파이어레드에서 메탈크로우를 배워 웅전이 원작 1세대보다 훨씬 수월하다.',
@@ -130,13 +130,13 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '니드킹',
     finalMoves: ['지진', '깨트리다', '스톤샤워 / 암석봉인', '메가폰 / 괴력 / 섀도볼'],
     moveTable: [
-      { move: '지진', usage: '주력 땅 타입 기술. 독·전기·바위·불꽃 타입 처리' },
-      { move: '깨트리다', usage: '바위·노말·얼음 타입 견제. 잠만보, 라프라스, 롱스톤 대응' },
-      { move: '스톤샤워', usage: '비행·불꽃·얼음 타입 견제. 기술가르침 1회성 후보' },
-      { move: '암석봉인', usage: '웅 격파 보상. 스톤샤워 전 임시 바위 기술' },
-      { move: '메가폰', usage: '에스퍼·악·풀 타입 견제. 레벨 43에 습득' },
-      { move: '괴력', usage: '이동용 비전머신 및 안정적인 물리 공격' },
-      { move: '섀도볼', usage: '에스퍼·고스트 견제. 잠만보와 경쟁하는 기술머신 후보' },
+      { move: '지진', how: 'TM26', usage: '주력 땅 타입 기술. 독·전기·바위·불꽃 타입 처리' },
+      { move: '깨트리다', how: 'TM31', usage: '바위·노말·얼음 타입 견제. 잠만보, 라프라스, 롱스톤 대응' },
+      { move: '스톤샤워', how: '기술가르침', usage: '비행·불꽃·얼음 타입 견제. 기술가르침 1회성 후보' },
+      { move: '암석봉인', how: 'TM', usage: '웅 격파 보상. 스톤샤워 전 임시 바위 기술' },
+      { move: '메가폰', how: 'Lv.43', usage: '에스퍼·악·풀 타입 견제. 레벨 43에 습득' },
+      { move: '괴력', how: 'HM04', usage: '이동용 비전머신 및 안정적인 물리 공격' },
+      { move: '섀도볼', how: 'TM30', usage: '에스퍼·고스트 견제. 잠만보와 경쟁하는 기술머신 후보' },
     ],
     notes: [
       '가장 추천하는 진화 타이밍은 니드리노 레벨 22 뿔찌르기 습득 후 달의돌을 쓰는 것이다.',
@@ -148,12 +148,12 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '쥬피썬더',
     finalMoves: ['10만볼트', '전기자석파', '물기', '전광석화 / 두번치기 / 바늘미사일'],
     moveTable: [
-      { move: '10만볼트', usage: '주력 전기 기술. 칸나, 목호 갸라도스, 챔피언 거북왕 처리 핵심' },
-      { move: '전기자석파', usage: '빠른 상대 마비. 보스전 안정화' },
-      { move: '물기', usage: '에스퍼·고스트 타입 보조 견제' },
-      { move: '전광석화', usage: '마무리 선공기' },
-      { move: '두번치기', usage: '바위·노말 타입 보조 견제. 위력은 낮지만 범용성 있음' },
-      { move: '바늘미사일', usage: '에스퍼 타입 견제 보조. 명중과 위력은 불안정' },
+      { move: '10만볼트', how: 'TM24', usage: '주력 전기 기술. 칸나, 목호 갸라도스, 챔피언 거북왕 처리 핵심' },
+      { move: '전기자석파', how: 'TM', usage: '빠른 상대 마비. 보스전 안정화' },
+      { move: '물기', how: 'Lv.습득', usage: '에스퍼·고스트 타입 보조 견제' },
+      { move: '전광석화', how: 'Lv.습득', usage: '마무리 선공기' },
+      { move: '두번치기', how: 'Lv.습득', usage: '바위·노말 타입 보조 견제. 위력은 낮지만 범용성 있음' },
+      { move: '바늘미사일', how: 'Lv.습득', usage: '에스퍼 타입 견제 보조. 명중과 위력은 불안정' },
     ],
     notes: [
       '가장 추천하는 진화 타이밍은 이브이 레벨 30 물기 습득 후 번개의돌을 사용하는 것이다.',
@@ -166,12 +166,12 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '라프라스',
     finalMoves: ['파도타기', '냉동빔', '누르기', '이상한빛 / 멸망의노래 / 비바라기'],
     moveTable: [
-      { move: '파도타기', usage: '주력 물 기술 및 이동용 비전머신' },
-      { move: '냉동빔', usage: '목호 드래곤에어·망나뇽 처리 핵심' },
-      { move: '누르기', usage: '안정적인 노말 물리 공격 및 마비 기대' },
-      { move: '이상한빛', usage: '장기전 보조' },
-      { move: '멸망의노래', usage: '강한 상대를 강제로 정리하는 보험' },
-      { move: '비바라기', usage: '파도타기 강화. 필수는 아님' },
+      { move: '파도타기', how: 'HM03', usage: '주력 물 기술 및 이동용 비전머신' },
+      { move: '냉동빔', how: 'Lv.31', usage: '목호 드래곤에어·망나뇽 처리 핵심' },
+      { move: '누르기', how: 'Lv.습득', usage: '안정적인 노말 물리 공격 및 마비 기대' },
+      { move: '이상한빛', how: 'Lv.습득', usage: '장기전 보조' },
+      { move: '멸망의노래', how: 'Lv.습득', usage: '강한 상대를 강제로 정리하는 보험' },
+      { move: '비바라기', how: 'TM', usage: '파도타기 강화. 필수는 아님' },
     ],
     notes: [
       '라프라스는 실프주식회사에서 선물로 받을 수 있어 별도 포획 부담이 없다.',
@@ -184,13 +184,13 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '잠만보',
     finalMoves: ['누르기 / 은혜갚기', '섀도볼', '괴력', '잠자기 / 깨트리다 / 지진'],
     moveTable: [
-      { move: '누르기', usage: '포획 당시부터 유용한 안정적인 노말 공격' },
-      { move: '은혜갚기', usage: '친밀도가 높을 때 강력한 노말 물리 공격' },
-      { move: '섀도볼', usage: '국화의 고스트 타입, 초련·챔피언의 에스퍼 타입 견제' },
-      { move: '괴력', usage: '이동용 비전머신 및 실전 물리 공격' },
-      { move: '잠자기', usage: '고내구와 궁합이 좋은 회복기' },
-      { move: '깨트리다', usage: '노말·얼음·바위 타입 견제' },
-      { move: '지진', usage: '범용 고위력 기술. 니드킹과 경쟁하는 1회성 기술머신' },
+      { move: '누르기', how: 'Lv.습득', usage: '포획 당시부터 유용한 안정적인 노말 공격' },
+      { move: '은혜갚기', how: 'TM27', usage: '친밀도가 높을 때 강력한 노말 물리 공격' },
+      { move: '섀도볼', how: 'TM30', usage: '국화의 고스트 타입, 초련·챔피언의 에스퍼 타입 견제' },
+      { move: '괴력', how: 'HM04', usage: '이동용 비전머신 및 실전 물리 공격' },
+      { move: '잠자기', how: 'TM44', usage: '고내구와 궁합이 좋은 회복기' },
+      { move: '깨트리다', how: 'TM31', usage: '노말·얼음·바위 타입 견제' },
+      { move: '지진', how: 'TM26', usage: '범용 고위력 기술. 니드킹과 경쟁하는 1회성 기술머신' },
     ],
     notes: [
       '잠만보는 12번도로 또는 16번도로에서 포켓몬피리로 깨운 뒤 포획한다.',
@@ -204,12 +204,12 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '나시',
     finalMoves: ['사이코키네시스', '기가드레인', '수면가루', '씨뿌리기 / 솔라빔 / 빛의장막'],
     moveTable: [
-      { move: '사이코키네시스', usage: '주력 에스퍼 기술. 독·격투 타입 처리' },
-      { move: '기가드레인', usage: '물·땅·바위 타입 견제 및 회복' },
-      { move: '수면가루', usage: '포획 및 보스전 보조' },
-      { move: '씨뿌리기', usage: '장기전 보조' },
-      { move: '솔라빔', usage: '고위력 풀 타입 기술. 쾌청과 연계 시 선택 가능' },
-      { move: '빛의장막', usage: '특수 공격 대응 보조' },
+      { move: '사이코키네시스', how: 'TM29', usage: '주력 에스퍼 기술. 독·격투 타입 처리' },
+      { move: '기가드레인', how: 'TM19', usage: '물·땅·바위 타입 견제 및 회복' },
+      { move: '수면가루', how: 'Lv.습득', usage: '포획 및 보스전 보조' },
+      { move: '씨뿌리기', how: 'Lv.습득', usage: '장기전 보조' },
+      { move: '솔라빔', how: 'TM22', usage: '고위력 풀 타입 기술. 쾌청과 연계 시 선택 가능' },
+      { move: '빛의장막', how: 'TM', usage: '특수 공격 대응 보조' },
     ],
     notes: [
       '나시는 후반 합류지만 풀 타입과 에스퍼 타입을 동시에 제공한다.',

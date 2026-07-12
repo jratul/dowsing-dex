@@ -59,7 +59,7 @@ export interface MoveSetSection {
   pokemonId: number
   pokemon: string
   finalMoves: string[]
-  moveTable: { move: string; usage: string }[]
+  moveTable: { move: string; how: string; usage: string }[]
   notes: string[]
 }
 
@@ -69,12 +69,12 @@ export const GOLD_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '블레이범',
     finalMoves: ['불꽃펀치 / 화염방사', '번개펀치', '지진', '은혜갚기 / 스피드스타'],
     moveTable: [
-      { move: '불꽃펀치', usage: '화염방사 전까지 주력 불꽃 기술' },
-      { move: '화염방사', usage: '레벨 60 이후 선택 가능한 최종 불꽃 기술' },
-      { move: '번개펀치', usage: '물 타입 견제 보조' },
-      { move: '지진', usage: '레드 피카츄, 독·바위·전기 타입 견제' },
-      { move: '은혜갚기', usage: '친밀도가 높을 때 안정적인 노말 물리기' },
-      { move: '스피드스타', usage: '중반 안정적인 명중률 보조기' },
+      { move: '불꽃펀치', how: 'TM48', usage: '화염방사 전까지 주력 불꽃 기술' },
+      { move: '화염방사', how: 'Lv.습득', usage: '레벨 60 이후 선택 가능한 최종 불꽃 기술' },
+      { move: '번개펀치', how: 'TM41', usage: '물 타입 견제 보조' },
+      { move: '지진', how: 'TM26', usage: '레드 피카츄, 독·바위·전기 타입 견제' },
+      { move: '은혜갚기', how: 'TM27', usage: '친밀도가 높을 때 안정적인 노말 물리기' },
+      { move: '스피드스타', how: 'TM', usage: '중반 안정적인 명중률 보조기' },
     ],
     notes: [
       '블레이범은 화염방사를 늦게 배우므로 중후반까지는 불꽃펀치를 주력으로 사용한다.',
@@ -87,10 +87,10 @@ export const GOLD_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '전룡',
     finalMoves: ['번개펀치', '전기자석파', '빛의장막', '불꽃펀치 / 자유 슬롯'],
     moveTable: [
-      { move: '번개펀치', usage: '주력 전기 기술' },
-      { move: '전기자석파', usage: '빠른 상대 견제, 보스전 안정화' },
-      { move: '빛의장막', usage: '특수 공격 대응, 레드전 안정성 증가' },
-      { move: '불꽃펀치', usage: '풀·벌레·얼음 타입 보조 견제' },
+      { move: '번개펀치', how: 'TM41', usage: '주력 전기 기술' },
+      { move: '전기자석파', how: 'TM', usage: '빠른 상대 견제, 보스전 안정화' },
+      { move: '빛의장막', how: 'TM', usage: '특수 공격 대응, 레드전 안정성 증가' },
+      { move: '불꽃펀치', how: 'TM48', usage: '풀·벌레·얼음 타입 보조 견제' },
     ],
     notes: [
       '전룡은 스피드가 느리지만 내구와 특수공격이 안정적이다.',
@@ -103,13 +103,13 @@ export const GOLD_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '갸라도스',
     finalMoves: ['파도타기', '괴력', '폭포오르기', '얼다바람 / 용의숨결 / 은혜갚기'],
     moveTable: [
-      { move: '파도타기', usage: '주력 물 기술 및 이동용 비전머신' },
-      { move: '괴력', usage: '이동용 비전머신 및 물리 공격' },
-      { move: '폭포오르기', usage: '후반 이동용 비전머신' },
-      { move: '바다회오리', usage: '용의굴·소용돌이섬 진행용 임시 비전머신' },
-      { move: '얼다바람', usage: '목호 망나뇽 견제 보조' },
-      { move: '용의숨결', usage: '드래곤 견제 보조' },
-      { move: '은혜갚기', usage: '안정적인 물리 공격' },
+      { move: '파도타기', how: 'HM03', usage: '주력 물 기술 및 이동용 비전머신' },
+      { move: '괴력', how: 'HM04', usage: '이동용 비전머신 및 물리 공격' },
+      { move: '폭포오르기', how: 'HM07', usage: '후반 이동용 비전머신' },
+      { move: '바다회오리', how: 'HM06', usage: '용의굴·소용돌이섬 진행용 임시 비전머신' },
+      { move: '얼다바람', how: 'TM16', usage: '목호 망나뇽 견제 보조' },
+      { move: '용의숨결', how: 'TM24', usage: '드래곤 견제 보조' },
+      { move: '은혜갚기', how: 'TM27', usage: '안정적인 물리 공격' },
     ],
     notes: [
       '갸라도스는 파도타기, 괴력, 바다회오리, 폭포오르기를 모두 배울 수 있어 스토리 편의성이 높다.',
@@ -124,11 +124,11 @@ export const GOLD_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '윤겔라',
     finalMoves: ['사이코키네시스', '냉동펀치', '회복', '번개펀치 / 리플렉터'],
     moveTable: [
-      { move: '사이코키네시스', usage: '주력 에스퍼 기술' },
-      { move: '냉동펀치', usage: '목호 망나뇽 처리 핵심' },
-      { move: '회복', usage: '장기전 안정성' },
-      { move: '번개펀치', usage: '물·비행 타입 보조 견제' },
-      { move: '리플렉터', usage: '물리 공격 대응 보조' },
+      { move: '사이코키네시스', how: 'Lv.습득', usage: '주력 에스퍼 기술' },
+      { move: '냉동펀치', how: 'TM33', usage: '목호 망나뇽 처리 핵심' },
+      { move: '회복', how: 'Lv.습득', usage: '장기전 안정성' },
+      { move: '번개펀치', how: 'TM41', usage: '물·비행 타입 보조 견제' },
+      { move: '리플렉터', how: 'TM', usage: '물리 공격 대응 보조' },
     ],
     notes: [
       '윤겔라는 목호전 핵심 포켓몬이다.',
@@ -141,11 +141,11 @@ export const GOLD_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '크로뱃',
     finalMoves: ['공중날기', '이상한빛', '날개치기', '물기 / 은혜갚기'],
     moveTable: [
-      { move: '공중날기', usage: '이동용 비전머신 및 비행 공격' },
-      { move: '이상한빛', usage: '보스전 유틸' },
-      { move: '날개치기', usage: '빠른 비행 타입 공격' },
-      { move: '물기', usage: '에스퍼 타입 보조 견제' },
-      { move: '은혜갚기', usage: '친밀도 기반 노말 물리기' },
+      { move: '공중날기', how: 'HM02', usage: '이동용 비전머신 및 비행 공격' },
+      { move: '이상한빛', how: 'Lv.습득', usage: '보스전 유틸' },
+      { move: '날개치기', how: 'Lv.습득', usage: '빠른 비행 타입 공격' },
+      { move: '물기', how: 'Lv.습득', usage: '에스퍼 타입 보조 견제' },
+      { move: '은혜갚기', how: 'TM27', usage: '친밀도 기반 노말 물리기' },
     ],
     notes: [
       '공중날기 담당으로 적합하다.',
@@ -158,11 +158,11 @@ export const GOLD_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '고우스트',
     finalMoves: ['저주', '나이트헤드', '이상한빛', '최면술 / 꿈먹기'],
     moveTable: [
-      { move: '저주', usage: '레드 잠만보 처리 핵심' },
-      { move: '나이트헤드', usage: '레벨 기반 고정 데미지' },
-      { move: '이상한빛', usage: '장기전 보조' },
-      { move: '최면술', usage: '수면 유틸' },
-      { move: '꿈먹기', usage: '최면술과 연계 가능' },
+      { move: '저주', how: 'Lv.습득', usage: '레드 잠만보 처리 핵심' },
+      { move: '나이트헤드', how: 'Lv.습득', usage: '레벨 기반 고정 데미지' },
+      { move: '이상한빛', how: 'Lv.습득', usage: '장기전 보조' },
+      { move: '최면술', how: 'Lv.습득', usage: '수면 유틸' },
+      { move: '꿈먹기', how: 'TM42', usage: '최면술과 연계 가능' },
     ],
     notes: [
       '고우스트는 일반 스토리 딜러라기보다 레드 잠만보 전담 포켓몬이다.',
@@ -176,11 +176,11 @@ export const GOLD_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '우츠동',
     finalMoves: ['수면가루', '잎날가르기', '용해액', '풀베기 / 저리가루'],
     moveTable: [
-      { move: '수면가루', usage: '포획 및 보스전 보조' },
-      { move: '잎날가르기', usage: '주력 풀 기술' },
-      { move: '용해액', usage: '독 타입 보조 공격' },
-      { move: '풀베기', usage: '초중반 이동용 비전머신' },
-      { move: '저리가루', usage: '상태이상 보조' },
+      { move: '수면가루', how: 'Lv.습득', usage: '포획 및 보스전 보조' },
+      { move: '잎날가르기', how: 'Lv.습득', usage: '주력 풀 기술' },
+      { move: '용해액', how: 'Lv.습득', usage: '독 타입 보조 공격' },
+      { move: '풀베기', how: 'HM01', usage: '초중반 이동용 비전머신' },
+      { move: '저리가루', how: 'Lv.습득', usage: '상태이상 보조' },
     ],
     notes: [
       '우츠동은 초중반에는 매우 유용하다.',
