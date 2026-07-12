@@ -250,11 +250,11 @@ export function PokemonPlatinumStoryGuidePage() {
 
   return (
     <GuidePageLayout refreshKey={selectedId}>
-      {/* 페이지 헤더 — 쌍둥이마을 배경 */}
+      {/* 페이지 헤더 — 떡잎마을 배경 */}
       <div className="relative mb-6 h-44 overflow-hidden rounded-card sm:h-52">
         <img
           src="/images/guides/platinum/twinleaf.png"
-          alt="쌍둥이마을"
+          alt="떡잎마을"
           className="h-full w-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent" />
@@ -287,11 +287,11 @@ export function PokemonPlatinumStoryGuidePage() {
         </ul>
       </Card>
 
-      {/* 모래내마을 — 게임 시작 지점 */}
+      {/* 모래내마을 — 박사 연구소 */}
       <div className="mb-6 overflow-hidden rounded-card border border-border">
         <div className="border-b border-border bg-surface-hover px-3 py-2">
-          <p className="text-xs font-bold text-ink-faint">게임 시작 지점</p>
-          <p className="text-sm font-black text-ink">모래내마을 — 박사 연구소 · 포켓몬 도감 입수</p>
+          <p className="text-xs font-bold text-ink-faint">떡잎마을 → 모래내마을</p>
+          <p className="text-sm font-black text-ink">모래내마을 박사 연구소 — 포켓몬 도감 입수</p>
         </div>
         <div className="flex justify-center bg-surface-hover p-2">
           <img src="/images/guides/platinum/sandgem.png" alt="모래내마을" className="max-h-56 w-auto max-w-full" />
