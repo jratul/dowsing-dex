@@ -287,14 +287,14 @@ export function PokemonPlatinumStoryGuidePage() {
         </ul>
       </Card>
 
-      {/* 마사고시티 — 게임 시작 지점 */}
+      {/* 모래내마을 — 게임 시작 지점 */}
       <div className="mb-6 overflow-hidden rounded-card border border-border">
         <div className="border-b border-border bg-surface-hover px-3 py-2">
           <p className="text-xs font-bold text-ink-faint">게임 시작 지점</p>
-          <p className="text-sm font-black text-ink">마사고시티 — 박사 연구소 · 포켓몬 도감 입수</p>
+          <p className="text-sm font-black text-ink">모래내마을 — 박사 연구소 · 포켓몬 도감 입수</p>
         </div>
         <div className="flex justify-center bg-surface-hover p-2">
-          <img src="/images/guides/platinum/sandgem.png" alt="마사고시티" className="max-h-56 w-auto max-w-full" />
+          <img src="/images/guides/platinum/sandgem.png" alt="모래내마을" className="max-h-56 w-auto max-w-full" />
         </div>
       </div>
 
