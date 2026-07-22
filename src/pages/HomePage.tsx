@@ -75,7 +75,7 @@ export function HomePage() {
 
       <section className="flex flex-col gap-3 py-6">
         <h2 className="text-lg font-black text-ink">추천 공략</h2>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {SAMPLE_GUIDES.map((guide) => (
             <button key={guide.slug} type="button" onClick={() => navigate(`/guides/${guide.slug}`)} className="text-left">
               <GuideCard guide={guide} iconSpriteUrl={findSamplePokemon(guide.iconPokemonId).spriteUrl} />
