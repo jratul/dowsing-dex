@@ -42,7 +42,7 @@ export function GuideCard({ guide, iconSpriteUrl, variant = 'banner' }: GuideCar
   return (
     <Card className="overflow-hidden p-0">
       <div
-        className={cn('relative flex h-36 items-center justify-end overflow-hidden px-4', !bannerImageUrl && style.bannerClass)}
+        className={cn('relative flex aspect-square items-center justify-end overflow-hidden px-4', !bannerImageUrl && style.bannerClass)}
         style={bannerImageUrl ? { backgroundImage: `url(${bannerImageUrl})`, backgroundSize: 'cover', backgroundPosition: 'center top' } : {}}
       >
         {bannerImageUrl && <div className="absolute inset-0 bg-black/40" />}
