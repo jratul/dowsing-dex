@@ -51,6 +51,13 @@ export interface Pokemon {
   encounterLocations?: EncounterLocation[]
 }
 
+export interface FlavorTextEntry {
+  gen: number
+  version: string  // 한국어 버전명 (동일 텍스트 버전은 '·'로 합침)
+  text: string
+  isKo: boolean    // false = 영문 폴백
+}
+
 export interface EvolutionStage {
   pokemonId: number
   children?: EvolutionStage[] // 분기 진화(이브이 등)는 children이 2개 이상

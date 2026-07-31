@@ -10,6 +10,8 @@ import { EncounterLocationList } from '../components/pokemon/EncounterLocationLi
 import { SpriteImage } from '../components/pokemon/SpriteImage'
 import { SAMPLE_POKEMON, findEvolutionLine, findSamplePokemon } from '../data/sample/pokemon.sample'
 import { findMove, loadLearnsets } from '../data/sample/moves.sample'
+import { loadFlavorTexts } from '../data/sample/flavorTexts'
+import type { FlavorTextEntry } from '../types/pokemon'
 import { EvolutionMoveComparison } from '../components/pokemon/EvolutionMoveComparison'
 import type { EvolutionStage } from '../types/pokemon'
 import type { Generation, Learnset } from '../types/move'
@@ -35,15 +37,27 @@ export function PokemonDetailPage() {
   const [moveData, setMoveData] = useState<{ learnsets: Learnset[]; recommended: number[] } | undefined>(undefined)
   const [selectedGeneration, setSelectedGeneration] = useState<Generation | null>(null)
   const [familyLearnsets, setFamilyLearnsets] = useState<Map<number, { learnsets: Learnset[]; recommended: number[] }>>(new Map())
+  const [flavorTexts, setFlavorTexts] = useState<FlavorTextEntry[]>([])
+  const [isLoadingFlavor, setIsLoadingFlavor] = useState(false)
+  const [selectedFlavorGen, setSelectedFlavorGen] = useState<number | null>(null)
 
   useEffect(() => {
     setMoveData(undefined)
     setSelectedGeneration(null)
     setFamilyLearnsets(new Map())
+    setFlavorTexts([])
+    setSelectedFlavorGen(null)
     if (!pokemon) return
     let cancelled = false
     loadLearnsets(pokemon.id).then((data) => {
       if (!cancelled) setMoveData(data)
+    })
+    setIsLoadingFlavor(true)
+    loadFlavorTexts(pokemon.dexNumber).then((data) => {
+      if (!cancelled) {
+        setFlavorTexts(data)
+        setIsLoadingFlavor(false)
+      }
     })
     return () => { cancelled = true }
   }, [pokemon, id])
@@ -208,6 +222,57 @@ export function PokemonDetailPage() {
           )}
         </div>
       </div>
+
+      {/* 도감 설명 */}
+      {(isLoadingFlavor || flavorTexts.length > 0) && (() => {
+        const flavorGens = [...new Set(flavorTexts.map((e) => e.gen))].sort((a, b) => a - b)
+        const activeGen = selectedFlavorGen ?? flavorGens[0] ?? 1
+        const activeEntries = flavorTexts.filter((e) => e.gen === activeGen)
+        return (
+          <Card className="mb-6 p-4">
+            <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+              <h2 className="text-sm font-black text-ink-faint">도감 설명</h2>
+              {flavorGens.length > 1 && (
+                <div className="flex gap-1.5 overflow-x-auto">
+                  {flavorGens.map((gen) => (
+                    <button
+                      key={gen}
+                      type="button"
+                      onClick={() => setSelectedFlavorGen(gen)}
+                      className={cn(
+                        'shrink-0 rounded-chip border px-3 py-1.5 text-xs font-bold transition-colors',
+                        activeGen === gen
+                          ? 'border-brand-red bg-brand-red text-white'
+                          : 'border-border-strong text-ink hover:border-brand-red hover:text-brand-red',
+                      )}
+                    >
+                      {gen}세대
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+            {isLoadingFlavor ? (
+              <div className="space-y-3">
+                <div className="h-4 w-1/4 animate-pulse rounded bg-surface-hover" />
+                <div className="h-10 animate-pulse rounded bg-surface-hover" />
+              </div>
+            ) : (
+              <div className="space-y-4">
+                {activeEntries.map((entry) => (
+                  <div key={entry.version}>
+                    <span className="text-xxs font-bold text-ink-faint">
+                      {entry.version}
+                      {!entry.isKo && <span className="ml-1 font-normal">(영문)</span>}
+                    </span>
+                    <p className="mt-0.5 text-sm leading-relaxed text-ink">{entry.text}</p>
+                  </div>
+                ))}
+              </div>
+            )}
+          </Card>
+        )
+      })()}
 
       <div className="mb-6 grid gap-4 sm:grid-cols-2">
         <Card className="p-4">
