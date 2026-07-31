@@ -225,9 +225,10 @@ export function PokemonDetailPage() {
 
       {/* 도감 설명 */}
       {(isLoadingFlavor || flavorTexts.length > 0) && (() => {
-        const flavorGens = [...new Set(flavorTexts.map((e) => e.gen))].sort((a, b) => a - b)
+        const koEntries = flavorTexts.filter((e) => e.isKo)
+        const flavorGens = [...new Set(koEntries.map((e) => e.gen))].sort((a, b) => a - b)
         const activeGen = selectedFlavorGen ?? flavorGens[0] ?? 1
-        const activeEntries = flavorTexts.filter((e) => e.gen === activeGen)
+        const activeEntries = koEntries.filter((e) => e.gen === activeGen)
         return (
           <Card className="mb-6 p-4">
             <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
@@ -257,14 +258,13 @@ export function PokemonDetailPage() {
                 <div className="h-4 w-1/4 animate-pulse rounded bg-surface-hover" />
                 <div className="h-10 animate-pulse rounded bg-surface-hover" />
               </div>
+            ) : koEntries.length === 0 ? (
+              <p className="text-sm text-ink-faint">한국어 도감 설명을 지원하지 않는 세대입니다.</p>
             ) : (
               <div className="space-y-4">
                 {activeEntries.map((entry) => (
                   <div key={entry.version}>
-                    <span className="text-xxs font-bold text-ink-faint">
-                      {entry.version}
-                      {!entry.isKo && <span className="ml-1 font-normal">(영문)</span>}
-                    </span>
+                    <span className="text-xxs font-bold text-ink-faint">{entry.version}</span>
                     <p className="mt-0.5 text-sm leading-relaxed text-ink">{entry.text}</p>
                   </div>
                 ))}
