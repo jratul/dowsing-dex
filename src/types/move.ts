@@ -11,6 +11,7 @@ export interface Move {
   power?: number
   accuracy?: number
   pp: number
+  effectKo?: string
 }
 
 /** 세대별 대표 게임판(예: 1세대 = 레드·블루). */

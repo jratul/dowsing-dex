@@ -1,7 +1,10 @@
 import type { Learnset, Move } from '../../types/move'
 import { ALL_MOVES } from '../moves/all-moves.generated'
+import { MOVE_DESCRIPTIONS } from '../moves/move-descriptions.generated'
 
-const MOVE_MAP = new Map(ALL_MOVES.map((m) => [m.id, m]))
+const MOVE_MAP = new Map(
+  ALL_MOVES.map((m) => [m.id, MOVE_DESCRIPTIONS[m.id] ? { ...m, effectKo: MOVE_DESCRIPTIONS[m.id] } : m]),
+)
 
 /** 전체 포켓몬의 기술 사전. PokeAPI 기반으로 scripts/fetch-pokedex.mjs가 생성한다. */
 export function findMove(id: number): Move | undefined {

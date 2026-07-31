@@ -5,6 +5,8 @@ import type { Generation, Learnset, Move } from '../../types/move'
 import { TypeBadge } from './TypeBadge'
 import { cn } from '../../lib/cn'
 
+const INDENT = 'pl-[calc(2.5rem+0.5rem)]'
+
 const GENERATION_ORDER: Generation[] = ['1세대', '2세대', '3세대', '4세대', '5세대', '6세대', '7세대', '8세대', '9세대']
 
 export interface MoveListProps {
@@ -17,15 +19,29 @@ export interface MoveListProps {
 }
 
 function MoveRow({ leading, move }: { leading: string; move: Move }) {
+  const [open, setOpen] = useState(false)
   return (
-    <div className="grid grid-cols-[2.5rem_minmax(6rem,1fr)_3.5rem_3rem_2.5rem_2.5rem_2rem] items-center gap-2 py-1.5 text-xs">
-      <span className="font-bold text-ink-faint">{leading}</span>
-      <span className="font-bold text-ink">{move.nameKo}</span>
-      <TypeBadge type={move.type} size="sm" />
-      <span className="text-ink-muted">{move.category}</span>
-      <span className="text-right text-ink-muted">{move.power ?? '-'}</span>
-      <span className="text-right text-ink-muted">{move.accuracy ?? '-'}</span>
-      <span className="text-right text-ink-muted">{move.pp}</span>
+    <div
+      className={cn('border-b border-border/50 last:border-0', move.effectKo && 'cursor-pointer')}
+      onClick={move.effectKo ? () => setOpen((v) => !v) : undefined}
+    >
+      <div className="grid grid-cols-[2.5rem_minmax(6rem,1fr)_3.5rem_3rem_2.5rem_2.5rem_2rem] items-center gap-2 py-1.5 text-xs">
+        <span className="font-bold text-ink-faint">{leading}</span>
+        <span className="flex items-center gap-1 font-bold text-ink">
+          {move.nameKo}
+          {move.effectKo && (
+            <span className="text-xxs text-ink-faint">{open ? '▲' : '▼'}</span>
+          )}
+        </span>
+        <TypeBadge type={move.type} size="sm" />
+        <span className="text-ink-muted">{move.category}</span>
+        <span className="text-right text-ink-muted">{move.power ?? '-'}</span>
+        <span className="text-right text-ink-muted">{move.accuracy ?? '-'}</span>
+        <span className="text-right text-ink-muted">{move.pp}</span>
+      </div>
+      {open && move.effectKo && (
+        <p className={cn('pb-2 text-xxs leading-relaxed text-ink-muted', INDENT)}>{move.effectKo}</p>
+      )}
     </div>
   )
 }
