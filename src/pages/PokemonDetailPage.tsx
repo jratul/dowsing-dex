@@ -39,14 +39,12 @@ export function PokemonDetailPage() {
   const [familyLearnsets, setFamilyLearnsets] = useState<Map<number, { learnsets: Learnset[]; recommended: number[] }>>(new Map())
   const [flavorTexts, setFlavorTexts] = useState<FlavorTextEntry[]>([])
   const [isLoadingFlavor, setIsLoadingFlavor] = useState(false)
-  const [selectedFlavorGen, setSelectedFlavorGen] = useState<number | null>(null)
 
   useEffect(() => {
     setMoveData(undefined)
     setSelectedGeneration(null)
     setFamilyLearnsets(new Map())
     setFlavorTexts([])
-    setSelectedFlavorGen(null)
     if (!pokemon) return
     let cancelled = false
     loadLearnsets(pokemon.id).then((data) => {
@@ -224,55 +222,32 @@ export function PokemonDetailPage() {
       </div>
 
       {/* 도감 설명 */}
-      {(isLoadingFlavor || flavorTexts.length > 0) && (() => {
-        const koEntries = flavorTexts.filter((e) => e.isKo)
-        const flavorGens = [...new Set(koEntries.map((e) => e.gen))].sort((a, b) => a - b)
-        const activeGen = selectedFlavorGen ?? flavorGens[0] ?? 1
-        const activeEntries = koEntries.filter((e) => e.gen === activeGen)
-        return (
-          <Card className="mb-6 p-4">
-            <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-              <h2 className="text-sm font-black text-ink-faint">도감 설명</h2>
-              {flavorGens.length > 1 && (
-                <div className="flex gap-1.5 overflow-x-auto">
-                  {flavorGens.map((gen) => (
-                    <button
-                      key={gen}
-                      type="button"
-                      onClick={() => setSelectedFlavorGen(gen)}
-                      className={cn(
-                        'shrink-0 rounded-chip border px-3 py-1.5 text-xs font-bold transition-colors',
-                        activeGen === gen
-                          ? 'border-brand-red bg-brand-red text-white'
-                          : 'border-border-strong text-ink hover:border-brand-red hover:text-brand-red',
-                      )}
-                    >
-                      {gen}세대
-                    </button>
-                  ))}
-                </div>
-              )}
+      {(isLoadingFlavor || flavorTexts.length > 0) && (
+        <Card className="mb-6 p-4">
+          <h2 className="mb-3 text-sm font-black text-ink-faint">도감 설명</h2>
+          {isLoadingFlavor ? (
+            <div className="space-y-3">
+              <div className="h-4 w-1/4 animate-pulse rounded bg-surface-hover" />
+              <div className="h-10 animate-pulse rounded bg-surface-hover" />
             </div>
-            {isLoadingFlavor ? (
-              <div className="space-y-3">
-                <div className="h-4 w-1/4 animate-pulse rounded bg-surface-hover" />
-                <div className="h-10 animate-pulse rounded bg-surface-hover" />
-              </div>
-            ) : koEntries.length === 0 ? (
-              <p className="text-sm text-ink-faint">한국어 도감 설명을 지원하지 않는 세대입니다.</p>
-            ) : (
+          ) : (() => {
+            const koEntries = flavorTexts.filter((e) => e.isKo)
+            if (koEntries.length === 0) {
+              return <p className="text-sm text-ink-faint">한국어 도감 설명을 지원하지 않는 버전입니다.</p>
+            }
+            return (
               <div className="space-y-4">
-                {activeEntries.map((entry) => (
+                {koEntries.map((entry) => (
                   <div key={entry.version}>
-                    <span className="text-xxs font-bold text-ink-faint">{entry.version}</span>
+                    <span className="text-xxs font-bold text-ink-faint">{entry.gen}세대 · {entry.version}</span>
                     <p className="mt-0.5 text-sm leading-relaxed text-ink">{entry.text}</p>
                   </div>
                 ))}
               </div>
-            )}
-          </Card>
-        )
-      })()}
+            )
+          })()}
+        </Card>
+      )}
 
       <div className="mb-6 grid gap-4 sm:grid-cols-2">
         <Card className="p-4">
