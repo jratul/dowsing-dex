@@ -204,7 +204,7 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
                       </tr>
                       {isOpen && move.effectKo && (
                         <tr key={`${moveId}-desc`} className="border-b border-border/50">
-                          <td colSpan={colCount} className="pb-2 pl-1 pr-3 text-xxs leading-relaxed text-ink-muted">{move.effectKo}</td>
+                          <td colSpan={colCount} className="py-2 pl-1 pr-3 text-xs leading-relaxed text-ink">{move.effectKo}</td>
                         </tr>
                       )}
                     </>
@@ -248,7 +248,7 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
                       </tr>
                       {isOpen && move.effectKo && (
                         <tr key={`${moveId}-desc`} className="border-b border-border/50">
-                          <td colSpan={colCount} className="pb-2 pl-1 pr-3 text-xxs leading-relaxed text-ink-muted">{move.effectKo}</td>
+                          <td colSpan={colCount} className="py-2 pl-1 pr-3 text-xs leading-relaxed text-ink">{move.effectKo}</td>
                         </tr>
                       )}
                     </>
@@ -292,7 +292,7 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
                       </tr>
                       {isOpen && move.effectKo && (
                         <tr key={`${moveId}-desc`} className="border-b border-border/50">
-                          <td colSpan={colCount} className="pb-2 pl-1 pr-3 text-xxs leading-relaxed text-ink-muted">{move.effectKo}</td>
+                          <td colSpan={colCount} className="py-2 pl-1 pr-3 text-xs leading-relaxed text-ink">{move.effectKo}</td>
                         </tr>
                       )}
                     </>

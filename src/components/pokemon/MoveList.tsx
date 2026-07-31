@@ -40,7 +40,7 @@ function MoveRow({ leading, move }: { leading: string; move: Move }) {
         <span className="text-right text-ink-muted">{move.pp}</span>
       </div>
       {open && move.effectKo && (
-        <p className={cn('pb-2 text-xxs leading-relaxed text-ink-muted', INDENT)}>{move.effectKo}</p>
+        <p className={cn('py-2 text-xs leading-relaxed text-ink', INDENT)}>{move.effectKo}</p>
       )}
     </div>
   )
