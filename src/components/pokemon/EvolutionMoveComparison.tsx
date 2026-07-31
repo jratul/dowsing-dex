@@ -28,6 +28,16 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
 
   const [selectedGen, setSelectedGen] = useState<Generation | null>(null)
   const [versionIndex, setVersionIndex] = useState(0)
+  const [openMoveIds, setOpenMoveIds] = useState<Set<number>>(new Set())
+
+  function toggleMove(id: number) {
+    setOpenMoveIds((prev) => {
+      const next = new Set(prev)
+      if (next.has(id)) next.delete(id)
+      else next.add(id)
+      return next
+    })
+  }
 
   const activeGen = selectedGen ?? generations[0]
 
@@ -169,24 +179,35 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
                 {levelUpMoves.map((moveId) => {
                   const move = findMove(moveId)
                   if (!move) return null
+                  const isOpen = openMoveIds.has(moveId)
                   return (
-                    <tr key={moveId} className="border-b border-border/50 hover:bg-surface-hover">
-                      <td className="py-1.5 pr-3 font-bold text-ink">{move.nameKo}</td>
-                      <td className="py-1.5 pr-3">
-                        <TypeBadge type={move.type} size="sm" />
-                      </td>
-                      <td className="py-1.5 pr-3 text-ink-muted">{move.category}</td>
-                      <td className="py-1.5 pr-3 text-right text-ink-muted">{move.power ?? '—'}</td>
-                      <td className="py-1.5 pr-4 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
-                      {memberLearnsets.map((ls, i) => {
-                        const lm = ls?.levelUp.find((m) => m.moveId === moveId)
-                        return (
-                          <td key={familyMembers[i].id} className="px-2 py-1.5 text-center font-bold text-ink">
-                            {lm ? `Lv.${lm.level}` : <span className="text-ink-faint">—</span>}
-                          </td>
-                        )
-                      })}
-                    </tr>
+                    <>
+                      <tr key={moveId} className="border-b border-border/50 hover:bg-surface-hover">
+                        <td className="py-1.5 pr-3">
+                          <button type="button" className={cn('flex items-center gap-1 text-left font-bold text-ink', move.effectKo && 'cursor-pointer')} onClick={move.effectKo ? () => toggleMove(moveId) : undefined}>
+                            {move.nameKo}
+                            {move.effectKo && <span className="text-xxs text-ink-faint">{isOpen ? '▲' : '▼'}</span>}
+                          </button>
+                        </td>
+                        <td className="py-1.5 pr-3"><TypeBadge type={move.type} size="sm" /></td>
+                        <td className="py-1.5 pr-3 text-ink-muted">{move.category}</td>
+                        <td className="py-1.5 pr-3 text-right text-ink-muted">{move.power ?? '—'}</td>
+                        <td className="py-1.5 pr-4 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
+                        {memberLearnsets.map((ls, i) => {
+                          const lm = ls?.levelUp.find((m) => m.moveId === moveId)
+                          return (
+                            <td key={familyMembers[i].id} className="px-2 py-1.5 text-center font-bold text-ink">
+                              {lm ? `Lv.${lm.level}` : <span className="text-ink-faint">—</span>}
+                            </td>
+                          )
+                        })}
+                      </tr>
+                      {isOpen && move.effectKo && (
+                        <tr key={`${moveId}-desc`} className="border-b border-border/50">
+                          <td colSpan={colCount} className="pb-2 pl-1 pr-3 text-xxs leading-relaxed text-ink-muted">{move.effectKo}</td>
+                        </tr>
+                      )}
+                    </>
                   )
                 })}
               </>
@@ -202,28 +223,35 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
                 {machineMoves.map((moveId) => {
                   const move = findMove(moveId)
                   if (!move) return null
+                  const isOpen = openMoveIds.has(moveId)
                   return (
-                    <tr key={moveId} className="border-b border-border/50 hover:bg-surface-hover">
-                      <td className="py-1.5 pr-3 font-bold text-ink">{move.nameKo}</td>
-                      <td className="py-1.5 pr-3">
-                        <TypeBadge type={move.type} size="sm" />
-                      </td>
-                      <td className="py-1.5 pr-3 text-ink-muted">{move.category}</td>
-                      <td className="py-1.5 pr-3 text-right text-ink-muted">{move.power ?? '—'}</td>
-                      <td className="py-1.5 pr-4 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
-                      {memberLearnsets.map((ls, i) => {
-                        const mm = ls?.machines.find((m) => m.moveId === moveId)
-                        return (
-                          <td key={familyMembers[i].id} className="px-2 py-1.5 text-center font-bold text-ink">
-                            {mm ? (
-                              `${mm.machine}${String(mm.number).padStart(2, '0')}`
-                            ) : (
-                              <span className="text-ink-faint">—</span>
-                            )}
-                          </td>
-                        )
-                      })}
-                    </tr>
+                    <>
+                      <tr key={moveId} className="border-b border-border/50 hover:bg-surface-hover">
+                        <td className="py-1.5 pr-3">
+                          <button type="button" className={cn('flex items-center gap-1 text-left font-bold text-ink', move.effectKo && 'cursor-pointer')} onClick={move.effectKo ? () => toggleMove(moveId) : undefined}>
+                            {move.nameKo}
+                            {move.effectKo && <span className="text-xxs text-ink-faint">{isOpen ? '▲' : '▼'}</span>}
+                          </button>
+                        </td>
+                        <td className="py-1.5 pr-3"><TypeBadge type={move.type} size="sm" /></td>
+                        <td className="py-1.5 pr-3 text-ink-muted">{move.category}</td>
+                        <td className="py-1.5 pr-3 text-right text-ink-muted">{move.power ?? '—'}</td>
+                        <td className="py-1.5 pr-4 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
+                        {memberLearnsets.map((ls, i) => {
+                          const mm = ls?.machines.find((m) => m.moveId === moveId)
+                          return (
+                            <td key={familyMembers[i].id} className="px-2 py-1.5 text-center font-bold text-ink">
+                              {mm ? `${mm.machine}${String(mm.number).padStart(2, '0')}` : <span className="text-ink-faint">—</span>}
+                            </td>
+                          )
+                        })}
+                      </tr>
+                      {isOpen && move.effectKo && (
+                        <tr key={`${moveId}-desc`} className="border-b border-border/50">
+                          <td colSpan={colCount} className="pb-2 pl-1 pr-3 text-xxs leading-relaxed text-ink-muted">{move.effectKo}</td>
+                        </tr>
+                      )}
+                    </>
                   )
                 })}
               </>
@@ -239,24 +267,35 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
                 {tutorMoves.map((moveId) => {
                   const move = findMove(moveId)
                   if (!move) return null
+                  const isOpen = openMoveIds.has(moveId)
                   return (
-                    <tr key={moveId} className="border-b border-border/50 hover:bg-surface-hover">
-                      <td className="py-1.5 pr-3 font-bold text-ink">{move.nameKo}</td>
-                      <td className="py-1.5 pr-3">
-                        <TypeBadge type={move.type} size="sm" />
-                      </td>
-                      <td className="py-1.5 pr-3 text-ink-muted">{move.category}</td>
-                      <td className="py-1.5 pr-3 text-right text-ink-muted">{move.power ?? '—'}</td>
-                      <td className="py-1.5 pr-4 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
-                      {memberLearnsets.map((ls, i) => {
-                        const has = ls?.tutor.some((m) => m.moveId === moveId)
-                        return (
-                          <td key={familyMembers[i].id} className="px-2 py-1.5 text-center font-bold text-ink">
-                            {has ? '●' : <span className="text-ink-faint">—</span>}
-                          </td>
-                        )
-                      })}
-                    </tr>
+                    <>
+                      <tr key={moveId} className="border-b border-border/50 hover:bg-surface-hover">
+                        <td className="py-1.5 pr-3">
+                          <button type="button" className={cn('flex items-center gap-1 text-left font-bold text-ink', move.effectKo && 'cursor-pointer')} onClick={move.effectKo ? () => toggleMove(moveId) : undefined}>
+                            {move.nameKo}
+                            {move.effectKo && <span className="text-xxs text-ink-faint">{isOpen ? '▲' : '▼'}</span>}
+                          </button>
+                        </td>
+                        <td className="py-1.5 pr-3"><TypeBadge type={move.type} size="sm" /></td>
+                        <td className="py-1.5 pr-3 text-ink-muted">{move.category}</td>
+                        <td className="py-1.5 pr-3 text-right text-ink-muted">{move.power ?? '—'}</td>
+                        <td className="py-1.5 pr-4 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
+                        {memberLearnsets.map((ls, i) => {
+                          const has = ls?.tutor.some((m) => m.moveId === moveId)
+                          return (
+                            <td key={familyMembers[i].id} className="px-2 py-1.5 text-center font-bold text-ink">
+                              {has ? '●' : <span className="text-ink-faint">—</span>}
+                            </td>
+                          )
+                        })}
+                      </tr>
+                      {isOpen && move.effectKo && (
+                        <tr key={`${moveId}-desc`} className="border-b border-border/50">
+                          <td colSpan={colCount} className="pb-2 pl-1 pr-3 text-xxs leading-relaxed text-ink-muted">{move.effectKo}</td>
+                        </tr>
+                      )}
+                    </>
                   )
                 })}
               </>
