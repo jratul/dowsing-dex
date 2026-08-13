@@ -57,6 +57,13 @@ export const router = createBrowserRouter([
           })),
       },
       {
+        path: '/guides/pokemon-heartgold-walkthrough',
+        lazy: () =>
+          import('./pages/PokemonHeartgoldWalkthroughGuidePage').then((m) => ({
+            Component: m.PokemonHeartgoldWalkthroughGuidePage,
+          })),
+      },
+      {
         path: '/guides/pokemon-emerald-story',
         lazy: () =>
           import('./pages/PokemonEmeraldStoryGuidePage').then((m) => ({

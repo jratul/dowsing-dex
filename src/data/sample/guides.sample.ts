@@ -56,6 +56,15 @@ export const SAMPLE_GUIDES: Guide[] = [
     bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
   },
   {
+    slug: 'pokemon-heartgold-walkthrough',
+    category: '공략',
+    title: '포켓몬 하트골드버전 최고 효율 진행 공략',
+    iconPokemonId: 157,
+    relatedPokemonIds: [157, 181, 130, 214, 131, 468],
+    summary: '브케인 스타팅 기준 처음부터 레드전까지 최고 효율 루트. 관장 대응·포획 타이밍·HM 배분·레벨업 가이드 완비.',
+    bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
+  },
+  {
     slug: 'pokemon-emerald-story',
     category: '공략',
     title: '포켓몬 에메랄드버전 스토리 엔트리 공략',

@@ -1,0 +1,630 @@
+// 하트골드버전 최고 효율 진행 공략 데이터.
+// 브케인 스타팅 기준, 성도 8관 → 사천왕·목호 → 관동 8관 → 레드 완주.
+
+export interface WalkthroughCatch {
+  pokemonId: number
+  pokemon: string
+  location: string
+  timing: string
+  note: string
+  priority: 'star' | 'normal'
+}
+
+export interface WalkthroughKeyItem {
+  item: string
+  from: string
+  note?: string
+}
+
+export interface WalkthroughBossRow {
+  opponent: string
+  answer: string
+}
+
+export interface WalkthroughBoss {
+  leader: string
+  gym: string
+  gymType: string
+  levels: string
+  note: string
+  rows: WalkthroughBossRow[]
+  badge: string
+}
+
+export interface WalkthroughPhase {
+  id: string
+  title: string
+  subtitle: string
+  levelRange: string
+  todos: string[]
+  catches?: WalkthroughCatch[]
+  keyItems?: WalkthroughKeyItem[]
+  boss?: WalkthroughBoss
+}
+
+// ──────────────────────────────────────────────────────────────
+// 추천 파티
+// ──────────────────────────────────────────────────────────────
+export interface PartyMember {
+  pokemonId: number
+  pokemon: string
+  catchTiming: string
+  role: string
+  keyMoves: string[]
+}
+
+export const HGW_PARTY: PartyMember[] = [
+  {
+    pokemonId: 157,
+    pokemon: '블레이범',
+    catchTiming: '게임 시작',
+    role: '불꽃 주력 딜러 — 화염방사·지진·솔라빔으로 대부분의 타입 커버',
+    keyMoves: ['화염방사', '지진', '솔라빔', '번개펀치'],
+  },
+  {
+    pokemonId: 181,
+    pokemon: '전룡',
+    catchTiming: '1관 직후 32번도로',
+    role: '전기 특수 딜러 — 목호 갸라도스 4배, 이슬·마티스 담당',
+    keyMoves: ['10만볼트', '전기자석파', '빛의장막', '신호탄'],
+  },
+  {
+    pokemonId: 214,
+    pokemon: '헤라크로스',
+    catchTiming: '2관 전후 박치기 나무',
+    role: 'HG 전용. 격투·벌레 물리 딜러 — 에스퍼·악·레드 잠만보 처리',
+    keyMoves: ['메가폰', '인파이트', '사이코커터', '메가뿔치기'],
+  },
+  {
+    pokemonId: 130,
+    pokemon: '갸라도스',
+    catchTiming: '7관 전 분노의 호수 이벤트',
+    role: 'HM 담당 겸 물 딜러 — 파도타기·폭포오르기·괴력',
+    keyMoves: ['파도타기', '폭포오르기', '괴력', '아이언테일'],
+  },
+  {
+    pokemonId: 131,
+    pokemon: '라프라스',
+    catchTiming: '4관 직후 연결동굴 금요일',
+    role: '물/얼음 딜러 — 이향·목호 드래곤 처리, 레드 리자몽',
+    keyMoves: ['냉동빔', '얼음기둥', '파도타기', '노래'],
+  },
+  {
+    pokemonId: 468,
+    pokemon: '토게키스',
+    catchTiming: '토게피(게임 초반) → 친밀도 진화 → 빛나는돌',
+    role: '노말/비행 딜러 — 격투·악 타입 대응, 오라스피어로 격투 견제',
+    keyMoves: ['에어슬래시', '오라스피어', '빛의장막', '파동탄'],
+  },
+]
+
+// ──────────────────────────────────────────────────────────────
+// 핵심 HM 배분표
+// ──────────────────────────────────────────────────────────────
+export interface HmRow {
+  hm: string
+  move: string
+  holder: string
+  obtainedAt: string
+  badge: string
+}
+
+export const HGW_HM_TABLE: HmRow[] = [
+  { hm: 'HM01', move: '박치기', holder: '마그케인', obtainedAt: '일목의 숲 NPC', badge: '1관(조약)' },
+  { hm: 'HM02', move: '공중날기', holder: '헤라크로스', obtainedAt: '쌍섬 마루 아내', badge: '5관(폭풍)' },
+  { hm: 'HM03', move: '파도타기', holder: '갸라도스', obtainedAt: '에크루테크 어른', badge: '4관(안개)' },
+  { hm: 'HM04', move: '괴력', holder: '갸라도스', obtainedAt: '올리브시티 포켓몬센터 선원', badge: '5관(폭풍)' },
+  { hm: 'HM05', move: '섬광', holder: '보조 포켓몬', obtainedAt: '종각탑 현인', badge: '없음' },
+  { hm: 'HM06', move: '소용돌이', holder: '갸라도스', obtainedAt: '마호가니 이벤트 후 랜스', badge: '7관(서리)' },
+  { hm: 'HM07', move: '폭포오르기', holder: '갸라도스', obtainedAt: '용의 굴 어른 (8관 후)', badge: '8관(오름)' },
+]
+
+// ──────────────────────────────────────────────────────────────
+// 진행 Phase
+// ──────────────────────────────────────────────────────────────
+export const HGW_PHASES: WalkthroughPhase[] = [
+  // ─── Phase 1 ───
+  {
+    id: 'phase1',
+    title: '1관 은빛체육관',
+    subtitle: '관장 진영 — 비행 타입',
+    levelRange: '권장 마그케인 Lv.15',
+    todos: [
+      '스타팅: 브케인 선택 (불꽃 → 3관 밀탱크까지 2관 유리)',
+      'Mr. Pokemon 심부름 → 토게피 달걀 수령 ★ (31번도로 Mr. Pokemon의 집)',
+      '박사 라이벌전 1회 → 30·31번도로 레벨업',
+      '브케인 Lv.14 → 마그케인 진화 확인 (불꽃세례 습득)',
+      '종각탑 현인에게서 HM05 섬광 입수 (선택)',
+    ],
+    catches: [
+      {
+        pokemonId: 175,
+        pokemon: '토게피',
+        location: '31번도로 Mr. Pokemon의 집',
+        timing: '게임 직후',
+        note: '달걀로 받음. 친밀도 최대 시 토게틱으로 진화. 빛나는돌로 토게키스 최종 진화.',
+        priority: 'star',
+      },
+    ],
+    keyItems: [
+      { item: 'HM05 섬광', from: '종각탑 현인', note: '선택 — 배틀 보조용' },
+    ],
+    boss: {
+      leader: '진영',
+      gym: '은빛체육관',
+      gymType: '비행',
+      levels: 'Lv.9·13',
+      note: '마그케인 불꽃세례 한 방. 레벨 올리면 어렵지 않다.',
+      rows: [
+        { opponent: '구구 Lv.9 (비행/노말)', answer: '마그케인 불꽃세례' },
+        { opponent: '피죤 Lv.13 (비행/노말)', answer: '마그케인 불꽃세례' },
+      ],
+      badge: '조약배지',
+    },
+  },
+
+  // ─── Phase 2 ───
+  {
+    id: 'phase2',
+    title: '2관 아즈마체육관',
+    subtitle: '관장 쑤기 — 벌레 타입',
+    levelRange: '권장 마그케인 Lv.19~20',
+    todos: [
+      '★ 32번도로에서 메리프 포획 (전기 핵심 멤버, 즉시 육성 시작)',
+      '아즈마마을 야돈우물 로켓단 이벤트 해결',
+      '일목의 숲 통과 → HM01 박치기 입수',
+      '★ 33번도로 박치기 나무로 헤라크로스 포획 (박치기 기술 입수 후)',
+      '라이벌전 (아즈마마을 앞) 격파',
+    ],
+    catches: [
+      {
+        pokemonId: 179,
+        pokemon: '메리프',
+        location: '32번도로',
+        timing: '1관 직후',
+        note: '전기 핵심. 빠르게 육성해야 전룡까지 이어진다. Lv.15→보송송, Lv.30→전룡.',
+        priority: 'star',
+      },
+      {
+        pokemonId: 214,
+        pokemon: '헤라크로스',
+        location: '33번도로 나무 박치기',
+        timing: '박치기 HM 입수 후',
+        note: 'HG 전용! 박치기 배운 포켓몬으로 나무를 흔들면 등장. 확률은 낮으니 인내 필요.',
+        priority: 'star',
+      },
+    ],
+    keyItems: [
+      { item: 'HM01 박치기', from: '일목의 숲 숯쟁이의 제자', note: '헤라크로스 포획에 필수' },
+    ],
+    boss: {
+      leader: '쑤기',
+      gym: '아즈마체육관',
+      gymType: '벌레',
+      levels: 'Lv.14·14·16',
+      note: '마그케인 불꽃세례로 전부 처리. 쉐이미(벌레/비행)는 불꽃 2배.',
+      rows: [
+        { opponent: '단데기 Lv.14 (벌레)', answer: '마그케인 불꽃세례' },
+        { opponent: '딱충이 Lv.14 (벌레/독)', answer: '마그케인 불꽃세례' },
+        { opponent: '스라크 Lv.16 (벌레/비행)', answer: '마그케인 불꽃세례 (2배!)' },
+      ],
+      badge: '벌레배지',
+    },
+  },
+
+  // ─── Phase 3 ───
+  {
+    id: 'phase3',
+    title: '3관 황금빛체육관',
+    subtitle: '관장 민화 — 노말 타입',
+    levelRange: '권장 마그케인 Lv.20~22',
+    todos: [
+      '일목의 숲 통과 → 황금빛시티',
+      '★ 이수재의 집 방문 (3관 이후) → 이브이 입수 (후 에브이 진화 가능)',
+      '국립공원 포충대회 화요일·목요일·토요일 참가 → 빛나는돌 1위 상품 목표',
+      '토게피 친밀도 최대화 (비타민 사용, 충분한 도보) → 토게틱 진화 목표',
+      '밀탱크 대책: 헤라크로스 인파이트 또는 전기자석파 마비 후 공략',
+    ],
+    catches: [],
+    keyItems: [
+      { item: '이브이', from: '황금빛시티 이수재의 집 (3관 이후)', note: '낮 친밀도 최대 → 에브이(에스퍼) 진화. 토게키스 대체로 활용 가능.' },
+      { item: '빛나는돌', from: '국립공원 포충대회 1위 상품', note: '토게틱 → 토게키스 진화에 필요. 화·목·토요일 참가.' },
+    ],
+    boss: {
+      leader: '민화',
+      gym: '황금빛체육관',
+      gymType: '노말',
+      levels: 'Lv.17·19',
+      note: '밀탱크의 구르기가 위협. 헤라크로스 인파이트(격투 2배)로 끝낸다. 전기자석파로 마비 후 공략도 유효.',
+      rows: [
+        { opponent: '삐삐 Lv.17 (노말)', answer: '마그케인 불꽃세례 (레벨 차로 일격)' },
+        { opponent: '밀탱크 Lv.19 (노말)', answer: '헤라크로스 인파이트 (격투 2배 ★)' },
+      ],
+      badge: '플레인배지',
+    },
+  },
+
+  // ─── Phase 4 ───
+  {
+    id: 'phase4',
+    title: '4관 에크루테크체육관',
+    subtitle: '관장 이철 — 고스트 타입',
+    levelRange: '권장 Lv.25~27',
+    todos: [
+      '에크루테크 불탄탑 방문 → 엔테이·라이코·스이쿤 발현 (스토리 이벤트)',
+      '★ HM03 파도타기 입수 (에크루테크 무용도장 이후 어른에게서)',
+      '★ 라프라스 포획: HM03 입수 직후 연결동굴 B1F — 금요일만 등장!',
+      '  DS 날짜 설정으로 금요일로 맞춰서 바로 잡을 것 (단 한 마리만 등장)',
+      '라이벌전 (에크루테크) 격파',
+      '토게피 친밀도 관리 지속',
+    ],
+    catches: [
+      {
+        pokemonId: 131,
+        pokemon: '라프라스',
+        location: '연결동굴 B1F (파도타기 필요)',
+        timing: 'HM03 입수 후, 금요일',
+        note: '★ 매주 금요일 단 한 마리만. 레벨 20. 라이벌 포함 드래곤 처리 핵심 멤버.',
+        priority: 'star',
+      },
+    ],
+    keyItems: [
+      { item: 'HM03 파도타기', from: '에크루테크 무용도장 어른', note: '라프라스 포획·이동에 즉시 사용' },
+    ],
+    boss: {
+      leader: '이철',
+      gym: '에크루테크체육관',
+      gymType: '고스트',
+      levels: 'Lv.21·21·21·25',
+      note: '고스트는 노말·격투 무효. 전기자석파(보송송)로 마비시킨 뒤 화염방사로 중립 공격. 팬텀은 땅 약점 — 지진이 있으면 2배.',
+      rows: [
+        { opponent: '고오스 Lv.21 x2 (고스트/독)', answer: '마그케인 화염방사 (중립, 레벨 우위)' },
+        { opponent: '고우스트 Lv.21 (고스트/독)', answer: '보송송 전기자석파 마비 → 화염방사' },
+        { opponent: '팬텀 Lv.25 (고스트/독)', answer: '마그케인 화염방사 · 지진 TM 있으면 2배' },
+      ],
+      badge: '안개배지',
+    },
+  },
+
+  // ─── Phase 5 ───
+  {
+    id: 'phase5',
+    title: '5관 쌍섬체육관',
+    subtitle: '관장 마루 — 격투 타입',
+    levelRange: '권장 Lv.29~31',
+    todos: [
+      '에크루테크 → 38번도로 → 올리브시티',
+      '올리브시티 포켓몬센터 선원에게서 HM04 괴력 입수',
+      '등대 이벤트: 재스민에게 말 걸기 → 쌍섬 비밀의 약 심부름 요청',
+      '파도타기로 쌍섬 이동 → 포켓몬센터 약사에게서 비밀의 약 입수',
+      '비밀의 약을 재스민에게 전달 → 6관 오픈',
+      '5관 클리어 후 마루 아내에게서 HM02 공중날기 입수',
+    ],
+    catches: [],
+    keyItems: [
+      { item: 'HM04 괴력', from: '올리브시티 포켓몬센터 선원', note: '갸라도스 HM 배분 예정' },
+      { item: '비밀의 약', from: '쌍섬 포켓몬센터 약사', note: '재스민에게 전달 → 6관 오픈' },
+      { item: 'HM02 공중날기', from: '5관 클리어 후 마루 아내', note: '이후 이동 대폭 단축' },
+    ],
+    boss: {
+      leader: '마루',
+      gym: '쌍섬체육관',
+      gymType: '격투',
+      levels: 'Lv.27·30',
+      note: '격투는 비행·에스퍼에 약점. 토게틱/토게키스 에어슬래시나 마그케인 불꽃세례로 처리.',
+      rows: [
+        { opponent: '성원숭 Lv.27 (격투)', answer: '토게틱/토게키스 에어슬래시 (비행 2배)' },
+        { opponent: '괴력몬 Lv.30 (격투)', answer: '토게틱/토게키스 에어슬래시 (비행 2배)' },
+      ],
+      badge: '폭풍배지',
+    },
+  },
+
+  // ─── Phase 6 ───
+  {
+    id: 'phase6',
+    title: '6관 올리브체육관',
+    subtitle: '관장 재스민 — 강철 타입',
+    levelRange: '권장 Lv.32~35',
+    todos: [
+      '비밀의 약을 재스민에게 전달 → 6관 즉시 오픈',
+      '마그케인 Lv.34 → 화염방사 습득 확인 (블레이범 진화는 Lv.36)',
+      '강철톤에 지진(TM26 — 현재 없음)이 없어도 화염방사 2배로 충분',
+    ],
+    catches: [],
+    keyItems: [],
+    boss: {
+      leader: '재스민',
+      gym: '올리브체육관',
+      gymType: '강철',
+      levels: 'Lv.30·30·35',
+      note: '블레이범/마그케인 화염방사 한 방. 강철 타입은 불꽃에 2배 약점.',
+      rows: [
+        { opponent: '코일 Lv.30 x2 (전기/강철)', answer: '마그케인/블레이범 화염방사 (2배!)' },
+        { opponent: '강철톤 Lv.35 (강철/땅)', answer: '블레이범 화염방사 (2배!) · 라프라스 파도타기 (2배!)' },
+      ],
+      badge: '광물배지',
+    },
+  },
+
+  // ─── Phase 7 ───
+  {
+    id: 'phase7',
+    title: '7관 마호가니체육관',
+    subtitle: '관장 프리스 — 얼음 타입',
+    levelRange: '권장 Lv.35~38',
+    todos: [
+      '43번도로 북상 → 안농폭포 이벤트 (수질오염)',
+      '★ 분노의 호수: 붉은 갸라도스 포획! 레벨 30, 배틀 탈출 금지',
+      '  전기자석파 마비 후 체력 낮추기 → 하이퍼볼로 포획 권장',
+      '갸라도스에 HM03 파도타기·HM04 괴력 배정 시작',
+      '마호가니마을 로켓단 기지 이벤트 — 랜스와 협력해 해결',
+      '로켓단 소탕 후 랜스에게 HM06 소용돌이 입수',
+    ],
+    catches: [
+      {
+        pokemonId: 130,
+        pokemon: '붉은 갸라도스',
+        location: '분노의 호수',
+        timing: '43번도로 북상 후',
+        note: '★ 스토리 필수 이벤트. Lv.30으로 등장. 전기자석파 마비 후 하이퍼볼. HM 담당 확정 멤버.',
+        priority: 'star',
+      },
+    ],
+    keyItems: [
+      { item: 'HM06 소용돌이', from: '마호가니 로켓단 소탕 후 랜스', note: '7관 배지 사용 조건' },
+    ],
+    boss: {
+      leader: '프리스',
+      gym: '마호가니체육관',
+      gymType: '얼음',
+      levels: 'Lv.27·29·31',
+      note: '얼음 타입은 격투·불꽃 약점. 헤라크로스 인파이트·메가폰 또는 블레이범 화염방사.',
+      rows: [
+        { opponent: '꾸꾸리 Lv.27 (얼음/땅)', answer: '헤라크로스 인파이트 (격투 2배)' },
+        { opponent: '쥬레곤 Lv.29 (물/얼음)', answer: '헤라크로스 인파이트 · 전룡 10만볼트' },
+        { opponent: '루주라 Lv.31 (얼음/에스퍼)', answer: '헤라크로스 메가폰 (벌레 2배) · 블레이범 화염방사' },
+      ],
+      badge: '서리배지',
+    },
+  },
+
+  // ─── Phase 8 ───
+  {
+    id: 'phase8',
+    title: '8관 검은먹체육관',
+    subtitle: '관장 이향 — 드래곤 타입',
+    levelRange: '권장 Lv.38~42',
+    todos: [
+      '43번도로 → 44번도로 → 빙굴동굴 → 검은먹시티',
+      '★ 8관 전: 용의 굴 방문 → 이향 조부에게서 테스트 수령 (진실만 답하면 통과)',
+      '★ 용의 굴에서 HM07 폭포오르기 입수 (이향 조부, 테스트 통과 후)',
+      '용의 굴 파도타기 + 낚시 → 미뇽 포획 가능 (드래곤 파티 원하면)',
+      '갸라도스 HM07 폭포오르기 추가 배정',
+    ],
+    catches: [
+      {
+        pokemonId: 147,
+        pokemon: '미뇽',
+        location: '용의 굴 (파도타기 후 낚시)',
+        timing: '8관 이후',
+        note: '선택. 망나뇽까지 키우면 강력하지만 레벨업이 느려 스토리 효율은 낮음.',
+        priority: 'normal',
+      },
+    ],
+    keyItems: [
+      { item: 'HM07 폭포오르기', from: '용의 굴 이향 조부 (테스트 통과)', note: '갸라도스에 배정 → 이후 진행 필수' },
+    ],
+    boss: {
+      leader: '이향',
+      gym: '검은먹체육관',
+      gymType: '드래곤',
+      levels: 'Lv.38·38·38·41',
+      note: '신뇽(드래곤)은 얼음 2배. 킹드라(드래곤/물)는 얼음·드래곤 중립, 전기 2배! 전룡이 핵심.',
+      rows: [
+        { opponent: '신뇽 Lv.38 x3 (드래곤)', answer: '라프라스 냉동빔/얼음기둥 (얼음 2배!)' },
+        { opponent: '킹드라 Lv.41 (드래곤/물)', answer: '전룡 10만볼트 (전기 2배! 드래곤/물)' },
+      ],
+      badge: '오름배지',
+    },
+  },
+
+  // ─── Phase 9 ───
+  {
+    id: 'phase9',
+    title: '성도 사천왕 + 챔피언 목호',
+    subtitle: '마지막 덩굴 → 신 칸토 여행의 시작',
+    levelRange: '권장 Lv.43~48',
+    todos: [
+      '챔피언로드 돌파 → TM26 지진 입수 (챔피언로드 내부)',
+      '블레이범에 지진 배정 → 레드전 피카츄 즉사 패턴 완성',
+      '파티 전원 HP 아이템 확보 (최대회복 12개 이상 권장)',
+    ],
+    catches: [],
+    keyItems: [
+      { item: 'TM26 지진', from: '챔피언로드', note: '블레이범에 필수 배정. 레드 피카츄 처리 핵심.' },
+    ],
+    boss: {
+      leader: '사천왕 + 목호',
+      gym: '포켓몬리그 (성도)',
+      gymType: '혼합',
+      levels: 'Lv.40~50',
+      note: '일목·독수·시바·카렌 → 챔피언 목호 순서. 목호 드래곤은 라프라스 얼음 일제 사격.',
+      rows: [
+        { opponent: '일목 (에스퍼) — 네이티오·루주라·야도킹', answer: '헤라크로스 메가폰 (벌레 2배) · 갸라도스 물기 (악 2배)' },
+        { opponent: '독수 (독/혼합) — 크로뱃·아리아도스 등', answer: '블레이범 지진 (독 타입 2배) · 전룡 10만볼트' },
+        { opponent: '시바 (격투) — 팽도리·홱손·괴력몬', answer: '라프라스 냉동빔 · 토게키스 에어슬래시 (비행 2배)' },
+        { opponent: '카렌 (악) — 블래키·강철톤·핫삼', answer: '블레이범 화염방사 (핫삼 4배!) · 헤라크로스 인파이트' },
+        { opponent: '목호 갸라도스 Lv.44 (물/비행)', answer: '전룡 10만볼트 (4배 약점!)' },
+        { opponent: '목호 망나뇽 Lv.47·47·50 (드래곤/비행)', answer: '라프라스 얼음기둥 (2배 × 2배 = 4배!)' },
+        { opponent: '목호 킹드라 Lv.46 (드래곤/물)', answer: '전룡 10만볼트 (전기 2배)' },
+        { opponent: '목호 에어로닥틸 Lv.46 (바위/비행)', answer: '갸라도스 파도타기 (물 2배)' },
+      ],
+      badge: '챔피언 목호 격파',
+    },
+  },
+
+  // ─── Phase 10 ───
+  {
+    id: 'phase10',
+    title: '관동 체육관 8관 연속',
+    subtitle: '관동 → 16개 배지 완성',
+    levelRange: '권장 Lv.48~55',
+    todos: [
+      '목호 격파 후 전국도감 받음 → 선착장에서 관동행 배 탑승',
+      '이주시티 → 회색시티 → 갈색시티 → 진홍시티 → 무지개시티 → 연분홍시티 → 노랑시티 → 홍련섬 → 상록시티',
+      '홍련섬은 쌍섬에서 배 탑승 (강연 → 5번 배지 필요)',
+      '상록시티 체육관은 전 8관 배지 획득 후 오픈',
+    ],
+    catches: [],
+    keyItems: [],
+    boss: {
+      leader: '관동 8관장',
+      gym: '관동 체육관 전체',
+      gymType: '혼합',
+      levels: 'Lv.42~58',
+      note: '관동은 이동 순서가 자유. 효율적인 순서로 배지 수집.',
+      rows: [
+        { opponent: '웅 (바위) 회색시티 — 코뿌리·롱스톤 등', answer: '갸라도스 파도타기 (물 2배) · 라프라스' },
+        { opponent: '이슬 (물) 갈색시티 — 아쿠스타·야도란 등', answer: '전룡 10만볼트 (전기 2배)' },
+        { opponent: '마티스 (전기) 진홍시티 — 레어코일·붐볼 등', answer: '블레이범 지진 (땅 2배!)' },
+        { opponent: '민화 (풀) 무지개시티 — 나팔뚜·빅피카츄 등', answer: '블레이범 화염방사 (불꽃 2배)' },
+        { opponent: '쟈니 (독) 연분홍시티 — 독침붕·아포켈 등', answer: '블레이범 지진 (땅 2배) · 토게키스 오라스피어' },
+        { opponent: '초련 (에스퍼) 노랑시티 — 후딘·야도란 등', answer: '헤라크로스 메가폰 (벌레 2배) · 갸라도스 물기' },
+        { opponent: '강연 (불꽃) 홍련섬 — 마그케인·마그마 등', answer: '갸라도스 파도타기 (물 2배) · 라프라스' },
+        { opponent: '블루 (혼합) 상록시티 — 나시·후딘·윈디 등', answer: '파티 전체로 상성 분담' },
+      ],
+      badge: '관동 8배지 완성',
+    },
+  },
+
+  // ─── Phase 11 ───
+  {
+    id: 'phase11',
+    title: '레드 (마운트실버)',
+    subtitle: '최강 트레이너 — 전원 Lv.80~88',
+    levelRange: '권장 Lv.65+ (Lv.70 이상 권장)',
+    todos: [
+      '★ 레드전 전 파티 Lv.65~70 목표 — 마운트실버 레벨업 권장',
+      '마운트실버 입장 조건: 관동 8관 포함 16배지 전부 획득',
+      '블레이범 지진 필수 확인 (피카츄 즉사 패턴)',
+      '최대회복 20개 이상, 기력의조각 다수 준비',
+      '레드의 피카츄는 광속 (Light Ball 지참) — Lv.88 선공 주의',
+    ],
+    catches: [],
+    keyItems: [],
+    boss: {
+      leader: '레드',
+      gym: '마운트실버',
+      gymType: '혼합 최강',
+      levels: 'Lv.80~88',
+      note: '피카츄가 광속 소지, 전원 Lv.80+. 선제 처리 순서를 지키는 것이 핵심.',
+      rows: [
+        { opponent: '피카츄 Lv.88 (전기)', answer: '블레이범 지진 (땅 2배 → 즉사권!)' },
+        { opponent: '이상해꽃 Lv.80 (풀/독)', answer: '블레이범 화염방사 (불꽃 2배)' },
+        { opponent: '거북왕 Lv.84 (물)', answer: '전룡 10만볼트 (전기 2배)' },
+        { opponent: '리자몽 Lv.84 (불꽃/비행)', answer: '갸라도스 파도타기 (물 2배) · 라프라스 냉동빔' },
+        { opponent: '에브이 Lv.82 (에스퍼)', answer: '헤라크로스 메가폰 (벌레 2배) · 갸라도스 물기' },
+        { opponent: '잠만보 Lv.82 (노말)', answer: '헤라크로스 인파이트 (격투 2배)' },
+      ],
+      badge: '게임 클리어!',
+    },
+  },
+]
+
+// ──────────────────────────────────────────────────────────────
+// 보조 포켓몬 및 대체 멤버
+// ──────────────────────────────────────────────────────────────
+export interface AltMember {
+  pokemonId: number
+  pokemon: string
+  replaces: string
+  role: string
+  obtainedAt: string
+}
+
+export const HGW_ALT_MEMBERS: AltMember[] = [
+  {
+    pokemonId: 196,
+    pokemon: '에브이',
+    replaces: '토게키스',
+    role: '에스퍼 특수 딜러. 이수재의 집 이브이를 낮 친밀도 최대로 진화. 토게키스보다 특공 높음.',
+    obtainedAt: '황금빛시티 이수재의 집 → 낮 친밀도 최대 진화',
+  },
+  {
+    pokemonId: 149,
+    pokemon: '망나뇽',
+    replaces: '헤라크로스 (격투 커버 없음)',
+    role: '드래곤/비행 최강 물리 딜러. 격투 커버는 없지만 화력으로 다수 처리.',
+    obtainedAt: '용의 굴 미뇽 낚시 → Lv.55 망나뇽 진화',
+  },
+  {
+    pokemonId: 80,
+    pokemon: '야도란',
+    replaces: '라프라스',
+    role: '물/에스퍼. 야돈우물에서 이른 획득 가능. 파도타기+냉동빔+사이코키네시스.',
+    obtainedAt: '야돈우물 (2관 전후) 야돈 → Lv.37 진화',
+  },
+  {
+    pokemonId: 121,
+    pokemon: '아쿠스타',
+    replaces: '라프라스 (얼음기 없음 주의)',
+    role: '물/에스퍼 고속 특수 딜러. 별가사리 낚시 후 물의돌 사용.',
+    obtainedAt: '낚시(보통 낚싯대 이상) → 물의돌 사용',
+  },
+  {
+    pokemonId: 227,
+    pokemon: '무장조',
+    replaces: '헤라크로스',
+    role: '강철/비행. 초고방어로 물리 내성. 비행 커버리지. HG 45번도로.',
+    obtainedAt: '45번도로 (7관~8관 사이)',
+  },
+]
+
+// ──────────────────────────────────────────────────────────────
+// 레벨업 가이드
+// ──────────────────────────────────────────────────────────────
+export interface LevelMilestone {
+  member: string
+  evolution: string
+  byWhen: string
+  note: string
+}
+
+export const HGW_LEVEL_MILESTONES: LevelMilestone[] = [
+  { member: '브케인', evolution: 'Lv.14 → 마그케인', byWhen: '1관 전후', note: '불꽃세례 Lv.12 습득. 체육관 전투에서 핵심.' },
+  { member: '마그케인', evolution: 'Lv.36 → 블레이범', byWhen: '5~6관 사이', note: '화염방사 Lv.34에 습득. 진화 전 배우기 목표.' },
+  { member: '메리프', evolution: 'Lv.15 → 보송송', byWhen: '2~3관 사이', note: '전기자석파 Lv.23 습득.' },
+  { member: '보송송', evolution: 'Lv.30 → 전룡', byWhen: '4관 전후', note: '10만볼트 TM24으로 배정 권장.' },
+  { member: '토게피', evolution: '친밀도 최대 → 토게틱', byWhen: '3~4관 사이 목표', note: '비타민·도보로 친밀도 올림. 5관 전 달성 목표.' },
+  { member: '토게틱', evolution: '빛나는돌 사용 → 토게키스', byWhen: '빛나는돌 획득 즉시', note: '국립공원 포충대회 1위 상품. 레벨 무관 즉시 사용.' },
+  { member: '헤라크로스', evolution: '진화 없음 (단일 형태)', byWhen: '포획 후 즉시 육성', note: 'Lv.20 이상으로 육성 후 투입.' },
+  { member: '붉은 갸라도스', evolution: 'Lv.30 (진화 불필요)', byWhen: '분노의 호수 (7관 전)', note: 'HM 배정 후 즉시 파티 투입.' },
+  { member: '라프라스', evolution: '진화 없음 (단일 형태)', byWhen: '4관 직후 금요일', note: 'Lv.20으로 획득. 즉시 파티 투입 가능.' },
+]
+
+export const HGW_NAME_TO_ID: Map<string, number> = new Map(
+  (
+    [
+      ['블레이범', 157], ['마그케인', 156], ['브케인', 155],
+      ['전룡', 181], ['보송송', 180], ['메리프', 179],
+      ['갸라도스', 130], ['토게키스', 468], ['토게틱', 176], ['토게피', 175],
+      ['헤라크로스', 214], ['라프라스', 131],
+      ['성원숭', 57], ['망키', 56], ['무장조', 227],
+      ['야도란', 80], ['야돈', 79], ['아쿠스타', 121], ['별가사리', 120],
+      ['크로뱃', 169], ['골뱃', 42], ['주뱃', 41],
+      ['망나뇽', 149], ['신뇽', 148], ['미뇽', 147],
+      ['킹드라', 230], ['강철톤', 208], ['후딘', 65],
+      ['나시', 103], ['윈디', 59], ['코뿌리', 112],
+      ['피죤투', 18], ['피죤', 17], ['구구', 16],
+      ['네이티오', 178], ['루주라', 124], ['야도킹', 199],
+      ['에브이', 196], ['이브이', 133], ['잠만보', 143],
+      ['리자몽', 6], ['거북왕', 9], ['이상해꽃', 3], ['피카츄', 25],
+      ['단데기', 11], ['딱충이', 14], ['스라크', 123],
+      ['삐삐', 35], ['밀탱크', 241],
+      ['고오스', 92], ['고우스트', 93], ['팬텀', 94],
+      ['괴력몬', 68], ['쥬쥬', 86], ['쥬레곤', 87], ['코일', 81],
+      ['메꾸리', 221], ['꾸꾸리', 220],
+    ] as [string, number][]
+  ).sort((a, b) => b[0].length - a[0].length),
+)
