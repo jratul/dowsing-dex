@@ -2,12 +2,14 @@ import { Link } from 'react-router-dom'
 import { Card } from '../components/ui/Card'
 import { PokemonCard } from '../components/pokemon/PokemonCard'
 import { SpriteImage } from '../components/pokemon/SpriteImage'
+import { TypeBadge } from '../components/pokemon/TypeBadge'
 import { GuideTable } from '../components/guide/GuideTable'
 import { PokemonLink } from '../components/guide/PokemonLink'
 import { linkifyPokemonNames } from '../lib/linkifyPokemonNames'
 import { SAMPLE_POKEMON, findSamplePokemon } from '../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../lib/guideCategory'
 import { cn } from '../lib/cn'
+import { findMoveByName } from '../data/sample/moves.sample'
 import { GuidePageLayout } from '../components/guide/GuidePageLayout'
 import {
   FIRERED_STORY_CAUTIONS,
@@ -189,7 +191,13 @@ export function PokemonFireredStoryGuidePage() {
                   ))}
                 </ul>
 
-                <GuideTable headers={['기술', '습득', '용도']} rows={m.moveTable.map((t) => [t.move, <HowBadge key={t.move} how={t.how} />, t.usage])} />
+                <GuideTable
+                  headers={['기술', '타입', '습득', '용도']}
+                  rows={m.moveTable.map((t) => {
+                    const mv = findMoveByName(t.move)
+                    return [t.move, mv ? <TypeBadge key={`${t.move}-type`} type={mv.type} size="sm" /> : '—', <HowBadge key={t.move} how={t.how} />, t.usage]
+                  })}
+                />
 
                 <p className="mt-3 mb-1 text-xs font-bold text-ink-faint">메모</p>
                 <ul className="list-disc space-y-0.5 pl-5 text-sm text-ink-muted">

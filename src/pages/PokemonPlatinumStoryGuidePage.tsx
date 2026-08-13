@@ -4,12 +4,14 @@ import { GuidePageLayout } from '../components/guide/GuidePageLayout'
 import { Card } from '../components/ui/Card'
 import { PokemonCard } from '../components/pokemon/PokemonCard'
 import { SpriteImage } from '../components/pokemon/SpriteImage'
+import { TypeBadge } from '../components/pokemon/TypeBadge'
 import { GuideTable } from '../components/guide/GuideTable'
 import { PokemonLink } from '../components/guide/PokemonLink'
 import { linkifyPokemonNames } from '../lib/linkifyPokemonNames'
 import { SAMPLE_POKEMON, findSamplePokemon } from '../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../lib/guideCategory'
 import { cn } from '../lib/cn'
+import { findMoveByName } from '../data/sample/moves.sample'
 import type { StarterGuideData } from '../data/sample/pokemonPlatinumStory.data'
 import {
   PLATINUM_EVOLUTION_TIMING,
@@ -111,8 +113,11 @@ function StarterContent({ starter }: { starter: StarterGuideData }) {
                 ))}
               </div>
               <GuideTable
-                headers={['기술', '습득', '용도']}
-                rows={s.moveTable.map((m) => [m.move, <HowBadge key={m.move} how={m.how} />, m.usage])}
+                headers={['기술', '타입', '습득', '용도']}
+                rows={s.moveTable.map((m) => {
+                  const mv = findMoveByName(m.move)
+                  return [m.move, mv ? <TypeBadge key={`${m.move}-type`} type={mv.type} size="sm" /> : '—', <HowBadge key={m.move} how={m.how} />, m.usage]
+                })}
               />
               {s.notes.length > 0 && (
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-ink-muted">

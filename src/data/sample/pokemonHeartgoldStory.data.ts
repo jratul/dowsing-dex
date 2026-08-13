@@ -446,6 +446,55 @@ export const HG_STORY_SUPPORT: SupportRow[] = [
   { pokemon: '빠오', pokemonId: 221, role: '마운트실버 포획. 레드전 얼음 보조. 선택적 교체 후보', obtainedAt: '마운트실버 (레드전 직전)' },
 ]
 
+export interface AlternativeRow {
+  pokemonId: number
+  pokemon: string
+  role: string
+  obtainedAt: string
+}
+
+export const HG_STORY_ALT_HERACROSS: AlternativeRow[] = [
+  {
+    pokemonId: 57,
+    pokemon: '시라소몬',
+    role: '격투 타입 주력. 닫기·클로즈컴뱃으로 레드 잠만보·에스피온 대응. HG 전용 42번도로에서 마프리카 포획',
+    obtainedAt: '42번도로 (4관 에크루테크 이후, HG 한정)',
+  },
+  {
+    pokemonId: 149,
+    pokemon: '망나뇽',
+    role: '드래곤/비행 최강 물리 딜러. 격투 커버는 없지만 높은 화력으로 다수 처리. 목호·레드전 모두 활약',
+    obtainedAt: '용의소굴 (8관 이향 격파 후 퀴즈 통과)',
+  },
+  {
+    pokemonId: 227,
+    pokemon: '하리케인',
+    role: '강철/비행 타입. 초고방어로 물리 내성 확보. 에어슬래시·강철날개·브레이브버드. 비행 커버리지 전담',
+    obtainedAt: '45번도로 (7관~8관 사이)',
+  },
+]
+
+export const HG_STORY_ALT_TOGEKISS: AlternativeRow[] = [
+  {
+    pokemonId: 196,
+    pokemon: '에스피온',
+    role: '에스퍼 특수 딜러. 높은 특공으로 격투·악·독 타입 처리. 토게키스보다 특공이 강력. 이브이를 낮에 친밀도 최대로 진화',
+    obtainedAt: '황금빛시티 빌의 집 (3관 이후) → 낮 친밀도 진화',
+  },
+  {
+    pokemonId: 80,
+    pokemon: '야도란',
+    role: '물/에스퍼 내구형 딜러. 야도리개 Lv.37 진화. 파도타기+냉동빔+사이코키네시스로 목호·레드전 모두 대응. 갸라도스 대신 파도타기 담당 가능',
+    obtainedAt: '야도리개 우물 (2관 이후, 이른 획득 가능)',
+  },
+  {
+    pokemonId: 121,
+    pokemon: '스타미',
+    role: '물/에스퍼 고속 특수 딜러. 별가사리 낚시 후 물의돌 진화. 파도타기·번개·냉동빔·사이코키네시스로 전천후 활약',
+    obtainedAt: '낚시(보통 낚싯대) 후 물의돌 사용',
+  },
+]
+
 export const HG_STORY_CAUTIONS = [
   '헤라크로스는 HG 전용 포켓몬. 박치기(HM01)를 배운 포켓몬으로 황금빛시티 인근 나무를 흔들어 포획한다.',
   '라프라스는 연결동굴에서 매주 금요일에만 등장한다. 월~목요일에는 만날 수 없으니 날짜를 확인한다.',
@@ -501,6 +550,8 @@ export const HG_STORY_NAME_TO_ID: Map<string, number> = new Map(
       ['전룡', 181], ['보송송', 180], ['메리프', 179],
       ['갸라도스', 130], ['토게키스', 468], ['토게틱', 176], ['토게피', 175],
       ['헤라크로스', 214], ['라프라스', 131], ['빠오', 221],
+      ['시라소몬', 57], ['마프리카', 56], ['하리케인', 227],
+      ['야도란', 80], ['야도리개', 79], ['스타미', 121], ['별가사리', 120],
       ['크로뱃', 169], ['골뱃', 42], ['주뱃', 41],
       ['망나뇽', 149], ['드래피어', 148], ['미뇽', 147],
       ['킹드라', 230], ['강철톤', 208], ['후딘', 65], ['윤겔라', 64],

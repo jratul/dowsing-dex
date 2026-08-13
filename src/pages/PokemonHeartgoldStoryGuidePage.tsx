@@ -3,12 +3,16 @@ import { GuidePageLayout } from '../components/guide/GuidePageLayout'
 import { Card } from '../components/ui/Card'
 import { PokemonCard } from '../components/pokemon/PokemonCard'
 import { SpriteImage } from '../components/pokemon/SpriteImage'
+import { TypeBadge } from '../components/pokemon/TypeBadge'
 import { GuideTable } from '../components/guide/GuideTable'
 import { PokemonLink } from '../components/guide/PokemonLink'
 import { linkifyPokemonNames } from '../lib/linkifyPokemonNames'
 import { SAMPLE_POKEMON, findSamplePokemon } from '../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../lib/guideCategory'
+import { findMoveByName } from '../data/sample/moves.sample'
 import {
+  HG_STORY_ALT_HERACROSS,
+  HG_STORY_ALT_TOGEKISS,
   HG_STORY_CAUTIONS,
   HG_STORY_CATCH_TABLE,
   HG_STORY_CHAMPION,
@@ -136,8 +140,11 @@ export function PokemonHeartgoldStoryGuidePage() {
                 ))}
               </div>
               <GuideTable
-                headers={['기술', '습득', '용도']}
-                rows={s.moveTable.map((m) => [m.move, <HowBadge key={m.move} how={m.how} />, m.usage])}
+                headers={['기술', '타입', '습득', '용도']}
+                rows={s.moveTable.map((m) => {
+                  const mv = findMoveByName(m.move)
+                  return [m.move, mv ? <TypeBadge key={`${m.move}-type`} type={mv.type} size="sm" /> : '—', <HowBadge key={m.move} how={m.how} />, m.usage]
+                })}
               />
               {s.notes.length > 0 && (
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-ink-muted">
@@ -302,7 +309,33 @@ export function PokemonHeartgoldStoryGuidePage() {
         </Card>
       )}
 
-      {/* 15. 진화 타이밍 */}
+      {/* 15. 대체 멤버 추천 */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>대체 멤버 추천</SectionHeading>
+        <p className="mb-4 text-sm text-ink-muted">
+          헤라크로스(HG 전용 박치기 나무 포획)나 토게키스(빛나는돌 필요)를 확보하기 어려울 때의 대안 멤버.
+        </p>
+        <p className="mb-2 text-sm font-bold text-ink">헤라크로스 대신</p>
+        <GuideTable
+          headers={['포켓몬', '역할', '획득 시점']}
+          rows={HG_STORY_ALT_HERACROSS.map((r) => [
+            <PokemonLink key={r.pokemonId} id={r.pokemonId} label={r.pokemon} />,
+            r.role,
+            r.obtainedAt,
+          ])}
+        />
+        <p className="mb-2 mt-4 text-sm font-bold text-ink">토게키스 대신</p>
+        <GuideTable
+          headers={['포켓몬', '역할', '획득 시점']}
+          rows={HG_STORY_ALT_TOGEKISS.map((r) => [
+            <PokemonLink key={r.pokemonId} id={r.pokemonId} label={r.pokemon} />,
+            r.role,
+            r.obtainedAt,
+          ])}
+        />
+      </Card>
+
+      {/* 16. 진화 타이밍 */}
       <Card className="mb-6 p-4">
         <SectionHeading>돌 진화·친밀도 진화 적정 타이밍</SectionHeading>
         <GuideTable

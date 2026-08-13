@@ -6,9 +6,20 @@ const MOVE_MAP = new Map(
   ALL_MOVES.map((m) => [m.id, MOVE_DESCRIPTIONS[m.id] ? { ...m, effectKo: MOVE_DESCRIPTIONS[m.id] } : m]),
 )
 
+const MOVE_NAME_MAP = new Map([...MOVE_MAP.values()].map((m) => [m.nameKo, m]))
+
 /** 전체 포켓몬의 기술 사전. PokeAPI 기반으로 scripts/fetch-pokedex.mjs가 생성한다. */
 export function findMove(id: number): Move | undefined {
   return MOVE_MAP.get(id)
+}
+
+/** 한국어 기술명으로 기술을 찾는다. '기술A / 기술B' 형태의 복합 표기도 처리한다. */
+export function findMoveByName(nameKo: string): Move | undefined {
+  for (const part of nameKo.split(' / ')) {
+    const found = MOVE_NAME_MAP.get(part.trim())
+    if (found) return found
+  }
+  return undefined
 }
 
 // 포켓몬별 학습셋은 1082종을 한 파일에 합치면 너무 커서(gzip 후에도 500KB+) 포켓몬 1종당
