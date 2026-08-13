@@ -30,8 +30,9 @@
 dowsing-dex/
 ├── public/                    # 정적 파일 (favicon 등)
 ├── scripts/
-│   ├── fetch-pokedex.mjs      # PokeAPI + 포켓몬갤러리 위키 스크래핑 → 생성 파일 출력
-│   └── build-tm-index.mjs     # by-id/*.generated.ts → tm-index.generated.ts 역인덱스 생성
+│   ├── fetch-pokedex.mjs           # PokeAPI + 포켓몬갤러리 위키 스크래핑 → 생성 파일 출력
+│   ├── build-tm-index.mjs          # by-id/*.generated.ts → tm-index.generated.ts 역인덱스 생성
+│   └── build-move-descriptions.mjs # PokeAPI 기술 한국어 설명 수집 → move-descriptions.generated.ts 출력
 ├── src/
 │   ├── main.tsx               # React 진입점, StrictMode + RouterProvider
 │   ├── router.tsx             # 전체 라우트 정의 (모두 lazy)
@@ -60,6 +61,16 @@ dowsing-dex/
 | `src/main.tsx` | React 앱 진입점. `RouterProvider`에 router 주입 |
 | `src/router.tsx` | `createBrowserRouter`로 전체 라우트 정의. 모든 페이지를 `lazy()`로 code-split |
 
+```tsx
+// src/main.tsx
+createRoot(document.getElementById('root')!).render(
+  <StrictMode><RouterProvider router={router} /></StrictMode>
+)
+
+// src/router.tsx — lazy 패턴 (모든 페이지 공통)
+{ path: '/pokedex', lazy: () => import('./pages/PokedexPage').then((m) => ({ Component: m.PokedexPage })) }
+```
+
 ### 3-2. 스타일 (`src/styles/index.css`)
 
 Tailwind v4 방식. `@theme {}` 블록 하나로 CSS 변수와 Tailwind 유틸리티 클래스를 동시에 선언한다.
@@ -84,6 +95,18 @@ Tailwind v4 방식. `@theme {}` 블록 하나로 CSS 변수와 Tailwind 유틸�
 | `guide.ts` | `Guide`, `GuideCategory` |
 | `type-chart.ts` | `TypeName`, `TypeChart`, `TypeMatchup`, `MatchupClass` |
 
+```ts
+// pokemon.ts (발췌)
+export interface Pokemon {
+  id: number; nameKo: string; nameEn: string; types: TypeName[]
+  stats: PokemonStats; spriteUrl: string; artworkUrl?: string
+  evolutionLine?: EvolutionStage[]; encounterLocations?: EncounterLocation[]
+}
+// move.ts (발췌)
+export interface Move { id: number; nameKo: string; type: TypeName; power: number | null; pp: number; effectKo?: string }
+export interface Learnset { versionGroup: string; generation: number; levelUp: LevelUpMove[]; machine: MachineMove[]; tutor: TutorMove[] }
+```
+
 ### 3-4. 유틸 라이브러리 (`src/lib/`)
 
 | 파일 | 역할 |
@@ -93,6 +116,20 @@ Tailwind v4 방식. `@theme {}` 블록 하나로 CSS 변수와 Tailwind 유틸�
 | `linkifyPokemonNames.tsx` | 텍스트 속 포켓몬 이름 → `<PokemonLink>` 자동 변환. 이름 길이 내림차순 매칭 |
 | `guideCategory.ts` | 공략 카테고리(입문/공략/대전/포획/진화) → 배지·배너 CSS 클래스 매핑 |
 | `statColors.ts` | 종족값 6종 → `bg-stat-*` 클래스 매핑 |
+
+```ts
+// cn.ts
+export function cn(...inputs: ClassValue[]) { return twMerge(clsx(inputs)) }
+
+// typeChart.ts — 단일/복합 타입 방어 프로필 계산
+export function mult(atk: TypeName, def: TypeName): number { /* CHART 조회 */ }
+export function profile(defTypes: TypeName[]): Record<TypeName, number> {
+  // 모든 공격 타입에 대해 defTypes 전체의 배율을 곱해 최종 배율 반환
+}
+
+// linkifyPokemonNames.tsx — 긴 이름 먼저 매칭 (이름 길이 내림차순 정렬 Map 필요)
+export function linkifyPokemonNames(text: string, nameToId: Map<string, number>): ReactNode[]
+```
 
 ### 3-5. 데이터 (`src/data/`)
 
@@ -104,19 +141,33 @@ Tailwind v4 방식. `@theme {}` 블록 하나로 CSS 변수와 Tailwind 유틸�
 | `moves/all-moves.generated.ts` | ~83 KB | `ALL_MOVES` 전체 기술 목록 |
 | `moves/by-id/*.generated.ts` | 1082개 파일 | 포켓몬별 세대/버전별 학습셋. 라우트 진입 시 동적 import |
 | `moves/tm-index.generated.ts` | ~3.3 MB | TM/HM → 배울 수 있는 포켓몬 ID 역인덱스. `scripts/build-tm-index.mjs`가 생성 |
+| `moves/move-descriptions.generated.ts` | ~200 KB | 기술별 한국어 설명 텍스트(727종). `scripts/build-move-descriptions.mjs`가 생성 |
+
+```ts
+// loadLearnsets — import.meta.glob으로 1082개 파일 등록, 상세 진입 시 1개만 로드
+const learnsetModules = import.meta.glob('../moves/by-id/*.generated.ts')
+export async function loadLearnsets(pokemonId: number): Promise<Learnset[]> {
+  const mod = await learnsetModules[`../moves/by-id/${pokemonId}.generated.ts`]()
+  return (mod as { default: Learnset[] }).default
+}
+// MOVE_MAP — move-descriptions 병합 후 id 기반 O(1) 조회
+const MOVE_MAP = new Map(ALL_MOVES.map((m) => [m.id, MOVE_DESCRIPTIONS[m.id] ? { ...m, effectKo: MOVE_DESCRIPTIONS[m.id] } : m]))
+```
 
 #### 수작업 데이터 (`src/data/sample/`)
 
 | 파일 | 내용 |
 |---|---|
 | `pokemon.sample.ts` | `SAMPLE_POKEMON` (= ALL_POKEMON에서 이미지 URL jsDelivr 변환 적용), `findSamplePokemon()`, `findEvolutionLine()` |
-| `moves.sample.ts` | `loadLearnsets()` (lazy import 래퍼), `findMove()`, `MOVE_MAP` |
+| `moves.sample.ts` | `loadLearnsets()` (lazy import 래퍼), `findMove()`, `MOVE_MAP` (move-descriptions 병합) |
 | `guides.sample.ts` | `SAMPLE_GUIDES` — 공략 목록 카드 데이터 |
+| `flavorTexts.ts` | PokeAPI 도감 설명 온디맨드 fetch 유틸. 버전별 한국어 텍스트를 런타임에 가져온다 |
 | `pokemonRedStory.data.ts` | 레드버전 스토리 공략 데이터 |
 | `pokemonFireredStory.data.ts` | 파이어레드 스토리 공략 데이터 (돌·교환 진화 전체 포함) |
 | `pokemonFireredSeviiIslands.data.ts` | 파이어레드 일곱섬 클리어 후 공략 데이터 |
 | `pokemonGoldStory.data.ts` | 골드버전 스토리 공략 데이터 |
 | `pokemonHeartgoldStory.data.ts` | 하트골드버전 스토리 공략 데이터 |
+| `pokemonHeartgoldWalkthrough.data.ts` | 하트골드버전 최고효율 진행 공략 데이터 (11 Phase 구조, 윤가놈 추천 파티 분석 포함) |
 | `pokemonEmeraldStory.data.ts` | 에메랄드버전 스토리 공략 데이터 (스타팅 3종 분기) |
 | `pokemonPlatinumStory.data.ts` | 플래티넘버전 스토리 공략 데이터 (스타팅 3종 분기) |
 | `pokemonRedEvolution.data.ts` | 1세대 돌·교환 진화 타이밍 가이드 데이터 |
@@ -129,6 +180,21 @@ Tailwind v4 방식. `@theme {}` 블록 하나로 CSS 변수와 Tailwind 유틸�
 |---|---|---|
 | `Button.tsx` | Slot | `variant`(primary/secondary/ghost), `size`, `asChild` 지원 |
 | `Card.tsx` | Slot | 흰 배경 + `rounded-card` + `shadow-card`. `asChild`로 Link 합성 가능 |
+
+```tsx
+// Button.tsx — cva variant 패턴
+const buttonVariants = cva('inline-flex items-center rounded-button font-medium transition-colors', {
+  variants: {
+    variant: { primary: 'bg-brand-red text-white', secondary: 'border border-border', ghost: 'hover:bg-surface-hover' },
+    size: { sm: 'h-8 px-3 text-sm', md: 'h-10 px-4' },
+  },
+  defaultVariants: { variant: 'primary', size: 'md' },
+})
+export function Button({ variant, size, asChild, ...props }: ButtonProps) {
+  const Comp = asChild ? Slot : 'button'
+  return <Comp className={cn(buttonVariants({ variant, size }), props.className)} {...props} />
+}
+```
 
 #### `pokemon/` — 포켓몬 도메인 컴포넌트
 
@@ -145,6 +211,15 @@ Tailwind v4 방식. `@theme {}` 블록 하나로 CSS 변수와 Tailwind 유틸�
 | `GenerationFilter.tsx` | 세대 필터 칩 (ToggleGroup 기반) |
 | `EvolutionMoveComparison.tsx` | 진화 가족 전체 기술 비교 테이블. 세대·버전 탭, 레벨업/TM·HM/가르침 섹션별로 가족 멤버 열 나열. `Map<number, {learnsets, recommended}>` 병렬 로드 |
 
+```tsx
+// EvolutionMoveComparison.tsx — rules-of-hooks 준수: useMemo는 조기 반환 앞에 선언
+const evolutionFamilyIds = useMemo(() => extractFamilyIds(evolutionLine), [evolutionLine])
+if (!pokemon) return null  // useMemo 뒤에 선언해야 Hook 순서 위반 없음
+
+// StatChart.tsx — 최대값(255) 기준 너비 비율 + 색상 토큰
+<div className="h-2 rounded-full bg-stat-hp" style={{ width: `${(value / 255) * 100}%` }} />
+```
+
 #### `type-chart/` — 타입 상성 컴포넌트
 
 | 파일 | 역할 |
@@ -155,6 +230,13 @@ Tailwind v4 방식. `@theme {}` 블록 하나로 CSS 변수와 Tailwind 유틸�
 | `TypeOffense.tsx` | 공격 타입 → 약점/반감 포켓몬 목록 |
 | `TypePill.tsx` | 타입 상성 배율 표시 칩 (×2 / ×0.5 / ×0 / ×4 등) |
 
+```tsx
+// TypeCalculator.tsx — profile() 공유 (TypeDefense와 동일 함수)
+const matchup = useMemo(() => profile(selectedTypes as TypeName[]), [selectedTypes])
+// TypeChartGrid.tsx — 18×18 셀 클래스 결정
+const cellClass = mult(atk, def) > 1 ? 'bg-matchup-weak' : mult(atk, def) < 1 ? 'bg-matchup-resist' : ''
+```
+
 #### `guide/` — 공략 페이지 컴포넌트
 
 | 파일 | 역할 |
@@ -163,6 +245,21 @@ Tailwind v4 방식. `@theme {}` 블록 하나로 CSS 변수와 Tailwind 유틸�
 | `GuideCard.tsx` | 공략 목록 카드 (아이콘 + 카테고리 배지 + 제목 + 요약) |
 | `GuideTable.tsx` | 공략용 반응형 테이블. 모바일에서 `overflow-x-auto` 가로 스크롤 |
 | `PokemonLink.tsx` | 인라인 스프라이트 + 이름 링크 컴포넌트. 공략 텍스트 내 포켓몬 참조에 사용 |
+
+```tsx
+// GuideTable.tsx
+<div className="overflow-x-auto">
+  <table className="min-w-full text-sm">
+    <thead><tr>{headers.map((h) => <th key={h} className="whitespace-nowrap px-3 py-2">{h}</th>)}</tr></thead>
+    <tbody>{rows.map((row, i) => <tr key={i}>{row.map((cell, j) => <td key={j} className="px-3 py-2">{cell}</td>)}</tr>)}</tbody>
+  </table>
+</div>
+
+// PokemonLink.tsx — 인라인 스프라이트 + 이름
+<Link to={`/pokemon/${id}`} className="inline-flex items-center gap-1">
+  <img src={spriteUrl} className="h-6 w-6" /> <span>{nameKo}</span>
+</Link>
+```
 
 #### `layout/` — 전체 레이아웃 컴포넌트
 
@@ -174,6 +271,15 @@ Tailwind v4 방식. `@theme {}` 블록 하나로 CSS 변수와 Tailwind 유틸�
 | `Hero.tsx` | 히어로 섹션 (eyebrow + 제목 + 부제 + 이미지 + CTA) |
 | `HeroCarousel.tsx` | Embla Carousel 기반 자동재생 히어로 캐러셀 |
 | `RouteErrorBoundary.tsx` | 루트 `errorElement`. "Failed to fetch dynamically imported module" 감지 → `window.location.reload()` 자동 복구. `sessionStorage` 플래그로 무한 새로고침 방지 |
+
+```tsx
+// RouteErrorBoundary.tsx — 스테일 청크 자동 복구
+const isChunkError = error?.message?.includes('Failed to fetch dynamically imported module')
+if (isChunkError && !sessionStorage.getItem('chunk-reload')) {
+  sessionStorage.setItem('chunk-reload', '1')
+  window.location.reload()
+}
+```
 
 ### 3-7. 페이지 (`src/pages/`)
 
@@ -192,9 +298,24 @@ Tailwind v4 방식. `@theme {}` 블록 하나로 CSS 변수와 Tailwind 유틸�
 | `PokemonFireredSeviiIslandsGuidePage.tsx` | `/guides/pokemon-firered-sevii-islands` | 파이어레드 일곱섬 클리어 후 공략 |
 | `PokemonGoldStoryGuidePage.tsx` | `/guides/pokemon-gold-story` | 골드버전 스토리 공략 |
 | `PokemonHeartgoldStoryGuidePage.tsx` | `/guides/pokemon-heartgold-story` | 하트골드버전 스토리 공략 |
+| `PokemonHeartgoldWalkthroughGuidePage.tsx` | `/guides/pokemon-heartgold-walkthrough` | 하트골드버전 최고효율 진행 공략 (11 Phase, 윤가놈 추천 파티 분석) |
 | `PokemonEmeraldStoryGuidePage.tsx` | `/guides/pokemon-emerald-story` | 에메랄드버전 공략 (스타팅 탭 전환) |
 | `PokemonPlatinumStoryGuidePage.tsx` | `/guides/pokemon-platinum-story` | 플래티넘버전 공략 (스타팅 탭 전환) |
+| `PokemonPlatinumProgressGuidePage.tsx` | `/guides/pokemon-platinum-progress` | 플래티넘버전 최고효율 진행 공략 |
 | `PokemonRedEvolutionGuidePage.tsx` | `/guides/pokemon-red-evolution` | 1세대 진화 타이밍 가이드 |
+
+```tsx
+// 공략 페이지 공통 패턴 — HowBadge + GuideTable + linkifyPokemonNames
+function HowBadge({ how }: { how: string }) {
+  if (how.startsWith('Lv.')) return <span className="rounded bg-green-100 px-1.5 py-0.5 text-xxs font-bold text-green-700">{how}</span>
+  if (how.startsWith('TM')) return <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xxs font-bold text-blue-700">{how}</span>
+  if (how.startsWith('HM')) return <span className="rounded bg-red-100 px-1.5 py-0.5 text-xxs font-bold text-red-700">{how}</span>
+}
+<GuideTable
+  headers={['기술', '습득', '용도']}
+  rows={section.moveTable.map((m) => [m.move, <HowBadge key={m.move} how={m.how} />, m.usage])}
+/>
+```
 
 ---
 
@@ -283,9 +404,11 @@ TmListPage (해당 페이지 진입 시에만 3.3MB 로드)
 /guides/pokemon-firered-story       PokemonFireredStoryGuidePage
 /guides/pokemon-firered-sevii-islands  PokemonFireredSeviiIslandsGuidePage
 /guides/pokemon-red-evolution       PokemonRedEvolutionGuidePage
-/guides/pokemon-heartgold-story     PokemonHeartgoldStoryGuidePage
-/guides/pokemon-emerald-story       PokemonEmeraldStoryGuidePage
-/guides/pokemon-platinum-story      PokemonPlatinumStoryGuidePage
+/guides/pokemon-heartgold-story         PokemonHeartgoldStoryGuidePage
+/guides/pokemon-heartgold-walkthrough   PokemonHeartgoldWalkthroughGuidePage
+/guides/pokemon-emerald-story           PokemonEmeraldStoryGuidePage
+/guides/pokemon-platinum-story          PokemonPlatinumStoryGuidePage
+/guides/pokemon-platinum-progress       PokemonPlatinumProgressGuidePage
 /guides/:slug              GuideDetailPage                        ← 동적 (마지막)
 /dev/showcase              ShowcasePage                           ← 개발용
 ```
@@ -309,7 +432,8 @@ npm run build           # tsc 타입 체크 + Vite 프로덕션 빌드
 npm run lint            # oxlint 린트 (error·warning 0 유지)
 npm run preview         # 빌드 결과 로컬 미리보기
 npm run fetch:pokedex   # PokeAPI + 위키 스크래핑 → 생성 파일 (수 시간 소요)
-npm run build:tm-index  # by-id/*.generated.ts → tm-index.generated.ts 생성
+npm run build:tm-index          # by-id/*.generated.ts → tm-index.generated.ts 생성
+npm run build:move-descriptions # PokeAPI 기술 한국어 설명 수집 → move-descriptions.generated.ts 생성
 ```
 
 ---

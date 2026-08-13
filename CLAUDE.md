@@ -16,11 +16,12 @@
 ## 주요 명령어
 
 ```bash
-npm run dev             # 개발 서버 (Vite HMR)
-npm run build           # 프로덕션 빌드
-npm run lint            # 린트 (oxlint)
-npm run fetch:pokedex   # PokeAPI + 한국어 위키에서 데이터 생성 (수 시간 소요)
-npm run build:tm-index  # by-id/*.generated.ts → tm-index.generated.ts 역인덱스 생성
+npm run dev                    # 개발 서버 (Vite HMR)
+npm run build                  # 프로덕션 빌드
+npm run lint                   # 린트 (oxlint)
+npm run fetch:pokedex          # PokeAPI + 한국어 위키에서 데이터 생성 (수 시간 소요)
+npm run build:tm-index         # by-id/*.generated.ts → tm-index.generated.ts 역인덱스 생성
+npm run build:move-descriptions  # PokeAPI에서 기술 한국어 설명 수집 → move-descriptions.generated.ts
 ```
 
 ## 폴더 구조
@@ -45,12 +46,16 @@ src/
     moves/all-moves.generated.ts      # ALL_MOVES 목록
     moves/by-id/*.generated.ts        # 포켓몬별 세대/버전별 학습셋 (1082개 파일, lazy 로드)
     moves/tm-index.generated.ts       # TM/HM 역인덱스 (기술머신 → 배울 수 있는 포켓몬 ID 목록)
+    moves/move-descriptions.generated.ts  # 기술 한국어 설명 (727종, build-move-descriptions.mjs 생성)
     sample/                           # 도우미 함수 (findSamplePokemon, findMove 등) + 공략 데이터
+      flavorTexts.ts                  # PokeAPI 도감 설명 온디맨드 fetch 유틸
+      pokemonHeartgoldWalkthrough.data.ts  # 하트골드 최고효율 진행 공략 데이터 (11 Phase)
   router.tsx      # 라우트 정의
   styles/index.css  # @theme 디자인 토큰
 scripts/
-  fetch-pokedex.mjs    # PokeAPI + 한국어 위키 스크래핑 → 생성 파일 출력
-  build-tm-index.mjs   # by-id/*.generated.ts 파싱 → tm-index.generated.ts 출력
+  fetch-pokedex.mjs           # PokeAPI + 한국어 위키 스크래핑 → 생성 파일 출력
+  build-tm-index.mjs          # by-id/*.generated.ts 파싱 → tm-index.generated.ts 출력
+  build-move-descriptions.mjs # PokeAPI 기술 한국어 설명 수집 → move-descriptions.generated.ts 출력
 ```
 
 ## 데이터 생성 흐름
@@ -78,8 +83,10 @@ scripts/
 | `/guides/pokemon-firered-sevii-islands` | PokemonFireredSeviiIslandsGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-red-evolution` | PokemonRedEvolutionGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-heartgold-story` | PokemonHeartgoldStoryGuidePage | 정적 전용 라우트 |
+| `/guides/pokemon-heartgold-walkthrough` | PokemonHeartgoldWalkthroughGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-emerald-story` | PokemonEmeraldStoryGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-platinum-story` | PokemonPlatinumStoryGuidePage | 정적 전용 라우트 |
+| `/guides/pokemon-platinum-progress` | PokemonPlatinumProgressGuidePage | 정적 전용 라우트 |
 | `/guides/:slug` | GuideDetailPage | 마크다운 기반 범용 공략 |
 
 > 정적 전용 라우트는 `:slug` 동적 라우트 **앞에** 선언해야 React Router가 올바르게 매칭한다.

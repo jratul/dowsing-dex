@@ -43,8 +43,9 @@ npm run preview  # 빌드 결과물 미리보기
 포켓몬 데이터는 `scripts/fetch-pokedex.mjs`가 PokeAPI와 한국어 위키에서 수집해 `src/data/` 하위에 TypeScript 파일로 생성한다. **수 시간이 걸린다.**
 
 ```bash
-npm run fetch:pokedex    # 포켓몬·기술·특성·출현 장소 전체 재수집
-npm run build:tm-index   # 기술머신 역인덱스 재생성 (fetch:pokedex 후 실행)
+npm run fetch:pokedex           # 포켓몬·기술·특성·출현 장소 전체 재수집
+npm run build:tm-index          # 기술머신 역인덱스 재생성 (fetch:pokedex 후 실행)
+npm run build:move-descriptions # 기술 한국어 설명 수집 (fetch:pokedex와 독립 실행 가능)
 ```
 
 생성 파일(`*.generated.ts`)은 직접 수정하지 않는다.
