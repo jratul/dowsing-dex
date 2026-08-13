@@ -12,6 +12,7 @@ import {
   HGW_HM_TABLE,
   HGW_ALT_MEMBERS,
   HGW_LEVEL_MILESTONES,
+  HGW_YOUTUBER_PICKS,
   HGW_NAME_TO_ID,
 } from '../data/sample/pokemonHeartgoldWalkthrough.data'
 
@@ -252,6 +253,81 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                     </p>
                     <p className="mt-0.5 text-sm text-ink">{m.role}</p>
                     <p className="mt-0.5 text-xs text-ink-faint">입수: {m.obtainedAt}</p>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </Card>
+
+      {/* 윤가놈 추천 파티 분석 */}
+      <Card className="mb-6">
+        <div className="p-4">
+          <SectionHeading>윤가놈 추천 파티 — 다우징덱스 분석</SectionHeading>
+          <p className="mb-4 text-sm text-ink-muted">
+            유튜버 윤가놈이 추천하는 파티(누오·크로뱃·니드킹·마기라스·루기아·칠색조·망나뇽)를 스토리 효율 관점에서 분석했습니다.
+          </p>
+          <div className="space-y-4">
+            {HGW_YOUTUBER_PICKS.map((pick) => {
+              const p = SAMPLE_POKEMON.find((sp) => sp.id === pick.pokemonId)
+              const verdictColor =
+                pick.verdict === 'strong'
+                  ? 'bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300'
+                  : pick.verdict === 'late'
+                    ? 'bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300'
+                    : 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-300'
+              return (
+                <div key={pick.pokemonId} className="rounded-lg border border-border p-3">
+                  <div className="mb-2 flex flex-wrap items-start gap-3">
+                    {p && (
+                      <SpriteImage
+                        src={p.artworkUrl ?? p.spriteUrl}
+                        alt={p.nameKo}
+                        width={52}
+                        height={52}
+                        pixelated={false}
+                        rounded="none"
+                        className="h-13 w-13 shrink-0"
+                      />
+                    )}
+                    <div className="min-w-0 flex-1">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="font-black text-ink">{p?.nameKo ?? pick.pokemon}</span>
+                        <span className="text-xs text-ink-muted">{pick.type}</span>
+                        <span className={`rounded px-2 py-0.5 text-xxs font-bold ${verdictColor}`}>
+                          {pick.verdictLabel}
+                        </span>
+                      </div>
+                      <p className="mt-0.5 text-xs text-ink-faint">
+                        입수: {pick.obtainedAt}
+                      </p>
+                      <p className="text-xs text-ink-muted">포획 시기: {pick.obtainTiming}</p>
+                    </div>
+                  </div>
+                  <div className="grid gap-2 sm:grid-cols-2">
+                    <div>
+                      <p className="mb-1 text-xxs font-bold text-green-600 dark:text-green-400">장점</p>
+                      <ul className="space-y-0.5">
+                        {pick.pros.map((pro, i) => (
+                          <li key={i} className="flex gap-1.5 text-xs text-ink">
+                            <span className="mt-px shrink-0 text-green-500">✓</span>
+                            <span>{L(pro)}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="mb-1 text-xxs font-bold text-red-600 dark:text-red-400">단점</p>
+                      <ul className="space-y-0.5">
+                        {pick.cons.map((con, i) => (
+                          <li key={i} className="flex gap-1.5 text-xs text-ink">
+                            <span className="mt-px shrink-0 text-red-500">✗</span>
+                            <span>{L(con)}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               )
