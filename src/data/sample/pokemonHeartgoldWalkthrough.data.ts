@@ -110,12 +110,12 @@ export interface HmRow {
 }
 
 export const HGW_HM_TABLE: HmRow[] = [
-  { hm: 'HM01', move: '풀베기', holder: '마그케인', obtainedAt: '너도밤나무숲 NPC (체육관2 전)', badge: '체육관1(윙)' },
-  { hm: 'HM02', move: '공중날기', holder: '헤라크로스', obtainedAt: '체육관5 클리어 후 사도의 아내', badge: '체육관5(쇼크)' },
-  { hm: 'HM03', move: '파도타기', holder: '갸라도스', obtainedAt: '인주시티 무용도장 어른', badge: '체육관4(팬텀)' },
-  { hm: 'HM04', move: '괴력', holder: '갸라도스', obtainedAt: '진청시티 포켓몬센터 선원', badge: '체육관5(쇼크)' },
-  { hm: 'HM05', move: '바다회오리', holder: '갸라도스', obtainedAt: '황토마을 이벤트 후 랜스', badge: '체육관7(아이스)' },
-  { hm: 'HM07', move: '폭포오르기', holder: '갸라도스', obtainedAt: '용의 굴 어른 (체육관8 후)', badge: '체육관8(라이징)' },
+  { hm: 'HM01', move: '풀베기', holder: '마그케인', obtainedAt: '너도밤나무숲 NPC (고동마을 2관 후)', badge: '인섹트배지' },
+  { hm: 'HM02', move: '공중날기', holder: '헤라크로스', obtainedAt: '진청시티 5관 클리어 후 사도의 아내', badge: '쇼크배지' },
+  { hm: 'HM03', move: '파도타기', holder: '갸라도스', obtainedAt: '인주시티 무용도장 어른', badge: '팬텀배지' },
+  { hm: 'HM04', move: '괴력', holder: '갸라도스', obtainedAt: '진청시티 포켓몬센터 선원', badge: '레귤러배지' },
+  { hm: 'HM05', move: '바다회오리', holder: '갸라도스', obtainedAt: '황토마을 이벤트 후 랜스', badge: '아이스배지' },
+  { hm: 'HM07', move: '폭포오르기', holder: '갸라도스', obtainedAt: '용의 굴 어른 (검은먹시티 8관 후)', badge: '라이징배지' },
   { hm: '기술가르침', move: '박치기', holder: '마그케인', obtainedAt: '너도밤나무숲 숯쟁이의 제자', badge: '없음' },
   { hm: 'TM70', move: '플래시', holder: '보조 포켓몬', obtainedAt: '모다피의 탑 장로', badge: '없음' },
 ]
@@ -127,7 +127,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 1 ───
   {
     id: 'phase1',
-    title: '체육관1 도라지체육관',
+    title: '도라지시티 — 1관 비상',
     subtitle: '관장 비상 — 비행 타입',
     levelRange: '권장 마그케인 Lv.15',
     todos: [
@@ -152,7 +152,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     ],
     boss: {
       leader: '비상',
-      gym: '도라지체육관',
+      gym: '도라지시티',
       gymType: '비행',
       levels: 'Lv.9·13',
       note: '마그케인 불꽃세례 한 방. 레벨 올리면 어렵지 않다.',
@@ -167,7 +167,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 2 ───
   {
     id: 'phase2',
-    title: '체육관2 고동체육관',
+    title: '고동마을 — 2관 호일',
     subtitle: '관장 호일 — 벌레 타입',
     levelRange: '권장 마그케인 Lv.19~20',
     todos: [
@@ -200,7 +200,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     ],
     boss: {
       leader: '호일',
-      gym: '고동체육관',
+      gym: '고동마을',
       gymType: '벌레',
       levels: 'Lv.14·14·16',
       note: '마그케인 불꽃세례로 전부 처리. 스라크(벌레/비행)는 불꽃 2배.',
@@ -216,7 +216,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 3 ───
   {
     id: 'phase3',
-    title: '체육관3 금빛체육관',
+    title: '금빛시티 — 3관 꼭두',
     subtitle: '관장 꼭두 — 노말 타입',
     levelRange: '권장 마그케인 Lv.20~22',
     todos: [
@@ -233,7 +233,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     ],
     boss: {
       leader: '꼭두',
-      gym: '금빛체육관',
+      gym: '금빛시티',
       gymType: '노말',
       levels: 'Lv.17·19',
       note: '밀탱크의 구르기가 위협. 헤라크로스 인파이트(격투 2배)로 끝낸다. 전기자석파로 마비 후 공략도 유효.',
@@ -248,7 +248,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 4 ───
   {
     id: 'phase4',
-    title: '체육관4 인주체육관',
+    title: '인주시티 — 4관 유빈',
     subtitle: '관장 유빈 — 고스트 타입',
     levelRange: '권장 Lv.25~27',
     todos: [
@@ -274,7 +274,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     ],
     boss: {
       leader: '유빈',
-      gym: '인주체육관',
+      gym: '인주시티',
       gymType: '고스트',
       levels: 'Lv.21·21·21·25',
       note: '고스트는 노말·격투 무효. 전기자석파(보송송)로 마비시킨 뒤 화염방사로 중립 공격. 팬텀은 땅 약점 — 지진이 있으면 2배.',
@@ -290,7 +290,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 5 ───
   {
     id: 'phase5',
-    title: '체육관5 진청체육관',
+    title: '진청시티 — 5관 사도',
     subtitle: '관장 사도 — 격투 타입',
     levelRange: '권장 Lv.29~31',
     todos: [
@@ -309,7 +309,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     ],
     boss: {
       leader: '사도',
-      gym: '진청체육관',
+      gym: '진청시티',
       gymType: '격투',
       levels: 'Lv.27·30',
       note: '격투는 비행·에스퍼에 약점. 토게틱/토게키스 에어슬래시나 마그케인 불꽃세례로 처리.',
@@ -324,7 +324,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 6 ───
   {
     id: 'phase6',
-    title: '체육관6 담청체육관',
+    title: '담청시티 — 6관 규리',
     subtitle: '관장 규리 — 강철 타입',
     levelRange: '권장 Lv.32~35',
     todos: [
@@ -336,7 +336,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     keyItems: [],
     boss: {
       leader: '규리',
-      gym: '담청체육관',
+      gym: '담청시티',
       gymType: '강철',
       levels: 'Lv.30·30·35',
       note: '블레이범/마그케인 화염방사 한 방. 강철 타입은 불꽃에 2배 약점.',
@@ -351,8 +351,8 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 7 ───
   {
     id: 'phase7',
-    title: '체육관7 황토체육관',
-    subtitle: '관장 프리스 — 얼음 타입',
+    title: '황토마을 — 7관 류옹',
+    subtitle: '관장 류옹 — 얼음 타입',
     levelRange: '권장 Lv.35~38',
     todos: [
       '43번도로 북상 → 안농폭포 이벤트 (수질오염)',
@@ -377,7 +377,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     ],
     boss: {
       leader: '프리스',
-      gym: '황토체육관',
+      gym: '황토마을',
       gymType: '얼음',
       levels: 'Lv.27·29·31',
       note: '얼음 타입은 격투·불꽃 약점. 헤라크로스 인파이트·메가폰 또는 블레이범 화염방사.',
@@ -393,7 +393,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 8 ───
   {
     id: 'phase8',
-    title: '체육관8 검은먹체육관',
+    title: '검은먹시티 — 8관 이향',
     subtitle: '관장 이향 — 드래곤 타입',
     levelRange: '권장 Lv.38~42',
     todos: [
@@ -418,7 +418,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     ],
     boss: {
       leader: '이향',
-      gym: '검은먹체육관',
+      gym: '검은먹시티',
       gymType: '드래곤',
       levels: 'Lv.38·38·38·41',
       note: '신뇽(드래곤)은 얼음 2배. 킹드라(드래곤/물)는 얼음·드래곤 중립, 전기 2배! 전룡이 핵심.',
