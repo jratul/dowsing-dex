@@ -110,13 +110,14 @@ export interface HmRow {
 }
 
 export const HGW_HM_TABLE: HmRow[] = [
-  { hm: 'HM01', move: '박치기', holder: '마그케인', obtainedAt: '너도밤나무숲 NPC', badge: '체육관1(윙)' },
+  { hm: 'HM01', move: '풀베기', holder: '마그케인', obtainedAt: '너도밤나무숲 NPC (체육관2 전)', badge: '체육관1(윙)' },
   { hm: 'HM02', move: '공중날기', holder: '헤라크로스', obtainedAt: '체육관5 클리어 후 사도의 아내', badge: '체육관5(쇼크)' },
   { hm: 'HM03', move: '파도타기', holder: '갸라도스', obtainedAt: '인주시티 무용도장 어른', badge: '체육관4(팬텀)' },
   { hm: 'HM04', move: '괴력', holder: '갸라도스', obtainedAt: '진청시티 포켓몬센터 선원', badge: '체육관5(쇼크)' },
-  { hm: 'HM05', move: '섬광', holder: '보조 포켓몬', obtainedAt: '방울탑 현인', badge: '없음' },
-  { hm: 'HM06', move: '소용돌이', holder: '갸라도스', obtainedAt: '황토마을 이벤트 후 랜스', badge: '체육관7(아이스)' },
+  { hm: 'HM05', move: '바다회오리', holder: '갸라도스', obtainedAt: '황토마을 이벤트 후 랜스', badge: '체육관7(아이스)' },
   { hm: 'HM07', move: '폭포오르기', holder: '갸라도스', obtainedAt: '용의 굴 어른 (체육관8 후)', badge: '체육관8(라이징)' },
+  { hm: '기술가르침', move: '박치기', holder: '마그케인', obtainedAt: '너도밤나무숲 숯쟁이의 제자', badge: '없음' },
+  { hm: 'TM70', move: '플래시', holder: '보조 포켓몬', obtainedAt: '방울탑 현인', badge: '없음' },
 ]
 
 // ──────────────────────────────────────────────────────────────
@@ -134,7 +135,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       '포켓몬 할아버지 심부름 → 토게피 알 수령 ★ (31번도로 포켓몬 할아버지의 집)',
       '박사 라이벌전 1회 → 30·31번도로 레벨업',
       '브케인 Lv.14 → 마그케인 진화 확인 (불꽃세례 습득)',
-      '방울탑 현인에게서 HM05 섬광 입수 (선택)',
+      '방울탑 현인에게서 TM70 플래시 입수 (선택)',
     ],
     catches: [
       {
@@ -147,7 +148,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       },
     ],
     keyItems: [
-      { item: 'HM05 섬광', from: '방울탑 현인', note: '선택 — 배틀 보조용' },
+      { item: 'TM70 플래시', from: '방울탑 현인', note: '선택 — 배틀 보조용' },
     ],
     boss: {
       leader: '비상',
@@ -359,7 +360,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       '  전기자석파 마비 후 체력 낮추기 → 하이퍼볼로 포획 권장',
       '갸라도스에 HM03 파도타기·HM04 괴력 배정 시작',
       '황토마을 로켓단 기지 이벤트 — 랜스와 협력해 해결',
-      '로켓단 소탕 후 랜스에게 HM06 소용돌이 입수',
+      '로켓단 소탕 후 랜스에게 HM05 바다회오리 입수',
     ],
     catches: [
       {
@@ -372,7 +373,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       },
     ],
     keyItems: [
-      { item: 'HM06 소용돌이', from: '황토마을 로켓단 소탕 후 랜스', note: '체육관7 배지 사용 조건' },
+      { item: 'HM05 바다회오리', from: '황토마을 로켓단 소탕 후 랜스', note: '체육관7 배지 사용 조건' },
     ],
     boss: {
       leader: '프리스',
@@ -699,7 +700,7 @@ export const HGW_YOUTUBER_PICKS: YoutuberPick[] = [
     pokemonId: 249,
     pokemon: '루기아',
     type: '에스퍼/비행',
-    obtainedAt: '소용돌이섬 Lv.45 (HM06 소용돌이 필요 + 은빛날개)',
+    obtainedAt: '소용돌이섬 Lv.45 (HM05 바다회오리 필요 + 은빛날개)',
     obtainTiming: '체육관7 이후 (소용돌이 HM 입수 후). 은빛날개는 관동 바위산 노인에게서 입수',
     pros: [
       '특방 154 — 게임 내 최고 수준의 내구성. 어떤 상대의 특수기도 버텨냄',
