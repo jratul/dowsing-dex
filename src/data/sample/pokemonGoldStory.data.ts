@@ -201,13 +201,13 @@ export interface HmRow {
 }
 
 export const GOLD_STORY_HM_TABLE: HmRow[] = [
-  { hm: 'HM01', move: '풀베기', pokemon: '우츠동', location: '너도밤나무숲', badge: '고동체육관 배지', note: '초중반 진행용. 후반 교체 예정 포켓몬에게 배정' },
-  { hm: 'HM02', move: '공중날기', pokemon: '크로뱃', location: '진청시티, 사도 격파 후 체육관 밖 NPC', badge: '진청체육관 배지', note: '이동 편의성 핵심' },
-  { hm: 'HM03', move: '파도타기', pokemon: '갸라도스', location: '인주시티 무용극장 이벤트 보상', badge: '인주체육관 배지', note: '갸라도스 주력 물 기술' },
-  { hm: 'HM04', move: '괴력', pokemon: '갸라도스', location: '담청시티 식당 NPC', badge: '금빛체육관 배지', note: '이동 및 전투 겸용' },
-  { hm: 'HM05', move: '플래시', pokemon: '전룡 / 윤겔라 / 임시 포켓몬', location: '모다피탑 장로 격파 보상', badge: '도라지체육관 배지', note: '필수 구간이 적으므로 임시 채용 가능' },
-  { hm: 'HM06', move: '바다회오리', pokemon: '갸라도스', location: '로켓단 아지트 클리어 후 목호에게 획득', badge: '황토체육관 배지', note: '용의굴·소용돌이섬 진행용 임시 기술' },
-  { hm: 'HM07', move: '폭포오르기', pokemon: '갸라도스', location: '얼음샛길 내부', badge: '검은먹체육관 배지', note: '후반 진행용' },
+  { hm: 'HM01', move: '풀베기', pokemon: '우츠동', location: '너도밤나무숲', badge: '인섹트배지', note: '초중반 진행용. 후반 교체 예정 포켓몬에게 배정' },
+  { hm: 'HM02', move: '공중날기', pokemon: '크로뱃', location: '진청시티, 사도 격파 후 체육관 밖 NPC', badge: '쇼크배지', note: '이동 편의성 핵심' },
+  { hm: 'HM03', move: '파도타기', pokemon: '갸라도스', location: '인주시티 무용극장 이벤트 보상', badge: '팬텀배지', note: '갸라도스 주력 물 기술' },
+  { hm: 'HM04', move: '괴력', pokemon: '갸라도스', location: '담청시티 식당 NPC', badge: '레귤러배지', note: '이동 및 전투 겸용' },
+  { hm: 'HM05', move: '플래시', pokemon: '전룡 / 윤겔라 / 임시 포켓몬', location: '모다피탑 장로 격파 보상', badge: '윙배지', note: '필수 구간이 적으므로 임시 채용 가능' },
+  { hm: 'HM06', move: '바다회오리', pokemon: '갸라도스', location: '로켓단 아지트 클리어 후 목호에게 획득', badge: '아이스배지', note: '용의굴·소용돌이섬 진행용 임시 기술' },
+  { hm: 'HM07', move: '폭포오르기', pokemon: '갸라도스', location: '얼음샛길 내부', badge: '라이징배지', note: '후반 진행용' },
 ]
 
 export interface TmRow {

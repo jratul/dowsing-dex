@@ -164,13 +164,13 @@ export interface HmRow {
 }
 
 export const HG_STORY_HM_TABLE: HmRow[] = [
-  { hm: 'HM01', move: '풀베기', pokemon: '헤라크로스 (포획 전) / 임시', location: '너도밤나무숲', badge: '고동체육관 배지', note: '헤라크로스 포획 목적으로도 사용. 이후 삭제' },
-  { hm: 'HM02', move: '공중날기', pokemon: '갸라도스 / 토게키스', location: '진청시티 NPC', badge: '진청체육관 배지', note: '이동 편의성 핵심. 갸라도스 또는 토게키스에 배정' },
-  { hm: 'HM03', move: '파도타기', pokemon: '갸라도스', location: '인주시티 무용극장 이벤트 보상', badge: '인주체육관 배지', note: '갸라도스 주력 물 기술 겸 이동' },
-  { hm: 'HM04', move: '괴력', pokemon: '갸라도스', location: '담청시티 식당 NPC', badge: '금빛체육관 배지', note: '이동 및 전투 겸용' },
-  { hm: 'HM05', move: '플래시', pokemon: '전룡 / 임시', location: '모다피탑 장로 격파 보상', badge: '도라지체육관 배지', note: '필수 진행 구간 최소화. 임시 포켓몬에 배정 가능' },
-  { hm: 'HM06', move: '바다회오리', pokemon: '갸라도스 임시', location: '로켓단 아지트 클리어 후 목호에게 획득', badge: '황토체육관 배지', note: '소용돌이섬 진행용. 이후 삭제' },
-  { hm: 'HM07', move: '폭포오르기', pokemon: '갸라도스', location: '얼음샛길 내부', badge: '검은먹체육관 배지', note: '후반 진행 필수' },
+  { hm: 'HM01', move: '풀베기', pokemon: '헤라크로스 (포획 전) / 임시', location: '너도밤나무숲', badge: '인섹트배지', note: '헤라크로스 포획 목적으로도 사용. 이후 삭제' },
+  { hm: 'HM02', move: '공중날기', pokemon: '갸라도스 / 토게키스', location: '진청시티 NPC', badge: '쇼크배지', note: '이동 편의성 핵심. 갸라도스 또는 토게키스에 배정' },
+  { hm: 'HM03', move: '파도타기', pokemon: '갸라도스', location: '인주시티 무용극장 이벤트 보상', badge: '팬텀배지', note: '갸라도스 주력 물 기술 겸 이동' },
+  { hm: 'HM04', move: '괴력', pokemon: '갸라도스', location: '담청시티 식당 NPC', badge: '레귤러배지', note: '이동 및 전투 겸용' },
+  { hm: 'HM05', move: '플래시', pokemon: '전룡 / 임시', location: '모다피탑 장로 격파 보상', badge: '윙배지', note: '필수 진행 구간 최소화. 임시 포켓몬에 배정 가능' },
+  { hm: 'HM06', move: '바다회오리', pokemon: '갸라도스 임시', location: '로켓단 아지트 클리어 후 목호에게 획득', badge: '아이스배지', note: '소용돌이섬 진행용. 이후 삭제' },
+  { hm: 'HM07', move: '폭포오르기', pokemon: '갸라도스', location: '얼음샛길 내부', badge: '라이징배지', note: '후반 진행 필수' },
   { hm: 'HM08', move: '바위깨기', pokemon: '헤라크로스 / 갸라도스', location: '관동 특정 NPC', badge: '관동 진행 중 획득', note: '관동 진행 시 필요. 헤라크로스에 배정 가능' },
 ]
 
@@ -215,7 +215,7 @@ export const HG_STORY_STAGES: PartyStage[] = [
     title: '초반: 신비마을 ~ 금빛시티',
     members: ['브케인 / 마그케인', '메리프 / 보송송', '헤라크로스 (포획)', '주뱃 (크로뱃 대신)', '자유 슬롯'],
     goals: [
-      '헤라크로스를 담청마을~황금빛 경로 나무에서 빠르게 포획한다.',
+      '헤라크로스를 고동마을 근처 나무에서 빠르게 포획한다.',
       '메리프를 꾸준히 육성해 전기 타입 전력을 확보한다.',
       '토게피 달걀을 부화시켜 친밀도 올리기 시작한다.',
     ],
@@ -256,7 +256,7 @@ export const HG_STORY_JOHTO_GYMS: BossSection[] = [
     ],
   },
   {
-    title: '담청체육관 (벌레 타입)',
+    title: '고동체육관 호일 (벌레 타입)',
     note: '블레이범 화염방사로 대부분 처리. 쁘사이저 주의.',
     rows: [
       { opponent: '버터플·쁘사이저', answer: '블레이범 화염방사 / 라프라스 냉동빔' },
@@ -264,27 +264,27 @@ export const HG_STORY_JOHTO_GYMS: BossSection[] = [
   },
   {
     title: '금빛체육관 (노말 타입) ★고비',
-    note: '아냐의 밀탱크(레벨23)가 배북+몸통박치기로 매우 강하다. 헤라크로스 격투기 또는 토게키스 오라스피어 사용.',
+    note: '꼭두의 밀탱크(레벨23)가 배북+몸통박치기로 매우 강하다. 헤라크로스 격투기 또는 토게키스 오라스피어 사용.',
     rows: [
       { opponent: '밀탱크 (배북+몸통박치기)', answer: '헤라크로스 인파이트 / 토게키스 오라스피어' },
     ],
   },
   {
-    title: '진청체육관 사도 (고스트 타입)',
+    title: '인주체육관 유빈 (고스트 타입)',
     note: '블레이범 화염방사 또는 갸라도스 아이언테일/물기로 처리. 고스트에 노말·격투 무효.',
     rows: [
       { opponent: '무우마·겐가', answer: '블레이범 화염방사 / 갸라도스 아이언테일' },
     ],
   },
   {
-    title: '인주체육관 유빈 (격투 타입)',
+    title: '진청체육관 사도 (격투 타입)',
     note: '라프라스·갸라도스·토게키스 비행기로 처리. 격투는 에스퍼/비행에 약점.',
     rows: [
       { opponent: '성원숭·맥찌리', answer: '라프라스 냉동빔 / 토게키스 에어슬래시' },
     ],
   },
   {
-    title: '올리브체육관 (강철 타입)',
+    title: '담청체육관 규리 (강철 타입)',
     note: '블레이범 화염방사로 강철 타입 한 방. 지진도 효과적.',
     rows: [
       { opponent: '강철톤', answer: '블레이범 화염방사 / 지진' },

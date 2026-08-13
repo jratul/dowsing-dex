@@ -235,7 +235,7 @@ export const FIRERED_STORY_HM_TABLE: HmRow[] = [
   { hm: 'HM04', move: '괴력', pokemon: '잠만보 / 니드킹', location: '사파리존 금틀니를 원장에게 반환', badge: '무지개배지', note: '잠만보에게 주면 전투와 이동을 겸함' },
   { hm: 'HM05', move: '플래시', pokemon: '피카츄 / 쥬피썬더 / 임시 포켓몬', location: '2번도로 오박사 조수, 포획 10종 필요', badge: '회색배지', note: '돌산터널용. 필수는 아니지만 있으면 편함' },
   { hm: 'HM06', move: '바위깨기', pokemon: '임시 포켓몬', location: '일곱섬 1섬 온천 NPC', badge: '골드배지', note: '본편 사천왕 전에는 비중이 낮음' },
-  { hm: 'HM07', move: '폭포오르기', pokemon: '라프라스 / 임시 물 포켓몬', location: '4섬 얼음폭포동굴', badge: '진홍배지', note: '전국도감 이후 진행용' },
+  { hm: 'HM07', move: '폭포오르기', pokemon: '라프라스 / 임시 물 포켓몬', location: '4섬 얼음폭포동굴', badge: '진홍색배지', note: '전국도감 이후 진행용' },
 ]
 
 export interface TmRow {

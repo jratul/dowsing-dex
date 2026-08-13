@@ -110,13 +110,13 @@ export interface HmRow {
 }
 
 export const HGW_HM_TABLE: HmRow[] = [
-  { hm: 'HM01', move: '박치기', holder: '마그케인', obtainedAt: '일목의 숲 NPC', badge: '체육관1(비상)' },
-  { hm: 'HM02', move: '공중날기', holder: '헤라크로스', obtainedAt: '체육관5 클리어 후 마루의 아내', badge: '체육관5(폭풍)' },
-  { hm: 'HM03', move: '파도타기', holder: '갸라도스', obtainedAt: '에크루테크 무용도장 어른', badge: '체육관4(안개)' },
-  { hm: 'HM04', move: '괴력', holder: '갸라도스', obtainedAt: '쌍둥이섬 포켓몬센터 선원', badge: '체육관5(폭풍)' },
+  { hm: 'HM01', move: '박치기', holder: '마그케인', obtainedAt: '일목의 숲 NPC', badge: '체육관1(윙)' },
+  { hm: 'HM02', move: '공중날기', holder: '헤라크로스', obtainedAt: '체육관5 클리어 후 사도의 아내', badge: '체육관5(쇼크)' },
+  { hm: 'HM03', move: '파도타기', holder: '갸라도스', obtainedAt: '에크루테크 무용도장 어른', badge: '체육관4(팬텀)' },
+  { hm: 'HM04', move: '괴력', holder: '갸라도스', obtainedAt: '진청시티 포켓몬센터 선원', badge: '체육관5(쇼크)' },
   { hm: 'HM05', move: '섬광', holder: '보조 포켓몬', obtainedAt: '방울탑 현인', badge: '없음' },
-  { hm: 'HM06', move: '소용돌이', holder: '갸라도스', obtainedAt: '마호가니마을 이벤트 후 랜스', badge: '체육관7(서리)' },
-  { hm: 'HM07', move: '폭포오르기', holder: '갸라도스', obtainedAt: '용의 굴 어른 (체육관8 후)', badge: '체육관8(오름)' },
+  { hm: 'HM06', move: '소용돌이', holder: '갸라도스', obtainedAt: '마호가니마을 이벤트 후 랜스', badge: '체육관7(아이스)' },
+  { hm: 'HM07', move: '폭포오르기', holder: '갸라도스', obtainedAt: '용의 굴 어른 (체육관8 후)', badge: '체육관8(라이징)' },
 ]
 
 // ──────────────────────────────────────────────────────────────
@@ -159,7 +159,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
         { opponent: '구구 Lv.9 (비행/노말)', answer: '마그케인 불꽃세례' },
         { opponent: '피죤 Lv.13 (비행/노말)', answer: '마그케인 불꽃세례' },
       ],
-      badge: '비상배지',
+      badge: '윙배지',
     },
   },
 
@@ -167,7 +167,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   {
     id: 'phase2',
     title: '체육관2 아즈마체육관',
-    subtitle: '관장 쑤기 — 벌레 타입',
+    subtitle: '관장 호일 — 벌레 타입',
     levelRange: '권장 마그케인 Lv.19~20',
     todos: [
       '★ 32번도로에서 메리프 포획 (전기 핵심 멤버, 즉시 육성 시작)',
@@ -198,7 +198,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       { item: 'HM01 박치기', from: '일목의 숲 숯쟁이의 제자', note: '헤라크로스 포획에 필수' },
     ],
     boss: {
-      leader: '쑤기',
+      leader: '호일',
       gym: '아즈마체육관',
       gymType: '벌레',
       levels: 'Lv.14·14·16',
@@ -208,7 +208,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
         { opponent: '딱충이 Lv.14 (벌레/독)', answer: '마그케인 불꽃세례' },
         { opponent: '스라크 Lv.16 (벌레/비행)', answer: '마그케인 불꽃세례 (2배!)' },
       ],
-      badge: '벌레배지',
+      badge: '인섹트배지',
     },
   },
 
@@ -216,7 +216,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   {
     id: 'phase3',
     title: '체육관3 금빛체육관',
-    subtitle: '관장 민화 — 노말 타입',
+    subtitle: '관장 꼭두 — 노말 타입',
     levelRange: '권장 마그케인 Lv.20~22',
     todos: [
       '일목의 숲 통과 → 금빛시티',
@@ -231,7 +231,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       { item: '빛나는돌', from: '국립공원 포충대회 1위 상품', note: '토게틱 → 토게키스 진화에 필요. 화·목·토요일 참가.' },
     ],
     boss: {
-      leader: '민화',
+      leader: '꼭두',
       gym: '금빛체육관',
       gymType: '노말',
       levels: 'Lv.17·19',
@@ -240,7 +240,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
         { opponent: '삐삐 Lv.17 (노말)', answer: '마그케인 불꽃세례 (레벨 차로 일격)' },
         { opponent: '밀탱크 Lv.19 (노말)', answer: '헤라크로스 인파이트 (격투 2배 ★)' },
       ],
-      badge: '플레인배지',
+      badge: '레귤러배지',
     },
   },
 
@@ -248,7 +248,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   {
     id: 'phase4',
     title: '체육관4 에크루테크체육관',
-    subtitle: '관장 이철 — 고스트 타입',
+    subtitle: '관장 유빈 — 고스트 타입',
     levelRange: '권장 Lv.25~27',
     todos: [
       '에크루테크 불탄탑 방문 → 엔테이·라이코·스이쿤 발현 (스토리 이벤트)',
@@ -272,7 +272,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       { item: 'HM03 파도타기', from: '에크루테크 무용도장 어른', note: '라프라스 포획·이동에 즉시 사용' },
     ],
     boss: {
-      leader: '이철',
+      leader: '유빈',
       gym: '에크루테크체육관',
       gymType: '고스트',
       levels: 'Lv.21·21·21·25',
@@ -282,33 +282,33 @@ export const HGW_PHASES: WalkthroughPhase[] = [
         { opponent: '고우스트 Lv.21 (고스트/독)', answer: '보송송 전기자석파 마비 → 화염방사' },
         { opponent: '팬텀 Lv.25 (고스트/독)', answer: '마그케인 화염방사 · 지진 TM 있으면 2배' },
       ],
-      badge: '안개배지',
+      badge: '팬텀배지',
     },
   },
 
   // ─── Phase 5 ───
   {
     id: 'phase5',
-    title: '체육관5 쌍둥이섬체육관',
-    subtitle: '관장 마루 — 격투 타입',
+    title: '체육관5 진청체육관',
+    subtitle: '관장 사도 — 격투 타입',
     levelRange: '권장 Lv.29~31',
     todos: [
-      '에크루테크 → 38번도로 → 올리브시티',
-      '등대 이벤트: 재스민에게 말 걸기 → 쌍둥이섬 비밀의 약 심부름 요청',
-      '파도타기로 쌍둥이섬 이동 → 포켓몬센터 약사에게서 비밀의 약 입수',
-      '★ 쌍둥이섬 포켓몬센터 선원에게서 HM04 괴력 입수',
-      '체육관5 클리어 → 마루의 아내에게서 HM02 공중날기 입수',
-      '올리브시티로 귀환 → 비밀의 약을 재스민에게 전달 → 체육관6 오픈',
+      '에크루테크 → 38번도로 → 담청시티',
+      '등대 이벤트: 규리에게 말 걸기 → 진청시티 비밀의 약 심부름 요청',
+      '파도타기로 진청시티 이동 → 포켓몬센터 약사에게서 비밀의 약 입수',
+      '★ 진청시티 포켓몬센터 선원에게서 HM04 괴력 입수',
+      '체육관5 클리어 → 사도의 아내에게서 HM02 공중날기 입수',
+      '담청시티로 귀환 → 비밀의 약을 규리에게 전달 → 체육관6 오픈',
     ],
     catches: [],
     keyItems: [
-      { item: 'HM04 괴력', from: '쌍둥이섬 포켓몬센터 선원', note: '갸라도스 HM 배분 예정' },
-      { item: '비밀의 약', from: '쌍둥이섬 포켓몬센터 약사', note: '올리브시티 재스민에게 전달 → 체육관6 오픈' },
-      { item: 'HM02 공중날기', from: '체육관5 클리어 후 마루의 아내', note: '이후 이동 대폭 단축' },
+      { item: 'HM04 괴력', from: '진청시티 포켓몬센터 선원', note: '갸라도스 HM 배분 예정' },
+      { item: '비밀의 약', from: '진청시티 포켓몬센터 약사', note: '담청시티 규리에게 전달 → 체육관6 오픈' },
+      { item: 'HM02 공중날기', from: '체육관5 클리어 후 사도의 아내', note: '이후 이동 대폭 단축' },
     ],
     boss: {
-      leader: '마루',
-      gym: '쌍둥이섬체육관',
+      leader: '사도',
+      gym: '진청체육관',
       gymType: '격투',
       levels: 'Lv.27·30',
       note: '격투는 비행·에스퍼에 약점. 토게틱/토게키스 에어슬래시나 마그케인 불꽃세례로 처리.',
@@ -316,26 +316,26 @@ export const HGW_PHASES: WalkthroughPhase[] = [
         { opponent: '성원숭 Lv.27 (격투)', answer: '토게틱/토게키스 에어슬래시 (비행 2배)' },
         { opponent: '괴력몬 Lv.30 (격투)', answer: '토게틱/토게키스 에어슬래시 (비행 2배)' },
       ],
-      badge: '폭풍배지',
+      badge: '쇼크배지',
     },
   },
 
   // ─── Phase 6 ───
   {
     id: 'phase6',
-    title: '체육관6 올리브체육관',
-    subtitle: '관장 재스민 — 강철 타입',
+    title: '체육관6 담청체육관',
+    subtitle: '관장 규리 — 강철 타입',
     levelRange: '권장 Lv.32~35',
     todos: [
-      '비밀의 약을 재스민에게 전달 → 체육관6 즉시 오픈',
+      '비밀의 약을 규리에게 전달 → 체육관6 즉시 오픈',
       '마그케인 Lv.34 → 화염방사 습득 확인 (블레이범 진화는 Lv.36)',
       '강철톤에 지진(TM26 — 현재 없음)이 없어도 화염방사 2배로 충분',
     ],
     catches: [],
     keyItems: [],
     boss: {
-      leader: '재스민',
-      gym: '올리브체육관',
+      leader: '규리',
+      gym: '담청체육관',
       gymType: '강철',
       levels: 'Lv.30·30·35',
       note: '블레이범/마그케인 화염방사 한 방. 강철 타입은 불꽃에 2배 약점.',
@@ -343,7 +343,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
         { opponent: '코일 Lv.30 x2 (전기/강철)', answer: '마그케인/블레이범 화염방사 (2배!)' },
         { opponent: '강철톤 Lv.35 (강철/땅)', answer: '블레이범 화염방사 (2배!) · 라프라스 파도타기 (2배!)' },
       ],
-      badge: '광물배지',
+      badge: '스틸배지',
     },
   },
 
@@ -385,7 +385,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
         { opponent: '쥬레곤 Lv.29 (물/얼음)', answer: '헤라크로스 인파이트 · 전룡 10만볼트' },
         { opponent: '루주라 Lv.31 (얼음/에스퍼)', answer: '헤라크로스 메가폰 (벌레 2배) · 블레이범 화염방사' },
       ],
-      badge: '서리배지',
+      badge: '아이스배지',
     },
   },
 
@@ -425,7 +425,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
         { opponent: '신뇽 Lv.38 x3 (드래곤)', answer: '라프라스 냉동빔/얼음기둥 (얼음 2배!)' },
         { opponent: '킹드라 Lv.41 (드래곤/물)', answer: '전룡 10만볼트 (전기 2배! 드래곤/물)' },
       ],
-      badge: '오름배지',
+      badge: '라이징배지',
     },
   },
 
@@ -473,7 +473,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     todos: [
       '목호 격파 후 전국도감 받음 → 선착장에서 관동행 배 탑승',
       '이주시티 → 회색시티 → 갈색시티 → 진홍시티 → 무지개시티 → 연분홍시티 → 노랑시티 → 홍련섬 → 상록시티',
-      '홍련섬은 쌍둥이섬에서 배 탑승 (강연 → 5번 배지 필요)',
+      '강연 체육관은 소용돌이섬에 있음 — 담청시티 남쪽 파도타기로 접근',
       '상록시티 체육관은 전 8관 배지 획득 후 오픈',
     ],
     catches: [],
@@ -489,9 +489,9 @@ export const HGW_PHASES: WalkthroughPhase[] = [
         { opponent: '이슬 (물) 갈색시티 — 아쿠스타·야도란 등', answer: '전룡 10만볼트 (전기 2배)' },
         { opponent: '마티스 (전기) 진홍시티 — 레어코일·붐볼 등', answer: '블레이범 지진 (땅 2배!)' },
         { opponent: '민화 (풀) 무지개시티 — 나팔뚜·빅피카츄 등', answer: '블레이범 화염방사 (불꽃 2배)' },
-        { opponent: '쟈니 (독) 연분홍시티 — 독침붕·아포켈 등', answer: '블레이범 지진 (땅 2배) · 토게키스 오라스피어' },
+        { opponent: '도희 (독) 연분홍시티 — 독침붕·아포켈 등', answer: '블레이범 지진 (땅 2배) · 토게키스 오라스피어' },
         { opponent: '초련 (에스퍼) 노랑시티 — 후딘·야도란 등', answer: '헤라크로스 메가폰 (벌레 2배) · 갸라도스 물기' },
-        { opponent: '강연 (불꽃) 홍련섬 — 마그케인·마그마 등', answer: '갸라도스 파도타기 (물 2배) · 라프라스' },
+        { opponent: '강연 (불꽃) 소용돌이섬 — 마그케인·마그마 등', answer: '갸라도스 파도타기 (물 2배) · 라프라스' },
         { opponent: '블루 (혼합) 상록시티 — 나시·후딘·윈디 등', answer: '파티 전체로 상성 분담' },
       ],
       badge: '관동 8배지 완성',
