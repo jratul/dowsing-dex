@@ -131,7 +131,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     levelRange: '권장 마그케인 Lv.15',
     todos: [
       '스타팅: 브케인 선택 (불꽃 → 체육관3 밀탱크까지 체육관2도 유리)',
-      'Mr. Pokemon 심부름 → 토게피 알 수령 ★ (31번도로 Mr. Pokemon의 집)',
+      '포켓몬 할아버지 심부름 → 토게피 알 수령 ★ (31번도로 포켓몬 할아버지의 집)',
       '박사 라이벌전 1회 → 30·31번도로 레벨업',
       '브케인 Lv.14 → 마그케인 진화 확인 (불꽃세례 습득)',
       '방울탑 현인에게서 HM05 섬광 입수 (선택)',
@@ -140,7 +140,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       {
         pokemonId: 175,
         pokemon: '토게피',
-        location: '31번도로 Mr. Pokemon의 집',
+        location: '31번도로 포켓몬 할아버지의 집',
         timing: '게임 직후',
         note: '알로 받음. 친밀도 최대 시 토게틱으로 진화. 빛나는돌로 토게키스 최종 진화.',
         priority: 'star',
