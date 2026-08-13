@@ -323,14 +323,14 @@ export const HG_STORY_KANTO_GYMS: BossSection[] = [
     ],
   },
   {
-    title: '갈색체육관 이슬 (물 타입)',
+    title: '블루체육관 이슬 (물 타입)',
     note: '전룡 10만볼트로 전기 약점을 노린다.',
     rows: [
       { opponent: '아쿠스타·미끄래곤·쥬', answer: '전룡 10만볼트' },
     ],
   },
   {
-    title: '진홍체육관 마티스 (전기 타입)',
+    title: '갈색체육관 마티스 (전기 타입)',
     note: '블레이범 지진으로 전기 타입 일소. 땅은 전기에 면역.',
     rows: [
       { opponent: '코일·레어코일·에레키드', answer: '블레이범 지진' },
