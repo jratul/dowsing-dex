@@ -111,10 +111,10 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '리자몽',
     finalMoves: ['화염방사', '공중날기 / 날개치기', '베어가르기', '드래곤클로 / 깨트리다 / 강철날개'],
     moveTable: [
-      { move: '화염방사', how: 'Lv.습득', usage: '주력 불꽃 기술. 리자드 계열 레벨업으로 습득 가능' },
+      { move: '화염방사', how: 'Lv.34', usage: '주력 불꽃 기술. 리자드 계열 레벨업으로 습득 가능' },
       { move: '공중날기', how: 'HM02', usage: '이동용 비전머신 및 격투·풀 타입 처리' },
-      { move: '날개치기', how: 'Lv.습득', usage: '공중날기보다 전투 템포가 빠른 비행 기술' },
-      { move: '베어가르기', how: 'Lv.습득', usage: '안정적인 노말 물리 공격' },
+      { move: '날개치기', how: 'Lv.36', usage: '공중날기보다 전투 템포가 빠른 비행 기술' },
+      { move: '베어가르기', how: 'Lv.44', usage: '안정적인 노말 물리 공격' },
       { move: '드래곤클로', how: 'TM02', usage: '챔피언로드에서 획득. 드래곤 견제 보조' },
       { move: '깨트리다', how: 'TM31', usage: '바위·노말·얼음 타입 견제 보조' },
       { move: '강철날개', how: 'TM', usage: '바위 타입 견제 보조. 명중률은 다소 불안정' },
@@ -150,10 +150,10 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
     moveTable: [
       { move: '10만볼트', how: 'TM24', usage: '주력 전기 기술. 칸나, 목호 갸라도스, 챔피언 거북왕 처리 핵심' },
       { move: '전기자석파', how: 'TM', usage: '빠른 상대 마비. 보스전 안정화' },
-      { move: '물기', how: 'Lv.습득', usage: '에스퍼·고스트 타입 보조 견제' },
-      { move: '전광석화', how: 'Lv.습득', usage: '마무리 선공기' },
-      { move: '두번치기', how: 'Lv.습득', usage: '바위·노말 타입 보조 견제. 위력은 낮지만 범용성 있음' },
-      { move: '바늘미사일', how: 'Lv.습득', usage: '에스퍼 타입 견제 보조. 명중과 위력은 불안정' },
+      { move: '물기', how: 'Lv.30 (이브이)', usage: '에스퍼·고스트 타입 보조 견제' },
+      { move: '전광석화', how: 'Lv.23', usage: '마무리 선공기' },
+      { move: '두번치기', how: 'Lv.30', usage: '바위·노말 타입 보조 견제. 위력은 낮지만 범용성 있음' },
+      { move: '바늘미사일', how: 'Lv.36', usage: '에스퍼 타입 견제 보조. 명중과 위력은 불안정' },
     ],
     notes: [
       '가장 추천하는 진화 타이밍은 이브이 레벨 30 물기 습득 후 번개의돌을 사용하는 것이다.',
@@ -168,9 +168,9 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
     moveTable: [
       { move: '파도타기', how: 'HM03', usage: '주력 물 기술 및 이동용 비전머신' },
       { move: '냉동빔', how: 'Lv.31', usage: '목호 드래곤에어·망나뇽 처리 핵심' },
-      { move: '누르기', how: 'Lv.습득', usage: '안정적인 노말 물리 공격 및 마비 기대' },
-      { move: '이상한빛', how: 'Lv.습득', usage: '장기전 보조' },
-      { move: '멸망의노래', how: 'Lv.습득', usage: '강한 상대를 강제로 정리하는 보험' },
+      { move: '누르기', how: 'Lv.13', usage: '안정적인 노말 물리 공격 및 마비 기대' },
+      { move: '이상한빛', how: 'Lv.19', usage: '장기전 보조' },
+      { move: '멸망의노래', how: 'Lv.25', usage: '강한 상대를 강제로 정리하는 보험' },
       { move: '비바라기', how: 'TM', usage: '파도타기 강화. 필수는 아님' },
     ],
     notes: [
@@ -184,7 +184,7 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '잠만보',
     finalMoves: ['누르기 / 은혜갚기', '섀도볼', '괴력', '잠자기 / 깨트리다 / 지진'],
     moveTable: [
-      { move: '누르기', how: 'Lv.습득', usage: '포획 당시부터 유용한 안정적인 노말 공격' },
+      { move: '누르기', how: 'Lv.33', usage: '포획 당시부터 유용한 안정적인 노말 공격' },
       { move: '은혜갚기', how: 'TM27', usage: '친밀도가 높을 때 강력한 노말 물리 공격' },
       { move: '섀도볼', how: 'TM30', usage: '국화의 고스트 타입, 초련·챔피언의 에스퍼 타입 견제' },
       { move: '괴력', how: 'HM04', usage: '이동용 비전머신 및 실전 물리 공격' },
@@ -206,8 +206,8 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
     moveTable: [
       { move: '사이코키네시스', how: 'TM29', usage: '주력 에스퍼 기술. 독·격투 타입 처리' },
       { move: '기가드레인', how: 'TM19', usage: '물·땅·바위 타입 견제 및 회복' },
-      { move: '수면가루', how: 'Lv.습득', usage: '포획 및 보스전 보조' },
-      { move: '씨뿌리기', how: 'Lv.습득', usage: '장기전 보조' },
+      { move: '수면가루', how: 'Lv.37 (나시라)', usage: '포획 및 보스전 보조' },
+      { move: '씨뿌리기', how: 'Lv.13 (나시라)', usage: '장기전 보조' },
       { move: '솔라빔', how: 'TM22', usage: '고위력 풀 타입 기술. 쾌청과 연계 시 선택 가능' },
       { move: '빛의장막', how: 'TM', usage: '특수 공격 대응 보조' },
     ],

@@ -55,11 +55,11 @@ export const HG_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '블레이범',
     finalMoves: ['화염방사', '솔라빔 / 번개펀치', '지진', '불꽃파동 / 스피드스타'],
     moveTable: [
-      { move: '화염방사', how: 'Lv.습득', usage: '주력 불꽃 특수기. 4세대에서도 여전히 안정적' },
+      { move: '화염방사', how: 'Lv.42', usage: '주력 불꽃 특수기. 4세대에서도 여전히 안정적' },
       { move: '솔라빔', how: 'TM22', usage: '물·바위 타입 처리. 맑은날씨 TM 연계 가능' },
       { move: '번개펀치', how: '기술가르침', usage: '물·비행 타입 물리 견제기' },
       { move: '지진', how: 'TM26', usage: '레드 피카츄 처리. 독·바위·전기 타입 견제' },
-      { move: '불꽃파동', how: 'Lv.습득', usage: '화염방사 전까지 주력 불꽃기' },
+      { move: '불꽃파동', how: 'Lv.20', usage: '화염방사 전까지 주력 불꽃기' },
     ],
     notes: [
       '4세대에서 블레이범은 격투 타입(2세대 비공식)이 아닌 순수 불꽃 타입이다.',
@@ -106,8 +106,8 @@ export const HG_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '헤라크로스',
     finalMoves: ['메가폰', '인파이트', '사이코커터', '공중날기 / 독찌르기'],
     moveTable: [
-      { move: '메가폰', how: 'Lv.습득', usage: '노말 물리기. 친밀도 높을수록 강력. HG에서 유용' },
-      { move: '인파이트', how: 'Lv.습득', usage: '격투 물리기. 방어/특방이 낮아지지만 매우 강력' },
+      { move: '메가폰', how: 'Lv.55', usage: '노말 물리기. 친밀도 높을수록 강력. HG에서 유용' },
+      { move: '인파이트', how: 'Lv.37', usage: '격투 물리기. 방어/특방이 낮아지지만 매우 강력' },
       { move: '사이코커터', how: '기술가르침', usage: '독 타입 견제. 에스퍼 물리기' },
       { move: '독찌르기', how: 'TM', usage: '독 물리기. 독 상태이상 효과' },
     ],
@@ -122,11 +122,11 @@ export const HG_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '라프라스',
     finalMoves: ['파도타기 / 냉동빔', '얼음기둥', '번개', '노래 / 이상한빛'],
     moveTable: [
-      { move: '냉동빔', how: 'Lv.습득', usage: '주력 얼음 특수기. 드래곤·풀 타입 처리' },
+      { move: '냉동빔', how: 'Lv.32', usage: '주력 얼음 특수기. 드래곤·풀 타입 처리' },
       { move: '얼음기둥', how: 'TM79', usage: '냉동빔보다 강력한 얼음 특수기. TM 획득 권장' },
       { move: '번개', how: 'TM25', usage: '물 타입에게 효과적인 전기기. 명중 불안정' },
       { move: '파도타기', how: 'HM03', usage: '보조 물 기술. 갸라도스에 파도타기가 있으면 선택' },
-      { move: '노래', how: 'Lv.습득', usage: '수면 보조 유틸. 포획 및 보스전 안정화' },
+      { move: '노래', how: 'Lv.1', usage: '수면 보조 유틸. 포획 및 보스전 안정화' },
     ],
     notes: [
       '라프라스는 연결동굴에서 매주 금요일에 한 마리 무상 획득 가능.',
@@ -140,9 +140,9 @@ export const HG_STORY_MOVESETS: MoveSetSection[] = [
     finalMoves: ['공중날기', '에어슬래시', '크로스포이즌', '날개쉬기'],
     moveTable: [
       { move: '공중날기', how: 'HM02', usage: '비행 HM. 이동 수단 겸 비행 물리기' },
-      { move: '에어슬래시', how: 'Lv.습득', usage: '비행 특수기. 30% 풀죽음 효과. 격투 타입 체육관에 유효' },
-      { move: '크로스포이즌', how: 'Lv.습득', usage: '독 물리기. 급소율 높음' },
-      { move: '날개쉬기', how: 'Lv.습득', usage: 'HP 회복. 장기전 생존력 보조' },
+      { move: '에어슬래시', how: 'Lv.51', usage: '비행 특수기. 30% 풀죽음 효과. 격투 타입 체육관에 유효' },
+      { move: '크로스포이즌', how: 'Lv.1', usage: '독 물리기. 급소율 높음' },
+      { move: '날개쉬기', how: 'TM51', usage: 'HP 회복. 장기전 생존력 보조' },
     ],
     notes: [
       '주뱃을 동굴에서 이른 시기에 포획. 친밀도 최대(골뱃 Lv.22 이상) 시 크로뱃으로 진화.',

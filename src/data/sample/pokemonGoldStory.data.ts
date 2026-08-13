@@ -70,7 +70,7 @@ export const GOLD_STORY_MOVESETS: MoveSetSection[] = [
     finalMoves: ['불꽃펀치 / 화염방사', '번개펀치', '지진', '은혜갚기 / 스피드스타'],
     moveTable: [
       { move: '불꽃펀치', how: 'TM48', usage: '화염방사 전까지 주력 불꽃 기술' },
-      { move: '화염방사', how: 'Lv.습득', usage: '레벨 60 이후 선택 가능한 최종 불꽃 기술' },
+      { move: '화염방사', how: 'Lv.60', usage: '레벨 60 이후 선택 가능한 최종 불꽃 기술' },
       { move: '번개펀치', how: 'TM41', usage: '물 타입 견제 보조' },
       { move: '지진', how: 'TM26', usage: '레드 피카츄, 독·바위·전기 타입 견제' },
       { move: '은혜갚기', how: 'TM27', usage: '친밀도가 높을 때 안정적인 노말 물리기' },
@@ -124,9 +124,9 @@ export const GOLD_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '윤겔라',
     finalMoves: ['사이코키네시스', '냉동펀치', '회복', '번개펀치 / 리플렉터'],
     moveTable: [
-      { move: '사이코키네시스', how: 'Lv.습득', usage: '주력 에스퍼 기술' },
+      { move: '사이코키네시스', how: 'Lv.38', usage: '주력 에스퍼 기술' },
       { move: '냉동펀치', how: 'TM33', usage: '목호 망나뇽 처리 핵심' },
-      { move: '회복', how: 'Lv.습득', usage: '장기전 안정성' },
+      { move: '회복', how: 'Lv.26', usage: '장기전 안정성' },
       { move: '번개펀치', how: 'TM41', usage: '물·비행 타입 보조 견제' },
       { move: '리플렉터', how: 'TM', usage: '물리 공격 대응 보조' },
     ],
@@ -142,9 +142,9 @@ export const GOLD_STORY_MOVESETS: MoveSetSection[] = [
     finalMoves: ['공중날기', '이상한빛', '날개치기', '물기 / 은혜갚기'],
     moveTable: [
       { move: '공중날기', how: 'HM02', usage: '이동용 비전머신 및 비행 공격' },
-      { move: '이상한빛', how: 'Lv.습득', usage: '보스전 유틸' },
-      { move: '날개치기', how: 'Lv.습득', usage: '빠른 비행 타입 공격' },
-      { move: '물기', how: 'Lv.습득', usage: '에스퍼 타입 보조 견제' },
+      { move: '이상한빛', how: 'Lv.19', usage: '보스전 유틸' },
+      { move: '날개치기', how: 'Lv.30', usage: '빠른 비행 타입 공격' },
+      { move: '물기', how: 'Lv.12', usage: '에스퍼 타입 보조 견제' },
       { move: '은혜갚기', how: 'TM27', usage: '친밀도 기반 노말 물리기' },
     ],
     notes: [
@@ -158,10 +158,10 @@ export const GOLD_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '고우스트',
     finalMoves: ['저주', '나이트헤드', '이상한빛', '최면술 / 꿈먹기'],
     moveTable: [
-      { move: '저주', how: 'Lv.습득', usage: '레드 잠만보 처리 핵심' },
-      { move: '나이트헤드', how: 'Lv.습득', usage: '레벨 기반 고정 데미지' },
-      { move: '이상한빛', how: 'Lv.습득', usage: '장기전 보조' },
-      { move: '최면술', how: 'Lv.습득', usage: '수면 유틸' },
+      { move: '저주', how: 'Lv.16', usage: '레드 잠만보 처리 핵심' },
+      { move: '나이트헤드', how: 'Lv.21', usage: '레벨 기반 고정 데미지' },
+      { move: '이상한빛', how: 'Lv.31', usage: '장기전 보조' },
+      { move: '최면술', how: 'Lv.1', usage: '수면 유틸' },
       { move: '꿈먹기', how: 'TM42', usage: '최면술과 연계 가능' },
     ],
     notes: [
@@ -176,11 +176,11 @@ export const GOLD_STORY_MOVESETS: MoveSetSection[] = [
     pokemon: '우츠동',
     finalMoves: ['수면가루', '잎날가르기', '용해액', '풀베기 / 저리가루'],
     moveTable: [
-      { move: '수면가루', how: 'Lv.습득', usage: '포획 및 보스전 보조' },
-      { move: '잎날가르기', how: 'Lv.습득', usage: '주력 풀 기술' },
-      { move: '용해액', how: 'Lv.습득', usage: '독 타입 보조 공격' },
+      { move: '수면가루', how: 'Lv.15', usage: '포획 및 보스전 보조' },
+      { move: '잎날가르기', how: 'Lv.42', usage: '주력 풀 기술' },
+      { move: '용해액', how: 'Lv.24', usage: '독 타입 보조 공격' },
       { move: '풀베기', how: 'HM01', usage: '초중반 이동용 비전머신' },
-      { move: '저리가루', how: 'Lv.습득', usage: '상태이상 보조' },
+      { move: '저리가루', how: 'Lv.19', usage: '상태이상 보조' },
     ],
     notes: [
       '우츠동은 초중반에는 매우 유용하다.',
