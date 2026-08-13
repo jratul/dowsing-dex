@@ -117,7 +117,7 @@ export const HGW_HM_TABLE: HmRow[] = [
   { hm: 'HM05', move: '바다회오리', holder: '갸라도스', obtainedAt: '황토마을 이벤트 후 랜스', badge: '체육관7(아이스)' },
   { hm: 'HM07', move: '폭포오르기', holder: '갸라도스', obtainedAt: '용의 굴 어른 (체육관8 후)', badge: '체육관8(라이징)' },
   { hm: '기술가르침', move: '박치기', holder: '마그케인', obtainedAt: '너도밤나무숲 숯쟁이의 제자', badge: '없음' },
-  { hm: 'TM70', move: '플래시', holder: '보조 포켓몬', obtainedAt: '새싹탑 장로', badge: '없음' },
+  { hm: 'TM70', move: '플래시', holder: '보조 포켓몬', obtainedAt: '모다피의 탑 장로', badge: '없음' },
 ]
 
 // ──────────────────────────────────────────────────────────────
@@ -135,7 +135,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       '포켓몬 할아버지 심부름 → 토게피 알 수령 ★ (31번도로 포켓몬 할아버지의 집)',
       '박사 라이벌전 1회 → 30·31번도로 레벨업',
       '브케인 Lv.14 → 마그케인 진화 확인 (불꽃세례 습득)',
-      '새싹탑 장로에게서 TM70 플래시 입수 (선택)',
+      '모다피의 탑 장로에게서 TM70 플래시 입수 (선택)',
     ],
     catches: [
       {
@@ -148,7 +148,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       },
     ],
     keyItems: [
-      { item: 'TM70 플래시', from: '새싹탑 장로', note: '선택 — 배틀 보조용' },
+      { item: 'TM70 플래시', from: '모다피의 탑 장로', note: '선택 — 배틀 보조용' },
     ],
     boss: {
       leader: '비상',

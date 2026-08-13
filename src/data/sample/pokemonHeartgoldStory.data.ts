@@ -168,7 +168,7 @@ export const HG_STORY_HM_TABLE: HmRow[] = [
   { hm: 'HM02', move: '공중날기', pokemon: '갸라도스 / 토게키스', location: '진청시티 NPC', badge: '쇼크배지', note: '이동 편의성 핵심. 갸라도스 또는 토게키스에 배정' },
   { hm: 'HM03', move: '파도타기', pokemon: '갸라도스', location: '인주시티 무용극장 이벤트 보상', badge: '팬텀배지', note: '갸라도스 주력 물 기술 겸 이동' },
   { hm: 'HM04', move: '괴력', pokemon: '갸라도스', location: '담청시티 식당 NPC', badge: '레귤러배지', note: '이동 및 전투 겸용' },
-  { hm: 'TM70', move: '플래시', pokemon: '전룡 / 임시', location: '새싹탑 장로 격파 보상', badge: '윙배지', note: '필수 진행 구간 최소화. 임시 포켓몬에 배정 가능' },
+  { hm: 'TM70', move: '플래시', pokemon: '전룡 / 임시', location: '모다피의 탑 장로 격파 보상', badge: '윙배지', note: '필수 진행 구간 최소화. 임시 포켓몬에 배정 가능' },
   { hm: 'HM05', move: '바다회오리', pokemon: '갸라도스 임시', location: '로켓단 아지트 클리어 후 목호에게 획득', badge: '아이스배지', note: '소용돌이섬 진행용. 이후 삭제' },
   { hm: 'HM07', move: '폭포오르기', pokemon: '갸라도스', location: '얼음샛길 내부', badge: '라이징배지', note: '후반 진행 필수' },
   { hm: 'HM06', move: '바위깨기', pokemon: '헤라크로스 / 갸라도스', location: '관동 특정 NPC', badge: '관동 진행 중 획득', note: '관동 진행 시 필요. 헤라크로스에 배정 가능' },
