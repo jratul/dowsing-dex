@@ -14,6 +14,7 @@ import {
   HG_STORY_ALT_HERACROSS,
   HG_STORY_ALT_TOGEKISS,
   HG_STORY_CAUTIONS,
+  HG_STORY_FARMING,
   HG_STORY_CATCH_TABLE,
   HG_STORY_CHAMPION,
   HG_STORY_ELITE4,
@@ -352,6 +353,19 @@ export function PokemonHeartgoldStoryGuidePage() {
             <li key={c}>{c}</li>
           ))}
         </ul>
+      </Card>
+
+      {/* 17. 파밍·레벨업 팁 */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>파밍·레벨업 팁</SectionHeading>
+        <div className="space-y-3">
+          {HG_STORY_FARMING.map((f) => (
+            <div key={f.title} className="rounded-lg bg-surface-hover p-3">
+              <p className="mb-1 text-sm font-bold text-ink">{f.title}</p>
+              <p className="text-sm text-ink-muted">{f.detail}</p>
+            </div>
+          ))}
+        </div>
       </Card>
     </GuidePageLayout>
   )
