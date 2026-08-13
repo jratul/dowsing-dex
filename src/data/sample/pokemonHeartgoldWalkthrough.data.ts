@@ -110,7 +110,7 @@ export interface HmRow {
 }
 
 export const HGW_HM_TABLE: HmRow[] = [
-  { hm: 'HM01', move: '박치기', holder: '마그케인', obtainedAt: '일목의 숲 NPC', badge: '체육관1(윙)' },
+  { hm: 'HM01', move: '박치기', holder: '마그케인', obtainedAt: '너도밤나무숲 NPC', badge: '체육관1(윙)' },
   { hm: 'HM02', move: '공중날기', holder: '헤라크로스', obtainedAt: '체육관5 클리어 후 사도의 아내', badge: '체육관5(쇼크)' },
   { hm: 'HM03', move: '파도타기', holder: '갸라도스', obtainedAt: '인주시티 무용도장 어른', badge: '체육관4(팬텀)' },
   { hm: 'HM04', move: '괴력', holder: '갸라도스', obtainedAt: '진청시티 포켓몬센터 선원', badge: '체육관5(쇼크)' },
@@ -126,7 +126,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 1 ───
   {
     id: 'phase1',
-    title: '체육관1 은빛체육관',
+    title: '체육관1 도라지체육관',
     subtitle: '관장 비상 — 비행 타입',
     levelRange: '권장 마그케인 Lv.15',
     todos: [
@@ -151,7 +151,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     ],
     boss: {
       leader: '비상',
-      gym: '은빛체육관',
+      gym: '도라지체육관',
       gymType: '비행',
       levels: 'Lv.9·13',
       note: '마그케인 불꽃세례 한 방. 레벨 올리면 어렵지 않다.',
@@ -166,15 +166,15 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 2 ───
   {
     id: 'phase2',
-    title: '체육관2 아즈마체육관',
+    title: '체육관2 고동체육관',
     subtitle: '관장 호일 — 벌레 타입',
     levelRange: '권장 마그케인 Lv.19~20',
     todos: [
       '★ 32번도로에서 메리프 포획 (전기 핵심 멤버, 즉시 육성 시작)',
-      '아즈마마을 야돈우물 로켓단 이벤트 해결',
-      '일목의 숲 통과 → HM01 박치기 입수',
+      '고동마을 야돈우물 로켓단 이벤트 해결',
+      '너도밤나무숲 통과 → HM01 박치기 입수',
       '★ 33번도로 박치기 나무로 헤라크로스 포획 (박치기 기술 입수 후)',
-      '라이벌전 (아즈마마을 앞) 격파',
+      '라이벌전 (고동마을 앞) 격파',
     ],
     catches: [
       {
@@ -195,11 +195,11 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       },
     ],
     keyItems: [
-      { item: 'HM01 박치기', from: '일목의 숲 숯쟁이의 제자', note: '헤라크로스 포획에 필수' },
+      { item: 'HM01 박치기', from: '너도밤나무숲 숯쟁이의 제자', note: '헤라크로스 포획에 필수' },
     ],
     boss: {
       leader: '호일',
-      gym: '아즈마체육관',
+      gym: '고동체육관',
       gymType: '벌레',
       levels: 'Lv.14·14·16',
       note: '마그케인 불꽃세례로 전부 처리. 쉐이미(벌레/비행)는 불꽃 2배.',
@@ -219,16 +219,16 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     subtitle: '관장 꼭두 — 노말 타입',
     levelRange: '권장 마그케인 Lv.20~22',
     todos: [
-      '일목의 숲 통과 → 금빛시티',
+      '너도밤나무숲 통과 → 금빛시티',
       '★ 이수재의 집 방문 (체육관3 이후) → 이브이 입수 (후 에브이 진화 가능)',
-      '국립공원 포충대회 화요일·목요일·토요일 참가 → 빛나는돌 1위 상품 목표',
+      '자연공원 포충대회 화요일·목요일·토요일 참가 → 빛나는돌 1위 상품 목표',
       '토게피 친밀도 최대화 (비타민 사용, 충분한 도보) → 토게틱 진화 목표',
       '밀탱크 대책: 헤라크로스 인파이트 또는 전기자석파 마비 후 공략',
     ],
     catches: [],
     keyItems: [
       { item: '이브이', from: '금빛시티 이수재의 집 (체육관3 이후)', note: '낮 친밀도 최대 → 에브이(에스퍼) 진화. 토게키스 대체로 활용 가능.' },
-      { item: '빛나는돌', from: '국립공원 포충대회 1위 상품', note: '토게틱 → 토게키스 진화에 필요. 화·목·토요일 참가.' },
+      { item: '빛나는돌', from: '자연공원 포충대회 1위 상품', note: '토게틱 → 토게키스 진화에 필요. 화·목·토요일 참가.' },
     ],
     boss: {
       leader: '꼭두',
@@ -597,7 +597,7 @@ export const HGW_LEVEL_MILESTONES: LevelMilestone[] = [
   { member: '메리프', evolution: 'Lv.15 → 보송송', byWhen: '체육관2~3 사이', note: '전기자석파 Lv.23 습득.' },
   { member: '보송송', evolution: 'Lv.30 → 전룡', byWhen: '체육관4 전후', note: '10만볼트 TM24으로 배정 권장.' },
   { member: '토게피', evolution: '친밀도 최대 → 토게틱', byWhen: '체육관3~4 사이 목표', note: '비타민·도보로 친밀도 올림. 체육관5 전 달성 목표.' },
-  { member: '토게틱', evolution: '빛나는돌 사용 → 토게키스', byWhen: '빛나는돌 획득 즉시', note: '국립공원 포충대회 1위 상품. 레벨 무관 즉시 사용.' },
+  { member: '토게틱', evolution: '빛나는돌 사용 → 토게키스', byWhen: '빛나는돌 획득 즉시', note: '자연공원 포충대회 1위 상품. 레벨 무관 즉시 사용.' },
   { member: '헤라크로스', evolution: '진화 없음 (단일 형태)', byWhen: '포획 후 즉시 육성', note: 'Lv.20 이상으로 육성 후 투입.' },
   { member: '붉은 갸라도스', evolution: 'Lv.30 (진화 불필요)', byWhen: '분노의 호수 (체육관7 전)', note: 'HM 배정 후 즉시 파티 투입.' },
   { member: '라프라스', evolution: '진화 없음 (단일 형태)', byWhen: '체육관4 직후 금요일', note: 'Lv.20으로 획득. 즉시 파티 투입 가능.' },
