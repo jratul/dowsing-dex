@@ -129,7 +129,7 @@ export function PokemonHeartgoldStoryGuidePage() {
             <div key={s.pokemonId}>
               <div className="mb-2 flex items-center gap-2">
                 <SpriteImage src={findSamplePokemon(s.pokemonId).spriteUrl} alt={s.pokemon} width={40} height={40} className="h-10 w-10" />
-                <span className="font-black text-ink">{s.pokemon}</span>
+                <Link to={`/pokemon/${s.pokemonId}`} className="font-black text-ink hover:underline">{s.pokemon}</Link>
                 <span className="text-xs text-ink-faint">최종 기술 구성</span>
               </div>
               <div className="mb-3 flex flex-wrap gap-2">
@@ -313,7 +313,7 @@ export function PokemonHeartgoldStoryGuidePage() {
       <Card className="mb-6 p-4">
         <SectionHeading>대체 멤버 추천</SectionHeading>
         <p className="mb-4 text-sm text-ink-muted">
-          헤라크로스(HG 전용 박치기 나무 포획)나 토게키스(빛나는돌 필요)를 확보하기 어려울 때의 대안 멤버.
+          헤라크로스(HG 전용 박치기 나무 포획)를 확보하기 어려울 때의 대안. 크로뱃 대신 포스트게임 이후 합류 가능한 포켓몬도 포함.
         </p>
         <p className="mb-2 text-sm font-bold text-ink">헤라크로스 대신</p>
         <GuideTable
@@ -324,7 +324,7 @@ export function PokemonHeartgoldStoryGuidePage() {
             r.obtainedAt,
           ])}
         />
-        <p className="mb-2 mt-4 text-sm font-bold text-ink">토게키스 대신</p>
+        <p className="mb-2 mt-4 text-sm font-bold text-ink">크로뱃 대신 / 포스트게임 교체</p>
         <GuideTable
           headers={['포켓몬', '역할', '획득 시점']}
           rows={HG_STORY_ALT_TOGEKISS.map((r) => [

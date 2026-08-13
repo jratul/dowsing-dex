@@ -5,6 +5,7 @@ import { SpriteImage } from '../components/pokemon/SpriteImage'
 import { GuideTable } from '../components/guide/GuideTable'
 import { linkifyPokemonNames } from '../lib/linkifyPokemonNames'
 import { SAMPLE_POKEMON } from '../data/sample/pokemon.sample'
+import { PokemonLink } from '../components/guide/PokemonLink'
 import { CATEGORY_STYLE } from '../lib/guideCategory'
 import {
   HGW_PARTY,
@@ -160,7 +161,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                     <GuideTable
                       headers={['포켓몬', '장소', '포획 타이밍', '비고', '우선순위']}
                       rows={phase.catches.map((c) => [
-                        c.pokemon,
+                        <PokemonLink key={c.pokemonId} id={c.pokemonId} label={c.pokemon} />,
                         c.location,
                         c.timing,
                         c.note,
