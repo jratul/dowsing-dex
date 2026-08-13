@@ -348,7 +348,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
               '라프라스는 매주 금요일 하나만 등장한다. DS 날짜를 금요일로 설정한 뒤 즉시 포획하면 시간 절약.',
               'TM26 지진은 챔피언로드에서 획득. 블레이범에 지진·화염방사·솔라빔(또는 번개펀치)·불꽃엄니 조합이 가장 범용적.',
               '관동 이동 시 공중날기로 각 도시를 빠르게 순환한다. 이슬(갈색) → 마티스(진홍) → 웅(회색) → 민화(무지개) → 쟈니(연분홍) → 초련(노랑) → 강연(홍련섬) → 블루(상록) 순이 효율적.',
-              '레드전은 파티 Lv.70 이상 강력 권장. 마운트실버 야생 포켓몬(Lv.35~45)으로 레벨업 가능.',
+              '레드전은 파티 Lv.70 이상 강력 권장. 은빛산 야생 포켓몬(Lv.35~45)으로 레벨업 가능.',
             ].map((tip, i) => (
               <li key={i} className="flex gap-2 text-sm text-ink">
                 <span className="mt-0.5 shrink-0 font-bold text-brand-red">{i + 1}.</span>

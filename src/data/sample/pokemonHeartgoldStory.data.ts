@@ -21,7 +21,7 @@ export const HG_STORY_GOALS = [
   '브케인 스타팅 선택 → 성도 8개 체육관 클리어',
   '사천왕·챔피언 목호 격파',
   '관동 8개 체육관 클리어',
-  '마운트실버 레드전 격파',
+  '은빛산 레드전 격파',
   '4세대 물리/특수 분리 기반 기술 배분 최적화',
 ]
 
@@ -235,7 +235,7 @@ export const HG_STORY_STAGES: PartyStage[] = [
     members: ['블레이범', '전룡', '갸라도스', '헤라크로스', '라프라스', '토게키스'],
     goals: [
       '관동 8개 체육관 순서대로 격파한다. 레벨 차이가 있으면 야생 전투로 보충한다.',
-      '레드전 전 마운트실버 진입 전 전원 레벨 60 이상 목표.',
+      '레드전 전 은빛산 진입 전 전원 레벨 60 이상 목표.',
       '레드의 피카츄는 블레이범 지진으로, 잠만보는 헤라크로스로 처리한다.',
     ],
   },
@@ -414,7 +414,7 @@ export const HG_STORY_CHAMPION: BossSection = {
 }
 
 export const HG_STORY_RED: BossSection = {
-  title: '레드 (마운트실버)',
+  title: '레드 (은빛산)',
   note: '레드의 전원 레벨 80~88. 파티 전원 레벨 60~70 권장. 피카츄는 광속 아이템 소지.',
   rows: [
     { opponent: '피카츄 Lv.88 (전기)', answer: '블레이범 지진 (즉사 가능)' },
@@ -443,7 +443,7 @@ export interface SupportRow {
 
 export const HG_STORY_SUPPORT: SupportRow[] = [
   { pokemon: '크로뱃', pokemonId: 169, role: '친밀도 진화. 공중날기 담당 대체. 관동 진행 중 유용', obtainedAt: '주뱃 포획 후 친밀도 최대' },
-  { pokemon: '메꾸리', pokemonId: 221, role: '마운트실버 포획. 레드전 얼음 보조. 선택적 교체 후보', obtainedAt: '마운트실버 (레드전 직전)' },
+  { pokemon: '메꾸리', pokemonId: 221, role: '은빛산 포획. 레드전 얼음 보조. 선택적 교체 후보', obtainedAt: '은빛산 (레드전 직전)' },
 ]
 
 export interface AlternativeRow {

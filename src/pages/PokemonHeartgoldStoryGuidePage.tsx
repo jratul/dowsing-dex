@@ -275,9 +275,9 @@ export function PokemonHeartgoldStoryGuidePage() {
         />
       </Card>
 
-      {/* 12. 레드 (마운트실버) */}
+      {/* 12. 레드 (은빛산) */}
       <Card className="mb-6 p-4">
-        <SectionHeading>레드 (마운트실버)</SectionHeading>
+        <SectionHeading>레드 (은빛산)</SectionHeading>
         <p className="mb-3 text-sm text-ink-muted">{HG_STORY_RED.note}</p>
         <GuideTable
           headers={['상대 포켓몬', '대응책']}
