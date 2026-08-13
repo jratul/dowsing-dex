@@ -433,7 +433,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   {
     id: 'phase9',
     title: '성도 사천왕 + 챔피언 목호',
-    subtitle: '마지막 덩굴 → 신 칸토 여행의 시작',
+    subtitle: '마지막 덩굴 → 신 관동 여행의 시작',
     levelRange: '권장 Lv.43~48',
     todos: [
       '챔피언로드 돌파 → TM26 지진 입수 (챔피언로드 내부)',

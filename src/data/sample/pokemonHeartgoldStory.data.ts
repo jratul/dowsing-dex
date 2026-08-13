@@ -114,7 +114,7 @@ export const HG_STORY_MOVESETS: MoveSetSection[] = [
     ],
     notes: [
       '헤라크로스는 HG 전용 박치기 나무 포획 포켓몬. SS에서는 쁘사이저가 나온다.',
-      '박치기(HM01)를 배운 포켓몬으로 특정 나무를 흔들면 헤라크로스가 나타난다. 황금빛시티 인근 나무에서 높은 확률로 등장.',
+      '박치기(HM01)를 배운 포켓몬으로 특정 나무를 흔들면 헤라크로스가 나타난다. 금빛시티 인근 나무에서 높은 확률로 등장.',
       '헤라크로스의 높은 물리 공격력으로 레드전 잠만보·에브이를 처리한다.',
     ],
   },
@@ -194,7 +194,7 @@ export const HG_STORY_TM_PRIORITY: TmRow[] = [
 export const HG_STORY_TM_OPTIONAL: TmRow[] = [
   { tm: 'TM15', move: '하이퍼빔', target: '갸라도스 / 헤라크로스', location: '관동 진행 시 상점', priority: '선택', desc: '1회 강공. 다음 턴 쉼이 있으므로 보스전 마무리용' },
   { tm: 'TM22', move: '솔라빔', target: '블레이범', location: '특정 NPC', priority: '선택', desc: '맑은날씨와 연계 시 강력. 아이템 확보 필요' },
-  { tm: 'TM04', move: '빛의장막', target: '전룡 / 토게키스', location: '황금빛시티 백화점', priority: '선택', desc: '파티 방어 지원. 레드전 안정성 증가' },
+  { tm: 'TM04', move: '빛의장막', target: '전룡 / 토게키스', location: '금빛시티 백화점', priority: '선택', desc: '파티 방어 지원. 레드전 안정성 증가' },
 ]
 
 export const HG_STORY_TM_NOTES = [
@@ -422,7 +422,7 @@ export const HG_STORY_RED: BossSection = {
     { opponent: '거북왕 Lv.84 (물)', answer: '전룡 10만볼트' },
     { opponent: '리자몽 Lv.84 (불꽃/비행)', answer: '갸라도스 파도타기 / 라프라스 냉동빔' },
     { opponent: '에브이 Lv.82 (에스퍼)', answer: '헤라크로스 인파이트 / 갸라도스 아이언테일' },
-    { opponent: '잠만보 Lv.82 (노말)', answer: '헤라크로스 클로즈컴뱃 / 닫기' },
+    { opponent: '잠만보 Lv.82 (노말)', answer: '헤라크로스 인파이트' },
   ],
 }
 
@@ -457,7 +457,7 @@ export const HG_STORY_ALT_HERACROSS: AlternativeRow[] = [
   {
     pokemonId: 57,
     pokemon: '성원숭',
-    role: '격투 타입 주력. 닫기·클로즈컴뱃으로 레드 잠만보·에브이 대응. HG 전용 42번도로에서 망키 포획',
+    role: '격투 타입 주력. 인파이트로 레드 잠만보·에브이 대응. HG 전용 42번도로에서 망키 포획',
     obtainedAt: '42번도로 (4관 에크루테크 이후, HG 한정)',
   },
   {
@@ -479,7 +479,7 @@ export const HG_STORY_ALT_TOGEKISS: AlternativeRow[] = [
     pokemonId: 196,
     pokemon: '에브이',
     role: '에스퍼 특수 딜러. 높은 특공으로 격투·악·독 타입 처리. 토게키스보다 특공이 강력. 이브이를 낮에 친밀도 최대로 진화',
-    obtainedAt: '황금빛시티 이수재의 집 (3관 이후) → 낮 친밀도 진화',
+    obtainedAt: '금빛시티 이수재의 집 (3관 이후) → 낮 친밀도 진화',
   },
   {
     pokemonId: 80,
@@ -496,7 +496,7 @@ export const HG_STORY_ALT_TOGEKISS: AlternativeRow[] = [
 ]
 
 export const HG_STORY_CAUTIONS = [
-  '헤라크로스는 HG 전용 포켓몬. 박치기(HM01)를 배운 포켓몬으로 황금빛시티 인근 나무를 흔들어 포획한다.',
+  '헤라크로스는 HG 전용 포켓몬. 박치기(HM01)를 배운 포켓몬으로 금빛시티 인근 나무를 흔들어 포획한다.',
   '라프라스는 연결동굴에서 매주 금요일에만 등장한다. 월~목요일에는 만날 수 없으니 날짜를 확인한다.',
   '토게키스 진화용 빛나는돌은 게임 내 소수 획득처에서 구한다. 국립공원 포충대회 1위 상품으로도 획득 가능.',
   '레드의 피카츄는 레벨 88로 매우 강하며 광속 아이템을 소지해 선제 공격을 날린다. 블레이범 지진으로 선제 처리한다.',

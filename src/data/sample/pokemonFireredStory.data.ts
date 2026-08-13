@@ -249,7 +249,7 @@ export interface TmRow {
 
 export const FIRERED_STORY_TM_PRIORITY: TmRow[] = [
   { tm: 'TM24', move: '10만볼트', target: '쥬피썬더', location: '무지개시티 게임코너 4,000코인', priority: '매우 높음', desc: '쥬피썬더의 핵심 주력기' },
-  { tm: 'TM13', move: '냉동빔', target: '라프라스 / 스타미', location: '무지개시티 게임코너 4,000코인', priority: '높음', desc: '라프라스는 레벨 31 습득 가능. 스타미 사용 시 우선' },
+  { tm: 'TM13', move: '냉동빔', target: '라프라스 / 아쿠스타', location: '무지개시티 게임코너 4,000코인', priority: '높음', desc: '라프라스는 레벨 31 습득 가능. 아쿠스타 사용 시 우선' },
   { tm: 'TM29', move: '사이코키네시스', target: '나시', location: '노랑시티 Mr. Psychic 집', priority: '높음', desc: '나시의 핵심 에스퍼 기술' },
   { tm: 'TM26', move: '지진', target: '니드킹', location: '상록시티 체육관, 비주기 격파 보상', priority: '매우 높음', desc: '니드킹의 최종 주력기' },
   { tm: 'TM31', move: '깨트리다', target: '니드킹 / 리자몽 / 잠만보', location: '상트앙느호 1층 / 무지개 백화점 3,000원', priority: '높음', desc: '바위·얼음·노말 타입 견제' },
@@ -522,7 +522,7 @@ export const FIRERED_STORY_SUPPORT: SupportRow[] = [
   { pokemonId: 44, pokemon: '냄새꼬 / 라플레시아', usage: '초중반 풀 타입, 수면가루, 이슬전 대응' },
   { pokemonId: 21, pokemon: '깨비참 / 깨비드릴조', usage: '리자몽 전까지 공중날기 임시 요원' },
   { pokemonId: 16, pokemon: '파오리', usage: '풀베기·공중날기 보조 요원. NPC 교환으로 입수 가능' },
-  { pokemonId: 121, pokemon: '스타미', usage: '라프라스 대체 고속 특수 딜러. 기술머신 비용이 큼' },
+  { pokemonId: 121, pokemon: '아쿠스타', usage: '라프라스 대체 고속 특수 딜러. 기술머신 비용이 큼' },
   { pokemonId: 65, pokemon: '후딘 / 윤겔라', usage: '나시 대체 에스퍼 딜러. 교환 가능하면 후딘 추천' },
 ]
 
@@ -598,7 +598,7 @@ const FIRERED_STORY_NAME_TO_ID_ENTRIES: [string, number][] = [
   ['덩쿠리', 114],
   ['별가사리', 120],
   ['아쿠스타', 121],
-  ['스타미', 121],
+  ['아쿠스타', 121],
   ['도나리', 124],
   ['루주라', 124],
   ['갸라도스', 130],

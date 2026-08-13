@@ -118,7 +118,7 @@ const ACHAMO_GUIDE: StarterGuideData = {
   nameKo: '아차모',
   finalPartyIds: [257, 282, 330, 365, 279, 310],
   finalRoles: [
-    { pokemon: '번치코', role: '불꽃/격투 메인 딜러. 화염방사·하늘날기·클로즈컴뱃. 강철·얼음·풀 처리' },
+    { pokemon: '번치코', role: '불꽃/격투 메인 딜러. 화염방사·하늘날기·인파이트. 강철·얼음·풀 처리' },
     { pokemon: '가디안', role: '에스퍼 딜러. 사이코키네시스·섀도볼. 격투·독 타입 전담' },
     { pokemon: '플라이곤', role: '드래곤/땅. 지진·불대문자·공중날기. HM02 담당. 드래이크 드래곤 보조' },
     { pokemon: '씨카이저', role: '물/얼음. 파도타기·얼음빔·폭포오르기. 챔피언 미라 물 파티 처리' },
@@ -138,10 +138,10 @@ const ACHAMO_GUIDE: StarterGuideData = {
     {
       pokemonId: 257,
       pokemon: '번치코',
-      finalMoves: ['화염방사', '클로즈컴뱃 / 하늘날기', '지진 / 아이언테일', '불꽃파동 / 스피드스타'],
+      finalMoves: ['화염방사', '인파이트 / 하늘날기', '지진 / 아이언테일', '불꽃파동 / 스피드스타'],
       moveTable: [
         { move: '화염방사', how: 'TM35', usage: '주력 불꽃 특수기. 3세대에서는 불꽃이 특수 분류' },
-        { move: '클로즈컴뱃', how: 'Lv.습득', usage: '격투 물리기. 방어/특방 하락 있지만 강력' },
+        { move: '인파이트', how: 'Lv.습득', usage: '격투 물리기. 방어/특방 하락 있지만 강력' },
         { move: '하늘날기', how: 'HM02', usage: 'HM02 대체기. 비행 물리기' },
         { move: '지진', how: 'TM26', usage: '전기·바위·독·불꽃 타입 견제. 대범용 물리기' },
       ],
@@ -281,7 +281,7 @@ const ACHAMO_GUIDE: StarterGuideData = {
     },
     {
       ...EMERALD_GYM_ROWS_TEMPLATE.g5,
-      rows: [{ opponent: '까부리드·슬리퍼 (노말)', answer: '번치코 클로즈컴뱃 / 가디안 에스퍼' }],
+      rows: [{ opponent: '까부리드·슬리퍼 (노말)', answer: '번치코 인파이트 / 가디안 에스퍼' }],
     },
     {
       ...EMERALD_GYM_ROWS_TEMPLATE.g6,
@@ -299,8 +299,8 @@ const ACHAMO_GUIDE: StarterGuideData = {
   elite4: [
     {
       title: '사천왕 시드니 (악 타입)',
-      note: '번치코 클로즈컴뱃 또는 가디안으로 처리. 악은 격투에 약점.',
-      rows: [{ opponent: '크라이무·불비달마·샤크니아·나시판·앱솔', answer: '번치코 클로즈컴뱃 / 가디안 사이코키네시스' }],
+      note: '번치코 인파이트 또는 가디안으로 처리. 악은 격투에 약점.',
+      rows: [{ opponent: '크라이무·불비달마·샤크니아·나시판·앱솔', answer: '번치코 인파이트 / 가디안 사이코키네시스' }],
     },
     {
       title: '사천왕 피비 (고스트 타입)',
