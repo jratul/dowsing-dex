@@ -64,28 +64,28 @@ export const HGW_PARTY: PartyMember[] = [
   {
     pokemonId: 181,
     pokemon: '전룡',
-    catchTiming: '1관 직후 32번도로',
+    catchTiming: '체육관1 직후 32번도로',
     role: '전기 특수 딜러 — 목호 갸라도스 4배, 이슬·마티스 담당',
     keyMoves: ['10만볼트', '전기자석파', '빛의장막', '신호탄'],
   },
   {
     pokemonId: 214,
     pokemon: '헤라크로스',
-    catchTiming: '2관 전후 박치기 나무',
+    catchTiming: '체육관2 전후 박치기 나무',
     role: 'HG 전용. 격투·벌레 물리 딜러 — 에스퍼·악·레드 잠만보 처리',
     keyMoves: ['메가폰', '인파이트', '사이코커터', '메가뿔치기'],
   },
   {
     pokemonId: 130,
     pokemon: '갸라도스',
-    catchTiming: '7관 전 분노의 호수 이벤트',
+    catchTiming: '체육관7 전 분노의 호수 이벤트',
     role: 'HM 담당 겸 물 딜러 — 파도타기·폭포오르기·괴력',
     keyMoves: ['파도타기', '폭포오르기', '괴력', '아이언테일'],
   },
   {
     pokemonId: 131,
     pokemon: '라프라스',
-    catchTiming: '4관 직후 연결동굴 금요일',
+    catchTiming: '체육관4 직후 연결동굴 금요일',
     role: '물/얼음 딜러 — 이향·목호 드래곤 처리, 레드 리자몽',
     keyMoves: ['냉동빔', '얼음기둥', '파도타기', '노래'],
   },
@@ -110,13 +110,13 @@ export interface HmRow {
 }
 
 export const HGW_HM_TABLE: HmRow[] = [
-  { hm: 'HM01', move: '박치기', holder: '마그케인', obtainedAt: '일목의 숲 NPC', badge: '1관(조약)' },
-  { hm: 'HM02', move: '공중날기', holder: '헤라크로스', obtainedAt: '쌍섬 마루 아내', badge: '5관(폭풍)' },
-  { hm: 'HM03', move: '파도타기', holder: '갸라도스', obtainedAt: '에크루테크 어른', badge: '4관(안개)' },
-  { hm: 'HM04', move: '괴력', holder: '갸라도스', obtainedAt: '올리브시티 포켓몬센터 선원', badge: '5관(폭풍)' },
-  { hm: 'HM05', move: '섬광', holder: '보조 포켓몬', obtainedAt: '종각탑 현인', badge: '없음' },
-  { hm: 'HM06', move: '소용돌이', holder: '갸라도스', obtainedAt: '마호가니 이벤트 후 랜스', badge: '7관(서리)' },
-  { hm: 'HM07', move: '폭포오르기', holder: '갸라도스', obtainedAt: '용의 굴 어른 (8관 후)', badge: '8관(오름)' },
+  { hm: 'HM01', move: '박치기', holder: '마그케인', obtainedAt: '일목의 숲 NPC', badge: '체육관1(비상)' },
+  { hm: 'HM02', move: '공중날기', holder: '헤라크로스', obtainedAt: '체육관5 클리어 후 마루의 아내', badge: '체육관5(폭풍)' },
+  { hm: 'HM03', move: '파도타기', holder: '갸라도스', obtainedAt: '에크루테크 무용도장 어른', badge: '체육관4(안개)' },
+  { hm: 'HM04', move: '괴력', holder: '갸라도스', obtainedAt: '쌍둥이섬 포켓몬센터 선원', badge: '체육관5(폭풍)' },
+  { hm: 'HM05', move: '섬광', holder: '보조 포켓몬', obtainedAt: '방울탑 현인', badge: '없음' },
+  { hm: 'HM06', move: '소용돌이', holder: '갸라도스', obtainedAt: '마호가니마을 이벤트 후 랜스', badge: '체육관7(서리)' },
+  { hm: 'HM07', move: '폭포오르기', holder: '갸라도스', obtainedAt: '용의 굴 어른 (체육관8 후)', badge: '체육관8(오름)' },
 ]
 
 // ──────────────────────────────────────────────────────────────
@@ -126,15 +126,15 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 1 ───
   {
     id: 'phase1',
-    title: '1관 은빛체육관',
+    title: '체육관1 은빛체육관',
     subtitle: '관장 진영 — 비행 타입',
     levelRange: '권장 마그케인 Lv.15',
     todos: [
-      '스타팅: 브케인 선택 (불꽃 → 3관 밀탱크까지 2관 유리)',
+      '스타팅: 브케인 선택 (불꽃 → 체육관3 밀탱크까지 체육관2도 유리)',
       'Mr. Pokemon 심부름 → 토게피 달걀 수령 ★ (31번도로 Mr. Pokemon의 집)',
       '박사 라이벌전 1회 → 30·31번도로 레벨업',
       '브케인 Lv.14 → 마그케인 진화 확인 (불꽃세례 습득)',
-      '종각탑 현인에게서 HM05 섬광 입수 (선택)',
+      '방울탑 현인에게서 HM05 섬광 입수 (선택)',
     ],
     catches: [
       {
@@ -147,7 +147,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       },
     ],
     keyItems: [
-      { item: 'HM05 섬광', from: '종각탑 현인', note: '선택 — 배틀 보조용' },
+      { item: 'HM05 섬광', from: '방울탑 현인', note: '선택 — 배틀 보조용' },
     ],
     boss: {
       leader: '진영',
@@ -159,14 +159,14 @@ export const HGW_PHASES: WalkthroughPhase[] = [
         { opponent: '구구 Lv.9 (비행/노말)', answer: '마그케인 불꽃세례' },
         { opponent: '피죤 Lv.13 (비행/노말)', answer: '마그케인 불꽃세례' },
       ],
-      badge: '조약배지',
+      badge: '비상배지',
     },
   },
 
   // ─── Phase 2 ───
   {
     id: 'phase2',
-    title: '2관 아즈마체육관',
+    title: '체육관2 아즈마체육관',
     subtitle: '관장 쑤기 — 벌레 타입',
     levelRange: '권장 마그케인 Lv.19~20',
     todos: [
@@ -181,7 +181,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
         pokemonId: 179,
         pokemon: '메리프',
         location: '32번도로',
-        timing: '1관 직후',
+        timing: '체육관1 직후',
         note: '전기 핵심. 빠르게 육성해야 전룡까지 이어진다. Lv.15→보송송, Lv.30→전룡.',
         priority: 'star',
       },
@@ -215,19 +215,19 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 3 ───
   {
     id: 'phase3',
-    title: '3관 황금빛체육관',
+    title: '체육관3 황금빛체육관',
     subtitle: '관장 민화 — 노말 타입',
     levelRange: '권장 마그케인 Lv.20~22',
     todos: [
       '일목의 숲 통과 → 황금빛시티',
-      '★ 이수재의 집 방문 (3관 이후) → 이브이 입수 (후 에브이 진화 가능)',
+      '★ 이수재의 집 방문 (체육관3 이후) → 이브이 입수 (후 에브이 진화 가능)',
       '국립공원 포충대회 화요일·목요일·토요일 참가 → 빛나는돌 1위 상품 목표',
       '토게피 친밀도 최대화 (비타민 사용, 충분한 도보) → 토게틱 진화 목표',
       '밀탱크 대책: 헤라크로스 인파이트 또는 전기자석파 마비 후 공략',
     ],
     catches: [],
     keyItems: [
-      { item: '이브이', from: '황금빛시티 이수재의 집 (3관 이후)', note: '낮 친밀도 최대 → 에브이(에스퍼) 진화. 토게키스 대체로 활용 가능.' },
+      { item: '이브이', from: '황금빛시티 이수재의 집 (체육관3 이후)', note: '낮 친밀도 최대 → 에브이(에스퍼) 진화. 토게키스 대체로 활용 가능.' },
       { item: '빛나는돌', from: '국립공원 포충대회 1위 상품', note: '토게틱 → 토게키스 진화에 필요. 화·목·토요일 참가.' },
     ],
     boss: {
@@ -247,7 +247,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 4 ───
   {
     id: 'phase4',
-    title: '4관 에크루테크체육관',
+    title: '체육관4 에크루테크체육관',
     subtitle: '관장 이철 — 고스트 타입',
     levelRange: '권장 Lv.25~27',
     todos: [
@@ -289,26 +289,26 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 5 ───
   {
     id: 'phase5',
-    title: '5관 쌍섬체육관',
+    title: '체육관5 쌍둥이섬체육관',
     subtitle: '관장 마루 — 격투 타입',
     levelRange: '권장 Lv.29~31',
     todos: [
       '에크루테크 → 38번도로 → 올리브시티',
-      '올리브시티 포켓몬센터 선원에게서 HM04 괴력 입수',
-      '등대 이벤트: 재스민에게 말 걸기 → 쌍섬 비밀의 약 심부름 요청',
-      '파도타기로 쌍섬 이동 → 포켓몬센터 약사에게서 비밀의 약 입수',
-      '비밀의 약을 재스민에게 전달 → 6관 오픈',
-      '5관 클리어 후 마루 아내에게서 HM02 공중날기 입수',
+      '등대 이벤트: 재스민에게 말 걸기 → 쌍둥이섬 비밀의 약 심부름 요청',
+      '파도타기로 쌍둥이섬 이동 → 포켓몬센터 약사에게서 비밀의 약 입수',
+      '★ 쌍둥이섬 포켓몬센터 선원에게서 HM04 괴력 입수',
+      '체육관5 클리어 → 마루의 아내에게서 HM02 공중날기 입수',
+      '올리브시티로 귀환 → 비밀의 약을 재스민에게 전달 → 체육관6 오픈',
     ],
     catches: [],
     keyItems: [
-      { item: 'HM04 괴력', from: '올리브시티 포켓몬센터 선원', note: '갸라도스 HM 배분 예정' },
-      { item: '비밀의 약', from: '쌍섬 포켓몬센터 약사', note: '재스민에게 전달 → 6관 오픈' },
-      { item: 'HM02 공중날기', from: '5관 클리어 후 마루 아내', note: '이후 이동 대폭 단축' },
+      { item: 'HM04 괴력', from: '쌍둥이섬 포켓몬센터 선원', note: '갸라도스 HM 배분 예정' },
+      { item: '비밀의 약', from: '쌍둥이섬 포켓몬센터 약사', note: '올리브시티 재스민에게 전달 → 체육관6 오픈' },
+      { item: 'HM02 공중날기', from: '체육관5 클리어 후 마루의 아내', note: '이후 이동 대폭 단축' },
     ],
     boss: {
       leader: '마루',
-      gym: '쌍섬체육관',
+      gym: '쌍둥이섬체육관',
       gymType: '격투',
       levels: 'Lv.27·30',
       note: '격투는 비행·에스퍼에 약점. 토게틱/토게키스 에어슬래시나 마그케인 불꽃세례로 처리.',
@@ -323,11 +323,11 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 6 ───
   {
     id: 'phase6',
-    title: '6관 올리브체육관',
+    title: '체육관6 올리브체육관',
     subtitle: '관장 재스민 — 강철 타입',
     levelRange: '권장 Lv.32~35',
     todos: [
-      '비밀의 약을 재스민에게 전달 → 6관 즉시 오픈',
+      '비밀의 약을 재스민에게 전달 → 체육관6 즉시 오픈',
       '마그케인 Lv.34 → 화염방사 습득 확인 (블레이범 진화는 Lv.36)',
       '강철톤에 지진(TM26 — 현재 없음)이 없어도 화염방사 2배로 충분',
     ],
@@ -350,7 +350,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 7 ───
   {
     id: 'phase7',
-    title: '7관 마호가니체육관',
+    title: '체육관7 마호가니체육관',
     subtitle: '관장 프리스 — 얼음 타입',
     levelRange: '권장 Lv.35~38',
     todos: [
@@ -372,7 +372,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       },
     ],
     keyItems: [
-      { item: 'HM06 소용돌이', from: '마호가니 로켓단 소탕 후 랜스', note: '7관 배지 사용 조건' },
+      { item: 'HM06 소용돌이', from: '마호가니마을 로켓단 소탕 후 랜스', note: '체육관7 배지 사용 조건' },
     ],
     boss: {
       leader: '프리스',
@@ -392,12 +392,12 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 8 ───
   {
     id: 'phase8',
-    title: '8관 검은먹체육관',
+    title: '체육관8 검은먹체육관',
     subtitle: '관장 이향 — 드래곤 타입',
     levelRange: '권장 Lv.38~42',
     todos: [
       '43번도로 → 44번도로 → 빙굴동굴 → 검은먹시티',
-      '★ 8관 전: 용의 굴 방문 → 이향 조부에게서 테스트 수령 (진실만 답하면 통과)',
+      '★ 체육관8 전: 용의 굴 방문 → 이향 조부에게서 테스트 수령 (진실만 답하면 통과)',
       '★ 용의 굴에서 HM07 폭포오르기 입수 (이향 조부, 테스트 통과 후)',
       '용의 굴 파도타기 + 낚시 → 미뇽 포획 가능 (드래곤 파티 원하면)',
       '갸라도스 HM07 폭포오르기 추가 배정',
@@ -407,7 +407,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
         pokemonId: 147,
         pokemon: '미뇽',
         location: '용의 굴 (파도타기 후 낚시)',
-        timing: '8관 이후',
+        timing: '체육관8 이후',
         note: '선택. 망나뇽까지 키우면 강력하지만 레벨업이 느려 스토리 효율은 낮음.',
         priority: 'normal',
       },
@@ -473,7 +473,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     todos: [
       '목호 격파 후 전국도감 받음 → 선착장에서 관동행 배 탑승',
       '이주시티 → 회색시티 → 갈색시티 → 진홍시티 → 무지개시티 → 연분홍시티 → 노랑시티 → 홍련섬 → 상록시티',
-      '홍련섬은 쌍섬에서 배 탑승 (강연 → 5번 배지 필요)',
+      '홍련섬은 쌍둥이섬에서 배 탑승 (강연 → 5번 배지 필요)',
       '상록시티 체육관은 전 8관 배지 획득 후 오픈',
     ],
     catches: [],
@@ -563,7 +563,7 @@ export const HGW_ALT_MEMBERS: AltMember[] = [
     pokemon: '야도란',
     replaces: '라프라스',
     role: '물/에스퍼. 야돈우물에서 이른 획득 가능. 파도타기+냉동빔+사이코키네시스.',
-    obtainedAt: '야돈우물 (2관 전후) 야돈 → Lv.37 진화',
+    obtainedAt: '야돈우물 (체육관2 전후) 야돈 → Lv.37 진화',
   },
   {
     pokemonId: 121,
@@ -577,7 +577,7 @@ export const HGW_ALT_MEMBERS: AltMember[] = [
     pokemon: '무장조',
     replaces: '헤라크로스',
     role: '강철/비행. 초고방어로 물리 내성. 비행 커버리지. HG 45번도로.',
-    obtainedAt: '45번도로 (7관~8관 사이)',
+    obtainedAt: '45번도로 (체육관7~8 사이)',
   },
 ]
 
@@ -592,15 +592,15 @@ export interface LevelMilestone {
 }
 
 export const HGW_LEVEL_MILESTONES: LevelMilestone[] = [
-  { member: '브케인', evolution: 'Lv.14 → 마그케인', byWhen: '1관 전후', note: '불꽃세례 Lv.12 습득. 체육관 전투에서 핵심.' },
-  { member: '마그케인', evolution: 'Lv.36 → 블레이범', byWhen: '5~6관 사이', note: '화염방사 Lv.34에 습득. 진화 전 배우기 목표.' },
-  { member: '메리프', evolution: 'Lv.15 → 보송송', byWhen: '2~3관 사이', note: '전기자석파 Lv.23 습득.' },
-  { member: '보송송', evolution: 'Lv.30 → 전룡', byWhen: '4관 전후', note: '10만볼트 TM24으로 배정 권장.' },
-  { member: '토게피', evolution: '친밀도 최대 → 토게틱', byWhen: '3~4관 사이 목표', note: '비타민·도보로 친밀도 올림. 5관 전 달성 목표.' },
+  { member: '브케인', evolution: 'Lv.14 → 마그케인', byWhen: '체육관1 전후', note: '불꽃세례 Lv.12 습득. 체육관 전투에서 핵심.' },
+  { member: '마그케인', evolution: 'Lv.36 → 블레이범', byWhen: '체육관5~6 사이', note: '화염방사 Lv.34에 습득. 진화 전 배우기 목표.' },
+  { member: '메리프', evolution: 'Lv.15 → 보송송', byWhen: '체육관2~3 사이', note: '전기자석파 Lv.23 습득.' },
+  { member: '보송송', evolution: 'Lv.30 → 전룡', byWhen: '체육관4 전후', note: '10만볼트 TM24으로 배정 권장.' },
+  { member: '토게피', evolution: '친밀도 최대 → 토게틱', byWhen: '체육관3~4 사이 목표', note: '비타민·도보로 친밀도 올림. 체육관5 전 달성 목표.' },
   { member: '토게틱', evolution: '빛나는돌 사용 → 토게키스', byWhen: '빛나는돌 획득 즉시', note: '국립공원 포충대회 1위 상품. 레벨 무관 즉시 사용.' },
   { member: '헤라크로스', evolution: '진화 없음 (단일 형태)', byWhen: '포획 후 즉시 육성', note: 'Lv.20 이상으로 육성 후 투입.' },
-  { member: '붉은 갸라도스', evolution: 'Lv.30 (진화 불필요)', byWhen: '분노의 호수 (7관 전)', note: 'HM 배정 후 즉시 파티 투입.' },
-  { member: '라프라스', evolution: '진화 없음 (단일 형태)', byWhen: '4관 직후 금요일', note: 'Lv.20으로 획득. 즉시 파티 투입 가능.' },
+  { member: '붉은 갸라도스', evolution: 'Lv.30 (진화 불필요)', byWhen: '분노의 호수 (체육관7 전)', note: 'HM 배정 후 즉시 파티 투입.' },
+  { member: '라프라스', evolution: '진화 없음 (단일 형태)', byWhen: '체육관4 직후 금요일', note: 'Lv.20으로 획득. 즉시 파티 투입 가능.' },
 ]
 
 // ──────────────────────────────────────────────────────────────
@@ -624,14 +624,14 @@ export const HGW_YOUTUBER_PICKS: YoutuberPick[] = [
     pokemon: '누오',
     type: '물/땅',
     obtainedAt: '야돈우물 B2F(파도타기) 우파 포획 → Lv.20 진화',
-    obtainTiming: '4관 직후 (파도타기 HM 입수 후)',
+    obtainTiming: '체육관4 직후 (파도타기 HM 입수 후)',
     pros: [
       '물/땅 복합으로 전기 면역 — 전룡·마티스·로켓단 전기 트레이너에게 안전',
       '지진을 자력으로 배움 (Lv.35). 별도 TM 소모 없이 땅 화력 확보',
       '갸라도스 대신 HM03 파도타기 담당 가능. HM 배분 유연성 상승',
     ],
     cons: [
-      '풀 타입 4배 약점 — 이향·8관 일부 구간에서 매우 위험',
+      '풀 타입 4배 약점 — 이향·체육관8 일부 구간에서 매우 위험',
       '느린 속도(65)와 낮은 특공(65). 공격형 운용보다 서포트형',
       '갸라도스(이벤트 무료)와 역할이 상당히 겹침 — 갸라도스가 화력·타입 우위',
     ],
@@ -642,8 +642,8 @@ export const HGW_YOUTUBER_PICKS: YoutuberPick[] = [
     pokemonId: 169,
     pokemon: '크로뱃',
     type: '독/비행',
-    obtainedAt: '1관부터 주뱃 포획 → Lv.22 골뱃 → 친밀도 최대 크로뱃 진화',
-    obtainTiming: '1관부터 포획 가능, 친밀도 진화로 3~4관 사이 완성',
+    obtainedAt: '체육관1부터 주뱃 포획 → Lv.22 골뱃 → 친밀도 최대 크로뱃 진화',
+    obtainTiming: '체육관1부터 포획 가능, 친밀도 진화로 체육관3~4 사이 완성',
     pros: [
       '속도 130 — 성도·관동 전체에서 선공 가능한 몇 안 되는 포켓몬',
       '주뱃은 게임 시작 직후부터 동굴 어디서나 구할 수 있어 입수가 매우 쉬움',
@@ -652,7 +652,7 @@ export const HGW_YOUTUBER_PICKS: YoutuberPick[] = [
     cons: [
       '공격(90)·특공(70) 모두 낮아 딜러로는 화력이 부족',
       '바위·전기·얼음·에스퍼에 약점. 타입 커버리지가 좁음',
-      '친밀도 진화 필요. 비타민·도보 없이 방치하면 4관을 넘겨서 진화하기도 함',
+      '친밀도 진화 필요. 비타민·도보 없이 방치하면 체육관4를 넘겨서 진화하기도 함',
     ],
     verdict: 'situational',
     verdictLabel: '속도 특화 서포터, 딜러 겸용은 어려움',
@@ -662,11 +662,11 @@ export const HGW_YOUTUBER_PICKS: YoutuberPick[] = [
     pokemon: '니드킹',
     type: '독/땅',
     obtainedAt: '36번도로 니드런♂ 포획 → Lv.16 니드리노 진화 → 달빛의돌 사용',
-    obtainTiming: '1관 직후 (36번도로)',
+    obtainTiming: '체육관1 직후 (36번도로)',
     pros: [
       'TM 범용성 최강 — 지진·10만볼트·냉동빔·화염방사를 한 마리에 동시 세팅 가능',
       '공격 수치 102로 물리 딜러로 충분히 활용 가능',
-      '성도 초반(1관 직후)에 바로 포획 가능해 육성 시간이 길다',
+      '성도 초반(체육관1 직후)에 바로 포획 가능해 육성 시간이 길다',
     ],
     cons: [
       '달빛의돌이 필요 — 게임 내 입수 수량 한정, 구입 불가. 다른 포켓몬과 경합 가능',
@@ -681,14 +681,14 @@ export const HGW_YOUTUBER_PICKS: YoutuberPick[] = [
     pokemon: '마기라스',
     type: '바위/악',
     obtainedAt: '은빛산 애버라스 포획 → Lv.30 데기라스 → Lv.55 마기라스',
-    obtainTiming: '포스트게임 (관동 8관 이후, 은빛산)',
+    obtainTiming: '포스트게임 (관동 체육관8 이후, 은빛산)',
     pros: [
       '공격 134 — 하트골드 최고 수준 물리 화력. 레드전까지 원펀 가능 범위 최대',
       '바위/악 복합으로 에스퍼·고스트·비행·불꽃·얼음 커버 가능',
       '모래바람 특성으로 특방이 자동 상승, 상대 모래바람 데미지 없음',
     ],
     cons: [
-      '은빛산는 관동 8관 이후만 입장 가능 — 사실상 레드전 직전에만 운용 가능',
+      '은빛산은 관동 체육관8 이후만 입장 가능 — 사실상 레드전 직전에만 운용 가능',
       '격투·물·풀에 2배, 격투에는 약점이 특히 부담 (격투 4배 아니고 2배)',
       'Lv.55 진화 필요. 스토리 중에는 전혀 활용 불가 — 레드전 이후나 의미 있음',
     ],
@@ -700,7 +700,7 @@ export const HGW_YOUTUBER_PICKS: YoutuberPick[] = [
     pokemon: '루기아',
     type: '에스퍼/비행',
     obtainedAt: '소용돌이섬 Lv.45 (HM06 소용돌이 필요 + 은빛날개)',
-    obtainTiming: '7관 이후 (소용돌이 HM 입수 후). 은빛날개는 관동 바위산 노인에게서 입수',
+    obtainTiming: '체육관7 이후 (소용돌이 HM 입수 후). 은빛날개는 관동 바위산 노인에게서 입수',
     pros: [
       '특방 154 — 게임 내 최고 수준의 내구성. 어떤 상대의 특수기도 버텨냄',
       '속도 110으로 대부분의 적보다 빠름. 방어 대 에어슬래시·에어로블라스트 조합',
@@ -719,7 +719,7 @@ export const HGW_YOUTUBER_PICKS: YoutuberPick[] = [
     pokemon: '칠색조',
     type: '불꽃/비행',
     obtainedAt: '에크루테크 탑 꼭대기 Lv.45 — 기모노 소녀 5명 격파 → 무지개날개 입수',
-    obtainTiming: '성도 7관 이후 (기모노 소녀 이벤트 완료 후)',
+    obtainTiming: '성도 체육관7 이후 (기모노 소녀 이벤트 완료 후)',
     pros: [
       'HG 주 전설. 특공 130으로 불꽃/비행 특수 화력이 최강급',
       '재생력(회복 기술) + 신성한불꽃(화상 효과)으로 장기전 강세',
@@ -738,7 +738,7 @@ export const HGW_YOUTUBER_PICKS: YoutuberPick[] = [
     pokemon: '망나뇽',
     type: '드래곤/비행',
     obtainedAt: '용의 굴 미뇽 낚시 → Lv.30 신뇽 → Lv.55 망나뇽',
-    obtainTiming: '8관 이후 (용의 굴 접근 후)',
+    obtainTiming: '체육관8 이후 (용의 굴 접근 후)',
     pros: [
       '종족값 600 — 전설 제외 최강급. 공격 134·특공 100으로 물리/특수 모두 가능',
       '드래곤 타입으로 이향·목호 드래곤 전에 미러 매치 가능 (단, 냉동빔 주의)',
