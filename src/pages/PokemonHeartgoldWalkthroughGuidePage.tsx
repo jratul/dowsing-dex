@@ -102,7 +102,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
               <div className="min-w-0">
                 <p className="font-bold text-ink">{m.pokemon?.nameKo}</p>
                 <p className="text-xs text-ink-muted">{m.catchTiming}</p>
-                <p className="mt-0.5 text-xs text-ink-faint">{m.role}</p>
+                <p className="mt-0.5 text-xs text-ink">{m.role}</p>
               </div>
             </div>
           ))}
