@@ -10,13 +10,13 @@ export interface PokemonLinkProps {
 export function PokemonLink({ id, label }: PokemonLinkProps) {
   const pokemon = findSamplePokemon(id)
   return (
-    <Link to={`/pokemon/${id}`} className="inline-flex items-center gap-0.5 align-middle font-bold text-brand-red hover:underline">
+    <Link to={`/pokemon/${id}`} className="inline-flex items-center gap-0.5 align-text-bottom font-bold text-brand-red hover:underline">
       {pokemon.spriteUrl && (
         <img
           src={pokemon.spriteUrl}
           alt=""
-          width={20}
-          height={20}
+          width={16}
+          height={16}
           style={{ imageRendering: 'pixelated' }}
           className="inline-block"
         />
