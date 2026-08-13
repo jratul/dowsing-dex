@@ -42,7 +42,7 @@ export function PokemonFireredSeviiIslandsGuidePage() {
         <span className={`rounded-chip bg-white px-2 py-0.5 text-xs font-bold ${style.pillClass}`}>공략</span>
       </div>
 
-      <h1 className="text-2xl font-black text-ink">파이어레드 클리어 후 일곱섬 스토리 공략</h1>
+      <h1 className="mb-4 text-2xl font-black text-ink">파이어레드 클리어 후 일곱섬 스토리 공략</h1>
 
       <div className={`mb-6 grid grid-cols-3 gap-2 rounded-card px-4 py-4 sm:grid-cols-6 ${style.bannerClass}`}>
         {ICON_POKEMON_IDS.map((id) => {

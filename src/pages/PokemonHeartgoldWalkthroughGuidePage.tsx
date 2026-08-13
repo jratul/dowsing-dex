@@ -78,7 +78,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
         <span className={`rounded-chip bg-white px-2 py-0.5 text-xs font-bold ${style.pillClass}`}>공략</span>
       </div>
 
-      <h1 className="text-2xl font-black text-ink">포켓몬 하트골드버전 최고 효율 진행 공략</h1>
+      <h1 className="mb-4 text-2xl font-black text-ink">포켓몬 하트골드버전 최고 효율 진행 공략</h1>
 
       {/* 추천 파티 */}
       <Card className="mb-6 overflow-hidden">

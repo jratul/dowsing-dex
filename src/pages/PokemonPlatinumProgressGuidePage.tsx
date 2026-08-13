@@ -238,7 +238,7 @@ export function PokemonPlatinumProgressGuidePage() {
         <span className={`rounded-chip bg-white px-2 py-0.5 text-xs font-bold ${style.pillClass}`}>공략</span>
       </div>
 
-      <h1 className="text-2xl font-black text-ink">플래티넘 진행 조건 가이드</h1>
+      <h1 className="mb-4 text-2xl font-black text-ink">플래티넘 진행 조건 가이드</h1>
       <p className="mb-6 text-sm text-ink-muted">
         체육관을 깨려면 무엇을 먼저 해야 하는지, 어느 지역에 HM이 필요한지, 갤럭시단 이벤트 순서는 어떻게 되는지 — 막히는 포인트를 한 곳에 정리했다.
       </p>

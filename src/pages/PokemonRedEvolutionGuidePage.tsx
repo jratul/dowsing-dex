@@ -52,7 +52,7 @@ export function PokemonRedEvolutionGuidePage() {
         <span className={`rounded-chip bg-white px-2 py-0.5 text-xs font-bold ${style.pillClass}`}>진화</span>
       </div>
 
-      <h1 className="text-2xl font-black text-ink">포켓몬스터 1세대 돌 진화·교환 진화 추천 타이밍 가이드</h1>
+      <h1 className="mb-4 text-2xl font-black text-ink">포켓몬스터 1세대 돌 진화·교환 진화 추천 타이밍 가이드</h1>
 
       {/* 1. 기준 */}
       <Card className="mb-6 p-4">

@@ -36,7 +36,7 @@ export function GuideDetailPage() {
         </span>
       </div>
 
-      <h1 className="text-2xl font-black text-ink">{guide.title}</h1>
+      <h1 className="mb-4 text-2xl font-black text-ink">{guide.title}</h1>
 
       <div className={cn('mb-6 flex h-40 items-center justify-center rounded-card', style.bannerClass)}>
         {iconSpriteUrl && <img src={iconSpriteUrl} alt="" width={96} height={96} />}
