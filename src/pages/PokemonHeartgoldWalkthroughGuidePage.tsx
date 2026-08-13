@@ -79,9 +79,6 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
       </div>
 
       <h1 className="text-2xl font-black text-ink">포켓몬 하트골드버전 최고 효율 진행 공략</h1>
-      <p className="mb-4 text-sm text-ink-faint">
-        다우징덱스 편집부 · 4세대(하트골드·소울실버) / 브케인 스타팅 · 성도→관동→레드 완주
-      </p>
 
       {/* 추천 파티 */}
       <Card className="mb-6 overflow-hidden">

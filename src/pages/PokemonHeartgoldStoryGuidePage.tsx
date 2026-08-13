@@ -67,7 +67,6 @@ export function PokemonHeartgoldStoryGuidePage() {
       </div>
 
       <h1 className="text-2xl font-black text-ink">포켓몬 하트골드버전 스토리 엔트리 공략</h1>
-      <p className="mb-4 text-sm text-ink-faint">다우징덱스 편집부 · 4세대(하트골드·소울실버) 공략 / 브케인 스타팅</p>
 
       <div className={`mb-6 grid grid-cols-3 gap-2 rounded-card px-4 py-4 sm:grid-cols-6 ${style.bannerClass}`}>
         {finalParty.map(

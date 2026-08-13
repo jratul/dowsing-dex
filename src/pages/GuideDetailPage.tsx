@@ -37,7 +37,6 @@ export function GuideDetailPage() {
       </div>
 
       <h1 className="text-2xl font-black text-ink">{guide.title}</h1>
-      <p className="mb-4 text-sm text-ink-faint">다우징덱스 편집부 · 1세대 공략</p>
 
       <div className={cn('mb-6 flex h-40 items-center justify-center rounded-card', style.bannerClass)}>
         {iconSpriteUrl && <img src={iconSpriteUrl} alt="" width={96} height={96} />}

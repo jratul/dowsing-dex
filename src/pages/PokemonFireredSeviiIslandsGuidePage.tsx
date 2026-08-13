@@ -43,7 +43,6 @@ export function PokemonFireredSeviiIslandsGuidePage() {
       </div>
 
       <h1 className="text-2xl font-black text-ink">파이어레드 클리어 후 일곱섬 스토리 공략</h1>
-      <p className="mb-4 text-sm text-ink-faint">다우징덱스 편집부 · 3세대(파이어레드·리프그린) 클리어 후 공략</p>
 
       <div className={`mb-6 grid grid-cols-3 gap-2 rounded-card px-4 py-4 sm:grid-cols-6 ${style.bannerClass}`}>
         {ICON_POKEMON_IDS.map((id) => {

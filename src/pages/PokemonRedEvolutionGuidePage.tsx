@@ -53,7 +53,6 @@ export function PokemonRedEvolutionGuidePage() {
       </div>
 
       <h1 className="text-2xl font-black text-ink">포켓몬스터 1세대 돌 진화·교환 진화 추천 타이밍 가이드</h1>
-      <p className="mb-4 text-sm text-ink-faint">다우징덱스 편집부 · 레드/블루 1세대 / 스토리 기준</p>
 
       {/* 1. 기준 */}
       <Card className="mb-6 p-4">

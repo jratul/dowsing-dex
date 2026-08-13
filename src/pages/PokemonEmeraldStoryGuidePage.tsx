@@ -239,7 +239,6 @@ export function PokemonEmeraldStoryGuidePage() {
       </div>
 
       <h1 className="text-2xl font-black text-ink">포켓몬 에메랄드버전 스토리 엔트리 공략</h1>
-      <p className="mb-4 text-sm text-ink-faint">다우징덱스 편집부 · 3세대(루비·사파이어·에메랄드) 공략</p>
 
       {/* 기준 */}
       <Card className="mb-6 p-4">

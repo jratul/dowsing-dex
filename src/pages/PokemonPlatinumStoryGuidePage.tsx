@@ -271,7 +271,6 @@ export function PokemonPlatinumStoryGuidePage() {
         </div>
         <div className="absolute bottom-4 left-4 right-4">
           <h1 className="text-xl font-black text-white sm:text-2xl">포켓몬 플래티넘(기라티나)버전 스토리 엔트리 공략</h1>
-          <p className="mt-1 text-xs text-white/70">다우징덱스 편집부 · 4세대(다이아몬드·펄·플래티넘) 공략</p>
         </div>
       </div>
 
