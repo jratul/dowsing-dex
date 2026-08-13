@@ -127,7 +127,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   {
     id: 'phase1',
     title: '체육관1 은빛체육관',
-    subtitle: '관장 진영 — 비행 타입',
+    subtitle: '관장 비상 — 비행 타입',
     levelRange: '권장 마그케인 Lv.15',
     todos: [
       '스타팅: 브케인 선택 (불꽃 → 체육관3 밀탱크까지 체육관2도 유리)',
@@ -150,7 +150,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       { item: 'HM05 섬광', from: '방울탑 현인', note: '선택 — 배틀 보조용' },
     ],
     boss: {
-      leader: '진영',
+      leader: '비상',
       gym: '은빛체육관',
       gymType: '비행',
       levels: 'Lv.9·13',
