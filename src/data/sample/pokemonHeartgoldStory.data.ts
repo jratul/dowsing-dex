@@ -38,7 +38,7 @@ export const HG_STORY_CATCH_TABLE: CatchRow[] = [
   { timing: '도라지시티~담청마을 나무', pokemonId: 214, pokemon: '헤라크로스', note: 'HG 전용. 박치기 나무에서 포획. HM01 배정 후 나무에 사용' },
   { timing: '분노의 호수', pokemonId: 130, pokemon: '붉은 갸라도스', note: '스토리 이벤트 포획. HM 담당' },
   { timing: '연결동굴 (4번 체육관 이후)', pokemonId: 131, pokemon: '라프라스', note: '매주 금요일 무상 획득. 물/얼음 딜러' },
-  { timing: '박사에게 받은 토게피 부화', pokemonId: 175, pokemon: '토게피', note: '엘름 박사 조수에게서 달걀 수령. 친밀도로 토게틱 진화 후 빛나는돌로 토게키스' },
+  { timing: '박사에게 받은 토게피 부화', pokemonId: 175, pokemon: '토게피', note: '엘름 박사 조수에게서 알 수령. 친밀도로 토게틱 진화 후 빛나는돌로 토게키스' },
 ]
 
 export interface MoveSetSection {
@@ -217,7 +217,7 @@ export const HG_STORY_STAGES: PartyStage[] = [
     goals: [
       '헤라크로스를 고동마을 근처 나무에서 빠르게 포획한다.',
       '메리프를 꾸준히 육성해 전기 타입 전력을 확보한다.',
-      '토게피 달걀을 부화시켜 친밀도 올리기 시작한다.',
+      '토게피 알을 부화시켜 친밀도 올리기 시작한다.',
     ],
   },
   {
@@ -459,7 +459,7 @@ export const HG_STORY_ALT_HERACROSS: AlternativeRow[] = [
     pokemonId: 57,
     pokemon: '성원숭',
     role: '격투 타입 주력. 인파이트로 레드 잠만보·에브이 대응. HG 전용 42번도로에서 망키 포획',
-    obtainedAt: '42번도로 (4관 에크루테크 이후, HG 한정)',
+    obtainedAt: '42번도로 (4관 인주시티 이후, HG 한정)',
   },
   {
     pokemonId: 149,
@@ -527,7 +527,7 @@ export const HG_STORY_EVOLUTION_TIMING: EvolutionTimingRow[] = [
   {
     pokemon: '토게피 → 토게틱',
     condition: '친밀도 최대 후 레벨업',
-    timing: '달걀 부화 직후 Lv.5~10 내 목표',
+    timing: '알 부화 직후 Lv.5~10 내 목표',
     note: '비타민(아연·탄산칼슘 등)·도보 이동·레벨업으로 친밀도를 빠르게 올린다. 헤어그루밍 도구 활용 가능.',
   },
   {

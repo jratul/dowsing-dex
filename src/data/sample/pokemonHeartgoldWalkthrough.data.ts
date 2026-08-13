@@ -112,10 +112,10 @@ export interface HmRow {
 export const HGW_HM_TABLE: HmRow[] = [
   { hm: 'HM01', move: '박치기', holder: '마그케인', obtainedAt: '일목의 숲 NPC', badge: '체육관1(윙)' },
   { hm: 'HM02', move: '공중날기', holder: '헤라크로스', obtainedAt: '체육관5 클리어 후 사도의 아내', badge: '체육관5(쇼크)' },
-  { hm: 'HM03', move: '파도타기', holder: '갸라도스', obtainedAt: '에크루테크 무용도장 어른', badge: '체육관4(팬텀)' },
+  { hm: 'HM03', move: '파도타기', holder: '갸라도스', obtainedAt: '인주시티 무용도장 어른', badge: '체육관4(팬텀)' },
   { hm: 'HM04', move: '괴력', holder: '갸라도스', obtainedAt: '진청시티 포켓몬센터 선원', badge: '체육관5(쇼크)' },
   { hm: 'HM05', move: '섬광', holder: '보조 포켓몬', obtainedAt: '방울탑 현인', badge: '없음' },
-  { hm: 'HM06', move: '소용돌이', holder: '갸라도스', obtainedAt: '마호가니마을 이벤트 후 랜스', badge: '체육관7(아이스)' },
+  { hm: 'HM06', move: '소용돌이', holder: '갸라도스', obtainedAt: '황토마을 이벤트 후 랜스', badge: '체육관7(아이스)' },
   { hm: 'HM07', move: '폭포오르기', holder: '갸라도스', obtainedAt: '용의 굴 어른 (체육관8 후)', badge: '체육관8(라이징)' },
 ]
 
@@ -131,7 +131,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     levelRange: '권장 마그케인 Lv.15',
     todos: [
       '스타팅: 브케인 선택 (불꽃 → 체육관3 밀탱크까지 체육관2도 유리)',
-      'Mr. Pokemon 심부름 → 토게피 달걀 수령 ★ (31번도로 Mr. Pokemon의 집)',
+      'Mr. Pokemon 심부름 → 토게피 알 수령 ★ (31번도로 Mr. Pokemon의 집)',
       '박사 라이벌전 1회 → 30·31번도로 레벨업',
       '브케인 Lv.14 → 마그케인 진화 확인 (불꽃세례 습득)',
       '방울탑 현인에게서 HM05 섬광 입수 (선택)',
@@ -142,7 +142,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
         pokemon: '토게피',
         location: '31번도로 Mr. Pokemon의 집',
         timing: '게임 직후',
-        note: '달걀로 받음. 친밀도 최대 시 토게틱으로 진화. 빛나는돌로 토게키스 최종 진화.',
+        note: '알로 받음. 친밀도 최대 시 토게틱으로 진화. 빛나는돌로 토게키스 최종 진화.',
         priority: 'star',
       },
     ],
@@ -247,15 +247,15 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 4 ───
   {
     id: 'phase4',
-    title: '체육관4 에크루테크체육관',
+    title: '체육관4 인주체육관',
     subtitle: '관장 유빈 — 고스트 타입',
     levelRange: '권장 Lv.25~27',
     todos: [
-      '에크루테크 불탄탑 방문 → 엔테이·라이코·스이쿤 발현 (스토리 이벤트)',
-      '★ HM03 파도타기 입수 (에크루테크 무용도장 이후 어른에게서)',
+      '인주시티 불탄탑 방문 → 엔테이·라이코·스이쿤 발현 (스토리 이벤트)',
+      '★ HM03 파도타기 입수 (인주시티 무용도장 이후 어른에게서)',
       '★ 라프라스 포획: HM03 입수 직후 연결동굴 B1F — 금요일만 등장!',
       '  DS 날짜 설정으로 금요일로 맞춰서 바로 잡을 것 (단 한 마리만 등장)',
-      '라이벌전 (에크루테크) 격파',
+      '라이벌전 (인주시티) 격파',
       '토게피 친밀도 관리 지속',
     ],
     catches: [
@@ -269,11 +269,11 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       },
     ],
     keyItems: [
-      { item: 'HM03 파도타기', from: '에크루테크 무용도장 어른', note: '라프라스 포획·이동에 즉시 사용' },
+      { item: 'HM03 파도타기', from: '인주시티 무용도장 어른', note: '라프라스 포획·이동에 즉시 사용' },
     ],
     boss: {
       leader: '유빈',
-      gym: '에크루테크체육관',
+      gym: '인주체육관',
       gymType: '고스트',
       levels: 'Lv.21·21·21·25',
       note: '고스트는 노말·격투 무효. 전기자석파(보송송)로 마비시킨 뒤 화염방사로 중립 공격. 팬텀은 땅 약점 — 지진이 있으면 2배.',
@@ -293,7 +293,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     subtitle: '관장 사도 — 격투 타입',
     levelRange: '권장 Lv.29~31',
     todos: [
-      '에크루테크 → 38번도로 → 담청시티',
+      '인주시티 → 38번도로 → 담청시티',
       '등대 이벤트: 규리에게 말 걸기 → 진청시티 비밀의 약 심부름 요청',
       '파도타기로 진청시티 이동 → 포켓몬센터 약사에게서 비밀의 약 입수',
       '★ 진청시티 포켓몬센터 선원에게서 HM04 괴력 입수',
@@ -350,7 +350,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
   // ─── Phase 7 ───
   {
     id: 'phase7',
-    title: '체육관7 마호가니체육관',
+    title: '체육관7 황토체육관',
     subtitle: '관장 프리스 — 얼음 타입',
     levelRange: '권장 Lv.35~38',
     todos: [
@@ -358,7 +358,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       '★ 분노의 호수: 붉은 갸라도스 포획! 레벨 30, 배틀 탈출 금지',
       '  전기자석파 마비 후 체력 낮추기 → 하이퍼볼로 포획 권장',
       '갸라도스에 HM03 파도타기·HM04 괴력 배정 시작',
-      '마호가니마을 로켓단 기지 이벤트 — 랜스와 협력해 해결',
+      '황토마을 로켓단 기지 이벤트 — 랜스와 협력해 해결',
       '로켓단 소탕 후 랜스에게 HM06 소용돌이 입수',
     ],
     catches: [
@@ -372,11 +372,11 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       },
     ],
     keyItems: [
-      { item: 'HM06 소용돌이', from: '마호가니마을 로켓단 소탕 후 랜스', note: '체육관7 배지 사용 조건' },
+      { item: 'HM06 소용돌이', from: '황토마을 로켓단 소탕 후 랜스', note: '체육관7 배지 사용 조건' },
     ],
     boss: {
       leader: '프리스',
-      gym: '마호가니체육관',
+      gym: '황토체육관',
       gymType: '얼음',
       levels: 'Lv.27·29·31',
       note: '얼음 타입은 격투·불꽃 약점. 헤라크로스 인파이트·메가폰 또는 블레이범 화염방사.',
@@ -718,7 +718,7 @@ export const HGW_YOUTUBER_PICKS: YoutuberPick[] = [
     pokemonId: 250,
     pokemon: '칠색조',
     type: '불꽃/비행',
-    obtainedAt: '에크루테크 탑 꼭대기 Lv.45 — 기모노 소녀 5명 격파 → 무지개날개 입수',
+    obtainedAt: '방울탑 꼭대기(인주시티) Lv.45 — 기모노 소녀 5명 격파 → 무지개날개 입수',
     obtainTiming: '성도 체육관7 이후 (기모노 소녀 이벤트 완료 후)',
     pros: [
       'HG 주 전설. 특공 130으로 불꽃/비행 특수 화력이 최강급',
