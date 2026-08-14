@@ -351,7 +351,7 @@ export function PokemonFireredStoryGuidePage() {
           rows={FIRERED_STORY_SUPPORT.map((r) => [
             <span key={r.pokemonId} className="flex items-center gap-2">
               <SpriteImage src={findSamplePokemon(r.pokemonId).spriteUrl} alt={r.pokemon} width={28} height={28} className="h-7 w-7" />
-              <PokemonLink id={r.pokemonId} label={r.pokemon} />
+              <PokemonLink id={r.pokemonId} label={r.pokemon} showSprite={false} />
             </span>,
             r.usage,
           ])}

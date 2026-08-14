@@ -217,7 +217,7 @@ export function PokemonFireredSeviiIslandsGuidePage() {
                           height={28}
                           className="h-7 w-7 shrink-0"
                         />
-                        <PokemonLink id={r.pokemonId} label={r.pokemon} />
+                        <PokemonLink id={r.pokemonId} label={r.pokemon} showSprite={false} />
                       </span>
                     </td>
                     <td className="py-2 text-ink-muted">{r.note}</td>
