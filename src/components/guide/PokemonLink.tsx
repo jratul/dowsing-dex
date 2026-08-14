@@ -10,7 +10,9 @@ export interface PokemonLinkProps {
 export function PokemonLink({ id, label }: PokemonLinkProps) {
   const pokemon = findSamplePokemon(id)
   return (
-    <Link to={`/pokemon/${id}`} className="inline-flex items-center gap-0.5 align-text-bottom font-bold text-brand-red hover:underline">
+    // inline-flex로 감싸면 16px 스프라이트가 인라인 박스를 키워 링크 전체가 주변 문장보다
+    // 위로 밀린다. 링크는 순수 인라인으로 두고 스프라이트만 align-middle로 맞춘다.
+    <Link to={`/pokemon/${id}`} className="font-bold text-brand-red hover:underline">
       {pokemon.spriteUrl && (
         <img
           src={pokemon.spriteUrl}
@@ -18,7 +20,7 @@ export function PokemonLink({ id, label }: PokemonLinkProps) {
           width={16}
           height={16}
           style={{ imageRendering: 'pixelated' }}
-          className="inline-block"
+          className="mr-0.5 inline-block align-middle"
         />
       )}
       {label ?? pokemon.nameKo}

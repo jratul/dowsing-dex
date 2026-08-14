@@ -50,7 +50,7 @@ function PokemonSprite({ id, name }: { id: number; name: string }) {
   const data = findSamplePokemon(id)
   return (
     <div className="flex flex-col items-center gap-0.5">
-      <SpriteImage src={data.spriteUrl} alt={name} width={40} height={40} />
+      <SpriteImage src={data.spriteUrl} alt={name} width={40} height={40} className="h-10 w-10" />
       <PokemonLink id={id} />
     </div>
   )
