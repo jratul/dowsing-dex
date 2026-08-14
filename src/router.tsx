@@ -71,6 +71,13 @@ export const router = createBrowserRouter([
           })),
       },
       {
+        path: '/guides/pokemon-hgss-collection',
+        lazy: () =>
+          import('./pages/PokemonHGSSCollectionGuidePage').then((m) => ({
+            Component: m.PokemonHGSSCollectionGuidePage,
+          })),
+      },
+      {
         path: '/guides/pokemon-emerald-story',
         lazy: () =>
           import('./pages/PokemonEmeraldStoryGuidePage').then((m) => ({

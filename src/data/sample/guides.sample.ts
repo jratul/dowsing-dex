@@ -74,6 +74,15 @@ export const SAMPLE_GUIDES: Guide[] = [
     bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
   },
   {
+    slug: 'pokemon-hgss-collection',
+    category: '포획',
+    title: '하트골드·소울실버·기라티나PT 스토리 수집 가이드',
+    iconPokemonId: 249,
+    relatedPokemonIds: [249, 250, 487, 157, 152, 155],
+    summary: 'DS 2대 병행 기준. 스토리 순서대로 포획·NPC 교환·선물·고정 조우 포켓몬을 3게임 통합 정리.',
+    bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
+  },
+  {
     slug: 'pokemon-emerald-story',
     category: '공략',
     title: '포켓몬 에메랄드버전 스토리 엔트리 공략',

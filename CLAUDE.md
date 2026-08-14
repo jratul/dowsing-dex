@@ -52,6 +52,7 @@ src/
     natures.data.ts                   # 25개 성격 정적 데이터 (NaturesPage 사용)
     abilities.generated.ts            # 특성 313종 (build-abilities.mjs 생성)
     items.generated.ts                # 진화/배틀 아이템 (build-items.mjs 생성)
+    guides/hgss-collection.md         # HGSS·기라티나PT 수집 가이드 원문 (?raw 임포트 후 런타임 파싱)
     sample/                           # 도우미 함수 (findSamplePokemon, findMove 등) + 공략 데이터
       flavorTexts.ts                  # PokeAPI 도감 설명 온디맨드 fetch 유틸
       pokemonHeartgoldWalkthrough.data.ts  # 하트골드 최고효율 진행 공략 데이터 (11 Phase)
@@ -94,6 +95,7 @@ scripts/
 | `/guides/pokemon-red-evolution` | PokemonRedEvolutionGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-heartgold-story` | PokemonHeartgoldStoryGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-heartgold-walkthrough` | PokemonHeartgoldWalkthroughGuidePage | 정적 전용 라우트 |
+| `/guides/pokemon-hgss-collection` | PokemonHGSSCollectionGuidePage | 정적 전용 라우트 (마크다운 원문 파싱) |
 | `/guides/pokemon-emerald-story` | PokemonEmeraldStoryGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-platinum-story` | PokemonPlatinumStoryGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-platinum-progress` | PokemonPlatinumProgressGuidePage | 정적 전용 라우트 |
