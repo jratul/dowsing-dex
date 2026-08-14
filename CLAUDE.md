@@ -22,6 +22,8 @@ npm run lint                   # 린트 (oxlint)
 npm run fetch:pokedex          # PokeAPI + 한국어 위키에서 데이터 생성 (수 시간 소요)
 npm run build:tm-index         # by-id/*.generated.ts → tm-index.generated.ts 역인덱스 생성
 npm run build:move-descriptions  # PokeAPI에서 기술 한국어 설명 수집 → move-descriptions.generated.ts
+npm run build:abilities        # PokeAPI에서 특성 한국어 데이터 수집 → abilities.generated.ts
+npm run build:items            # PokeAPI에서 진화/배틀 아이템 데이터 수집 → items.generated.ts
 ```
 
 ## 폴더 구조
@@ -47,6 +49,9 @@ src/
     moves/by-id/*.generated.ts        # 포켓몬별 세대/버전별 학습셋 (1082개 파일, lazy 로드)
     moves/tm-index.generated.ts       # TM/HM 역인덱스 (기술머신 → 배울 수 있는 포켓몬 ID 목록)
     moves/move-descriptions.generated.ts  # 기술 한국어 설명 (727종, build-move-descriptions.mjs 생성)
+    natures.data.ts                   # 25개 성격 정적 데이터 (NaturesPage 사용)
+    abilities.generated.ts            # 특성 313종 (build-abilities.mjs 생성)
+    items.generated.ts                # 진화/배틀 아이템 (build-items.mjs 생성)
     sample/                           # 도우미 함수 (findSamplePokemon, findMove 등) + 공략 데이터
       flavorTexts.ts                  # PokeAPI 도감 설명 온디맨드 fetch 유틸
       pokemonHeartgoldWalkthrough.data.ts  # 하트골드 최고효율 진행 공략 데이터 (11 Phase)
@@ -56,6 +61,8 @@ scripts/
   fetch-pokedex.mjs           # PokeAPI + 한국어 위키 스크래핑 → 생성 파일 출력
   build-tm-index.mjs          # by-id/*.generated.ts 파싱 → tm-index.generated.ts 출력
   build-move-descriptions.mjs # PokeAPI 기술 한국어 설명 수집 → move-descriptions.generated.ts 출력
+  build-abilities.mjs         # PokeAPI 특성 한국어 데이터 수집 → abilities.generated.ts 출력
+  build-items.mjs             # PokeAPI 진화/배틀 아이템 데이터 수집 → items.generated.ts 출력
 ```
 
 ## 데이터 생성 흐름
@@ -76,6 +83,9 @@ scripts/
 | `/types` | TypeChartPage | 18×18 타입 상성표 + 계산기 |
 | `/tm` | TmListPage | 세대·버전별 TM/HM 목록 + 배울 수 있는 포켓몬 |
 | `/encounter` | EncounterPage | 세대·버전별 야생 출현 및 포획 불가 포켓몬 |
+| `/natures` | NaturesPage | 25종 성격 5×5 매트릭스 + 전체 표 |
+| `/abilities` | AbilitiesPage | 특성 313종 세대 필터·검색 |
+| `/items` | ItemsPage | 진화 아이템·배틀 지니기 탭 분리 |
 | `/guides` | GuideListPage | 공략 카드 목록 |
 | `/guides/pokemon-gold-story` | PokemonGoldStoryGuidePage | 정적 전용 라우트 (표/이미지 중심) |
 | `/guides/pokemon-red-story` | PokemonRedStoryGuidePage | 정적 전용 라우트 |

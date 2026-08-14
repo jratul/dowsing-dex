@@ -9,6 +9,9 @@ const NAV_ITEMS: NavItem[] = [
   { label: '타입상성', href: '/types' },
   { label: '기술머신', href: '/tm' },
   { label: '출현', href: '/encounter' },
+  { label: '성격', href: '/natures' },
+  { label: '특성', href: '/abilities' },
+  { label: '아이템', href: '/items' },
 ]
 
 export function Layout() {
