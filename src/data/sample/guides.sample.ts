@@ -109,4 +109,13 @@ export const SAMPLE_GUIDES: Guide[] = [
     summary: '체육관 사전 조건, HM 취득·배지 요건, 갤럭시단 이벤트 흐름, 막히는 포인트 Q&A. 길이 막혔을 때 한 번에 확인.',
     bannerImageUrl: '/images/guides/platinum-boxart.png',
   },
+  {
+    slug: 'pokemon-hgss-collection',
+    category: '공략',
+    title: '하트골드·소울실버 전국도감 수집 가이드 — 스토리 순서별 포획·교환',
+    iconPokemonId: 249,
+    relatedPokemonIds: [249, 250, 243, 244, 245, 374],
+    summary: '스토리 진행 순서대로 어디서 무엇을 잡고, 어떤 NPC 교환을 통해 포켓몬을 얻는지 정리. HGSS NPC 교환 10종 완전 수록.',
+    bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
+  },
 ]
