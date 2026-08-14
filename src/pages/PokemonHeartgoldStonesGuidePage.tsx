@@ -208,7 +208,7 @@ export function PokemonHeartgoldStonesGuidePage() {
       <Card className="mt-6 p-4">
         <SectionHeading>이수재의 할아버지 — 5종 돌 일괄 입수</SectionHeading>
         <p className="mb-3 text-sm text-ink">
-          사천왕 클리어 후 관동 지방에 진입하면, <strong>25번도로 끝 집(세르울리안 곶)</strong>에서
+          사천왕 클리어 후 관동 지방에 진입하면, <strong>관동 25번도로 끝 집</strong>에서
           이수재의 할아버지를 만날 수 있다.
           특정 포켓몬을 보여주면 <strong>일회성으로 돌을 1개씩</strong> 받을 수 있다.
         </p>
