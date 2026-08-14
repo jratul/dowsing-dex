@@ -92,7 +92,7 @@ export const HGW_PARTY: PartyMember[] = [
   {
     pokemonId: 22,
     pokemon: '깨비드릴조',
-    catchTiming: '35번도로 NPC 교환 — 파오리와 Kenya 깨비참 Lv.20 교환 후 진화',
+    catchTiming: '35번도로 NPC 교환 — 파오리와 깨비참 Lv.20 교환 후 진화',
     role: '비행 딜러 — HM02 공중날기 담당. 격투 타입 체육관 비행기 견제',
     keyMoves: ['공중날기', '드릴부리', '에어리얼에이스', '부리연속치기'],
   },
@@ -126,9 +126,9 @@ export const HGW_ROLE_COMPARISONS: RoleComparison[] = [
       {
         pokemonId: 22,
         pokemon: '깨비드릴조',
-        catchTiming: '35번도로 NPC 교환 (파오리 → Kenya 깨비참 Lv.20)',
+        catchTiming: '35번도로 NPC 교환 (파오리 → 깨비참 Lv.20)',
         pros: [
-          'NPC 교환으로 Lv.20 깨비참(Kenya)을 즉시 입수 — 조기 획득',
+          'NPC 교환으로 Lv.20 깨비참을 즉시 입수 — 조기 획득',
           '공격 112·속도 100으로 물리 딜러로도 활용 가능',
           '드릴부리(자력)·에어리얼에이스(TM)로 타입 커버리지 확보',
           '친밀도 진화 과정 없이 일정 레벨이면 바로 진화',
@@ -345,8 +345,8 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     todos: [
       '너도밤나무숲 통과 → 금빛시티',
       '★ 금빛시티 연인광장 또는 주변 NPC에게서 파오리 입수',
-      '★ 35번도로 NPC 교환: 파오리 → Kenya 깨비참 Lv.20 입수 (깨비드릴조 진화 예정)',
-      '  Kenya 깨비참 즉시 육성 시작 (Lv.22+ 깨비드릴조 진화 목표)',
+      '★ 35번도로 NPC 교환: 파오리 → 깨비참 Lv.20 입수 (깨비드릴조 진화 예정)',
+      '  깨비참 즉시 육성 시작 (Lv.22+ 깨비드릴조 진화 목표)',
       '★ 이수재의 집 방문 (체육관3 이후) → 이브이 입수 (후 에브이 진화 가능)',
       '자연공원 곤충채집 대회 화요일·목요일·토요일 참가 (빛의돌은 포스트게임 이후 입수 — 스토리 중 토게키스 진화 불가)',
       '토게피 친밀도 최대화 (비타민 사용, 충분한 도보) → 토게틱 진화 목표',
@@ -355,7 +355,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
     catches: [
       {
         pokemonId: 21,
-        pokemon: '깨비참 (Kenya)',
+        pokemon: '깨비참',
         location: '35번도로 NPC 교환 (파오리와 교환)',
         timing: '금빛시티 도착 후 (35번도로 경유 시)',
         note: 'NPC 교환으로 Lv.20 즉시 입수. 깨비드릴조는 Lv.22에 진화. 공중날기 HM 담당 예정.',
@@ -766,7 +766,7 @@ export const HGW_LEVEL_MILESTONES: LevelMilestone[] = [
   { member: '보송송', evolution: 'Lv.30 → 전룡', byWhen: '체육관4 전후', note: '방전 Lv.34 자력 습득. TM24 10만볼트는 게임코너 불가, 자력 방전으로 운용.' },
   { member: '토게피', evolution: '친밀도 최대 → 토게틱', byWhen: '체육관3~4 사이 목표', note: '비타민·도보로 친밀도 올림. 체육관5 전 달성 목표.' },
   { member: '토게틱', evolution: '빛의돌 사용 → 토게키스', byWhen: '포스트게임 (락클라임 이후)', note: 'HGSS에서 빛의돌은 포스트게임 이후 입수. 스토리 중 토게틱으로 유지하고 포스트게임에서 진화.' },
-  { member: '깨비참 (Kenya)', evolution: 'Lv.22 → 깨비드릴조', byWhen: '체육관3 직후 (35번도로 교환 직후)', note: 'NPC 교환으로 Lv.20 입수. 바로 육성하면 체육관4~5 전 진화 가능.' },
+  { member: '깨비참', evolution: 'Lv.22 → 깨비드릴조', byWhen: '체육관3 직후 (35번도로 교환 직후)', note: 'NPC 교환으로 Lv.20 입수. 바로 육성하면 체육관4~5 전 진화 가능.' },
   { member: '헤라크로스', evolution: '진화 없음 (단일 형태)', byWhen: '포획 후 즉시 육성', note: 'Lv.20 이상으로 육성 후 투입.' },
   { member: '붉은 갸라도스', evolution: 'Lv.30 (진화 불필요)', byWhen: '분노의 호수 (체육관7 전)', note: 'HM 배정 후 즉시 파티 투입.' },
   { member: '꾸꾸리', evolution: 'Lv.33 → 메꾸리', byWhen: '얼음샛길 포획 후 (체육관8 전)', note: 'Lv.28에 원시의힘 자력 습득.' },
