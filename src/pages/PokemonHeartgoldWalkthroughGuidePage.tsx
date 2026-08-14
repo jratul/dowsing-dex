@@ -103,7 +103,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
               )}
               <div className="min-w-0">
                 <p className="font-bold text-ink">
-                  <PokemonLink id={m.pokemonId} label={m.pokemon?.nameKo ?? m.pokemon} />
+                  <PokemonLink id={m.pokemonId} label={m.pokemon?.nameKo ?? ''} />
                 </p>
                 <p className="text-xs text-ink-muted">{m.catchTiming}</p>
                 <p className="mt-0.5 text-xs text-ink">{L(m.role)}</p>

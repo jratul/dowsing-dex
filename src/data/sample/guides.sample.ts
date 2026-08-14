@@ -56,6 +56,15 @@ export const SAMPLE_GUIDES: Guide[] = [
     bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
   },
   {
+    slug: 'pokemon-heartgold-complete',
+    category: '공략',
+    title: '포켓몬스터 하트골드 — 스토리 최적화 완전 공략',
+    iconPokemonId: 157,
+    relatedPokemonIds: [157, 181, 214, 22, 130, 473],
+    summary: '브케인 기준 연두마을→레드 전 구간. 단계별 진행, 후보 비교, HM/TM 원칙, 레벨 임계점, 최종 기술 배치까지 완비.',
+    bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
+  },
+  {
     slug: 'pokemon-heartgold-walkthrough',
     category: '공략',
     title: '포켓몬 하트골드버전 최고 효율 진행 공략',
