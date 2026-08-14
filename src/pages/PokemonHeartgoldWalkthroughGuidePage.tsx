@@ -14,6 +14,7 @@ import {
   HGW_ALT_MEMBERS,
   HGW_LEVEL_MILESTONES,
   HGW_YOUTUBER_PICKS,
+  HGW_ROLE_COMPARISONS,
   HGW_NAME_TO_ID,
 } from '../data/sample/pokemonHeartgoldWalkthrough.data'
 
@@ -107,6 +108,88 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
               </div>
             </div>
           ))}
+        </div>
+      </Card>
+
+      {/* 역할별 파티 구성 비교 */}
+      <Card className="mb-6">
+        <div className="p-4">
+          <SectionHeading>역할별 파티 구성 비교</SectionHeading>
+          <p className="mb-4 text-sm text-ink-muted">
+            같은 역할을 담당할 수 있는 후보들의 장단점을 비교합니다. 기본 추천 구성에 없는 포켓몬도 모두 포함해 선택지를 제시합니다.
+          </p>
+          <div className="space-y-6">
+            {HGW_ROLE_COMPARISONS.map((role) => (
+              <div key={role.role}>
+                <div className="mb-2">
+                  <h3 className="font-black text-ink">{role.role}</h3>
+                  <p className="text-sm text-ink-muted">{role.description}</p>
+                </div>
+                <div className="grid gap-3 sm:grid-cols-2">
+                  {role.candidates.map((c) => {
+                    const p = SAMPLE_POKEMON.find((sp) => sp.id === c.pokemonId)
+                    const isPrimary = c.verdict === 'primary'
+                    return (
+                      <div key={c.pokemonId} className="rounded-lg border border-border p-3">
+                        <div className="mb-2 flex items-start gap-3">
+                          {p && (
+                            <SpriteImage
+                              src={p.artworkUrl ?? p.spriteUrl}
+                              alt={p.nameKo}
+                              width={48}
+                              height={48}
+                              pixelated={false}
+                              rounded="none"
+                              className="h-12 w-12 shrink-0"
+                            />
+                          )}
+                          <div className="min-w-0">
+                            <div className="flex flex-wrap items-center gap-1.5">
+                              <span className="font-black text-ink">{p?.nameKo ?? c.pokemon}</span>
+                              <span
+                                className={`rounded px-2 py-0.5 text-xxs font-bold ${
+                                  isPrimary
+                                    ? 'bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300'
+                                    : 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-300'
+                                }`}
+                              >
+                                {c.verdictLabel}
+                              </span>
+                            </div>
+                            <p className="mt-0.5 text-xs text-ink-muted">{c.catchTiming}</p>
+                          </div>
+                        </div>
+                        <div className="grid gap-2 sm:grid-cols-2">
+                          <div>
+                            <p className="mb-1 text-xxs font-bold text-green-600 dark:text-green-400">장점</p>
+                            <ul className="space-y-0.5">
+                              {c.pros.map((pro, i) => (
+                                <li key={i} className="flex gap-1.5 text-xs text-ink">
+                                  <span className="mt-px shrink-0 text-green-500">✓</span>
+                                  <span>{L(pro)}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                          <div>
+                            <p className="mb-1 text-xxs font-bold text-red-600 dark:text-red-400">단점</p>
+                            <ul className="space-y-0.5">
+                              {c.cons.map((con, i) => (
+                                <li key={i} className="flex gap-1.5 text-xs text-ink">
+                                  <span className="mt-px shrink-0 text-red-500">✗</span>
+                                  <span>{L(con)}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </Card>
 
@@ -226,7 +309,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
         <div className="p-4">
           <SectionHeading>대체 멤버 가이드</SectionHeading>
           <p className="mb-3 text-sm text-ink-muted">
-            헤라크로스·토게키스·라프라스를 구하기 어렵거나 다른 스타일을 원할 때 대체 옵션.
+            추천 파티 외에 대체 운용 가능한 포켓몬. 역할 비교 섹션의 후보들도 포함됩니다.
           </p>
           <div className="space-y-3">
             {HGW_ALT_MEMBERS.map((m) => {
@@ -340,12 +423,13 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
           <SectionHeading>효율 극대화 팁</SectionHeading>
           <ul className="space-y-2">
             {[
-              '공중날기(HM02)를 5관 직후 입수하면 이후 도시 간 이동이 대폭 단축된다. 가능한 빨리 배정할 것.',
-              '토게피는 비타민(탄산X·철분·단백질 등) 을 먹이면 친밀도가 빠르게 오른다. 분노의 호수 방문 전에 토게키스 진화 완료 목표.',
+              '깨비드릴조가 HM02 공중날기 담당. 5관 직후 입수하면 이후 도시 간 이동이 대폭 단축된다. Kenya 교환(35번도로) 후 최대한 빨리 육성 권장.',
+              '다꼬리는 풀베기·괴력·바위깨기·바다회오리·박치기를 전담하는 HM 전용 보조 포켓몬. 전투에는 투입하지 않으므로 레벨업 불필요.',
+              '토게피는 비타민(탄산X·철분·단백질 등)을 먹이면 친밀도가 빠르게 오른다. 체육관5 전에 토게틱 진화 목표.',
               '헤라크로스는 박치기가 가능한 포켓몬 보유 후 33번도로 나무를 반복 박치기. 확률이 낮으므로 30~50회 시도가 필요할 수 있다.',
-              '라프라스는 매주 금요일 하나만 등장한다. DS 날짜를 금요일로 설정한 뒤 즉시 포획하면 시간 절약.',
-              'TM26 지진은 챔피언로드에서 획득. 블레이범에 지진·화염방사·솔라빔(또는 번개펀치)·불꽃엄니 조합이 가장 범용적.',
-              '관동 이동 시 공중날기로 각 도시를 빠르게 순환한다. 이슬(갈색) → 마티스(진홍) → 웅(회색) → 민화(무지개) → 도희(연분홍) → 초련(노랑) → 강연(소용돌이섬) → 블루(상록) 순이 효율적.',
+              'TM26 지진은 챔피언로드에서 획득. 맘모꾸리가 Lv.40에 지진을 자력 습득하므로 TM을 보존할 수 있다. 블레이범에 배정하면 레드 피카츄 대응이 수월하지만 선택 사항.',
+              '맘모꾸리는 얼음샛길 꾸꾸리 → Lv.33 메꾸리 → 원시의힘 소지 상태 레벨업 순으로 진화. TM72 눈사태를 배정하면 목호 망나뇽에 4배 피해.',
+              '관동 이동 시 깨비드릴조 공중날기로 각 도시를 빠르게 순환. 이슬(블루) → 마티스(갈색) → 웅(회색) → 민화(무지개) → 도희(연분홍) → 초련(노랑) → 강연(소용돌이섬) → 블루(상록) 순이 효율적.',
               '레드전은 파티 Lv.70 이상 강력 권장. 은빛산 야생 포켓몬(Lv.35~45)으로 레벨업 가능.',
             ].map((tip, i) => (
               <li key={i} className="flex gap-2 text-sm text-ink">
