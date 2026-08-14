@@ -94,7 +94,7 @@ export const HGW_PARTY: PartyMember[] = [
     pokemon: '깨비드릴조',
     catchTiming: '35번도로 NPC 교환 — 파오리와 깨비참 Lv.20 교환 후 진화',
     role: '비행 딜러 — HM02 공중날기 담당. 격투 타입 체육관 비행기 견제',
-    keyMoves: ['공중날기', '드릴부리'],
+    keyMoves: ['공중날기', '회전부리'],
   },
 ]
 
@@ -130,7 +130,7 @@ export const HGW_ROLE_COMPARISONS: RoleComparison[] = [
         pros: [
           'NPC 교환으로 Lv.20 깨비참을 즉시 입수 — 조기 획득',
           '공격 112·속도 100으로 물리 딜러로도 활용 가능',
-          '드릴부리(자력)로 비행 물리 화력 확보',
+          '회전부리(자력)로 비행 물리 화력 확보',
           '친밀도 진화 과정 없이 일정 레벨이면 바로 진화',
         ],
         cons: [
