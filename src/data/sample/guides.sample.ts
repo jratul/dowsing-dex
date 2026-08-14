@@ -56,15 +56,6 @@ export const SAMPLE_GUIDES: Guide[] = [
     bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
   },
   {
-    slug: 'pokemon-heartgold-complete',
-    category: '공략',
-    title: '포켓몬스터 하트골드 — 스토리 최적화 완전 공략',
-    iconPokemonId: 157,
-    relatedPokemonIds: [157, 181, 214, 22, 130, 473],
-    summary: '브케인 기준 연두마을→레드 전 구간. 단계별 진행, 후보 비교, HM/TM 원칙, 레벨 임계점, 최종 기술 배치까지 완비.',
-    bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
-  },
-  {
     slug: 'pokemon-heartgold-walkthrough',
     category: '공략',
     title: '포켓몬 하트골드버전 최고 효율 진행 공략',
@@ -108,14 +99,5 @@ export const SAMPLE_GUIDES: Guide[] = [
     relatedPokemonIds: [487, 392, 395, 389, 400, 445],
     summary: '체육관 사전 조건, HM 취득·배지 요건, 갤럭시단 이벤트 흐름, 막히는 포인트 Q&A. 길이 막혔을 때 한 번에 확인.',
     bannerImageUrl: '/images/guides/platinum-boxart.png',
-  },
-  {
-    slug: 'pokemon-hgss-collection',
-    category: '공략',
-    title: '하트골드·소울실버 전국도감 수집 가이드 — 스토리 순서별 포획·교환',
-    iconPokemonId: 249,
-    relatedPokemonIds: [249, 250, 243, 244, 245, 374],
-    summary: '스토리 진행 순서대로 어디서 무엇을 잡고, 어떤 NPC 교환을 통해 포켓몬을 얻는지 정리. HGSS NPC 교환 10종 완전 수록.',
-    bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
   },
 ]

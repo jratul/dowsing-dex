@@ -57,13 +57,6 @@ export const router = createBrowserRouter([
           })),
       },
       {
-        path: '/guides/pokemon-heartgold-complete',
-        lazy: () =>
-          import('./pages/PokemonHeartgoldCompleteGuidePage').then((m) => ({
-            Component: m.PokemonHeartgoldCompleteGuidePage,
-          })),
-      },
-      {
         path: '/guides/pokemon-heartgold-walkthrough',
         lazy: () =>
           import('./pages/PokemonHeartgoldWalkthroughGuidePage').then((m) => ({
@@ -75,13 +68,6 @@ export const router = createBrowserRouter([
         lazy: () =>
           import('./pages/PokemonHeartgoldStonesGuidePage').then((m) => ({
             Component: m.PokemonHeartgoldStonesGuidePage,
-          })),
-      },
-      {
-        path: '/guides/pokemon-hgss-collection',
-        lazy: () =>
-          import('./pages/PokemonHGSSCollectionGuidePage').then((m) => ({
-            Component: m.PokemonHGSSCollectionGuidePage,
           })),
       },
       {
