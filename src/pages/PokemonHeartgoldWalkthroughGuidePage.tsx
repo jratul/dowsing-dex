@@ -102,9 +102,11 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                 />
               )}
               <div className="min-w-0">
-                <p className="font-bold text-ink">{m.pokemon?.nameKo}</p>
+                <p className="font-bold text-ink">
+                  <PokemonLink id={m.pokemonId} label={m.pokemon?.nameKo ?? m.pokemon} />
+                </p>
                 <p className="text-xs text-ink-muted">{m.catchTiming}</p>
-                <p className="mt-0.5 text-xs text-ink">{m.role}</p>
+                <p className="mt-0.5 text-xs text-ink">{L(m.role)}</p>
               </div>
             </div>
           ))}
@@ -145,7 +147,9 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                           )}
                           <div className="min-w-0">
                             <div className="flex flex-wrap items-center gap-1.5">
-                              <span className="font-black text-ink">{p?.nameKo ?? c.pokemon}</span>
+                              <span className="font-black text-ink">
+                                <PokemonLink id={c.pokemonId} label={p?.nameKo ?? c.pokemon} />
+                              </span>
                               <span
                                 className={`rounded px-2 py-0.5 text-xxs font-bold ${
                                   isPrimary
@@ -202,7 +206,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
             rows={HGW_HM_TABLE.map((r) => [
               <HowBadge key={r.hm} how={r.hm} />,
               r.move,
-              r.holder,
+              L(r.holder),
               r.obtainedAt,
               r.badge,
             ])}
@@ -247,7 +251,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                         <PokemonLink key={c.pokemonId} id={c.pokemonId} label={c.pokemon} />,
                         c.location,
                         c.timing,
-                        c.note,
+                        L(c.note),
                         <PriorityBadge key={c.pokemonId} priority={c.priority} />,
                       ])}
                     />
@@ -280,7 +284,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                     <p className="mb-2 text-sm text-ink">{L(phase.boss.note)}</p>
                     <GuideTable
                       headers={['상대 포켓몬', '대응 방법']}
-                      rows={phase.boss.rows.map((r) => [r.opponent, L(r.answer)])}
+                      rows={phase.boss.rows.map((r) => [L(r.opponent), L(r.answer)])}
                     />
                     <p className="mt-2 text-xs font-bold text-brand-red">
                       획득: {phase.boss.badge}
@@ -299,7 +303,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
           <SectionHeading>진화 타이밍 가이드</SectionHeading>
           <GuideTable
             headers={['포켓몬', '진화 조건', '목표 시기', '비고']}
-            rows={HGW_LEVEL_MILESTONES.map((m) => [m.member, m.evolution, m.byWhen, m.note])}
+            rows={HGW_LEVEL_MILESTONES.map((m) => [L(m.member), L(m.evolution), m.byWhen, L(m.note)])}
           />
         </div>
       </Card>
@@ -329,11 +333,11 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                   )}
                   <div>
                     <p className="font-bold text-ink">
-                      {p?.nameKo ?? m.pokemon}{' '}
-                      <span className="text-xs font-normal text-ink-muted">→ {m.replaces} 대체</span>
+                      <PokemonLink id={m.pokemonId} label={p?.nameKo ?? m.pokemon} />{' '}
+                      <span className="text-xs font-normal text-ink-muted">→ {L(m.replaces)} 대체</span>
                     </p>
-                    <p className="mt-0.5 text-sm text-ink">{m.role}</p>
-                    <p className="mt-0.5 text-xs text-ink-faint">입수: {m.obtainedAt}</p>
+                    <p className="mt-0.5 text-sm text-ink">{L(m.role)}</p>
+                    <p className="mt-0.5 text-xs text-ink-faint">입수: {L(m.obtainedAt)}</p>
                   </div>
                 </div>
               )
@@ -374,7 +378,9 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                     )}
                     <div className="min-w-0 flex-1">
                       <div className="flex flex-wrap items-center gap-2">
-                        <span className="font-black text-ink">{p?.nameKo ?? pick.pokemon}</span>
+                        <span className="font-black text-ink">
+                          <PokemonLink id={pick.pokemonId} label={p?.nameKo ?? pick.pokemon} />
+                        </span>
                         <span className="text-xs text-ink-muted">{pick.type}</span>
                         <span className={`rounded px-2 py-0.5 text-xxs font-bold ${verdictColor}`}>
                           {pick.verdictLabel}
