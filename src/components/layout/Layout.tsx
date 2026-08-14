@@ -7,6 +7,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: '도감', href: '/pokedex' },
   { label: '공략', href: '/guides' },
   { label: '타입상성', href: '/types' },
+  { label: '기술', href: '/moves' },
   { label: '기술머신', href: '/tm' },
   { label: '출현', href: '/encounter' },
   { label: '성격', href: '/natures' },
