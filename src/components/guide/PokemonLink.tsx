@@ -20,7 +20,7 @@ export function PokemonLink({ id, label }: PokemonLinkProps) {
           width={16}
           height={16}
           style={{ imageRendering: 'pixelated' }}
-          className="mr-0.5 inline-block align-middle"
+          className="mr-0.5 inline-block align-[-0.21em]"
         />
       )}
       {label ?? pokemon.nameKo}
