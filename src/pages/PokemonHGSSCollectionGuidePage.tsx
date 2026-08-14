@@ -252,7 +252,8 @@ function LocationView({
       <div className="mb-2 flex items-start gap-3">
         {imgUrl && (
           <div className="flex shrink-0 justify-center rounded bg-surface-hover p-1">
-            <img src={imgUrl} alt={location.name} className="max-h-28 w-auto max-w-36 object-contain" loading="lazy" />
+            {/* 바로 옆 제목이 같은 지역명을 읽어주므로 스크린리더에는 중복 노출하지 않는다 */}
+            <img src={imgUrl} alt="" className="max-h-28 w-auto max-w-36 object-contain" loading="lazy" />
           </div>
         )}
         <h4 className="mt-0.5 text-sm font-black text-ink">{location.name}</h4>
@@ -321,10 +322,13 @@ function ChapterAccordion({
     <div className="border-b border-border">
       <button
         onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
         className="flex w-full items-center justify-between px-4 py-3 text-left"
       >
         <span className="text-sm font-bold text-ink">{chapter.title}</span>
-        <span className="text-ink-muted">{open ? '▲' : '▽'}</span>
+        <span aria-hidden className="text-ink-muted">
+          {open ? '▲' : '▽'}
+        </span>
       </button>
       {open && (
         <div className="px-4 pb-2">
@@ -384,10 +388,15 @@ export function PokemonHGSSCollectionGuidePage() {
   const [activeTab, setActiveTab] = useState('0')
   const style = CATEGORY_STYLE['포획']
 
+  // 리전폼(알로라·가라르·히스이·팔데아, id 10000번대)은 원종과 한글명이 완전히 같다.
+  // 그냥 덮어쓰면 나중에 오는 리전폼이 이겨서 4세대 가이드인데 "꼬렛"이 알로라꼬렛으로,
+  // "가디"가 히스이가디로 링크된다. 항상 id가 작은 원종을 쓴다.
   const nameToId = useMemo(() => {
     const map = new Map<string, number>()
     for (const p of SAMPLE_POKEMON) {
-      if (p.nameKo) map.set(p.nameKo, p.id)
+      if (!p.nameKo) continue
+      const prev = map.get(p.nameKo)
+      if (prev === undefined || p.id < prev) map.set(p.nameKo, p.id)
     }
     return map
   }, [])
