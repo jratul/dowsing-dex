@@ -35,7 +35,7 @@ src/
     pokemon/      # TypeBadge, PokemonCard, StatChart, MoveList, EncounterLocationList, EvolutionMoveComparison 등
     type-chart/   # TypeFilter, TypeCalculator, TypeChartGrid
     guide/        # GuideCard, GuideTable, PokemonLink
-    layout/       # SiteHeader, MobileTabBar, Hero, RouteErrorBoundary
+    layout/       # SiteHeader(모바일 햄버거 메뉴 포함), Hero, RouteErrorBoundary
   pages/          # 라우트별 페이지 컴포넌트
   lib/
     cn.ts                  # clsx + tailwind-merge 헬퍼
@@ -95,7 +95,9 @@ scripts/
 | `/guides/pokemon-red-evolution` | PokemonRedEvolutionGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-heartgold-story` | PokemonHeartgoldStoryGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-heartgold-walkthrough` | PokemonHeartgoldWalkthroughGuidePage | 정적 전용 라우트 |
+| `/guides/pokemon-heartgold-stones` | PokemonHeartgoldStonesGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-hgss-collection` | PokemonHGSSCollectionGuidePage | 정적 전용 라우트 (마크다운 원문 파싱) |
+| `/guides/pokemon-unown` | PokemonUnownGuidePage | 정적 전용 라우트 (안농 28종 종합) |
 | `/guides/pokemon-emerald-story` | PokemonEmeraldStoryGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-platinum-story` | PokemonPlatinumStoryGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-platinum-progress` | PokemonPlatinumProgressGuidePage | 정적 전용 라우트 |

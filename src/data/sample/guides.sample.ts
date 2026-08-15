@@ -74,6 +74,16 @@ export const SAMPLE_GUIDES: Guide[] = [
     bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
   },
   {
+    slug: 'pokemon-unown',
+    category: '포획',
+    title: '안농 종합 가이드 — 28종 전체와 출현 조건',
+    iconPokemonId: 201,
+    relatedPokemonIds: [201, 177, 178, 202, 196, 197],
+    summary:
+      'A~Z와 !·? 총 28종. 세대별 등장 게임, 알프의 유적·신수유적 출현 조건, HGSS의 !·? 해금 절차까지 정리.',
+    bannerImageUrl: '/images/guides/unown.png',
+  },
+  {
     slug: 'pokemon-hgss-collection',
     category: '포획',
     title: '하트골드·소울실버·기라티나PT 스토리 수집 가이드',

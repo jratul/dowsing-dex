@@ -71,6 +71,13 @@ export const router = createBrowserRouter([
           })),
       },
       {
+        path: '/guides/pokemon-unown',
+        lazy: () =>
+          import('./pages/PokemonUnownGuidePage').then((m) => ({
+            Component: m.PokemonUnownGuidePage,
+          })),
+      },
+      {
         path: '/guides/pokemon-hgss-collection',
         lazy: () =>
           import('./pages/PokemonHGSSCollectionGuidePage').then((m) => ({
