@@ -1,6 +1,5 @@
 import { Outlet, ScrollRestoration, useLocation } from 'react-router-dom'
 import { SiteHeader, type NavItem } from './SiteHeader'
-import { MobileTabBar } from './MobileTabBar'
 
 const NAV_ITEMS: NavItem[] = [
   { label: '홈', href: '/' },
@@ -21,17 +20,14 @@ export function Layout() {
   return (
     <div className="flex min-h-screen flex-col">
       <ScrollRestoration />
-      <div className="sticky top-0 z-50 hidden md:block">
+      {/* 모바일도 같은 헤더를 쓰고, 좁은 화면에서는 헤더 안 햄버거 메뉴로 접힌다. */}
+      <div className="sticky top-0 z-50">
         <SiteHeader navItems={NAV_ITEMS} activeHref={pathname} />
       </div>
 
-      <main className="flex-1 pb-16 md:pb-0">
+      <main className="flex-1">
         <Outlet />
       </main>
-
-      <div className="fixed inset-x-0 bottom-0 md:hidden">
-        <MobileTabBar items={NAV_ITEMS} activeHref={pathname} />
-      </div>
     </div>
   )
 }

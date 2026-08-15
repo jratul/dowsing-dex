@@ -11,7 +11,6 @@ import { TypeCalculator } from '../components/type-chart/TypeCalculator'
 import { TypeChartGrid } from '../components/type-chart/TypeChartGrid'
 import { GuideCard } from '../components/guide/GuideCard'
 import { SiteHeader } from '../components/layout/SiteHeader'
-import { MobileTabBar } from '../components/layout/MobileTabBar'
 import { Hero } from '../components/layout/Hero'
 import { TYPE_ORDER } from '../lib/typeChart'
 import { ShowcaseSection } from './ShowcaseSection'
@@ -32,16 +31,13 @@ export function ShowcasePage() {
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-6">
-      <ShowcaseSection title="SiteHeader / MobileTabBar / Hero">
+      <ShowcaseSection title="SiteHeader / Hero">
         <Card className="overflow-hidden p-0">
           <SiteHeader navItems={NAV_ITEMS} activeHref="/pokedex" />
         </Card>
         <Hero title="다우징덱스" subtitle="세대별 포켓몬 도감·스탯·상성·공략을 한 곳에서">
           <Button>도감 보러가기</Button>
         </Hero>
-        <Card className="overflow-hidden p-0">
-          <MobileTabBar items={NAV_ITEMS} activeHref="/pokedex" />
-        </Card>
       </ShowcaseSection>
 
       <ShowcaseSection title="Button">
