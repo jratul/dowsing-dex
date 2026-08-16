@@ -106,7 +106,7 @@ export function PokemonFireredSeviiIslandsGuidePage() {
             />
             <ul className="mt-2 list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
               {boss.notes.map((n, i) => (
-                <li key={i}>{L(n)}</li>
+                <li key={i} className="min-h-7">{L(n)}</li>
               ))}
             </ul>
           </div>
@@ -130,7 +130,7 @@ export function PokemonFireredSeviiIslandsGuidePage() {
         <SectionHeading>사천왕 칸나 이벤트 (4의 섬 얼음 동굴)</SectionHeading>
         <ul className="list-disc space-y-1 pl-5 text-sm text-ink">
           {SEVII_LORELEI_NOTE.map((n, i) => (
-            <li key={i}>{L(n)}</li>
+            <li key={i} className="min-h-7">{L(n)}</li>
           ))}
         </ul>
         <div className="mt-3 rounded-card border border-border-strong p-3 text-sm text-ink-muted">
@@ -161,7 +161,7 @@ export function PokemonFireredSeviiIslandsGuidePage() {
             />
             <ul className="mt-2 list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
               {boss.notes.map((n, i) => (
-                <li key={i}>{L(n)}</li>
+                <li key={i} className="min-h-7">{L(n)}</li>
               ))}
             </ul>
           </div>
@@ -173,7 +173,7 @@ export function PokemonFireredSeviiIslandsGuidePage() {
         <SectionHeading>전국도감 해제</SectionHeading>
         <ul className="list-disc space-y-1 pl-5 text-sm text-ink">
           {SEVII_NATIONAL_DEX_NOTE.map((n, i) => (
-            <li key={i}>{L(n)}</li>
+            <li key={i} className="min-h-7">{L(n)}</li>
           ))}
         </ul>
       </Card>
@@ -183,7 +183,7 @@ export function PokemonFireredSeviiIslandsGuidePage() {
         <SectionHeading>탄보비 유적 — 미지 포획 (7의 섬)</SectionHeading>
         <ul className="list-disc space-y-1 pl-5 text-sm text-ink">
           {SEVII_UNOWN_NOTE.map((n, i) => (
-            <li key={i}>{L(n)}</li>
+            <li key={i} className="min-h-7">{L(n)}</li>
           ))}
         </ul>
       </Card>

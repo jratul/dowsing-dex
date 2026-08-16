@@ -201,7 +201,7 @@ export function PokemonFireredStoryGuidePage() {
                 <p className="mt-3 mb-1 text-xs font-bold text-ink-faint">메모</p>
                 <ul className="list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
                   {m.notes.map((n, i) => (
-                    <li key={i}>{L(n)}</li>
+                    <li key={i} className="min-h-7">{L(n)}</li>
                   ))}
                 </ul>
               </div>
@@ -238,7 +238,7 @@ export function PokemonFireredStoryGuidePage() {
         <p className="mt-4 mb-1 text-sm font-bold text-ink-faint">기술머신 사용 메모</p>
         <ul className="list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
           {FIRERED_STORY_TM_NOTES.map((n, i) => (
-            <li key={i}>{L(n)}</li>
+            <li key={i} className="min-h-7">{L(n)}</li>
           ))}
         </ul>
       </Card>
@@ -259,7 +259,7 @@ export function PokemonFireredStoryGuidePage() {
               </div>
               <ul className="list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
                 {stage.goals.map((g, i) => (
-                  <li key={i}>{L(g)}</li>
+                  <li key={i} className="min-h-7">{L(g)}</li>
                 ))}
               </ul>
             </div>
@@ -281,7 +281,7 @@ export function PokemonFireredStoryGuidePage() {
               {gym.notes && gym.notes.length > 0 && (
                 <ul className="mt-2 list-disc space-y-0.5 pl-5 text-xs text-ink-muted">
                   {gym.notes.map((n, i) => (
-                    <li key={i}>{L(n)}</li>
+                    <li key={i} className="min-h-6">{L(n)}</li>
                   ))}
                 </ul>
               )}
@@ -304,7 +304,7 @@ export function PokemonFireredStoryGuidePage() {
               {boss.notes && boss.notes.length > 0 && (
                 <ul className="mt-2 list-disc space-y-0.5 pl-5 text-xs text-ink-muted">
                   {boss.notes.map((n, i) => (
-                    <li key={i}>{L(n)}</li>
+                    <li key={i} className="min-h-6">{L(n)}</li>
                   ))}
                 </ul>
               )}
@@ -323,7 +323,7 @@ export function PokemonFireredStoryGuidePage() {
         />
         <ul className="mt-3 list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
           {FIRERED_STORY_CHAMPION_NOTES.map((n, i) => (
-            <li key={i}>{L(n)}</li>
+            <li key={i} className="min-h-7">{L(n)}</li>
           ))}
         </ul>
       </Card>
@@ -363,7 +363,7 @@ export function PokemonFireredStoryGuidePage() {
         <SectionHeading>주의사항</SectionHeading>
         <ul className="list-disc space-y-1 pl-5 text-sm text-ink">
           {FIRERED_STORY_CAUTIONS.map((c, i) => (
-            <li key={i}>{L(c)}</li>
+            <li key={i} className="min-h-7">{L(c)}</li>
           ))}
         </ul>
       </Card>
