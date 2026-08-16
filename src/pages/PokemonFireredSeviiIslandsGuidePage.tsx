@@ -104,7 +104,7 @@ export function PokemonFireredSeviiIslandsGuidePage() {
               headers={['상대 포켓몬', '추천 대응']}
               rows={boss.rows.map((r) => [L(r.opponent), L(r.answer)])}
             />
-            <ul className="mt-2 list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
+            <ul className="leading-loose mt-2 list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
               {boss.notes.map((n, i) => (
                 <li key={i} className="min-h-7">{L(n)}</li>
               ))}
@@ -128,7 +128,7 @@ export function PokemonFireredSeviiIslandsGuidePage() {
       {/* 5. 칸나(로렐) 이벤트 */}
       <Card className="mb-6 p-4">
         <SectionHeading>사천왕 칸나 이벤트 (4의 섬 얼음 동굴)</SectionHeading>
-        <ul className="list-disc space-y-1 pl-5 text-sm text-ink">
+        <ul className="leading-loose list-disc space-y-1 pl-5 text-sm text-ink">
           {SEVII_LORELEI_NOTE.map((n, i) => (
             <li key={i} className="min-h-7">{L(n)}</li>
           ))}
@@ -159,7 +159,7 @@ export function PokemonFireredSeviiIslandsGuidePage() {
               headers={['상대 포켓몬', '추천 대응']}
               rows={boss.rows.map((r) => [L(r.opponent), L(r.answer)])}
             />
-            <ul className="mt-2 list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
+            <ul className="leading-loose mt-2 list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
               {boss.notes.map((n, i) => (
                 <li key={i} className="min-h-7">{L(n)}</li>
               ))}
@@ -171,7 +171,7 @@ export function PokemonFireredSeviiIslandsGuidePage() {
       {/* 7. 전국도감 해제 */}
       <Card className="mb-6 p-4">
         <SectionHeading>전국도감 해제</SectionHeading>
-        <ul className="list-disc space-y-1 pl-5 text-sm text-ink">
+        <ul className="leading-loose list-disc space-y-1 pl-5 text-sm text-ink">
           {SEVII_NATIONAL_DEX_NOTE.map((n, i) => (
             <li key={i} className="min-h-7">{L(n)}</li>
           ))}
@@ -181,7 +181,7 @@ export function PokemonFireredSeviiIslandsGuidePage() {
       {/* 8. 탄보비 유적 */}
       <Card className="mb-6 p-4">
         <SectionHeading>탄보비 유적 — 미지 포획 (7의 섬)</SectionHeading>
-        <ul className="list-disc space-y-1 pl-5 text-sm text-ink">
+        <ul className="leading-loose list-disc space-y-1 pl-5 text-sm text-ink">
           {SEVII_UNOWN_NOTE.map((n, i) => (
             <li key={i} className="min-h-7">{L(n)}</li>
           ))}

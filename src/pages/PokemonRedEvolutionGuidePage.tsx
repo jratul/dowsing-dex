@@ -160,7 +160,7 @@ export function PokemonRedEvolutionGuidePage() {
                 )}
 
                 {detail.notes.length > 0 && (
-                  <ul className="mt-3 list-disc space-y-0.5 pl-5 text-xs text-ink-muted">
+                  <ul className="leading-loose mt-3 list-disc space-y-0.5 pl-5 text-xs text-ink-muted">
                     {detail.notes.map((n, i) => (
                       <li key={i} className="min-h-6">{L(n)}</li>
                     ))}
@@ -221,7 +221,7 @@ export function PokemonRedEvolutionGuidePage() {
                 )}
 
                 {detail.notes.length > 0 && (
-                  <ul className="mt-3 list-disc space-y-0.5 pl-5 text-xs text-ink-muted">
+                  <ul className="leading-loose mt-3 list-disc space-y-0.5 pl-5 text-xs text-ink-muted">
                     {detail.notes.map((n, i) => (
                       <li key={i} className="min-h-6">{L(n)}</li>
                     ))}

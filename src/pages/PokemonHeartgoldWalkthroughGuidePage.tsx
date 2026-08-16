@@ -168,7 +168,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                             <p className="mb-1 text-xxs font-bold text-green-600 dark:text-green-400">장점</p>
                             <ul className="space-y-0.5">
                               {c.pros.map((pro, i) => (
-                                <li key={i} className="flex min-h-6 items-center gap-1.5 text-xs text-ink">
+                                <li key={i} className="flex min-h-6 items-center gap-1.5 text-xs leading-loose text-ink">
                                   <span className="shrink-0 self-start leading-6 text-green-500">✓</span>
                                   <span>{L(pro)}</span>
                                 </li>
@@ -179,7 +179,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                             <p className="mb-1 text-xxs font-bold text-red-600 dark:text-red-400">단점</p>
                             <ul className="space-y-0.5">
                               {c.cons.map((con, i) => (
-                                <li key={i} className="flex min-h-6 items-center gap-1.5 text-xs text-ink">
+                                <li key={i} className="flex min-h-6 items-center gap-1.5 text-xs leading-loose text-ink">
                                   <span className="shrink-0 self-start leading-6 text-red-500">✗</span>
                                   <span>{L(con)}</span>
                                 </li>
@@ -236,7 +236,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                   {phase.todos.map((todo, j) => (
                     // PokemonLink의 2em 스프라이트가 들어간 줄(28px)을 기준 높이로 삼는다.
                     // min-h가 없으면 스프라이트가 없는 항목만 22px로 주저앉아 목록이 들쭉날쭉해진다.
-                    <li key={j} className="flex min-h-7 items-center gap-2 text-sm text-ink">
+                    <li key={j} className="flex min-h-7 items-center gap-2 text-sm leading-loose text-ink">
                       {/* leading-7로 마커의 줄 상자를 항목 높이와 맞춰, 두 줄짜리에서도 첫 줄 중앙에 온다 */}
                       <span className="shrink-0 self-start leading-7 text-ink-faint">▸</span>
                       <span>{L(todo)}</span>
@@ -400,7 +400,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                       <p className="mb-1 text-xxs font-bold text-green-600 dark:text-green-400">장점</p>
                       <ul className="space-y-0.5">
                         {pick.pros.map((pro, i) => (
-                          <li key={i} className="flex min-h-6 items-center gap-1.5 text-xs text-ink">
+                          <li key={i} className="flex min-h-6 items-center gap-1.5 text-xs leading-loose text-ink">
                             <span className="shrink-0 self-start leading-6 text-green-500">✓</span>
                             <span>{L(pro)}</span>
                           </li>
@@ -411,7 +411,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                       <p className="mb-1 text-xxs font-bold text-red-600 dark:text-red-400">단점</p>
                       <ul className="space-y-0.5">
                         {pick.cons.map((con, i) => (
-                          <li key={i} className="flex min-h-6 items-center gap-1.5 text-xs text-ink">
+                          <li key={i} className="flex min-h-6 items-center gap-1.5 text-xs leading-loose text-ink">
                             <span className="shrink-0 self-start leading-6 text-red-500">✗</span>
                             <span>{L(con)}</span>
                           </li>
@@ -441,7 +441,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
               '관동 이동 시 깨비드릴조 공중날기로 각 도시를 빠르게 순환. 이슬(블루) → 마티스(갈색) → 웅(회색) → 민화(무지개) → 도희(연분홍) → 초련(노랑) → 강연(소용돌이섬) → 블루(상록) 순이 효율적.',
               '레드전은 파티 Lv.70 이상 강력 권장. 은빛산 야생 포켓몬(Lv.35~45)으로 레벨업 가능.',
             ].map((tip, i) => (
-              <li key={i} className="flex min-h-7 items-center gap-2 text-sm text-ink">
+              <li key={i} className="flex min-h-7 items-center gap-2 text-sm leading-loose text-ink">
                 <span className="shrink-0 self-start leading-7 font-bold text-brand-red">{i + 1}.</span>
                 <span>{L(tip)}</span>
               </li>

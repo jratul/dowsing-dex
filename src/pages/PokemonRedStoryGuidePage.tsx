@@ -108,7 +108,7 @@ export function PokemonRedStoryGuidePage() {
       {/* 3. 이 구성의 핵심 */}
       <Card className="mb-6 p-4">
         <SectionHeading>이 구성의 핵심</SectionHeading>
-        <ul className="list-disc space-y-1.5 pl-5 text-sm text-ink">
+        <ul className="leading-loose list-disc space-y-1.5 pl-5 text-sm text-ink">
           {RED_STORY_CORE_NOTES.map((n, i) => (
             <li key={i} className="min-h-7">{L(n)}</li>
           ))}
@@ -166,7 +166,7 @@ export function PokemonRedStoryGuidePage() {
                 />
 
                 <p className="mt-3 mb-1 text-xs font-bold text-ink-faint">메모</p>
-                <ul className="list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
+                <ul className="leading-loose list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
                   {m.notes.map((n, i) => (
                     <li key={i} className="min-h-7">{L(n)}</li>
                   ))}
@@ -203,7 +203,7 @@ export function PokemonRedStoryGuidePage() {
           rows={RED_STORY_TM_OPTIONAL.map((r) => [r.tm, r.move, L(r.target), r.location, r.priority, r.desc])}
         />
         <p className="mt-4 mb-1 text-sm font-bold text-ink-faint">기술머신 사용 메모</p>
-        <ul className="list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
+        <ul className="leading-loose list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
           {RED_STORY_TM_NOTES.map((n, i) => (
             <li key={i} className="min-h-7">{L(n)}</li>
           ))}
@@ -224,7 +224,7 @@ export function PokemonRedStoryGuidePage() {
                   </span>
                 ))}
               </div>
-              <ul className="list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
+              <ul className="leading-loose list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
                 {stage.goals.map((g, i) => (
                   <li key={i} className="min-h-7">{L(g)}</li>
                 ))}
@@ -246,7 +246,7 @@ export function PokemonRedStoryGuidePage() {
                 rows={gym.rows.map((r) => [L(r.opponent), L(r.answer)])}
               />
               {gym.notes && gym.notes.length > 0 && (
-                <ul className="mt-2 list-disc space-y-0.5 pl-5 text-xs text-ink-muted">
+                <ul className="leading-loose mt-2 list-disc space-y-0.5 pl-5 text-xs text-ink-muted">
                   {gym.notes.map((n, i) => (
                     <li key={i} className="min-h-6">{L(n)}</li>
                   ))}
@@ -269,7 +269,7 @@ export function PokemonRedStoryGuidePage() {
                 rows={boss.rows.map((r) => [L(r.opponent), L(r.answer)])}
               />
               {boss.notes && boss.notes.length > 0 && (
-                <ul className="mt-2 list-disc space-y-0.5 pl-5 text-xs text-ink-muted">
+                <ul className="leading-loose mt-2 list-disc space-y-0.5 pl-5 text-xs text-ink-muted">
                   {boss.notes.map((n, i) => (
                     <li key={i} className="min-h-6">{L(n)}</li>
                   ))}
@@ -288,7 +288,7 @@ export function PokemonRedStoryGuidePage() {
           headers={['챔피언 포켓몬', '추천 대응']}
           rows={RED_STORY_CHAMPION_ROWS.map((r) => [L(r.opponent), L(r.answer)])}
         />
-        <ul className="mt-3 list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
+        <ul className="leading-loose mt-3 list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
           {RED_STORY_CHAMPION_NOTES.map((n, i) => (
             <li key={i} className="min-h-7">{L(n)}</li>
           ))}
@@ -328,7 +328,7 @@ export function PokemonRedStoryGuidePage() {
       {/* 15. 주의사항 */}
       <Card className="p-4">
         <SectionHeading>주의사항</SectionHeading>
-        <ul className="list-disc space-y-1 pl-5 text-sm text-ink">
+        <ul className="leading-loose list-disc space-y-1 pl-5 text-sm text-ink">
           {RED_STORY_CAUTIONS.map((c, i) => (
             <li key={i} className="min-h-7">{L(c)}</li>
           ))}

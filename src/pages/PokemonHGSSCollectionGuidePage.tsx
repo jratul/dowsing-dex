@@ -277,7 +277,7 @@ function LocationView({
                       // 없으면 포켓몬이 언급되지 않은 줄만 낮아져 간격이 들쭉날쭉해진다.
                       // flex로 감싸면 RenderInline이 돌려주는 조각들이 각각 flex 항목이 되어
                       // 문장 중간 줄바꿈이 깨지므로, 블록 그대로 두고 min-h만 준다.
-                      <div key={ei} className="min-h-6 text-xs leading-relaxed text-ink">
+                      <div key={ei} className="min-h-6 text-xs leading-loose text-ink">
                         <RenderInline text={entry} nameToId={nameToId} />
                       </div>
                     ))}
@@ -290,7 +290,7 @@ function LocationView({
           if (group.type === 'note') {
             const textClass = NOTE_STYLE[group.emoji] ?? 'text-ink-muted'
             return (
-              <div key={gi} className={cn('min-h-6 text-xs leading-relaxed', textClass)}>
+              <div key={gi} className={cn('min-h-6 text-xs leading-loose', textClass)}>
                 <span className="mr-1">{group.emoji}</span>
                 <RenderInline text={group.content} nameToId={nameToId} />
               </div>
@@ -298,7 +298,7 @@ function LocationView({
           }
 
           return (
-            <div key={gi} className="min-h-6 text-xs leading-relaxed text-ink-muted">
+            <div key={gi} className="min-h-6 text-xs leading-loose text-ink-muted">
               <RenderInline text={group.content} nameToId={nameToId} />
             </div>
           )
@@ -496,7 +496,7 @@ export function PokemonHGSSCollectionGuidePage() {
                 <h3 className="mb-1.5 text-sm font-bold text-ink">{group.title}</h3>
                 <ul className="space-y-1">
                   {group.lines.map((line, li) => (
-                    <li key={li} className="min-h-6 text-xs leading-relaxed text-ink">
+                    <li key={li} className="min-h-6 text-xs leading-loose text-ink">
                       <RenderInline text={line.replace(/^-\s*/, '')} nameToId={nameToId} />
                     </li>
                   ))}
