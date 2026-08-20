@@ -81,7 +81,7 @@ export function PokemonUnownGuidePage() {
           <div className="flex-1">
             <div className="mb-2 flex items-center gap-2">
               <span className="text-xs font-bold text-ink-faint">#201</span>
-              <PokemonLink id={201} />
+              <PokemonLink id={201} showSprite={false} />
               <TypeBadge type="에스퍼" />
             </div>
             <div className="grid grid-cols-2 gap-x-4 gap-y-1 sm:grid-cols-3">

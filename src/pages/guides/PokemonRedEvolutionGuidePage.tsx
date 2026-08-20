@@ -79,7 +79,6 @@ export function PokemonRedEvolutionGuidePage() {
           headers={['포켓몬', '진화의 돌', '레드버전 입수', '추천 진화 타이밍', '핵심 이유']}
           rows={STONE_EVO_SUMMARY.map((r) => [
             <span key={r.pokemonId} className="flex items-center gap-2">
-              <SpriteImage src={findSamplePokemon(r.pokemonId).spriteUrl} alt={r.after} width={28} height={28} className="h-7 w-7" />
               <span className="text-sm font-bold">
                 {L(r.before)} → {L(r.after)}
               </span>
@@ -99,7 +98,6 @@ export function PokemonRedEvolutionGuidePage() {
           headers={['포켓몬', '레드버전 입수', '추천 교환 타이밍', '핵심 이유']}
           rows={TRADE_EVO_SUMMARY.map((r) => [
             <span key={r.pokemonId} className="flex items-center gap-2">
-              <SpriteImage src={findSamplePokemon(r.pokemonId).spriteUrl} alt={r.after} width={28} height={28} className="h-7 w-7" />
               <span className="text-sm font-bold">
                 {L(r.before)} → {L(r.after)}
               </span>
@@ -316,12 +314,7 @@ export function PokemonRedEvolutionGuidePage() {
           headers={['순위', '포켓몬']}
           rows={PRIORITY_FOR_CHARMANDER.map((r) => [
             `${r.rank}위`,
-            <span key={r.pokemonId} className="flex items-center gap-2">
-              {r.pokemonId > 0 && (
-                <SpriteImage src={findSamplePokemon(r.pokemonId).spriteUrl} alt={r.pokemon} width={28} height={28} className="h-7 w-7" />
-              )}
-              <span className="font-bold">{L(r.pokemon)}</span>
-            </span>,
+            <span key={r.pokemonId} className="font-bold">{L(r.pokemon)}</span>,
           ])}
         />
       </Card>

@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
 import { Card } from '../../components/ui/Card'
-import { SpriteImage } from '../../components/pokemon/SpriteImage'
 import { GuideTable } from '../../components/guide/GuideTable'
 import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
 import { SAMPLE_POKEMON } from '../../data/sample/pokemon.sample'
@@ -89,18 +88,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
         </div>
         <div className="grid grid-cols-2 gap-3 p-4 sm:grid-cols-3">
           {partyPokemon.map((m) => (
-            <div key={m.pokemonId} className="flex items-start gap-3">
-              {m.pokemon && (
-                <SpriteImage
-                  src={m.pokemon.artworkUrl ?? m.pokemon.spriteUrl}
-                  alt={m.pokemon.nameKo}
-                  width={56}
-                  height={56}
-                  pixelated={false}
-                  rounded="none"
-                  className="h-14 w-14 shrink-0"
-                />
-              )}
+            <div key={m.pokemonId}>
               <div className="min-w-0">
                 <p className="font-bold text-ink">
                   <PokemonLink id={m.pokemonId} label={m.pokemon?.nameKo ?? ''} />
@@ -133,18 +121,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                     const isPrimary = c.verdict === 'primary'
                     return (
                       <div key={c.pokemonId} className="rounded-lg border border-border p-3">
-                        <div className="mb-2 flex items-start gap-3">
-                          {p && (
-                            <SpriteImage
-                              src={p.artworkUrl ?? p.spriteUrl}
-                              alt={p.nameKo}
-                              width={48}
-                              height={48}
-                              pixelated={false}
-                              rounded="none"
-                              className="h-12 w-12 shrink-0"
-                            />
-                          )}
+                        <div className="mb-2">
                           <div className="min-w-0">
                             <div className="flex flex-wrap items-center gap-1.5">
                               <span className="font-black text-ink">
@@ -322,18 +299,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
             {HGW_ALT_MEMBERS.map((m) => {
               const p = SAMPLE_POKEMON.find((sp) => sp.id === m.pokemonId)
               return (
-                <div key={m.pokemonId} className="flex items-start gap-3 rounded-lg border border-border p-3">
-                  {p && (
-                    <SpriteImage
-                      src={p.artworkUrl ?? p.spriteUrl}
-                      alt={p.nameKo}
-                      width={48}
-                      height={48}
-                      pixelated={false}
-                      rounded="none"
-                      className="h-12 w-12 shrink-0"
-                    />
-                  )}
+                <div key={m.pokemonId} className="rounded-lg border border-border p-3">
                   <div>
                     <p className="font-bold text-ink">
                       <PokemonLink id={m.pokemonId} label={p?.nameKo ?? m.pokemon} />{' '}
@@ -367,18 +333,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                     : 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-300'
               return (
                 <div key={pick.pokemonId} className="rounded-lg border border-border p-3">
-                  <div className="mb-2 flex flex-wrap items-start gap-3">
-                    {p && (
-                      <SpriteImage
-                        src={p.artworkUrl ?? p.spriteUrl}
-                        alt={p.nameKo}
-                        width={52}
-                        height={52}
-                        pixelated={false}
-                        rounded="none"
-                        className="h-13 w-13 shrink-0"
-                      />
-                    )}
+                  <div className="mb-2">
                     <div className="min-w-0 flex-1">
                       <div className="flex flex-wrap items-center gap-2">
                         <span className="font-black text-ink">
