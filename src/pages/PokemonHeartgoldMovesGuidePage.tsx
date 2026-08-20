@@ -3,6 +3,7 @@ import { GuidePageLayout } from '../components/guide/GuidePageLayout'
 import { Card } from '../components/ui/Card'
 import { GuideTable } from '../components/guide/GuideTable'
 import { PokemonLink } from '../components/guide/PokemonLink'
+import { MoveLink } from '../components/guide/MoveLink'
 import { SpriteImage } from '../components/pokemon/SpriteImage'
 import { findSamplePokemon } from '../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../lib/guideCategory'
@@ -130,17 +131,17 @@ export function PokemonHeartgoldMovesGuidePage() {
                 {t.moves.length > 0 && (
                   <div className="mb-2 flex flex-wrap gap-1.5">
                     {t.moves.map((m) => (
-                      <span
+                      <MoveLink
                         key={m.level + m.move}
+                        name={m.move.replace(/\s*\(.*$/, '')}
+                        label={`Lv.${m.level} ${m.move}`}
                         className={cn(
-                          'rounded-chip px-2 py-0.5 text-xs font-semibold',
+                          'rounded-chip px-2 py-0.5 text-xs font-semibold no-underline transition-colors',
                           m.key
-                            ? 'bg-brand-red/10 text-brand-red'
-                            : 'bg-surface-hover text-ink-muted',
+                            ? 'bg-brand-red/10 text-brand-red hover:bg-brand-red/20'
+                            : 'bg-surface-hover text-ink-muted hover:text-ink',
                         )}
-                      >
-                        Lv.{m.level} {m.move}
-                      </span>
+                      />
                     ))}
                   </div>
                 )}
@@ -175,7 +176,7 @@ export function PokemonHeartgoldMovesGuidePage() {
                 <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xxs font-bold text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">
                   {t.tm}
                 </span>
-                <span className="font-black text-ink">{t.move}</span>
+                <MoveLink name={t.move} className="font-black text-ink decoration-ink-faint" />
                 <Stars n={t.stars} />
                 {t.repeatable && (
                   <span className="rounded bg-green-100 px-1.5 py-0.5 text-xxs font-bold text-green-700 dark:bg-green-900/40 dark:text-green-300">
@@ -202,7 +203,12 @@ export function PokemonHeartgoldMovesGuidePage() {
         <SectionHeading>반복 획득이 되는 기술머신</SectionHeading>
         <GuideTable
           headers={['TM', '기술', '반복 획득처', '관리']}
-          rows={HGM_REPEATABLE.map((r) => [r.tm, r.move, r.source, r.policy])}
+          rows={HGM_REPEATABLE.map((r) => [
+            r.tm,
+            <MoveLink key={r.tm} name={r.move} />,
+            r.source,
+            r.policy,
+          ])}
         />
         <p className="mt-3 text-xs text-ink-muted">
           게임코너 TM은 장당 10,000코인이라 실제 플레이에서는 여전히 부담이 크다. 반면 백화점 5층에서
@@ -233,9 +239,12 @@ export function PokemonHeartgoldMovesGuidePage() {
               </div>
               <div className="mt-0.5 flex flex-wrap gap-1">
                 {HGM_HM_MULE.moves.map((m) => (
-                  <span key={m} className="rounded-chip bg-white px-2 py-0.5 text-xxs font-semibold text-ink">
-                    {m}
-                  </span>
+                  <MoveLink
+                    key={m}
+                    name={m.replace(/\s*\(.*$/, '')}
+                    label={m}
+                    className="rounded-chip bg-white px-2 py-0.5 text-xxs font-semibold text-ink no-underline hover:text-brand-red"
+                  />
                 ))}
               </div>
             </div>
@@ -248,7 +257,7 @@ export function PokemonHeartgoldMovesGuidePage() {
             headers={['HM', '기술', '분류', '담당', '이유']}
             rows={HGM_HM_PLAN.map((h) => [
               h.hm,
-              h.move,
+              <MoveLink key={h.hm + 'm'} name={h.move} />,
               <CategoryBadge key={h.hm} category={h.category} />,
               h.holderIds.length > 0 ? (
                 <span key={h.hm + 'h'} className="inline-flex flex-wrap items-center gap-1">
@@ -288,7 +297,7 @@ export function PokemonHeartgoldMovesGuidePage() {
               <div className="mb-2 space-y-1">
                 {c.moves.map((m) => (
                   <div key={m.move} className="flex items-center gap-1.5 text-xs">
-                    <span className="font-bold text-ink">{m.move}</span>
+                    <MoveLink name={m.move} className="font-bold text-ink decoration-ink-faint" />
                     <span className="rounded bg-surface-hover px-1.5 py-0.5 text-xxs text-ink-muted">{m.how}</span>
                   </div>
                 ))}

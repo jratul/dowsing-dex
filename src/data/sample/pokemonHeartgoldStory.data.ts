@@ -53,13 +53,13 @@ export const HG_STORY_MOVESETS: MoveSetSection[] = [
   {
     pokemonId: 157,
     pokemon: '블레이범',
-    finalMoves: ['화염방사', '솔라빔 / 번개펀치', '지진', '불꽃파동 / 스피드스타'],
+    finalMoves: ['화염방사', '솔라빔 / 번개펀치', '지진', '화염자동차 / 스피드스타'],
     moveTable: [
       { move: '화염방사', how: 'Lv.42', usage: '주력 불꽃 특수기. 4세대에서도 여전히 안정적' },
       { move: '솔라빔', how: 'TM22', usage: '물·바위 타입 처리. 맑은날씨 TM 연계 가능' },
       { move: '번개펀치', how: '기술가르침', usage: '물·비행 타입 물리 견제기' },
       { move: '지진', how: 'TM26', usage: '레드 피카츄 처리. 독·바위·전기 타입 견제' },
-      { move: '불꽃파동', how: 'Lv.20', usage: '화염방사 전까지 주력 불꽃기' },
+      { move: '화염자동차', how: 'Lv.20', usage: '화염방사 전까지 주력 불꽃기' },
     ],
     notes: [
       '4세대에서 블레이범은 격투 타입(2세대 비공식)이 아닌 순수 불꽃 타입이다.',
@@ -120,13 +120,13 @@ export const HG_STORY_MOVESETS: MoveSetSection[] = [
   {
     pokemonId: 131,
     pokemon: '라프라스',
-    finalMoves: ['파도타기 / 냉동빔', '얼음기둥', '번개', '노래 / 이상한빛'],
+    finalMoves: ['파도타기 / 냉동빔', '눈보라', '번개', '노래하기 / 이상한빛'],
     moveTable: [
       { move: '냉동빔', how: 'Lv.32', usage: '주력 얼음 특수기. 드래곤·풀 타입 처리' },
-      { move: '얼음기둥', how: 'TM79', usage: '냉동빔보다 강력한 얼음 특수기. TM 획득 권장' },
+      { move: '눈보라', how: 'TM14', usage: '냉동빔보다 강력한 얼음 특수기. TM 획득 권장' },
       { move: '번개', how: 'TM25', usage: '물 타입에게 효과적인 전기기. 명중 불안정' },
       { move: '파도타기', how: 'HM03', usage: '보조 물 기술. 갸라도스에 파도타기가 있으면 선택' },
-      { move: '노래', how: 'Lv.1', usage: '수면 보조 유틸. 포획 및 보스전 안정화' },
+      { move: '노래하기', how: 'Lv.1', usage: '수면 보조 유틸. 포획 및 보스전 안정화' },
     ],
     notes: [
       '라프라스는 연결동굴에서 매주 금요일에 한 마리 무상 획득 가능.',
@@ -184,7 +184,7 @@ export interface TmRow {
 export const HG_STORY_TM_PRIORITY: TmRow[] = [
   { tm: 'TM26', move: '지진', target: '블레이범', location: '챔피언로드 / 기부 습득', priority: '매우 높음', desc: '레드 피카츄·전기 타입 처리 핵심. 블레이범에게 반드시 배정' },
   { tm: 'TM24', move: '10만볼트', target: '전룡', location: '노랑시티 게임코너 / 이벤트 보상', priority: '매우 높음', desc: '전룡 주력 전기기. 명중 안정' },
-  { tm: 'TM79', move: '얼음기둥', target: '라프라스', location: '4세대 추가 TM 상점', priority: '높음', desc: '목호·레드전 드래곤 처리 핵심 얼음기' },
+  { tm: 'TM14', move: '눈보라', target: '라프라스', location: '4세대 추가 TM 상점', priority: '높음', desc: '목호·레드전 드래곤 처리 핵심 얼음기' },
   { tm: 'TM73', move: '전기자석파', target: '전룡', location: '각종 상점·NPC', priority: '중간', desc: '마비 유틸. 보스전 안정화에 유용' },
   { tm: 'TM45', move: '끌어당기기', target: '자유', location: '일부 NPC 증정', priority: '선택', desc: '물리 공격을 분산시키는 유틸기' },
 ]

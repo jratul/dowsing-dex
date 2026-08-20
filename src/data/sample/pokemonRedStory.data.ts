@@ -93,7 +93,7 @@ export const RED_STORY_MOVESETS: MoveSetSection[] = [
   {
     pokemonId: 6,
     pokemon: '리자몽',
-    finalMoves: ['화염방사 / 불대문자', '베어가르기', '구멍파기 / 지진', '괴력 / 칼춤 / 불꽃회오리'],
+    finalMoves: ['화염방사 / 불대문자', '베어가르기', '구멍파기 / 지진', '괴력 / 칼춤 / 회오리불꽃'],
     moveTable: [
       { move: '화염방사', how: 'Lv.46', usage: '안정적인 주력 불꽃 기술. 레벨업 습득이 늦으므로 중후반까지 불꽃세례로 버틸 수 있다.' },
       { move: '불대문자', how: 'TM38', usage: '홍련체육관 강연 격파 보상. 화염방사를 늦게 배우거나 즉발 화력이 필요할 때 사용' },
@@ -102,7 +102,7 @@ export const RED_STORY_MOVESETS: MoveSetSection[] = [
       { move: '지진', how: 'TM26', usage: '후반 고급 땅 타입 기술. 보통 니드킹에게 우선 배정한다.' },
       { move: '괴력', how: 'HM04', usage: '이동용 비전머신 겸 노말 물리 공격. 단, 1세대에서는 HM 삭제가 불가능하므로 신중히 배정' },
       { move: '칼춤', how: 'TM', usage: '실프주식회사에서 획득. 베어가르기·괴력과 연계 가능' },
-      { move: '불꽃회오리', how: 'Lv.55', usage: '명중률은 낮지만 1세대의 구속 판정 때문에 장기전 보조로 사용 가능' },
+      { move: '회오리불꽃', how: 'Lv.55', usage: '명중률은 낮지만 1세대의 구속 판정 때문에 장기전 보조로 사용 가능' },
     ],
     notes: [
       '원본 레드/블루에서는 리자몽이 공중날기를 배울 수 없다.',
@@ -114,12 +114,12 @@ export const RED_STORY_MOVESETS: MoveSetSection[] = [
   {
     pokemonId: 34,
     pokemon: '니드킹',
-    finalMoves: ['지진', '난동부리기 / 누르기', '바위날리기', '파도타기 / 냉동빔 / 10만볼트'],
+    finalMoves: ['지진', '난동부리기 / 누르기', '스톤샤워', '파도타기 / 냉동빔 / 10만볼트'],
     moveTable: [
       { move: '지진', how: 'TM26', usage: '주력 땅 타입 기술. 전기·독·바위·불꽃 타입 처리' },
       { move: '난동부리기', how: 'Lv.23', usage: '레벨 23에 배우는 초중반 핵심 청소기 기술' },
       { move: '누르기', how: 'TM08', usage: '안정적인 노말 물리기. 마비 부가효과가 유용' },
-      { move: '바위날리기', how: 'TM48', usage: '비행·벌레·불꽃 타입 견제. 무지개 백화점 옥상에서 획득' },
+      { move: '스톤샤워', how: 'TM48', usage: '비행·벌레·불꽃 타입 견제. 무지개 백화점 옥상에서 획득' },
       { move: '파도타기', how: 'HM03', usage: '바위·땅 타입 견제. 라프라스에게 주는 것이 기본이지만 니드킹도 습득 가능' },
       { move: '냉동빔', how: 'TM13', usage: '드래곤·비행·땅 타입 보조 견제. 라프라스와 경쟁' },
       { move: '10만볼트', how: 'TM24', usage: '물·비행 타입 보조 견제. 쥬피썬더와 경쟁' },
@@ -167,11 +167,11 @@ export const RED_STORY_MOVESETS: MoveSetSection[] = [
   {
     pokemonId: 64,
     pokemon: '윤겔라',
-    finalMoves: ['사이코키네시스', '환상빔', '회복', '전기자석파 / 리플렉터 / 지구던지기'],
+    finalMoves: ['사이코키네시스', '환상빔', 'HP회복', '전기자석파 / 리플렉터 / 지구던지기'],
     moveTable: [
       { move: '사이코키네시스', how: 'TM29', usage: '주력 에스퍼 기술. 독·격투 타입 처리 핵심' },
       { move: '환상빔', how: 'Lv.27', usage: '사이코키네시스 PP 보존용 보조 에스퍼 기술' },
-      { move: '회복', how: 'Lv.31', usage: '장기전 안정성' },
+      { move: 'HP회복', how: 'Lv.31', usage: '장기전 안정성' },
       { move: '전기자석파', how: 'TM45', usage: '빠른 상대 마비. 기술머신 사용 시 보스전 안정성 증가' },
       { move: '리플렉터', how: 'TM33', usage: '물리 공격 대응 보조' },
       { move: '지구던지기', how: 'TM19', usage: '레벨 기반 고정 데미지. 에스퍼 반감 상황에서 보조 가능' },
@@ -240,7 +240,7 @@ export const RED_STORY_TM_PRIORITY: TmRow[] = [
   { tm: 'TM29', move: '사이코키네시스', target: '윤겔라', location: '노랑시티 Mr. Psychic 집', priority: '높음', desc: '윤겔라는 레벨업으로 배우지만 빠른 완성을 원하면 사용' },
   { tm: 'TM38', move: '불대문자', target: '리자몽', location: '홍련체육관 강연 격파 보상', priority: '높음', desc: '화염방사 전 또는 고화력 불꽃기로 사용' },
   { tm: 'TM45', move: '전기자석파', target: '윤겔라 / 쥬피썬더', location: '24번도로', priority: '중간', desc: '보스전 안정성 증가' },
-  { tm: 'TM48', move: '바위날리기', target: '니드킹', location: '무지개 백화점 옥상 이벤트', priority: '높음', desc: '비행·불꽃·벌레 타입 견제' },
+  { tm: 'TM48', move: '스톤샤워', target: '니드킹', location: '무지개 백화점 옥상 이벤트', priority: '높음', desc: '비행·불꽃·벌레 타입 견제' },
   { tm: 'TM49', move: '트라이어택', target: '두트리오', location: '무지개 백화점 옥상 이벤트', priority: '중간', desc: '두트리오의 안정적인 노말 공격' },
 ]
 

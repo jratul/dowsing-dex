@@ -138,11 +138,11 @@ const ACHAMO_GUIDE: StarterGuideData = {
     {
       pokemonId: 257,
       pokemon: '번치코',
-      finalMoves: ['화염방사', '인파이트 / 하늘날기', '지진 / 아이언테일', '불꽃파동 / 스피드스타'],
+      finalMoves: ['화염방사', '인파이트 / 공중날기', '지진 / 아이언테일', '화염자동차 / 스피드스타'],
       moveTable: [
         { move: '화염방사', how: 'TM35', usage: '주력 불꽃 특수기. 3세대에서는 불꽃이 특수 분류' },
         { move: '인파이트', how: 'Lv.습득', usage: '격투 물리기. 방어/특방 하락 있지만 강력' },
-        { move: '하늘날기', how: 'HM02', usage: 'HM02 대체기. 비행 물리기' },
+        { move: '공중날기', how: 'HM02', usage: 'HM02 대체기. 비행 물리기' },
         { move: '지진', how: 'TM26', usage: '전기·바위·독·불꽃 타입 견제. 대범용 물리기' },
       ],
       notes: [
@@ -154,12 +154,12 @@ const ACHAMO_GUIDE: StarterGuideData = {
     {
       pokemonId: 282,
       pokemon: '가디안',
-      finalMoves: ['사이코키네시스', '섀도볼', '전기자석파', '사이코쇼크 / 회복'],
+      finalMoves: ['사이코키네시스', '섀도볼', '전기자석파', '사이코쇼크 / HP회복'],
       moveTable: [
         { move: '사이코키네시스', how: 'Lv.26', usage: '주력 에스퍼 특수기. 레벨업으로 자연 습득' },
         { move: '섀도볼', how: 'TM30', usage: '고스트/에스퍼 견제. TM30으로 획득' },
         { move: '전기자석파', how: 'TM', usage: '상태이상 유틸. 빠른 적 견제' },
-        { move: '회복', how: 'Lv.습득', usage: 'HP 회복. 장기전 안정화' },
+        { move: 'HP회복', how: 'Lv.습득', usage: 'HP 회복. 장기전 안정화' },
       ],
       notes: [
         '가디안은 3종 모든 스타터 파티에 포함된다. 에스퍼 타입은 격투·독에 강력하다.',
@@ -170,12 +170,12 @@ const ACHAMO_GUIDE: StarterGuideData = {
     {
       pokemonId: 330,
       pokemon: '플라이곤',
-      finalMoves: ['지진', '공중날기', '불대문자 / 화염방사', '드래곤브레스 / 드래곤클로'],
+      finalMoves: ['지진', '공중날기', '불대문자 / 화염방사', '용의숨결 / 드래곤크루'],
       moveTable: [
         { move: '지진', how: 'TM26', usage: '주력 땅 물리기. 전기·독·불꽃·바위 타입 처리' },
         { move: '공중날기', how: 'HM02', usage: 'HM02. 이동 + 비행 물리기' },
         { move: '불대문자 / 화염방사', how: 'TM38', usage: '풀·벌레·얼음·강철 타입 처리' },
-        { move: '드래곤브레스', how: 'Lv.35', usage: '드래곤 타입 견제. 마비 부가효과' },
+        { move: '용의숨결', how: 'Lv.35', usage: '드래곤 타입 견제. 마비 부가효과' },
       ],
       notes: [
         '톱치는 111번도로 사막에서 포획. 비브라바(Lv.35) → 플라이곤(Lv.45) 진화.',
@@ -186,12 +186,12 @@ const ACHAMO_GUIDE: StarterGuideData = {
     {
       pokemonId: 365,
       pokemon: '씨카이저',
-      finalMoves: ['파도타기', '얼음빔', '폭포오르기', '바디슬램 / 노래'],
+      finalMoves: ['파도타기', '냉동빔', '폭포오르기', '누르기 / 노래하기'],
       moveTable: [
         { move: '파도타기', how: 'HM03', usage: 'HM03. 이동 + 물 특수기' },
-        { move: '얼음빔', how: 'TM13', usage: '얼음 특수기. 드래이크 드래곤 파티 핵심 기술' },
+        { move: '냉동빔', how: 'TM13', usage: '얼음 특수기. 드래이크 드래곤 파티 핵심 기술' },
         { move: '폭포오르기', how: 'HM07', usage: 'HM07. 후반 진행' },
-        { move: '바디슬램', how: 'Lv.19', usage: '노말 물리기. 마비 부가효과' },
+        { move: '누르기', how: 'Lv.19', usage: '노말 물리기. 마비 부가효과' },
       ],
       notes: [
         '씨카이저(대굴레오→씨레오→씨카이저)는 쇼울케이브에서 진화. 이 엔트리의 유일한 얼음·물 딜러.',
@@ -219,12 +219,12 @@ const ACHAMO_GUIDE: StarterGuideData = {
     {
       pokemonId: 310,
       pokemon: '썬더볼트',
-      finalMoves: ['10만볼트', '전기자석파', '번개', '퀵어택 / 아이언테일'],
+      finalMoves: ['10만볼트', '전기자석파', '번개', '전광석화 / 아이언테일'],
       moveTable: [
         { move: '10만볼트', how: 'TM24', usage: '주력 전기 특수기. 명중 안정' },
         { move: '전기자석파', how: 'TM', usage: '마비 유틸. 가디안과 역할 분담' },
         { move: '번개', how: 'TM25', usage: '고화력 전기기. 명중 불안정하지만 최고 위력' },
-        { move: '퀵어택', how: 'Lv.17', usage: '선제 공격. 빈사 상태 마무리용' },
+        { move: '전광석화', how: 'Lv.17', usage: '선제 공격. 빈사 상태 마무리용' },
       ],
       notes: [
         '썬더라이(309)를 110번도로에서 포획. Lv.26에서 썬더볼트로 진화.',
@@ -388,7 +388,7 @@ const MUDKIP_GUIDE: StarterGuideData = {
     {
       pokemonId: 286,
       pokemon: '버섯모',
-      finalMoves: ['잎날가르기', '씨뿌리기 / 메가드레인', '저리가루', '격투기 / 바디슬램'],
+      finalMoves: ['잎날가르기', '씨뿌리기 / 메가드레인', '저리가루', '격투기 / 누르기'],
       moveTable: [
         { move: '잎날가르기', how: 'Lv.습득', usage: '풀 특수기. 물 타입 체육관 처리' },
         { move: '씨뿌리기', how: 'Lv.1', usage: '체력 흡수. 장기전 지구력' },
@@ -404,9 +404,9 @@ const MUDKIP_GUIDE: StarterGuideData = {
     {
       pokemonId: 373,
       pokemon: '보만다',
-      finalMoves: ['드래곤클로', '불대문자 / 화염방사', '지진', '공중날기'],
+      finalMoves: ['드래곤크루', '불대문자 / 화염방사', '지진', '공중날기'],
       moveTable: [
-        { move: '드래곤클로', how: 'TM02', usage: '드래곤 물리기. E4 드레이크 파티 처리' },
+        { move: '드래곤크루', how: 'TM02', usage: '드래곤 물리기. E4 드레이크 파티 처리' },
         { move: '불대문자 / 화염방사', how: 'TM38', usage: '불꽃 기술. 강철·풀·얼음 타입 처리' },
         { move: '지진', how: 'TM26', usage: '땅 물리기. 전기·독 처리. 대짱이와 분담 가능' },
         { move: '공중날기', how: 'HM02', usage: 'HM02. 이동 + 비행 물리기' },
@@ -452,12 +452,12 @@ const MUDKIP_GUIDE: StarterGuideData = {
     {
       pokemonId: 282,
       pokemon: '가디안',
-      finalMoves: ['사이코키네시스', '섀도볼', '전기자석파', '회복'],
+      finalMoves: ['사이코키네시스', '섀도볼', '전기자석파', 'HP회복'],
       moveTable: [
         { move: '사이코키네시스', how: 'Lv.26', usage: '주력 에스퍼 특수기' },
         { move: '섀도볼', how: 'TM30', usage: '고스트·에스퍼 견제' },
         { move: '전기자석파', how: 'TM', usage: '마비 유틸' },
-        { move: '회복', how: 'Lv.습득', usage: 'HP 회복' },
+        { move: 'HP회복', how: 'Lv.습득', usage: 'HP 회복' },
       ],
       notes: ['아차모 가이드의 가디안과 동일한 운용 방침.'],
     },
@@ -615,10 +615,10 @@ const TREECKO_GUIDE: StarterGuideData = {
     {
       pokemonId: 365,
       pokemon: '씨카이저',
-      finalMoves: ['파도타기', '얼음빔', '폭포오르기', '아이언테일 / 바디슬램'],
+      finalMoves: ['파도타기', '냉동빔', '폭포오르기', '아이언테일 / 누르기'],
       moveTable: [
         { move: '파도타기', how: 'HM03', usage: 'HM03. 물 특수기 + 이동' },
-        { move: '얼음빔', how: 'TM13', usage: '얼음 특수기. E4 드레이크 파티 핵심' },
+        { move: '냉동빔', how: 'TM13', usage: '얼음 특수기. E4 드레이크 파티 핵심' },
         { move: '폭포오르기', how: 'HM07', usage: 'HM07. 후반 진행 필수' },
         { move: '아이언테일', how: 'TM23', usage: '바위 타입 물리 견제' },
       ],
@@ -631,12 +631,12 @@ const TREECKO_GUIDE: StarterGuideData = {
     {
       pokemonId: 310,
       pokemon: '썬더볼트',
-      finalMoves: ['10만볼트', '전기자석파', '번개', '퀵어택'],
+      finalMoves: ['10만볼트', '전기자석파', '번개', '전광석화'],
       moveTable: [
         { move: '10만볼트', how: 'TM24', usage: '주력 전기 특수기' },
         { move: '전기자석파', how: 'TM', usage: '마비 유틸' },
         { move: '번개', how: 'TM25', usage: '고화력 전기기. 비 날씨에서 명중 보정' },
-        { move: '퀵어택', how: 'Lv.17', usage: '선제 공격' },
+        { move: '전광석화', how: 'Lv.17', usage: '선제 공격' },
       ],
       notes: [
         '나무지기 파티의 전기 딜러. 3관 전기 체육관은 플라이곤(전기 면역)으로 통과하고, 이후 썬더볼트가 전기 역할을 맡는다.',
@@ -646,12 +646,12 @@ const TREECKO_GUIDE: StarterGuideData = {
     {
       pokemonId: 330,
       pokemon: '플라이곤',
-      finalMoves: ['지진', '공중날기', '불대문자', '드래곤브레스'],
+      finalMoves: ['지진', '공중날기', '불대문자', '용의숨결'],
       moveTable: [
         { move: '지진', how: 'TM26', usage: '땅 물리기. 전기·독·바위 타입 처리' },
         { move: '공중날기', how: 'HM02', usage: 'HM02. 이동 + 비행 물리기' },
         { move: '불대문자', how: 'TM38', usage: '불꽃 기술. 강철·풀·얼음·벌레 타입 처리' },
-        { move: '드래곤브레스', how: 'Lv.35', usage: '드래곤 기술. 마비 부가효과' },
+        { move: '용의숨결', how: 'Lv.35', usage: '드래곤 기술. 마비 부가효과' },
       ],
       notes: [
         '나무지기 파티에서 불꽃 기술 공급원이 플라이곤이다. 불대문자(TM38)를 배정.',
@@ -677,12 +677,12 @@ const TREECKO_GUIDE: StarterGuideData = {
     {
       pokemonId: 282,
       pokemon: '가디안',
-      finalMoves: ['사이코키네시스', '섀도볼', '전기자석파', '회복'],
+      finalMoves: ['사이코키네시스', '섀도볼', '전기자석파', 'HP회복'],
       moveTable: [
         { move: '사이코키네시스', how: 'Lv.26', usage: '주력 에스퍼 특수기' },
         { move: '섀도볼', how: 'TM30', usage: '고스트·에스퍼 견제' },
         { move: '전기자석파', how: 'TM', usage: '마비 유틸' },
-        { move: '회복', how: 'Lv.습득', usage: 'HP 회복' },
+        { move: 'HP회복', how: 'Lv.습득', usage: 'HP 회복' },
       ],
       notes: ['아차모 가이드의 가디안과 동일한 운용 방침.'],
     },

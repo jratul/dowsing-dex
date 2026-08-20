@@ -122,11 +122,11 @@ export const GOLD_STORY_MOVESETS: MoveSetSection[] = [
   {
     pokemonId: 64,
     pokemon: '윤겔라',
-    finalMoves: ['사이코키네시스', '냉동펀치', '회복', '번개펀치 / 리플렉터'],
+    finalMoves: ['사이코키네시스', '냉동펀치', 'HP회복', '번개펀치 / 리플렉터'],
     moveTable: [
       { move: '사이코키네시스', how: 'Lv.38', usage: '주력 에스퍼 기술' },
       { move: '냉동펀치', how: 'TM33', usage: '목호 망나뇽 처리 핵심' },
-      { move: '회복', how: 'Lv.26', usage: '장기전 안정성' },
+      { move: 'HP회복', how: 'Lv.26', usage: '장기전 안정성' },
       { move: '번개펀치', how: 'TM41', usage: '물·비행 타입 보조 견제' },
       { move: '리플렉터', how: 'TM', usage: '물리 공격 대응 보조' },
     ],

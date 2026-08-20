@@ -150,7 +150,7 @@ const CHIMCHAR_GUIDE: StarterGuideData = {
         { move: '화염방사', how: 'TM35', usage: '불꽃 특수기. 4세대에서 특수 판정' },
         { move: '인파이트', how: 'Lv.41', usage: '격투 물리기. 방어·특방 하락 있지만 강력. 4관 E4 에스퍼 대항' },
         { move: '지진', how: 'TM26', usage: '땅 물리기. 전기·독·바위 타입 처리' },
-        { move: '쓰러뜨리기', how: 'TM80', usage: '격투 물리기. 상대 지속기 해제 효과' },
+        { move: '깨트리다', how: 'TM31', usage: '격투 물리기. 상대 지속기 해제 효과' },
       ],
       notes: [
         '초염몽은 불꽃/격투 타입으로 챔피언 난천의 핵심 멤버 대부분에 강하다.',
@@ -177,9 +177,9 @@ const CHIMCHAR_GUIDE: StarterGuideData = {
     {
       pokemonId: 445,
       pokemon: '한카리아스',
-      finalMoves: ['드래곤클로 / 역린', '지진', '불대문자 / 암석봉인', '공중날기'],
+      finalMoves: ['드래곤크루 / 역린', '지진', '불대문자 / 암석봉인', '공중날기'],
       moveTable: [
-        { move: '드래곤클로', how: 'Lv.33', usage: '드래곤 물리기. 한바이트 Lv.33 자연 습득. 챔피언 난천 한카리아스 처리' },
+        { move: '드래곤크루', how: 'Lv.33', usage: '드래곤 물리기. 한바이트 Lv.33 자연 습득. 챔피언 난천 한카리아스 처리' },
         { move: '역린', how: '기술가르침', usage: '강력한 드래곤 물리기. 혼란 부가효과 있음. 생존구역 기술가르침(빨간조각6+초록조각2)' },
         { move: '지진', how: 'TM26', usage: '땅 물리기. 광범위한 타입 처리' },
         { move: '불대문자', how: 'TM38', usage: '불꽃 특수기. 강철·풀·얼음·벌레 타입 처리' },
@@ -193,11 +193,11 @@ const CHIMCHAR_GUIDE: StarterGuideData = {
     {
       pokemonId: 429,
       pokemon: '무우마직',
-      finalMoves: ['섀도볼', '기합구슬', '어둠의파동', '최면술'],
+      finalMoves: ['섀도볼', '기합구슬', '악의파동', '최면술'],
       moveTable: [
         { move: '섀도볼', how: 'TM30', usage: '고스트 특수기. 에스퍼·고스트 타입 처리' },
         { move: '기합구슬', how: 'Lv.50', usage: '바위 특수기. 무우마 Lv.50 자연 습득 후 진화. 비행·불꽃 타입 처리' },
-        { move: '어둠의파동', how: 'TM79', usage: '악 특수기. 에스퍼 타입 처리. 혼란 부가효과' },
+        { move: '악의파동', how: 'TM79', usage: '악 특수기. 에스퍼 타입 처리. 혼란 부가효과' },
         { move: '최면술', how: '기술가르침', usage: '수면 유틸. 포획 및 보스전 안정화. 212번도로 기술가르침' },
       ],
       notes: [
@@ -209,11 +209,11 @@ const CHIMCHAR_GUIDE: StarterGuideData = {
     {
       pokemonId: 398,
       pokemon: '찌르호크',
-      finalMoves: ['공중날기', '브레이브버드', '퀵어택', '강철날개'],
+      finalMoves: ['공중날기', '브레이브버드', '전광석화', '강철날개'],
       moveTable: [
         { move: '공중날기', how: 'HM02', usage: '이동 + 비행 물리기. 비버통이 배울 수 없어 찌르호크 전담' },
         { move: '브레이브버드', how: 'Lv.49', usage: '강력한 비행 물리기. 반동 피해 있음. 찌르호크 Lv.49 자연 습득' },
-        { move: '퀵어택', how: 'Lv.1', usage: '선제 공격. 빈사 상태 마무리. 찌르꼬 초기 보유' },
+        { move: '전광석화', how: 'Lv.1', usage: '선제 공격. 빈사 상태 마무리. 찌르꼬 초기 보유' },
         { move: '강철날개', how: 'TM47', usage: '바위·얼음 타입 견제. 비버통이 HM 전담해 슬롯이 남아 배정 가능' },
       ],
       notes: [
@@ -424,9 +424,9 @@ const PIPLUP_GUIDE: StarterGuideData = {
     {
       pokemonId: 445,
       pokemon: '한카리아스',
-      finalMoves: ['드래곤클로 / 역린', '지진', '불대문자', '스톤에지'],
+      finalMoves: ['드래곤크루 / 역린', '지진', '불대문자', '스톤에지'],
       moveTable: [
-        { move: '드래곤클로', how: 'Lv.33', usage: '드래곤 물리기. 한바이트 Lv.33 자연 습득. 챔피언 한카리아스 처리' },
+        { move: '드래곤크루', how: 'Lv.33', usage: '드래곤 물리기. 한바이트 Lv.33 자연 습득. 챔피언 한카리아스 처리' },
         { move: '지진', how: 'TM26', usage: '땅 물리기. 광범위한 타입 처리. 8관 전기 전담' },
         { move: '불대문자', how: 'TM38', usage: '불꽃 특수기. 이 팀의 유일한 불꽃기. 풀·벌레·얼음·강철 처리' },
         { move: '스톤에지', how: 'TM71', usage: '바위 물리기. 비행·불꽃 타입 처리. 높은 치명타율' },
@@ -440,11 +440,11 @@ const PIPLUP_GUIDE: StarterGuideData = {
     {
       pokemonId: 429,
       pokemon: '무우마직',
-      finalMoves: ['섀도볼', '기합구슬', '어둠의파동', '최면술'],
+      finalMoves: ['섀도볼', '기합구슬', '악의파동', '최면술'],
       moveTable: [
         { move: '섀도볼', how: 'TM30', usage: '고스트 특수기. 에스퍼·고스트 처리' },
         { move: '기합구슬', how: 'Lv.50', usage: '바위 특수기. 무우마 Lv.50 자연 습득 후 진화' },
-        { move: '어둠의파동', how: 'TM79', usage: '악 특수기. 에스퍼 처리' },
+        { move: '악의파동', how: 'TM79', usage: '악 특수기. 에스퍼 처리' },
         { move: '최면술', how: '기술가르침', usage: '수면 유틸. 212번도로 기술가르침' },
       ],
       notes: ['초염몽 가이드의 무우마직과 동일한 운용 방침.'],
@@ -464,11 +464,11 @@ const PIPLUP_GUIDE: StarterGuideData = {
     {
       pokemonId: 398,
       pokemon: '찌르호크',
-      finalMoves: ['공중날기', '브레이브버드', '퀵어택', '강철날개'],
+      finalMoves: ['공중날기', '브레이브버드', '전광석화', '강철날개'],
       moveTable: [
         { move: '공중날기', how: 'HM02', usage: '이동 + 비행 물리기. 비버통이 배울 수 없어 찌르호크 전담' },
         { move: '브레이브버드', how: 'Lv.49', usage: '강력한 비행 물리기. 반동 피해 있음. 찌르호크 Lv.49 자연 습득' },
-        { move: '퀵어택', how: 'Lv.1', usage: '선제 공격. 찌르꼬 초기 보유' },
+        { move: '전광석화', how: 'Lv.1', usage: '선제 공격. 찌르꼬 초기 보유' },
         { move: '강철날개', how: 'TM47', usage: '바위·얼음 타입 견제. 비버통이 풀베기를 담당해 슬롯이 확보됨' },
       ],
       notes: ['비버통 비전통 덕분에 찌르호크는 풀베기 슬롯을 강철날개로 교체해 전투력이 향상된다.'],
@@ -673,11 +673,11 @@ const TURTWIG_GUIDE: StarterGuideData = {
     {
       pokemonId: 429,
       pokemon: '무우마직',
-      finalMoves: ['섀도볼', '기합구슬', '어둠의파동', '최면술'],
+      finalMoves: ['섀도볼', '기합구슬', '악의파동', '최면술'],
       moveTable: [
         { move: '섀도볼', how: 'TM30', usage: '고스트 특수기. 에스퍼·고스트 처리' },
         { move: '기합구슬', how: 'Lv.50', usage: '격투 특수기. 무우마 Lv.50 자연 습득 후 진화. 악·강철·바위 처리' },
-        { move: '어둠의파동', how: 'TM79', usage: '악 특수기. 에스퍼 처리' },
+        { move: '악의파동', how: 'TM79', usage: '악 특수기. 에스퍼 처리' },
         { move: '최면술', how: '기술가르침', usage: '수면 유틸. 212번도로 기술가르침' },
       ],
       notes: ['초염몽 가이드의 무우마직과 동일한 운용 방침.'],
@@ -697,11 +697,11 @@ const TURTWIG_GUIDE: StarterGuideData = {
     {
       pokemonId: 398,
       pokemon: '찌르호크',
-      finalMoves: ['공중날기', '브레이브버드', '퀵어택', '강철날개'],
+      finalMoves: ['공중날기', '브레이브버드', '전광석화', '강철날개'],
       moveTable: [
         { move: '공중날기', how: 'HM02', usage: '이동 + 비행 물리기. 비버통이 배울 수 없어 찌르호크 전담' },
         { move: '브레이브버드', how: 'Lv.49', usage: '강력한 비행 물리기. 반동 피해 있음. 찌르호크 Lv.49 자연 습득' },
-        { move: '퀵어택', how: 'Lv.1', usage: '선제 공격. 찌르꼬 초기 보유' },
+        { move: '전광석화', how: 'Lv.1', usage: '선제 공격. 찌르꼬 초기 보유' },
         { move: '강철날개', how: 'TM47', usage: '바위·얼음 타입 견제. 비버통이 풀베기(HM) 전담해 슬롯이 남아 배정 가능' },
       ],
       notes: [
@@ -991,12 +991,12 @@ const YUNJINSEOK_GUIDE: StarterGuideData = {
     {
       pokemonId: 392,
       pokemon: '초염몽',
-      finalMoves: ['화염방사', '인파이트', '지진', '쓰러뜨리기'],
+      finalMoves: ['화염방사', '인파이트', '지진', '깨트리다'],
       moveTable: [
         { move: '화염방사', how: 'TM35', usage: '불꽃 특수기. 풀·강철·얼음·벌레 처리' },
         { move: '인파이트', how: 'Lv.59', usage: '격투 물리기. 초염몽 Lv.59 자연 습득. 바위·악·강철 처리. 방어·특방 하락 있음' },
         { move: '지진', how: 'TM26', usage: '땅 물리기. 전기·독·바위 처리. 8관 전기 체육관 핵심' },
-        { move: '쓰러뜨리기', how: 'TM80', usage: '노말 물리기. 안정적 화력 보조. 인파이트 대안으로 방어·특방 하락 없이 운용' },
+        { move: '깨트리다', how: 'TM31', usage: '격투 물리기. 안정적 화력 보조. 인파이트 대안으로 방어·특방 하락 없이 운용' },
       ],
       notes: [
         '이 팀에서 초염몽은 가장 많은 체육관을 커버하는 범용 딜러. 화염방사·지진으로 광범위한 타입 처리.',
@@ -1007,11 +1007,11 @@ const YUNJINSEOK_GUIDE: StarterGuideData = {
     {
       pokemonId: 398,
       pokemon: '찌르호크',
-      finalMoves: ['공중날기', '브레이브버드', '퀵어택', '강철날개'],
+      finalMoves: ['공중날기', '브레이브버드', '전광석화', '강철날개'],
       moveTable: [
         { move: '공중날기', how: 'HM02', usage: '이동+비행 물리기. 비버통이 배울 수 없어 찌르호크 전담' },
         { move: '브레이브버드', how: 'Lv.49', usage: '강력한 비행 물리기. 반동 피해 있음. 3관 격투·챔피언 토게키스 처리' },
-        { move: '퀵어택', how: 'Lv.1', usage: '선제 공격. 빈사 직전 상대 마무리. 찌르꼬 초기 보유' },
+        { move: '전광석화', how: 'Lv.1', usage: '선제 공격. 빈사 직전 상대 마무리. 찌르꼬 초기 보유' },
         { move: '강철날개', how: 'TM47', usage: '바위·얼음 타입 견제. 비버통 HM 전담 덕분에 슬롯 여유 확보' },
       ],
       notes: [
@@ -1022,12 +1022,12 @@ const YUNJINSEOK_GUIDE: StarterGuideData = {
     {
       pokemonId: 130,
       pokemon: '갸라도스',
-      finalMoves: ['파도타기', '폭포오르기', '역린', '어둠의파동'],
+      finalMoves: ['파도타기', '폭포오르기', '역린', '악의파동'],
       moveTable: [
         { move: '파도타기', how: 'HM03', usage: '전투 물 특수기이자 수중 이동. 불꽃·바위 타입 처리' },
         { move: '폭포오르기', how: 'HM07', usage: '폭포 등반용. 전투에서 물 물리기로도 활용' },
         { move: '역린', how: '기술가르침', usage: '드래곤 물리기. 생존구역 기술가르침. 챔피언 난천 한카리아스·밀로틱 처리 핵심' },
-        { move: '어둠의파동', how: 'TM79', usage: '악 특수기. 고스트 타입에 2배 — 5관 고스트 체육관 처리' },
+        { move: '악의파동', how: 'TM79', usage: '악 특수기. 고스트 타입에 2배 — 5관 고스트 체육관 처리' },
       ],
       notes: [
         '코이킹을 초반에 낚시(낡은 낚싯대)로 포획해 Lv.20 갸라도스 진화를 4관 전에 맞춘다. 코이킹은 직접 전투에 내보내기보다 교체 받기로 경험치를 모으는 것이 효율적.',
@@ -1039,9 +1039,9 @@ const YUNJINSEOK_GUIDE: StarterGuideData = {
     {
       pokemonId: 445,
       pokemon: '한카리아스',
-      finalMoves: ['드래곤클로 / 역린', '지진', '바위오르기', '불대문자'],
+      finalMoves: ['드래곤크루 / 역린', '지진', '바위오르기', '불대문자'],
       moveTable: [
-        { move: '드래곤클로', how: 'Lv.33', usage: '드래곤 물리기. 한바이트 Lv.33 자연 습득. 챔피언 난천 드래곤 처리. 갸라도스 역린과 역할 분담' },
+        { move: '드래곤크루', how: 'Lv.33', usage: '드래곤 물리기. 한바이트 Lv.33 자연 습득. 챔피언 난천 드래곤 처리. 갸라도스 역린과 역할 분담' },
         { move: '지진', how: 'TM26', usage: '땅 물리기. 전기 타입 처리. 초염몽과 분담해 광범위 커버' },
         { move: '바위오르기', how: 'HM08', usage: '절벽 진행 필드 기술. 전투에서 바위 물리기(비행 타입 2배)로도 활용' },
         { move: '불대문자', how: 'TM38', usage: '불꽃 특수기. 풀·강철·얼음·벌레 타입 견제. 초염몽이 없을 때 대체' },
@@ -1055,12 +1055,12 @@ const YUNJINSEOK_GUIDE: StarterGuideData = {
     {
       pokemonId: 487,
       pokemon: '기라티나',
-      finalMoves: ['섀도볼', '드래곤클로', '기합구슬', '어둠의파동'],
+      finalMoves: ['섀도볼', '드래곤크루', '기합구슬', '악의파동'],
       moveTable: [
         { move: '섀도볼', how: 'TM30', usage: '고스트 특수기. 에스퍼·고스트 타입 처리 (E4 에스퍼 파티 핵심)' },
-        { move: '드래곤클로', how: 'Lv.28', usage: '드래곤 물리기. 기라티나 Lv.28 자연 습득. 챔피언 난천 드래곤 대응' },
+        { move: '드래곤크루', how: 'Lv.28', usage: '드래곤 물리기. 기라티나 Lv.28 자연 습득. 챔피언 난천 드래곤 대응' },
         { move: '기합구슬', how: 'Lv.33', usage: '격투 특수기. 기라티나 Lv.33 자연 습득. 악·바위·강철 타입 처리. 챔피언 화강돌(악)·루카리오(강철) 대응' },
-        { move: '어둠의파동', how: 'TM79', usage: '악 특수기. 에스퍼 타입 처리 보조. 혼란 부가효과' },
+        { move: '악의파동', how: 'TM79', usage: '악 특수기. 에스퍼 타입 처리 보조. 혼란 부가효과' },
       ],
       notes: [
         '기라티나는 고스트/드래곤 타입으로 이 팀의 무우마직 역할을 담당. 섀도볼·어둠의파동으로 에스퍼·고스트 처리.',

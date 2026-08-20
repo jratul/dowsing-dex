@@ -109,13 +109,13 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
   {
     pokemonId: 6,
     pokemon: '리자몽',
-    finalMoves: ['화염방사', '공중날기 / 날개치기', '베어가르기', '드래곤클로 / 깨트리다 / 강철날개'],
+    finalMoves: ['화염방사', '공중날기 / 날개치기', '베어가르기', '드래곤크루 / 깨트리다 / 강철날개'],
     moveTable: [
       { move: '화염방사', how: 'Lv.34', usage: '주력 불꽃 기술. 리자드 계열 레벨업으로 습득 가능' },
       { move: '공중날기', how: 'HM02', usage: '이동용 비전머신 및 격투·풀 타입 처리' },
       { move: '날개치기', how: 'Lv.36', usage: '공중날기보다 전투 템포가 빠른 비행 기술' },
       { move: '베어가르기', how: 'Lv.44', usage: '안정적인 노말 물리 공격' },
-      { move: '드래곤클로', how: 'TM02', usage: '챔피언로드에서 획득. 드래곤 견제 보조' },
+      { move: '드래곤크루', how: 'TM02', usage: '챔피언로드에서 획득. 드래곤 견제 보조' },
       { move: '깨트리다', how: 'TM31', usage: '바위·노말·얼음 타입 견제 보조' },
       { move: '강철날개', how: 'TM', usage: '바위 타입 견제 보조. 명중률은 다소 불안정' },
     ],
@@ -259,7 +259,7 @@ export const FIRERED_STORY_TM_PRIORITY: TmRow[] = [
 ]
 
 export const FIRERED_STORY_TM_OPTIONAL: TmRow[] = [
-  { tm: 'TM02', move: '드래곤클로', target: '리자몽', location: '챔피언로드 1층 북쪽', priority: '중간', desc: '후반 드래곤 견제 보조' },
+  { tm: 'TM02', move: '드래곤크루', target: '리자몽', location: '챔피언로드 1층 북쪽', priority: '중간', desc: '후반 드래곤 견제 보조' },
   { tm: 'TM35', move: '화염방사', target: '리자몽 선택', location: '무지개시티 게임코너 4,000코인', priority: '낮음', desc: '리자몽은 레벨업으로 습득 가능하므로 보통 아껴도 됨' },
   { tm: 'TM38', move: '불대문자', target: '리자몽 선택', location: '홍련섬 체육관, 강연 격파 보상', priority: '선택', desc: '고위력 불꽃 기술. 명중률은 화염방사보다 낮음' },
   { tm: 'TM27', move: '은혜갚기', target: '잠만보 / 리자몽', location: '12번도로 게이트 NPC', priority: '중간', desc: '친밀도 높은 포켓몬에게 강력한 노말 물리기' },

@@ -6,6 +6,7 @@ import { SpriteImage } from '../components/pokemon/SpriteImage'
 import { TypeBadge } from '../components/pokemon/TypeBadge'
 import { GuideTable } from '../components/guide/GuideTable'
 import { PokemonLink } from '../components/guide/PokemonLink'
+import { MoveLink } from '../components/guide/MoveLink'
 import { linkifyPokemonNames } from '../lib/linkifyPokemonNames'
 import { SAMPLE_POKEMON, findSamplePokemon } from '../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../lib/guideCategory'
@@ -153,7 +154,9 @@ export function PokemonRedStoryGuidePage() {
                 <p className="mb-1 text-xs font-bold text-ink-faint">최종 기술 배치</p>
                 <ul className="mb-3 list-disc space-y-0.5 pl-5 text-sm text-ink">
                   {m.finalMoves.map((move) => (
-                    <li key={move}>{move}</li>
+                    <li key={move}>
+                      <MoveLink name={move} />
+                    </li>
                   ))}
                 </ul>
 
@@ -161,7 +164,7 @@ export function PokemonRedStoryGuidePage() {
                   headers={['기술', '타입', '습득', '용도']}
                   rows={m.moveTable.map((t) => {
                     const mv = findMoveByName(t.move)
-                    return [t.move, mv ? <TypeBadge key={`${t.move}-type`} type={mv.type} size="sm" /> : '—', <HowBadge key={t.move} how={t.how} />, t.usage]
+                    return [<MoveLink key={`${t.move}-link`} name={t.move} />, mv ? <TypeBadge key={`${t.move}-type`} type={mv.type} size="sm" /> : '—', <HowBadge key={t.move} how={t.how} />, t.usage]
                   })}
                 />
 

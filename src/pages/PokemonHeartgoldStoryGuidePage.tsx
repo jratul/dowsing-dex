@@ -6,6 +6,7 @@ import { SpriteImage } from '../components/pokemon/SpriteImage'
 import { TypeBadge } from '../components/pokemon/TypeBadge'
 import { GuideTable } from '../components/guide/GuideTable'
 import { PokemonLink } from '../components/guide/PokemonLink'
+import { MoveLink } from '../components/guide/MoveLink'
 import { linkifyPokemonNames } from '../lib/linkifyPokemonNames'
 import { SAMPLE_POKEMON, findSamplePokemon } from '../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../lib/guideCategory'
@@ -143,7 +144,7 @@ export function PokemonHeartgoldStoryGuidePage() {
                 headers={['기술', '타입', '습득', '용도']}
                 rows={s.moveTable.map((m) => {
                   const mv = findMoveByName(m.move)
-                  return [m.move, mv ? <TypeBadge key={`${m.move}-type`} type={mv.type} size="sm" /> : '—', <HowBadge key={m.move} how={m.how} />, m.usage]
+                  return [<MoveLink key={`${m.move}-link`} name={m.move} />, mv ? <TypeBadge key={`${m.move}-type`} type={mv.type} size="sm" /> : '—', <HowBadge key={m.move} how={m.how} />, m.usage]
                 })}
               />
               {s.notes.length > 0 && (

@@ -1,5 +1,5 @@
 import { useState, useMemo, useCallback } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { ALL_MOVES } from '../data/moves/all-moves.generated'
 import { MOVE_DESCRIPTIONS } from '../data/moves/move-descriptions.generated'
 import {
@@ -130,10 +130,19 @@ function MoveDetail({ moveId }: { moveId: number }) {
 }
 
 export function MovesPage() {
-  const [search, setSearch] = useState('')
+  // 공략에서 특정 기술로 바로 들어올 수 있게 ?move=<기술 id> 를 받는다.
+  // 목록이 1,000종이 넘어 링크만으로는 찾기 어려우므로, 이름으로 검색을 걸고 상세를 펼쳐준다.
+  const [searchParams] = useSearchParams()
+  const linkedMove = useMemo(() => {
+    const raw = searchParams.get('move')
+    if (!raw) return undefined
+    return ALL_MOVES.find((m) => m.id === Number(raw))
+  }, [searchParams])
+
+  const [search, setSearch] = useState(linkedMove?.nameKo ?? '')
   const [typeFilter, setTypeFilter] = useState<PokemonType | null>(null)
   const [categoryFilter, setCategoryFilter] = useState<Category | null>(null)
-  const [expandedId, setExpandedId] = useState<number | null>(null)
+  const [expandedId, setExpandedId] = useState<number | null>(linkedMove?.id ?? null)
   const [page, setPage] = useState(1)
 
   const filtered = useMemo(() => {
