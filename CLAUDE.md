@@ -21,21 +21,25 @@ npm run build                  # 프로덕션 빌드
 npm run lint                   # 린트 (oxlint)
 npm run fetch:pokedex          # PokeAPI + 한국어 위키에서 데이터 생성 (수 시간 소요)
 npm run build:tm-index         # by-id/*.generated.ts → tm-index.generated.ts 역인덱스 생성
+npm run build:move-index       # by-id/*.generated.ts → move-index.generated.ts (기술 → 학습 포켓몬)
 npm run build:move-descriptions  # PokeAPI에서 기술 한국어 설명 수집 → move-descriptions.generated.ts
 npm run build:abilities        # PokeAPI에서 특성 한국어 데이터 수집 → abilities.generated.ts
-npm run build:items            # PokeAPI에서 진화/배틀 아이템 데이터 수집 → items.generated.ts
 ```
+
+> `scripts/build-items.mjs`(items.generated.ts 생성)는 npm script 미등록 상태다.
+> 필요하면 `node scripts/build-items.mjs` 로 직접 실행한다.
 
 ## 폴더 구조
 
 ```
 src/
   components/
-    ui/           # Button, Card 등 범용 프리미티브
-    pokemon/      # TypeBadge, PokemonCard, StatChart, MoveList, EncounterLocationList, EvolutionMoveComparison 등
-    type-chart/   # TypeFilter, TypeCalculator, TypeChartGrid
-    guide/        # GuideCard, GuideTable, PokemonLink
-    layout/       # SiteHeader(모바일 햄버거 메뉴 포함), Hero, RouteErrorBoundary
+    ui/           # Button, Card
+    pokemon/      # TypeBadge, PokemonCard, SpriteImage, StatChart, MoveList, TypeDefense,
+                  #   EncounterLocationList, EvolutionTree, EvolutionMoveComparison, GenerationFilter
+    type-chart/   # TypeFilter, TypeCalculator, TypeChartGrid, TypeOffense, TypePill
+    guide/        # GuideCard, GuideTable, GuidePageLayout, PokemonLink, MoveLink
+    layout/       # SiteHeader(모바일 햄버거 메뉴 포함), Layout, Hero, HeroCarousel, RouteErrorBoundary
   pages/          # 라우트별 페이지 컴포넌트
     HomePage.tsx  # 홈만 최상위
     pokedex/      # PokedexPage, PokemonDetailPage
@@ -52,6 +56,7 @@ src/
     moves/all-moves.generated.ts      # ALL_MOVES 목록
     moves/by-id/*.generated.ts        # 포켓몬별 세대/버전별 학습셋 (1082개 파일, lazy 로드)
     moves/tm-index.generated.ts       # TM/HM 역인덱스 (기술머신 → 배울 수 있는 포켓몬 ID 목록)
+    moves/move-index.generated.ts     # 기술 → 학습 포켓몬 역인덱스 (레벨업/머신/가르침, MovesPage 사용)
     moves/move-descriptions.generated.ts  # 기술 한국어 설명 (727종, build-move-descriptions.mjs 생성)
     natures.data.ts                   # 25개 성격 정적 데이터 (NaturesPage 사용)
     abilities.generated.ts            # 특성 313종 (build-abilities.mjs 생성)
@@ -196,6 +201,43 @@ Vercel에 새 버전을 배포하면 Vite 청크의 파일명(content hash)이 �
 | 드릴부리 | 회전부리 | 기술명 (Drill Peck) |
 | 클로즈컴뱃/닫기 | 인파이트 | 기술명 |
 | 빌 | 이수재 | NPC명 |
+
+## 공략 본문의 링크 규칙 — PokemonLink / MoveLink
+
+공략에 나오는 **포켓몬 이름과 기술 이름은 모두 링크**로 만든다.
+
+```tsx
+<PokemonLink id={157} />              // → /pokemon/157, 스프라이트 + 이름
+<MoveLink name="화염방사" />           // → /moves?move=53, 해당 기술을 펼친 상태로 연다
+```
+
+- `MoveLink`는 `findMoveByName()`으로 기술을 찾고, **데이터에 없는 이름은 링크를 만들지 않고
+  글자만 남긴다.** 덕분에 비공식 기술명이 링크 누락으로 드러난다 — 공략을 추가한 뒤
+  기술명이 링크가 안 걸렸다면 표기가 틀렸다는 신호다.
+- `MovesPage`는 `?move=<id>` 쿼리를 받아 그 기술을 검색·펼침 상태로 연다. 목록이 797종이라
+  링크만으로는 찾을 수 없기 때문이다.
+- 큰 스프라이트(`SpriteImage`) 옆에 `PokemonLink`를 같이 두지 않는다. 스프라이트가 두 번
+  노출된다. 둘 중 하나만 쓰되, 본문 안에서는 `PokemonLink` 하나로 충분하다.
+
+### 스프라이트 수직 정렬 (건드리기 전에 읽을 것)
+
+`PokemonLink`의 스프라이트는 `2em` 크기에 `vertical-align: -0.21em`으로 맞춰져 있다.
+
+- `align-middle`은 "요소 중심을 텍스트 중심에" 맞추는 게 아니라 **"baseline + x-height/2"**에
+  맞춘다. x-height는 라틴 소문자 기준이라 한글에서는 글자 중심보다 낮게 잡혀 스프라이트가
+  아래로 처진다(실측 2.23px).
+- 실측한 한글 텍스트의 시각적 중심은 **baseline 위 0.457em**이다. 따라서
+  `vertical-align = 0.457em - (스프라이트 크기 / 2)`. 크기를 바꾸면 이 식으로 다시 구한다.
+- 크기·정렬을 모두 `em`으로 두면 폰트 크기가 다른 사용처에서도 같은 비율로 맞는다.
+
+### 목록 항목 높이 — leading-loose + min-h
+
+스프라이트가 들어간 줄만 높아져 목록 간격이 들쭉날쭉해지는 것을 막는다.
+
+- `leading-loose`(=2.0)는 스프라이트 크기(`2em`)와 정확히 같아, 폰트 크기와 무관하게
+  줄 상자 안에 스프라이트가 들어간다. 여러 줄로 접히는 항목까지 균일해진다.
+- 한 줄짜리 항목은 `min-h-7`(text-sm) / `min-h-6`(text-xs)로 최소 높이를 함께 보장한다.
+- 마커(`▸` `✓` 번호)는 `self-start` + `leading-7`/`leading-6`으로 첫 줄 중앙에 고정한다.
 
 ## 타입 상성 로직
 

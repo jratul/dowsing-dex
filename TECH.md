@@ -32,7 +32,10 @@ dowsing-dex/
 ├── scripts/
 │   ├── fetch-pokedex.mjs           # PokeAPI + 포켓몬갤러리 위키 스크래핑 → 생성 파일 출력
 │   ├── build-tm-index.mjs          # by-id/*.generated.ts → tm-index.generated.ts 역인덱스 생성
-│   └── build-move-descriptions.mjs # PokeAPI 기술 한국어 설명 수집 → move-descriptions.generated.ts 출력
+│   ├── build-move-index.mjs        # by-id/*.generated.ts → move-index.generated.ts (기술 → 학습 포켓몬)
+│   ├── build-move-descriptions.mjs # PokeAPI 기술 한국어 설명 수집 → move-descriptions.generated.ts 출력
+│   ├── build-abilities.mjs         # PokeAPI 특성 한국어 데이터 → abilities.generated.ts 출력
+│   └── build-items.mjs             # PokeAPI 진화·배틀 아이템 → items.generated.ts (npm script 미등록)
 ├── src/
 │   ├── main.tsx               # React 진입점, StrictMode + RouterProvider
 │   ├── router.tsx             # 전체 라우트 정의 (모두 lazy)
@@ -42,7 +45,7 @@ dowsing-dex/
 │   ├── lib/                   # 순수 유틸 함수
 │   ├── data/                  # 정적 데이터 (스크립트 생성 + 수작업)
 │   ├── components/            # UI 컴포넌트
-│   ├── pages/                 # 라우트별 페이지
+│   ├── pages/                 # 라우트별 페이지 (pokedex/ reference/ guides/ 로 분류)
 │   └── dev/                   # 개발용 쇼케이스 페이지
 ├── vercel.json                # SPA fallback rewrite 설정
 ├── vite.config.ts
@@ -244,7 +247,8 @@ const cellClass = mult(atk, def) > 1 ? 'bg-matchup-weak' : mult(atk, def) < 1 ? 
 | `GuidePageLayout.tsx` | 공략 페이지 2컬럼 레이아웃 + 우측 sticky 목차(TOC). h2 자동 감지, IntersectionObserver 현재 섹션 하이라이트, smooth scroll |
 | `GuideCard.tsx` | 공략 목록 카드 (아이콘 + 카테고리 배지 + 제목 + 요약) |
 | `GuideTable.tsx` | 공략용 반응형 테이블. 모바일에서 `overflow-x-auto` 가로 스크롤 |
-| `PokemonLink.tsx` | 인라인 스프라이트 + 이름 링크 컴포넌트. 공략 텍스트 내 포켓몬 참조에 사용 |
+| `PokemonLink.tsx` | 인라인 스프라이트 + 이름 링크. 공략 텍스트 내 포켓몬 참조에 사용 |
+| `MoveLink.tsx` | 기술명을 `/moves?move=<id>` 로 연결. 데이터에 없는 이름은 링크를 만들지 않고 글자만 남긴다 |
 
 ```tsx
 // GuideTable.tsx
@@ -255,10 +259,18 @@ const cellClass = mult(atk, def) > 1 ? 'bg-matchup-weak' : mult(atk, def) < 1 ? 
   </table>
 </div>
 
-// PokemonLink.tsx — 인라인 스프라이트 + 이름
-<Link to={`/pokemon/${id}`} className="inline-flex items-center gap-1">
-  <img src={spriteUrl} className="h-6 w-6" /> <span>{nameKo}</span>
+// PokemonLink.tsx — 순수 인라인 링크 + 스프라이트만 vertical-align 으로 보정
+// inline-flex 로 감싸면 스프라이트가 인라인 박스를 키워 링크 전체가 문장보다 위로 밀린다.
+// align-middle 은 baseline + x-height/2 기준이라 한글에서 2.23px 처진다(실측).
+<Link to={`/pokemon/${id}`} className="font-bold text-brand-red hover:underline">
+  <img src={spriteUrl} className="mr-0.5 inline-block h-[2em] w-[2em] align-[-0.21em]" />
+  {label ?? nameKo}
 </Link>
+
+// MoveLink.tsx — 기술명 → 기술 목록. 못 찾으면 링크를 만들지 않는다
+const move = findMoveByName(name)
+if (!move) return <>{text}</>
+return <Link to={`/moves?move=${move.id}`}>{text}</Link>
 ```
 
 #### `layout/` — 전체 레이아웃 컴포넌트
@@ -283,39 +295,82 @@ if (isChunkError && !sessionStorage.getItem('chunk-reload')) {
 
 ### 3-7. 페이지 (`src/pages/`)
 
+26개 파일이 평평하게 쌓여 찾기 어려워 역할별 폴더로 나눴다. 페이지 간 상호 참조는 없고
+`router.tsx`만 이들을 참조한다.
+
 | 파일 | 경로 | 특이사항 |
 |---|---|---|
 | `HomePage.tsx` | `/` | 히어로 캐러셀 + 공략 카드 그리드 |
-| `PokedexPage.tsx` | `/pokedex` | 타입·세대 필터 + 가상 스크롤 카드 목록 |
-| `PokemonDetailPage.tsx` | `/pokemon/:id` | 아트워크·종족값·타입 상성·진화·기술·출현. 진화 가족 2명 이상 시 `EvolutionMoveComparison` 자동 표시 (병렬 학습셋 로드) |
-| `TypeChartPage.tsx` | `/types` | `TypeChartGrid` + `TypeCalculator` + `TypeOffense` |
-| `TmListPage.tsx` | `/tm` | 세대·버전별 TM/HM 목록. `tm-index.generated.ts`(3.3MB) lazy 로드. `SAMPLE_POKEMON` 사용 |
-| `EncounterPage.tsx` | `/encounter` | 세대·버전별 야생 출현 목록. `SAMPLE_POKEMON` 사용 |
-| `GuideListPage.tsx` | `/guides` | `SAMPLE_GUIDES` 기반 공략 카드 목록. `Link`로 Ctrl+클릭 새탭 지원 |
-| `GuideDetailPage.tsx` | `/guides/:slug` | 마크다운 기반 범용 공략 (현재 미사용, 정적 라우트 우선) |
-| `PokemonRedStoryGuidePage.tsx` | `/guides/pokemon-red-story` | 레드버전 스토리 공략 |
-| `PokemonFireredStoryGuidePage.tsx` | `/guides/pokemon-firered-story` | 파이어레드 스토리 공략 (돌·교환 진화 전체 포함) |
-| `PokemonFireredSeviiIslandsGuidePage.tsx` | `/guides/pokemon-firered-sevii-islands` | 파이어레드 일곱섬 클리어 후 공략 |
-| `PokemonGoldStoryGuidePage.tsx` | `/guides/pokemon-gold-story` | 골드버전 스토리 공략 |
-| `PokemonHeartgoldStoryGuidePage.tsx` | `/guides/pokemon-heartgold-story` | 하트골드버전 스토리 공략 |
-| `PokemonHeartgoldWalkthroughGuidePage.tsx` | `/guides/pokemon-heartgold-walkthrough` | 하트골드버전 최고효율 진행 공략 (11 Phase, 윤가놈 추천 파티 분석) |
-| `PokemonEmeraldStoryGuidePage.tsx` | `/guides/pokemon-emerald-story` | 에메랄드버전 공략 (스타팅 탭 전환) |
-| `PokemonPlatinumStoryGuidePage.tsx` | `/guides/pokemon-platinum-story` | 플래티넘버전 공략 (스타팅 탭 전환) |
-| `PokemonPlatinumProgressGuidePage.tsx` | `/guides/pokemon-platinum-progress` | 플래티넘버전 최고효율 진행 공략 |
-| `PokemonRedEvolutionGuidePage.tsx` | `/guides/pokemon-red-evolution` | 1세대 진화 타이밍 가이드 |
+| `pokedex/PokedexPage.tsx` | `/pokedex` | 타입·세대 필터 + 검색. 카드 1,082장을 한 번에 렌더하므로 입력 반응성 처리가 들어가 있다(아래 참고) |
+| `pokedex/PokemonDetailPage.tsx` | `/pokemon/:id` | 아트워크·종족값·타입 상성·진화·기술·출현. 진화 가족 2명 이상 시 `EvolutionMoveComparison` 자동 표시 (병렬 학습셋 로드) |
+| `reference/TypeChartPage.tsx` | `/types` | `TypeChartGrid` + `TypeCalculator` + `TypeOffense` |
+| `reference/MovesPage.tsx` | `/moves` | 전 세대 기술 목록. `?move=<id>` 로 특정 기술을 검색·펼침 상태로 연다 |
+| `reference/TmListPage.tsx` | `/tm` | 세대·버전별 TM/HM 목록. `tm-index.generated.ts`(3.3MB) lazy 로드 |
+| `reference/EncounterPage.tsx` | `/encounter` | 세대·버전별 야생 출현 목록 |
+| `reference/NaturesPage.tsx` | `/natures` | 25종 성격 5×5 매트릭스 + 전체 표 |
+| `reference/AbilitiesPage.tsx` | `/abilities` | 특성 313종 세대 필터·검색 |
+| `reference/ItemsPage.tsx` | `/items` | 진화 아이템·배틀 지니기 탭 분리 |
+| `guides/GuideListPage.tsx` | `/guides` | `SAMPLE_GUIDES` 기반 공략 카드 목록 |
+| `guides/GuideDetailPage.tsx` | `/guides/:slug` | 마크다운 기반 범용 공략 (현재 모든 공략이 정적 라우트라 폴백 역할) |
+| `guides/PokemonRedStoryGuidePage.tsx` | `/guides/pokemon-red-story` | 레드버전 스토리 공략 |
+| `guides/PokemonRedEvolutionGuidePage.tsx` | `/guides/pokemon-red-evolution` | 1세대 진화 타이밍 가이드 |
+| `guides/PokemonFireredStoryGuidePage.tsx` | `/guides/pokemon-firered-story` | 파이어레드 스토리 공략 (돌·교환 진화 전체 포함) |
+| `guides/PokemonFireredSeviiIslandsGuidePage.tsx` | `/guides/pokemon-firered-sevii-islands` | 파이어레드 일곱섬 클리어 후 공략 |
+| `guides/PokemonGoldStoryGuidePage.tsx` | `/guides/pokemon-gold-story` | 골드버전 스토리 공략 |
+| `guides/PokemonHeartgoldStoryGuidePage.tsx` | `/guides/pokemon-heartgold-story` | 하트골드버전 스토리 공략 |
+| `guides/PokemonHeartgoldWalkthroughGuidePage.tsx` | `/guides/pokemon-heartgold-walkthrough` | 하트골드 최고효율 진행 공략 (11 Phase) |
+| `guides/PokemonHeartgoldStonesGuidePage.tsx` | `/guides/pokemon-heartgold-stones` | 하트골드 진화의 돌 9종 입수 |
+| `guides/PokemonHeartgoldMovesGuidePage.tsx` | `/guides/pokemon-heartgold-moves` | 하트골드 기술 관리 (TM 보존·HM 배정·포획 요원) |
+| `guides/PokemonHGSSCollectionGuidePage.tsx` | `/guides/pokemon-hgss-collection` | HGSS·기라티나PT 수집 가이드. 마크다운 원문을 `?raw` 임포트 후 런타임 파싱 |
+| `guides/PokemonUnownGuidePage.tsx` | `/guides/pokemon-unown` | 안농 28종 종합 (폼 전체·세대별 등장·출현 조건) |
+| `guides/PokemonEmeraldStoryGuidePage.tsx` | `/guides/pokemon-emerald-story` | 에메랄드버전 공략 (스타팅 탭 전환) |
+| `guides/PokemonPlatinumStoryGuidePage.tsx` | `/guides/pokemon-platinum-story` | 플래티넘버전 공략 (스타팅 탭 전환) |
+| `guides/PokemonPlatinumProgressGuidePage.tsx` | `/guides/pokemon-platinum-progress` | 플래티넘 진행 조건 가이드 |
 
 ```tsx
-// 공략 페이지 공통 패턴 — HowBadge + GuideTable + linkifyPokemonNames
+// 공략 페이지 공통 패턴 — HowBadge + GuideTable + MoveLink
 function HowBadge({ how }: { how: string }) {
   if (how.startsWith('Lv.')) return <span className="rounded bg-green-100 px-1.5 py-0.5 text-xxs font-bold text-green-700">{how}</span>
   if (how.startsWith('TM')) return <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xxs font-bold text-blue-700">{how}</span>
   if (how.startsWith('HM')) return <span className="rounded bg-red-100 px-1.5 py-0.5 text-xxs font-bold text-red-700">{how}</span>
 }
 <GuideTable
-  headers={['기술', '습득', '용도']}
-  rows={section.moveTable.map((m) => [m.move, <HowBadge key={m.move} how={m.how} />, m.usage])}
+  headers={['기술', '타입', '습득', '용도']}
+  rows={m.moveTable.map((t) => {
+    const mv = findMoveByName(t.move)
+    return [
+      <MoveLink key={`${t.move}-link`} name={t.move} />,          // 기술 목록으로 연결
+      mv ? <TypeBadge key={t.move} type={mv.type} size="sm" /> : '—',
+      <HowBadge key={t.move} how={t.how} />,
+      t.usage,
+    ]
+  })}
 />
 ```
+
+**PokedexPage — 검색 입력 반응성**
+
+검색어를 URL 쿼리에 직접 물리면 한 글자마다 라우터가 갱신되고 카드 1,082장이 통째로
+다시 그려진다. 입력은 로컬 state 로 즉시 받고, 무거운 일만 뒤로 미룬다.
+
+```tsx
+const [inputValue, setInputValue] = useState(urlQuery)
+const deferredQuery = useDeferredValue(inputValue)      // 목록 필터링을 비긴급 작업으로
+
+useEffect(() => {                                        // 타이핑이 멎으면 그때 주소에 반영
+  if (inputValue === urlQuery) return
+  const timer = setTimeout(() => updateParams({ q: inputValue }), 300)
+  return () => clearTimeout(timer)
+}, [inputValue, urlQuery])
+
+const cardState = useMemo(                               // 매번 새 객체면 카드 memo가 깨진다
+  () => ({ backTo: location.pathname + location.search }),
+  [location.pathname, location.search],
+)
+```
+
+`PokemonCard`는 `memo`로 감싸져 있다. 위 `cardState`처럼 참조가 고정된 props를 넘겨야
+효과가 있다.
 
 ---
 
@@ -433,8 +488,13 @@ npm run lint            # oxlint 린트 (error·warning 0 유지)
 npm run preview         # 빌드 결과 로컬 미리보기
 npm run fetch:pokedex   # PokeAPI + 위키 스크래핑 → 생성 파일 (수 시간 소요)
 npm run build:tm-index          # by-id/*.generated.ts → tm-index.generated.ts 생성
+npm run build:move-index        # by-id/*.generated.ts → move-index.generated.ts (기술 → 학습 포켓몬)
 npm run build:move-descriptions # PokeAPI 기술 한국어 설명 수집 → move-descriptions.generated.ts 생성
+npm run build:abilities         # PokeAPI 특성 한국어 데이터 → abilities.generated.ts 생성
 ```
+
+`scripts/build-items.mjs`(items.generated.ts 생성)는 npm script 로 등록돼 있지 않다.
+필요하면 `node scripts/build-items.mjs` 로 직접 실행한다.
 
 ---
 

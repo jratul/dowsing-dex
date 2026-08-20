@@ -86,5 +86,5 @@ React Router가 클라이언트 사이드 라우팅을 담당하므로, Vercel�
 | `typescript` | ~6.x | `npm run build`에서 `tsc -b`로 타입 체크. 트랜스파일은 Vite/esbuild가 담당 |
 | `@types/react` | 19.x | React JSX 타입 정의 |
 | `@types/react-dom` | 19.x | `createRoot` 등 react-dom 타입 |
-| `@types/node` | 24.x | `scripts/*.mjs`(fetch-pokedex, build-tm-index)에서 `fs`, `path` 등 Node 내장 모듈 타입 |
+| `@types/node` | 24.x | `scripts/*.mjs` 6종(fetch-pokedex, build-tm-index, build-move-index, build-move-descriptions, build-abilities, build-items)에서 `fs`, `path` 등 Node 내장 모듈 타입 |
 | `oxlint` | 1.x | `npm run lint` — Rust 기반 고속 린터. error·warning 0 목표 |

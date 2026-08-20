@@ -10,9 +10,13 @@
 | 도감 | `/pokedex` | 1082종+ 전국도감. 타입·세대 필터 + 이름·번호 검색 |
 | 포켓몬 상세 | `/pokemon/:id` | 종족값·타입 상성·기술 학습셋·출현 장소·진화 체인·메가진화·진화 계열 기술 비교 |
 | 타입 상성 | `/types` | 18×18 상성표 + 1세대/2~5세대/6세대 이후 계산기 |
+| 기술 | `/moves` | 전 세대 기술 797종. 타입·분류 필터, 기술별 학습 포켓몬 |
 | 기술머신 | `/tm` | 세대·버전별 TM/HM 목록과 배울 수 있는 포켓몬 필터 |
 | 출현 포켓몬 | `/encounter` | 세대·버전별 야생 출현 및 포획 불가 포켓몬 목록 |
-| 공략 | `/guides` | 스토리 공략, 진화 타이밍 등 카테고리별 공략집 |
+| 성격 | `/natures` | 25종 성격 5×5 매트릭스 + 전체 표 |
+| 특성 | `/abilities` | 특성 313종 세대 필터·검색 |
+| 아이템 | `/items` | 진화 아이템·배틀 지니기 아이템 |
+| 공략 | `/guides` | 스토리 공략, 진화 타이밍, 수집 가이드 등 14편 |
 
 ## 기술 스택
 
@@ -45,8 +49,13 @@ npm run preview  # 빌드 결과물 미리보기
 ```bash
 npm run fetch:pokedex           # 포켓몬·기술·특성·출현 장소 전체 재수집
 npm run build:tm-index          # 기술머신 역인덱스 재생성 (fetch:pokedex 후 실행)
+npm run build:move-index        # 기술 → 학습 포켓몬 역인덱스 재생성 (fetch:pokedex 후 실행)
 npm run build:move-descriptions # 기술 한국어 설명 수집 (fetch:pokedex와 독립 실행 가능)
+npm run build:abilities         # 특성 한국어 데이터 수집 (독립 실행 가능)
 ```
+
+> `scripts/build-items.mjs`(진화·배틀 아이템 수집)는 아직 npm script 로 등록돼 있지 않아
+> `node scripts/build-items.mjs` 로 직접 실행한다.
 
 생성 파일(`*.generated.ts`)은 직접 수정하지 않는다.
 
