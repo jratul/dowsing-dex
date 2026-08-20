@@ -84,10 +84,10 @@ export const PLATINUM_HM_TABLE: HmRow[] = [
   { hm: 'HM02', move: '공중날기', pokemon: '찌르호크', location: '특정 NPC', badge: '6관 배지', note: '비버통이 배울 수 없는 유일한 비전. 찌르호크 전담' },
   { hm: 'HM03', move: '파도타기', pokemon: '비버통', location: '특정 NPC', badge: '5관 배지', note: '수중 이동 필수. 비버통에 배정해 파티원 슬롯을 확보' },
   { hm: 'HM04', move: '괴력', pokemon: '비버통', location: '특정 NPC', badge: '4관 배지', note: '바위 제거용. 비버통 담당' },
-  { hm: 'HM05', move: '안개걷기', pokemon: '비버통', location: '202번도로 NPC', badge: '1관 배지', note: '비버통에 배정. 안개 지역 진행용' },
+  { hm: 'HM05', move: '안개제거', pokemon: '비버통', location: '202번도로 NPC', badge: '1관 배지', note: '비버통에 배정. 안개 지역 진행용' },
   { hm: 'HM06', move: '바위깨기', pokemon: '비버통', location: '특정 NPC', badge: '3관 배지', note: '통로 개척용. 비버통 담당' },
   { hm: 'HM07', move: '폭포오르기', pokemon: '비버통', location: '특정 NPC', badge: '8관 배지', note: '후반 진행 필수. 비버통에 배정' },
-  { hm: 'HM08', move: '바위오르기', pokemon: '비버통', location: '특정 NPC', badge: '특정 배지', note: '절벽 진행용. 비버통 담당' },
+  { hm: 'HM08', move: '락클라임', pokemon: '비버통', location: '특정 NPC', badge: '특정 배지', note: '절벽 진행용. 비버통 담당' },
 ]
 
 export const PLATINUM_TM_NOTES = [
@@ -145,7 +145,7 @@ const CHIMCHAR_GUIDE: StarterGuideData = {
     {
       pokemonId: 392,
       pokemon: '초염몽',
-      finalMoves: ['화염방사 / 불꽃날리기', '인파이트 / 격투기', '지진', '쓰러뜨리기 / 돌진'],
+      finalMoves: ['화염방사 / 니트로차지', '인파이트 / 격투기', '지진', '깨트리다 / 돌진'],
       moveTable: [
         { move: '화염방사', how: 'TM35', usage: '불꽃 특수기. 4세대에서 특수 판정' },
         { move: '인파이트', how: 'Lv.41', usage: '격투 물리기. 방어·특방 하락 있지만 강력. 4관 E4 에스퍼 대항' },
@@ -392,12 +392,12 @@ const PIPLUP_GUIDE: StarterGuideData = {
     {
       pokemonId: 395,
       pokemon: '엠페르트',
-      finalMoves: ['파도타기', '플래시캐논', '아쿠아제트', '메탈클로'],
+      finalMoves: ['파도타기', '러스터캐논', '아쿠아제트', '메탈크로우'],
       moveTable: [
         { move: '파도타기', how: 'HM03', usage: '물 특수기. 전투용 메인 물 기술. 비버통이 이동 HM으로도 담당하지만 전투 화력은 엠페르트가 우위' },
-        { move: '플래시캐논', how: 'TM91', usage: '강철 특수기. 엠페르트의 높은 특공을 활용' },
+        { move: '러스터캐논', how: 'TM91', usage: '강철 특수기. 엠페르트의 높은 특공을 활용' },
         { move: '아쿠아제트', how: 'Lv.36', usage: '선제 물 물리기. 팽도리 Lv.36 자연 습득. 빈사 직전 상대 마무리용' },
-        { move: '메탈클로', how: 'Lv.16', usage: '강철 물리기. 팽도리 Lv.16 자연 습득. 바위·얼음 타입 물리 견제' },
+        { move: '메탈크로우', how: 'Lv.16', usage: '강철 물리기. 팽도리 Lv.16 자연 습득. 바위·얼음 타입 물리 견제' },
       ],
       notes: [
         '비버통이 파도타기(이동)와 폭포오르기를 담당하므로, 엠페르트는 4슬롯 모두 전투기로 채울 수 있다.',
@@ -641,10 +641,10 @@ const TURTWIG_GUIDE: StarterGuideData = {
     {
       pokemonId: 448,
       pokemon: '루카리오',
-      finalMoves: ['인파이트', '오라스피어', '아이언테일', '차지빔'],
+      finalMoves: ['인파이트', '파동탄', '아이언테일', '차지빔'],
       moveTable: [
         { move: '인파이트', how: 'Lv.42', usage: '격투 물리기. 리오르 Lv.42 자연 습득. 방어·특방 하락 있지만 강력' },
-        { move: '오라스피어', how: 'Lv.37', usage: '격투 특수기. 리오르 Lv.37 자연 습득. 빗나가지 않는 기술' },
+        { move: '파동탄', how: 'Lv.37', usage: '격투 특수기. 리오르 Lv.37 자연 습득. 빗나가지 않는 기술' },
         { move: '아이언테일', how: 'TM23', usage: '강철 물리기. 바위·얼음 타입 처리' },
         { move: '차지빔', how: 'TM57', usage: '전기 특수기. 50% 특공 상승 효과' },
       ],
@@ -657,12 +657,12 @@ const TURTWIG_GUIDE: StarterGuideData = {
     {
       pokemonId: 452,
       pokemon: '드래피온',
-      finalMoves: ['야이바스터', '독찌르기', '섀도우스틸', '야간습격'],
+      finalMoves: ['깜짝베기', '독찌르기', '섀도크루', '기습'],
       moveTable: [
-        { move: '야이바스터', how: '기술가르침', usage: '악 물리기. 생존구역 기술가르침. 주력 기술. 에스퍼·고스트 견제' },
+        { move: '깜짝베기', how: '기술가르침', usage: '악 물리기. 생존구역 기술가르침. 주력 기술. 에스퍼·고스트 견제' },
         { move: '독찌르기', how: 'TM84', usage: '독 물리기. 독 상태이상 부여' },
-        { move: '섀도우스틸', how: 'TM65', usage: '고스트 물리기. 5관 고스트 타입 처리' },
-        { move: '야간습격', how: '기술가르침', usage: '선제 악 물리기. 212번도로 기술가르침. 칼춤 후 강력' },
+        { move: '섀도크루', how: 'TM65', usage: '고스트 물리기. 5관 고스트 타입 처리' },
+        { move: '기습', how: '기술가르침', usage: '선제 악 물리기. 212번도로 기술가르침. 칼춤 후 강력' },
       ],
       notes: [
         '스콜피(451)를 120~121번도로에서 포획. Lv.40에서 드래피온 진화.',
@@ -1039,11 +1039,11 @@ const YUNJINSEOK_GUIDE: StarterGuideData = {
     {
       pokemonId: 445,
       pokemon: '한카리아스',
-      finalMoves: ['드래곤크루 / 역린', '지진', '바위오르기', '불대문자'],
+      finalMoves: ['드래곤크루 / 역린', '지진', '락클라임', '불대문자'],
       moveTable: [
         { move: '드래곤크루', how: 'Lv.33', usage: '드래곤 물리기. 한바이트 Lv.33 자연 습득. 챔피언 난천 드래곤 처리. 갸라도스 역린과 역할 분담' },
         { move: '지진', how: 'TM26', usage: '땅 물리기. 전기 타입 처리. 초염몽과 분담해 광범위 커버' },
-        { move: '바위오르기', how: 'HM08', usage: '절벽 진행 필드 기술. 전투에서 바위 물리기(비행 타입 2배)로도 활용' },
+        { move: '락클라임', how: 'HM08', usage: '절벽 진행 필드 기술. 전투에서 바위 물리기(비행 타입 2배)로도 활용' },
         { move: '불대문자', how: 'TM38', usage: '불꽃 특수기. 풀·강철·얼음·벌레 타입 견제. 초염몽이 없을 때 대체' },
       ],
       notes: [
@@ -1071,10 +1071,10 @@ const YUNJINSEOK_GUIDE: StarterGuideData = {
     {
       pokemonId: 400,
       pokemon: '비버통',
-      finalMoves: ['풀베기', '안개걷기', '바위깨기', '괴력'],
+      finalMoves: ['풀베기', '안개제거', '바위깨기', '괴력'],
       moveTable: [
         { move: '풀베기', how: 'HM01', usage: '풀숲 제거 필드 기술' },
-        { move: '안개걷기', how: 'HM05', usage: '안개 지역 진행. 202번도로 NPC에서 획득' },
+        { move: '안개제거', how: 'HM05', usage: '안개 지역 진행. 202번도로 NPC에서 획득' },
         { move: '바위깨기', how: 'HM06', usage: '통로 막힌 바위 제거. 비밀의길 진행 필수' },
         { move: '괴력', how: 'HM04', usage: '무거운 바위 밀기. 전투에서 강력한 노말 물리기로도 활용' },
       ],

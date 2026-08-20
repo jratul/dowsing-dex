@@ -190,7 +190,7 @@ export const HG_STORY_TM_PRIORITY: TmRow[] = [
 ]
 
 export const HG_STORY_TM_OPTIONAL: TmRow[] = [
-  { tm: 'TM15', move: '하이퍼빔', target: '갸라도스 / 헤라크로스', location: '관동 진행 시 상점', priority: '선택', desc: '1회 강공. 다음 턴 쉼이 있으므로 보스전 마무리용' },
+  { tm: 'TM15', move: '파괴광선', target: '갸라도스 / 헤라크로스', location: '관동 진행 시 상점', priority: '선택', desc: '1회 강공. 다음 턴 쉼이 있으므로 보스전 마무리용' },
   { tm: 'TM22', move: '솔라빔', target: '블레이범', location: '특정 NPC', priority: '선택', desc: '맑은날씨와 연계 시 강력. 아이템 확보 필요' },
   { tm: 'TM16', move: '빛의장막', target: '전룡 / 크로뱃', location: '금빛시티 백화점', priority: '선택', desc: '파티 방어 지원. 레드전 안정성 증가' },
 ]

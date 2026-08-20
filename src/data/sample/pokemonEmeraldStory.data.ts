@@ -436,12 +436,12 @@ const MUDKIP_GUIDE: StarterGuideData = {
     {
       pokemonId: 323,
       pokemon: '폭타',
-      finalMoves: ['화염방사', '바위떨굴기', '지진', '연기'],
+      finalMoves: ['화염방사', '스톤샤워', '지진', '연막'],
       moveTable: [
         { move: '화염방사', how: 'TM35', usage: '불꽃 특수기. 풀·얼음·벌레·강철 처리' },
-        { move: '바위떨굴기', how: 'Lv.습득', usage: '바위 물리기. 비행·불꽃·얼음 타입 처리' },
+        { move: '스톤샤워', how: 'Lv.습득', usage: '바위 물리기. 비행·불꽃·얼음 타입 처리' },
         { move: '지진', how: 'TM26', usage: '땅 물리기. 다른 멤버와 역할 분담' },
-        { move: '연기', how: 'Lv.습득', usage: '명중률 하락 유틸. 불리한 전투 탈출' },
+        { move: '연막', how: 'Lv.습득', usage: '명중률 하락 유틸. 불리한 전투 탈출' },
       ],
       notes: [
         '뇨모리(322)→폭타(Lv.33). 112~113번도로에서 뇨모리 포획.',
@@ -599,10 +599,10 @@ const TREECKO_GUIDE: StarterGuideData = {
     {
       pokemonId: 254,
       pokemon: '나무킹',
-      finalMoves: ['잎날가르기', '속임수 / 날카로움', '아이언테일', '에너지볼 / 에너지충전'],
+      finalMoves: ['잎날가르기', '속여때리기 / 베어가르기', '아이언테일', '에너지볼 / 차지빔'],
       moveTable: [
         { move: '잎날가르기', how: 'Lv.습득', usage: '풀 특수기. 주력 기술' },
-        { move: '속임수', how: 'Lv.습득', usage: '노말 물리기. 3세대 전용기. 상대 능력 변화를 역이용' },
+        { move: '속여때리기', how: 'Lv.습득', usage: '노말 물리기. 3세대 전용기. 상대 능력 변화를 역이용' },
         { move: '아이언테일', how: 'TM23', usage: '강철 물리기. 바위·얼음 타입 처리. TM23' },
         { move: '에너지볼', how: 'TM', usage: '풀 특수기. 잎날가르기보다 위력이 높은 버전' },
       ],
