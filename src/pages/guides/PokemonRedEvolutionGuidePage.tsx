@@ -4,7 +4,7 @@ import { Card } from '../../components/ui/Card'
 import { SpriteImage } from '../../components/pokemon/SpriteImage'
 import { GuideTable } from '../../components/guide/GuideTable'
 import { PokemonLink } from '../../components/guide/PokemonLink'
-import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
+import { linkifyGuideText } from '../../lib/linkifyGuideText'
 import { findSamplePokemon } from '../../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
 import {
@@ -13,6 +13,7 @@ import {
   RECOMMENDED_COMBO_1,
   RECOMMENDED_COMBO_2,
   RED_EVO_NAME_TO_ID,
+  RED_EVO_MOVE_NAMES,
   STONE_EVO_DETAILS,
   STONE_EVO_SUMMARY,
   STONE_EVO_TIER,
@@ -22,7 +23,7 @@ import {
 } from '../../data/sample/pokemonRedEvolution.data'
 
 function L(text: string) {
-  return linkifyPokemonNames(text, RED_EVO_NAME_TO_ID)
+  return linkifyGuideText(text, RED_EVO_NAME_TO_ID, RED_EVO_MOVE_NAMES)
 }
 
 function SectionHeading({ children }: { children: string }) {

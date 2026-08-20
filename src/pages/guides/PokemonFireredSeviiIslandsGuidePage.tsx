@@ -4,7 +4,7 @@ import { Card } from '../../components/ui/Card'
 import { GuideTable } from '../../components/guide/GuideTable'
 import { PokemonLink } from '../../components/guide/PokemonLink'
 import { SpriteImage } from '../../components/pokemon/SpriteImage'
-import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
+import { linkifyGuideText } from '../../lib/linkifyGuideText'
 import { findSamplePokemon } from '../../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
 import {
@@ -13,6 +13,7 @@ import {
   SEVII_ITEM_TABLE,
   SEVII_LORELEI_NOTE,
   SEVII_NAME_TO_ID,
+  SEVII_MOVE_NAMES,
   SEVII_NATIONAL_DEX_NOTE,
   SEVII_ROCKET_WAREHOUSE,
   SEVII_STORY_RAINBOW_STEPS,
@@ -21,7 +22,7 @@ import {
 } from '../../data/sample/pokemonFireredSeviiIslands.data'
 
 function L(text: string) {
-  return linkifyPokemonNames(text, SEVII_NAME_TO_ID)
+  return linkifyGuideText(text, SEVII_NAME_TO_ID, SEVII_MOVE_NAMES)
 }
 
 function SectionHeading({ children }: { children: string }) {

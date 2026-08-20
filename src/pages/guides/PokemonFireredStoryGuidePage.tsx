@@ -6,7 +6,7 @@ import { TypeBadge } from '../../components/pokemon/TypeBadge'
 import { GuideTable } from '../../components/guide/GuideTable'
 import { PokemonLink } from '../../components/guide/PokemonLink'
 import { MoveLink } from '../../components/guide/MoveLink'
-import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
+import { linkifyGuideText } from '../../lib/linkifyGuideText'
 import { SAMPLE_POKEMON, findSamplePokemon } from '../../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
 import { cn } from '../../lib/cn'
@@ -25,6 +25,7 @@ import {
   FIRERED_STORY_HM_TABLE,
   FIRERED_STORY_MOVESETS,
   FIRERED_STORY_NAME_TO_ID,
+  FIRERED_STORY_MOVE_NAMES,
   FIRERED_STORY_STAGES,
   FIRERED_STORY_STONE_EVO_TABLE,
   FIRERED_STORY_TRADE_EVO_TABLE,
@@ -46,7 +47,7 @@ function HowBadge({ how }: { how: string }) {
 }
 
 function L(text: string) {
-  return linkifyPokemonNames(text, FIRERED_STORY_NAME_TO_ID)
+  return linkifyGuideText(text, FIRERED_STORY_NAME_TO_ID, FIRERED_STORY_MOVE_NAMES)
 }
 
 function SectionHeading({ children }: { children: string }) {

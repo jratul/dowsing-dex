@@ -8,7 +8,7 @@ import { TypeBadge } from '../../components/pokemon/TypeBadge'
 import { GuideTable } from '../../components/guide/GuideTable'
 import { PokemonLink } from '../../components/guide/PokemonLink'
 import { MoveLink } from '../../components/guide/MoveLink'
-import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
+import { linkifyGuideText } from '../../lib/linkifyGuideText'
 import { SAMPLE_POKEMON, findSamplePokemon } from '../../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
 import { cn } from '../../lib/cn'
@@ -19,6 +19,7 @@ import {
   EMERALD_GOALS,
   EMERALD_HM_TABLE,
   EMERALD_NAME_TO_ID,
+  EMERALD_MOVE_NAMES,
   EMERALD_STARTERS,
   EMERALD_TM_NOTES,
 } from '../../data/sample/pokemonEmeraldStory.data'
@@ -33,7 +34,7 @@ function HowBadge({ how }: { how: string }) {
 }
 
 function L(text: string) {
-  return linkifyPokemonNames(text, EMERALD_NAME_TO_ID)
+  return linkifyGuideText(text, EMERALD_NAME_TO_ID, EMERALD_MOVE_NAMES)
 }
 
 function SectionHeading({ children }: { children: string }) {

@@ -7,7 +7,7 @@ import { TypeBadge } from '../../components/pokemon/TypeBadge'
 import { GuideTable } from '../../components/guide/GuideTable'
 import { PokemonLink } from '../../components/guide/PokemonLink'
 import { MoveLink } from '../../components/guide/MoveLink'
-import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
+import { linkifyGuideText } from '../../lib/linkifyGuideText'
 import { SAMPLE_POKEMON, findSamplePokemon } from '../../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
 import { findMoveByName } from '../../data/sample/moves.sample'
@@ -25,6 +25,7 @@ import {
   RED_STORY_HM_TABLE,
   RED_STORY_MOVESETS,
   RED_STORY_NAME_TO_ID,
+  RED_STORY_MOVE_NAMES,
   RED_STORY_STAGES,
   RED_STORY_STONE_EVO_TABLE,
   RED_STORY_SUMMARY_TABLE,
@@ -35,7 +36,7 @@ import {
 } from '../../data/sample/pokemonRedStory.data'
 
 function L(text: string) {
-  return linkifyPokemonNames(text, RED_STORY_NAME_TO_ID)
+  return linkifyGuideText(text, RED_STORY_NAME_TO_ID, RED_STORY_MOVE_NAMES)
 }
 
 function HowBadge({ how }: { how: string }) {

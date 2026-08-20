@@ -8,7 +8,7 @@ import { TypeBadge } from '../../components/pokemon/TypeBadge'
 import { GuideTable } from '../../components/guide/GuideTable'
 import { PokemonLink } from '../../components/guide/PokemonLink'
 import { MoveLink } from '../../components/guide/MoveLink'
-import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
+import { linkifyGuideText } from '../../lib/linkifyGuideText'
 import { SAMPLE_POKEMON, findSamplePokemon } from '../../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
 import { cn } from '../../lib/cn'
@@ -19,12 +19,13 @@ import {
   PLATINUM_GOALS,
   PLATINUM_HM_TABLE,
   PLATINUM_NAME_TO_ID,
+  PLATINUM_MOVE_NAMES,
   PLATINUM_STARTERS,
   PLATINUM_TM_NOTES,
 } from '../../data/sample/pokemonPlatinumStory.data'
 
 function L(text: string) {
-  return linkifyPokemonNames(text, PLATINUM_NAME_TO_ID)
+  return linkifyGuideText(text, PLATINUM_NAME_TO_ID, PLATINUM_MOVE_NAMES)
 }
 
 function HowBadge({ how }: { how: string }) {

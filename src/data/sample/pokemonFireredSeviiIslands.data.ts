@@ -229,3 +229,13 @@ const SEVII_NAME_TO_ID_ENTRIES: [string, number][] = [
 export const SEVII_NAME_TO_ID = new Map<string, number>(
   [...SEVII_NAME_TO_ID_ENTRIES].sort((a, b) => b[0].length - a[0].length),
 )
+
+/**
+ * 이 공략 본문에 등장하는 기술 이름 화이트리스트.
+ * 전체 기술로 자동 매칭하면 "역할"·"방어" 같은 일반 명사나 다른 낱말의 일부가
+ * 기술로 잘못 링크된다. 본문에 새 기술을 쓰면 여기에도 추가해야 링크가 걸린다.
+ */
+export const SEVII_MOVE_NAMES: ReadonlySet<string> = new Set([
+  '사이코키네시스', '10만볼트', '폭포오르기', '고속이동', '수면가루', '파도타기',
+  '냉동빔', '봉인', '지진',
+])

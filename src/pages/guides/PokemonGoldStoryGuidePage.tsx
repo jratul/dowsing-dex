@@ -7,7 +7,7 @@ import { TypeBadge } from '../../components/pokemon/TypeBadge'
 import { GuideTable } from '../../components/guide/GuideTable'
 import { PokemonLink } from '../../components/guide/PokemonLink'
 import { MoveLink } from '../../components/guide/MoveLink'
-import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
+import { linkifyGuideText } from '../../lib/linkifyGuideText'
 import { SAMPLE_POKEMON, findSamplePokemon } from '../../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
 import { findMoveByName } from '../../data/sample/moves.sample'
@@ -22,6 +22,7 @@ import {
   GOLD_STORY_MID_GAME_NOTE,
   GOLD_STORY_MOVESETS,
   GOLD_STORY_NAME_TO_ID,
+  GOLD_STORY_MOVE_NAMES,
   GOLD_STORY_RED_TABLE,
   GOLD_STORY_SNORLAX_NOTES,
   GOLD_STORY_SNORLAX_STEPS,
@@ -34,7 +35,7 @@ import {
 } from '../../data/sample/pokemonGoldStory.data'
 
 function L(text: string) {
-  return linkifyPokemonNames(text, GOLD_STORY_NAME_TO_ID)
+  return linkifyGuideText(text, GOLD_STORY_NAME_TO_ID, GOLD_STORY_MOVE_NAMES)
 }
 
 function HowBadge({ how }: { how: string }) {
