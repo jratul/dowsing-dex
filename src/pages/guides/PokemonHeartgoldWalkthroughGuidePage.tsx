@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom'
 import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
 import { Card } from '../../components/ui/Card'
 import { GuideTable } from '../../components/guide/GuideTable'
-import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
+import { linkifyGuideText } from '../../lib/linkifyGuideText'
+import { MoveLink } from '../../components/guide/MoveLink'
 import { SAMPLE_POKEMON } from '../../data/sample/pokemon.sample'
 import { PokemonLink } from '../../components/guide/PokemonLink'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
@@ -15,10 +16,12 @@ import {
   HGW_YOUTUBER_PICKS,
   HGW_ROLE_COMPARISONS,
   HGW_NAME_TO_ID,
+  HGW_MOVE_NAMES,
 } from '../../data/sample/pokemonHeartgoldWalkthrough.data'
 
+// 본문의 포켓몬 이름과 기술 이름을 한 번에 링크로 바꾼다.
 function L(text: string) {
-  return linkifyPokemonNames(text, HGW_NAME_TO_ID)
+  return linkifyGuideText(text, HGW_NAME_TO_ID, HGW_MOVE_NAMES)
 }
 
 function HowBadge({ how }: { how: string }) {
@@ -182,7 +185,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
             headers={['HM', '기술', '담당', '입수 장소', '사용 배지']}
             rows={HGW_HM_TABLE.map((r) => [
               <HowBadge key={r.hm} how={r.hm} />,
-              r.move,
+              <MoveLink key={`${r.hm}-move`} name={r.move} />,
               L(r.holder),
               r.obtainedAt,
               r.badge,
