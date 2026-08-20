@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom'
-import { Card } from '../components/ui/Card'
-import { PokemonCard } from '../components/pokemon/PokemonCard'
-import { SpriteImage } from '../components/pokemon/SpriteImage'
-import { TypeBadge } from '../components/pokemon/TypeBadge'
-import { GuideTable } from '../components/guide/GuideTable'
-import { PokemonLink } from '../components/guide/PokemonLink'
-import { MoveLink } from '../components/guide/MoveLink'
-import { linkifyPokemonNames } from '../lib/linkifyPokemonNames'
-import { SAMPLE_POKEMON, findSamplePokemon } from '../data/sample/pokemon.sample'
-import { CATEGORY_STYLE } from '../lib/guideCategory'
-import { cn } from '../lib/cn'
-import { findMoveByName } from '../data/sample/moves.sample'
-import { GuidePageLayout } from '../components/guide/GuidePageLayout'
+import { Card } from '../../components/ui/Card'
+import { PokemonCard } from '../../components/pokemon/PokemonCard'
+import { SpriteImage } from '../../components/pokemon/SpriteImage'
+import { TypeBadge } from '../../components/pokemon/TypeBadge'
+import { GuideTable } from '../../components/guide/GuideTable'
+import { PokemonLink } from '../../components/guide/PokemonLink'
+import { MoveLink } from '../../components/guide/MoveLink'
+import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
+import { SAMPLE_POKEMON, findSamplePokemon } from '../../data/sample/pokemon.sample'
+import { CATEGORY_STYLE } from '../../lib/guideCategory'
+import { cn } from '../../lib/cn'
+import { findMoveByName } from '../../data/sample/moves.sample'
+import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
 import {
   FIRERED_STORY_CAUTIONS,
   FIRERED_STORY_CATCH_TABLE,
@@ -34,7 +34,7 @@ import {
   FIRERED_STORY_TM_NOTES,
   FIRERED_STORY_TM_OPTIONAL,
   FIRERED_STORY_TM_PRIORITY,
-} from '../data/sample/pokemonFireredStory.data'
+} from '../../data/sample/pokemonFireredStory.data'
 
 function HowBadge({ how }: { how: string }) {
   if (how.startsWith('HM')) return <span className="inline-block rounded bg-red-100 px-1.5 py-0.5 text-xxs font-bold text-red-700 dark:bg-red-900/40 dark:text-red-300">{how}</span>

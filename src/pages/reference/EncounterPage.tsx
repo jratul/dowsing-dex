@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { SAMPLE_POKEMON } from '../data/sample/pokemon.sample'
-import { TypeBadge } from '../components/pokemon/TypeBadge'
-import { cn } from '../lib/cn'
-import type { Pokemon } from '../types/pokemon'
+import { SAMPLE_POKEMON } from '../../data/sample/pokemon.sample'
+import { TypeBadge } from '../../components/pokemon/TypeBadge'
+import { cn } from '../../lib/cn'
+import type { Pokemon } from '../../types/pokemon'
 
 const GENERATIONS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 

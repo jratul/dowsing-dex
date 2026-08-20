@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-import { GuidePageLayout } from '../components/guide/GuidePageLayout'
-import { Card } from '../components/ui/Card'
-import { SpriteImage } from '../components/pokemon/SpriteImage'
-import { GuideTable } from '../components/guide/GuideTable'
-import { PokemonLink } from '../components/guide/PokemonLink'
-import { linkifyPokemonNames } from '../lib/linkifyPokemonNames'
-import { findSamplePokemon } from '../data/sample/pokemon.sample'
-import { CATEGORY_STYLE } from '../lib/guideCategory'
+import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
+import { Card } from '../../components/ui/Card'
+import { SpriteImage } from '../../components/pokemon/SpriteImage'
+import { GuideTable } from '../../components/guide/GuideTable'
+import { PokemonLink } from '../../components/guide/PokemonLink'
+import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
+import { findSamplePokemon } from '../../data/sample/pokemon.sample'
+import { CATEGORY_STYLE } from '../../lib/guideCategory'
 import {
   MOVE_CHOICE_GUIDE,
   PRIORITY_FOR_CHARMANDER,
@@ -19,7 +19,7 @@ import {
   TRADE_EVO_DETAILS,
   TRADE_EVO_SUMMARY,
   TRADE_EVO_TIER,
-} from '../data/sample/pokemonRedEvolution.data'
+} from '../../data/sample/pokemonRedEvolution.data'
 
 function L(text: string) {
   return linkifyPokemonNames(text, RED_EVO_NAME_TO_ID)

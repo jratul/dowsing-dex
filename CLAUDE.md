@@ -37,6 +37,10 @@ src/
     guide/        # GuideCard, GuideTable, PokemonLink
     layout/       # SiteHeader(모바일 햄버거 메뉴 포함), Hero, RouteErrorBoundary
   pages/          # 라우트별 페이지 컴포넌트
+    HomePage.tsx  # 홈만 최상위
+    pokedex/      # PokedexPage, PokemonDetailPage
+    reference/    # TypeChartPage, MovesPage, TmListPage, EncounterPage, NaturesPage, AbilitiesPage, ItemsPage
+    guides/       # GuideListPage, GuideDetailPage, Pokemon*GuidePage (13종)
   lib/
     cn.ts                  # clsx + tailwind-merge 헬퍼
     typeChart.ts           # 18타입 CHART, mult(), profile(), COLOR, TYPE_BG_CLASS

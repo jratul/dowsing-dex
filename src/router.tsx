@@ -10,122 +10,122 @@ export const router = createBrowserRouter([
     errorElement: <RouteErrorBoundary />,
     children: [
       { path: '/', lazy: () => import('./pages/HomePage').then((m) => ({ Component: m.HomePage })) },
-      { path: '/pokedex', lazy: () => import('./pages/PokedexPage').then((m) => ({ Component: m.PokedexPage })) },
+      { path: '/pokedex', lazy: () => import('./pages/pokedex/PokedexPage').then((m) => ({ Component: m.PokedexPage })) },
       {
         path: '/pokemon/:id',
-        lazy: () => import('./pages/PokemonDetailPage').then((m) => ({ Component: m.PokemonDetailPage })),
+        lazy: () => import('./pages/pokedex/PokemonDetailPage').then((m) => ({ Component: m.PokemonDetailPage })),
       },
-      { path: '/guides', lazy: () => import('./pages/GuideListPage').then((m) => ({ Component: m.GuideListPage })) },
+      { path: '/guides', lazy: () => import('./pages/guides/GuideListPage').then((m) => ({ Component: m.GuideListPage })) },
       {
         // 표/이미지가 풍부한 전용 레이아웃이 필요한 공략은 :slug 동적 라우트보다 구체적인
         // 정적 경로로 먼저 선언해 전용 페이지 컴포넌트를 사용한다.
         path: '/guides/pokemon-gold-story',
         lazy: () =>
-          import('./pages/PokemonGoldStoryGuidePage').then((m) => ({ Component: m.PokemonGoldStoryGuidePage })),
+          import('./pages/guides/PokemonGoldStoryGuidePage').then((m) => ({ Component: m.PokemonGoldStoryGuidePage })),
       },
       {
         path: '/guides/pokemon-red-story',
         lazy: () =>
-          import('./pages/PokemonRedStoryGuidePage').then((m) => ({ Component: m.PokemonRedStoryGuidePage })),
+          import('./pages/guides/PokemonRedStoryGuidePage').then((m) => ({ Component: m.PokemonRedStoryGuidePage })),
       },
       {
         path: '/guides/pokemon-firered-story',
         lazy: () =>
-          import('./pages/PokemonFireredStoryGuidePage').then((m) => ({
+          import('./pages/guides/PokemonFireredStoryGuidePage').then((m) => ({
             Component: m.PokemonFireredStoryGuidePage,
           })),
       },
       {
         path: '/guides/pokemon-firered-sevii-islands',
         lazy: () =>
-          import('./pages/PokemonFireredSeviiIslandsGuidePage').then((m) => ({
+          import('./pages/guides/PokemonFireredSeviiIslandsGuidePage').then((m) => ({
             Component: m.PokemonFireredSeviiIslandsGuidePage,
           })),
       },
       {
         path: '/guides/pokemon-red-evolution',
         lazy: () =>
-          import('./pages/PokemonRedEvolutionGuidePage').then((m) => ({
+          import('./pages/guides/PokemonRedEvolutionGuidePage').then((m) => ({
             Component: m.PokemonRedEvolutionGuidePage,
           })),
       },
       {
         path: '/guides/pokemon-heartgold-story',
         lazy: () =>
-          import('./pages/PokemonHeartgoldStoryGuidePage').then((m) => ({
+          import('./pages/guides/PokemonHeartgoldStoryGuidePage').then((m) => ({
             Component: m.PokemonHeartgoldStoryGuidePage,
           })),
       },
       {
         path: '/guides/pokemon-heartgold-walkthrough',
         lazy: () =>
-          import('./pages/PokemonHeartgoldWalkthroughGuidePage').then((m) => ({
+          import('./pages/guides/PokemonHeartgoldWalkthroughGuidePage').then((m) => ({
             Component: m.PokemonHeartgoldWalkthroughGuidePage,
           })),
       },
       {
         path: '/guides/pokemon-heartgold-stones',
         lazy: () =>
-          import('./pages/PokemonHeartgoldStonesGuidePage').then((m) => ({
+          import('./pages/guides/PokemonHeartgoldStonesGuidePage').then((m) => ({
             Component: m.PokemonHeartgoldStonesGuidePage,
           })),
       },
       {
         path: '/guides/pokemon-heartgold-moves',
         lazy: () =>
-          import('./pages/PokemonHeartgoldMovesGuidePage').then((m) => ({
+          import('./pages/guides/PokemonHeartgoldMovesGuidePage').then((m) => ({
             Component: m.PokemonHeartgoldMovesGuidePage,
           })),
       },
       {
         path: '/guides/pokemon-unown',
         lazy: () =>
-          import('./pages/PokemonUnownGuidePage').then((m) => ({
+          import('./pages/guides/PokemonUnownGuidePage').then((m) => ({
             Component: m.PokemonUnownGuidePage,
           })),
       },
       {
         path: '/guides/pokemon-hgss-collection',
         lazy: () =>
-          import('./pages/PokemonHGSSCollectionGuidePage').then((m) => ({
+          import('./pages/guides/PokemonHGSSCollectionGuidePage').then((m) => ({
             Component: m.PokemonHGSSCollectionGuidePage,
           })),
       },
       {
         path: '/guides/pokemon-emerald-story',
         lazy: () =>
-          import('./pages/PokemonEmeraldStoryGuidePage').then((m) => ({
+          import('./pages/guides/PokemonEmeraldStoryGuidePage').then((m) => ({
             Component: m.PokemonEmeraldStoryGuidePage,
           })),
       },
       {
         path: '/guides/pokemon-platinum-story',
         lazy: () =>
-          import('./pages/PokemonPlatinumStoryGuidePage').then((m) => ({
+          import('./pages/guides/PokemonPlatinumStoryGuidePage').then((m) => ({
             Component: m.PokemonPlatinumStoryGuidePage,
           })),
       },
       {
         path: '/guides/pokemon-platinum-progress',
         lazy: () =>
-          import('./pages/PokemonPlatinumProgressGuidePage').then((m) => ({
+          import('./pages/guides/PokemonPlatinumProgressGuidePage').then((m) => ({
             Component: m.PokemonPlatinumProgressGuidePage,
           })),
       },
       {
         path: '/guides/:slug',
-        lazy: () => import('./pages/GuideDetailPage').then((m) => ({ Component: m.GuideDetailPage })),
+        lazy: () => import('./pages/guides/GuideDetailPage').then((m) => ({ Component: m.GuideDetailPage })),
       },
-      { path: '/types', lazy: () => import('./pages/TypeChartPage').then((m) => ({ Component: m.TypeChartPage })) },
-      { path: '/moves', lazy: () => import('./pages/MovesPage').then((m) => ({ Component: m.MovesPage })) },
-      { path: '/tm', lazy: () => import('./pages/TmListPage').then((m) => ({ Component: m.TmListPage })) },
+      { path: '/types', lazy: () => import('./pages/reference/TypeChartPage').then((m) => ({ Component: m.TypeChartPage })) },
+      { path: '/moves', lazy: () => import('./pages/reference/MovesPage').then((m) => ({ Component: m.MovesPage })) },
+      { path: '/tm', lazy: () => import('./pages/reference/TmListPage').then((m) => ({ Component: m.TmListPage })) },
       {
         path: '/encounter',
-        lazy: () => import('./pages/EncounterPage').then((m) => ({ Component: m.EncounterPage })),
+        lazy: () => import('./pages/reference/EncounterPage').then((m) => ({ Component: m.EncounterPage })),
       },
-      { path: '/natures', lazy: () => import('./pages/NaturesPage').then((m) => ({ Component: m.NaturesPage })) },
-      { path: '/abilities', lazy: () => import('./pages/AbilitiesPage').then((m) => ({ Component: m.AbilitiesPage })) },
-      { path: '/items', lazy: () => import('./pages/ItemsPage').then((m) => ({ Component: m.ItemsPage })) },
+      { path: '/natures', lazy: () => import('./pages/reference/NaturesPage').then((m) => ({ Component: m.NaturesPage })) },
+      { path: '/abilities', lazy: () => import('./pages/reference/AbilitiesPage').then((m) => ({ Component: m.AbilitiesPage })) },
+      { path: '/items', lazy: () => import('./pages/reference/ItemsPage').then((m) => ({ Component: m.ItemsPage })) },
     ],
   },
   { path: '/dev/showcase', lazy: () => import('./dev/ShowcasePage').then((m) => ({ Component: m.ShowcasePage })) },

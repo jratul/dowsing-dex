@@ -1,31 +1,27 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { GuidePageLayout } from '../components/guide/GuidePageLayout'
-import { Card } from '../components/ui/Card'
-import { PokemonCard } from '../components/pokemon/PokemonCard'
-import { SpriteImage } from '../components/pokemon/SpriteImage'
-import { TypeBadge } from '../components/pokemon/TypeBadge'
-import { GuideTable } from '../components/guide/GuideTable'
-import { PokemonLink } from '../components/guide/PokemonLink'
-import { MoveLink } from '../components/guide/MoveLink'
-import { linkifyPokemonNames } from '../lib/linkifyPokemonNames'
-import { SAMPLE_POKEMON, findSamplePokemon } from '../data/sample/pokemon.sample'
-import { CATEGORY_STYLE } from '../lib/guideCategory'
-import { cn } from '../lib/cn'
-import { findMoveByName } from '../data/sample/moves.sample'
-import type { StarterGuideData } from '../data/sample/pokemonPlatinumStory.data'
+import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
+import { Card } from '../../components/ui/Card'
+import { PokemonCard } from '../../components/pokemon/PokemonCard'
+import { SpriteImage } from '../../components/pokemon/SpriteImage'
+import { TypeBadge } from '../../components/pokemon/TypeBadge'
+import { GuideTable } from '../../components/guide/GuideTable'
+import { PokemonLink } from '../../components/guide/PokemonLink'
+import { MoveLink } from '../../components/guide/MoveLink'
+import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
+import { SAMPLE_POKEMON, findSamplePokemon } from '../../data/sample/pokemon.sample'
+import { CATEGORY_STYLE } from '../../lib/guideCategory'
+import { cn } from '../../lib/cn'
+import { findMoveByName } from '../../data/sample/moves.sample'
+import type { StarterGuideData } from '../../data/sample/pokemonEmeraldStory.data'
 import {
-  PLATINUM_EVOLUTION_TIMING,
-  PLATINUM_GOALS,
-  PLATINUM_HM_TABLE,
-  PLATINUM_NAME_TO_ID,
-  PLATINUM_STARTERS,
-  PLATINUM_TM_NOTES,
-} from '../data/sample/pokemonPlatinumStory.data'
-
-function L(text: string) {
-  return linkifyPokemonNames(text, PLATINUM_NAME_TO_ID)
-}
+  EMERALD_GYM_COMMON_NOTE,
+  EMERALD_GOALS,
+  EMERALD_HM_TABLE,
+  EMERALD_NAME_TO_ID,
+  EMERALD_STARTERS,
+  EMERALD_TM_NOTES,
+} from '../../data/sample/pokemonEmeraldStory.data'
 
 function HowBadge({ how }: { how: string }) {
   if (how.startsWith('HM')) return <span className="inline-block rounded bg-red-100 px-1.5 py-0.5 text-xxs font-bold text-red-700 dark:bg-red-900/40 dark:text-red-300">{how}</span>
@@ -36,17 +32,8 @@ function HowBadge({ how }: { how: string }) {
   return <span className="inline-block rounded bg-surface-hover px-1.5 py-0.5 text-xxs font-bold text-ink-muted">{how}</span>
 }
 
-const GYM_CITY_IMAGE: Record<string, string> = {
-  '연고시티': '/images/guides/platinum/hearthome.png',
-  '장막시티': '/images/guides/platinum/veilstone.png',
-  '들판시티': '/images/guides/platinum/pastoria.png',
-  '선단시티': '/images/guides/platinum/snowpoint.png',
-  '물가시티': '/images/guides/platinum/sunyshore.png',
-}
-
-function getGymCityImage(title: string): string | undefined {
-  const city = title.match(/\(([^)]+)\)/)?.[1]
-  return city ? GYM_CITY_IMAGE[city] : undefined
+function L(text: string) {
+  return linkifyPokemonNames(text, EMERALD_NAME_TO_ID)
 }
 
 function SectionHeading({ children }: { children: string }) {
@@ -159,29 +146,18 @@ function StarterContent({ starter }: { starter: StarterGuideData }) {
       {/* 체육관 대응 */}
       <Card className="mb-6 p-4">
         <SectionHeading>체육관 대응</SectionHeading>
+        <p className="mb-3 text-xs text-ink-muted">{EMERALD_GYM_COMMON_NOTE}</p>
         <div className="space-y-4">
-          {starter.gymMatchups.map((boss) => {
-            const cityImg = getGymCityImage(boss.title)
-            return (
-              <div key={boss.title} className="overflow-hidden rounded-card border border-border">
-                <div className="border-b border-border bg-surface-hover px-3 py-2">
-                  <p className="text-sm font-black text-ink">{boss.title}</p>
-                </div>
-                {cityImg && (
-                  <div className="flex justify-center bg-surface-hover p-2">
-                    <img src={cityImg} alt="" className="max-h-56 w-auto max-w-full" />
-                  </div>
-                )}
-                <div className="p-3">
-                  <p className="mb-2 text-xs text-ink-muted">{boss.note}</p>
-                  <GuideTable
-                    headers={['상대 포켓몬', '대응책']}
-                    rows={boss.rows.map((r) => [r.opponent, L(r.answer)])}
-                  />
-                </div>
-              </div>
-            )
-          })}
+          {starter.gymMatchups.map((boss) => (
+            <div key={boss.title} className="rounded-card border border-border p-3">
+              <p className="mb-1 text-sm font-black text-ink">{boss.title}</p>
+              <p className="mb-2 text-xs text-ink-muted">{boss.note}</p>
+              <GuideTable
+                headers={['상대 포켓몬', '대응책']}
+                rows={boss.rows.map((r) => [r.opponent, L(r.answer)])}
+              />
+            </div>
+          ))}
         </div>
       </Card>
 
@@ -224,7 +200,7 @@ function StarterContent({ starter }: { starter: StarterGuideData }) {
       {/* 보조 포켓몬 */}
       {starter.support.length > 0 && (
         <Card className="mb-6 p-4">
-          <SectionHeading>보조 포켓몬 (선택)</SectionHeading>
+          <SectionHeading>보조 포켓몬</SectionHeading>
           <GuideTable
             headers={['포켓몬', '역할', '획득 시점']}
             rows={starter.support.map((r) => [
@@ -249,65 +225,44 @@ function StarterContent({ starter }: { starter: StarterGuideData }) {
   )
 }
 
-export function PokemonPlatinumStoryGuidePage() {
+export function PokemonEmeraldStoryGuidePage() {
   const style = CATEGORY_STYLE['공략']
-  const [selectedId, setSelectedId] = useState(PLATINUM_STARTERS[0].id)
-  const activeStarter = PLATINUM_STARTERS.find((s) => s.id === selectedId) ?? PLATINUM_STARTERS[0]
+  const [selectedId, setSelectedId] = useState(EMERALD_STARTERS[0].id)
+  const activeStarter = EMERALD_STARTERS.find((s) => s.id === selectedId) ?? EMERALD_STARTERS[0]
 
   return (
     <GuidePageLayout refreshKey={selectedId}>
-      {/* 페이지 헤더 — 떡잎마을 배경 */}
-      <div className="relative mb-6 h-44 overflow-hidden rounded-card sm:h-52">
-        <img
-          src="/images/guides/platinum/twinleaf.png"
-          alt="떡잎마을"
-          className="h-full w-full object-cover object-top"
-        />
-        <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent" />
-        <div className="absolute top-3 left-3 flex items-center gap-2">
-          <Link to="/guides" className="rounded-chip bg-black/40 px-2 py-1 text-xs font-bold text-white/80 hover:text-white">
-            ← 공략 목록
-          </Link>
-          <span className={`rounded-chip bg-white px-2 py-0.5 text-xs font-bold ${style.pillClass}`}>공략</span>
-        </div>
-        <div className="absolute bottom-4 left-4 right-4">
-          <h1 className="text-xl font-black text-white sm:text-2xl">포켓몬 플래티넘(기라티나)버전 스토리 엔트리 공략</h1>
-        </div>
+      <div className="mb-2 flex items-center gap-2">
+        <Link to="/guides" className="text-sm font-bold text-ink-muted hover:text-ink">
+          ← 공략 목록
+        </Link>
+        <span className={`rounded-chip bg-white px-2 py-0.5 text-xs font-bold ${style.pillClass}`}>공략</span>
       </div>
+
+      <h1 className="mb-4 text-2xl font-black text-ink">포켓몬 에메랄드버전 스토리 엔트리 공략</h1>
 
       {/* 기준 */}
       <Card className="mb-6 p-4">
         <SectionHeading>기준</SectionHeading>
         <ul className="list-disc space-y-1 pl-5 text-sm text-ink">
-          <li>대상 게임: 포켓몬스터 플래티넘 (기라티나 버전)</li>
-          <li>세대 기준: 4세대(다이아몬드·펄·플래티넘). 브릴리언트 다이아몬드·샤이닝 펄 제외</li>
-          <li>특이사항: 4세대에서 물리/특수 분리가 기술 단위로 적용됨. 격투 기술 = 물리, 에스퍼 기술 = 특수 등</li>
-          <li>챔피언 난천(Cynthia)은 신오지방 역사상 가장 어려운 챔피언 중 하나. 한카리아스에 주의</li>
+          <li>대상 게임: 포켓몬스터 에메랄드버전</li>
+          <li>세대 기준: 3세대 원본(루비·사파이어·에메랄드). 오메가루비·알파사파이어 제외</li>
+          <li>특이사항: 에메랄드는 챔피언이 루비/사파이어의 쓰루기 대신 미라(물 타입)임</li>
+          <li>물리/특수 분류: 3세대에서는 타입 전체가 물리 또는 특수로 구분됨 (기술별 아님)</li>
         </ul>
         <p className="mt-3 text-sm font-bold text-ink-faint">목적</p>
         <ul className="list-disc space-y-1 pl-5 text-sm text-ink">
-          {PLATINUM_GOALS.map((g) => (
+          {EMERALD_GOALS.map((g) => (
             <li key={g}>{g}</li>
           ))}
         </ul>
       </Card>
 
-      {/* 모래내마을 — 박사 연구소 */}
-      <div className="mb-6 overflow-hidden rounded-card border border-border">
-        <div className="border-b border-border bg-surface-hover px-3 py-2">
-          <p className="text-xs font-bold text-ink-faint">떡잎마을 → 모래내마을</p>
-          <p className="text-sm font-black text-ink">모래내마을 박사 연구소 — 포켓몬 도감 입수</p>
-        </div>
-        <div className="flex justify-center bg-surface-hover p-2">
-          <img src="/images/guides/platinum/sandgem.png" alt="모래내마을" className="max-h-56 w-auto max-w-full" />
-        </div>
-      </div>
-
       {/* 스타터 선택 탭 */}
       <div className="mb-6">
         <p className="mb-2 text-sm font-bold text-ink-faint">스타팅 포켓몬 선택</p>
         <div className="flex gap-2 overflow-x-auto pb-1">
-          {PLATINUM_STARTERS.map((s) => {
+          {EMERALD_STARTERS.map((s) => {
             const p = SAMPLE_POKEMON.find((pk) => pk.id === s.starterPokemonId)
             return (
               <button
@@ -324,7 +279,7 @@ export function PokemonPlatinumStoryGuidePage() {
                 {p && (
                   <img src={p.spriteUrl} alt="" width={24} height={24} style={{ imageRendering: 'pixelated' }} className="h-6 w-6" />
                 )}
-                {s.id === 'yunjinseok' ? s.nameKo : `${s.nameKo} 스타팅`}
+                {s.nameKo} 스타팅
               </button>
             )
           })}
@@ -336,33 +291,13 @@ export function PokemonPlatinumStoryGuidePage() {
         <SectionHeading>HM 배분 (공통)</SectionHeading>
         <GuideTable
           headers={['HM', '기술', '담당', '획득처', '필요배지', '메모']}
-          rows={PLATINUM_HM_TABLE.map((r) => [r.hm, r.move, L(r.pokemon), r.location, r.badge, r.note])}
+          rows={EMERALD_HM_TABLE.map((r) => [r.hm, r.move, L(r.pokemon), r.location, r.badge, r.note])}
         />
         <ul className="mt-3 list-disc space-y-1 pl-5 text-xs text-ink-muted">
-          {PLATINUM_TM_NOTES.map((n) => (
+          {EMERALD_TM_NOTES.map((n) => (
             <li key={n}>{n}</li>
           ))}
         </ul>
-      </Card>
-
-      {/* 진화 타이밍 */}
-      <Card className="mb-6 p-4">
-        <SectionHeading>돌 진화·친밀도 진화·교환 진화 적정 타이밍</SectionHeading>
-        <GuideTable
-          headers={['포켓몬', '진화 조건', '적정 타이밍', '적용 스타팅', '비고']}
-          rows={PLATINUM_EVOLUTION_TIMING.map((r) => [
-            r.pokemon,
-            r.condition,
-            r.timing,
-            <span key={r.pokemon} className={cn(
-              'rounded-chip px-2 py-0.5 text-xxs font-bold',
-              r.starters === '공통' ? 'bg-brand-red/10 text-brand-red' :
-              r.starters === '해당없음' ? 'bg-surface-hover text-ink-faint' :
-              'bg-surface-hover text-ink-muted',
-            )}>{r.starters}</span>,
-            r.note,
-          ])}
-        />
       </Card>
 
       {/* 스타터별 콘텐츠 */}

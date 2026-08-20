@@ -1,10 +1,10 @@
 import { Link, useParams } from 'react-router-dom'
-import { Card } from '../components/ui/Card'
-import { PokemonCard } from '../components/pokemon/PokemonCard'
-import { SAMPLE_GUIDES } from '../data/sample/guides.sample'
-import { SAMPLE_POKEMON, findSamplePokemon } from '../data/sample/pokemon.sample'
-import { CATEGORY_STYLE } from '../lib/guideCategory'
-import { cn } from '../lib/cn'
+import { Card } from '../../components/ui/Card'
+import { PokemonCard } from '../../components/pokemon/PokemonCard'
+import { SAMPLE_GUIDES } from '../../data/sample/guides.sample'
+import { SAMPLE_POKEMON, findSamplePokemon } from '../../data/sample/pokemon.sample'
+import { CATEGORY_STYLE } from '../../lib/guideCategory'
+import { cn } from '../../lib/cn'
 
 export function GuideDetailPage() {
   const { slug } = useParams<{ slug: string }>()

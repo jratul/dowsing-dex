@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom'
-import { GuidePageLayout } from '../components/guide/GuidePageLayout'
-import { Card } from '../components/ui/Card'
-import { PokemonCard } from '../components/pokemon/PokemonCard'
-import { SpriteImage } from '../components/pokemon/SpriteImage'
-import { TypeBadge } from '../components/pokemon/TypeBadge'
-import { GuideTable } from '../components/guide/GuideTable'
-import { PokemonLink } from '../components/guide/PokemonLink'
-import { MoveLink } from '../components/guide/MoveLink'
-import { linkifyPokemonNames } from '../lib/linkifyPokemonNames'
-import { SAMPLE_POKEMON, findSamplePokemon } from '../data/sample/pokemon.sample'
-import { CATEGORY_STYLE } from '../lib/guideCategory'
-import { findMoveByName } from '../data/sample/moves.sample'
+import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
+import { Card } from '../../components/ui/Card'
+import { PokemonCard } from '../../components/pokemon/PokemonCard'
+import { SpriteImage } from '../../components/pokemon/SpriteImage'
+import { TypeBadge } from '../../components/pokemon/TypeBadge'
+import { GuideTable } from '../../components/guide/GuideTable'
+import { PokemonLink } from '../../components/guide/PokemonLink'
+import { MoveLink } from '../../components/guide/MoveLink'
+import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
+import { SAMPLE_POKEMON, findSamplePokemon } from '../../data/sample/pokemon.sample'
+import { CATEGORY_STYLE } from '../../lib/guideCategory'
+import { findMoveByName } from '../../data/sample/moves.sample'
 import {
   HG_STORY_ALT_HERACROSS,
   HG_STORY_ALT_TOGEKISS,
@@ -35,7 +35,7 @@ import {
   HG_STORY_TM_NOTES,
   HG_STORY_TM_OPTIONAL,
   HG_STORY_TM_PRIORITY,
-} from '../data/sample/pokemonHeartgoldStory.data'
+} from '../../data/sample/pokemonHeartgoldStory.data'
 
 function L(text: string) {
   return linkifyPokemonNames(text, HG_STORY_NAME_TO_ID)

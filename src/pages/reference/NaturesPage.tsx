@@ -5,7 +5,7 @@ import {
   STAT_KEYS,
   getNatureByStats,
   type StatKey,
-} from '../data/natures.data'
+} from '../../data/natures.data'
 
 const STAT_COLOR: Record<StatKey, { cell: string; badge: string; text: string }> = {
   attack: {

@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import * as Tabs from '@radix-ui/react-tabs'
-import { GuideCard } from '../components/guide/GuideCard'
-import { SAMPLE_GUIDES } from '../data/sample/guides.sample'
-import { findSamplePokemon } from '../data/sample/pokemon.sample'
-import type { GuideCategory } from '../types/guide'
-import { cn } from '../lib/cn'
+import { GuideCard } from '../../components/guide/GuideCard'
+import { SAMPLE_GUIDES } from '../../data/sample/guides.sample'
+import { findSamplePokemon } from '../../data/sample/pokemon.sample'
+import type { GuideCategory } from '../../types/guide'
+import { cn } from '../../lib/cn'
 
 const CATEGORIES: ('전체' | GuideCategory)[] = ['전체', '입문', '공략', '대전', '포획', '진화']
 

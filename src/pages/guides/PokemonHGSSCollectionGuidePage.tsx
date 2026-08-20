@@ -1,13 +1,13 @@
 import { useState, useMemo, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import * as Tabs from '@radix-ui/react-tabs'
-import rawMd from '../data/guides/hgss-collection.md?raw'
-import { SAMPLE_POKEMON } from '../data/sample/pokemon.sample'
-import { PokemonLink } from '../components/guide/PokemonLink'
-import { Card } from '../components/ui/Card'
-import { linkifyPokemonNames } from '../lib/linkifyPokemonNames'
-import { cn } from '../lib/cn'
-import { CATEGORY_STYLE } from '../lib/guideCategory'
+import rawMd from '../../data/guides/hgss-collection.md?raw'
+import { SAMPLE_POKEMON } from '../../data/sample/pokemon.sample'
+import { PokemonLink } from '../../components/guide/PokemonLink'
+import { Card } from '../../components/ui/Card'
+import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
+import { cn } from '../../lib/cn'
+import { CATEGORY_STYLE } from '../../lib/guideCategory'
 
 // --- 타입 ---
 interface LocationSection {

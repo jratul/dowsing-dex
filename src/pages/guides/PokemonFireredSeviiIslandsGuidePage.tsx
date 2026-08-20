@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-import { GuidePageLayout } from '../components/guide/GuidePageLayout'
-import { Card } from '../components/ui/Card'
-import { GuideTable } from '../components/guide/GuideTable'
-import { PokemonLink } from '../components/guide/PokemonLink'
-import { SpriteImage } from '../components/pokemon/SpriteImage'
-import { linkifyPokemonNames } from '../lib/linkifyPokemonNames'
-import { findSamplePokemon } from '../data/sample/pokemon.sample'
-import { CATEGORY_STYLE } from '../lib/guideCategory'
+import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
+import { Card } from '../../components/ui/Card'
+import { GuideTable } from '../../components/guide/GuideTable'
+import { PokemonLink } from '../../components/guide/PokemonLink'
+import { SpriteImage } from '../../components/pokemon/SpriteImage'
+import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
+import { findSamplePokemon } from '../../data/sample/pokemon.sample'
+import { CATEGORY_STYLE } from '../../lib/guideCategory'
 import {
   SEVII_BOSS_ROCKET_ADMINS,
   SEVII_CATCH_TABLE,
@@ -18,7 +18,7 @@ import {
   SEVII_STORY_RAINBOW_STEPS,
   SEVII_STORY_TRIPASS_STEPS,
   SEVII_UNOWN_NOTE,
-} from '../data/sample/pokemonFireredSeviiIslands.data'
+} from '../../data/sample/pokemonFireredSeviiIslands.data'
 
 function L(text: string) {
   return linkifyPokemonNames(text, SEVII_NAME_TO_ID)

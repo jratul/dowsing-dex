@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-import { Card } from '../components/ui/Card'
-import { GuideTable } from '../components/guide/GuideTable'
-import { PokemonLink } from '../components/guide/PokemonLink'
-import { SpriteImage } from '../components/pokemon/SpriteImage'
-import { TypeBadge } from '../components/pokemon/TypeBadge'
-import { findSamplePokemon } from '../data/sample/pokemon.sample'
-import { CATEGORY_STYLE } from '../lib/guideCategory'
-import { cn } from '../lib/cn'
+import { Card } from '../../components/ui/Card'
+import { GuideTable } from '../../components/guide/GuideTable'
+import { PokemonLink } from '../../components/guide/PokemonLink'
+import { SpriteImage } from '../../components/pokemon/SpriteImage'
+import { TypeBadge } from '../../components/pokemon/TypeBadge'
+import { findSamplePokemon } from '../../data/sample/pokemon.sample'
+import { CATEGORY_STYLE } from '../../lib/guideCategory'
+import { cn } from '../../lib/cn'
 import {
   UNOWN_ABSENT_GAMES,
   UNOWN_AVAILABILITY,
@@ -17,7 +17,7 @@ import {
   UNOWN_SPECIAL_FORMS_STEPS,
   UNOWN_SPECIES_FACTS,
   UNOWN_SPOTS,
-} from '../data/sample/pokemonUnown.data'
+} from '../../data/sample/pokemonUnown.data'
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return <h2 className="mb-3 text-lg font-black text-ink">{children}</h2>

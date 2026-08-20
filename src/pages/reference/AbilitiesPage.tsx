@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react'
-import { ALL_ABILITIES, type AbilityEntry } from '../data/abilities.generated'
+import { ALL_ABILITIES, type AbilityEntry } from '../../data/abilities.generated'
 
 const GENERATIONS = [3, 4, 5, 6, 7, 8, 9]
 const PAGE_SIZE = 30

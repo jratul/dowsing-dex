@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react'
-import { EVOLUTION_ITEMS, BATTLE_ITEMS, type ItemEntry } from '../data/items.generated'
+import { EVOLUTION_ITEMS, BATTLE_ITEMS, type ItemEntry } from '../../data/items.generated'
 
 type TabKey = 'evolution' | 'battle'
 

@@ -1,11 +1,11 @@
 import { Fragment, useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import { TM_INDEX } from '../data/moves/tm-index.generated'
-import { ALL_MOVES } from '../data/moves/all-moves.generated'
-import { SAMPLE_POKEMON } from '../data/sample/pokemon.sample'
-import { TypeBadge } from '../components/pokemon/TypeBadge'
-import { cn } from '../lib/cn'
-import type { Generation, TmEntry } from '../types/move'
+import { TM_INDEX } from '../../data/moves/tm-index.generated'
+import { ALL_MOVES } from '../../data/moves/all-moves.generated'
+import { SAMPLE_POKEMON } from '../../data/sample/pokemon.sample'
+import { TypeBadge } from '../../components/pokemon/TypeBadge'
+import { cn } from '../../lib/cn'
+import type { Generation, TmEntry } from '../../types/move'
 
 const GENERATIONS: Generation[] = ['1세대', '2세대', '3세대', '4세대', '5세대', '6세대', '7세대', '8세대', '9세대']
 const MOVE_MAP = new Map(ALL_MOVES.map((m) => [m.id, m]))

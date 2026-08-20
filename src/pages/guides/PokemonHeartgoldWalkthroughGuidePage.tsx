@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-import { GuidePageLayout } from '../components/guide/GuidePageLayout'
-import { Card } from '../components/ui/Card'
-import { SpriteImage } from '../components/pokemon/SpriteImage'
-import { GuideTable } from '../components/guide/GuideTable'
-import { linkifyPokemonNames } from '../lib/linkifyPokemonNames'
-import { SAMPLE_POKEMON } from '../data/sample/pokemon.sample'
-import { PokemonLink } from '../components/guide/PokemonLink'
-import { CATEGORY_STYLE } from '../lib/guideCategory'
+import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
+import { Card } from '../../components/ui/Card'
+import { SpriteImage } from '../../components/pokemon/SpriteImage'
+import { GuideTable } from '../../components/guide/GuideTable'
+import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
+import { SAMPLE_POKEMON } from '../../data/sample/pokemon.sample'
+import { PokemonLink } from '../../components/guide/PokemonLink'
+import { CATEGORY_STYLE } from '../../lib/guideCategory'
 import {
   HGW_PARTY,
   HGW_PHASES,
@@ -16,7 +16,7 @@ import {
   HGW_YOUTUBER_PICKS,
   HGW_ROLE_COMPARISONS,
   HGW_NAME_TO_ID,
-} from '../data/sample/pokemonHeartgoldWalkthrough.data'
+} from '../../data/sample/pokemonHeartgoldWalkthrough.data'
 
 function L(text: string) {
   return linkifyPokemonNames(text, HGW_NAME_TO_ID)

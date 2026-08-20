@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import { GuidePageLayout } from '../components/guide/GuidePageLayout'
-import { Card } from '../components/ui/Card'
-import { GuideTable } from '../components/guide/GuideTable'
-import { CATEGORY_STYLE } from '../lib/guideCategory'
+import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
+import { Card } from '../../components/ui/Card'
+import { GuideTable } from '../../components/guide/GuideTable'
+import { CATEGORY_STYLE } from '../../lib/guideCategory'
 
 function SectionHeading({ children }: { children: string }) {
   return <h2 className="mb-3 text-lg font-black text-ink">{children}</h2>

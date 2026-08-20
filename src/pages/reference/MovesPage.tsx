@@ -1,15 +1,15 @@
 import { useState, useMemo, useCallback } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { ALL_MOVES } from '../data/moves/all-moves.generated'
-import { MOVE_DESCRIPTIONS } from '../data/moves/move-descriptions.generated'
+import { ALL_MOVES } from '../../data/moves/all-moves.generated'
+import { MOVE_DESCRIPTIONS } from '../../data/moves/move-descriptions.generated'
 import {
   LEVEL_UP_MAP,
   TUTOR_MAP,
   MACHINE_MAP,
-} from '../data/moves/move-index.generated'
-import { SAMPLE_POKEMON } from '../data/sample/pokemon.sample'
-import { TypeBadge } from '../components/pokemon/TypeBadge'
-import type { TypeName } from '../types/type-chart'
+} from '../../data/moves/move-index.generated'
+import { SAMPLE_POKEMON } from '../../data/sample/pokemon.sample'
+import { TypeBadge } from '../../components/pokemon/TypeBadge'
+import type { TypeName } from '../../types/type-chart'
 type PokemonType = TypeName
 
 const POKEMON_MAP = new Map(SAMPLE_POKEMON.map((p) => [p.id, p]))

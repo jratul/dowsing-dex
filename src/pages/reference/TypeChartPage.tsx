@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import * as Tabs from '@radix-ui/react-tabs'
-import { Card } from '../components/ui/Card'
-import { TypeCalculator } from '../components/type-chart/TypeCalculator'
-import { TypeChartGrid } from '../components/type-chart/TypeChartGrid'
-import { type TypeEra } from '../lib/typeChart'
-import { cn } from '../lib/cn'
+import { Card } from '../../components/ui/Card'
+import { TypeCalculator } from '../../components/type-chart/TypeCalculator'
+import { TypeChartGrid } from '../../components/type-chart/TypeChartGrid'
+import { type TypeEra } from '../../lib/typeChart'
+import { cn } from '../../lib/cn'
 
 const ERAS: TypeEra[] = ['1세대', '2~5세대', '6세대 이후']
 

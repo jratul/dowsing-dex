@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
-import { GuidePageLayout } from '../components/guide/GuidePageLayout'
-import { Card } from '../components/ui/Card'
-import { GuideTable } from '../components/guide/GuideTable'
-import { PokemonLink } from '../components/guide/PokemonLink'
-import { CATEGORY_STYLE } from '../lib/guideCategory'
-import { HGS_STONES, type StoneEntry } from '../data/sample/pokemonHeartgoldStones.data'
+import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
+import { Card } from '../../components/ui/Card'
+import { GuideTable } from '../../components/guide/GuideTable'
+import { PokemonLink } from '../../components/guide/PokemonLink'
+import { CATEGORY_STYLE } from '../../lib/guideCategory'
+import { HGS_STONES, type StoneEntry } from '../../data/sample/pokemonHeartgoldStones.data'
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return <h2 className="mb-3 text-lg font-black text-ink">{children}</h2>
