@@ -319,10 +319,7 @@ export function PokemonRedStoryGuidePage() {
         <GuideTable
           headers={['포켓몬', '용도']}
           rows={RED_STORY_SUPPORT.map((r) => [
-            <span key={r.pokemonId} className="flex items-center gap-2">
-              <SpriteImage src={findSamplePokemon(r.pokemonId).spriteUrl} alt={r.pokemon} width={28} height={28} className="h-7 w-7" />
-              <PokemonLink id={r.pokemonId} label={r.pokemon} showSprite={false} />
-            </span>,
+            <PokemonLink key={r.pokemonId} id={r.pokemonId} label={r.pokemon} />,
             r.usage,
           ])}
         />

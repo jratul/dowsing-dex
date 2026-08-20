@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom'
 import { GuidePageLayout } from '../components/guide/GuidePageLayout'
 import { Card } from '../components/ui/Card'
-import { SpriteImage } from '../components/pokemon/SpriteImage'
 import { GuideTable } from '../components/guide/GuideTable'
 import { PokemonLink } from '../components/guide/PokemonLink'
-import { findSamplePokemon } from '../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../lib/guideCategory'
 import { HGS_STONES, type StoneEntry } from '../data/sample/pokemonHeartgoldStones.data'
 
@@ -44,16 +42,6 @@ function MethodBadge({ type }: { type: StoneEntry['acquisitions'][number]['type'
 
 function EvoArrow() {
   return <span className="text-ink-muted">→</span>
-}
-
-function PokemonSprite({ id, name }: { id: number; name: string }) {
-  const data = findSamplePokemon(id)
-  return (
-    <div className="flex flex-col items-center gap-0.5">
-      <SpriteImage src={data.spriteUrl} alt={name} width={40} height={40} className="h-10 w-10" />
-      <PokemonLink id={id} showSprite={false} />
-    </div>
-  )
 }
 
 export function PokemonHeartgoldStonesGuidePage() {
@@ -168,9 +156,9 @@ export function PokemonHeartgoldStonesGuidePage() {
                 {stone.evolutions.map((e) => (
                   <div key={e.toId} className="flex flex-col items-center gap-1">
                     <div className="flex items-center gap-2">
-                      <PokemonSprite id={e.fromId} name={e.fromName} />
+                      <PokemonLink id={e.fromId} />
                       <EvoArrow />
-                      <PokemonSprite id={e.toId} name={e.toName} />
+                      <PokemonLink id={e.toId} />
                     </div>
                     {e.note && (
                       <span className="rounded bg-surface-hover px-1.5 py-0.5 text-xxs text-ink-muted">{e.note}</span>

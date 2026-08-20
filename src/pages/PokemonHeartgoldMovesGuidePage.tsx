@@ -226,13 +226,6 @@ export function PokemonHeartgoldMovesGuidePage() {
 
         <div className="mb-4 rounded-card border border-border-strong bg-surface-hover/40 p-3">
           <div className="mb-2 flex items-center gap-2">
-            <SpriteImage
-              src={findSamplePokemon(HGM_HM_MULE.pokemonId).spriteUrl}
-              alt={HGM_HM_MULE.pokemon}
-              width={40}
-              height={40}
-              className="h-10 w-10 shrink-0"
-            />
             <div>
               <div className="text-sm font-black text-ink">
                 비전 전담 추천 — <PokemonLink id={HGM_HM_MULE.pokemonId} label={HGM_HM_MULE.pokemon} showSprite={false} />

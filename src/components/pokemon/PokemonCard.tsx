@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import { Link } from 'react-router-dom'
 import type { Pokemon } from '../../types/pokemon'
 import { COLOR } from '../../lib/typeChart'
@@ -11,7 +12,9 @@ export interface PokemonCardProps {
   state?: object
 }
 
-export function PokemonCard({ pokemon, to, state }: PokemonCardProps) {
+// 도감은 1,000장이 넘는 카드를 한 번에 그린다. 검색어를 한 글자 칠 때마다 전부
+// 다시 만들지 않도록 memo로 감싼다. (state 는 호출부에서 참조를 고정해 넘겨야 효과가 있다)
+export const PokemonCard = memo(function PokemonCard({ pokemon, to, state }: PokemonCardProps) {
   const accentColor = COLOR[pokemon.types[0]]
 
   return (
@@ -33,4 +36,4 @@ export function PokemonCard({ pokemon, to, state }: PokemonCardProps) {
       </Link>
     </Card>
   )
-}
+})
