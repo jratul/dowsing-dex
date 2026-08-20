@@ -7,6 +7,9 @@
  * - TM 번호는 같은 학습셋의 machines(number)로 확인했다(8건 일치).
  * - 기술명은 `all-moves.generated.ts`의 정식 한글명을 따른다. 원문에 있던
  *   "메가혼"·"소용돌이"·"전자파"는 각각 메가폰·바다회오리·전기자석파로 바로잡았다.
+ * - 프로젝트 데이터에 없는 상점 가격·BP는 Bulbapedia로 확인했다:
+ *   백화점 5층 TM54 2,000원 / TM70 1,000원, 게임코너 TM13·24·35 각 10,000코인,
+ *   배틀프런티어 TM26 80BP · TM30 64BP · TM31 40BP.
  */
 
 export interface LevelUpMove {
@@ -186,8 +189,8 @@ export const HGM_TMS: TmEntry[] = [
     move: '냉동빔',
     stars: 4,
     obtain: ['스토리 진행 중 입수'],
-    repeatable: '금빛시티 게임코너 (코인 필요)',
-    principle: '완전한 한정 기술머신은 아니지만 코인이 많이 든다.',
+    repeatable: '금빛시티 게임코너 10,000코인',
+    principle: '완전한 한정 기술머신은 아니지만 10,000코인이 들어 실질 부담은 작지 않다.',
     avoid: '라프라스 (Lv.32 자력 습득)',
   },
   {
@@ -195,7 +198,7 @@ export const HGM_TMS: TmEntry[] = [
     move: '10만볼트',
     stars: 4,
     obtain: ['스토리 진행 중 입수'],
-    repeatable: '금빛시티 게임코너 (코인 필요)',
+    repeatable: '금빛시티 게임코너 10,000코인',
     principle: '전룡을 쓴다면 초중반은 방전만으로 충분하다. 최종 세팅용으로 남겨도 된다.',
   },
   {
@@ -203,7 +206,7 @@ export const HGM_TMS: TmEntry[] = [
     move: '화염방사',
     stars: 4,
     obtain: ['스토리 진행 중 입수'],
-    repeatable: '금빛시티 게임코너 (코인 필요)',
+    repeatable: '금빛시티 게임코너 10,000코인',
     principle: '자력으로 배우는 멤버가 많아 급하게 쓸 이유가 적다.',
     avoid: '가디 (Lv.34) · 블레이범 (Lv.42)',
   },
@@ -219,16 +222,16 @@ export const HGM_TMS: TmEntry[] = [
     tm: 'TM54',
     move: '칼등치기',
     stars: 5,
-    obtain: ['금빛시티 백화점 2,000원'],
-    repeatable: '금빛시티 백화점에서 반복 구매',
+    obtain: ['금빛시티 백화점 5층 2,000원'],
+    repeatable: '횟수 제한 없이 반복 구매',
     principle: '반복 구매가 되므로 아끼지 말고 적극적으로 쓴다. 포획 요원에게 필수.',
   },
   {
     tm: 'TM70',
     move: '플래시',
     stars: 2,
-    obtain: ['금빛시티 백화점 1,000원'],
-    repeatable: '금빛시티 백화점에서 반복 구매',
+    obtain: ['금빛시티 백화점 5층 1,000원'],
+    repeatable: '횟수 제한 없이 반복 구매',
     principle: '추가 구매가 되므로 동굴 탐험용 포켓몬에게 부담 없이 배정한다.',
   },
 ]
@@ -241,11 +244,11 @@ export interface RepeatableTm {
 }
 
 export const HGM_REPEATABLE: RepeatableTm[] = [
-  { tm: 'TM13', move: '냉동빔', source: '금빛시티 게임코너', policy: '비교적 자유' },
-  { tm: 'TM24', move: '10만볼트', source: '금빛시티 게임코너', policy: '비교적 자유' },
-  { tm: 'TM35', move: '화염방사', source: '금빛시티 게임코너', policy: '비교적 자유' },
-  { tm: 'TM54', move: '칼등치기', source: '금빛시티 백화점 2,000원', policy: '적극 사용' },
-  { tm: 'TM70', move: '플래시', source: '금빛시티 백화점 1,000원', policy: '적극 사용' },
+  { tm: 'TM13', move: '냉동빔', source: '금빛시티 게임코너 10,000코인', policy: '코인 여유 있으면' },
+  { tm: 'TM24', move: '10만볼트', source: '금빛시티 게임코너 10,000코인', policy: '코인 여유 있으면' },
+  { tm: 'TM35', move: '화염방사', source: '금빛시티 게임코너 10,000코인', policy: '코인 여유 있으면' },
+  { tm: 'TM54', move: '칼등치기', source: '금빛시티 백화점 5층 2,000원', policy: '적극 사용' },
+  { tm: 'TM70', move: '플래시', source: '금빛시티 백화점 5층 1,000원', policy: '적극 사용' },
 ]
 
 export interface HmPlan {
@@ -401,7 +404,7 @@ export const HGM_CHECKLIST: { group: string; items: string[] }[] = [
       '라프라스에게 TM13 냉동빔 쓰지 않기',
       '헤라크로스에게 TM31 깨트리다 쓰지 않기',
       '가디·블레이범에게 TM35 화염방사를 급하게 쓰지 않기',
-      'TM54 칼등치기와 TM70 플래시는 백화점에서 반복 구매 가능',
+      'TM54 칼등치기(2,000원)와 TM70 플래시(1,000원)는 백화점 5층에서 반복 구매 가능',
     ],
   },
   {
@@ -419,7 +422,7 @@ export const HGM_CHECKLIST: { group: string; items: string[] }[] = [
     group: '포획',
     items: [
       '파라스 Lv.17 버섯포자 확보',
-      'TM54 칼등치기 구매',
+      'TM54 칼등치기 구매 (백화점 5층 2,000원)',
       '파라섹트에 버섯포자 + 칼등치기 구성',
       '스라크는 Lv.13 칼등치기를 자력 습득',
       '너도밤나무숲 박치기 가르침 챙기기',

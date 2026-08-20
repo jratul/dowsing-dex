@@ -188,8 +188,8 @@ export function PokemonHeartgoldMovesGuidePage() {
           rows={HGM_REPEATABLE.map((r) => [r.tm, r.move, r.source, r.policy])}
         />
         <p className="mt-3 text-xs text-ink-muted">
-          게임코너 기술은 코인이 많이 필요하므로 실제 플레이에서는 여전히 어느 정도 값어치가 있다.
-          반면 백화점에서 돈으로 사는 TM54·TM70은 부담 없이 써도 된다.
+          게임코너 TM은 장당 10,000코인이라 실제 플레이에서는 여전히 부담이 크다. 반면 백화점 5층에서
+          돈으로 사는 TM54(2,000원)·TM70(1,000원)은 마음 놓고 써도 된다.
         </p>
       </Card>
 
