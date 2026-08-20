@@ -176,7 +176,7 @@ export function PokemonHeartgoldMovesGuidePage() {
                 <span className="rounded bg-blue-100 px-1.5 py-0.5 text-xxs font-bold text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">
                   {t.tm}
                 </span>
-                <MoveLink name={t.move} className="font-black text-ink decoration-ink-faint" />
+                <MoveLink name={t.move} className="font-black" />
                 <Stars n={t.stars} />
                 {t.repeatable && (
                   <span className="rounded bg-green-100 px-1.5 py-0.5 text-xxs font-bold text-green-700 dark:bg-green-900/40 dark:text-green-300">
@@ -290,7 +290,7 @@ export function PokemonHeartgoldMovesGuidePage() {
               <div className="mb-2 space-y-1">
                 {c.moves.map((m) => (
                   <div key={m.move} className="flex items-center gap-1.5 text-xs">
-                    <MoveLink name={m.move} className="font-bold text-ink decoration-ink-faint" />
+                    <MoveLink name={m.move} className="font-bold" />
                     <span className="rounded bg-surface-hover px-1.5 py-0.5 text-xxs text-ink-muted">{m.how}</span>
                   </div>
                 ))}

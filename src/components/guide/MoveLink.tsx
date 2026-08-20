@@ -28,7 +28,9 @@ export function MoveLink({ name, label, className }: MoveLinkProps) {
     <Link
       to={`/moves?move=${move.id}`}
       title={`${move.nameKo} — ${move.type} / ${move.category}${move.power ? ` / 위력 ${move.power}` : ''}`}
-      className={cn('underline decoration-border underline-offset-2 hover:decoration-current', className)}
+      // 포켓몬 링크(굵은 빨강)와 구분되면서도 링크임이 바로 보이도록 파랑을 쓴다.
+      // 밑줄만으로는 본문에서 링크인지 알아채기 어렵다.
+      className={cn('font-semibold text-blue-700 hover:underline dark:text-blue-300', className)}
     >
       {text}
     </Link>
