@@ -87,6 +87,23 @@ export function PokemonHeartgoldMovesGuidePage() {
         <p className="mb-4 text-sm text-ink">
           아래 포켓몬들은 <strong>레벨업으로 배우는 기술과 기술머신이 겹친다.</strong> 미리 알아두면 TM을 통째로 아낄 수 있다.
         </p>
+
+        {/* 배지 색이 "배우지 말라"는 뜻으로 읽히지 않도록 기준을 먼저 밝힌다 */}
+        <div className="mb-4 flex flex-col gap-2 rounded-card border border-border bg-surface-hover/40 p-3 text-xs text-ink sm:flex-row sm:items-center sm:gap-5">
+          <span className="flex items-center gap-1.5">
+            <span className="shrink-0 rounded-chip bg-brand-red/10 px-2 py-0.5 text-xxs font-semibold text-brand-red">
+              Lv.00 기술
+            </span>
+            TM을 아끼거나 진화 시점을 정하는 기준이 되는 기술
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="shrink-0 rounded-chip bg-surface-hover px-2 py-0.5 text-xxs font-semibold text-ink-muted">
+              Lv.00 기술
+            </span>
+            같은 구간에 함께 배우는 기술 — 약하다는 뜻이 아니다
+          </span>
+        </div>
+
         <div className="space-y-4">
           {HGM_TIMINGS.map((t) => {
             const p = findSamplePokemon(t.pokemonId)
