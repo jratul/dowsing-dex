@@ -74,6 +74,16 @@ export const SAMPLE_GUIDES: Guide[] = [
     bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
   },
   {
+    slug: 'pokemon-heartgold-moves',
+    category: '공략',
+    title: '하트골드 기술 관리 가이드 — TM을 어디에 쓸 것인가',
+    iconPokemonId: 214,
+    relatedPokemonIds: [214, 131, 157, 181, 130, 473],
+    summary:
+      '4세대 TM은 1회용. 레벨업으로 배우는 기술과 겹쳐 낭비하기 쉬운 TM, 비전머신 전담 배정, 포획 요원 구성까지 정리.',
+    bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
+  },
+  {
     slug: 'pokemon-unown',
     category: '포획',
     title: '안농 종합 가이드 — 28종 전체와 출현 조건',
