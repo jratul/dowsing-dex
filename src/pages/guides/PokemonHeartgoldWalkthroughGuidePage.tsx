@@ -188,7 +188,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
             headers={['HM', '기술', '담당', '입수 장소', '사용 배지']}
             rows={HGW_HM_TABLE.map((r) => [
               <HowBadge key={r.hm} how={r.hm} />,
-              <MoveLink key={`${r.hm}-move`} name={r.move} />,
+              <MoveLink key={`${r.hm}-move`} name={r.move} withPp />,
               L(r.holder),
               r.obtainedAt,
               r.badge,
@@ -212,7 +212,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
               headers={['HM', '기술', '담당', '배틀 활용', '필요 시점', '메모']}
               rows={HGW_NO_MULE_HM.map((r) => [
                 <HowBadge key={r.hm} how={r.hm} />,
-                <MoveLink key={`${r.hm}-m`} name={r.move} />,
+                <MoveLink key={`${r.hm}-m`} name={r.move} withPp />,
                 <PokemonLink key={`${r.hm}-p`} id={r.holderId} label={r.holder} />,
                 <span
                   key={`${r.hm}-b`}

@@ -102,10 +102,10 @@ function StarterContent({ starter }: { starter: StarterGuideData }) {
                 ))}
               </div>
               <GuideTable
-                headers={['기술', '타입', '습득', '용도']}
+                headers={['기술', '타입', '위력', 'PP', '습득', '용도']}
                 rows={s.moveTable.map((m) => {
                   const mv = findMoveByName(m.move)
-                  return [<MoveLink key={`${m.move}-link`} name={m.move} />, mv ? <TypeBadge key={`${m.move}-type`} type={mv.type} size="sm" /> : '—', <HowBadge key={m.move} how={m.how} />, m.usage]
+                  return [<MoveLink key={`${m.move}-link`} name={m.move} />, mv ? <TypeBadge key={`${m.move}-type`} type={mv.type} size="sm" /> : '—', mv?.power ?? '—', mv?.pp ?? '—', <HowBadge key={m.move} how={m.how} />, m.usage]
                 })}
               />
               {s.notes.length > 0 && (
@@ -292,7 +292,7 @@ export function PokemonEmeraldStoryGuidePage() {
         <SectionHeading>HM 배분 (공통)</SectionHeading>
         <GuideTable
           headers={['HM', '기술', '담당', '획득처', '필요배지', '메모']}
-          rows={EMERALD_HM_TABLE.map((r) => [r.hm, r.move, L(r.pokemon), r.location, r.badge, r.note])}
+          rows={EMERALD_HM_TABLE.map((r) => [r.hm, <MoveLink key={`${r.hm}-mv`} name={r.move} withPp />, L(r.pokemon), r.location, r.badge, r.note])}
         />
         <ul className="mt-3 list-disc space-y-1 pl-5 text-xs text-ink-muted">
           {EMERALD_TM_NOTES.map((n) => (

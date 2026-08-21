@@ -162,10 +162,10 @@ export function PokemonRedStoryGuidePage() {
                 </ul>
 
                 <GuideTable
-                  headers={['기술', '타입', '습득', '용도']}
+                  headers={['기술', '타입', '위력', 'PP', '습득', '용도']}
                   rows={m.moveTable.map((t) => {
                     const mv = findMoveByName(t.move)
-                    return [<MoveLink key={`${t.move}-link`} name={t.move} />, mv ? <TypeBadge key={`${t.move}-type`} type={mv.type} size="sm" /> : '—', <HowBadge key={t.move} how={t.how} />, t.usage]
+                    return [<MoveLink key={`${t.move}-link`} name={t.move} />, mv ? <TypeBadge key={`${t.move}-type`} type={mv.type} size="sm" /> : '—', mv?.power ?? '—', mv?.pp ?? '—', <HowBadge key={t.move} how={t.how} />, t.usage]
                   })}
                 />
 
@@ -186,7 +186,7 @@ export function PokemonRedStoryGuidePage() {
         <SectionHeading>비전머신 배분 및 입수 위치</SectionHeading>
         <GuideTable
           headers={['HM', '기술', '추천 담당', '입수 위치', '필드 사용 조건', '비고']}
-          rows={RED_STORY_HM_TABLE.map((r) => [r.hm, r.move, L(r.pokemon), r.location, r.badge, r.note])}
+          rows={RED_STORY_HM_TABLE.map((r) => [r.hm, <MoveLink key={`${r.hm}-mv`} name={r.move} withPp />, L(r.pokemon), r.location, r.badge, r.note])}
         />
         <p className="mt-3 text-sm text-ink-muted">
           1세대에는 기술 지우기 NPC가 없으므로 HM을 최종 멤버에게 넣으면 끝까지 유지해야 한다. 풀베기는 파오리, 뚜벅쵸 등 임시 포켓몬에게 맡기는 것이 좋다.
@@ -199,12 +199,12 @@ export function PokemonRedStoryGuidePage() {
         <p className="mb-2 text-sm font-bold text-ink-faint">최우선 기술머신</p>
         <GuideTable
           headers={['TM', '기술', '추천 대상', '입수 위치', '우선순위', '설명']}
-          rows={RED_STORY_TM_PRIORITY.map((r) => [r.tm, r.move, L(r.target), r.location, r.priority, r.desc])}
+          rows={RED_STORY_TM_PRIORITY.map((r) => [r.tm, <MoveLink key={`${r.tm}-mv`} name={r.move} withPp />, L(r.target), r.location, r.priority, r.desc])}
         />
         <p className="mt-4 mb-2 text-sm font-bold text-ink-faint">선택 기술머신</p>
         <GuideTable
           headers={['TM', '기술', '추천 대상', '입수 위치', '우선순위', '설명']}
-          rows={RED_STORY_TM_OPTIONAL.map((r) => [r.tm, r.move, L(r.target), r.location, r.priority, r.desc])}
+          rows={RED_STORY_TM_OPTIONAL.map((r) => [r.tm, <MoveLink key={`${r.tm}-mv`} name={r.move} withPp />, L(r.target), r.location, r.priority, r.desc])}
         />
         <p className="mt-4 mb-1 text-sm font-bold text-ink-faint">기술머신 사용 메모</p>
         <ul className="leading-loose list-disc space-y-0.5 pl-5 text-sm text-ink-muted">

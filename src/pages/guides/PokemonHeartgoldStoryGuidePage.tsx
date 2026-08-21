@@ -142,10 +142,10 @@ export function PokemonHeartgoldStoryGuidePage() {
                 ))}
               </div>
               <GuideTable
-                headers={['기술', '타입', '습득', '용도']}
+                headers={['기술', '타입', '위력', 'PP', '습득', '용도']}
                 rows={s.moveTable.map((m) => {
                   const mv = findMoveByName(m.move)
-                  return [<MoveLink key={`${m.move}-link`} name={m.move} />, mv ? <TypeBadge key={`${m.move}-type`} type={mv.type} size="sm" /> : '—', <HowBadge key={m.move} how={m.how} />, m.usage]
+                  return [<MoveLink key={`${m.move}-link`} name={m.move} />, mv ? <TypeBadge key={`${m.move}-type`} type={mv.type} size="sm" /> : '—', mv?.power ?? '—', mv?.pp ?? '—', <HowBadge key={m.move} how={m.how} />, m.usage]
                 })}
               />
               {s.notes.length > 0 && (
@@ -165,7 +165,7 @@ export function PokemonHeartgoldStoryGuidePage() {
         <SectionHeading>HM 배분</SectionHeading>
         <GuideTable
           headers={['HM', '기술', '담당', '획득처', '필요배지', '메모']}
-          rows={HG_STORY_HM_TABLE.map((r) => [r.hm, r.move, L(r.pokemon), r.location, r.badge, r.note])}
+          rows={HG_STORY_HM_TABLE.map((r) => [r.hm, <MoveLink key={`${r.hm}-mv`} name={r.move} withPp />, L(r.pokemon), r.location, r.badge, r.note])}
         />
       </Card>
 
@@ -174,14 +174,14 @@ export function PokemonHeartgoldStoryGuidePage() {
         <SectionHeading>TM 우선순위</SectionHeading>
         <GuideTable
           headers={['TM', '기술', '배정 대상', '획득처', '우선순위', '설명']}
-          rows={HG_STORY_TM_PRIORITY.map((r) => [r.tm, r.move, L(r.target), r.location, r.priority, r.desc])}
+          rows={HG_STORY_TM_PRIORITY.map((r) => [r.tm, <MoveLink key={`${r.tm}-mv`} name={r.move} withPp />, L(r.target), r.location, r.priority, r.desc])}
         />
         {HG_STORY_TM_OPTIONAL.length > 0 && (
           <>
             <p className="mb-2 mt-4 text-sm font-bold text-ink-faint">선택 TM</p>
             <GuideTable
               headers={['TM', '기술', '배정 대상', '획득처', '우선순위', '설명']}
-              rows={HG_STORY_TM_OPTIONAL.map((r) => [r.tm, r.move, L(r.target), r.location, r.priority, r.desc])}
+              rows={HG_STORY_TM_OPTIONAL.map((r) => [r.tm, <MoveLink key={`${r.tm}-mv`} name={r.move} withPp />, L(r.target), r.location, r.priority, r.desc])}
             />
           </>
         )}

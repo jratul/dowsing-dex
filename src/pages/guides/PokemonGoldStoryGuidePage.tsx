@@ -160,10 +160,10 @@ export function PokemonGoldStoryGuidePage() {
                 </ul>
 
                 <GuideTable
-                  headers={['기술', '타입', '습득', '용도']}
+                  headers={['기술', '타입', '위력', 'PP', '습득', '용도']}
                   rows={m.moveTable.map((t) => {
                     const mv = findMoveByName(t.move)
-                    return [<MoveLink key={`${t.move}-link`} name={t.move} />, mv ? <TypeBadge key={`${t.move}-type`} type={mv.type} size="sm" /> : '—', <HowBadge key={t.move} how={t.how} />, t.usage]
+                    return [<MoveLink key={`${t.move}-link`} name={t.move} />, mv ? <TypeBadge key={`${t.move}-type`} type={mv.type} size="sm" /> : '—', mv?.power ?? '—', mv?.pp ?? '—', <HowBadge key={t.move} how={t.how} />, t.usage]
                   })}
                 />
 
@@ -184,7 +184,7 @@ export function PokemonGoldStoryGuidePage() {
         <SectionHeading>비전머신 배분 및 입수 위치</SectionHeading>
         <GuideTable
           headers={['HM', '기술', '추천 담당', '입수 위치', '필드 사용 조건', '비고']}
-          rows={GOLD_STORY_HM_TABLE.map((r) => [r.hm, r.move, L(r.pokemon), r.location, r.badge, r.note])}
+          rows={GOLD_STORY_HM_TABLE.map((r) => [r.hm, <MoveLink key={`${r.hm}-mv`} name={r.move} withPp />, L(r.pokemon), r.location, r.badge, r.note])}
         />
       </Card>
 
@@ -194,12 +194,12 @@ export function PokemonGoldStoryGuidePage() {
         <p className="mb-2 text-sm font-bold text-ink-faint">최우선 기술머신</p>
         <GuideTable
           headers={['TM', '기술', '추천 대상', '입수 위치', '우선순위', '설명']}
-          rows={GOLD_STORY_TM_PRIORITY.map((r) => [r.tm, r.move, L(r.target), r.location, r.priority, r.desc])}
+          rows={GOLD_STORY_TM_PRIORITY.map((r) => [r.tm, <MoveLink key={`${r.tm}-mv`} name={r.move} withPp />, L(r.target), r.location, r.priority, r.desc])}
         />
         <p className="mt-4 mb-2 text-sm font-bold text-ink-faint">선택 기술머신</p>
         <GuideTable
           headers={['TM', '기술', '추천 대상', '입수 위치', '우선순위', '설명']}
-          rows={GOLD_STORY_TM_OPTIONAL.map((r) => [r.tm, r.move, L(r.target), r.location, r.priority, r.desc])}
+          rows={GOLD_STORY_TM_OPTIONAL.map((r) => [r.tm, <MoveLink key={`${r.tm}-mv`} name={r.move} withPp />, L(r.target), r.location, r.priority, r.desc])}
         />
         <p className="mt-4 mb-1 text-sm font-bold text-ink-faint">기술머신 사용 메모</p>
         <ul className="leading-loose list-disc space-y-0.5 pl-5 text-sm text-ink-muted">
