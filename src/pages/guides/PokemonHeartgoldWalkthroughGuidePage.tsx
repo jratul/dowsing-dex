@@ -11,6 +11,9 @@ import {
   HGW_PARTY,
   HGW_PHASES,
   HGW_HM_TABLE,
+  HGW_NO_MULE_HM,
+  HGW_NO_MULE_SLOTS,
+  HGW_NO_MULE_TRADEOFF,
   HGW_ALT_MEMBERS,
   HGW_LEVEL_MILESTONES,
   HGW_YOUTUBER_PICKS,
@@ -191,6 +194,101 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
               r.badge,
             ])}
           />
+        </div>
+      </Card>
+
+      {/* 비전 전담 없이 파티 6마리로 HM 나누기 */}
+      <Card className="mb-6">
+        <div className="p-4">
+          <SectionHeading>다꼬리 없이 — 파티 6마리로 HM 8종 나누기</SectionHeading>
+          <p className="mb-4 text-sm text-ink">
+            비전 전담을 따로 두면 파티 한 자리를 내주고, 필드에서 포켓몬을 넣었다 뺐다 해야 한다.
+            아래는 <strong>추천 파티 6마리만으로 HM 8종을 전부 커버하는 배치</strong>다. HGSS 학습셋으로
+            6마리가 실제 배울 수 있는지 확인했고, 8종 모두 담당이 정해진다.
+          </p>
+
+          <div className="overflow-x-auto">
+            <GuideTable
+              headers={['HM', '기술', '담당', '배틀 활용', '필요 시점', '메모']}
+              rows={HGW_NO_MULE_HM.map((r) => [
+                <HowBadge key={r.hm} how={r.hm} />,
+                <MoveLink key={`${r.hm}-m`} name={r.move} />,
+                <PokemonLink key={`${r.hm}-p`} id={r.holderId} label={r.holder} />,
+                <span
+                  key={`${r.hm}-b`}
+                  className={`inline-block whitespace-nowrap rounded px-1.5 py-0.5 text-xxs font-bold ${
+                    r.battle === '주력급'
+                      ? 'bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300'
+                      : r.battle === '보조'
+                        ? 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-300'
+                        : 'bg-stone-100 text-stone-600 dark:bg-stone-800 dark:text-stone-400'
+                  }`}
+                >
+                  {r.battle}
+                </span>,
+                r.neededAt,
+                <span key={`${r.hm}-n`} className="text-xs">
+                  {r.spec} · {L(r.note)}
+                </span>,
+              ])}
+            />
+          </div>
+
+          <h3 className="mt-6 mb-2 text-base font-black text-ink">이 배치를 적용한 최종 4칸</h3>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {HGW_NO_MULE_SLOTS.map((slot) => (
+              <div key={slot.pokemonId} className="rounded-lg border border-border p-3">
+                <div className="mb-1.5 font-black text-ink">
+                  <PokemonLink id={slot.pokemonId} label={slot.pokemon} />
+                </div>
+                <div className="mb-2 flex flex-wrap gap-1">
+                  {slot.hms.map((m) => (
+                    <MoveLink
+                      key={m}
+                      name={m}
+                      className="rounded-chip bg-brand-red/10 px-2 py-0.5 text-xxs font-bold text-brand-red"
+                    />
+                  ))}
+                  {slot.battleMoves.map((m) => (
+                    <MoveLink
+                      key={m}
+                      name={m}
+                      className="rounded-chip bg-surface-hover px-2 py-0.5 text-xxs font-semibold text-ink-muted"
+                    />
+                  ))}
+                </div>
+                <p className="text-xs leading-relaxed text-ink">{L(slot.comment)}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-2 text-xxs text-ink-muted">
+            빨간 칸이 필드용 HM, 회색 칸이 배틀용 기술이다.
+          </p>
+
+          <div className="mt-6 grid gap-3 sm:grid-cols-2">
+            <div className="rounded-card border border-green-200 bg-green-50 p-3 dark:border-green-800 dark:bg-green-900/20">
+              <p className="mb-1.5 text-xs font-bold text-green-700 dark:text-green-300">이래서 좋다</p>
+              <ul className="space-y-1">
+                {HGW_NO_MULE_TRADEOFF.pros.map((t, i) => (
+                  <li key={i} className="flex min-h-6 gap-1.5 text-xs leading-loose text-ink">
+                    <span className="shrink-0 self-start leading-6 text-green-500">✓</span>
+                    <span>{L(t)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-card border border-red-200 bg-red-50 p-3 dark:border-red-800 dark:bg-red-900/20">
+              <p className="mb-1.5 text-xs font-bold text-red-700 dark:text-red-300">이건 감수해야 한다</p>
+              <ul className="space-y-1">
+                {HGW_NO_MULE_TRADEOFF.cons.map((t, i) => (
+                  <li key={i} className="flex min-h-6 gap-1.5 text-xs leading-loose text-ink">
+                    <span className="shrink-0 self-start leading-6 text-red-500">✗</span>
+                    <span>{L(t)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </Card>
 
