@@ -151,6 +151,14 @@ Vercel에 새 버전을 배포하면 Vite 청크의 파일명(content hash)이 �
 - **학습셋 lazy 로드**: `by-id/*.generated.ts` 1082개 파일은 `import.meta.glob`으로 등록하고, 상세 페이지 진입 시에만 해당 포켓몬 1개 파일을 동적 import한다 (`data/sample/moves.sample.ts`의 `loadLearnsets()`).
 - **TM 역인덱스**: `tm-index.generated.ts`(3.3MB)는 `TmListPage`를 lazy route로 처리해 해당 페이지에서만 로드. `// @ts-nocheck` + 별도 타입 파일(`types/move.ts`의 `TmEntry`)로 TS2590(union type too complex) 우회.
 - **Map 활용**: 배열 기반 선형 탐색 대신 모듈 레벨 `Map`으로 O(1) 조회. `TmListPage`의 `MOVE_MAP`/`POKEMON_MAP`, `moves.sample.ts`의 `MOVE_MAP`이 그 예.
+- **긴 페이지 스크롤**: HGSS 수집 가이드는 한 탭에 DOM 9,600노드 + 스프라이트 1,700장이
+  깔린다. `PokemonLink` 스프라이트의 `loading="lazy"`와 지역 섹션의 `.defer-offscreen`
+  (`content-visibility: auto`)으로 처리한다 — CDP로 실측했을 때 최악 프레임이
+  40~48ms → 33ms로 줄었다.
+  **여기에 무한 스크롤(챕터 단위 점진 렌더링)을 얹으면 오히려 나빠진다.** 초기 DOM은
+  2,543노드로 줄지만 청크를 붙이는 순간 React 렌더가 한 프레임에 몰려 최악 프레임이
+  171~183ms까지 튄다(청크를 1개로 줄여도 68ms). `content-visibility`는 화면 밖 요소의
+  레이아웃·페인트만 건너뛰고 DOM은 유지하므로 브라우저 기본 검색(Ctrl+F)도 계속 된다.
 
 ## 디자인 토큰
 

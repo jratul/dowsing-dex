@@ -295,7 +295,7 @@ function LocationView({
   const groups = useMemo(() => groupLines(location.lines), [location.lines])
 
   return (
-    <div className="border-b border-border pb-4 pt-3 last:border-0">
+    <div className="defer-offscreen border-b border-border pb-4 pt-3 last:border-0">
       <div className="mb-2 flex items-start gap-3">
         {imgUrl && (
           <div className="flex shrink-0 justify-center rounded bg-surface-hover p-1">

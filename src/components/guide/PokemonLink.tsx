@@ -32,6 +32,11 @@ export function PokemonLink({ id, label, showSprite = true }: PokemonLinkProps) 
           alt=""
           width={24}
           height={24}
+          // 수집 가이드 한 페이지에 이 링크가 1,700개 가까이 깔린다. eager 로 두면
+          // 스프라이트를 전부 즉시 받아 스크롤이 끊긴다. 폭·높이가 고정이라
+          // lazy 로 바꿔도 레이아웃이 밀리지 않는다.
+          loading="lazy"
+          decoding="async"
           style={{ imageRendering: 'pixelated' }}
           className="mr-0.5 inline-block h-[2em] w-[2em] align-[-0.543em]"
         />
