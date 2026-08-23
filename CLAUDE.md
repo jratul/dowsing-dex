@@ -321,5 +321,22 @@ function HowBadge({ how }: { how: string }) {
 `src/components/pokemon/EvolutionMoveComparison.tsx` — 포켓몬 상세 페이지에서 진화 가족이 2명 이상일 때 자동 노출되는 전체 비교 테이블.
 
 - `PokemonDetailPage`에서 `evolutionFamilyIds`를 추출하고, 각 포켓몬의 학습셋을 병렬 로드해 `Map<number, { learnsets, recommended }>` 형태로 넘긴다.
-- 세대·버전 탭 → 레벨업 / 기술머신·비전머신 / 가르침 섹션으로 분류.
+- 레벨업 / 기술머신·비전머신 / 가르침 섹션으로 분류. 비교표가 레벨업을 이미 보여주므로 그 아래 `MoveList`는 `hideLevelUp`으로 레벨업을 뺀다.
 - 훅 순서 규칙: `evolutionLine` / `evolutionFamilyIds` useMemo는 반드시 `if (!pokemon)` 조기 반환 **앞에** 선언해야 한다 (rules-of-hooks).
+
+### 세대·버전 탭은 PokemonDetailPage가 단독으로 소유한다
+
+`EvolutionMoveComparison` / `MoveList` / `EncounterLocationList`는 **탭을 그리지 않는다.**
+셋 다 한 카드 안에 들어가므로 각자 탭을 가지면 같은 화면에 세대 탭이 세 벌 생긴다.
+
+- 페이지가 `selectedGeneration` / `selectedVersion`을 갖고 `generation`·`version`(비교표는
+  `activeGen`·`activeVersion`)으로 내려준다. 세대를 바꾸면 버전 목록이 달라지므로
+  `selectedVersion`을 `null`로 리셋한다.
+- 세대 목록은 **본인 기술 ∪ 진화 계열 기술 ∪ 출현 장소**의 합집합이다. 알로라꼬렛처럼
+  원종보다 늦게 나온 폼이 계열에 있으면 목록이 넓어진다.
+- 기본 탭은 계열의 첫 세대가 아니라 **본인이 처음 등장하는 세대**(`moveGenerations[0]`)다.
+  안 그러면 알로라꼬렛을 열었는데 원종 때문에 1세대가 잡혀 본인 기술이 안 보인다.
+- 버전 목록은 **학습셋에서만** 모은다. 출현 장소 데이터는 같은 게임을 `금·은`으로,
+  학습셋은 `골드·실버`로 적어 두 목록을 합칠 수 없다. 그래서 출현 장소는 세대만 따른다.
+- 세 컴포넌트 모두 `title`을 prop으로 받아 **제목까지 자기가 렌더**하고, 그 세대·버전에
+  보여줄 게 없으면 `null`을 반환한다. 페이지가 제목을 그리면 내용 없는 빈 섹션이 남는다.

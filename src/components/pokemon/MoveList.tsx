@@ -1,21 +1,20 @@
-import { useMemo, useState } from 'react'
+import { useState } from 'react'
 import type React from 'react'
-import * as Tabs from '@radix-ui/react-tabs'
 import type { Generation, Learnset, Move } from '../../types/move'
 import { TypeBadge } from './TypeBadge'
 import { cn } from '../../lib/cn'
 
 const INDENT = 'pl-[calc(2.5rem+0.5rem)]'
 
-const GENERATION_ORDER: Generation[] = ['1세대', '2세대', '3세대', '4세대', '5세대', '6세대', '7세대', '8세대', '9세대']
-
 export interface MoveListProps {
   learnsets: Learnset[]
   findMove: (id: number) => Move | undefined
   recommendedMoveIds?: number[]
-  /** 외부에서 세대를 제어할 때 전달. 없으면 내부 state 사용. */
-  generation?: Generation
-  onGenerationChange?: (gen: Generation) => void
+  /** 세대·버전 필터는 도감 상세 페이지가 단독으로 소유한다. 여기서 탭을 또 그리지 않는다. */
+  generation: Generation
+  version: string
+  /** 제목까지 함께 렌더한다. 그 버전에 학습셋이 없으면 제목도 같이 사라진다. */
+  title: string
   /**
    * 레벨업 목록을 접는다. 위쪽 "진화 계열 기술 비교"가 같은 내용을 이미 보여줄 때만 켠다.
    * 진화하지 않는 포켓몬은 비교표가 없으므로 절대 켜면 안 된다.
@@ -70,7 +69,7 @@ function MoveTableHeader() {
 function MoveTableSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="flex flex-col gap-2">
-      <h3 className="text-xs font-black text-ink-faint">{title}</h3>
+      <h4 className="text-xs font-black text-ink-faint">{title}</h4>
       <div className="overflow-x-auto">
         <div className="min-w-[24rem]">
           <MoveTableHeader />
@@ -86,128 +85,72 @@ export function MoveList({
   findMove,
   recommendedMoveIds,
   generation,
-  onGenerationChange,
+  version,
+  title,
   hideLevelUp,
 }: MoveListProps) {
-  const controlled = generation !== undefined
+  const learnset = learnsets.find((ls) => ls.generation === generation && ls.version === version)
 
-  const generations = useMemo(
-    () => GENERATION_ORDER.filter((gen) => learnsets.some((ls) => ls.generation === gen)),
-    [learnsets],
-  )
-  const [internalGen, setInternalGen] = useState<Generation>(generations[0])
-  const [versionIndex, setVersionIndex] = useState(0)
-
-  const activeGeneration = controlled
-    ? (generations.includes(generation!) ? generation! : generations[0])
-    : (generations.includes(internalGen) ? internalGen : generations[0])
-
-  const learnsetsForGeneration = learnsets.filter((ls) => ls.generation === activeGeneration)
-  const learnset = learnsetsForGeneration[versionIndex] ?? learnsetsForGeneration[0]
-
-  function handleGenerationChange(value: string) {
-    const gen = value as Generation
-    if (controlled) {
-      onGenerationChange?.(gen)
-    } else {
-      setInternalGen(gen)
-    }
-    setVersionIndex(0)
-  }
-
+  // 그 버전에 이 포켓몬이 등장하지 않으면(성도 블레이범과 레전드 아르세우스 같은 경우)
+  // 아무것도 그리지 않는다. 제목만 남기면 빈 섹션처럼 보인다.
   if (!learnset) return null
 
   return (
-    <Tabs.Root value={activeGeneration} onValueChange={handleGenerationChange}>
-      {!controlled && (
-        <Tabs.List className="mb-4 flex gap-2 overflow-x-auto">
-          {generations.map((gen) => (
-            <Tabs.Trigger
-              key={gen}
-              value={gen}
-              className={cn(
-                'shrink-0 rounded-chip border border-border-strong px-3 py-1.5 text-xs font-bold text-ink',
-                'data-[state=active]:border-brand-red data-[state=active]:bg-brand-red data-[state=active]:text-white',
-              )}
-            >
-              {gen}
-            </Tabs.Trigger>
-          ))}
-        </Tabs.List>
+    <div className="flex flex-col gap-4">
+      <h3 className="text-xs font-black text-ink-faint">{title}</h3>
+
+      {recommendedMoveIds && recommendedMoveIds.length > 0 && (
+        <div className="flex flex-col gap-2">
+          <h4 className="text-xs font-black text-ink-faint">추천 기술 배치</h4>
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+            {recommendedMoveIds.map((moveId) => {
+              const move = findMove(moveId)
+              if (!move) return null
+              return (
+                <div key={moveId} className="flex flex-col gap-1 rounded-card border border-border-strong bg-surface-hover p-2">
+                  <span className="text-xs font-bold text-ink">{move.nameKo}</span>
+                  <div className="flex items-center justify-between">
+                    <TypeBadge type={move.type} size="sm" />
+                    <span className="text-xxs font-bold text-ink-faint">{move.category}</span>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
       )}
 
-      <Tabs.Content value={activeGeneration} className="flex flex-col gap-4" forceMount>
-        {recommendedMoveIds && recommendedMoveIds.length > 0 && (
-          <div className="flex flex-col gap-2">
-            <h3 className="text-xs font-black text-ink-faint">추천 기술 배치</h3>
-            <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-              {recommendedMoveIds.map((moveId) => {
-                const move = findMove(moveId)
-                if (!move) return null
-                return (
-                  <div key={moveId} className="flex flex-col gap-1 rounded-card border border-border-strong bg-surface-hover p-2">
-                    <span className="text-xs font-bold text-ink">{move.nameKo}</span>
-                    <div className="flex items-center justify-between">
-                      <TypeBadge type={move.type} size="sm" />
-                      <span className="text-xxs font-bold text-ink-faint">{move.category}</span>
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-        )}
-
-        {learnsetsForGeneration.length > 1 && (
-          <div className="flex gap-2">
-            {learnsetsForGeneration.map((ls, i) => (
-              <button
-                key={ls.version}
-                type="button"
-                onClick={() => setVersionIndex(i)}
-                className={cn(
-                  'rounded-chip px-3 py-1 text-xs font-bold',
-                  i === versionIndex ? 'bg-brand-red text-white' : 'bg-surface-hover text-ink-muted',
-                )}
-              >
-                {ls.version}
-              </button>
-            ))}
-          </div>
-        )}
-
-        {!hideLevelUp && (
-          <MoveTableSection title="레벨업으로 배우는 기술">
-            {learnset.levelUp
-              .slice()
-              .sort((a, b) => a.level - b.level)
-              .map(({ moveId, level }) => {
-                const move = findMove(moveId)
-                return move ? <MoveRow key={moveId} leading={`Lv${level}`} move={move} /> : null
-              })}
-          </MoveTableSection>
-        )}
-
-        {learnset.machines.length > 0 && (
-          <MoveTableSection title="기술머신으로 배우는 기술">
-            {learnset.machines.map(({ moveId, machine, number }) => {
+      {!hideLevelUp && learnset.levelUp.length > 0 && (
+        <MoveTableSection title="레벨업으로 배우는 기술">
+          {learnset.levelUp
+            .slice()
+            .sort((a, b) => a.level - b.level)
+            .map(({ moveId, level }) => {
               const move = findMove(moveId)
-              return move ? (
-                <MoveRow key={moveId} leading={`${machine}${number.toString().padStart(2, '0')}`} move={move} />
-              ) : null
+              return move ? <MoveRow key={moveId} leading={`Lv${level}`} move={move} /> : null
             })}
-          </MoveTableSection>
-        )}
+        </MoveTableSection>
+      )}
 
-        {learnset.tutor.length > 0 && (
-          <MoveTableSection title="가르침으로 배우는 기술">
-            {learnset.tutor.map(({ moveId }) => {
-              const move = findMove(moveId)
-              return move ? <MoveRow key={moveId} leading="-" move={move} /> : null
-            })}
-          </MoveTableSection>
-        )}
-      </Tabs.Content>
-    </Tabs.Root>
+      {learnset.machines.length > 0 && (
+        <MoveTableSection title="기술머신으로 배우는 기술">
+          {learnset.machines.map(({ moveId, machine, number }) => {
+            const move = findMove(moveId)
+            return move ? (
+              <MoveRow key={moveId} leading={`${machine}${number.toString().padStart(2, '0')}`} move={move} />
+            ) : null
+          })}
+        </MoveTableSection>
+      )}
+
+      {learnset.tutor.length > 0 && (
+        <MoveTableSection title="가르침으로 배우는 기술">
+          {learnset.tutor.map(({ moveId }) => {
+            const move = findMove(moveId)
+            return move ? <MoveRow key={moveId} leading="-" move={move} /> : null
+          })}
+        </MoveTableSection>
+      )}
+    </div>
   )
 }

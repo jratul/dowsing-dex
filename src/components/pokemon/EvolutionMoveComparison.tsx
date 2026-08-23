@@ -5,8 +5,6 @@ import { TypeBadge } from './TypeBadge'
 import { SpriteImage } from './SpriteImage'
 import { cn } from '../../lib/cn'
 
-const GENERATION_ORDER: Generation[] = ['1세대', '2세대', '3세대', '4세대', '5세대', '6세대', '7세대', '8세대', '9세대']
-
 interface FamilyMember {
   id: number
   nameKo: string
@@ -19,17 +17,21 @@ interface Props {
   familyMembers: FamilyMember[]
   familyLearnsets: Map<number, { learnsets: Learnset[]; recommended: number[] }>
   findMove: (id: number) => Move | undefined
+  /** 세대·버전 필터는 도감 상세 페이지가 단독으로 소유한다. 여기서 탭을 또 그리지 않는다. */
+  activeGen: Generation
+  activeVersion: string
+  /** 제목까지 함께 렌더한다. 그 버전에 계열 멤버가 하나도 없으면 제목도 같이 사라진다. */
+  title: string
 }
 
-export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMove }: Props) {
-  const generations = useMemo(() => {
-    const genSet = new Set<Generation>()
-    familyLearnsets.forEach(({ learnsets }) => learnsets.forEach((ls) => genSet.add(ls.generation)))
-    return GENERATION_ORDER.filter((g) => genSet.has(g))
-  }, [familyLearnsets])
-
-  const [selectedGen, setSelectedGen] = useState<Generation | null>(null)
-  const [versionIndex, setVersionIndex] = useState(0)
+export function EvolutionMoveComparison({
+  familyMembers,
+  familyLearnsets,
+  findMove,
+  activeGen,
+  activeVersion,
+  title,
+}: Props) {
   const [openMoveIds, setOpenMoveIds] = useState<Set<number>>(new Set())
 
   function toggleMove(id: number) {
@@ -41,36 +43,14 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
     })
   }
 
-  const activeGen = selectedGen ?? generations[0]
-
-  const versionsForGen = useMemo(() => {
-    let best: string[] = []
-    familyLearnsets.forEach(({ learnsets }) => {
-      const forGen = learnsets.filter((ls) => ls.generation === activeGen).map((ls) => ls.version)
-      if (forGen.length > best.length) best = forGen
-    })
-    return best
-  }, [familyLearnsets, activeGen])
-
-  const activeVersion = versionsForGen[versionIndex] ?? versionsForGen[0]
-
-  /**
-   * 선택한 세대에 학습셋이 있는 멤버만 남긴다.
-   *
-   * 히스이 블레이범처럼 8세대에서 처음 나온 리전폼은 계열 트리에는 정당하게 속하지만,
-   * 2~7세대 탭에서는 열 전체가 "—"로만 채워져 표만 넓어진다.
-   */
   const activeMembers = useMemo(() => {
     return familyMembers
       .map((member) => {
         const data = familyLearnsets.get(member.id)
-        const forGen = data?.learnsets.filter((ls) => ls.generation === activeGen) ?? []
-        // 버전 탭이 있으면 그 버전에 실제로 등장하는 폼만 인정한다. 세대 단위로 폴백하면
-        // 히스이 블레이범이 BDSP 탭에도 레전드 아르세우스 학습셋을 달고 나타난다.
+        // 그 버전에 실제로 등장하는 폼만 인정한다. 세대 단위로 폴백하면 히스이 블레이범이
+        // BDSP 탭에도 레전드 아르세우스 학습셋을 달고 나타난다.
         const learnset =
-          (activeVersion !== undefined
-            ? forGen.find((ls) => ls.version === activeVersion)
-            : forGen[0]) ?? null
+          data?.learnsets.find((ls) => ls.generation === activeGen && ls.version === activeVersion) ?? null
         return { member, learnset }
       })
       .filter((entry): entry is { member: FamilyMember; learnset: Learnset } => entry.learnset !== null)
@@ -110,55 +90,13 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
     return <p className="text-xs text-ink-faint">기술 데이터 불러오는 중…</p>
   }
 
-  if (generations.length === 0) {
-    return <p className="text-xs text-ink-faint">기술 데이터가 없습니다.</p>
-  }
+  if (activeMembers.length === 0) return null
 
   const colCount = 5 + activeMembers.length
 
   return (
-    <div>
-      <div className="mb-4 flex flex-wrap items-center gap-2">
-        <div className="flex flex-wrap gap-1.5">
-          {generations.map((gen) => (
-            <button
-              key={gen}
-              type="button"
-              onClick={() => {
-                setSelectedGen(gen)
-                setVersionIndex(0)
-              }}
-              className={cn(
-                'rounded-chip border px-3 py-1.5 text-xs font-bold transition-colors',
-                activeGen === gen
-                  ? 'border-brand-red bg-brand-red text-white'
-                  : 'border-border-strong text-ink hover:border-brand-red hover:text-brand-red',
-              )}
-            >
-              {gen}
-            </button>
-          ))}
-        </div>
-        {versionsForGen.length > 1 && (
-          <div className="flex gap-1.5">
-            {versionsForGen.map((v, i) => (
-              <button
-                key={v}
-                type="button"
-                onClick={() => setVersionIndex(i)}
-                className={cn(
-                  'rounded-chip px-3 py-1.5 text-xs font-bold transition-colors',
-                  versionIndex === i
-                    ? 'bg-brand-red/10 text-brand-red'
-                    : 'bg-surface-hover text-ink-muted hover:text-ink',
-                )}
-              >
-                {v}
-              </button>
-            ))}
-          </div>
-        )}
-      </div>
+    <div className="flex flex-col gap-3">
+      <h3 className="text-xs font-black text-ink-faint">{title}</h3>
 
       <div className="overflow-x-auto">
         <table className="w-full text-xs">

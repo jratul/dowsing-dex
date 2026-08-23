@@ -36,6 +36,7 @@ export function PokemonDetailPage() {
 
   const [moveData, setMoveData] = useState<{ learnsets: Learnset[]; recommended: number[] } | undefined>(undefined)
   const [selectedGeneration, setSelectedGeneration] = useState<Generation | null>(null)
+  const [selectedVersion, setSelectedVersion] = useState<string | null>(null)
   const [familyLearnsets, setFamilyLearnsets] = useState<Map<number, { learnsets: Learnset[]; recommended: number[] }>>(new Map())
   const [flavorTexts, setFlavorTexts] = useState<FlavorTextEntry[]>([])
   const [isLoadingFlavor, setIsLoadingFlavor] = useState(false)
@@ -43,6 +44,7 @@ export function PokemonDetailPage() {
   useEffect(() => {
     setMoveData(undefined)
     setSelectedGeneration(null)
+    setSelectedVersion(null)
     setFamilyLearnsets(new Map())
     setFlavorTexts([])
     if (!pokemon) return
@@ -72,12 +74,54 @@ export function PokemonDetailPage() {
     [pokemon?.encounterLocations],
   )
 
-  // 합집합 세대 (숫자 기준, 1세대 → 1)
-  const sharedGenerationNums: number[] = useMemo(() => {
+  // 진화 계열 멤버에게만 있는 세대도 탭에 나와야 한다. 꼬렛(1세대~)과 알로라꼬렛(7세대~)처럼
+  // 원종이 없는 세대에 리전폼만 존재하는 계열이 있다.
+  const familyGenerationNums: number[] = useMemo(() => {
+    const nums = new Set<number>()
+    familyLearnsets.forEach(({ learnsets: ls }) =>
+      ls.forEach((l) => nums.add(Number(l.generation.replace('세대', '')))),
+    )
+    return [...nums]
+  }, [familyLearnsets])
+
+  // 기술 · 진화 계열 · 출현 장소를 모두 덮는 합집합 세대 (숫자 기준, 1세대 → 1)
+  const generationNums: number[] = useMemo(() => {
     const fromMoves = moveGenerations.map((g) => Number(g.replace('세대', '')))
-    const all = [...new Set([...fromMoves, ...encounterGenerations])].sort((a, b) => a - b)
-    return all
-  }, [moveGenerations, encounterGenerations])
+    return [...new Set([...fromMoves, ...familyGenerationNums, ...encounterGenerations])].sort((a, b) => a - b)
+  }, [moveGenerations, familyGenerationNums, encounterGenerations])
+
+  /**
+   * 기본 탭은 계열의 첫 세대가 아니라 "이 포켓몬"이 처음 등장하는 세대다.
+   * 알로라꼬렛(7세대~)을 열었는데 원종 꼬렛 때문에 1세대가 잡히면 정작 본인 기술이 안 보인다.
+   */
+  const defaultGenNum =
+    moveGenerations.length > 0
+      ? Number(moveGenerations[0].replace('세대', ''))
+      : (encounterGenerations[0] ?? generationNums[0] ?? 1)
+
+  const activeGenNum = selectedGeneration
+    ? Number(selectedGeneration.replace('세대', ''))
+    : defaultGenNum
+  const activeGeneration = `${activeGenNum}세대` as Generation
+
+  /**
+   * 활성 세대의 게임 버전 목록. 학습셋에서만 모은다 — 출현 장소 데이터는 같은 게임을
+   * "금·은"으로, 학습셋은 "골드·실버"로 적어 두 목록을 합칠 수 없다.
+   */
+  const versionsForActiveGen: string[] = useMemo(() => {
+    const versions: string[] = []
+    const collect = (ls: Learnset) => {
+      if (ls.generation === activeGeneration && !versions.includes(ls.version)) versions.push(ls.version)
+    }
+    learnsets?.forEach(collect)
+    familyLearnsets.forEach(({ learnsets: ls }) => ls.forEach(collect))
+    return versions
+  }, [learnsets, familyLearnsets, activeGeneration])
+
+  const activeVersion =
+    selectedVersion && versionsForActiveGen.includes(selectedVersion)
+      ? selectedVersion
+      : (versionsForActiveGen[0] ?? '')
 
   const evolutionLine = pokemon ? findEvolutionLine(pokemon.id) : undefined
   // 진화 계열 비교표가 레벨업 기술을 이미 보여주므로, 그때만 아래 목록에서 레벨업을 뺀다.
@@ -117,12 +161,9 @@ export function PokemonDetailPage() {
   const prevPokemon = pokemonIndex > 0 ? SAMPLE_POKEMON[pokemonIndex - 1] : undefined
   const nextPokemon = pokemonIndex < SAMPLE_POKEMON.length - 1 ? SAMPLE_POKEMON[pokemonIndex + 1] : undefined
 
-  const hasSharedTab = sharedGenerationNums.length > 0 && (learnsets?.length ?? 0) > 0 && encounterGenerations.length > 0
-
-  const activeGenNum = selectedGeneration
-    ? Number(selectedGeneration.replace('세대', ''))
-    : (sharedGenerationNums[0] ?? 1)
-  const activeGeneration = `${activeGenNum}세대` as Generation
+  const hasMoves = (learnsets?.length ?? 0) > 0
+  const hasEncounters = (pokemon.encounterLocations?.length ?? 0) > 0
+  const sectionTitle = [hasMoves && '기술', hasEncounters && '출현 장소'].filter(Boolean).join(' · ')
 
   return (
     <div className="mx-auto w-full lg:w-4/5 px-4 py-6">
@@ -277,109 +318,90 @@ export function PokemonDetailPage() {
         </Card>
       )}
 
-      {/* 기술 + 출현 장소가 모두 있을 때: 세대 탭을 하나로 공유 */}
-      {hasSharedTab ? (
+      {/* 기술 · 진화 계열 비교 · 출현 장소가 세대·버전 탭 하나를 공유한다 */}
+      {(hasMoves || hasEncounters) && (
         <Card className="mt-6 p-4">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
-            <div className="flex gap-2">
-              <h2 className="text-sm font-black text-ink-faint">기술</h2>
-              <span className="text-sm font-black text-ink-faint">·</span>
-              <h2 className="text-sm font-black text-ink-faint">출현 장소</h2>
-            </div>
-            {/* 공유 세대 탭 */}
-            <div className="flex gap-1.5 overflow-x-auto">
-              {sharedGenerationNums.map((gen) => (
-                <button
-                  key={gen}
-                  type="button"
-                  onClick={() => setSelectedGeneration(`${gen}세대` as Generation)}
-                  className={cn(
-                    'shrink-0 rounded-chip border px-3 py-1.5 text-xs font-bold transition-colors',
-                    activeGenNum === gen
-                      ? 'border-brand-red bg-brand-red text-white'
-                      : 'border-border-strong text-ink hover:border-brand-red hover:text-brand-red',
-                  )}
-                >
-                  {gen}세대
-                </button>
-              ))}
+            <h2 className="text-sm font-black text-ink-faint">{sectionTitle}</h2>
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="flex gap-1.5 overflow-x-auto">
+                {generationNums.map((gen) => (
+                  <button
+                    key={gen}
+                    type="button"
+                    onClick={() => {
+                      setSelectedGeneration(`${gen}세대` as Generation)
+                      // 세대가 바뀌면 버전 목록이 통째로 달라진다. 첫 버전으로 되돌린다.
+                      setSelectedVersion(null)
+                    }}
+                    className={cn(
+                      'shrink-0 rounded-chip border px-3 py-1.5 text-xs font-bold transition-colors',
+                      activeGenNum === gen
+                        ? 'border-brand-red bg-brand-red text-white'
+                        : 'border-border-strong text-ink hover:border-brand-red hover:text-brand-red',
+                    )}
+                  >
+                    {gen}세대
+                  </button>
+                ))}
+              </div>
+              {versionsForActiveGen.length > 1 && (
+                <div className="flex gap-1.5 overflow-x-auto">
+                  {versionsForActiveGen.map((version) => (
+                    <button
+                      key={version}
+                      type="button"
+                      onClick={() => setSelectedVersion(version)}
+                      className={cn(
+                        'shrink-0 rounded-chip px-3 py-1.5 text-xs font-bold transition-colors',
+                        activeVersion === version
+                          ? 'bg-brand-red/10 text-brand-red'
+                          : 'bg-surface-hover text-ink-muted hover:text-ink',
+                      )}
+                    >
+                      {version}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
 
           <div className="flex flex-col gap-6">
-            {learnsets && learnsets.length > 0 && (
-              <div>
-                {/* 진화하는 포켓몬은 계열 비교표가 레벨업 기술을 대신하고,
-                    진화하지 않는 포켓몬은 자기 학습셋을 그대로 보여준다. */}
-                {hasEvolutionComparison ? (
-                  <>
-                    <h3 className="mb-3 text-xs font-black text-ink-faint">진화 계열 기술 비교</h3>
-                    <EvolutionMoveComparison
-                      familyMembers={evolutionFamilyIds.map((famId) => ({ id: famId, ...findSamplePokemon(famId) }))}
-                      familyLearnsets={familyLearnsets}
-                      findMove={findMove}
-                    />
-                    <h3 className="mt-6 mb-3 text-xs font-black text-ink-faint">기술머신·가르침</h3>
-                  </>
-                ) : (
-                  <h3 className="mb-3 text-xs font-black text-ink-faint">기술</h3>
-                )}
-                <MoveList
-                  learnsets={learnsets}
-                  findMove={findMove}
-                  recommendedMoveIds={moveData?.recommended}
-                  generation={activeGeneration}
-                  onGenerationChange={(gen) => setSelectedGeneration(gen)}
-                  hideLevelUp={hasEvolutionComparison}
-                />
-              </div>
+            {/* 진화하는 포켓몬은 계열 비교표가 레벨업 기술을 대신하고,
+                진화하지 않는 포켓몬은 자기 학습셋을 그대로 보여준다. */}
+            {hasEvolutionComparison && (
+              <EvolutionMoveComparison
+                title="진화 계열 기술 비교"
+                familyMembers={evolutionFamilyIds.map((famId) => ({ id: famId, ...findSamplePokemon(famId) }))}
+                familyLearnsets={familyLearnsets}
+                findMove={findMove}
+                activeGen={activeGeneration}
+                activeVersion={activeVersion}
+              />
             )}
 
-            {pokemon.encounterLocations && pokemon.encounterLocations.length > 0 && (
-              <div>
-                <h3 className="mb-3 text-xs font-black text-ink-faint">출현 장소</h3>
-                <EncounterLocationList
-                  locations={pokemon.encounterLocations}
-                  generation={activeGenNum}
-                  onGenerationChange={(gen) => setSelectedGeneration(`${gen}세대` as Generation)}
-                />
-              </div>
-            )}
-          </div>
-        </Card>
-      ) : (
-        <>
-          {learnsets && learnsets.length > 0 && (
-            <Card className="mt-6 p-4">
-              {hasEvolutionComparison ? (
-                <>
-                  <h2 className="mb-3 text-sm font-black text-ink-faint">진화 계열 기술 비교</h2>
-                  <EvolutionMoveComparison
-                    familyMembers={evolutionFamilyIds.map((famId) => ({ id: famId, ...findSamplePokemon(famId) }))}
-                    familyLearnsets={familyLearnsets}
-                    findMove={findMove}
-                  />
-                  <h2 className="mt-6 mb-3 text-sm font-black text-ink-faint">기술머신·가르침</h2>
-                </>
-              ) : (
-                <h2 className="mb-3 text-sm font-black text-ink-faint">기술</h2>
-              )}
+            {learnsets && learnsets.length > 0 && (
               <MoveList
+                title={hasEvolutionComparison ? '기술머신·가르침' : '기술'}
                 learnsets={learnsets}
                 findMove={findMove}
                 recommendedMoveIds={moveData?.recommended}
+                generation={activeGeneration}
+                version={activeVersion}
                 hideLevelUp={hasEvolutionComparison}
               />
-            </Card>
-          )}
+            )}
 
-          {pokemon.encounterLocations && pokemon.encounterLocations.length > 0 && (
-            <Card className="mt-6 p-4">
-              <h2 className="mb-3 text-sm font-black text-ink-faint">출현 장소</h2>
-              <EncounterLocationList locations={pokemon.encounterLocations} />
-            </Card>
-          )}
-        </>
+            {pokemon.encounterLocations && pokemon.encounterLocations.length > 0 && (
+              <EncounterLocationList
+                title="출현 장소"
+                locations={pokemon.encounterLocations}
+                generation={activeGenNum}
+              />
+            )}
+          </div>
+        </Card>
       )}
 
       {pokemon.megaForms && pokemon.megaForms.length > 0 && (
