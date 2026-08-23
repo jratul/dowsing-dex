@@ -80,10 +80,14 @@ export function PokemonDetailPage() {
   }, [moveGenerations, encounterGenerations])
 
   const evolutionLine = pokemon ? findEvolutionLine(pokemon.id) : undefined
+  // 진화 계열 비교표가 레벨업 기술을 이미 보여주므로, 그때만 아래 목록에서 레벨업을 뺀다.
   const evolutionFamilyIds = useMemo(
     () => (evolutionLine ? flattenEvolutionIds(evolutionLine) : pokemon ? [pokemon.id] : []),
     [evolutionLine, pokemon],
   )
+
+  /** 진화 가족이 2명 이상일 때만 비교표가 뜬다. 단독 포켓몬은 비교표가 없다. */
+  const hasEvolutionComparison = evolutionFamilyIds.length > 1
 
   useEffect(() => {
     if (evolutionFamilyIds.length <= 1) return
@@ -273,18 +277,6 @@ export function PokemonDetailPage() {
         </Card>
       )}
 
-      {/* 진화 계열 기술 비교 — 가족이 2명 이상일 때만 표시 */}
-      {evolutionFamilyIds.length > 1 && (
-        <Card className="mt-6 p-4">
-          <h2 className="mb-3 text-sm font-black text-ink-faint">진화 계열 기술 비교</h2>
-          <EvolutionMoveComparison
-            familyMembers={evolutionFamilyIds.map((famId) => ({ id: famId, ...findSamplePokemon(famId) }))}
-            familyLearnsets={familyLearnsets}
-            findMove={findMove}
-          />
-        </Card>
-      )}
-
       {/* 기술 + 출현 장소가 모두 있을 때: 세대 탭을 하나로 공유 */}
       {hasSharedTab ? (
         <Card className="mt-6 p-4">
@@ -317,13 +309,28 @@ export function PokemonDetailPage() {
           <div className="flex flex-col gap-6">
             {learnsets && learnsets.length > 0 && (
               <div>
-                <h3 className="mb-3 text-xs font-black text-ink-faint">기술</h3>
+                {/* 진화하는 포켓몬은 계열 비교표가 레벨업 기술을 대신하고,
+                    진화하지 않는 포켓몬은 자기 학습셋을 그대로 보여준다. */}
+                {hasEvolutionComparison ? (
+                  <>
+                    <h3 className="mb-3 text-xs font-black text-ink-faint">진화 계열 기술 비교</h3>
+                    <EvolutionMoveComparison
+                      familyMembers={evolutionFamilyIds.map((famId) => ({ id: famId, ...findSamplePokemon(famId) }))}
+                      familyLearnsets={familyLearnsets}
+                      findMove={findMove}
+                    />
+                    <h3 className="mt-6 mb-3 text-xs font-black text-ink-faint">기술머신·가르침</h3>
+                  </>
+                ) : (
+                  <h3 className="mb-3 text-xs font-black text-ink-faint">기술</h3>
+                )}
                 <MoveList
                   learnsets={learnsets}
                   findMove={findMove}
                   recommendedMoveIds={moveData?.recommended}
                   generation={activeGeneration}
                   onGenerationChange={(gen) => setSelectedGeneration(gen)}
+                  hideLevelUp={hasEvolutionComparison}
                 />
               </div>
             )}
@@ -344,8 +351,25 @@ export function PokemonDetailPage() {
         <>
           {learnsets && learnsets.length > 0 && (
             <Card className="mt-6 p-4">
-              <h2 className="mb-3 text-sm font-black text-ink-faint">기술</h2>
-              <MoveList learnsets={learnsets} findMove={findMove} recommendedMoveIds={moveData?.recommended} />
+              {hasEvolutionComparison ? (
+                <>
+                  <h2 className="mb-3 text-sm font-black text-ink-faint">진화 계열 기술 비교</h2>
+                  <EvolutionMoveComparison
+                    familyMembers={evolutionFamilyIds.map((famId) => ({ id: famId, ...findSamplePokemon(famId) }))}
+                    familyLearnsets={familyLearnsets}
+                    findMove={findMove}
+                  />
+                  <h2 className="mt-6 mb-3 text-sm font-black text-ink-faint">기술머신·가르침</h2>
+                </>
+              ) : (
+                <h2 className="mb-3 text-sm font-black text-ink-faint">기술</h2>
+              )}
+              <MoveList
+                learnsets={learnsets}
+                findMove={findMove}
+                recommendedMoveIds={moveData?.recommended}
+                hideLevelUp={hasEvolutionComparison}
+              />
             </Card>
           )}
 

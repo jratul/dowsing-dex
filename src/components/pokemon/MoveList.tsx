@@ -16,6 +16,11 @@ export interface MoveListProps {
   /** 외부에서 세대를 제어할 때 전달. 없으면 내부 state 사용. */
   generation?: Generation
   onGenerationChange?: (gen: Generation) => void
+  /**
+   * 레벨업 목록을 접는다. 위쪽 "진화 계열 기술 비교"가 같은 내용을 이미 보여줄 때만 켠다.
+   * 진화하지 않는 포켓몬은 비교표가 없으므로 절대 켜면 안 된다.
+   */
+  hideLevelUp?: boolean
 }
 
 function MoveRow({ leading, move }: { leading: string; move: Move }) {
@@ -25,7 +30,7 @@ function MoveRow({ leading, move }: { leading: string; move: Move }) {
       className={cn('border-b border-border/50 last:border-0', move.effectKo && 'cursor-pointer')}
       onClick={move.effectKo ? () => setOpen((v) => !v) : undefined}
     >
-      <div className="grid grid-cols-[2.5rem_minmax(6rem,1fr)_3.5rem_3rem_2.5rem_2.5rem_2rem] items-center gap-2 py-1.5 text-xs">
+      <div className="grid grid-cols-[2.5rem_minmax(6rem,max-content)_3.5rem_3rem_2.5rem_2.5rem_2rem_1fr] items-center gap-2 py-1.5 text-xs">
         <span className="font-bold text-ink-faint">{leading}</span>
         <span className="flex items-center gap-1 font-bold text-ink">
           {move.nameKo}
@@ -38,6 +43,7 @@ function MoveRow({ leading, move }: { leading: string; move: Move }) {
         <span className="text-right text-ink-muted">{move.power ?? '-'}</span>
         <span className="text-right text-ink-muted">{move.accuracy ?? '-'}</span>
         <span className="text-right text-ink-muted">{move.pp}</span>
+        <span />
       </div>
       {open && move.effectKo && (
         <p className={cn('py-2 text-xs leading-relaxed text-ink', INDENT)}>{move.effectKo}</p>
@@ -48,7 +54,7 @@ function MoveRow({ leading, move }: { leading: string; move: Move }) {
 
 function MoveTableHeader() {
   return (
-    <div className="grid grid-cols-[2.5rem_minmax(6rem,1fr)_3.5rem_3rem_2.5rem_2.5rem_2rem] gap-2 border-b border-border pb-1.5 text-xxs font-bold text-ink-faint">
+    <div className="grid grid-cols-[2.5rem_minmax(6rem,max-content)_3.5rem_3rem_2.5rem_2.5rem_2rem_1fr] gap-2 border-b border-border pb-1.5 text-xxs font-bold text-ink-faint">
       <span>Lv/No</span>
       <span>기술</span>
       <span>타입</span>
@@ -56,6 +62,7 @@ function MoveTableHeader() {
       <span className="text-right">위력</span>
       <span className="text-right">명중</span>
       <span className="text-right">PP</span>
+      <span />
     </div>
   )
 }
@@ -74,7 +81,14 @@ function MoveTableSection({ title, children }: { title: string; children: React.
   )
 }
 
-export function MoveList({ learnsets, findMove, recommendedMoveIds, generation, onGenerationChange }: MoveListProps) {
+export function MoveList({
+  learnsets,
+  findMove,
+  recommendedMoveIds,
+  generation,
+  onGenerationChange,
+  hideLevelUp,
+}: MoveListProps) {
   const controlled = generation !== undefined
 
   const generations = useMemo(
@@ -162,15 +176,17 @@ export function MoveList({ learnsets, findMove, recommendedMoveIds, generation, 
           </div>
         )}
 
-        <MoveTableSection title="레벨업으로 배우는 기술">
-          {learnset.levelUp
-            .slice()
-            .sort((a, b) => a.level - b.level)
-            .map(({ moveId, level }) => {
-              const move = findMove(moveId)
-              return move ? <MoveRow key={moveId} leading={`Lv${level}`} move={move} /> : null
-            })}
-        </MoveTableSection>
+        {!hideLevelUp && (
+          <MoveTableSection title="레벨업으로 배우는 기술">
+            {learnset.levelUp
+              .slice()
+              .sort((a, b) => a.level - b.level)
+              .map(({ moveId, level }) => {
+                const move = findMove(moveId)
+                return move ? <MoveRow key={moveId} leading={`Lv${level}`} move={move} /> : null
+              })}
+          </MoveTableSection>
+        )}
 
         {learnset.machines.length > 0 && (
           <MoveTableSection title="기술머신으로 배우는 기술">
