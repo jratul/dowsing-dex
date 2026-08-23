@@ -26,6 +26,15 @@ npm run build:move-descriptions  # PokeAPI에서 기술 한국어 설명 수집 
 npm run build:abilities        # PokeAPI에서 특성 한국어 데이터 수집 → abilities.generated.ts
 ```
 
+> `scripts/build-hgss-encounter-rates.mjs`(HGSS 수집 가이드의 야생 출현 확률)도 npm script
+> 미등록 상태다. `node scripts/build-hgss-encounter-rates.mjs` 로 직접 실행한다.
+> `hgss-collection.md`의 지역·방법 라벨을 파싱해 PokeAPI 4세대 조우 확률을 붙인다.
+> 지역 매핑은 스크립트 안 `LOCATION_MAP`에 **명시한 것만** 쓴다 — 포켓몬 목록이 겹치는
+> 정도로 자동 추정하면 조우 종류가 적은 지역이 엉뚱한 곳에 100% 일치로 붙는다
+> (검은먹시티가 `unknown-all-poliwag`에, 담청시티가 `johto-sea-route-40`에 붙었다).
+> 실행 후 "4246개 중 4246개에 확률을 붙였다(100%)"처럼 커버리지가 찍히는데, 매핑이
+> 틀리면 그 지역이 통째로 0건이 되므로 이 수치가 매핑 검증을 겸한다.
+
 > `scripts/build-items.mjs`(items.generated.ts 생성)는 npm script 미등록 상태다.
 > 필요하면 `node scripts/build-items.mjs` 로 직접 실행한다.
 
@@ -62,6 +71,7 @@ src/
     abilities.generated.ts            # 특성 313종 (build-abilities.mjs 생성)
     items.generated.ts                # 진화/배틀 아이템 (build-items.mjs 생성)
     guides/hgss-collection.md         # HGSS·기라티나PT 수집 가이드 원문 (?raw 임포트 후 런타임 파싱)
+    guides/hgss-encounter-rates.generated.ts  # 위 가이드의 야생 출현 확률 (build-hgss-encounter-rates.mjs 생성)
     sample/                           # 도우미 함수 (findSamplePokemon, findMove 등) + 공략 데이터
       flavorTexts.ts                  # PokeAPI 도감 설명 온디맨드 fetch 유틸
       pokemonHeartgoldWalkthrough.data.ts  # 하트골드 최고효율 진행 공략 데이터 (11 Phase)

@@ -8,6 +8,36 @@ import { Card } from '../../components/ui/Card'
 import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
 import { cn } from '../../lib/cn'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
+import { HGSS_ENCOUNTER_RATES } from '../../data/guides/hgss-encounter-rates.generated'
+
+/** 가이드 탭 순서와 확률 데이터의 버전 키 순서를 맞춘다. */
+const VERSION_KEYS = ['heartgold', 'soulsilver', 'platinum']
+
+/** 지역+방법 안에서 포켓몬 id → 출현 확률(%) */
+type RateMap = Record<number, number> | undefined
+
+/**
+ * 출현 확률 배지. 희귀할수록 눈에 띄게 색을 올린다 — 목록에서 찾는 건 보통
+ * "몇 %인가"가 아니라 "이거 잘 안 나오나"라서.
+ */
+function RateBadge({ chance }: { chance: number }) {
+  const tone =
+    chance >= 20
+      ? 'bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300'
+      : chance >= 10
+        ? 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300'
+        : chance >= 4
+          ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300'
+          : 'bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300'
+  return (
+    <span
+      title={`출현 확률 약 ${chance}%`}
+      className={cn('ml-0.5 rounded px-1 py-0.5 text-xxs font-bold whitespace-nowrap', tone)}
+    >
+      {chance}%
+    </span>
+  )
+}
 
 // --- 타입 ---
 interface LocationSection {
@@ -172,7 +202,15 @@ function groupLines(lines: string[]): LineGroup[] {
 }
 
 // --- 인라인 렌더러 (** 포켓몬명 ** → 스프라이트 링크) ---
-function RenderInline({ text, nameToId }: { text: string; nameToId: Map<string, number> }) {
+function RenderInline({
+  text,
+  nameToId,
+  rates,
+}: {
+  text: string
+  nameToId: Map<string, number>
+  rates?: RateMap
+}) {
   const parts: ReactNode[] = []
   const regex = /\*\*([^*]+)\*\*/g
   let lastIndex = 0
@@ -186,6 +224,8 @@ function RenderInline({ text, nameToId }: { text: string; nameToId: Map<string, 
     const pokemonId = nameToId.get(boldText)
     if (pokemonId) {
       parts.push(<PokemonLink key={`p-${match.index}`} id={pokemonId} label={boldText} />)
+      const chance = rates?.[pokemonId]
+      if (chance !== undefined) parts.push(<RateBadge key={`r-${match.index}`} chance={chance} />)
     } else {
       // "스이쿤 Lv.40", "디아루가/펄기아 Lv.70:"처럼 이름에 레벨·조건이 붙은 볼드도
       // 안쪽의 포켓몬 이름만 링크가 되도록 한 번 더 훑는다.
@@ -235,15 +275,22 @@ const NOTE_STYLE: Record<string, string> = {
   '⭐': 'text-yellow-600 dark:text-yellow-400',
 }
 
+/** "**낡은낚싯대:** **잉어킹** Lv.10" 처럼 엔트리 앞머리에 붙는 방법 라벨을 떼어낸다. */
+function methodLabelOf(entry: string): string | undefined {
+  return /^\*\*([^:*]+):\*\*/.exec(entry)?.[1].trim()
+}
+
 // --- LocationSection 렌더러 ---
 function LocationView({
   location,
   nameToId,
   imgUrl,
+  locationRates,
 }: {
   location: LocationSection
   nameToId: Map<string, number>
   imgUrl?: string
+  locationRates?: Record<string, Record<number, number>>
 }) {
   const groups = useMemo(() => groupLines(location.lines), [location.lines])
 
@@ -278,7 +325,11 @@ function LocationView({
                       // flex로 감싸면 RenderInline이 돌려주는 조각들이 각각 flex 항목이 되어
                       // 문장 중간 줄바꿈이 깨지므로, 블록 그대로 두고 min-h만 준다.
                       <div key={ei} className="min-h-6 text-xs leading-loose text-ink">
-                        <RenderInline text={entry} nameToId={nameToId} />
+                        <RenderInline
+                          text={entry}
+                          nameToId={nameToId}
+                          rates={locationRates?.[methodLabelOf(entry) ?? '']}
+                        />
                       </div>
                     ))}
                   </div>
@@ -313,10 +364,12 @@ function ChapterView({
   chapter,
   nameToId,
   locationImages,
+  gameRates,
 }: {
   chapter: ChapterSection
   nameToId: Map<string, number>
   locationImages: Record<string, string>
+  gameRates?: Record<string, Record<string, Record<number, number>>>
 }) {
   return (
     <div>
@@ -328,6 +381,7 @@ function ChapterView({
             location={loc}
             nameToId={nameToId}
             imgUrl={locationImages[loc.name]}
+            locationRates={gameRates?.[loc.name]}
           />
         ))}
       </div>
@@ -433,6 +487,26 @@ export function PokemonHGSSCollectionGuidePage() {
             </span>
           ))}
         </div>
+
+        <p className="mt-3 mb-2 text-xs font-bold text-ink-muted">출현 확률</p>
+        <div className="flex flex-wrap items-center gap-2 text-xs">
+          {[
+            { chance: 30, label: '흔함' },
+            { chance: 15, label: '보통' },
+            { chance: 5, label: '적음' },
+            { chance: 1, label: '희귀' },
+          ].map(({ chance, label }) => (
+            <span key={label} className="flex items-center gap-1 text-ink-muted">
+              <RateBadge chance={chance} />
+              <span>{label}</span>
+            </span>
+          ))}
+        </div>
+        <p className="mt-2 text-xxs leading-relaxed text-ink-muted">
+          PokeAPI의 4세대 조우 데이터 기준. 같은 조건에서 여러 슬롯을 차지하면 확률을 더했고,
+          시간대처럼 동시에 성립하지 않는 조건이 여러 개면 그중 가장 높은 값을 적었다.
+          낚시·파도타기처럼 조건이 하나뿐인 방법은 한 지역의 합이 정확히 100%가 된다.
+        </p>
       </Card>
 
       {/* 게임 탭 */}
@@ -462,6 +536,7 @@ export function PokemonHGSSCollectionGuidePage() {
                     chapter={chapter}
                     nameToId={nameToId}
                     locationImages={GAME_LOCATION_IMAGES[gi] ?? {}}
+                    gameRates={HGSS_ENCOUNTER_RATES[VERSION_KEYS[gi]]}
                   />
                 </Card>
               ))}
