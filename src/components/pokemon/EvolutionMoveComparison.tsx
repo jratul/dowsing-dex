@@ -10,6 +10,8 @@ const GENERATION_ORDER: Generation[] = ['1세대', '2세대', '3세대', '4세�
 interface FamilyMember {
   id: number
   nameKo: string
+  /** 알로라·히스이 등 리전폼 라벨. 원종과 이름이 같아 이게 없으면 열을 구분할 수 없다. */
+  formLabel?: string
   spriteUrl?: string
 }
 
@@ -52,16 +54,26 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
 
   const activeVersion = versionsForGen[versionIndex] ?? versionsForGen[0]
 
-  const memberLearnsets = useMemo(() => {
-    return familyMembers.map((m) => {
-      const data = familyLearnsets.get(m.id)
-      if (!data) return null
-      return (
-        data.learnsets.find((ls) => ls.generation === activeGen && ls.version === activeVersion) ??
-        data.learnsets.find((ls) => ls.generation === activeGen) ??
-        null
-      )
-    })
+  /**
+   * 선택한 세대에 학습셋이 있는 멤버만 남긴다.
+   *
+   * 히스이 블레이범처럼 8세대에서 처음 나온 리전폼은 계열 트리에는 정당하게 속하지만,
+   * 2~7세대 탭에서는 열 전체가 "—"로만 채워져 표만 넓어진다.
+   */
+  const activeMembers = useMemo(() => {
+    return familyMembers
+      .map((member) => {
+        const data = familyLearnsets.get(member.id)
+        const forGen = data?.learnsets.filter((ls) => ls.generation === activeGen) ?? []
+        // 버전 탭이 있으면 그 버전에 실제로 등장하는 폼만 인정한다. 세대 단위로 폴백하면
+        // 히스이 블레이범이 BDSP 탭에도 레전드 아르세우스 학습셋을 달고 나타난다.
+        const learnset =
+          (activeVersion !== undefined
+            ? forGen.find((ls) => ls.version === activeVersion)
+            : forGen[0]) ?? null
+        return { member, learnset }
+      })
+      .filter((entry): entry is { member: FamilyMember; learnset: Learnset } => entry.learnset !== null)
   }, [familyMembers, familyLearnsets, activeGen, activeVersion])
 
   const { levelUpMoves, machineMoves, tutorMoves } = useMemo(() => {
@@ -69,8 +81,7 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
     const machineMap = new Map<number, string>()
     const tutorSet = new Set<number>()
 
-    memberLearnsets.forEach((ls) => {
-      if (!ls) return
+    activeMembers.forEach(({ learnset: ls }) => {
       ls.levelUp.forEach(({ moveId, level }) => {
         const cur = levelUpMap.get(moveId)
         if (cur === undefined || level < cur) levelUpMap.set(moveId, level)
@@ -91,7 +102,7 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
         .map(([id]) => id),
       tutorMoves: Array.from(tutorSet),
     }
-  }, [memberLearnsets])
+  }, [activeMembers])
 
   const allLoaded = familyMembers.every((m) => familyLearnsets.has(m.id))
 
@@ -103,7 +114,7 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
     return <p className="text-xs text-ink-faint">기술 데이터가 없습니다.</p>
   }
 
-  const colCount = 5 + familyMembers.length
+  const colCount = 5 + activeMembers.length
 
   return (
     <div>
@@ -158,11 +169,14 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
               <th className="py-2 pr-3 text-left text-xxs font-bold text-ink-faint">분류</th>
               <th className="py-2 pr-3 text-right text-xxs font-bold text-ink-faint">위력</th>
               <th className="py-2 pr-4 text-right text-xxs font-bold text-ink-faint">명중</th>
-              {familyMembers.map((m) => (
+              {activeMembers.map(({ member: m }) => (
                 <th key={m.id} className="min-w-20 px-2 py-2 text-center">
                   <div className="flex flex-col items-center gap-0.5">
                     <SpriteImage src={m.spriteUrl} alt={m.nameKo} width={32} height={32} className="h-8 w-8" />
-                    <span className="text-xxs font-bold text-ink-faint">{m.nameKo}</span>
+                    <span className="text-xxs font-bold text-ink-faint">
+                      {m.nameKo}
+                      {m.formLabel && <span className="block">({m.formLabel})</span>}
+                    </span>
                   </div>
                 </th>
               ))}
@@ -193,10 +207,10 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
                         <td className="py-1.5 pr-3 text-ink-muted">{move.category}</td>
                         <td className="py-1.5 pr-3 text-right text-ink-muted">{move.power ?? '—'}</td>
                         <td className="py-1.5 pr-4 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
-                        {memberLearnsets.map((ls, i) => {
-                          const lm = ls?.levelUp.find((m) => m.moveId === moveId)
+                        {activeMembers.map(({ member, learnset: ls }) => {
+                          const lm = ls.levelUp.find((m) => m.moveId === moveId)
                           return (
-                            <td key={familyMembers[i].id} className="px-2 py-1.5 text-center font-bold text-ink">
+                            <td key={member.id} className="px-2 py-1.5 text-center font-bold text-ink">
                               {lm ? `Lv.${lm.level}` : <span className="text-ink-faint">—</span>}
                             </td>
                           )
@@ -237,10 +251,10 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
                         <td className="py-1.5 pr-3 text-ink-muted">{move.category}</td>
                         <td className="py-1.5 pr-3 text-right text-ink-muted">{move.power ?? '—'}</td>
                         <td className="py-1.5 pr-4 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
-                        {memberLearnsets.map((ls, i) => {
-                          const mm = ls?.machines.find((m) => m.moveId === moveId)
+                        {activeMembers.map(({ member, learnset: ls }) => {
+                          const mm = ls.machines.find((m) => m.moveId === moveId)
                           return (
-                            <td key={familyMembers[i].id} className="px-2 py-1.5 text-center font-bold text-ink">
+                            <td key={member.id} className="px-2 py-1.5 text-center font-bold text-ink">
                               {mm ? `${mm.machine}${String(mm.number).padStart(2, '0')}` : <span className="text-ink-faint">—</span>}
                             </td>
                           )
@@ -281,10 +295,10 @@ export function EvolutionMoveComparison({ familyMembers, familyLearnsets, findMo
                         <td className="py-1.5 pr-3 text-ink-muted">{move.category}</td>
                         <td className="py-1.5 pr-3 text-right text-ink-muted">{move.power ?? '—'}</td>
                         <td className="py-1.5 pr-4 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
-                        {memberLearnsets.map((ls, i) => {
-                          const has = ls?.tutor.some((m) => m.moveId === moveId)
+                        {activeMembers.map(({ member, learnset: ls }) => {
+                          const has = ls.tutor.some((m) => m.moveId === moveId)
                           return (
-                            <td key={familyMembers[i].id} className="px-2 py-1.5 text-center font-bold text-ink">
+                            <td key={member.id} className="px-2 py-1.5 text-center font-bold text-ink">
                               {has ? '●' : <span className="text-ink-faint">—</span>}
                             </td>
                           )

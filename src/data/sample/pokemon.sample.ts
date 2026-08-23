@@ -19,7 +19,13 @@ const EVOLUTION_LINES: EvolutionStage[][] = ALL_EVOLUTION_LINES
 
 export function findSamplePokemon(id: number) {
   const pokemon = SAMPLE_POKEMON.find((p) => p.id === id)
-  return { nameKo: pokemon?.nameKo ?? '???', spriteUrl: pokemon?.spriteUrl, artworkUrl: pokemon?.artworkUrl }
+  // formLabel(알로라/히스이 등)이 없으면 리전폼과 원종이 같은 이름으로 보여 구분되지 않는다.
+  return {
+    nameKo: pokemon?.nameKo ?? '???',
+    formLabel: pokemon?.formLabel,
+    spriteUrl: pokemon?.spriteUrl,
+    artworkUrl: pokemon?.artworkUrl,
+  }
 }
 
 function containsId(stage: EvolutionStage, id: number): boolean {

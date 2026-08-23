@@ -6,7 +6,7 @@ import { SpriteImage } from './SpriteImage'
 export interface EvolutionTreeProps {
   stages: EvolutionStage[]
   currentPokemonId: number
-  renderPokemon: (id: number) => { nameKo: string; spriteUrl?: string }
+  renderPokemon: (id: number) => { nameKo: string; formLabel?: string; spriteUrl?: string }
   linkState?: object
 }
 
@@ -18,7 +18,7 @@ function StageNode({
 }: {
   stage: EvolutionStage
   currentPokemonId: number
-  renderPokemon: (id: number) => { nameKo: string; spriteUrl?: string }
+  renderPokemon: (id: number) => { nameKo: string; formLabel?: string; spriteUrl?: string }
   linkState?: object
 }) {
   const info = renderPokemon(stage.pokemonId)
@@ -39,7 +39,11 @@ function StageNode({
         >
           <SpriteImage src={info.spriteUrl} alt={info.nameKo} width={80} height={80} rounded="full" className="h-20 w-20" />
         </div>
-        <span className={cn('text-xs font-bold', isCurrent ? 'text-brand-red' : 'text-ink')}>{info.nameKo}</span>
+        <span className={cn('text-xs font-bold', isCurrent ? 'text-brand-red' : 'text-ink')}>
+          {info.nameKo}
+          {/* 같은 계열에 원종과 리전폼이 함께 오면 이름만으로는 구분되지 않는다. */}
+          {info.formLabel && <span className="block text-xxs font-bold text-ink-faint">({info.formLabel})</span>}
+        </span>
       </Link>
 
       {stage.children && stage.children.length > 0 && (
