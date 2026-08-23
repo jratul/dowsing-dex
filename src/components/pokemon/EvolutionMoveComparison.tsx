@@ -99,10 +99,10 @@ export function EvolutionMoveComparison({
       <h3 className="text-xs font-black text-ink-faint">{title}</h3>
 
       <div className="overflow-x-auto">
-        <table className="w-full text-xs">
+        <table className="w-full min-w-max text-xs">
           <thead>
             <tr className="border-b border-border">
-              <th className="py-2 pr-3 text-left text-xxs font-bold text-ink-faint">기술명</th>
+              <th className="py-2 pr-3 text-left text-xxs font-bold whitespace-nowrap text-ink-faint">기술명</th>
               <th className="py-2 pr-3 text-left text-xxs font-bold text-ink-faint">타입</th>
               <th className="py-2 pr-3 text-left text-xxs font-bold text-ink-faint">분류</th>
               <th className="py-2 pr-3 text-right text-xxs font-bold text-ink-faint">위력</th>
@@ -135,14 +135,14 @@ export function EvolutionMoveComparison({
                   return (
                     <>
                       <tr key={moveId} className="border-b border-border/50 hover:bg-surface-hover">
-                        <td className="py-1.5 pr-3">
+                        <td className="py-1.5 pr-3 whitespace-nowrap">
                           <button type="button" className={cn('flex items-center gap-1 text-left font-bold text-ink', move.effectKo && 'cursor-pointer')} onClick={move.effectKo ? () => toggleMove(moveId) : undefined}>
                             {move.nameKo}
                             {move.effectKo && <span className="text-xxs text-ink-faint">{isOpen ? '▲' : '▼'}</span>}
                           </button>
                         </td>
                         <td className="py-1.5 pr-3"><TypeBadge type={move.type} size="sm" /></td>
-                        <td className="py-1.5 pr-3 text-ink-muted">{move.category}</td>
+                        <td className="py-1.5 pr-3 whitespace-nowrap text-ink-muted">{move.category}</td>
                         <td className="py-1.5 pr-3 text-right text-ink-muted">{move.power ?? '—'}</td>
                         <td className="py-1.5 pr-4 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
                         {activeMembers.map(({ member, learnset: ls }) => {
@@ -179,14 +179,14 @@ export function EvolutionMoveComparison({
                   return (
                     <>
                       <tr key={moveId} className="border-b border-border/50 hover:bg-surface-hover">
-                        <td className="py-1.5 pr-3">
+                        <td className="py-1.5 pr-3 whitespace-nowrap">
                           <button type="button" className={cn('flex items-center gap-1 text-left font-bold text-ink', move.effectKo && 'cursor-pointer')} onClick={move.effectKo ? () => toggleMove(moveId) : undefined}>
                             {move.nameKo}
                             {move.effectKo && <span className="text-xxs text-ink-faint">{isOpen ? '▲' : '▼'}</span>}
                           </button>
                         </td>
                         <td className="py-1.5 pr-3"><TypeBadge type={move.type} size="sm" /></td>
-                        <td className="py-1.5 pr-3 text-ink-muted">{move.category}</td>
+                        <td className="py-1.5 pr-3 whitespace-nowrap text-ink-muted">{move.category}</td>
                         <td className="py-1.5 pr-3 text-right text-ink-muted">{move.power ?? '—'}</td>
                         <td className="py-1.5 pr-4 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
                         {activeMembers.map(({ member, learnset: ls }) => {
@@ -223,14 +223,14 @@ export function EvolutionMoveComparison({
                   return (
                     <>
                       <tr key={moveId} className="border-b border-border/50 hover:bg-surface-hover">
-                        <td className="py-1.5 pr-3">
+                        <td className="py-1.5 pr-3 whitespace-nowrap">
                           <button type="button" className={cn('flex items-center gap-1 text-left font-bold text-ink', move.effectKo && 'cursor-pointer')} onClick={move.effectKo ? () => toggleMove(moveId) : undefined}>
                             {move.nameKo}
                             {move.effectKo && <span className="text-xxs text-ink-faint">{isOpen ? '▲' : '▼'}</span>}
                           </button>
                         </td>
                         <td className="py-1.5 pr-3"><TypeBadge type={move.type} size="sm" /></td>
-                        <td className="py-1.5 pr-3 text-ink-muted">{move.category}</td>
+                        <td className="py-1.5 pr-3 whitespace-nowrap text-ink-muted">{move.category}</td>
                         <td className="py-1.5 pr-3 text-right text-ink-muted">{move.power ?? '—'}</td>
                         <td className="py-1.5 pr-4 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
                         {activeMembers.map(({ member, learnset: ls }) => {

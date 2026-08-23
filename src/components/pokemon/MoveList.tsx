@@ -29,7 +29,7 @@ function MoveRow({ leading, move }: { leading: string; move: Move }) {
       className={cn('border-b border-border/50 last:border-0', move.effectKo && 'cursor-pointer')}
       onClick={move.effectKo ? () => setOpen((v) => !v) : undefined}
     >
-      <div className="grid grid-cols-[2.5rem_minmax(6rem,max-content)_3.5rem_3rem_2.5rem_2.5rem_2rem_1fr] items-center gap-2 py-1.5 text-xs">
+      <div className="grid grid-cols-[3rem_minmax(6rem,2fr)_3.5rem_minmax(2.5rem,1fr)_minmax(2.5rem,1fr)_minmax(2.5rem,1fr)_minmax(2rem,1fr)] items-center gap-2 py-1.5 text-xs">
         <span className="font-bold text-ink-faint">{leading}</span>
         <span className="flex items-center gap-1 font-bold text-ink">
           {move.nameKo}
@@ -42,7 +42,6 @@ function MoveRow({ leading, move }: { leading: string; move: Move }) {
         <span className="text-right text-ink-muted">{move.power ?? '-'}</span>
         <span className="text-right text-ink-muted">{move.accuracy ?? '-'}</span>
         <span className="text-right text-ink-muted">{move.pp}</span>
-        <span />
       </div>
       {open && move.effectKo && (
         <p className={cn('py-2 text-xs leading-relaxed text-ink', INDENT)}>{move.effectKo}</p>
@@ -53,7 +52,7 @@ function MoveRow({ leading, move }: { leading: string; move: Move }) {
 
 function MoveTableHeader() {
   return (
-    <div className="grid grid-cols-[2.5rem_minmax(6rem,max-content)_3.5rem_3rem_2.5rem_2.5rem_2rem_1fr] gap-2 border-b border-border pb-1.5 text-xxs font-bold text-ink-faint">
+    <div className="grid grid-cols-[3rem_minmax(6rem,2fr)_3.5rem_minmax(2.5rem,1fr)_minmax(2.5rem,1fr)_minmax(2.5rem,1fr)_minmax(2rem,1fr)] gap-2 border-b border-border pb-1.5 text-xxs font-bold text-ink-faint">
       <span>Lv/No</span>
       <span>기술</span>
       <span>타입</span>
@@ -61,7 +60,6 @@ function MoveTableHeader() {
       <span className="text-right">위력</span>
       <span className="text-right">명중</span>
       <span className="text-right">PP</span>
-      <span />
     </div>
   )
 }
@@ -71,7 +69,7 @@ function MoveTableSection({ title, children }: { title: string; children: React.
     <div className="flex flex-col gap-2">
       <h4 className="text-xs font-black text-ink-faint">{title}</h4>
       <div className="overflow-x-auto">
-        <div className="min-w-[24rem]">
+        <div className="min-w-[26rem]">
           <MoveTableHeader />
           <div className="flex flex-col">{children}</div>
         </div>
