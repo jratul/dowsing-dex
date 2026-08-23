@@ -308,44 +308,29 @@ function LocationView({
   )
 }
 
-// --- 챕터 아코디언 ---
-function ChapterAccordion({
+// --- 챕터 렌더러 ---
+function ChapterView({
   chapter,
   nameToId,
   locationImages,
-  defaultOpen,
 }: {
   chapter: ChapterSection
   nameToId: Map<string, number>
   locationImages: Record<string, string>
-  defaultOpen?: boolean
 }) {
-  const [open, setOpen] = useState(defaultOpen ?? false)
-
   return (
-    <div className="border-b border-border">
-      <button
-        onClick={() => setOpen((v) => !v)}
-        aria-expanded={open}
-        className="flex w-full items-center justify-between px-4 py-3 text-left"
-      >
-        <span className="text-sm font-bold text-ink">{chapter.title}</span>
-        <span aria-hidden className="text-ink-muted">
-          {open ? '▲' : '▽'}
-        </span>
-      </button>
-      {open && (
-        <div className="px-4 pb-2">
-          {chapter.locations.map((loc) => (
-            <LocationView
-              key={loc.name}
-              location={loc}
-              nameToId={nameToId}
-              imgUrl={locationImages[loc.name]}
-            />
-          ))}
-        </div>
-      )}
+    <div>
+      <h3 className="border-b border-border px-4 py-3 text-sm font-bold text-ink">{chapter.title}</h3>
+      <div className="px-4 pb-2">
+        {chapter.locations.map((loc) => (
+          <LocationView
+            key={loc.name}
+            location={loc}
+            nameToId={nameToId}
+            imgUrl={locationImages[loc.name]}
+          />
+        ))}
+      </div>
     </div>
   )
 }
@@ -473,11 +458,10 @@ export function PokemonHGSSCollectionGuidePage() {
             <div className="space-y-1">
               {game.chapters.map((chapter, ci) => (
                 <Card key={ci} className="overflow-hidden p-0">
-                  <ChapterAccordion
+                  <ChapterView
                     chapter={chapter}
                     nameToId={nameToId}
                     locationImages={GAME_LOCATION_IMAGES[gi] ?? {}}
-                    defaultOpen={ci === 0}
                   />
                 </Card>
               ))}
