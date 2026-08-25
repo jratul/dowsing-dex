@@ -256,7 +256,7 @@ export function PokemonPlatinumStoryGuidePage() {
   const activeStarter = PLATINUM_STARTERS.find((s) => s.id === selectedId) ?? PLATINUM_STARTERS[0]
 
   return (
-    <GuidePageLayout refreshKey={selectedId}>
+    <GuidePageLayout refreshKey={selectedId} generation="4세대" version="플래티넘">
       {/* 페이지 헤더 — 떡잎마을 배경 */}
       <div className="relative mb-6 h-44 overflow-hidden rounded-card sm:h-52">
         <img

@@ -270,6 +270,12 @@ Vercel에 새 버전을 배포하면 Vite 청크의 파일명(content hash)이 �
   링크만으로는 찾을 수 없기 때문이다.
 - 큰 스프라이트(`SpriteImage`) 옆에 `PokemonLink`를 같이 두지 않는다. 스프라이트가 두 번
   노출된다. 둘 중 하나만 쓰되, 본문 안에서는 `PokemonLink` 하나로 충분하다.
+- 공략 페이지는 `GuidePageLayout`에 `generation`·`version`을 넘겨 **그 공략이 어느 게임인지**를
+  알린다(`GuideVersionProvider` → `useGuideVersion`). 그러면 본문의 `PokemonLink`가 도감 링크에
+  버전 쿼리를 자동으로 달아, 하트골드 공략에서 전룡을 누르면 2세대가 아니라 하트골드·소울실버
+  탭이 바로 열린다. **본문 링크는 하나도 고칠 필요가 없다** — 컨텍스트로만 전달된다.
+  여러 게임을 한데 묶은 공략(안농 종합)은 넘기지 않으면 기존 동작 그대로다. HGSS 수집
+  가이드처럼 게임별 탭이 있는 공략은 활성 탭에 따라 `version`을 바꿔 넘긴다.
 
 ### 스프라이트 수직 정렬 (건드리기 전에 읽을 것)
 
@@ -381,13 +387,17 @@ function HowBadge({ how }: { how: string }) {
 `EvolutionMoveComparison` / `MoveList` / `EncounterLocationList`는 **탭을 그리지 않는다.**
 셋 다 한 카드 안에 들어가므로 각자 탭을 가지면 같은 화면에 세대 탭이 세 벌 생긴다.
 
-- 페이지가 `selectedGeneration` / `selectedVersion`을 갖고 `generation`·`version`(비교표는
-  `activeGen`·`activeVersion`)으로 내려준다. 세대를 바꾸면 버전 목록이 달라지므로
-  `selectedVersion`을 `null`로 리셋한다.
+- 페이지가 활성 세대·버전을 정해 `generation`·`version`(비교표는 `activeGen`·`activeVersion`)으로
+  내려준다. 탭 상태는 로컬 state가 아니라 **URL 쿼리**(`?gen=4&ver=하트골드·소울실버`)에 있다.
 - 세대 목록은 **본인 기술 ∪ 진화 계열 기술 ∪ 출현 장소**의 합집합이다. 알로라꼬렛처럼
   원종보다 늦게 나온 폼이 계열에 있으면 목록이 넓어진다.
-- 기본 탭은 계열의 첫 세대가 아니라 **본인이 처음 등장하는 세대**(`moveGenerations[0]`)다.
+- **탭 선택 우선순위: URL 쿼리 → 마지막으로 직접 고른 버전(localStorage) → 기본 탭.**
+  기본 탭은 계열의 첫 세대가 아니라 **본인이 처음 등장하는 세대**(`moveGenerations[0]`)다 —
   안 그러면 알로라꼬렛을 열었는데 원종 때문에 1세대가 잡혀 본인 기술이 안 보인다.
+  앞의 두 값이 이 포켓몬에 없는 세대·버전이면 조용히 기본 탭으로 떨어진다.
+- **자동으로 정해진 기본 탭은 절대 저장하지 않는다.** 저장하면 전룡(기본 2세대)을 한 번
+  열어보는 것만으로 사용자가 고른 하트골드 설정이 덮인다. `lib/learnsetVersion.ts`의
+  `writeLearnsetVersion`은 탭을 직접 누를 때와 버전을 단 링크로 들어왔을 때만 호출한다.
 - 버전 목록은 **학습셋에서만** 모은다. 출현 장소 데이터는 같은 게임을 `금·은`으로,
   학습셋은 `골드·실버`로 적어 두 목록을 합칠 수 없다. 그래서 출현 장소는 세대만 따른다.
 - 세 컴포넌트 모두 `title`을 prop으로 받아 **제목까지 자기가 렌더**하고, 그 세대·버전에

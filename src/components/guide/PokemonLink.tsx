@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { findSamplePokemon } from '../../data/sample/pokemon.sample'
+import { useGuideVersion } from '../../lib/learnsetVersion'
 
 export interface PokemonLinkProps {
   id: number
@@ -24,8 +25,11 @@ export interface PokemonLinkProps {
  */
 export function PokemonLink({ id, label, showSprite = true }: PokemonLinkProps) {
   const pokemon = findSamplePokemon(id)
+  // 공략 안에서 쓰이면 그 공략의 게임 버전을 도감 링크에 실어 보낸다.
+  // 하트골드 공략에서 전룡을 누르면 2세대가 아니라 하트골드·소울실버 탭이 바로 열린다.
+  const guideVersion = useGuideVersion()
   return (
-    <Link to={`/pokemon/${id}`} className="font-bold text-brand-red hover:underline">
+    <Link to={`/pokemon/${id}${guideVersion?.query ?? ''}`} className="font-bold text-brand-red hover:underline">
       {showSprite && pokemon.spriteUrl && (
         <img
           src={pokemon.spriteUrl}

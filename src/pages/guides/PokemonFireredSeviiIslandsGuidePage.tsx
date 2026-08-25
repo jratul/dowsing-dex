@@ -35,7 +35,7 @@ export function PokemonFireredSeviiIslandsGuidePage() {
   const style = CATEGORY_STYLE['공략']
 
   return (
-    <GuidePageLayout>
+    <GuidePageLayout generation="3세대" version="파이어레드·리프그린">
       <div className="mb-2 flex items-center gap-2">
         <Link to="/guides" className="text-sm font-bold text-ink-muted hover:text-ink">
           ← 공략 목록

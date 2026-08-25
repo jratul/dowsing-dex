@@ -48,7 +48,7 @@ export function PokemonHeartgoldStonesGuidePage() {
   const style = CATEGORY_STYLE['공략']
 
   return (
-    <GuidePageLayout>
+    <GuidePageLayout generation="4세대" version="하트골드·소울실버">
       {/* 헤더 */}
       <div className="mb-2 flex items-center gap-2">
         <Link to="/guides" className="text-sm font-bold text-ink-muted hover:text-ink">

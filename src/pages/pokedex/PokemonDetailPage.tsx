@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from 'react'
-import { Link, useLocation, useParams } from 'react-router-dom'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { Link, useLocation, useParams, useSearchParams } from 'react-router-dom'
 import { Card } from '../../components/ui/Card'
 import { TypeBadge } from '../../components/pokemon/TypeBadge'
 import { StatChart } from '../../components/pokemon/StatChart'
@@ -10,6 +10,13 @@ import { EncounterLocationList } from '../../components/pokemon/EncounterLocatio
 import { SpriteImage } from '../../components/pokemon/SpriteImage'
 import { SAMPLE_POKEMON, findEvolutionLine, findSamplePokemon } from '../../data/sample/pokemon.sample'
 import { findMove, loadLearnsets } from '../../data/sample/moves.sample'
+import {
+  GEN_PARAM,
+  VERSION_PARAM,
+  genNum,
+  readLearnsetVersion,
+  writeLearnsetVersion,
+} from '../../lib/learnsetVersion'
 import { loadFlavorTexts } from '../../data/sample/flavorTexts'
 import type { FlavorTextEntry } from '../../types/pokemon'
 import { EvolutionMoveComparison } from '../../components/pokemon/EvolutionMoveComparison'
@@ -35,16 +42,13 @@ export function PokemonDetailPage() {
   const backTo = (location.state as { backTo?: string } | null)?.backTo ?? '/pokedex'
 
   const [moveData, setMoveData] = useState<{ learnsets: Learnset[]; recommended: number[] } | undefined>(undefined)
-  const [selectedGeneration, setSelectedGeneration] = useState<Generation | null>(null)
-  const [selectedVersion, setSelectedVersion] = useState<string | null>(null)
+  const [searchParams, setSearchParams] = useSearchParams()
   const [familyLearnsets, setFamilyLearnsets] = useState<Map<number, { learnsets: Learnset[]; recommended: number[] }>>(new Map())
   const [flavorTexts, setFlavorTexts] = useState<FlavorTextEntry[]>([])
   const [isLoadingFlavor, setIsLoadingFlavor] = useState(false)
 
   useEffect(() => {
     setMoveData(undefined)
-    setSelectedGeneration(null)
-    setSelectedVersion(null)
     setFamilyLearnsets(new Map())
     setFlavorTexts([])
     if (!pokemon) return
@@ -99,29 +103,76 @@ export function PokemonDetailPage() {
       ? Number(moveGenerations[0].replace('세대', ''))
       : (encounterGenerations[0] ?? generationNums[0] ?? 1)
 
-  const activeGenNum = selectedGeneration
-    ? Number(selectedGeneration.replace('세대', ''))
-    : defaultGenNum
-  const activeGeneration = `${activeGenNum}세대` as Generation
-
   /**
-   * 활성 세대의 게임 버전 목록. 학습셋에서만 모은다 — 출현 장소 데이터는 같은 게임을
+   * 세대별 게임 버전 목록. 학습셋에서만 모은다 — 출현 장소 데이터는 같은 게임을
    * "금·은"으로, 학습셋은 "골드·실버"로 적어 두 목록을 합칠 수 없다.
    */
-  const versionsForActiveGen: string[] = useMemo(() => {
-    const versions: string[] = []
+  const versionsByGen = useMemo(() => {
+    const map = new Map<number, string[]>()
     const collect = (ls: Learnset) => {
-      if (ls.generation === activeGeneration && !versions.includes(ls.version)) versions.push(ls.version)
+      const num = Number(ls.generation.replace('세대', ''))
+      const versions = map.get(num) ?? []
+      if (!versions.includes(ls.version)) versions.push(ls.version)
+      map.set(num, versions)
     }
     learnsets?.forEach(collect)
     familyLearnsets.forEach(({ learnsets: ls }) => ls.forEach(collect))
-    return versions
-  }, [learnsets, familyLearnsets, activeGeneration])
+    return map
+  }, [learnsets, familyLearnsets])
+
+  /**
+   * 탭 선택 우선순위: URL 쿼리 → 마지막으로 직접 고른 버전 → 위 기본 탭.
+   * 하트골드를 하는 중이라면 포켓몬을 넘길 때마다 4세대·하트골드를 다시 누르지 않아도 된다.
+   * 이 포켓몬에 없는 세대·버전이면 조용히 기본 탭으로 떨어진다.
+   *
+   * 기억값은 메모하지 않고 매 렌더 읽는다. 이 라우트는 id만 바뀌면 컴포넌트가 재사용되므로,
+   * 마운트 때 한 번만 읽으면 다음 포켓몬으로 넘어갔을 때 낡은 값을 쓰게 된다.
+   * localStorage 한 번 읽는 비용이라 메모할 이유가 없다.
+   */
+  const storedVersion = readLearnsetVersion()
+  const urlGenNum = Number(searchParams.get(GEN_PARAM)) || null
+  const urlVersion = searchParams.get(VERSION_PARAM)
+  const preferredGenNum = urlGenNum ?? (storedVersion ? genNum(storedVersion.generation) : null)
+
+  const activeGenNum =
+    preferredGenNum !== null && generationNums.includes(preferredGenNum) ? preferredGenNum : defaultGenNum
+  const activeGeneration = `${activeGenNum}세대` as Generation
+  const versionsForActiveGen: string[] = versionsByGen.get(activeGenNum) ?? []
+
+  // 기억해 둔 버전은 그 세대가 실제로 활성일 때만 쓴다. 세대 탭을 직접 바꾼 직후
+  // 이전 게임의 버전이 되살아나는 것을 막는다.
+  const preferredVersion =
+    urlVersion ??
+    (storedVersion && genNum(storedVersion.generation) === activeGenNum ? storedVersion.version : null)
 
   const activeVersion =
-    selectedVersion && versionsForActiveGen.includes(selectedVersion)
-      ? selectedVersion
+    preferredVersion && versionsForActiveGen.includes(preferredVersion)
+      ? preferredVersion
       : (versionsForActiveGen[0] ?? '')
+
+  /**
+   * 직접 고른 선택만 URL과 localStorage에 남긴다. 기본값으로 자동 결정된 탭까지 저장하면
+   * 다른 포켓몬을 한 번 열어보는 것만으로 사용자가 고른 게임 설정이 덮인다.
+   */
+  const selectTab = useCallback(
+    (genNumber: number, version: string | null) => {
+      const next = new URLSearchParams(searchParams)
+      next.set(GEN_PARAM, String(genNumber))
+      if (version) next.set(VERSION_PARAM, version)
+      else next.delete(VERSION_PARAM)
+      // 탭을 누를 때마다 뒤로가기 기록이 쌓이면 목록으로 돌아가기가 번거로워진다.
+      setSearchParams(next, { replace: true })
+      if (version) writeLearnsetVersion({ generation: `${genNumber}세대` as Generation, version })
+    },
+    [searchParams, setSearchParams],
+  )
+
+  // 공략에서 버전을 달고 들어온 링크도 "직접 고른 것"으로 취급한다.
+  // 하트골드 공략을 보다 들어왔다면 그 뒤에 넘겨보는 포켓몬들도 하트골드 탭으로 열린다.
+  useEffect(() => {
+    if (urlGenNum === null || !urlVersion) return
+    writeLearnsetVersion({ generation: `${urlGenNum}세대` as Generation, version: urlVersion })
+  }, [urlGenNum, urlVersion])
 
   const evolutionLine = pokemon ? findEvolutionLine(pokemon.id) : undefined
   // 진화 계열 비교표가 레벨업 기술을 이미 보여주므로, 그때만 아래 목록에서 레벨업을 뺀다.
@@ -330,9 +381,8 @@ export function PokemonDetailPage() {
                     key={gen}
                     type="button"
                     onClick={() => {
-                      setSelectedGeneration(`${gen}세대` as Generation)
-                      // 세대가 바뀌면 버전 목록이 통째로 달라진다. 첫 버전으로 되돌린다.
-                      setSelectedVersion(null)
+                      // 세대가 바뀌면 버전 목록이 통째로 달라진다. 그 세대의 첫 버전으로 맞춘다.
+                      selectTab(gen, versionsByGen.get(gen)?.[0] ?? null)
                     }}
                     className={cn(
                       'shrink-0 rounded-chip border px-3 py-1.5 text-xs font-bold transition-colors',
@@ -351,7 +401,7 @@ export function PokemonDetailPage() {
                     <button
                       key={version}
                       type="button"
-                      onClick={() => setSelectedVersion(version)}
+                      onClick={() => selectTab(activeGenNum, version)}
                       className={cn(
                         'shrink-0 rounded-chip px-3 py-1.5 text-xs font-bold transition-colors',
                         activeVersion === version

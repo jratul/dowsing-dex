@@ -56,7 +56,7 @@ export function PokemonGoldStoryGuidePage() {
   const finalParty = GOLD_STORY_FINAL_PARTY_IDS.map((id) => SAMPLE_POKEMON.find((p) => p.id === id)).filter(Boolean)
 
   return (
-    <GuidePageLayout>
+    <GuidePageLayout generation="2세대" version="골드·실버">
       <div className="mb-2 flex items-center gap-2">
         <Link to="/guides" className="text-sm font-bold text-ink-muted hover:text-ink">
           ← 공략 목록

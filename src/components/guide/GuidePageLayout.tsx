@@ -1,5 +1,7 @@
 import { type ReactNode, useEffect, useRef, useState } from 'react'
 import { cn } from '../../lib/cn'
+import type { Generation } from '../../types/move'
+import { GuideVersionProvider } from './GuideVersionProvider'
 
 interface TocItem {
   id: string
@@ -13,9 +15,14 @@ function makeId(text: string, index: number): string {
 export function GuidePageLayout({
   children,
   refreshKey,
+  generation,
+  version,
 }: {
   children: ReactNode
   refreshKey?: unknown
+  /** 이 공략이 다루는 게임. 주면 안쪽 PokemonLink들이 그 버전 탭으로 바로 연결된다. */
+  generation?: Generation
+  version?: string
 }) {
   const contentRef = useRef<HTMLDivElement>(null)
   const [items, setItems] = useState<TocItem[]>([])
@@ -49,7 +56,13 @@ export function GuidePageLayout({
     <div className="mx-auto w-full lg:w-4/5 px-4 py-6">
       <div className="flex gap-8">
         <div ref={contentRef} className="min-w-0 flex-1">
-          {children}
+          {generation && version ? (
+            <GuideVersionProvider generation={generation} version={version}>
+              {children}
+            </GuideVersionProvider>
+          ) : (
+            children
+          )}
         </div>
 
         {items.length > 1 && (

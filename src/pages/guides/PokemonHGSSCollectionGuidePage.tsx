@@ -4,6 +4,7 @@ import * as Tabs from '@radix-ui/react-tabs'
 import rawMd from '../../data/guides/hgss-collection.md?raw'
 import { SAMPLE_POKEMON } from '../../data/sample/pokemon.sample'
 import { PokemonLink } from '../../components/guide/PokemonLink'
+import { GuideVersionProvider } from '../../components/guide/GuideVersionProvider'
 import { Card } from '../../components/ui/Card'
 import { linkifyPokemonNames } from '../../lib/linkifyPokemonNames'
 import { cn } from '../../lib/cn'
@@ -510,40 +511,43 @@ export function PokemonHGSSCollectionGuidePage() {
       </Card>
 
       {/* 게임 탭 */}
-      <Tabs.Root value={activeTab} onValueChange={setActiveTab}>
-        <Tabs.List className="mb-4 flex gap-2 overflow-x-auto border-b border-border pb-2">
-          {TAB_LABELS.slice(0, games.length).map((tab, i) => (
-            <Tabs.Trigger
-              key={i}
-              value={String(i)}
-              className={cn(
-                'shrink-0 rounded-chip border border-border-strong px-4 py-1.5 text-sm font-bold text-ink transition-colors',
-                'data-[state=active]:text-white',
-                tab.color,
-              )}
-            >
-              {tab.label}
-            </Tabs.Trigger>
-          ))}
-        </Tabs.List>
+      {/* 게임 3종을 탭으로 다룬다. 선택한 탭에 맞춰 본문 포켓몬 링크가 여는 도감 버전도 따라간다. */}
+      <GuideVersionProvider generation="4세대" version={activeTab === '2' ? '플래티넘' : '하트골드·소울실버'}>
+        <Tabs.Root value={activeTab} onValueChange={setActiveTab}>
+          <Tabs.List className="mb-4 flex gap-2 overflow-x-auto border-b border-border pb-2">
+            {TAB_LABELS.slice(0, games.length).map((tab, i) => (
+              <Tabs.Trigger
+                key={i}
+                value={String(i)}
+                className={cn(
+                  'shrink-0 rounded-chip border border-border-strong px-4 py-1.5 text-sm font-bold text-ink transition-colors',
+                  'data-[state=active]:text-white',
+                  tab.color,
+                )}
+              >
+                {tab.label}
+              </Tabs.Trigger>
+            ))}
+          </Tabs.List>
 
-        {games.map((game, gi) => (
-          <Tabs.Content key={gi} value={String(gi)}>
-            <div className="space-y-1">
-              {game.chapters.map((chapter, ci) => (
-                <Card key={ci} className="overflow-hidden p-0">
-                  <ChapterView
-                    chapter={chapter}
-                    nameToId={nameToId}
-                    locationImages={GAME_LOCATION_IMAGES[gi] ?? {}}
-                    gameRates={HGSS_ENCOUNTER_RATES[VERSION_KEYS[gi]]}
-                  />
-                </Card>
-              ))}
-            </div>
-          </Tabs.Content>
-        ))}
-      </Tabs.Root>
+          {games.map((game, gi) => (
+            <Tabs.Content key={gi} value={String(gi)}>
+              <div className="space-y-1">
+                {game.chapters.map((chapter, ci) => (
+                  <Card key={ci} className="overflow-hidden p-0">
+                    <ChapterView
+                      chapter={chapter}
+                      nameToId={nameToId}
+                      locationImages={GAME_LOCATION_IMAGES[gi] ?? {}}
+                      gameRates={HGSS_ENCOUNTER_RATES[VERSION_KEYS[gi]]}
+                    />
+                  </Card>
+                ))}
+              </div>
+            </Tabs.Content>
+          ))}
+        </Tabs.Root>
+      </GuideVersionProvider>
 
       {/* 놓치기 쉬운 핵심 수집 포인트 */}
       {summary.length > 0 && (

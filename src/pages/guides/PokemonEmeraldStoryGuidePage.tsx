@@ -232,7 +232,7 @@ export function PokemonEmeraldStoryGuidePage() {
   const activeStarter = EMERALD_STARTERS.find((s) => s.id === selectedId) ?? EMERALD_STARTERS[0]
 
   return (
-    <GuidePageLayout refreshKey={selectedId}>
+    <GuidePageLayout refreshKey={selectedId} generation="3세대" version="에메랄드">
       <div className="mb-2 flex items-center gap-2">
         <Link to="/guides" className="text-sm font-bold text-ink-muted hover:text-ink">
           ← 공략 목록
