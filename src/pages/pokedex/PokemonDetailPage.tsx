@@ -160,8 +160,10 @@ export function PokemonDetailPage() {
       next.set(GEN_PARAM, String(genNumber))
       if (version) next.set(VERSION_PARAM, version)
       else next.delete(VERSION_PARAM)
-      // 탭을 누를 때마다 뒤로가기 기록이 쌓이면 목록으로 돌아가기가 번거로워진다.
-      setSearchParams(next, { replace: true })
+      // replace: 탭을 누를 때마다 뒤로가기 기록이 쌓이면 목록으로 돌아가기가 번거로워진다.
+      // preventScrollReset: 탭 전환도 navigation이라, 안 주면 Layout의 <ScrollRestoration />이
+      //   window.scrollTo(0, 0)을 호출해 기술 목록을 보다가 탭만 바꿔도 화면 맨 위로 튄다.
+      setSearchParams(next, { replace: true, preventScrollReset: true })
       if (version) writeLearnsetVersion({ generation: `${genNumber}세대` as Generation, version })
     },
     [searchParams, setSearchParams],

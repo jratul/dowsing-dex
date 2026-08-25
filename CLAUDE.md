@@ -389,6 +389,11 @@ function HowBadge({ how }: { how: string }) {
 
 - 페이지가 활성 세대·버전을 정해 `generation`·`version`(비교표는 `activeGen`·`activeVersion`)으로
   내려준다. 탭 상태는 로컬 state가 아니라 **URL 쿼리**(`?gen=4&ver=하트골드·소울실버`)에 있다.
+- **탭을 바꾸는 `setSearchParams`에는 `preventScrollReset: true`가 반드시 있어야 한다.**
+  탭 전환도 navigation이라, 없으면 `Layout`의 `<ScrollRestoration />`이 `window.scrollTo(0, 0)`을
+  호출해 기술 목록을 한참 내려보다가 세대만 바꿔도 화면 맨 위로 튄다. 뒤로가기 복원은
+  이 옵션보다 앞단에서 처리되므로 영향받지 않는다. 탭 상태를 로컬 state에서 URL로 옮기면서
+  실제로 터졌던 회귀다.
 - 세대 목록은 **본인 기술 ∪ 진화 계열 기술 ∪ 출현 장소**의 합집합이다. 알로라꼬렛처럼
   원종보다 늦게 나온 폼이 계열에 있으면 목록이 넓어진다.
 - **탭 선택 우선순위: URL 쿼리 → 마지막으로 직접 고른 버전(localStorage) → 기본 탭.**
