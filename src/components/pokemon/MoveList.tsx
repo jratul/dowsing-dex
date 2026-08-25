@@ -125,7 +125,8 @@ export function MoveList({
             .sort((a, b) => a.level - b.level)
             .map(({ moveId, level }) => {
               const move = findMove(moveId)
-              return move ? <MoveRow key={moveId} leading={`Lv${level}`} move={move} /> : null
+              // 한 기술을 여러 레벨에서 배우는 경우가 있어 moveId 하나로는 key가 겹친다.
+              return move ? <MoveRow key={`${moveId}-${level}`} leading={`Lv${level}`} move={move} /> : null
             })}
         </MoveTableSection>
       )}

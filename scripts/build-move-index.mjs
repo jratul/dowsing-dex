@@ -49,7 +49,9 @@ for (const file of files) {
     for (const m of (ls.levelUp ?? [])) {
       const key = `${pokemonId}_${m.moveId}`
       const prev = levelUpBest.get(key)
-      if (!prev || genOrder > prev.genOrder) {
+      // 같은 학습셋 안에 같은 기술이 여러 레벨로 들어있으면 가장 빠른 레벨을 대표로 삼는다.
+      const sameLearnset = prev && prev.gen === ls.generation && prev.version === ls.version
+      if (!prev || genOrder > prev.genOrder || (sameLearnset && m.level < prev.level)) {
         levelUpBest.set(key, { pokemonId, moveId: m.moveId, level: m.level, genOrder, gen: ls.generation, version: ls.version })
       }
     }

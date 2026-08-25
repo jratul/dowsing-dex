@@ -503,10 +503,19 @@ async function buildLearnsets(poke, machineLookup) {
         const details = moveEntry.version_group_details.filter((d) => groups.includes(d.version_group.name))
         if (details.length === 0) continue
 
-        const levelUpDetail = details.find((d) => d.move_learn_method.name === 'level-up' && d.level_learned_at > 0)
-        if (levelUpDetail) {
+        // 같은 기술을 여러 레벨에서 배우는 포켓몬이 있다(HGSS 전룡의 울음소리 Lv.1·Lv.5).
+        // find로 하나만 남기면 도감 레벨업 표에서 나머지 레벨이 통째로 사라진다.
+        // label이 version group을 여러 개 묶는 경우(소드·실드 등) 같은 레벨이 중복되므로 레벨 기준으로 추린다.
+        const levelUpLevels = [
+          ...new Set(
+            details
+              .filter((d) => d.move_learn_method.name === 'level-up' && d.level_learned_at > 0)
+              .map((d) => d.level_learned_at),
+          ),
+        ].sort((a, b) => a - b)
+        if (levelUpLevels.length > 0) {
           const info = await moveDetail(moveEntry.move.name)
-          levelUp.push({ moveId: info.id, level: levelUpDetail.level_learned_at })
+          for (const level of levelUpLevels) levelUp.push({ moveId: info.id, level })
         }
 
         const machineDetail = details.find((d) => d.move_learn_method.name === 'machine')

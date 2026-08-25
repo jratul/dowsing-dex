@@ -146,10 +146,11 @@ export function EvolutionMoveComparison({
                         <td className="py-1.5 pr-3 text-right text-ink-muted">{move.power ?? '—'}</td>
                         <td className="py-1.5 pr-4 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
                         {activeMembers.map(({ member, learnset: ls }) => {
-                          const lm = ls.levelUp.find((m) => m.moveId === moveId)
+                          // 같은 기술이 여러 레벨에 있을 수 있다. 행 정렬 기준과 맞추려면 최소 레벨을 쓴다.
+                          const levels = ls.levelUp.filter((m) => m.moveId === moveId).map((m) => m.level)
                           return (
                             <td key={member.id} className="px-2 py-1.5 text-center font-bold text-ink">
-                              {lm ? `Lv.${lm.level}` : <span className="text-ink-faint">—</span>}
+                              {levels.length > 0 ? `Lv.${Math.min(...levels)}` : <span className="text-ink-faint">—</span>}
                             </td>
                           )
                         })}
