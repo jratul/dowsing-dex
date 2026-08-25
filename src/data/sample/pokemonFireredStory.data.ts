@@ -521,7 +521,7 @@ export const FIRERED_STORY_SUPPORT: SupportRow[] = [
   { pokemonId: 25, pokemon: '피카츄 / 라이츄', usage: '쥬피썬더 전까지 전기 타입 임시 요원' },
   { pokemonId: 44, pokemon: '냄새꼬 / 라플레시아', usage: '초중반 풀 타입, 수면가루, 이슬전 대응' },
   { pokemonId: 21, pokemon: '깨비참 / 깨비드릴조', usage: '리자몽 전까지 공중날기 임시 요원' },
-  { pokemonId: 16, pokemon: '파오리', usage: '풀베기·공중날기 보조 요원. NPC 교환으로 입수 가능' },
+  { pokemonId: 83, pokemon: '파오리', usage: '풀베기·공중날기 보조 요원. NPC 교환으로 입수 가능' },
   { pokemonId: 121, pokemon: '아쿠스타', usage: '라프라스 대체 고속 특수 딜러. 기술머신 비용이 큼' },
   { pokemonId: 65, pokemon: '후딘 / 윤겔라', usage: '나시 대체 에스퍼 딜러. 교환 가능하면 후딘 추천' },
 ]
@@ -541,7 +541,7 @@ export const FIRERED_STORY_CAUTIONS = [
 const FIRERED_STORY_NAME_TO_ID_ENTRIES: [string, number][] = [
   ['깨비드릴조', 22],
   ['깨비참', 21],
-  ['파오리', 16],
+  ['파오리', 83],
   ['파이리', 4],
   ['리자드', 5],
   ['리자몽', 6],

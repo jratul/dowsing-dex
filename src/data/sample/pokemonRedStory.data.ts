@@ -509,7 +509,7 @@ export const RED_STORY_SUPPORT: SupportRow[] = [
   { pokemonId: 56, pokemon: '망키', usage: '중반 이후 선택형 격투 딜러. 레드버전에서는 웅전 전 대책으로 보지 않음' },
   { pokemonId: 43, pokemon: '뚜벅쵸 / 냄새꼬', usage: '이슬전, 포획 보조, 수면가루' },
   { pokemonId: 25, pokemon: '피카츄', usage: '이슬전 보조, 쥬피썬더 전까지 전기 타입 역할' },
-  { pokemonId: 16, pokemon: '파오리', usage: '풀베기와 공중날기를 모두 맡길 수 있는 편의용 포켓몬' },
+  { pokemonId: 83, pokemon: '파오리', usage: '풀베기와 공중날기를 모두 맡길 수 있는 편의용 포켓몬' },
   { pokemonId: 143, pokemon: '잠만보', usage: '두트리오 대신 채용 가능한 고내구 물리 딜러' },
   { pokemonId: 51, pokemon: '닥트리오', usage: '마티스전과 중반 전기 타입 처리 대체 요원' },
   { pokemonId: 103, pokemon: '나시', usage: '사파리존 이후 선택 가능한 풀·에스퍼 타입 보조 딜러' },
@@ -535,7 +535,7 @@ export const RED_STORY_CAUTIONS = [
 const RED_STORY_NAME_TO_ID_ENTRIES: [string, number][] = [
   ['깨비드릴조', 22],
   ['피죤투', 18],
-  ['파오리', 16],
+  ['파오리', 83],
   ['캐터피', 10],
   ['버터플', 12],
   ['파이리', 4],
