@@ -92,7 +92,8 @@ export function EvolutionMoveComparison({
 
   if (activeMembers.length === 0) return null
 
-  const colCount = 5 + activeMembers.length
+  // 기술명·타입·분류·위력·명중·PP + 계열 멤버 수
+  const colCount = 6 + activeMembers.length
 
   return (
     <div className="flex flex-col gap-3">
@@ -106,7 +107,8 @@ export function EvolutionMoveComparison({
               <th className="py-2 pr-3 text-left text-xxs font-bold text-ink-faint">타입</th>
               <th className="py-2 pr-3 text-left text-xxs font-bold text-ink-faint">분류</th>
               <th className="py-2 pr-3 text-right text-xxs font-bold text-ink-faint">위력</th>
-              <th className="py-2 pr-4 text-right text-xxs font-bold text-ink-faint">명중</th>
+              <th className="py-2 pr-3 text-right text-xxs font-bold text-ink-faint">명중</th>
+              <th className="py-2 pr-4 text-right text-xxs font-bold text-ink-faint">PP</th>
               {activeMembers.map(({ member: m }) => (
                 <th key={m.id} className="min-w-20 px-2 py-2 text-center">
                   <div className="flex flex-col items-center gap-0.5">
@@ -144,7 +146,8 @@ export function EvolutionMoveComparison({
                         <td className="py-1.5 pr-3"><TypeBadge type={move.type} size="sm" /></td>
                         <td className="py-1.5 pr-3 whitespace-nowrap text-ink-muted">{move.category}</td>
                         <td className="py-1.5 pr-3 text-right text-ink-muted">{move.power ?? '—'}</td>
-                        <td className="py-1.5 pr-4 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
+                        <td className="py-1.5 pr-3 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
+                        <td className="py-1.5 pr-4 text-right text-ink-muted">{move.pp}</td>
                         {activeMembers.map(({ member, learnset: ls }) => {
                           // 같은 기술이 여러 레벨에 있을 수 있다. 행 정렬 기준과 맞추려면 최소 레벨을 쓴다.
                           const levels = ls.levelUp.filter((m) => m.moveId === moveId).map((m) => m.level)
@@ -189,7 +192,8 @@ export function EvolutionMoveComparison({
                         <td className="py-1.5 pr-3"><TypeBadge type={move.type} size="sm" /></td>
                         <td className="py-1.5 pr-3 whitespace-nowrap text-ink-muted">{move.category}</td>
                         <td className="py-1.5 pr-3 text-right text-ink-muted">{move.power ?? '—'}</td>
-                        <td className="py-1.5 pr-4 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
+                        <td className="py-1.5 pr-3 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
+                        <td className="py-1.5 pr-4 text-right text-ink-muted">{move.pp}</td>
                         {activeMembers.map(({ member, learnset: ls }) => {
                           const mm = ls.machines.find((m) => m.moveId === moveId)
                           return (
@@ -233,7 +237,8 @@ export function EvolutionMoveComparison({
                         <td className="py-1.5 pr-3"><TypeBadge type={move.type} size="sm" /></td>
                         <td className="py-1.5 pr-3 whitespace-nowrap text-ink-muted">{move.category}</td>
                         <td className="py-1.5 pr-3 text-right text-ink-muted">{move.power ?? '—'}</td>
-                        <td className="py-1.5 pr-4 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
+                        <td className="py-1.5 pr-3 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
+                        <td className="py-1.5 pr-4 text-right text-ink-muted">{move.pp}</td>
                         {activeMembers.map(({ member, learnset: ls }) => {
                           const has = ls.tutor.some((m) => m.moveId === moveId)
                           return (

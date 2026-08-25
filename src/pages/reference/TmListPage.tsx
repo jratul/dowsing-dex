@@ -150,6 +150,7 @@ export function TmListPage() {
               <th className="px-3 py-2.5 font-bold">분류</th>
               <th className="px-3 py-2.5 text-right font-bold">위력</th>
               <th className="px-3 py-2.5 text-right font-bold">명중</th>
+              <th className="px-3 py-2.5 text-right font-bold">PP</th>
               <th className="px-3 py-2.5 text-right font-bold">포켓몬</th>
             </tr>
           </thead>
@@ -186,6 +187,9 @@ export function TmListPage() {
                     <td className="px-3 py-2.5 text-right font-mono text-xs text-ink">
                       {move?.accuracy != null ? `${move.accuracy}%` : <span className="text-ink-faint">—</span>}
                     </td>
+                    <td className="px-3 py-2.5 text-right font-mono text-xs text-ink">
+                      {move?.pp ?? <span className="text-ink-faint">—</span>}
+                    </td>
                     <td className="px-3 py-2.5 text-right text-xs text-ink-muted">
                       {entry.pokemonIds.length}마리
                       <span className="ml-1 text-ink-faint">{isExpanded ? '▲' : '▼'}</span>
@@ -193,7 +197,7 @@ export function TmListPage() {
                   </tr>
                   {isExpanded && (
                     <tr className="border-b border-border">
-                      <td colSpan={7} className="bg-surface-hover px-4 py-3">
+                      <td colSpan={8} className="bg-surface-hover px-4 py-3">
                         <div className="flex flex-wrap gap-2">
                           {entry.pokemonIds.map((id) => {
                             const p = POKEMON_MAP.get(id)
