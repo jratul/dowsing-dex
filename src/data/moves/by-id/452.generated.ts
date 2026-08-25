@@ -15,8 +15,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 42,
+        "level": 12
+      },
+      {
         "moveId": 43,
         "level": 1
+      },
+      {
+        "moveId": 43,
+        "level": 6
       },
       {
         "moveId": 44,
@@ -323,6 +331,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 282,
         "level": 1
+      },
+      {
+        "moveId": 282,
+        "level": 6
       },
       {
         "moveId": 305,
@@ -633,6 +645,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 282,
         "level": 1
+      },
+      {
+        "moveId": 282,
+        "level": 6
       },
       {
         "moveId": 305,
@@ -951,6 +967,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 282,
+        "level": 6
+      },
+      {
         "moveId": 305,
         "level": 39
       },
@@ -1250,6 +1270,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 282,
         "level": 1
+      },
+      {
+        "moveId": 282,
+        "level": 5
       },
       {
         "moveId": 305,
@@ -1579,6 +1603,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 282,
+        "level": 5
+      },
+      {
         "moveId": 305,
         "level": 23
       },
@@ -1906,6 +1934,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 282,
         "level": 1
+      },
+      {
+        "moveId": 282,
+        "level": 5
       },
       {
         "moveId": 305,
@@ -2258,6 +2290,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 282,
+        "level": 5
+      },
+      {
         "moveId": 305,
         "level": 23
       },
@@ -2550,6 +2586,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 282,
         "level": 1
+      },
+      {
+        "moveId": 282,
+        "level": 5
       },
       {
         "moveId": 305,

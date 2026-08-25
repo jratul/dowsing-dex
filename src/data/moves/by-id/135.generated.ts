@@ -31,6 +31,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 84,
+        "level": 31
+      },
+      {
         "moveId": 86,
         "level": 40
       },
@@ -45,6 +49,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 98,
         "level": 1
+      },
+      {
+        "moveId": 98,
+        "level": 27
       }
     ],
     "machines": [
@@ -170,6 +178,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 84,
+        "level": 16
+      },
+      {
         "moveId": 86,
         "level": 42
       },
@@ -184,6 +196,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 98,
         "level": 1
+      },
+      {
+        "moveId": 98,
+        "level": 23
       }
     ],
     "machines": [
@@ -3354,12 +3370,20 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 28,
+        "level": 14
+      },
+      {
         "moveId": 33,
         "level": 1
       },
       {
         "moveId": 39,
         "level": 1
+      },
+      {
+        "moveId": 39,
+        "level": 3
       },
       {
         "moveId": 42,

@@ -19,6 +19,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 52,
+        "level": 7
+      },
+      {
         "moveId": 83,
         "level": 39
       },
@@ -293,6 +297,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 52,
         "level": 1
+      },
+      {
+        "moveId": 52,
+        "level": 7
       },
       {
         "moveId": 83,
@@ -603,6 +611,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 52,
         "level": 1
+      },
+      {
+        "moveId": 52,
+        "level": 7
       },
       {
         "moveId": 83,
@@ -924,6 +936,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 52,
+        "level": 7
+      },
+      {
         "moveId": 83,
         "level": 39
       },
@@ -1201,6 +1217,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 52,
         "level": 1
+      },
+      {
+        "moveId": 52,
+        "level": 7
       },
       {
         "moveId": 83,
@@ -1524,6 +1544,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 52,
+        "level": 7
+      },
+      {
         "moveId": 83,
         "level": 39
       },
@@ -1811,6 +1835,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 52,
         "level": 1
+      },
+      {
+        "moveId": 52,
+        "level": 7
       },
       {
         "moveId": 83,
@@ -2149,6 +2177,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 52,
+        "level": 7
+      },
+      {
         "moveId": 83,
         "level": 39
       },
@@ -2401,6 +2433,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 52,
         "level": 1
+      },
+      {
+        "moveId": 52,
+        "level": 7
       },
       {
         "moveId": 83,
@@ -2697,6 +2733,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 52,
         "level": 1
+      },
+      {
+        "moveId": 52,
+        "level": 7
       },
       {
         "moveId": 53,

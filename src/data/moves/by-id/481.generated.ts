@@ -1521,8 +1521,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 361,
+        "level": 76
+      },
+      {
         "moveId": 363,
         "level": 1
+      },
+      {
+        "moveId": 363,
+        "level": 66
       },
       {
         "moveId": 381,
@@ -1531,6 +1539,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 383,
         "level": 1
+      },
+      {
+        "moveId": 383,
+        "level": 61
       }
     ],
     "machines": [
@@ -1788,8 +1800,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 361,
+        "level": 76
+      },
+      {
         "moveId": 363,
         "level": 1
+      },
+      {
+        "moveId": 363,
+        "level": 66
       },
       {
         "moveId": 381,
@@ -1798,6 +1818,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 383,
         "level": 1
+      },
+      {
+        "moveId": 383,
+        "level": 61
       }
     ],
     "machines": [
@@ -2118,8 +2142,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 361,
+        "level": 76
+      },
+      {
         "moveId": 363,
         "level": 1
+      },
+      {
+        "moveId": 363,
+        "level": 66
       },
       {
         "moveId": 381,
@@ -2128,6 +2160,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 383,
         "level": 1
+      },
+      {
+        "moveId": 383,
+        "level": 61
       }
     ],
     "machines": [
@@ -2375,8 +2411,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 361,
+        "level": 76
+      },
+      {
         "moveId": 363,
         "level": 1
+      },
+      {
+        "moveId": 363,
+        "level": 66
       },
       {
         "moveId": 381,
@@ -2385,6 +2429,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 383,
         "level": 1
+      },
+      {
+        "moveId": 383,
+        "level": 61
       }
     ],
     "machines": [

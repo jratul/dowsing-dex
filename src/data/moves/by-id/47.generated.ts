@@ -19,8 +19,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 78,
+        "level": 13
+      },
+      {
         "moveId": 141,
         "level": 1
+      },
+      {
+        "moveId": 141,
+        "level": 20
       },
       {
         "moveId": 147,
@@ -142,8 +150,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 78,
+        "level": 13
+      },
+      {
         "moveId": 141,
         "level": 1
+      },
+      {
+        "moveId": 141,
+        "level": 20
       },
       {
         "moveId": 147,
@@ -265,8 +281,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 77,
+        "level": 13
+      },
+      {
         "moveId": 78,
         "level": 1
+      },
+      {
+        "moveId": 78,
+        "level": 7
       },
       {
         "moveId": 141,
@@ -431,8 +455,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 77,
+        "level": 13
+      },
+      {
         "moveId": 78,
         "level": 1
+      },
+      {
+        "moveId": 78,
+        "level": 7
       },
       {
         "moveId": 141,
@@ -597,8 +629,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 77,
+        "level": 13
+      },
+      {
         "moveId": 78,
         "level": 1
+      },
+      {
+        "moveId": 78,
+        "level": 7
       },
       {
         "moveId": 141,
@@ -752,8 +792,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 77,
+        "level": 13
+      },
+      {
         "moveId": 78,
         "level": 1
+      },
+      {
+        "moveId": 78,
+        "level": 7
       },
       {
         "moveId": 141,
@@ -941,8 +989,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 77,
+        "level": 13
+      },
+      {
         "moveId": 78,
         "level": 1
+      },
+      {
+        "moveId": 78,
+        "level": 7
       },
       {
         "moveId": 141,
@@ -1115,12 +1171,24 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 77,
+        "level": 6
+      },
+      {
         "moveId": 78,
         "level": 1
       },
       {
+        "moveId": 78,
+        "level": 6
+      },
+      {
         "moveId": 141,
         "level": 1
+      },
+      {
+        "moveId": 141,
+        "level": 11
       },
       {
         "moveId": 147,
@@ -1343,12 +1411,24 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 77,
+        "level": 6
+      },
+      {
         "moveId": 78,
         "level": 1
       },
       {
+        "moveId": 78,
+        "level": 6
+      },
+      {
         "moveId": 141,
         "level": 1
+      },
+      {
+        "moveId": 141,
+        "level": 11
       },
       {
         "moveId": 147,
@@ -1587,12 +1667,24 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 77,
+        "level": 6
+      },
+      {
         "moveId": 78,
         "level": 1
       },
       {
+        "moveId": 78,
+        "level": 6
+      },
+      {
         "moveId": 141,
         "level": 1
+      },
+      {
+        "moveId": 141,
+        "level": 11
       },
       {
         "moveId": 147,
@@ -1840,12 +1932,24 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 77,
+        "level": 6
+      },
+      {
         "moveId": 78,
         "level": 1
       },
       {
+        "moveId": 78,
+        "level": 6
+      },
+      {
         "moveId": 141,
         "level": 1
+      },
+      {
+        "moveId": 141,
+        "level": 11
       },
       {
         "moveId": 147,
@@ -2066,12 +2170,24 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 77,
+        "level": 6
+      },
+      {
         "moveId": 78,
         "level": 1
       },
       {
+        "moveId": 78,
+        "level": 6
+      },
+      {
         "moveId": 141,
         "level": 1
+      },
+      {
+        "moveId": 141,
+        "level": 11
       },
       {
         "moveId": 147,
@@ -2320,12 +2436,24 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 77,
+        "level": 6
+      },
+      {
         "moveId": 78,
         "level": 1
       },
       {
+        "moveId": 78,
+        "level": 6
+      },
+      {
         "moveId": 141,
         "level": 1
+      },
+      {
+        "moveId": 141,
+        "level": 11
       },
       {
         "moveId": 147,
@@ -2561,12 +2689,24 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 77,
+        "level": 6
+      },
+      {
         "moveId": 78,
         "level": 1
       },
       {
+        "moveId": 78,
+        "level": 6
+      },
+      {
         "moveId": 141,
         "level": 1
+      },
+      {
+        "moveId": 141,
+        "level": 11
       },
       {
         "moveId": 147,
@@ -2828,6 +2968,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 71,
+        "level": 11
+      },
+      {
         "moveId": 74,
         "level": 37
       },
@@ -2836,8 +2980,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 77,
+        "level": 6
+      },
+      {
         "moveId": 78,
         "level": 1
+      },
+      {
+        "moveId": 78,
+        "level": 6
       },
       {
         "moveId": 147,
@@ -3044,6 +3196,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 71,
+        "level": 11
+      },
+      {
         "moveId": 74,
         "level": 37
       },
@@ -3052,8 +3208,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 77,
+        "level": 6
+      },
+      {
         "moveId": 78,
         "level": 1
+      },
+      {
+        "moveId": 78,
+        "level": 6
       },
       {
         "moveId": 147,
@@ -3300,12 +3464,24 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 77,
+        "level": 6
+      },
+      {
         "moveId": 78,
         "level": 1
       },
       {
+        "moveId": 78,
+        "level": 4
+      },
+      {
         "moveId": 79,
         "level": 1
+      },
+      {
+        "moveId": 79,
+        "level": 2
       },
       {
         "moveId": 103,
@@ -3424,6 +3600,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 71,
+        "level": 11
+      },
+      {
         "moveId": 74,
         "level": 37
       },
@@ -3432,8 +3612,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 77,
+        "level": 6
+      },
+      {
         "moveId": 78,
         "level": 1
+      },
+      {
+        "moveId": 78,
+        "level": 6
       },
       {
         "moveId": 147,

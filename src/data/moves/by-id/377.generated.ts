@@ -1992,8 +1992,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 192,
+        "level": 65
+      },
+      {
         "moveId": 199,
         "level": 1
+      },
+      {
+        "moveId": 199,
+        "level": 57
       },
       {
         "moveId": 246,
@@ -2010,6 +2018,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 359,
         "level": 1
+      },
+      {
+        "moveId": 359,
+        "level": 81
       },
       {
         "moveId": 444,
@@ -2231,6 +2243,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 88,
+        "level": 7
+      },
+      {
         "moveId": 153,
         "level": 1
       },
@@ -2271,8 +2287,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 451,
+        "level": 13
+      },
+      {
         "moveId": 523,
         "level": 1
+      },
+      {
+        "moveId": 523,
+        "level": 19
       }
     ],
     "machines": [
@@ -2534,6 +2558,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 88,
+        "level": 7
+      },
+      {
         "moveId": 153,
         "level": 1
       },
@@ -2574,8 +2602,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 451,
+        "level": 13
+      },
+      {
         "moveId": 523,
         "level": 1
+      },
+      {
+        "moveId": 523,
+        "level": 19
       }
     ],
     "machines": [
@@ -2769,6 +2805,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 88,
+        "level": 7
+      },
+      {
         "moveId": 153,
         "level": 1
       },
@@ -2809,8 +2849,16 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 451,
+        "level": 13
+      },
+      {
         "moveId": 523,
         "level": 1
+      },
+      {
+        "moveId": 523,
+        "level": 19
       }
     ],
     "machines": [

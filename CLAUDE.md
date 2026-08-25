@@ -48,6 +48,28 @@ npm run build:abilities        # PokeAPI에서 특성 한국어 데이터 수집
 > `scripts/build-items.mjs`(items.generated.ts 생성)는 npm script 미등록 상태다.
 > 필요하면 `node scripts/build-items.mjs` 로 직접 실행한다.
 
+> `scripts/refresh-levelup-learnsets.mjs`는 by-id 파일의 `levelUp` 배열만 PokeAPI에서
+> 다시 받아 덧씌운다. `fetch:pokedex` 전체 실행(위키 스크래핑 포함, 수 시간)을 돌리지 않고
+> 레벨업 학습셋만 최신화할 때 쓴다 — 1,082종에 약 1~2분. `machines`/`tutor`/
+> `RECOMMENDED_MOVESET`은 건드리지 않는다.
+>
+> ```bash
+> node scripts/refresh-levelup-learnsets.mjs --dry-run   # 쓰지 않고 증감만 확인
+> node scripts/refresh-levelup-learnsets.mjs
+> ```
+>
+> 출력의 **포맷 왕복 불일치**가 0이 아니면 이 스크립트의 출력 형식이
+> `fetch-pokedex.mjs`와 어긋났다는 뜻이다 — 그대로 두면 다음 전체 재생성 때
+> 의미 없는 diff가 통째로 생기므로 먼저 맞춘다. **사라진 기존 항목**이 0이 아니면
+> PokeAPI 쪽 데이터가 바뀐 것이니 내용을 확인하고 진행한다.
+>
+> 실행 후 `npm run build:move-index`를 함께 돌린다(레벨업에 의존하는 역인덱스).
+> `tm-index`는 `machines`만 쓰므로 재생성 불필요.
+>
+> **한 기술을 여러 레벨에서 배우는 포켓몬이 있다**(HGSS 전룡의 울음소리 Lv.1·Lv.5).
+> 전체 3,272개 학습셋에서 7,345건이 그렇다. 이 목록을 렌더하는 쪽은 `moveId`만으로
+> React key를 만들면 안 된다 — `MoveList`는 `moveId-level`을 쓴다.
+
 ## 폴더 구조
 
 ```
@@ -93,6 +115,8 @@ scripts/
   build-move-descriptions.mjs # PokeAPI 기술 한국어 설명 수집 → move-descriptions.generated.ts 출력
   build-abilities.mjs         # PokeAPI 특성 한국어 데이터 수집 → abilities.generated.ts 출력
   build-items.mjs             # PokeAPI 진화/배틀 아이템 데이터 수집 → items.generated.ts 출력
+  refresh-levelup-learnsets.mjs # by-id/*.generated.ts 의 levelUp만 PokeAPI에서 재동기화
+  version-groups.mjs          # 세대별 게임판 라벨 ↔ PokeAPI version group 매핑 (위 두 스크립트가 공유)
 ```
 
 ## 데이터 생성 흐름

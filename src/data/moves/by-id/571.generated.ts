@@ -35,6 +35,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 228,
+        "level": 5
+      },
+      {
         "moveId": 259,
         "level": 34
       },
@@ -69,6 +73,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 468,
         "level": 1
+      },
+      {
+        "moveId": 468,
+        "level": 9
       },
       {
         "moveId": 492,
@@ -321,6 +329,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 228,
+        "level": 5
+      },
+      {
         "moveId": 259,
         "level": 34
       },
@@ -355,6 +367,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 468,
         "level": 1
+      },
+      {
+        "moveId": 468,
+        "level": 9
       },
       {
         "moveId": 492,
@@ -647,6 +663,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 228,
+        "level": 5
+      },
+      {
         "moveId": 259,
         "level": 34
       },
@@ -657,6 +677,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 286,
         "level": 1
+      },
+      {
+        "moveId": 286,
+        "level": 59
       },
       {
         "moveId": 369,
@@ -683,12 +707,20 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 468,
+        "level": 9
+      },
+      {
         "moveId": 492,
         "level": 29
       },
       {
         "moveId": 539,
         "level": 1
+      },
+      {
+        "moveId": 539,
+        "level": 64
       }
     ],
     "machines": [
@@ -948,6 +980,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 228,
+        "level": 5
+      },
+      {
         "moveId": 259,
         "level": 34
       },
@@ -958,6 +994,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 286,
         "level": 1
+      },
+      {
+        "moveId": 286,
+        "level": 59
       },
       {
         "moveId": 369,
@@ -984,12 +1024,20 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 468,
+        "level": 9
+      },
+      {
         "moveId": 492,
         "level": 29
       },
       {
         "moveId": 539,
         "level": 1
+      },
+      {
+        "moveId": 539,
+        "level": 64
       }
     ],
     "machines": [
@@ -1288,6 +1336,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 228,
+        "level": 5
+      },
+      {
         "moveId": 259,
         "level": 34
       },
@@ -1298,6 +1350,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 286,
         "level": 1
+      },
+      {
+        "moveId": 286,
+        "level": 59
       },
       {
         "moveId": 369,
@@ -1324,12 +1380,20 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 468,
+        "level": 9
+      },
+      {
         "moveId": 492,
         "level": 29
       },
       {
         "moveId": 539,
         "level": 1
+      },
+      {
+        "moveId": 539,
+        "level": 64
       }
     ],
     "machines": [
@@ -1559,6 +1623,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 228,
+        "level": 5
+      },
+      {
         "moveId": 259,
         "level": 34
       },
@@ -1569,6 +1637,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 286,
         "level": 1
+      },
+      {
+        "moveId": 286,
+        "level": 59
       },
       {
         "moveId": 369,
@@ -1595,12 +1667,20 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 468,
+        "level": 9
+      },
+      {
         "moveId": 492,
         "level": 29
       },
       {
         "moveId": 539,
         "level": 1
+      },
+      {
+        "moveId": 539,
+        "level": 64
       }
     ],
     "machines": [

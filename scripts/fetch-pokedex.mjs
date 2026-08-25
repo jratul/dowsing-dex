@@ -1,6 +1,7 @@
 // 1~9세대(1025종) + 리전폼(알로라/가라르/히스이/팔데아) + 검증된 메가진화 데이터를
 // PokeAPI에서 가져와 TS 데이터 파일로 생성하는 1회성 스크립트.
 import fs from 'node:fs/promises'
+import { VERSIONS_BY_GEN, levelUpLevelsFor } from './version-groups.mjs'
 
 const BASE = 'https://pokeapi.co/api/v2'
 const TOTAL_SPECIES = 1025
@@ -38,45 +39,6 @@ const REGION_EXTRA_LABEL = {
 // (예: 4세대 플래티넘은 벌레먹음을 레벨 15에 배우지만 다이아몬드·펄은 배우지 않음).
 // DLC(더 아머의 섬/왕관의 설원, 더 한입 과자/달콤 마카롱)는 별도 "버전"으로 보여주면 사용자
 // 입장에서 혼란스러워 같은 기반 게임에 합쳐서 본다.
-const VERSIONS_BY_GEN = {
-  1: [
-    { label: '레드·블루', groups: ['red-blue'] },
-    { label: '옐로우', groups: ['yellow'] },
-  ],
-  2: [
-    { label: '골드·실버', groups: ['gold-silver'] },
-    { label: '크리스탈', groups: ['crystal'] },
-  ],
-  3: [
-    { label: '루비·사파이어', groups: ['ruby-sapphire'] },
-    { label: '에메랄드', groups: ['emerald'] },
-    { label: '파이어레드·리프그린', groups: ['firered-leafgreen'] },
-  ],
-  4: [
-    { label: '다이아몬드·펄', groups: ['diamond-pearl'] },
-    { label: '플래티넘', groups: ['platinum'] },
-    { label: '하트골드·소울실버', groups: ['heartgold-soulsilver'] },
-  ],
-  5: [
-    { label: '블랙·화이트', groups: ['black-white'] },
-    { label: '블랙2·화이트2', groups: ['black-2-white-2'] },
-  ],
-  6: [
-    { label: 'X·Y', groups: ['x-y'] },
-    { label: '오메가루비·알파사파이어', groups: ['omega-ruby-alpha-sapphire'] },
-  ],
-  7: [
-    { label: '썬·문', groups: ['sun-moon'] },
-    { label: '울트라썬·울트라문', groups: ['ultra-sun-ultra-moon'] },
-    { label: '레츠고 피카츄·이브이', groups: ['lets-go-pikachu-lets-go-eevee'] },
-  ],
-  8: [
-    { label: '소드·실드', groups: ['sword-shield', 'the-isle-of-armor', 'the-crown-tundra'] },
-    { label: '브릴리언트다이아몬드·샤이닝펄', groups: ['brilliant-diamond-shining-pearl'] },
-    { label: '레전드 아르세우스', groups: ['legends-arceus'] },
-  ],
-  9: [{ label: '스칼렛·바이올렛', groups: ['scarlet-violet', 'the-teal-mask', 'the-indigo-disk'] }],
-}
 const DAMAGE_CLASS_KO = { physical: '물리', special: '특수', status: '상태' }
 
 // 실제 게임에 존재하는 메가진화 보유 종(46종, 총 48폼: 리자몽·뮤츠만 X/Y 2종).
@@ -503,16 +465,7 @@ async function buildLearnsets(poke, machineLookup) {
         const details = moveEntry.version_group_details.filter((d) => groups.includes(d.version_group.name))
         if (details.length === 0) continue
 
-        // 같은 기술을 여러 레벨에서 배우는 포켓몬이 있다(HGSS 전룡의 울음소리 Lv.1·Lv.5).
-        // find로 하나만 남기면 도감 레벨업 표에서 나머지 레벨이 통째로 사라진다.
-        // label이 version group을 여러 개 묶는 경우(소드·실드 등) 같은 레벨이 중복되므로 레벨 기준으로 추린다.
-        const levelUpLevels = [
-          ...new Set(
-            details
-              .filter((d) => d.move_learn_method.name === 'level-up' && d.level_learned_at > 0)
-              .map((d) => d.level_learned_at),
-          ),
-        ].sort((a, b) => a - b)
+        const levelUpLevels = levelUpLevelsFor(moveEntry.version_group_details, groups)
         if (levelUpLevels.length > 0) {
           const info = await moveDetail(moveEntry.move.name)
           for (const level of levelUpLevels) levelUp.push({ moveId: info.id, level })

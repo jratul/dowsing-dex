@@ -2622,6 +2622,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 7
       },
       {
+        "moveId": 22,
+        "level": 9
+      },
+      {
         "moveId": 33,
         "level": 1
       },

@@ -75,12 +75,24 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 406,
+        "level": 70
+      },
+      {
         "moveId": 542,
         "level": 1
       },
       {
+        "moveId": 542,
+        "level": 62
+      },
+      {
         "moveId": 586,
         "level": 1
+      },
+      {
+        "moveId": 586,
+        "level": 75
       }
     ],
     "machines": [
@@ -369,12 +381,24 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 406,
+        "level": 70
+      },
+      {
         "moveId": 542,
         "level": 1
       },
       {
+        "moveId": 542,
+        "level": 62
+      },
+      {
         "moveId": 586,
         "level": 1
+      },
+      {
+        "moveId": 586,
+        "level": 75
       }
     ],
     "machines": [
@@ -668,6 +692,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 71,
+        "level": 5
+      },
+      {
         "moveId": 97,
         "level": 18
       },
@@ -704,12 +732,24 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 406,
+        "level": 70
+      },
+      {
         "moveId": 542,
         "level": 1
       },
       {
+        "moveId": 542,
+        "level": 62
+      },
+      {
         "moveId": 586,
         "level": 1
+      },
+      {
+        "moveId": 586,
+        "level": 75
       }
     ],
     "machines": [
@@ -957,6 +997,10 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 71,
+        "level": 5
+      },
+      {
         "moveId": 97,
         "level": 18
       },
@@ -993,12 +1037,24 @@ export const LEARNSETS: Learnset[] = [
         "level": 1
       },
       {
+        "moveId": 406,
+        "level": 70
+      },
+      {
         "moveId": 542,
         "level": 1
       },
       {
+        "moveId": 542,
+        "level": 62
+      },
+      {
         "moveId": 586,
         "level": 1
+      },
+      {
+        "moveId": 586,
+        "level": 75
       }
     ],
     "machines": [

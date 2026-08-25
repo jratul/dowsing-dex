@@ -576,6 +576,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 517,
         "level": 1
+      },
+      {
+        "moveId": 517,
+        "level": 61
       }
     ],
     "machines": [
@@ -827,6 +831,10 @@ export const LEARNSETS: Learnset[] = [
       {
         "moveId": 517,
         "level": 1
+      },
+      {
+        "moveId": 517,
+        "level": 61
       }
     ],
     "machines": [
