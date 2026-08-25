@@ -35,6 +35,16 @@ npm run build:abilities        # PokeAPI에서 특성 한국어 데이터 수집
 > 실행 후 "4246개 중 4246개에 확률을 붙였다(100%)"처럼 커버리지가 찍히는데, 매핑이
 > 틀리면 그 지역이 통째로 0건이 되므로 이 수치가 매핑 검증을 겸한다.
 
+> `scripts/check-guide-pokemon-ids.mjs`는 공략 데이터의 `pokemonId: N, pokemon: '이름'` 쌍과
+> `['이름', N]` 링크 매핑을 도감과 대조한다. **공략을 추가·수정하면 반드시 돌린다** —
+> 어긋나도 화면에는 이름이 멀쩡히 보이고 링크만 엉뚱한 포켓몬으로 가서 눈으로는 안 잡힌다.
+> 불일치는 "이름이 틀린 경우"와 "ID가 틀린 경우"가 같은 형태로 보고되므로, 주변 `note`의
+> 타입·진화·입수처 설명을 읽고 어느 쪽이 의도인지 정해서 고친다.
+>
+> ```bash
+> node scripts/check-guide-pokemon-ids.mjs
+> ```
+
 > `scripts/build-items.mjs`(items.generated.ts 생성)는 npm script 미등록 상태다.
 > 필요하면 `node scripts/build-items.mjs` 로 직접 실행한다.
 

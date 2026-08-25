@@ -134,7 +134,7 @@ const CHIMCHAR_GUIDE: StarterGuideData = {
   ],
   catchTable: [
     { timing: '게임 시작', pokemonId: 390, pokemon: '불꽃숭이', note: '스타팅. 최종 초염몽(불꽃/격투)' },
-    { timing: '201번도로 (최우선)', pokemonId: 399, pokemon: '꼬마꼬마', note: '비전통용. Lv.15에서 비버통으로 진화. 4슬롯×2단계 HM 운용 (Phase1: 풀베기·안개걷기·바위깨기·괴력 / Phase2: 파도타기·폭포오르기·바위오르기·괴력). PC 보관, 파티 6명 유지' },
+    { timing: '201번도로 (최우선)', pokemonId: 399, pokemon: '비버니', note: '비전통용. Lv.15에서 비버통으로 진화. 4슬롯×2단계 HM 운용 (Phase1: 풀베기·안개걷기·바위깨기·괴력 / Phase2: 파도타기·폭포오르기·바위오르기·괴력). PC 보관, 파티 6명 유지' },
     { timing: '201번도로', pokemonId: 396, pokemon: '찌르꼬', note: '빠르게 포획. 최종 찌르호크. HM02 공중날기만 담당' },
     { timing: '202번도로 / 204번도로', pokemonId: 403, pokemon: '꼬링크', note: '최종 렌트라. 전기 타입 핵심' },
     { timing: '영원숲 (2관 이후)', pokemonId: 200, pokemon: '무우마', note: '최종 무우마직. 황혼의돌로 진화. 영원숲 야간 등장' },
@@ -381,7 +381,7 @@ const PIPLUP_GUIDE: StarterGuideData = {
   ],
   catchTable: [
     { timing: '게임 시작', pokemonId: 393, pokemon: '팽도리', note: '스타팅. 최종 엠페르트(물/강철). 강철 타입으로 얼음 약점을 자체 방어' },
-    { timing: '201번도로 (최우선)', pokemonId: 399, pokemon: '꼬마꼬마', note: '비전통용. Lv.15에서 비버통으로 진화. 4슬롯×2단계 HM 운용. 파도타기는 엠페르트가 전투겸 필드로 커버하므로 비버통 부담 감소. PC 보관, 파티 6명 유지' },
+    { timing: '201번도로 (최우선)', pokemonId: 399, pokemon: '비버니', note: '비전통용. Lv.15에서 비버통으로 진화. 4슬롯×2단계 HM 운용. 파도타기는 엠페르트가 전투겸 필드로 커버하므로 비버통 부담 감소. PC 보관, 파티 6명 유지' },
     { timing: '201번도로', pokemonId: 396, pokemon: '찌르꼬', note: '최종 찌르호크. HM02 공중날기만 담당' },
     { timing: '202번도로', pokemonId: 403, pokemon: '꼬링크', note: '최종 렌트라. 전기 딜러' },
     { timing: '영원숲 (2관 이후)', pokemonId: 200, pokemon: '무우마', note: '최종 무우마직. 황혼의돌로 진화. 영원숲 야간 등장' },
@@ -614,7 +614,7 @@ const TURTWIG_GUIDE: StarterGuideData = {
   ],
   catchTable: [
     { timing: '게임 시작', pokemonId: 387, pokemon: '모부기', note: '스타팅. 최종 토대부기(풀/땅). 전기 면역. 4관 물 체육관에 매우 강함' },
-    { timing: '201번도로 (최우선)', pokemonId: 399, pokemon: '꼬마꼬마', note: '비전통용. Lv.15에서 비버통으로 진화. 4슬롯×2단계 HM 운용. 파도타기는 토대부기가 전투겸 필드로 커버. PC 보관, 파티 6명 유지' },
+    { timing: '201번도로 (최우선)', pokemonId: 399, pokemon: '비버니', note: '비전통용. Lv.15에서 비버통으로 진화. 4슬롯×2단계 HM 운용. 파도타기는 토대부기가 전투겸 필드로 커버. PC 보관, 파티 6명 유지' },
     { timing: '201번도로', pokemonId: 396, pokemon: '찌르꼬', note: '최종 찌르호크. HM02 공중날기만 담당' },
     { timing: '202번도로', pokemonId: 403, pokemon: '꼬링크', note: '최종 렌트라. 전기 딜러' },
     { timing: '영원숲 (2관 이후)', pokemonId: 200, pokemon: '무우마', note: '최종 무우마직. 황혼의돌로 진화' },
@@ -959,7 +959,7 @@ const YUNJINSEOK_GUIDE: StarterGuideData = {
     {
       timing: '201번도로 (최우선)',
       pokemonId: 399,
-      pokemon: '꼬마꼬마',
+      pokemon: '비버니',
       note: '파티 6번째 비전 멤버. Lv.15에서 비버통으로 진화. HM01 풀베기·HM04 괴력·HM05 안개걷기·HM06 바위깨기를 배정 — 4슬롯에 딱 맞음. HM03·07·08은 갸라도스·한카리아스가 담당하므로 기술삭제·Phase 교체 불필요',
     },
     {
@@ -1227,8 +1227,8 @@ export const PLATINUM_NAME_TO_ID: Map<string, number> = new Map(
       ['렌트라', 405], ['럭시오', 404], ['꼬링크', 403],
       ['한카리아스', 445], ['한바이트', 444], ['딥상어동', 443],
       ['루카리오', 448], ['리오르', 447],
-      ['비버통', 400], ['꼬마꼬마', 399],
-      ['갸라도스', 130], ['코이킹', 129],
+      ['비버통', 400], ['비버니', 399],
+      ['갸라도스', 130], ['잉어킹', 129],
       ['무우마직', 429], ['무우마', 200],
       ['로즈레이드', 407], ['로젤리아', 315], ['꼬몽울', 406],
       ['드래피온', 452], ['스콜피', 451],
@@ -1238,7 +1238,7 @@ export const PLATINUM_NAME_TO_ID: Map<string, number> = new Map(
       ['눈여아', 478], ['눈설왕', 460],
       ['글라이온', 472], ['글라이거', 207],
       ['기라티나', 487], ['디아루가', 483], ['펄기아', 484],
-      ['쥬피썬더', 135], ['라이츄', 26], ['더스클', 355], ['팬텀', 93],
+      ['쥬피썬더', 135], ['라이츄', 26], ['해골몽', 355], ['팬텀', 94],
     ] as [string, number][]
   ).sort((a, b) => b[0].length - a[0].length),
 )

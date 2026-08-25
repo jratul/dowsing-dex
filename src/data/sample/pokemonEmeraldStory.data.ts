@@ -131,7 +131,7 @@ const ACHAMO_GUIDE: StarterGuideData = {
     { timing: '110번도로 (물가시티 남쪽)', pokemonId: 309, pokemon: '썬더라이', note: '최종 썬더볼트. 전기 타입 확보' },
     { timing: '111번도로 사막', pokemonId: 328, pokemon: '톱치', note: '최종 플라이곤. 드래곤/땅 딜러. 사막에서 포획' },
     { timing: '117번도로 (사파리존 이전)', pokemonId: 363, pokemon: '대굴레오', note: '최종 씨카이저. 물/얼음. 쇼울케이브 방문 전에 포획' },
-    { timing: '쇼울케이브', pokemonId: 363, pokemon: '씨레오·씨카이저', note: '대굴레오가 없으면 쇼울케이브에서 씨레오로 업그레이드' },
+    { timing: '쇼울케이브', pokemonId: 364, pokemon: '씨레오', note: '대굴레오가 없으면 쇼울케이브에서 씨레오로 업그레이드' },
     { timing: '110번도로 바다낚시 / 109번도로', pokemonId: 278, pokemon: '갈모매', note: '최종 패리퍼. 물/비행 HM 담당. 일찍 합류시킬수록 편함' },
   ],
   movesets: [
@@ -366,7 +366,7 @@ const MUDKIP_GUIDE: StarterGuideData = {
     { timing: '페탈버그숲 이전·이후', pokemonId: 285, pokemon: '버섯꼬', note: '최종 버섯모. 페탈버그숲에서 포획 가능' },
     { timing: '111번도로 사막 (4관 이후)', pokemonId: 371, pokemon: '아공이', note: '최종 보만다. 아공이→쉘곤(Lv.30)→보만다(Lv.50). 어려운 육성이지만 최강 딜러' },
     { timing: '121번도로 ~ 114번도로', pokemonId: 353, pokemon: '어둠대신', note: '최종 다크펫(고스트). E4 피비 대항. 자정 이후 등장률 증가' },
-    { timing: '112번도로 ~ 113번도로', pokemonId: 322, pokemon: '뇨모리', note: '최종 폭타(불꽃/바위). 뇨모리→폭타(Lv.33)' },
+    { timing: '112번도로 ~ 113번도로', pokemonId: 322, pokemon: '둔타', note: '최종 폭타(불꽃/바위). 둔타→폭타(Lv.33)' },
   ],
   movesets: [
     {
@@ -814,7 +814,7 @@ export const EMERALD_NAME_TO_ID: Map<string, number> = new Map(
       ['버섯모', 286], ['버섯꼬', 285],
       ['보만다', 373], ['쉘곤', 372], ['아공이', 371],
       ['다크펫', 354], ['어둠대신', 353],
-      ['앱솔', 359], ['폭타', 323], ['뇨모리', 322],
+      ['앱솔', 359], ['폭타', 323], ['둔타', 322],
       ['루나톤', 337], ['솔록', 338],
     ] as [string, number][]
   ).sort((a, b) => b[0].length - a[0].length),
