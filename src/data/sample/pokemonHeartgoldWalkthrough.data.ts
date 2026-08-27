@@ -37,6 +37,8 @@ export interface WalkthroughKeyItem {
 export interface WalkthroughBossRow {
   opponent: string
   answer: string
+  /** 관장이 가장 먼저 내보내는 포켓몬. HGSS는 트레이너 파티가 순서까지 고정이라 항상 같다. */
+  lead?: boolean
 }
 
 export interface WalkthroughBoss {
@@ -182,7 +184,7 @@ export const HGW_ROLE_COMPARISONS: RoleComparison[] = [
   {
     role: '얼음 역할',
     description:
-      '이향·목호·레드의 드래곤 대응 핵심. 얼음 기술로 드래곤 4배 피해를 내는 것이 목표.',
+      '이향·목호·레드의 드래곤 대응 핵심. 드래곤에 얼음 2배, 망나뇽 같은 드래곤/비행에는 4배가 들어간다.',
     candidates: [
       {
         pokemonId: 473,
@@ -295,8 +297,8 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       levels: 'Lv.9·13',
       note: '마그케인 불꽃세례 한 방. 레벨 올리면 어렵지 않다.',
       rows: [
-        { opponent: '구구 Lv.9 (비행/노말)', answer: '마그케인 불꽃세례' },
-        { opponent: '피죤 Lv.13 (비행/노말)', answer: '마그케인 불꽃세례' },
+        { opponent: '구구 Lv.9 (노말/비행)', answer: '마그케인 불꽃세례', lead: true },
+        { opponent: '피죤 Lv.13 (노말/비행)', answer: '마그케인 불꽃세례' },
       ],
       badge: '윙배지',
     },
@@ -342,12 +344,12 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       leader: '호일',
       gym: '고동마을',
       gymType: '벌레',
-      levels: 'Lv.14·14·16',
-      note: '마그케인 불꽃세례로 전부 처리. 스라크(벌레/비행)는 불꽃 2배.',
+      levels: 'Lv.17·15·15',
+      note: '에이스 스라크가 선두로 먼저 나온다. 셋 다 벌레라 마그케인 불꽃세례가 전부 2배.',
       rows: [
-        { opponent: '단데기 Lv.14 (벌레)', answer: '마그케인 불꽃세례' },
-        { opponent: '딱충이 Lv.14 (벌레/독)', answer: '마그케인 불꽃세례' },
-        { opponent: '스라크 Lv.16 (벌레/비행)', answer: '마그케인 불꽃세례 (2배!)' },
+        { opponent: '스라크 Lv.17 (벌레/비행)', answer: '마그케인 불꽃세례 (불꽃 2배!). 바위 기술이 있으면 4배', lead: true },
+        { opponent: '단데기 Lv.15 (벌레)', answer: '마그케인 불꽃세례 (2배)' },
+        { opponent: '딱충이 Lv.15 (벌레/독)', answer: '마그케인 불꽃세례 (2배)' },
       ],
       badge: '인섹트배지',
     },
@@ -389,7 +391,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       levels: 'Lv.17·19',
       note: '밀탱크의 구르기가 위협. 헤라크로스 인파이트(격투 2배)로 끝낸다. 전기자석파로 마비 후 공략도 유효.',
       rows: [
-        { opponent: '삐삐 Lv.17 (노말)', answer: '마그케인 불꽃세례 (레벨 차로 일격)' },
+        { opponent: '삐삐 Lv.17 (노말)', answer: '마그케인 불꽃세례 (레벨 차로 일격)', lead: true },
         { opponent: '밀탱크 Lv.19 (노말)', answer: '헤라크로스 인파이트 (격투 2배 ★)' },
       ],
       badge: '레귤러배지',
@@ -427,12 +429,13 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       leader: '유빈',
       gym: '인주시티',
       gymType: '고스트',
-      levels: 'Lv.21·21·21·25',
-      note: '고스트는 노말·격투 무효. 전기자석파(보송송)로 마비시킨 뒤 화염방사로 중립 공격. 팬텀은 땅 약점 — 지진이 있으면 2배.',
+      levels: 'Lv.21·21·25·23',
+      note: '고스트는 노말·격투 무효. 넷 다 특성이 부유라 고스트/독의 땅 2배 약점을 찌를 수 없다 — 지진은 아예 안 통한다. 전기자석파(보송송)로 마비시킨 뒤 화염방사로 중립 공격하는 것이 정석.',
       rows: [
-        { opponent: '고오스 Lv.21 x2 (고스트/독)', answer: '마그케인 화염방사 (중립, 레벨 우위)' },
+        { opponent: '고오스 Lv.21 (고스트/독)', answer: '마그케인 화염방사 (중립, 레벨 우위)', lead: true },
         { opponent: '고우스트 Lv.21 (고스트/독)', answer: '보송송 전기자석파 마비 → 화염방사' },
-        { opponent: '팬텀 Lv.25 (고스트/독)', answer: '마그케인 화염방사 · 지진 TM 있으면 2배' },
+        { opponent: '팬텀 Lv.25 (고스트/독)', answer: '에이스. 화염방사로 중립 공격 — 부유라 지진은 무효' },
+        { opponent: '고우스트 Lv.23 (고스트/독)', answer: '화염방사로 마무리' },
       ],
       badge: '팬텀배지',
     },
@@ -465,7 +468,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       levels: 'Lv.29·31',
       note: '격투는 비행·에스퍼에 약점. 깨비드릴조 공중날기가 핵심 딜러.',
       rows: [
-        { opponent: '성원숭 Lv.29 (격투)', answer: '깨비드릴조 공중날기 (비행 2배!)' },
+        { opponent: '성원숭 Lv.29 (격투)', answer: '깨비드릴조 공중날기 (비행 2배!)', lead: true },
         { opponent: '강챙이 Lv.31 (물/격투)', answer: '전룡 방전 (전기 2배!) / 깨비드릴조 공중날기' },
       ],
       badge: '쇼크배지',
@@ -492,7 +495,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       levels: 'Lv.30·30·35',
       note: '블레이범/마그케인 화염방사 한 방. 강철 타입은 불꽃에 2배 약점.',
       rows: [
-        { opponent: '코일 Lv.30 x2 (전기/강철)', answer: '마그케인/블레이범 화염방사 (2배!)' },
+        { opponent: '코일 Lv.30 x2 (전기/강철)', answer: '마그케인/블레이범 화염방사 (2배!)', lead: true },
         { opponent: '강철톤 Lv.35 (강철/땅)', answer: '블레이범 화염방사 (2배!) · 라프라스/갸라도스 파도타기 (2배!)' },
       ],
       badge: '스틸배지',
@@ -532,12 +535,12 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       leader: '류옹',
       gym: '황토마을',
       gymType: '얼음',
-      levels: 'Lv.27·29·31',
-      note: '쥬쥬·쥬레곤은 물 타입 — 전룡 방전이 핵심. 메꾸리(얼음/땅)만 격투·불꽃 2배 약점이므로 블레이범 화염방사나 헤라크로스 인파이트로 처리.',
+      levels: 'Lv.30·32·34',
+      note: '쥬쥬·쥬레곤은 물 타입 — 전룡 방전이 핵심. 다만 둘 다 특성이 두꺼운지방이라 불꽃·얼음 기술은 반감된다(화염방사로 밀지 말 것). 메꾸리(얼음/땅)는 격투·불꽃 2배.',
       rows: [
-        { opponent: '쥬쥬 Lv.27 (물)', answer: '전룡 방전 (전기 2배)' },
-        { opponent: '쥬레곤 Lv.29 (물/얼음)', answer: '전룡 방전 / 헤라크로스 인파이트' },
-        { opponent: '메꾸리 Lv.31 (얼음/땅)', answer: '블레이범 화염방사 (불꽃 2배!) / 헤라크로스 인파이트 (격투 2배!)' },
+        { opponent: '쥬쥬 Lv.30 (물)', answer: '전룡 방전 (전기 2배)', lead: true },
+        { opponent: '쥬레곤 Lv.32 (물/얼음)', answer: '전룡 방전 (전기 2배) / 헤라크로스 인파이트 (격투 2배)' },
+        { opponent: '메꾸리 Lv.34 (얼음/땅)', answer: '블레이범 화염방사 (불꽃 2배!) / 헤라크로스 인파이트 (격투 2배!)' },
       ],
       badge: '아이스배지',
     },
@@ -586,10 +589,11 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       gym: '검은먹시티',
       gymType: '드래곤',
       levels: 'Lv.38·38·38·41',
-      note: '신뇽(드래곤)은 얼음 2배. 킹드라(드래곤/물)는 전기 2배! 전룡이 킹드라 담당.',
+      note: '선두 갸라도스가 전기 4배 — 전룡 방전이 최고 효율이다. 신뇽은 얼음 2배. 킹드라(물/드래곤)는 4세대에 페어리가 없어 약점이 드래곤뿐이고 전기·얼음 모두 1배라, 전룡으로 담당시키면 안 된다.',
       rows: [
-        { opponent: '신뇽 Lv.38 x3 (드래곤)', answer: '맘모꾸리·라프라스 냉동빔/눈사태 (얼음 2배!)' },
-        { opponent: '킹드라 Lv.41 (드래곤/물)', answer: '전룡 방전 (전기 2배! 드래곤/물)' },
+        { opponent: '갸라도스 Lv.38 (물/비행)', answer: '전룡 방전 (전기 4배!!). 특성 위협으로 이쪽 물리 공격이 1랭크 떨어지니 특수 딜러로 받는다', lead: true },
+        { opponent: '신뇽 Lv.38 x2 (드래곤)', answer: '맘모꾸리 눈사태 · 라프라스 냉동빔 (얼음 2배!)' },
+        { opponent: '킹드라 Lv.41 (물/드래곤)', answer: '약점이 드래곤뿐 — 전기·얼음 모두 1배. 라프라스 냉동빔 등 중립 화력으로 밀어낸다' },
       ],
       badge: '라이징배지',
     },
@@ -690,7 +694,7 @@ export const HGW_PHASES: WalkthroughPhase[] = [
       levels: 'Lv.80~88',
       note: '피카츄가 광속 소지, 전원 Lv.80+. 선제 처리 순서를 지키는 것이 핵심.',
       rows: [
-        { opponent: '피카츄 Lv.88 (전기)', answer: '맘모꾸리 지진 (땅 2배!) / 블레이범에 TM26 배정 시 블레이범 지진' },
+        { opponent: '피카츄 Lv.88 (전기)', answer: '맘모꾸리 지진 (땅 2배!) / 블레이범에 TM26 배정 시 블레이범 지진', lead: true },
         { opponent: '이상해꽃 Lv.84 (풀/독)', answer: '블레이범 화염방사 (불꽃 2배)' },
         { opponent: '거북왕 Lv.84 (물)', answer: '전룡 방전 (전기 2배)' },
         { opponent: '리자몽 Lv.84 (불꽃/비행)', answer: '갸라도스 파도타기 (물 2배) · 맘모꾸리 눈사태' },
@@ -933,7 +937,7 @@ export const HGW_YOUTUBER_PICKS: YoutuberPick[] = [
     ],
     cons: [
       'Lv.55 진화 — 미뇽(Lv.5)부터 키우면 50레벨 이상 차이. 스토리 중 화력 공백이 큼',
-      '얼음 4배 약점. 이향의 신뇽 냉동빔 한 방에 치명적',
+      '얼음 4배 약점 — 얼음 기술 한 방에 치명적 (다만 이향의 신뇽·킹드라는 얼음 기술이 없어 8관 자체는 안전)',
       'HG에서 미뇽의 기본 레벨이 낮아 실전 투입까지 시간이 오래 걸림',
     ],
     verdict: 'late',

@@ -85,7 +85,12 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
         <span className={`rounded-chip bg-white px-2 py-0.5 text-xs font-bold ${style.pillClass}`}>공략</span>
       </div>
 
-      <h1 className="mb-4 text-2xl font-black text-ink">포켓몬 하트골드버전 최고 효율 진행 공략</h1>
+      <h1 className="mb-1 text-2xl font-black text-ink">포켓몬 하트골드버전 최고 효율 진행 공략</h1>
+      <p className="mb-4 text-xs text-ink-muted">
+        트레이너 파티는 순서까지 고정이라, 보스 표의
+        <span className="mx-1 inline-block rounded bg-brand-red px-1.5 py-0.5 text-xxs font-bold text-white">선두</span>
+        는 항상 가장 먼저 나오는 포켓몬이다. 첫 턴에 무엇이 나올지 알고 선봉을 고를 수 있다.
+      </p>
 
       {/* 추천 파티 */}
       <Card className="mb-6 overflow-hidden">
@@ -365,7 +370,20 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                     <p className="mb-2 text-sm text-ink">{L(phase.boss.note)}</p>
                     <GuideTable
                       headers={['상대 포켓몬', '대응 방법']}
-                      rows={phase.boss.rows.map((r) => [L(r.opponent), L(r.answer)])}
+                      rows={phase.boss.rows.map((r) => [
+                        <span key="opponent" className="flex flex-wrap items-center gap-1.5">
+                          {r.lead && (
+                            <span
+                              className="shrink-0 rounded bg-brand-red px-1.5 py-0.5 text-xxs font-bold text-white"
+                              title="관장이 가장 먼저 내보내는 포켓몬. 파티 순서가 고정이라 항상 같다."
+                            >
+                              선두
+                            </span>
+                          )}
+                          <span>{L(r.opponent)}</span>
+                        </span>,
+                        L(r.answer),
+                      ])}
                     />
                     <p className="mt-2 text-xs font-bold text-brand-red">
                       획득: {phase.boss.badge}
