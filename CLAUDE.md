@@ -64,6 +64,11 @@ npm run build:abilities        # PokeAPI에서 특성 한국어 데이터 수집
 > (식스테일 화염방사: 레드·블루 Lv.35, 파이어레드 Lv.29). 다른 세대 자료를 보고 쓰면
 > 조용히 틀린다 — 실제로 파이어레드 공략의 돌 진화 표가 통째로 1세대 레벨이었다.
 >
+> `scripts/check-guide-items.mjs`는 공략의 아이템 이름을 `items.generated.ts`와 대조한다.
+> 진화용 돌 이름이 특히 자주 틀린다 — 빛나는돌·황혼의돌·번개의돌은 각각
+> **빛의돌·어둠의돌·천둥의돌**이 맞다. 꼬마돌·화강돌처럼 이름이 `돌`로 끝나는
+> 포켓몬은 자동으로 제외된다.
+>
 > `scripts/check-guide-roster.mjs`는 공략에 나오는 포켓몬 이름이 실존하는지, 그리고
 > **그 게임 세대에 존재할 수 있는지**를 본다. 3세대 에메랄드 공략에 삼삼드래(5세대)가
 > 적혀 있어도 화면에는 멀쩡히 보이므로 눈으로는 안 잡힌다.
@@ -71,9 +76,10 @@ npm run build:abilities        # PokeAPI에서 특성 한국어 데이터 수집
 > ```bash
 > node scripts/check-guide-levels.mjs
 > node scripts/check-guide-roster.mjs
+> node scripts/check-guide-items.mjs
 > ```
 >
-> 공략을 추가·수정하면 위 네 스크립트(`pokemon-ids`·`machines`·`levels`·`roster`)를
+> 공략을 추가·수정하면 위 다섯 스크립트(`pokemon-ids`·`machines`·`levels`·`roster`·`items`)를
 > 모두 돌린다. 2026-08 전수 점검에서 이 검사들이 잡아낸 것: 파이어레드 돌 진화 표의
 > 1세대 레벨, 에메랄드 공략의 세대 초과 포켓몬(삼삼드래·불비달마·미끄래곤), 하트골드
 > 스토리 공략의 관동 체육관 명단 전체, 플래티넘 공략의 비공식 기술명 39건.
