@@ -73,9 +73,10 @@ npm run build:abilities        # PokeAPI에서 특성 한국어 데이터 수집
 > node scripts/check-guide-roster.mjs
 > ```
 >
-> `check-guide-roster`는 현재 **의도적으로 실패 상태**다 — 에메랄드 공략과 하트골드
-> 스토리 공략의 보스 파티에 존재하지 않는/세대 초과 포켓몬이 남아 있다. 그 두 공략의
-> 파티 명단을 원전 대조해 다시 쓰기 전까지 이 스크립트의 출력이 곧 남은 할 일 목록이다.
+> 공략을 추가·수정하면 위 네 스크립트(`pokemon-ids`·`machines`·`levels`·`roster`)를
+> 모두 돌린다. 2026-08 전수 점검에서 이 검사들이 잡아낸 것: 파이어레드 돌 진화 표의
+> 1세대 레벨, 에메랄드 공략의 세대 초과 포켓몬(삼삼드래·불비달마·미끄래곤), 하트골드
+> 스토리 공략의 관동 체육관 명단 전체, 플래티넘 공략의 비공식 기술명 39건.
 
 > `scripts/build-items.mjs`(items.generated.ts 생성)는 npm script 미등록 상태다.
 > 필요하면 `node scripts/build-items.mjs` 로 직접 실행한다.

@@ -167,7 +167,7 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
     finalMoves: ['파도타기', '냉동빔', '누르기', '이상한빛 / 멸망의노래 / 비바라기'],
     moveTable: [
       { move: '파도타기', how: 'HM03', usage: '주력 물 기술 및 이동용 비전머신' },
-      { move: '냉동빔', how: 'Lv.31', usage: '목호 드래곤에어·망나뇽 처리 핵심' },
+      { move: '냉동빔', how: 'Lv.31', usage: '목호 신뇽·망나뇽 처리 핵심' },
       { move: '누르기', how: 'Lv.13', usage: '안정적인 노말 물리 공격 및 마비 기대' },
       { move: '이상한빛', how: 'Lv.19', usage: '장기전 보조' },
       { move: '멸망의노래', how: 'Lv.25', usage: '강한 상대를 강제로 정리하는 보험' },

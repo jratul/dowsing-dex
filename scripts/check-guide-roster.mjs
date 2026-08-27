@@ -23,7 +23,12 @@ const GUIDE_GEN = {
 }
 
 // 트레이너·라이벌 이름이 포켓몬 이름과 겹치는 경우. 세대 검사에서 제외한다.
-const TRAINER_ALIAS = new Set(['블루', '삐'])
+const TRAINER_ALIAS = new Set(['블루', '삐', '글레이시아', '시드니', '일목'])
+// 타입명·기술명 조각처럼 포켓몬 나열 사이에 섞여 들어오는 일반 단어.
+const PROSE = new Set([
+  '노말', '불꽃', '물', '전기', '풀', '얼음', '격투', '독', '땅', '비행',
+  '에스퍼', '벌레', '바위', '고스트', '드래곤', '악', '강철', '페어리', '만볼트',
+])
 
 const JOSA = ['을','를','은','는','이','가','로','와','과','도','만','의','에','에게','으로','에서','까지','부터']
 const strip = (w) => {
@@ -56,7 +61,7 @@ for (const [file, gen] of Object.entries(GUIDE_GEN)) {
       if (hits === 0 || hits * 2 < parts.length) continue
       for (const raw of parts) {
         const p = strip(raw)
-        if (NAMES.has(p) || MOVES.has(p) || MOVES.has(raw)) continue
+        if (NAMES.has(p) || MOVES.has(p) || MOVES.has(raw) || PROSE.has(p) || TRAINER_ALIAS.has(p)) continue
         const key = `${file}|${p}`
         if (!unknown.has(key)) unknown.set(key, [])
         unknown.get(key).push(n + 1)
