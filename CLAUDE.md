@@ -59,6 +59,24 @@ npm run build:abilities        # PokeAPI에서 특성 한국어 데이터 수집
 > 넘기는 `generation`·`version`과 같은 값이어야 하므로 공략을 추가하면 함께 갱신한다.
 > `HM02 담당`처럼 번호 뒤에 일반 명사가 오는 문장은 오탐이니 `PROSE`에 추가한다.
 
+> `scripts/check-guide-levels.mjs`는 `꾸꾸리 Lv.28 원시의힘` 같은 레벨업 습득 주장을
+> by-id 학습셋과 대조한다. **같은 기술도 세대마다 습득 레벨이 다르다**
+> (식스테일 화염방사: 레드·블루 Lv.35, 파이어레드 Lv.29). 다른 세대 자료를 보고 쓰면
+> 조용히 틀린다 — 실제로 파이어레드 공략의 돌 진화 표가 통째로 1세대 레벨이었다.
+>
+> `scripts/check-guide-roster.mjs`는 공략에 나오는 포켓몬 이름이 실존하는지, 그리고
+> **그 게임 세대에 존재할 수 있는지**를 본다. 3세대 에메랄드 공략에 삼삼드래(5세대)가
+> 적혀 있어도 화면에는 멀쩡히 보이므로 눈으로는 안 잡힌다.
+>
+> ```bash
+> node scripts/check-guide-levels.mjs
+> node scripts/check-guide-roster.mjs
+> ```
+>
+> `check-guide-roster`는 현재 **의도적으로 실패 상태**다 — 에메랄드 공략과 하트골드
+> 스토리 공략의 보스 파티에 존재하지 않는/세대 초과 포켓몬이 남아 있다. 그 두 공략의
+> 파티 명단을 원전 대조해 다시 쓰기 전까지 이 스크립트의 출력이 곧 남은 할 일 목록이다.
+
 > `scripts/build-items.mjs`(items.generated.ts 생성)는 npm script 미등록 상태다.
 > 필요하면 `node scripts/build-items.mjs` 로 직접 실행한다.
 

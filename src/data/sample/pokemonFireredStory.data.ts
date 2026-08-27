@@ -75,26 +75,26 @@ export interface StoneEvoRow {
 
 export const FIRERED_STORY_STONE_EVO_TABLE: StoneEvoRow[] = [
   // 달의돌
-  { pokemonId: 34, before: '니드리노', after: '니드킹', stone: '달의돌', available: '가능', timing: '니드리노 Lv.22 뿔찌르기 후', reason: '뿔찌르기 확보 후 진화 → Lv.23 난동부리기·후반 메가폰 활용 가능' },
-  { pokemonId: 31, before: '니드리나', after: '니드퀸', stone: '달의돌', available: '가능', timing: '니드리나 Lv.16 이후', reason: '내구형. Lv.23 누르기를 니드퀸으로 배우면 충분' },
-  { pokemonId: 36, before: '삐삐', after: '픽시', stone: '달의돌', available: '가능 (사파리존)', timing: '삐삐 Lv.24 작아지기 후', reason: '작아지기 확보 후 기술머신 운용. 스토리 활용도는 제한적' },
+  { pokemonId: 34, before: '니드리노', after: '니드킹', stone: '달의돌', available: '가능', timing: '니드리노 Lv.22 뿔찌르기 후', reason: '뿔찌르기 확보 후 진화 → Lv.22 난동부리기·후반 메가폰 활용 가능' },
+  { pokemonId: 31, before: '니드리나', after: '니드퀸', stone: '달의돌', available: '가능', timing: '니드리나 Lv.16 이후', reason: '내구형. Lv.22 누르기를 니드퀸으로 배우면 충분' },
+  { pokemonId: 36, before: '삐삐', after: '픽시', stone: '달의돌', available: '가능 (사파리존)', timing: '삐삐 Lv.21 작아지기 후', reason: '작아지기 확보 후 기술머신 운용. 스토리 활용도는 제한적' },
   { pokemonId: 40, before: '푸린', after: '푸크린', stone: '달의돌', available: '가능 (7번도로)', timing: '푸린 Lv.34 누르기 후', reason: '누르기 기술머신 절약 가능. 주력 파티 외라면 즉시 진화도 무방' },
   // 천둥의돌
-  { pokemonId: 26, before: '피카츄', after: '라이츄', stone: '천둥의돌', available: '가능 (상록숲)', timing: '피카츄 Lv.26 스피드스타 후', reason: '이 공략에서는 이브이→쥬피썬더가 전기 주력. 피카츄는 임시 운용' },
+  { pokemonId: 26, before: '피카츄', after: '라이츄', stone: '천둥의돌', available: '가능 (상록숲)', timing: '피카츄 Lv.26 10만볼트 후', reason: '이 공략에서는 이브이→쥬피썬더가 전기 주력. 피카츄는 임시 운용' },
   { pokemonId: 135, before: '이브이', after: '쥬피썬더', stone: '천둥의돌', available: '가능 (무지개맨션)', timing: '이브이 Lv.30 물기 후 권장 / 즉시도 가능', reason: '물기(악 타입)로 초련·국화전 고스트·에스퍼 보조 견제 가능' },
   // 리프의돌
   { pokemonId: 45, before: '냄새꼬', after: '라플레시아', stone: '리프의돌', available: '가능 (파이어레드 한정)', timing: '냄새꼬 Lv.18 수면가루 후', reason: '수면가루 확보가 핵심. 이후 기가드레인(TM19) 배정으로 전투력 향상' },
   { pokemonId: 103, before: '아라리', after: '나시', stone: '리프의돌', available: '가능 (사파리존)', timing: '아라리 Lv.37 수면가루 후 권장', reason: '수면가루 우선 확보. 빠른 진행 시 Lv.29 이후도 가능' },
-  { pokemonId: 71, before: '우츠동', after: '우츠보트', stone: '리프의돌', available: '리그 교환 필요', timing: '우츠동 Lv.38 잎날가르기 후 (리프그린 기준)', reason: '파이어레드에서는 뚜벅쵸 계열 미출현. 리프그린에서 교환 필요' },
+  { pokemonId: 71, before: '우츠동', after: '우츠보트', stone: '리프의돌', available: '리그 교환 필요', timing: '우츠동 Lv.42 잎날가르기 후 (리프그린 기준)', reason: '파이어레드에서는 뚜벅쵸 계열 미출현. 리프그린에서 교환 필요' },
   // 물의돌
   { pokemonId: 62, before: '슈륙챙이', after: '강챙이', stone: '물의돌', available: '가능 (사파리존 낚시)', timing: 'Lv.33 이후 권장', reason: '강챙이는 격투·물 복합 타입. 라프라스가 물 담당이라 우선순위 낮음' },
-  { pokemonId: 91, before: '셀러', after: '파르셀', stone: '물의돌', available: '가능 (블루시티 등 낚시)', timing: '셀러 Lv.30 오로라빔 후', reason: '파르셀은 물·얼음 복합. 냉동빔은 기술머신으로 대체 가능' },
-  { pokemonId: 121, before: '별가사리', after: '아쿠스타', stone: '물의돌', available: '가능 (연분홍시티 등 낚시)', timing: '별가사리 Lv.27 HP회복 후', reason: '회복기 확보 후 기술머신으로 완성. 라프라스와 역할 일부 중복' },
+  { pokemonId: 91, before: '셀러', after: '파르셀', stone: '물의돌', available: '가능 (블루시티 등 낚시)', timing: '셀러 Lv.22 오로라빔 후', reason: '파르셀은 물·얼음 복합. 냉동빔은 기술머신으로 대체 가능' },
+  { pokemonId: 121, before: '별가사리', after: '아쿠스타', stone: '물의돌', available: '가능 (연분홍시티 등 낚시)', timing: '별가사리 Lv.15 HP회복 후', reason: '회복기 확보 후 기술머신으로 완성. 라프라스와 역할 일부 중복' },
   { pokemonId: 134, before: '이브이', after: '샤미드', stone: '물의돌', available: '가능 (무지개맨션)', timing: '즉시 진화 가능', reason: '파도타기·냉동빔 운용 목적. 이 공략에서는 라프라스 담당이라 중복' },
   // 불꽃의돌
   { pokemonId: 59, before: '가디', after: '윈디', stone: '불꽃의돌', available: '가능 (파이어레드 한정)', timing: '가디 Lv.34 불뿜기 후 권장', reason: '리자몽이 불꽃 담당이라 중복. 빠른 스피드로 보조 가능' },
   { pokemonId: 136, before: '이브이', after: '부스터', stone: '불꽃의돌', available: '가능 (무지개맨션)', timing: '즉시 진화 가능 (우선도 낮음)', reason: '3가지 이브이 진화 중 스탯 효율이 가장 낮음. 리자몽 불꽃과 중복으로 비권장' },
-  { pokemonId: 38, before: '식스테일', after: '나인테일', stone: '불꽃의돌', available: '리그 교환 필요', timing: '식스테일 Lv.35 화염방사 후 (리프그린 기준)', reason: '파이어레드에서는 포획 불가. 리프그린에서 교환 필요' },
+  { pokemonId: 38, before: '식스테일', after: '나인테일', stone: '불꽃의돌', available: '리그 교환 필요', timing: '식스테일 Lv.29 화염방사 후 (리프그린 기준)', reason: '파이어레드에서는 포획 불가. 리프그린에서 교환 필요' },
 ]
 
 export interface MoveSetSection {
