@@ -113,7 +113,7 @@ export interface IslandItemRow {
 
 export const SEVII_ITEM_TABLE: IslandItemRow[] = [
   { island: '1의 섬', location: '화산 내부', item: '루비석', note: '셀리오에게 전달 → 레인보우패스 획득. 퀘스트 핵심 아이템.' },
-  { island: '2의 섬', location: '포켓몬 교환 매니아', item: 'TM27 회귀', note: '할아버지 이벤트 완료 후 보상. 관동 포켓몬과 교환 가능.' },
+  { island: '2의 섬', location: '포켓몬 교환 매니아', item: 'TM27 은혜갚기', note: '할아버지 이벤트 완료 후 보상. 관동 포켓몬과 교환 가능.' },
   { island: '3의 섬', location: '딸기숲 클리어 보상', item: '대단한낚싯대', note: '루리를 구한 후 마을에서 노인 NPC에게 입수. 강한 낚시 포켓몬 포획 가능.' },
   { island: '4의 섬', location: '얼음 동굴', item: 'HM07 폭포오르기', note: '얼음 동굴 내부에서 입수. 이후 폭포를 오르는 탐험이 가능해진다.' },
   { island: '5의 섬', location: '로켓단 창고', item: '사파이어석', note: '창고 최심부에서 회수. 셀리오에게 전달하면 전국도감이 해제된다.' },

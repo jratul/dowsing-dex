@@ -45,6 +45,20 @@ npm run build:abilities        # PokeAPI에서 특성 한국어 데이터 수집
 > node scripts/check-guide-pokemon-ids.mjs
 > ```
 
+> `scripts/check-guide-machines.mjs`는 공략 본문의 `TM26 지진` / `HM08 락클라임` 표기를
+> `tm-index.generated.ts`와 대조한다. **TM 번호는 세대마다 다른 기술에 붙으므로**
+> (HM05가 플래티넘은 안개제거, HGSS는 바다회오리) 다른 게임 공략에서 문장을 복사해 오면
+> 조용히 틀린다. 데이터에 없는 `MoveLink` 이름도 함께 잡는다 — 그쪽은 링크가 아예
+> 안 걸려서 눈으로는 더 안 보인다.
+>
+> ```bash
+> node scripts/check-guide-machines.mjs
+> ```
+>
+> 공략 파일과 게임의 대응은 스크립트 안 `GUIDE_GAME`에 있다 — `GuidePageLayout`에
+> 넘기는 `generation`·`version`과 같은 값이어야 하므로 공략을 추가하면 함께 갱신한다.
+> `HM02 담당`처럼 번호 뒤에 일반 명사가 오는 문장은 오탐이니 `PROSE`에 추가한다.
+
 > `scripts/build-items.mjs`(items.generated.ts 생성)는 npm script 미등록 상태다.
 > 필요하면 `node scripts/build-items.mjs` 로 직접 실행한다.
 
