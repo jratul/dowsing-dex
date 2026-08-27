@@ -375,9 +375,10 @@ export const RED_STORY_GYMS: BossSection[] = [
   {
     title: '연분홍체육관 독수',
     rows: [
-      { opponent: '또도가스', answer: '윤겔라 사이코키네시스 / 니드킹 지진' },
-      { opponent: '질뻐기', answer: '윤겔라 사이코키네시스 / 니드킹 지진' },
-      { opponent: '또도가스', answer: '윤겔라 사이코키네시스 / 니드킹 지진' },
+      { opponent: '또가스 Lv.37 (선두)', answer: '윤겔라 사이코키네시스 / 니드킹 지진' },
+      { opponent: '질뻐기 Lv.39', answer: '윤겔라 사이코키네시스 / 니드킹 지진' },
+      { opponent: '또가스 Lv.37', answer: '윤겔라 사이코키네시스 / 니드킹 지진' },
+      { opponent: '또도가스 Lv.43', answer: '에이스. 윤겔라 사이코키네시스 (에스퍼가 독에 2배)' },
     ],
     notes: ['독 타입 중심이므로 윤겔라가 매우 강하다.', '자폭·맹독·연막성 운용에 대비해 회복 아이템을 준비한다.'],
   },
@@ -408,11 +409,11 @@ export const RED_STORY_GYMS: BossSection[] = [
   {
     title: '상록체육관 비주기',
     rows: [
-      { opponent: '코뿌리', answer: '라프라스 파도타기' },
-      { opponent: '닥트리오', answer: '라프라스 파도타기 / 윤겔라' },
-      { opponent: '니드퀸', answer: '윤겔라 사이코키네시스 / 라프라스 파도타기' },
-      { opponent: '니드킹', answer: '윤겔라 사이코키네시스 / 라프라스 파도타기' },
-      { opponent: '코뿌리', answer: '라프라스 파도타기' },
+      { opponent: '뿔카노 Lv.45 (선두, 땅/바위)', answer: '라프라스 파도타기 (물 4배!)' },
+      { opponent: '닥트리오 Lv.42', answer: '라프라스 파도타기 / 윤겔라' },
+      { opponent: '니드퀸 Lv.44', answer: '윤겔라 사이코키네시스 / 라프라스 파도타기' },
+      { opponent: '니드킹 Lv.45', answer: '윤겔라 사이코키네시스 / 라프라스 파도타기' },
+      { opponent: '코뿌리 Lv.50 (땅/바위)', answer: '에이스. 라프라스 파도타기 (물 4배!)' },
     ],
     notes: ['라프라스와 윤겔라가 핵심이다.', '비주기 격파 후 받는 땅가르기는 일격기라 안정성은 낮다.'],
   },
