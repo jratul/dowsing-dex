@@ -65,8 +65,12 @@ for (const src of guideSources(ROOT)) {
     const claims = [...line.matchAll(RE_CLAIM)]
     if (claims.length === 0) return
     // 그 줄에 등장하는 상대 포켓몬과, 대응으로 언급된 기술
+    // 배율은 보통 상대 포켓몬 이야기지만, "갸라도스를 내면 전기 4배로 위험하다"처럼
+    // 아군 포켓몬을 가리키기도 한다. 상대에서 못 찾으면 줄 전체로 넓힌다.
     const opp = line.match(/opponent:\s*'([^']*)'/)?.[1] ?? line
-    const mons = POKE_BY_LEN.filter((nm) => opp.includes(nm))
+    const oppMons = POKE_BY_LEN.filter((nm) => opp.includes(nm))
+    const allMons = POKE_BY_LEN.filter((nm) => line.includes(nm))
+    const mons = oppMons.length ? oppMons : allMons
     const moves = MOVE_BY_LEN.filter((nm) => line.includes(nm))
     if (mons.length === 0 && moves.length === 0) return
 
@@ -76,6 +80,7 @@ for (const src of guideSources(ROOT)) {
       checked++
       // (가) 공격 타입으로 읽기 — 줄에 나온 상대 중 하나에게 want 배
       const asAttack = mons.some((nm) => against(type, typesOf(nm, src.gen)) === want)
+        || allMons.some((nm) => against(type, typesOf(nm, src.gen)) === want)
       // (나) 방어 타입으로 읽기 — 줄에 나온 기술 중 하나가 그 타입에게 want 배
       const asDefend = moves.some((mv) => mult(MOVE.get(mv).type, type) === want)
       // (다) 타입 대 타입 — "드래곤에 얼음 2배"처럼 상대가 포켓몬이 아니라 타입으로 적힌 경우.
