@@ -5,6 +5,7 @@
 //   node scripts/check-guide-machines.mjs
 import fs from 'node:fs'
 import path from 'node:path'
+import { guideSources } from './guide-sources.mjs'
 import { pathToFileURL } from 'node:url'
 
 const ROOT = new URL('../', import.meta.url)
@@ -15,23 +16,9 @@ const { ALL_MOVES } = await load('src/data/moves/all-moves.generated.ts')
 const MOVE = new Map(ALL_MOVES.map((m) => [m.id, m.nameKo]))
 const MOVE_NAMES = new Set(ALL_MOVES.map((m) => m.nameKo))
 
-// 공략 데이터 파일 → 그 공략이 다루는 게임. GuidePageLayout 에 넘기는 값과 같아야 한다.
-const GUIDE_GAME = {
-  'pokemonRedStory.data.ts': ['1세대', '레드·블루'],
-  'pokemonRedEvolution.data.ts': ['1세대', '레드·블루'],
-  'pokemonGoldStory.data.ts': ['2세대', '골드·실버'],
-  'pokemonFireredStory.data.ts': ['3세대', '파이어레드·리프그린'],
-  'pokemonFireredSeviiIslands.data.ts': ['3세대', '파이어레드·리프그린'],
-  'pokemonEmeraldStory.data.ts': ['3세대', '에메랄드'],
-  'pokemonHeartgoldStory.data.ts': ['4세대', '하트골드·소울실버'],
-  'pokemonHeartgoldWalkthrough.data.ts': ['4세대', '하트골드·소울실버'],
-  'pokemonHeartgoldStones.data.ts': ['4세대', '하트골드·소울실버'],
-  'pokemonHeartgoldMoves.data.ts': ['4세대', '하트골드·소울실버'],
-  'pokemonPlatinumStory.data.ts': ['4세대', '플래티넘'],
-}
 
 // "HM02 담당"처럼 번호 뒤에 기술명이 아니라 일반 명사가 오는 문장. 늘어나면 여기에 추가한다.
-const PROSE = new Set(['담당', '대체기', '공유', '배정', '선택', '절약', '입수', '보존', '제외', '필요', '확보', '사용', '학습'])
+const PROSE = new Set(['담당', '대체기', '공유', '배정', '선택', '절약', '입수', '보존', '제외', '필요', '확보', '사용', '학습', '획득', '위치', '보상', '전용'])
 
 const key = (gen, ver, tag) => `${gen}|${ver}|${tag}`
 const LOOKUP = new Map()
@@ -45,23 +32,21 @@ const wrong = []
 const suspect = []
 let checked = 0
 
-for (const [file, [gen, ver]] of Object.entries(GUIDE_GAME)) {
-  const p = new URL(`src/data/sample/${file}`, ROOT)
-  if (!fs.existsSync(p)) {
-    console.error(`공략 파일 없음: ${file} — GUIDE_GAME 목록을 갱신하세요`)
-    process.exitCode = 1
-    continue
-  }
-  fs.readFileSync(p, 'utf8').split('\n').forEach((line, n) => {
+const LF2 = String.fromCharCode(10)
+for (const src of guideSources(ROOT)) {
+  if (src.gen === null || src.version === null) continue
+  const gen = `${src.gen}세대`
+  const ver = src.version
+  src.text.split(LF2).forEach((line, n) => {
     for (const m of line.matchAll(RE)) {
       const tag = `${m[1]}${String(Number(m[2])).padStart(2, '0')}`
       const claimed = m[3]
       const actual = LOOKUP.get(key(gen, ver, tag))
-      if (!actual) continue
+      if (!actual) return
       checked++
       // "지진은", "냉동빔을"처럼 조사가 붙은 형태는 정상이다.
       if (claimed === actual || claimed.startsWith(actual)) continue
-      const where = `${file}:${n + 1}`
+      const where = `${src.label}:${n + 1}`
       if (MOVE_NAMES.has(claimed)) wrong.push(`${where}  ${tag}(${ver}) → 공략 "${claimed}" / 실제 "${actual}"`)
       else if (!PROSE.has(claimed)) suspect.push(`${where}  ${tag}(${ver}) → 공략 "${claimed}" / 실제 "${actual}"`)
     }

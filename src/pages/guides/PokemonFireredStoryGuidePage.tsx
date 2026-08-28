@@ -157,7 +157,7 @@ export function PokemonFireredStoryGuidePage() {
       {/* 6. 교환 진화 종합 */}
       <Card className="mb-6 p-4">
         <SectionHeading>교환 진화 포켓몬 종합 (관동 전체)</SectionHeading>
-        <p className="mb-3 text-sm text-ink-muted">파이어레드에서 교환으로 진화하는 관동 포켓몬 전체 목록이다. 야도킹·배루키→강철톤은 특수 아이템(킹의돌·메탈코트) 지참이 필요하다.</p>
+        <p className="mb-3 text-sm text-ink-muted">파이어레드에서 교환으로 진화하는 관동 포켓몬 전체 목록이다. 야도킹·배루키→강철톤은 특수 아이템(왕의징표석·메탈코트) 지참이 필요하다.</p>
         <div className="overflow-x-auto">
           <GuideTable
             headers={['진화 전', '진화 후', '포획 위치', '권장 타이밍', '비고']}

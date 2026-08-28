@@ -3,9 +3,10 @@
 // 다른 세대 공략을 참고해 쓰면 조용히 틀리고, 화면에는 멀쩡한 숫자로 보인다.
 //
 //   node scripts/check-guide-levels.mjs
-import fs from 'node:fs'
+import { guideSources } from './guide-sources.mjs'
 
 const ROOT = new URL('../', import.meta.url)
+const LF = String.fromCharCode(10)
 const load = (rel) => import(new URL(rel, ROOT).href)
 
 const { ALL_MOVES } = await load('src/data/moves/all-moves.generated.ts')
@@ -16,19 +17,6 @@ const POKE = new Map(ALL_POKEMON.map((p) => [p.id, p]))
 const NAME_ID = new Map()
 for (const p of [...ALL_POKEMON].sort((a, b) => a.id - b.id)) if (!NAME_ID.has(p.nameKo)) NAME_ID.set(p.nameKo, p.id)
 
-// 공략 데이터 파일 → 그 공략이 다루는 게임. GuidePageLayout 에 넘기는 값과 같아야 한다.
-const GUIDE_GAME = {
-  pokemonRedStory: ['1세대', '레드·블루'],
-  pokemonRedEvolution: ['1세대', '레드·블루'],
-  pokemonGoldStory: ['2세대', '골드·실버'],
-  pokemonFireredStory: ['3세대', '파이어레드·리프그린'],
-  pokemonFireredSeviiIslands: ['3세대', '파이어레드·리프그린'],
-  pokemonEmeraldStory: ['3세대', '에메랄드'],
-  pokemonHeartgoldStory: ['4세대', '하트골드·소울실버'],
-  pokemonHeartgoldWalkthrough: ['4세대', '하트골드·소울실버'],
-  pokemonHeartgoldMoves: ['4세대', '하트골드·소울실버'],
-  pokemonPlatinumStory: ['4세대', '플래티넘'],
-}
 
 // "누르기를", "화염방사에" 처럼 조사가 붙은 형태에서 실제 기술명을 되찾는다.
 const JOSA = ['을', '를', '은', '는', '이', '가', '로', '와', '과', '도', '만', '의', '에', '까지', '부터', '으로', '이나', '나']
@@ -56,14 +44,11 @@ const RE = /(?:([A-Za-z0-9가-힣]*[가-힣][A-Za-z0-9가-힣]*)\s+)?Lv\.(\d+)(?
 const findings = []
 let checked = 0
 
-for (const [name, [gen, ver]] of Object.entries(GUIDE_GAME)) {
-  const file = new URL(`src/data/sample/${name}.data.ts`, ROOT)
-  if (!fs.existsSync(file)) {
-    console.error(`공략 파일 없음: ${name}.data.ts — GUIDE_GAME 목록을 갱신하세요`)
-    process.exitCode = 1
-    continue
-  }
-  const lines = fs.readFileSync(file, 'utf8').split('\n')
+for (const src of guideSources(ROOT)) {
+  if (src.gen === null || src.version === null) continue
+  const gen = `${src.gen}세대`
+  const ver = src.version
+  const lines = src.text.split(LF)
   for (let n = 0; n < lines.length; n++) {
     const line = lines[n]
     const pid = line.match(/pokemonId:\s*(\d+)/)
@@ -73,9 +58,8 @@ for (const [name, [gen, ver]] of Object.entries(GUIDE_GAME)) {
       const moveId = resolveMove(m[3])
       if (moveId === undefined) continue
       const lv = Number(m[2])
-      // 주어: Lv 바로 앞의 포켓몬 이름이 최우선. 없으면 그 줄이 다루는 포켓몬들로 넓힌다
-      // (진화 표는 한 줄에서 진화 전/후를 오간다).
       const subj = m[1] && NAME_ID.get(m[1])
+      // 주어: Lv 바로 앞의 포켓몬 이름이 최우선. 없으면 그 줄이 다루는 포켓몬들로 넓힌다.
       const candidates = subj
         ? [subj]
         : [before && NAME_ID.get(before[1]), after && NAME_ID.get(after[1]), pid && Number(pid[1])].filter(Boolean)
@@ -92,7 +76,7 @@ for (const [name, [gen, ver]] of Object.entries(GUIDE_GAME)) {
         const tu = ls.tutor.some((e) => e.moveId === moveId)
         detail.push(`${POKE.get(id)?.nameKo ?? id}: ${levels.length ? 'Lv.' + levels.join('·') : ma ? `${ma.machine}${String(ma.number).padStart(2, '0')}` : tu ? '기술가르침' : '못 배움'}`)
       }
-      if (!ok) findings.push(`${name}.data.ts:${n + 1}  "${m[3]} Lv.${lv}" → ${detail.join(' / ')}`)
+      if (!ok) findings.push(`${src.label}:${n + 1}  "${m[3]} Lv.${lv}" → ${detail.join(' / ')}`)
     }
   }
 }
