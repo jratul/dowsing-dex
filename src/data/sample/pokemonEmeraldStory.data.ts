@@ -79,14 +79,14 @@ export const EMERALD_GOALS = [
 ]
 
 export const EMERALD_HM_TABLE: HmRow[] = [
-  { hm: 'HM01', move: '풀베기', pokemon: '패리퍼 / 임시', location: '시작 마을 인근', badge: '1관 배지', note: '초반 나무 제거용. 이후 삭제 가능' },
+  { hm: 'HM01', move: '풀베기', pokemon: '번치코 / 나무킹 / 버섯모', location: '시작 마을 인근', badge: '1관 배지', note: '초반 나무 제거용. 이후 삭제 가능' },
   { hm: 'HM02', move: '공중날기', pokemon: '패리퍼 / 플라이곤', location: '검방울시티 NPC', badge: '6관 배지', note: '이동 편의성 핵심' },
   { hm: 'HM03', move: '파도타기', pokemon: '패리퍼 / 씨카이저 / 대짱이', location: '등화숲 인근 NPC', badge: '5관 배지', note: '수중 이동 필수' },
-  { hm: 'HM04', move: '괴력', pokemon: '패리퍼 / 갸라도스 임시', location: '특정 NPC', badge: '4관 배지', note: '특정 바위 제거용' },
+  { hm: 'HM04', move: '괴력', pokemon: '대짱이 / 폭타 / 씨카이저', location: '특정 NPC', badge: '4관 배지', note: '특정 바위 제거용' },
   { hm: 'HM05', move: '플래시', pokemon: '임시 포켓몬', location: '무로마을 동굴 NPC', badge: '2관 배지', note: '어두운 동굴 진행용. 임시 포켓몬에 배정' },
   { hm: 'HM06', move: '바위깨기', pokemon: '플라이곤 / 임시', location: '특정 NPC', badge: '특정 배지', note: '통로 개척용' },
-  { hm: 'HM07', move: '폭포오르기', pokemon: '씨카이저 / 패리퍼', location: '사파리존 인근', badge: '8관 배지', note: '후반 진행 필수' },
-  { hm: 'HM08', move: '다이빙', pokemon: '패리퍼 / 대짱이', location: '이끼시티 스티브 협조', badge: '7관 배지', note: '수중 다이브 이동용' },
+  { hm: 'HM07', move: '폭포오르기', pokemon: '씨카이저 / 대짱이', location: '사파리존 인근', badge: '8관 배지', note: '후반 진행 필수' },
+  { hm: 'HM08', move: '파도타기', pokemon: '대짱이 / 씨카이저', location: '이끼시티 스티브 협조', badge: '7관 배지', note: '수중 다이브 이동용' },
 ]
 
 export const EMERALD_TM_NOTES = [
@@ -138,11 +138,11 @@ const ACHAMO_GUIDE: StarterGuideData = {
     {
       pokemonId: 257,
       pokemon: '번치코',
-      finalMoves: ['화염방사', '인파이트 / 공중날기', '지진 / 아이언테일', '화염바퀴 / 스피드스타'],
+      finalMoves: ['화염방사', '깨뜨리다 / 제비반환', '지진 / 바위깨기', '화염방사 / 스피드스타'],
       moveTable: [
         { move: '화염방사', how: 'TM35', usage: '주력 불꽃 특수기. 3세대에서는 불꽃이 특수 분류' },
-        { move: '인파이트', how: 'Lv.습득', usage: '격투 물리기. 방어/특방 하락 있지만 강력' },
-        { move: '공중날기', how: 'HM02', usage: 'HM02 대체기. 비행 물리기' },
+        { move: '깨뜨리다', how: 'Lv.습득', usage: '격투 물리기. 방어/특방 하락 있지만 강력' },
+        { move: '제비반환', how: 'TM40', usage: '비행 물리기. 번치코는 공중날기를 못 배운다' },
         { move: '지진', how: 'TM26', usage: '전기·바위·독·불꽃 타입 견제. 대범용 물리기' },
       ],
       notes: [
@@ -154,12 +154,12 @@ const ACHAMO_GUIDE: StarterGuideData = {
     {
       pokemonId: 282,
       pokemon: '가디안',
-      finalMoves: ['사이코키네시스', '섀도볼', '전기자석파', '사이코쇼크 / HP회복'],
+      finalMoves: ['사이코키네시스', '섀도볼', '전기자석파', '사이코키네시스 / 잠자기'],
       moveTable: [
         { move: '사이코키네시스', how: 'Lv.26', usage: '주력 에스퍼 특수기. 레벨업으로 자연 습득' },
         { move: '섀도볼', how: 'TM30', usage: '고스트/에스퍼 견제. TM30으로 획득' },
         { move: '전기자석파', how: 'TM', usage: '상태이상 유틸. 빠른 적 견제' },
-        { move: 'HP회복', how: 'Lv.습득', usage: 'HP 회복. 장기전 안정화' },
+        { move: '잠자기', how: 'Lv.습득', usage: 'HP 회복. 장기전 안정화' },
       ],
       notes: [
         '가디안은 3종 모든 스타터 파티에 포함된다. 에스퍼 타입은 격투·독에 강력하다.',
@@ -186,7 +186,7 @@ const ACHAMO_GUIDE: StarterGuideData = {
     {
       pokemonId: 365,
       pokemon: '씨카이저',
-      finalMoves: ['파도타기', '냉동빔', '폭포오르기', '누르기 / 노래하기'],
+      finalMoves: ['파도타기', '냉동빔', '폭포오르기', '누르기 / 파괴광선'],
       moveTable: [
         { move: '파도타기', how: 'HM03', usage: 'HM03. 이동 + 물 특수기' },
         { move: '냉동빔', how: 'TM13', usage: '얼음 특수기. 드래이크 드래곤 파티 핵심 기술' },
@@ -202,13 +202,13 @@ const ACHAMO_GUIDE: StarterGuideData = {
     {
       pokemonId: 279,
       pokemon: '패리퍼',
-      finalMoves: ['파도타기', '공중날기', '물대포', '풀베기 / 다이빙'],
+      finalMoves: ['파도타기', '공중날기', '물대포', '물의파동 / 공중날기'],
       moveTable: [
         { move: '파도타기', how: 'HM03', usage: 'HM03 공유. 보조 물 기술' },
         { move: '공중날기', how: 'HM02', usage: 'HM02. 이동 편의성' },
         { move: '물대포', how: 'Lv.1', usage: '물 특수기. 초반 바위 타입 처리' },
-        { move: '풀베기', how: 'HM01', usage: 'HM01. 초반 진행용' },
-        { move: '다이빙', how: 'HM08', usage: 'HM08. 수중 다이브 진행용' },
+        { move: '물의파동', how: 'TM03', usage: '물 특수기. 패리퍼는 풀베기를 못 배운다' },
+        { move: '파도타기', how: 'HM08', usage: 'HM08. 수중 다이브 진행용' },
       ],
       notes: [
         '갈모매(278)를 이른 시점에 포획. 레벨 25에서 패리퍼로 진화.',
@@ -281,7 +281,7 @@ const ACHAMO_GUIDE: StarterGuideData = {
     },
     {
       ...EMERALD_GYM_ROWS_TEMPLATE.g5,
-      rows: [{ opponent: '얼루기 Lv.27 (선두) · 발바로 Lv.27 · 직구리 Lv.29 · 게을킹 Lv.31', answer: '번치코 인파이트 / 가디안 에스퍼' }],
+      rows: [{ opponent: '얼루기 Lv.27 (선두) · 발바로 Lv.27 · 직구리 Lv.29 · 게을킹 Lv.31', answer: '번치코 깨뜨리다(TM31) / 가디안 에스퍼' }],
     },
     {
       ...EMERALD_GYM_ROWS_TEMPLATE.g6,
@@ -299,8 +299,8 @@ const ACHAMO_GUIDE: StarterGuideData = {
   elite4: [
     {
       title: '사천왕 혁진 (악 타입)',
-      note: '번치코 인파이트 또는 가디안으로 처리. 악은 격투에 약점.',
-      rows: [{ opponent: '그라에나 Lv.46 (선두) · 밤선인 Lv.46 (풀/악, 벌레 4배) · 다탱구 Lv.48 (풀/악, 벌레 4배) · 가재장군 Lv.48 · 앱솔 Lv.49 — 전원 에스퍼 무효', answer: '번치코 인파이트 / 가디안 사이코키네시스' }],
+      note: '번치코 깨뜨리다(TM31) 또는 가디안으로 처리. 악은 격투에 약점.',
+      rows: [{ opponent: '그라에나 Lv.46 (선두) · 밤선인 Lv.46 (풀/악, 벌레 4배) · 다탱구 Lv.48 (풀/악, 벌레 4배) · 가재장군 Lv.48 · 앱솔 Lv.49 — 전원 에스퍼 무효', answer: '번치코 깨뜨리다(TM31) / 가디안 사이코키네시스' }],
     },
     {
       title: '사천왕 회연 (고스트 타입)',
@@ -372,12 +372,12 @@ const MUDKIP_GUIDE: StarterGuideData = {
     {
       pokemonId: 260,
       pokemon: '대짱이',
-      finalMoves: ['파도타기', '지진', '폭포오르기', '진흙폭탄 / 아이언테일'],
+      finalMoves: ['파도타기', '지진', '폭포오르기', '머드샷 / 냉동빔'],
       moveTable: [
         { move: '파도타기', how: 'HM03', usage: 'HM03. 물 특수기 + 이동' },
         { move: '지진', how: 'TM26', usage: '땅 물리기. 3세대에서 물리 판정. 전기·독·불꽃 타입 처리' },
         { move: '폭포오르기', how: 'HM07', usage: 'HM07. 후반 진행 + 물리 물 기술' },
-        { move: '진흙폭탄', how: 'Lv.습득', usage: '대짱이 전용기. 명중률 하락 효과' },
+        { move: '머드샷', how: 'Lv.습득', usage: '대짱이 전용기. 명중률 하락 효과' },
       ],
       notes: [
         '대짱이(Swampert)는 물/땅 타입. 전기 면역으로 3관 전기 체육관이 매우 편하다.',
@@ -388,9 +388,9 @@ const MUDKIP_GUIDE: StarterGuideData = {
     {
       pokemonId: 286,
       pokemon: '버섯모',
-      finalMoves: ['잎날가르기', '씨뿌리기 / 메가드레인', '저리가루', '격투기 / 누르기'],
+      finalMoves: ['기가드레인', '씨뿌리기 / 메가드레인', '저리가루', '깨뜨리다 / 누르기'],
       moveTable: [
-        { move: '잎날가르기', how: 'Lv.습득', usage: '풀 특수기. 물 타입 체육관 처리' },
+        { move: '기가드레인', how: 'TM19', usage: '풀 특수기 겸 회복. 물 타입 체육관 처리' },
         { move: '씨뿌리기', how: 'Lv.1', usage: '체력 흡수. 장기전 지구력' },
         { move: '메가드레인', how: 'TM', usage: '풀 특수기 + HP 흡수' },
         { move: '저리가루', how: 'Lv.1', usage: '마비 유틸. 포획·보스전 보조' },
@@ -436,12 +436,12 @@ const MUDKIP_GUIDE: StarterGuideData = {
     {
       pokemonId: 323,
       pokemon: '폭타',
-      finalMoves: ['화염방사', '스톤샤워', '지진', '연막'],
+      finalMoves: ['화염방사', '스톤샤워', '지진', '돌진'],
       moveTable: [
         { move: '화염방사', how: 'TM35', usage: '불꽃 특수기. 풀·얼음·벌레·강철 처리' },
         { move: '스톤샤워', how: 'Lv.습득', usage: '바위 물리기. 비행·불꽃·얼음 타입 처리' },
         { move: '지진', how: 'TM26', usage: '땅 물리기. 다른 멤버와 역할 분담' },
-        { move: '연막', how: 'Lv.습득', usage: '명중률 하락 유틸. 불리한 전투 탈출' },
+        { move: '돌진', how: 'Lv.습득', usage: '명중률 하락 유틸. 불리한 전투 탈출' },
       ],
       notes: [
         '뇨모리(322)→폭타(Lv.33). 112~113번도로에서 뇨모리 포획.',
@@ -452,12 +452,12 @@ const MUDKIP_GUIDE: StarterGuideData = {
     {
       pokemonId: 282,
       pokemon: '가디안',
-      finalMoves: ['사이코키네시스', '섀도볼', '전기자석파', 'HP회복'],
+      finalMoves: ['사이코키네시스', '섀도볼', '전기자석파', '잠자기'],
       moveTable: [
         { move: '사이코키네시스', how: 'Lv.26', usage: '주력 에스퍼 특수기' },
         { move: '섀도볼', how: 'TM30', usage: '고스트·에스퍼 견제' },
         { move: '전기자석파', how: 'TM', usage: '마비 유틸' },
-        { move: 'HP회복', how: 'Lv.습득', usage: 'HP 회복' },
+        { move: '잠자기', how: 'Lv.습득', usage: 'HP 회복' },
       ],
       notes: ['아차모 가이드의 가디안과 동일한 운용 방침.'],
     },
@@ -487,7 +487,7 @@ const MUDKIP_GUIDE: StarterGuideData = {
       goals: [
         '보만다(Lv.50)를 최대한 빨리 진화시킨다.',
         'E4 드레이크 대비로 보만다에 드래곤클로와 얼음기(기술 가르침)를 배정.',
-        '챔피언 윤진의 물 파티는 버섯모 잎날가르기와 가디안으로 처리.',
+        '챔피언 윤진의 물 파티는 버섯모 기가드레인(TM19)와 가디안으로 처리.',
       ],
     },
   ],
@@ -522,7 +522,7 @@ const MUDKIP_GUIDE: StarterGuideData = {
     },
     {
       ...EMERALD_GYM_ROWS_TEMPLATE.g8,
-      rows: [{ opponent: '사랑동이 Lv.41 (선두) · 메깅 Lv.41 (물/땅 — 전기 무효, 풀 4배) · 씨레오 Lv.43 · 가재장군 Lv.43 (물/악) · 킹드라 Lv.46 (약점은 드래곤뿐)', answer: '버섯모 잎날가르기 / 가디안 에스퍼' }],
+      rows: [{ opponent: '사랑동이 Lv.41 (선두) · 메깅 Lv.41 (물/땅 — 전기 무효, 풀 4배) · 씨레오 Lv.43 · 가재장군 Lv.43 (물/악) · 킹드라 Lv.46 (약점은 드래곤뿐)', answer: '버섯모 기가드레인(TM19) / 가디안 에스퍼' }],
     },
   ],
   elite4: [
@@ -549,22 +549,22 @@ const MUDKIP_GUIDE: StarterGuideData = {
   ],
   champion: {
     title: '챔피언 윤진 (물 타입)',
-    note: '버섯모 잎날가르기가 핵심 — 메깅에는 4배가 들어간다. 다만 가디안 에스퍼는 순수 물 타입에 1배라 딜이 안 나온다.',
+    note: '버섯모 기가드레인(TM19)가 핵심 — 메깅에는 4배가 들어간다. 다만 가디안 에스퍼는 순수 물 타입에 1배라 딜이 안 나온다.',
     rows: [
-      { opponent: '고래왕 Lv.57 (물, 선두)', answer: '버섯모 잎날가르기 (풀 2배)' },
+      { opponent: '고래왕 Lv.57 (물, 선두)', answer: '버섯모 기가드레인(TM19) (풀 2배)' },
       { opponent: '독파리 Lv.55 (물/독)', answer: '가디안 사이코키네시스 (에스퍼 2배)' },
       { opponent: '로파파 Lv.56 (물/풀)', answer: '풀도 불꽃도 1배. 버섯모·가디안의 중립 화력으로 처리' },
-      { opponent: '메깅 Lv.56 (물/땅)', answer: '버섯모 잎날가르기 (풀 4배!)' },
+      { opponent: '메깅 Lv.56 (물/땅)', answer: '버섯모 기가드레인(TM19) (풀 4배!)' },
       { opponent: '갸라도스 Lv.56 (물/비행)', answer: '가디안 에스퍼는 중립. 이 파티엔 전기가 없어 4배 약점을 못 찌른다' },
-      { opponent: '밀로틱 Lv.58 (물)', answer: '버섯모 잎날가르기 (풀 2배)' },
+      { opponent: '밀로틱 Lv.58 (물)', answer: '버섯모 기가드레인(TM19) (풀 2배)' },
     ],
   },
   summary: [
     { stage: '1~3관', strategy: '대짱이의 전기 면역으로 3관을 안전 통과. 가디안·버섯꼬 육성 병행' },
     { stage: '4~5관', strategy: '대짱이 파도타기로 불꽃 담당. 가디안으로 노말 체육관 5관 처리' },
-    { stage: '6~8관', strategy: '폭타 바위기로 비행 담당. 버섯모 잎날가르기로 물 체육관 8관 처리' },
+    { stage: '6~8관', strategy: '폭타 바위기로 비행 담당. 버섯모 기가드레인(TM19)로 물 체육관 8관 처리' },
     { stage: 'E4', strategy: '버섯모→혁진·미혜, 가디안→회연, 보만다→드레이크' },
-    { stage: '윤진', strategy: '버섯모 잎날가르기가 핵심. 로파파는 불꽃도 반감이라 중립 화력으로' },
+    { stage: '윤진', strategy: '버섯모 기가드레인(TM19)가 핵심. 로파파는 불꽃도 반감이라 중립 화력으로' },
   ],
   support: [
     { pokemon: '앱솔', pokemonId: 359, role: '악 딜러. E4 회연 보조. 120번도로 포획', obtainedAt: '120번도로' },
@@ -601,12 +601,12 @@ const TREECKO_GUIDE: StarterGuideData = {
     {
       pokemonId: 254,
       pokemon: '나무킹',
-      finalMoves: ['잎날가르기', '속여때리기 / 베어가르기', '아이언테일', '에너지볼 / 차지빔'],
+      finalMoves: ['리프블레이드', '따라가때리기 / 누르기', '바위깨기', '기가드레인 / 번개펀치'],
       moveTable: [
-        { move: '잎날가르기', how: 'Lv.습득', usage: '풀 특수기. 주력 기술' },
-        { move: '속여때리기', how: 'Lv.습득', usage: '노말 물리기. 3세대 전용기. 상대 능력 변화를 역이용' },
-        { move: '아이언테일', how: 'TM23', usage: '강철 물리기. 바위·얼음 타입 처리. TM23' },
-        { move: '에너지볼', how: 'TM', usage: '풀 특수기. 잎날가르기보다 위력이 높은 버전' },
+        { move: '리프블레이드', how: 'Lv.습득', usage: '풀 특수기. 주력 기술' },
+        { move: '따라가때리기', how: 'Lv.습득', usage: '노말 물리기. 3세대 전용기. 상대 능력 변화를 역이용' },
+        { move: '바위깨기', how: 'TM23', usage: '강철 물리기. 바위·얼음 타입 처리. TM23' },
+        { move: '기가드레인', how: 'TM', usage: '풀 특수기. 잎날가르기보다 위력이 높은 버전' },
       ],
       notes: [
         '나무킹은 풀 단일 타입. 불꽃·얼음·독·비행·벌레에 약점이 많다.',
@@ -622,7 +622,7 @@ const TREECKO_GUIDE: StarterGuideData = {
         { move: '파도타기', how: 'HM03', usage: 'HM03. 물 특수기 + 이동' },
         { move: '냉동빔', how: 'TM13', usage: '얼음 특수기. E4 드레이크 파티 핵심' },
         { move: '폭포오르기', how: 'HM07', usage: 'HM07. 후반 진행 필수' },
-        { move: '아이언테일', how: 'TM23', usage: '바위 타입 물리 견제' },
+        { move: '바위깨기', how: 'TM23', usage: '바위 타입 물리 견제' },
       ],
       notes: [
         '나무지기 파티에서 씨카이저의 역할이 특히 중요하다. 불꽃(나무킹 약점)을 파도타기로 커버.',
@@ -663,28 +663,28 @@ const TREECKO_GUIDE: StarterGuideData = {
     {
       pokemonId: 359,
       pokemon: '앱솔',
-      finalMoves: ['칼춤', '기습', '사이코커터', '아이언테일'],
+      finalMoves: ['칼춤', '물기', '도둑질', '바위깨기'],
       moveTable: [
         { move: '칼춤', how: 'Lv.26', usage: '공격력 2배 상승. 물리 딜러 준비 기술' },
-        { move: '기습', how: 'Lv.습득', usage: '선제 물리 악 기술. 칼춤 후 강력' },
-        { move: '사이코커터', how: 'Lv.습득', usage: '에스퍼 물리기. 격투·독 타입 견제' },
-        { move: '아이언테일', how: 'TM23', usage: '강철 물리기. 바위·얼음 견제' },
+        { move: '물기', how: 'Lv.습득', usage: '선제 물리 악 기술. 칼춤 후 강력' },
+        { move: '도둑질', how: 'Lv.습득', usage: '에스퍼 물리기. 격투·독 타입 견제' },
+        { move: '바위깨기', how: 'TM23', usage: '강철 물리기. 바위·얼음 견제' },
       ],
       notes: [
         '앱솔은 120번도로에서 포획. 악 타입 물리 딜러.',
-        'E4 회연 고스트 파티에는 가디안 섀도볼이 주역이지만, 앱솔 기습으로도 처리 가능.',
+        'E4 회연 고스트 파티에는 가디안 섀도볼이 주역이지만, 앱솔 물기(Lv.21)으로도 처리 가능.',
         '칼춤→기습 조합이 강력. 스피드가 낮으므로 선제기 기습을 활용한다.',
       ],
     },
     {
       pokemonId: 282,
       pokemon: '가디안',
-      finalMoves: ['사이코키네시스', '섀도볼', '전기자석파', 'HP회복'],
+      finalMoves: ['사이코키네시스', '섀도볼', '전기자석파', '잠자기'],
       moveTable: [
         { move: '사이코키네시스', how: 'Lv.26', usage: '주력 에스퍼 특수기' },
         { move: '섀도볼', how: 'TM30', usage: '고스트·에스퍼 견제' },
         { move: '전기자석파', how: 'TM', usage: '마비 유틸' },
-        { move: 'HP회복', how: 'Lv.습득', usage: 'HP 회복' },
+        { move: '잠자기', how: 'Lv.습득', usage: 'HP 회복' },
       ],
       notes: ['아차모 가이드의 가디안과 동일한 운용 방침.'],
     },
@@ -713,14 +713,14 @@ const TREECKO_GUIDE: StarterGuideData = {
       goals: [
         '씨카이저를 쇼울케이브에서 확보해 불꽃 약점 커버.',
         'E4 드레이크 드래곤 파티는 씨카이저 얼음빔 + 플라이곤 드래곤기로 처리.',
-        '챔피언 윤진 물 파티는 나무킹 잎날가르기로 대응.',
+        '챔피언 윤진 물 파티는 나무킹 리프블레이드(Lv.29)로 대응.',
       ],
     },
   ],
   gymMatchups: [
     {
       ...EMERALD_GYM_ROWS_TEMPLATE.g1,
-      rows: [{ opponent: '꼬마돌 Lv.12 x2 (바위/땅, 선두) · 코코파스 Lv.15 (바위)', answer: '나무지기 잎날가르기 — 꼬마돌(바위/땅)에는 풀이 4배, 코코파스(순수 바위)에는 2배' }],
+      rows: [{ opponent: '꼬마돌 Lv.12 x2 (바위/땅, 선두) · 코코파스 Lv.15 (바위)', answer: '나무지기 흡수·메가드레인 — 꼬마돌(바위/땅)에는 풀이 4배, 코코파스(순수 바위)에는 2배' }],
     },
     {
       ...EMERALD_GYM_ROWS_TEMPLATE.g2,
@@ -736,7 +736,7 @@ const TREECKO_GUIDE: StarterGuideData = {
     },
     {
       ...EMERALD_GYM_ROWS_TEMPLATE.g5,
-      rows: [{ opponent: '얼루기 Lv.27 (선두) · 발바로 Lv.27 · 직구리 Lv.29 · 게을킹 Lv.31', answer: '가디안 사이코키네시스 / 나무킹 잎날가르기' }],
+      rows: [{ opponent: '얼루기 Lv.27 (선두) · 발바로 Lv.27 · 직구리 Lv.29 · 게을킹 Lv.31', answer: '가디안 사이코키네시스 / 나무킹 리프블레이드(Lv.29)' }],
     },
     {
       ...EMERALD_GYM_ROWS_TEMPLATE.g6,
@@ -744,23 +744,23 @@ const TREECKO_GUIDE: StarterGuideData = {
     },
     {
       ...EMERALD_GYM_ROWS_TEMPLATE.g7,
-      rows: [{ opponent: '점토도리 Lv.41 (선두, 땅/에스퍼 — 전기 무효) · 네이티오 Lv.41 · 루나톤 Lv.42 · 솔록 Lv.42 (더블배틀)', answer: '가디안 섀도볼 / 앱솔 기습' }],
+      rows: [{ opponent: '점토도리 Lv.41 (선두, 땅/에스퍼 — 전기 무효) · 네이티오 Lv.41 · 루나톤 Lv.42 · 솔록 Lv.42 (더블배틀)', answer: '가디안 섀도볼 / 앱솔 물기(Lv.21)' }],
     },
     {
       ...EMERALD_GYM_ROWS_TEMPLATE.g8,
-      rows: [{ opponent: '사랑동이 Lv.41 (선두) · 메깅 Lv.41 (물/땅 — 전기 무효, 풀 4배) · 씨레오 Lv.43 · 가재장군 Lv.43 (물/악) · 킹드라 Lv.46 (약점은 드래곤뿐)', answer: '나무킹 잎날가르기 / 썬더볼트' }],
+      rows: [{ opponent: '사랑동이 Lv.41 (선두) · 메깅 Lv.41 (물/땅 — 전기 무효, 풀 4배) · 씨레오 Lv.43 · 가재장군 Lv.43 (물/악) · 킹드라 Lv.46 (약점은 드래곤뿐)', answer: '나무킹 리프블레이드(Lv.29) / 썬더볼트' }],
     },
   ],
   elite4: [
     {
       title: '사천왕 혁진 (악 타입)',
-      note: '가디안 사이코키네시스 또는 나무킹 잎날가르기로 처리. 악은 격투·벌레에도 약점.',
+      note: '가디안 사이코키네시스 또는 나무킹 리프블레이드(Lv.29)로 처리. 악은 격투·벌레에도 약점.',
       rows: [{ opponent: '혁진 — 그라에나 Lv.46 (선두) · 밤선인 Lv.46 · 다탱구 Lv.48 · 가재장군 Lv.48 · 앱솔 Lv.49 (전원 에스퍼 무효)', answer: '가디안 사이코키네시스 / 앱솔 격투기' }],
     },
     {
       title: '사천왕 회연 (고스트 타입)',
-      note: '가디안 섀도볼 또는 앱솔 기습으로 처리.',
-      rows: [{ opponent: '회연 — 미라몽 Lv.48 (선두) · 다크펫 Lv.49 · 깜까미 Lv.50 · 다크펫 Lv.49 · 미라몽 Lv.51', answer: '가디안 섀도볼 / 앱솔 기습' }],
+      note: '가디안 섀도볼 또는 앱솔 물기(Lv.21)으로 처리.',
+      rows: [{ opponent: '회연 — 미라몽 Lv.48 (선두) · 다크펫 Lv.49 · 깜까미 Lv.50 · 다크펫 Lv.49 · 미라몽 Lv.51', answer: '가디안 섀도볼 / 앱솔 물기(Lv.21)' }],
     },
     {
       title: '사천왕 미혜 (얼음 타입)',
@@ -775,14 +775,14 @@ const TREECKO_GUIDE: StarterGuideData = {
   ],
   champion: {
     title: '챔피언 윤진 (물 타입)',
-    note: '나무킹 잎날가르기가 핵심 — 메깅에는 4배. 로파파(물/풀)는 불꽃도 반감이라 불대문자로 빠르게 처리되지 않는다.',
+    note: '나무킹 리프블레이드(Lv.29)가 핵심 — 메깅에는 4배. 로파파(물/풀)는 불꽃도 반감이라 불대문자로 빠르게 처리되지 않는다.',
     rows: [
-      { opponent: '고래왕 Lv.57 (물, 선두)', answer: '나무킹 잎날가르기 (풀 2배)' },
+      { opponent: '고래왕 Lv.57 (물, 선두)', answer: '나무킹 리프블레이드(Lv.29) (풀 2배)' },
       { opponent: '독파리 Lv.55 (물/독)', answer: '썬더볼트 10만볼트 (전기 2배)' },
       { opponent: '로파파 Lv.56 (물/풀)', answer: '풀·전기·불꽃 모두 1배. 중립 화력으로 밀어야 한다' },
-      { opponent: '메깅 Lv.56 (물/땅)', answer: '나무킹 잎날가르기 (풀 4배!). 전기는 무효라 썬더볼트를 내면 안 된다' },
+      { opponent: '메깅 Lv.56 (물/땅)', answer: '나무킹 리프블레이드(Lv.29) (풀 4배!). 전기는 무효라 썬더볼트를 내면 안 된다' },
       { opponent: '갸라도스 Lv.56 (물/비행)', answer: '썬더볼트 10만볼트 (전기 4배!)' },
-      { opponent: '밀로틱 Lv.58 (물)', answer: '나무킹 잎날가르기 · 썬더볼트 (각각 2배)' },
+      { opponent: '밀로틱 Lv.58 (물)', answer: '나무킹 리프블레이드(Lv.29) · 썬더볼트 (각각 2배)' },
     ],
   },
   summary: [
@@ -790,7 +790,7 @@ const TREECKO_GUIDE: StarterGuideData = {
     { stage: '4~5관', strategy: '4관 불꽃은 씨카이저, 5관 노말은 가디안으로' },
     { stage: '6~8관', strategy: '6관 비행은 썬더볼트, 7관 에스퍼는 가디안 섀도볼, 8관 물은 나무킹' },
     { stage: 'E4', strategy: '가디안→혁진·회연, 씨카이저→드레이크, 썬더볼트·플라이곤→미혜' },
-    { stage: '윤진', strategy: '나무킹 잎날가르기 + 썬더볼트가 핵심. 로파파는 풀·전기·불꽃이 모두 1배라 중립 화력으로' },
+    { stage: '윤진', strategy: '나무킹 리프블레이드(Lv.29) + 썬더볼트가 핵심. 로파파는 풀·전기·불꽃이 모두 1배라 중립 화력으로' },
   ],
   support: [
     { pokemon: '패리퍼', pokemonId: 279, role: 'HM 담당. 파도타기·공중날기·다이빙. 물 체육관 보조', obtainedAt: '갈모매 109번도로 포획 후 진화' },
@@ -830,12 +830,12 @@ export const EMERALD_NAME_TO_ID: Map<string, number> = new Map(
  * 기술로 잘못 링크된다. 본문에 새 기술을 쓰면 여기에도 추가해야 링크가 걸린다.
  */
 export const EMERALD_MOVE_NAMES: ReadonlySet<string> = new Set([
-  '사이코키네시스', '사이드체인지', '10만볼트', '드래곤클로', '메가드레인', '베어가르기',
-  '사이코쇼크', '사이코커터', '속여때리기', '스피드스타', '아이언테일', '잎날가르기',
-  '전기자석파', '트라이어택', '폭포오르기', '화염바퀴', 'HP회복', '공중날기',
-  '노래하기', '바위깨기', '불대문자', '스톤샤워', '씨뿌리기', '에너지볼',
-  '용의숨결', '인파이트', '저리가루', '전광석화', '진흙폭탄', '파도타기',
-  '화염방사', '냉동빔', '누르기', '다이빙', '물대포', '섀도볼',
-  '속임수', '차지빔', '풀베기', '플래시', '괴력', '기습',
-  '번개', '연막', '저주', '지진', '칼춤',
+  '사이코키네시스', '사이드체인지', '10만볼트', '드래곤클로', '메가드레인', '누르기',
+  '사이코키네시스', '도둑질', '따라가때리기', '스피드스타', '바위깨기', '리프블레이드',
+  '전기자석파', '트라이어택', '폭포오르기', '화염방사', '잠자기', '공중날기',
+  '누르기', '바위깨기', '불대문자', '스톤샤워', '씨뿌리기', '기가드레인',
+  '용의숨결', '깨뜨리다', '저리가루', '전광석화', '머드샷', '파도타기',
+  '화염방사', '냉동빔', '누르기', '파도타기', '물대포', '섀도볼',
+  '속임수', '번개펀치', '풀베기', '플래시', '괴력', '물기',
+  '번개', '돌진', '저주', '지진', '칼춤',
 ])

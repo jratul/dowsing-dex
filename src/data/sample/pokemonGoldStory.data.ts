@@ -310,11 +310,11 @@ export const GOLD_STORY_BOSSES: BossSection[] = [
   {
     title: '사천왕 일목',
     rows: [
-      { opponent: '네이티오 Lv.40 (선두)', answer: '전룡 10만볼트 (전기 2배)' },
+      { opponent: '네이티오 Lv.40 (선두)', answer: '전룡 번개펀치(Lv.30) (전기 2배)' },
       { opponent: '나시 Lv.41', answer: '블레이범 화염방사 (불꽃 2배)' },
-      { opponent: '야도란 Lv.41', answer: '전룡 10만볼트 (전기 2배) / 우츠동 풀 기술' },
+      { opponent: '야도란 Lv.41', answer: '전룡 번개펀치(Lv.30) (전기 2배) / 우츠동 풀 기술' },
       { opponent: '루주라 Lv.41', answer: '블레이범 화염방사 (불꽃 2배)' },
-      { opponent: '네이티오 Lv.42', answer: '전룡 10만볼트' },
+      { opponent: '네이티오 Lv.42', answer: '전룡 번개펀치(Lv.30)' },
     ],
   },
   {
@@ -324,7 +324,7 @@ export const GOLD_STORY_BOSSES: BossSection[] = [
       { opponent: '도나리 Lv.41', answer: '블레이범 화염방사 / 윤겔라 사이코키네시스' },
       { opponent: '질뻐기 Lv.42', answer: '윤겔라 사이코키네시스 (독에 2배) / 블레이범 지진' },
       { opponent: '쏘콘 Lv.43', answer: '블레이범 화염방사 (벌레·강철이라 4배)' },
-      { opponent: '크로뱃 Lv.44', answer: '전룡 10만볼트 (전기 2배). 독/비행이라 땅은 무효' },
+      { opponent: '크로뱃 Lv.44', answer: '전룡 번개펀치(Lv.30) (전기 2배). 독/비행이라 땅은 무효' },
     ],
   },
   {
@@ -342,7 +342,7 @@ export const GOLD_STORY_BOSSES: BossSection[] = [
     rows: [
       { opponent: '블래키 Lv.42 (선두)', answer: '내구가 높다. 갸라도스·블레이범으로 장기전. 에스퍼는 무효' },
       { opponent: '라플레시아 Lv.42', answer: '블레이범 화염방사 (불꽃 2배)' },
-      { opponent: '니로우 Lv.44 (악/비행)', answer: '전룡 10만볼트 (전기 2배)' },
+      { opponent: '니로우 Lv.44 (악/비행)', answer: '전룡 번개펀치(Lv.30) (전기 2배)' },
       { opponent: '팬텀 Lv.45', answer: '윤겔라 사이코키네시스 (독이라 2배)' },
       { opponent: '헬가 Lv.47 (악/불꽃)', answer: '갸라도스 파도타기 (물 2배)' },
     ],
@@ -350,10 +350,10 @@ export const GOLD_STORY_BOSSES: BossSection[] = [
   {
     title: '챔피언 목호',
     rows: [
-      { opponent: '갸라도스 Lv.44 (물/비행, 선두)', answer: '전룡 10만볼트 (전기 4배!)' },
+      { opponent: '갸라도스 Lv.44 (물/비행, 선두)', answer: '전룡 번개펀치(Lv.30) (전기 4배!)' },
       { opponent: '망나뇽 Lv.47 (드래곤/비행)', answer: '윤겔라 냉동펀치 (얼음 4배!)' },
-      { opponent: '리자몽 Lv.46 (불꽃/비행)', answer: '전룡 10만볼트 (전기 2배) / 갸라도스 파도타기 (물 2배)' },
-      { opponent: '프테라 Lv.46 (바위/비행)', answer: '전룡 10만볼트 (전기 2배) / 갸라도스 파도타기 (물 2배)' },
+      { opponent: '리자몽 Lv.46 (불꽃/비행)', answer: '전룡 번개펀치(Lv.30) (전기 2배) / 갸라도스 파도타기 (물 2배)' },
+      { opponent: '프테라 Lv.46 (바위/비행)', answer: '전룡 번개펀치(Lv.30) (전기 2배) / 갸라도스 파도타기 (물 2배)' },
       { opponent: '망나뇽 Lv.47', answer: '윤겔라 냉동펀치 (얼음 4배!)' },
       { opponent: '망나뇽 Lv.50', answer: '에이스. 윤겔라 냉동펀치 (얼음 4배!)' },
     ],

@@ -357,9 +357,9 @@ export const RED_STORY_GYMS: BossSection[] = [
   {
     title: '갈색체육관 마티스',
     rows: [
-      { opponent: '찌리리공', answer: '니드킹 구멍파기' },
-      { opponent: '피카츄', answer: '니드킹 구멍파기' },
-      { opponent: '라이츄', answer: '니드킹 구멍파기' },
+      { opponent: '찌리리공', answer: '니드킹 — 땅 타입이라 전기 무효, 안전하게 받아낸다' },
+      { opponent: '피카츄', answer: '니드킹 — 땅 타입이라 전기 무효, 안전하게 받아낸다' },
+      { opponent: '라이츄', answer: '니드킹 — 땅 타입이라 전기 무효, 안전하게 받아낸다' },
     ],
     notes: ['니드킹이 있으면 매우 쉬운 체육관이다.', '마티스 격파 후 TM24 10만볼트를 쥬피썬더에게 줄 계획으로 보관한다.'],
   },
@@ -493,7 +493,7 @@ export const RED_STORY_SUMMARY_TABLE: { stage: string; strategy: string }[] = [
   { stage: '웅전', strategy: '파이리 장기전 또는 버터플 염동력으로 보조' },
   { stage: '이슬전', strategy: '뚜벅쵸와 피카츄로 파이리 스타팅 약점 보완' },
   { stage: '달맞이산 이후', strategy: '니드리노를 레벨 23 전에 니드킹으로 진화시켜 난동부리기 확보' },
-  { stage: '중반', strategy: '니드킹 구멍파기·난동부리기, 윤겔라 에스퍼 기술로 진행' },
+  { stage: '중반', strategy: '니드킹 — 땅 타입이라 전기 무효, 안전하게 받아낸다·난동부리기, 윤겔라 에스퍼 기술로 진행' },
   { stage: '무지개시티', strategy: '이브이 확보 후 쥬피썬더 완성, 10만볼트 배정' },
   { stage: '실프주식회사', strategy: '라프라스 확보 후 파도타기·얼음 기술 준비' },
   { stage: '사천왕', strategy: '쥬피썬더로 칸나·목호 갸라도스, 라프라스로 목호 드래곤 처리' },

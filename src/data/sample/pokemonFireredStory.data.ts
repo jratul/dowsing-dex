@@ -146,7 +146,7 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
   {
     pokemonId: 135,
     pokemon: '쥬피썬더',
-    finalMoves: ['10만볼트', '전기자석파', '물기', '전광석화 / 두번차기 / 바늘미사일'],
+    finalMoves: ['10만볼트', '전기자석파', '전광석화', '그림자분신 / 고속이동'],
     moveTable: [
       { move: '10만볼트', how: 'TM24', usage: '주력 전기 기술. 칸나, 목호 갸라도스, 챔피언 거북왕 처리 핵심' },
       { move: '전기자석파', how: 'TM', usage: '빠른 상대 마비. 보스전 안정화' },
@@ -202,12 +202,12 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
   {
     pokemonId: 103,
     pokemon: '나시',
-    finalMoves: ['사이코키네시스', '기가드레인', '수면가루', '씨뿌리기 / 솔라빔 / 빛의장막'],
+    finalMoves: ['사이코키네시스', '기가드레인', '기가드레인', '솔라빔 / 빛의장막 / 폭발'],
     moveTable: [
       { move: '사이코키네시스', how: 'TM29', usage: '주력 에스퍼 기술. 독·격투 타입 처리' },
       { move: '기가드레인', how: 'TM19', usage: '물·땅·바위 타입 견제 및 회복' },
-      { move: '수면가루', how: 'Lv.37 (나시라)', usage: '포획 및 보스전 보조' },
-      { move: '씨뿌리기', how: 'Lv.13 (나시라)', usage: '장기전 보조' },
+      { move: '기가드레인', how: 'Lv.37 (나시라)', usage: '포획 및 보스전 보조' },
+      { move: '솔라빔', how: 'Lv.13 (나시라)', usage: '장기전 보조' },
       { move: '솔라빔', how: 'TM22', usage: '고위력 풀 타입 기술. 쾌청과 연계 시 선택 가능' },
       { move: '빛의장막', how: 'TM', usage: '특수 공격 대응 보조' },
     ],
@@ -397,7 +397,7 @@ export const FIRERED_STORY_GYMS: BossSection[] = [
   {
     title: '노랑체육관 초련',
     rows: [
-      { opponent: '윤겔라 Lv.38 (선두)', answer: '잠만보 섀도볼 (고스트 2배) / 쥬피썬더 물기 (악 2배)' },
+      { opponent: '윤겔라 Lv.38 (선두)', answer: '잠만보 섀도볼 (고스트 2배) / 쥬피썬더 10만볼트 (악 2배)' },
       { opponent: '마임맨 Lv.37', answer: '잠만보 섀도볼 / 리자몽 화염방사' },
       { opponent: '도나리 Lv.38 (벌레/독)', answer: '리자몽 화염방사 (불꽃 2배)' },
       { opponent: '후딘 Lv.43', answer: '에이스. 잠만보 섀도볼 / 쥬피썬더 전기자석파 후 처리' },
@@ -456,11 +456,11 @@ export const FIRERED_STORY_ELITE4: BossSection[] = [
   {
     title: '사천왕 국화',
     rows: [
-      { opponent: '팬텀', answer: '잠만보 섀도볼 / 쥬피썬더 물기 / 나시 사이코키네시스' },
+      { opponent: '팬텀', answer: '잠만보 섀도볼 / 쥬피썬더 10만볼트 / 나시 사이코키네시스' },
       { opponent: '골뱃', answer: '쥬피썬더 10만볼트 / 라프라스 냉동빔' },
-      { opponent: '고우스트', answer: '잠만보 섀도볼 / 쥬피썬더 물기 / 나시 사이코키네시스' },
+      { opponent: '고우스트', answer: '잠만보 섀도볼 / 쥬피썬더 10만볼트 / 나시 사이코키네시스' },
       { opponent: '아보크', answer: '니드킹 지진 / 나시 사이코키네시스' },
-      { opponent: '팬텀', answer: '잠만보 섀도볼 / 쥬피썬더 물기 / 나시 사이코키네시스' },
+      { opponent: '팬텀', answer: '잠만보 섀도볼 / 쥬피썬더 10만볼트 / 나시 사이코키네시스' },
     ],
     notes: [
       '3세대 팬텀·고우스트는 부유 특성 때문에 지진이 통하지 않는다.',
@@ -699,7 +699,7 @@ export const FIRERED_STORY_MOVE_NAMES: ReadonlySet<string> = new Set([
   '멸망의노래', '바늘미사일', '베어가르기', '스피드스타', '잎날가르기', '전기자석파',
   '폭포오르기', 'HP회복', '강철날개', '공중날기', '구멍파기', '깨뜨리다',
   '날개치기', '두번차기', '바위깨기', '불대문자', '비바라기', '빛의장막',
-  '뿔찌르기', '수면가루', '스톤샤워', '씨뿌리기', '암석봉인', '오로라빔',
+  '뿔찌르기', '기가드레인', '스톤샤워', '솔라빔', '암석봉인', '오로라빔',
   '은혜갚기', '이상한빛', '작아지기', '전광석화', '파도타기', '화염방사',
   '냉동빔', '누르기', '메가혼', '섀도볼', '솔라빔', '잠자기',
   '전격파', '풀베기', '플래시', '괴력', '물기', '번개',
