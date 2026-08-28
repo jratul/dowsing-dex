@@ -229,7 +229,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 24,
-    "nameKo": "두번치기",
+    "nameKo": "두번차기",
     "nameEn": "double-kick",
     "type": "격투",
     "category": "물리",
@@ -1220,7 +1220,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 130,
-    "nameKo": "로케트박치기",
+    "nameKo": "로켓박치기",
     "nameEn": "skull-bash",
     "type": "노말",
     "category": "물리",
@@ -1423,7 +1423,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 152,
-    "nameKo": "찝게햄머",
+    "nameKo": "집게해머",
     "nameEn": "crabhammer",
     "type": "물",
     "category": "물리",
@@ -1597,7 +1597,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 172,
-    "nameKo": "화염자동차",
+    "nameKo": "화염바퀴",
     "nameEn": "flame-wheel",
     "type": "불꽃",
     "category": "물리",
@@ -1814,7 +1814,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 196,
-    "nameKo": "얼다바람",
+    "nameKo": "얼어붙은바람",
     "nameEn": "icy-wind",
     "type": "얼음",
     "category": "특수",
@@ -1832,7 +1832,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 198,
-    "nameKo": "본러쉬",
+    "nameKo": "본러시",
     "nameEn": "bone-rush",
     "type": "땅",
     "category": "물리",
@@ -2067,7 +2067,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 224,
-    "nameKo": "메가폰",
+    "nameKo": "메가혼",
     "nameEn": "megahorn",
     "type": "벌레",
     "category": "물리",
@@ -2087,7 +2087,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 226,
-    "nameKo": "바톤터치",
+    "nameKo": "배턴터치",
     "nameEn": "baton-pass",
     "type": "노말",
     "category": "상태",
@@ -2095,7 +2095,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 227,
-    "nameKo": "앵콜",
+    "nameKo": "앙코르",
     "nameEn": "encore",
     "type": "노말",
     "category": "상태",
@@ -2143,7 +2143,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 232,
-    "nameKo": "메탈크로우",
+    "nameKo": "메탈클로",
     "nameEn": "metal-claw",
     "type": "강철",
     "category": "물리",
@@ -2178,7 +2178,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 236,
-    "nameKo": "달의불빛",
+    "nameKo": "달빛",
     "nameEn": "moonlight",
     "type": "페어리",
     "category": "상태",
@@ -2328,7 +2328,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 252,
-    "nameKo": "속이다",
+    "nameKo": "속이기",
     "nameEn": "fake-out",
     "type": "노말",
     "category": "물리",
@@ -2575,7 +2575,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 280,
-    "nameKo": "깨트리다",
+    "nameKo": "깨뜨리다",
     "nameEn": "brick-break",
     "type": "격투",
     "category": "물리",
@@ -2622,7 +2622,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 285,
-    "nameKo": "스킬스웹",
+    "nameKo": "스킬스왑",
     "nameEn": "skill-swap",
     "type": "에스퍼",
     "category": "상태",
@@ -2638,7 +2638,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 287,
-    "nameKo": "리프레쉬",
+    "nameKo": "리프레시",
     "nameEn": "refresh",
     "type": "노말",
     "category": "상태",
@@ -2654,7 +2654,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 289,
-    "nameKo": "가로챔",
+    "nameKo": "가로채기",
     "nameEn": "snatch",
     "type": "악",
     "category": "상태",
@@ -2708,7 +2708,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 295,
-    "nameKo": "라스트버지",
+    "nameKo": "러스터퍼지",
     "nameEn": "luster-purge",
     "type": "에스퍼",
     "category": "특수",
@@ -2746,7 +2746,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 299,
-    "nameKo": "브레이즈킥",
+    "nameKo": "블레이즈킥",
     "nameEn": "blaze-kick",
     "type": "불꽃",
     "category": "물리",
@@ -2784,7 +2784,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 303,
-    "nameKo": "태만함",
+    "nameKo": "게으름피우기",
     "nameEn": "slack-off",
     "type": "노말",
     "category": "상태",
@@ -2802,7 +2802,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 305,
-    "nameKo": "독엄니",
+    "nameKo": "맹독엄니",
     "nameEn": "poison-fang",
     "type": "독",
     "category": "물리",
@@ -2812,7 +2812,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 306,
-    "nameKo": "브레이크크루",
+    "nameKo": "브레이크클로",
     "nameEn": "crush-claw",
     "type": "노말",
     "category": "물리",
@@ -2822,7 +2822,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 307,
-    "nameKo": "블러스트번",
+    "nameKo": "블라스트번",
     "nameEn": "blast-burn",
     "type": "불꽃",
     "category": "특수",
@@ -2889,7 +2889,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 314,
-    "nameKo": "에어컷터",
+    "nameKo": "에어커터",
     "nameEn": "air-cutter",
     "type": "비행",
     "category": "특수",
@@ -3011,7 +3011,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 327,
-    "nameKo": "스카이업퍼",
+    "nameKo": "스카이어퍼",
     "nameEn": "sky-uppercut",
     "type": "격투",
     "category": "물리",
@@ -3050,7 +3050,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 331,
-    "nameKo": "기관총",
+    "nameKo": "씨기관총",
     "nameEn": "bullet-seed",
     "type": "풀",
     "category": "물리",
@@ -3095,7 +3095,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 336,
-    "nameKo": "멀리짖음",
+    "nameKo": "멀리짖기",
     "nameEn": "howl",
     "type": "노말",
     "category": "상태",
@@ -3103,7 +3103,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 337,
-    "nameKo": "드래곤크루",
+    "nameKo": "드래곤클로",
     "nameEn": "dragon-claw",
     "type": "드래곤",
     "category": "물리",
@@ -3131,7 +3131,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 340,
-    "nameKo": "뛰어오르다",
+    "nameKo": "뛰어오르기",
     "nameEn": "bounce",
     "type": "비행",
     "category": "물리",
@@ -3141,7 +3141,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 341,
-    "nameKo": "머드숏",
+    "nameKo": "머드샷",
     "nameEn": "mud-shot",
     "type": "땅",
     "category": "특수",
@@ -3181,7 +3181,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 345,
-    "nameKo": "메지컬리프",
+    "nameKo": "매지컬리프",
     "nameEn": "magical-leaf",
     "type": "풀",
     "category": "특수",
@@ -3224,7 +3224,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 350,
-    "nameKo": "락블레스트",
+    "nameKo": "록블라스트",
     "nameEn": "rock-blast",
     "type": "바위",
     "category": "물리",
@@ -3532,7 +3532,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 384,
-    "nameKo": "파워스웹",
+    "nameKo": "파워스왑",
     "nameEn": "power-swap",
     "type": "에스퍼",
     "category": "상태",
@@ -3540,7 +3540,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 385,
-    "nameKo": "가드스웹",
+    "nameKo": "가드스왑",
     "nameEn": "guard-swap",
     "type": "에스퍼",
     "category": "상태",
@@ -3557,7 +3557,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 387,
-    "nameKo": "뒀다쓰기",
+    "nameKo": "비장의무기",
     "nameEn": "last-resort",
     "type": "노말",
     "category": "물리",
@@ -3594,7 +3594,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 391,
-    "nameKo": "하트스웹",
+    "nameKo": "하트스왑",
     "nameEn": "heart-swap",
     "type": "에스퍼",
     "category": "상태",
@@ -3882,7 +3882,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 421,
-    "nameKo": "섀도크루",
+    "nameKo": "섀도클로",
     "nameEn": "shadow-claw",
     "type": "고스트",
     "category": "물리",
@@ -3962,7 +3962,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 429,
-    "nameKo": "미러숏",
+    "nameKo": "미러샷",
     "nameEn": "mirror-shot",
     "type": "강철",
     "category": "특수",
@@ -3982,7 +3982,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 431,
-    "nameKo": "락클라임",
+    "nameKo": "록클라임",
     "nameEn": "rock-climb",
     "type": "노말",
     "category": "물리",
@@ -4163,7 +4163,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 450,
-    "nameKo": "벌레먹음",
+    "nameKo": "벌레먹기",
     "nameEn": "bug-bite",
     "type": "벌레",
     "category": "물리",
@@ -4635,7 +4635,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 501,
-    "nameKo": "퍼스트가드",
+    "nameKo": "패스트가드",
     "nameEn": "quick-guard",
     "type": "격투",
     "category": "상태",
@@ -4927,7 +4927,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 532,
-    "nameKo": "우드호른",
+    "nameKo": "우드혼",
     "nameEn": "horn-leech",
     "type": "풀",
     "category": "물리",
@@ -5094,7 +5094,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 549,
-    "nameKo": "얼다세계",
+    "nameKo": "얼어붙은세계",
     "nameEn": "glaciate",
     "type": "얼음",
     "category": "특수",
@@ -5481,7 +5481,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 593,
-    "nameKo": "다른차원홀",
+    "nameKo": "이차원홀",
     "nameEn": "hyperspace-hole",
     "type": "에스퍼",
     "category": "특수",
@@ -5862,7 +5862,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 677,
-    "nameKo": "앵커숏",
+    "nameKo": "앵커샷",
     "nameEn": "anchor-shot",
     "type": "강철",
     "category": "물리",
@@ -5920,7 +5920,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 683,
-    "nameKo": "스피드스웹",
+    "nameKo": "스피드스왑",
     "nameEn": "speed-swap",
     "type": "에스퍼",
     "category": "상태",
@@ -5928,7 +5928,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 684,
-    "nameKo": "스마트호른",
+    "nameKo": "스마트혼",
     "nameEn": "smart-strike",
     "type": "강철",
     "category": "물리",
@@ -6264,7 +6264,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 749,
-    "nameKo": "타르숏",
+    "nameKo": "타르샷",
     "nameEn": "tar-shot",
     "type": "바위",
     "category": "상태",
@@ -6796,7 +6796,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 827,
-    "nameKo": "dire-claw",
+    "nameKo": "페이탈클로",
     "nameEn": "dire-claw",
     "type": "독",
     "category": "물리",
@@ -6806,7 +6806,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 828,
-    "nameKo": "psyshield-bash",
+    "nameKo": "배리어러시",
     "nameEn": "psyshield-bash",
     "type": "에스퍼",
     "category": "물리",
@@ -6816,7 +6816,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 829,
-    "nameKo": "power-shift",
+    "nameKo": "파워시프트",
     "nameEn": "power-shift",
     "type": "노말",
     "category": "상태",
@@ -6825,7 +6825,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 830,
-    "nameKo": "stone-axe",
+    "nameKo": "암석액스",
     "nameEn": "stone-axe",
     "type": "바위",
     "category": "물리",
@@ -6835,7 +6835,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 831,
-    "nameKo": "springtide-storm",
+    "nameKo": "봄의폭풍",
     "nameEn": "springtide-storm",
     "type": "페어리",
     "category": "특수",
@@ -6845,7 +6845,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 832,
-    "nameKo": "mystical-power",
+    "nameKo": "신비의힘",
     "nameEn": "mystical-power",
     "type": "에스퍼",
     "category": "특수",
@@ -6855,7 +6855,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 833,
-    "nameKo": "raging-fury",
+    "nameKo": "대격분",
     "nameEn": "raging-fury",
     "type": "불꽃",
     "category": "물리",
@@ -6865,7 +6865,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 834,
-    "nameKo": "wave-crash",
+    "nameKo": "웨이브태클",
     "nameEn": "wave-crash",
     "type": "물",
     "category": "물리",
@@ -6875,7 +6875,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 835,
-    "nameKo": "chloroblast",
+    "nameKo": "클로로블라스트",
     "nameEn": "chloroblast",
     "type": "풀",
     "category": "특수",
@@ -6885,7 +6885,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 836,
-    "nameKo": "mountain-gale",
+    "nameKo": "빙산바람",
     "nameEn": "mountain-gale",
     "type": "얼음",
     "category": "물리",
@@ -6895,7 +6895,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 837,
-    "nameKo": "victory-dance",
+    "nameKo": "승리의춤",
     "nameEn": "victory-dance",
     "type": "격투",
     "category": "상태",
@@ -6904,7 +6904,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 838,
-    "nameKo": "headlong-rush",
+    "nameKo": "들이받기",
     "nameEn": "headlong-rush",
     "type": "땅",
     "category": "물리",
@@ -6914,7 +6914,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 839,
-    "nameKo": "barb-barrage",
+    "nameKo": "독침천발",
     "nameEn": "barb-barrage",
     "type": "독",
     "category": "물리",
@@ -6924,7 +6924,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 840,
-    "nameKo": "esper-wing",
+    "nameKo": "오라윙",
     "nameEn": "esper-wing",
     "type": "에스퍼",
     "category": "특수",
@@ -6934,7 +6934,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 841,
-    "nameKo": "bitter-malice",
+    "nameKo": "천추지한",
     "nameEn": "bitter-malice",
     "type": "고스트",
     "category": "특수",
@@ -6944,7 +6944,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 842,
-    "nameKo": "shelter",
+    "nameKo": "농성",
     "nameEn": "shelter",
     "type": "강철",
     "category": "상태",
@@ -6953,7 +6953,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 843,
-    "nameKo": "triple-arrows",
+    "nameKo": "3연화살",
     "nameEn": "triple-arrows",
     "type": "격투",
     "category": "물리",
@@ -6963,7 +6963,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 844,
-    "nameKo": "infernal-parade",
+    "nameKo": "백귀야행",
     "nameEn": "infernal-parade",
     "type": "고스트",
     "category": "특수",
@@ -6973,7 +6973,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 845,
-    "nameKo": "ceaseless-edge",
+    "nameKo": "비검천중파",
     "nameEn": "ceaseless-edge",
     "type": "악",
     "category": "물리",
@@ -6983,7 +6983,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 846,
-    "nameKo": "bleakwind-storm",
+    "nameKo": "찬바람폭풍",
     "nameEn": "bleakwind-storm",
     "type": "비행",
     "category": "특수",
@@ -6993,7 +6993,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 847,
-    "nameKo": "wildbolt-storm",
+    "nameKo": "번개폭풍",
     "nameEn": "wildbolt-storm",
     "type": "전기",
     "category": "특수",
@@ -7003,7 +7003,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 848,
-    "nameKo": "sandsear-storm",
+    "nameKo": "열사의폭풍",
     "nameEn": "sandsear-storm",
     "type": "땅",
     "category": "특수",
@@ -7013,7 +7013,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 849,
-    "nameKo": "lunar-blessing",
+    "nameKo": "초승달의기도",
     "nameEn": "lunar-blessing",
     "type": "에스퍼",
     "category": "상태",
@@ -7022,7 +7022,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 850,
-    "nameKo": "take-heart",
+    "nameKo": "브레이브차지",
     "nameEn": "take-heart",
     "type": "에스퍼",
     "category": "상태",
@@ -7031,7 +7031,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 851,
-    "nameKo": "tera-blast",
+    "nameKo": "테라버스트",
     "nameEn": "tera-blast",
     "type": "노말",
     "category": "특수",
@@ -7041,7 +7041,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 853,
-    "nameKo": "axe-kick",
+    "nameKo": "발꿈치찍기",
     "nameEn": "axe-kick",
     "type": "격투",
     "category": "물리",
@@ -7051,7 +7051,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 856,
-    "nameKo": "order-up",
+    "nameKo": "한판내기",
     "nameEn": "order-up",
     "type": "드래곤",
     "category": "물리",
@@ -7061,7 +7061,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 857,
-    "nameKo": "jet-punch",
+    "nameKo": "제트펀치",
     "nameEn": "jet-punch",
     "type": "물",
     "category": "물리",
@@ -7071,7 +7071,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 859,
-    "nameKo": "spin-out",
+    "nameKo": "휠스핀",
     "nameEn": "spin-out",
     "type": "강철",
     "category": "물리",
@@ -7081,7 +7081,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 860,
-    "nameKo": "population-bomb",
+    "nameKo": "찍찍베기",
     "nameEn": "population-bomb",
     "type": "노말",
     "category": "물리",
@@ -7091,7 +7091,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 861,
-    "nameKo": "ice-spinner",
+    "nameKo": "아이스스피너",
     "nameEn": "ice-spinner",
     "type": "얼음",
     "category": "물리",
@@ -7101,7 +7101,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 864,
-    "nameKo": "salt-cure",
+    "nameKo": "소금절이",
     "nameEn": "salt-cure",
     "type": "바위",
     "category": "물리",
@@ -7111,7 +7111,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 865,
-    "nameKo": "triple-dive",
+    "nameKo": "트리플다이브",
     "nameEn": "triple-dive",
     "type": "물",
     "category": "물리",
@@ -7121,7 +7121,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 868,
-    "nameKo": "fillet-away",
+    "nameKo": "제살깎기",
     "nameEn": "fillet-away",
     "type": "노말",
     "category": "상태",
@@ -7130,7 +7130,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 873,
-    "nameKo": "raging-bull",
+    "nameKo": "레이징불",
     "nameEn": "raging-bull",
     "type": "노말",
     "category": "물리",
@@ -7140,7 +7140,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 874,
-    "nameKo": "make-it-rain",
+    "nameKo": "골드러시",
     "nameEn": "make-it-rain",
     "type": "강철",
     "category": "특수",
@@ -7170,7 +7170,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 877,
-    "nameKo": "ruination",
+    "nameKo": "카타스트로피",
     "nameEn": "ruination",
     "type": "악",
     "category": "특수",
@@ -7180,7 +7180,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 878,
-    "nameKo": "collision-course",
+    "nameKo": "엑셀브레이크",
     "nameEn": "collision-course",
     "type": "격투",
     "category": "물리",
@@ -7190,7 +7190,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 879,
-    "nameKo": "electro-drift",
+    "nameKo": "라이트닝드라이브",
     "nameEn": "electro-drift",
     "type": "전기",
     "category": "특수",
@@ -7200,7 +7200,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 880,
-    "nameKo": "shed-tail",
+    "nameKo": "꼬리자르기",
     "nameEn": "shed-tail",
     "type": "노말",
     "category": "상태",
@@ -7209,7 +7209,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 882,
-    "nameKo": "tidy-up",
+    "nameKo": "정리정돈",
     "nameEn": "tidy-up",
     "type": "노말",
     "category": "상태",
@@ -7218,7 +7218,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 883,
-    "nameKo": "snowscape",
+    "nameKo": "설경",
     "nameEn": "snowscape",
     "type": "얼음",
     "category": "상태",
@@ -7227,7 +7227,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 884,
-    "nameKo": "pounce",
+    "nameKo": "달려들기",
     "nameEn": "pounce",
     "type": "벌레",
     "category": "물리",
@@ -7237,7 +7237,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 885,
-    "nameKo": "trailblaze",
+    "nameKo": "개척하기",
     "nameEn": "trailblaze",
     "type": "풀",
     "category": "물리",
@@ -7247,7 +7247,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 886,
-    "nameKo": "chilling-water",
+    "nameKo": "찬물끼얹기",
     "nameEn": "chilling-water",
     "type": "물",
     "category": "특수",
@@ -7257,7 +7257,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 887,
-    "nameKo": "hyper-drill",
+    "nameKo": "하이퍼드릴",
     "nameEn": "hyper-drill",
     "type": "노말",
     "category": "물리",
@@ -7267,7 +7267,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 888,
-    "nameKo": "twin-beam",
+    "nameKo": "트윈빔",
     "nameEn": "twin-beam",
     "type": "에스퍼",
     "category": "특수",
@@ -7277,7 +7277,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 889,
-    "nameKo": "rage-fist",
+    "nameKo": "분노의주먹",
     "nameEn": "rage-fist",
     "type": "고스트",
     "category": "물리",
@@ -7287,7 +7287,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 890,
-    "nameKo": "armor-cannon",
+    "nameKo": "아머캐논",
     "nameEn": "armor-cannon",
     "type": "불꽃",
     "category": "특수",
@@ -7297,7 +7297,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 891,
-    "nameKo": "bitter-blade",
+    "nameKo": "원념의칼",
     "nameEn": "bitter-blade",
     "type": "불꽃",
     "category": "물리",
@@ -7307,7 +7307,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 892,
-    "nameKo": "double-shock",
+    "nameKo": "전광쌍격",
     "nameEn": "double-shock",
     "type": "전기",
     "category": "물리",
@@ -7317,7 +7317,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 894,
-    "nameKo": "comeuppance",
+    "nameKo": "앙갚음",
     "nameEn": "comeuppance",
     "type": "악",
     "category": "물리",
@@ -7327,7 +7327,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 895,
-    "nameKo": "aqua-cutter",
+    "nameKo": "아쿠아커터",
     "nameEn": "aqua-cutter",
     "type": "물",
     "category": "물리",
@@ -7337,7 +7337,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 903,
-    "nameKo": "syrup-bomb",
+    "nameKo": "시럽봄",
     "nameEn": "syrup-bomb",
     "type": "풀",
     "category": "특수",
@@ -7347,7 +7347,7 @@ export const ALL_MOVES: Move[] = [
   },
   {
     "id": 904,
-    "nameKo": "ivy-cudgel",
+    "nameKo": "덩굴방망이",
     "nameEn": "ivy-cudgel",
     "type": "풀",
     "category": "물리",

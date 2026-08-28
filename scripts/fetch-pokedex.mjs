@@ -517,6 +517,20 @@ async function main() {
   const machineLookup = await buildMachineLookup()
 
   console.error(`포켓몬 1~${TOTAL_SPECIES}종 + 리전폼 가져오는 중...`)
+  const startedAt = Date.now()
+  let doneSpecies = 0
+  const reportProgress = () => {
+    doneSpecies++
+    if (doneSpecies % 10 !== 0 && doneSpecies !== TOTAL_SPECIES) return
+    const elapsed = (Date.now() - startedAt) / 1000
+    const pct = (doneSpecies / TOTAL_SPECIES) * 100
+    const eta = doneSpecies > 0 ? (elapsed / doneSpecies) * (TOTAL_SPECIES - doneSpecies) : 0
+    const mmss = (sec) => `${Math.floor(sec / 60)}분 ${Math.floor(sec % 60)}초`
+    console.error(
+      `[진행] ${doneSpecies.toLocaleString('ko-KR')}/${TOTAL_SPECIES.toLocaleString('ko-KR')}종 ` +
+        `(${pct.toFixed(2)}%) · 경과 ${mmss(elapsed)} · 남은 예상 ${mmss(eta)}`,
+    )
+  }
   const speciesIds = Array.from({ length: TOTAL_SPECIES }, (_, i) => i + 1)
 
   // speciesId -> { species, defaultVarietyName, varietyEntries: [{name,id,isDefault}] }
@@ -594,6 +608,7 @@ async function main() {
       varietyEntries,
       defaultVarietyName: defaultVariety.pokemon.name,
     })
+    reportProgress()
   })
 
   console.error('메가진화 가져오는 중...')

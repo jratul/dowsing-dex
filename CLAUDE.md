@@ -19,7 +19,7 @@
 npm run dev                    # 개발 서버 (Vite HMR)
 npm run build                  # 프로덕션 빌드
 npm run lint                   # 린트 (oxlint)
-npm run fetch:pokedex          # PokeAPI + 한국어 위키에서 데이터 생성 (수 시간 소요)
+npm run fetch:pokedex          # PokeAPI + 한국어 위키에서 데이터 생성 (약 3분)
 npm run build:tm-index         # by-id/*.generated.ts → tm-index.generated.ts 역인덱스 생성
 npm run build:move-index       # by-id/*.generated.ts → move-index.generated.ts (기술 → 학습 포켓몬)
 npm run build:move-descriptions  # PokeAPI에서 기술 한국어 설명 수집 → move-descriptions.generated.ts
@@ -88,7 +88,7 @@ npm run build:abilities        # PokeAPI에서 특성 한국어 데이터 수집
 > 필요하면 `node scripts/build-items.mjs` 로 직접 실행한다.
 
 > `scripts/refresh-levelup-learnsets.mjs`는 by-id 파일의 `levelUp` 배열만 PokeAPI에서
-> 다시 받아 덧씌운다. `fetch:pokedex` 전체 실행(위키 스크래핑 포함, 수 시간)을 돌리지 않고
+> 다시 받아 덧씌운다. `fetch:pokedex` 전체 실행(위키 스크래핑 포함, 약 3분)을 돌리지 않고
 > 레벨업 학습셋만 최신화할 때 쓴다 — 1,082종에 약 1~2분. `machines`/`tutor`/
 > `RECOMMENDED_MOVESET`은 건드리지 않는다.
 >
@@ -164,7 +164,19 @@ scripts/
 2. `src/data/pokedex/pokedex.generated.ts` 및 `src/data/moves/` 하위 파일 생성
 3. 생성된 파일은 직접 수정하지 않는다 (`// 이 파일은 scripts/ 로 생성됩니다. 직접 수정하지 마세요.` 주석)
 
-**데이터 생성은 10만 건 이상의 PokeAPI 요청 + 위키 스크래핑을 포함하므로 수 시간이 걸린다.** 포켓몬 추가/필드 변경이 없으면 재실행 불필요.
+**전체 재생성은 약 3분 걸린다.** 동시성 14로 PokeAPI와 한국어 위키를 함께 훑는다.
+실행하면 10종마다 `[진행] 300/1,025종 (29.27%) · 경과 · 남은 예상`이 stderr 로 찍힌다.
+파일은 모든 수집이 끝난 뒤 한 번에 쓰므로, 중간에 죽어도 기존 생성 파일은 손상되지 않는다.
+
+재생성 뒤에는 `build:move-index`·`build:tm-index`·`build-move-descriptions.mjs`를 이어서
+돌리고, 공략 검사 다섯 종을 다시 실행한다. **PokeAPI 의 기술 한글명이 갱신되면
+공략의 기술명이 통째로 낡는다** — 2026-08 재생성에서 47종이 바뀌어(락클라임→록클라임,
+얼다바람→얼어붙은바람, 메가폰→메가혼 등) 공략 164곳을 함께 고쳐야 했다.
+`check-guide-machines`가 이걸 잡아준다.
+
+**출현 장소 표기는 포켓몬 문서 기준이다.** 위키가 장소 문서명을 바꿔도(보물의 해변 →
+보물만, 아스카나 유적 → 옥포그리 유적) 포켓몬 문서의 출현장소 칸은 옛 이름을 유지해서,
+재생성해도 도감 값은 그대로다. 공략도 도감과 같은 어휘를 써야 상세 페이지와 어긋나지 않는다.
 
 ## 라우트 구조
 

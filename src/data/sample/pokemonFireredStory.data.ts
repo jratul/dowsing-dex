@@ -38,7 +38,7 @@ export interface TempPokemonRow {
 }
 
 export const FIRERED_STORY_TEMP_POKEMON: TempPokemonRow[] = [
-  { pokemon: '망키', role: '웅전 바위 타입 대응, 초반 격투 딜러', switchTiming: '니드런♂이 두번치기를 안정적으로 쓰면 교체 가능' },
+  { pokemon: '망키', role: '웅전 바위 타입 대응, 초반 격투 딜러', switchTiming: '니드런♂이 두번차기를 안정적으로 쓰면 교체 가능' },
   { pokemon: '뚜벅쵸 / 냄새꼬', role: '이슬전 대응, 수면가루, 물·땅 견제', switchTiming: '사파리존에서 아라리를 확보하면 나시로 교체 가능' },
   { pokemon: '피카츄', role: '이슬전 보조, 초중반 물·비행 견제', switchTiming: '무지개시티에서 이브이를 얻고 쥬피썬더로 교체' },
   { pokemon: '깨비참 / 피죤', role: '임시 공중날기 담당', switchTiming: '리자몽 완성 후 교체 가능' },
@@ -55,7 +55,7 @@ export const FIRERED_STORY_CATCH_TABLE: CatchRow[] = [
   { timing: '시작', pokemonId: 4, pokemon: '파이리', note: '스타팅 선택. 최종 리자몽' },
   { timing: '상록숲 전후', pokemonId: 25, pokemon: '피카츄', note: '이슬전 보조 및 쥬피썬더 전까지 전기 타입 역할' },
   { timing: '22번도로', pokemonId: 56, pokemon: '망키', note: '웅전 대비. 로우킥으로 꼬마돌·롱스톤 대응' },
-  { timing: '3번도로', pokemonId: 32, pokemon: '니드런♂', note: '최종 니드킹. 두번치기로 웅전 보조, 달맞이산에서 달의돌 확보' },
+  { timing: '3번도로', pokemonId: 32, pokemon: '니드런♂', note: '최종 니드킹. 두번차기로 웅전 보조, 달맞이산에서 달의돌 확보' },
   { timing: '24·25번도로', pokemonId: 43, pokemon: '뚜벅쵸', note: '파이어레드 한정 초중반 풀 타입. 이슬전과 포획 보조' },
   { timing: '무지개시티', pokemonId: 133, pokemon: '이브이', note: '무지개맨션 뒷문으로 입장해 획득. 최종 쥬피썬더' },
   { timing: '12번도로 / 16번도로', pokemonId: 143, pokemon: '잠만보', note: '포켓몬피리 획득 후 포획. 고내구 범용 딜러' },
@@ -75,7 +75,7 @@ export interface StoneEvoRow {
 
 export const FIRERED_STORY_STONE_EVO_TABLE: StoneEvoRow[] = [
   // 달의돌
-  { pokemonId: 34, before: '니드리노', after: '니드킹', stone: '달의돌', available: '가능', timing: '니드리노 Lv.22 뿔찌르기 후', reason: '뿔찌르기 확보 후 진화 → Lv.22 난동부리기·후반 메가폰 활용 가능' },
+  { pokemonId: 34, before: '니드리노', after: '니드킹', stone: '달의돌', available: '가능', timing: '니드리노 Lv.22 뿔찌르기 후', reason: '뿔찌르기 확보 후 진화 → Lv.22 난동부리기·후반 메가혼 활용 가능' },
   { pokemonId: 31, before: '니드리나', after: '니드퀸', stone: '달의돌', available: '가능', timing: '니드리나 Lv.16 이후', reason: '내구형. Lv.22 누르기를 니드퀸으로 배우면 충분' },
   { pokemonId: 36, before: '삐삐', after: '픽시', stone: '달의돌', available: '가능 (사파리존)', timing: '삐삐 Lv.21 작아지기 후', reason: '작아지기 확보 후 기술머신 운용. 스토리 활용도는 제한적' },
   { pokemonId: 40, before: '푸린', after: '푸크린', stone: '달의돌', available: '가능 (7번도로)', timing: '푸린 Lv.34 누르기 후', reason: '누르기 기술머신 절약 가능. 주력 파티 외라면 즉시 진화도 무방' },
@@ -109,18 +109,18 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
   {
     pokemonId: 6,
     pokemon: '리자몽',
-    finalMoves: ['화염방사', '공중날기 / 날개치기', '베어가르기', '드래곤크루 / 깨트리다 / 강철날개'],
+    finalMoves: ['화염방사', '공중날기 / 날개치기', '베어가르기', '드래곤클로 / 깨뜨리다 / 강철날개'],
     moveTable: [
       { move: '화염방사', how: 'Lv.34', usage: '주력 불꽃 기술. 리자드 계열 레벨업으로 습득 가능' },
       { move: '공중날기', how: 'HM02', usage: '이동용 비전머신 및 격투·풀 타입 처리' },
       { move: '날개치기', how: 'Lv.36', usage: '공중날기보다 전투 템포가 빠른 비행 기술' },
       { move: '베어가르기', how: 'Lv.44', usage: '안정적인 노말 물리 공격' },
-      { move: '드래곤크루', how: 'TM02', usage: '챔피언로드에서 획득. 드래곤 견제 보조' },
-      { move: '깨트리다', how: 'TM31', usage: '바위·노말·얼음 타입 견제 보조' },
+      { move: '드래곤클로', how: 'TM02', usage: '챔피언로드에서 획득. 드래곤 견제 보조' },
+      { move: '깨뜨리다', how: 'TM31', usage: '바위·노말·얼음 타입 견제 보조' },
       { move: '강철날개', how: 'TM', usage: '바위 타입 견제 보조. 명중률은 다소 불안정' },
     ],
     notes: [
-      '파이리는 파이어레드에서 메탈크로우를 배워 웅전이 원작 1세대보다 훨씬 수월하다.',
+      '파이리는 파이어레드에서 메탈클로를 배워 웅전이 원작 1세대보다 훨씬 수월하다.',
       '리자몽은 레벨 36에 완성되며, 이때부터 공중날기 담당으로도 쓸 수 있다.',
       '기술머신 화염방사는 무지개시티 게임코너에서 얻을 수 있지만, 리자드 계열은 레벨업 화염방사로 충분하다.',
     ],
@@ -128,13 +128,13 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
   {
     pokemonId: 34,
     pokemon: '니드킹',
-    finalMoves: ['지진', '깨트리다', '스톤샤워 / 암석봉인', '메가폰 / 괴력 / 섀도볼'],
+    finalMoves: ['지진', '깨뜨리다', '스톤샤워 / 암석봉인', '메가혼 / 괴력 / 섀도볼'],
     moveTable: [
       { move: '지진', how: 'TM26', usage: '주력 땅 타입 기술. 독·전기·바위·불꽃 타입 처리' },
-      { move: '깨트리다', how: 'TM31', usage: '바위·노말·얼음 타입 견제. 잠만보, 라프라스, 롱스톤 대응' },
+      { move: '깨뜨리다', how: 'TM31', usage: '바위·노말·얼음 타입 견제. 잠만보, 라프라스, 롱스톤 대응' },
       { move: '스톤샤워', how: '기술가르침', usage: '비행·불꽃·얼음 타입 견제. 기술가르침 1회성 후보' },
       { move: '암석봉인', how: 'TM', usage: '웅 격파 보상. 스톤샤워 전 임시 바위 기술' },
-      { move: '메가폰', how: 'Lv.43', usage: '에스퍼·악·풀 타입 견제. 레벨 43에 습득' },
+      { move: '메가혼', how: 'Lv.43', usage: '에스퍼·악·풀 타입 견제. 레벨 43에 습득' },
       { move: '괴력', how: 'HM04', usage: '이동용 비전머신 및 안정적인 물리 공격' },
       { move: '섀도볼', how: 'TM30', usage: '에스퍼·고스트 견제. 잠만보와 경쟁하는 기술머신 후보' },
     ],
@@ -146,13 +146,13 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
   {
     pokemonId: 135,
     pokemon: '쥬피썬더',
-    finalMoves: ['10만볼트', '전기자석파', '물기', '전광석화 / 두번치기 / 바늘미사일'],
+    finalMoves: ['10만볼트', '전기자석파', '물기', '전광석화 / 두번차기 / 바늘미사일'],
     moveTable: [
       { move: '10만볼트', how: 'TM24', usage: '주력 전기 기술. 칸나, 목호 갸라도스, 챔피언 거북왕 처리 핵심' },
       { move: '전기자석파', how: 'TM', usage: '빠른 상대 마비. 보스전 안정화' },
       { move: '물기', how: 'Lv.30 (이브이)', usage: '에스퍼·고스트 타입 보조 견제' },
       { move: '전광석화', how: 'Lv.23', usage: '마무리 선공기' },
-      { move: '두번치기', how: 'Lv.30', usage: '바위·노말 타입 보조 견제. 위력은 낮지만 범용성 있음' },
+      { move: '두번차기', how: 'Lv.30', usage: '바위·노말 타입 보조 견제. 위력은 낮지만 범용성 있음' },
       { move: '바늘미사일', how: 'Lv.36', usage: '에스퍼 타입 견제 보조. 명중과 위력은 불안정' },
     ],
     notes: [
@@ -182,14 +182,14 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
   {
     pokemonId: 143,
     pokemon: '잠만보',
-    finalMoves: ['누르기 / 은혜갚기', '섀도볼', '괴력', '잠자기 / 깨트리다 / 지진'],
+    finalMoves: ['누르기 / 은혜갚기', '섀도볼', '괴력', '잠자기 / 깨뜨리다 / 지진'],
     moveTable: [
       { move: '누르기', how: 'Lv.33', usage: '포획 당시부터 유용한 안정적인 노말 공격' },
       { move: '은혜갚기', how: 'TM27', usage: '친밀도가 높을 때 강력한 노말 물리 공격' },
       { move: '섀도볼', how: 'TM30', usage: '국화의 고스트 타입, 초련·챔피언의 에스퍼 타입 견제' },
       { move: '괴력', how: 'HM04', usage: '이동용 비전머신 및 실전 물리 공격' },
       { move: '잠자기', how: 'TM44', usage: '고내구와 궁합이 좋은 회복기' },
-      { move: '깨트리다', how: 'TM31', usage: '노말·얼음·바위 타입 견제' },
+      { move: '깨뜨리다', how: 'TM31', usage: '노말·얼음·바위 타입 견제' },
       { move: '지진', how: 'TM26', usage: '범용 고위력 기술. 니드킹과 경쟁하는 1회성 기술머신' },
     ],
     notes: [
@@ -252,14 +252,14 @@ export const FIRERED_STORY_TM_PRIORITY: TmRow[] = [
   { tm: 'TM13', move: '냉동빔', target: '라프라스 / 아쿠스타', location: '무지개시티 게임코너 4,000코인', priority: '높음', desc: '라프라스는 레벨 31 습득 가능. 아쿠스타 사용 시 우선' },
   { tm: 'TM29', move: '사이코키네시스', target: '나시', location: '노랑시티 Mr. Psychic 집', priority: '높음', desc: '나시의 핵심 에스퍼 기술' },
   { tm: 'TM26', move: '지진', target: '니드킹', location: '상록시티 체육관, 비주기 격파 보상', priority: '매우 높음', desc: '니드킹의 최종 주력기' },
-  { tm: 'TM31', move: '깨트리다', target: '니드킹 / 리자몽 / 잠만보', location: '상트앙느호 1층 / 무지개 백화점 3,000원', priority: '높음', desc: '바위·얼음·노말 타입 견제' },
+  { tm: 'TM31', move: '깨뜨리다', target: '니드킹 / 리자몽 / 잠만보', location: '상트앙느호 1층 / 무지개 백화점 3,000원', priority: '높음', desc: '바위·얼음·노말 타입 견제' },
   { tm: 'TM30', move: '섀도볼', target: '잠만보', location: '무지개시티 게임코너 4,500코인', priority: '높음', desc: '국화·초련·챔피언의 에스퍼 포켓몬 견제' },
   { tm: 'TM19', move: '기가드레인', target: '나시 / 냄새꼬', location: '무지개시티 체육관, 민화 격파 보상', priority: '높음', desc: '풀 타입 주력기 및 회복' },
   { tm: 'TM28', move: '구멍파기', target: '니드킹 / 리자드 임시', location: '블루시티 로켓단 격파 / 무지개 백화점 2,000원', priority: '중간', desc: '지진 전까지 유용한 땅 타입 기술' },
 ]
 
 export const FIRERED_STORY_TM_OPTIONAL: TmRow[] = [
-  { tm: 'TM02', move: '드래곤크루', target: '리자몽', location: '챔피언로드 1층 북쪽', priority: '중간', desc: '후반 드래곤 견제 보조' },
+  { tm: 'TM02', move: '드래곤클로', target: '리자몽', location: '챔피언로드 1층 북쪽', priority: '중간', desc: '후반 드래곤 견제 보조' },
   { tm: 'TM35', move: '화염방사', target: '리자몽 선택', location: '무지개시티 게임코너 4,000코인', priority: '낮음', desc: '리자몽은 레벨업으로 습득 가능하므로 보통 아껴도 됨' },
   { tm: 'TM38', move: '불대문자', target: '리자몽 선택', location: '홍련섬 체육관, 강연 격파 보상', priority: '선택', desc: '고위력 불꽃 기술. 명중률은 화염방사보다 낮음' },
   { tm: 'TM27', move: '은혜갚기', target: '잠만보 / 리자몽', location: '12번도로 게이트 NPC', priority: '중간', desc: '친밀도 높은 포켓몬에게 강력한 노말 물리기' },
@@ -288,9 +288,9 @@ export const FIRERED_STORY_STAGES: PartyStage[] = [
     title: '초반: 태초마을 ~ 회색시티',
     members: ['파이리', '망키', '니드런♂', '피카츄', '자유 슬롯', '자유 슬롯'],
     goals: [
-      '파이리는 메탈크로우를 확보해 웅전에서 보조 딜러로 사용한다.',
+      '파이리는 메탈클로를 확보해 웅전에서 보조 딜러로 사용한다.',
       '망키는 로우킥으로 꼬마돌과 롱스톤을 처리한다.',
-      '니드런♂은 레벨 12 두번치기를 배우면 웅전 보조가 가능하다.',
+      '니드런♂은 레벨 12 두번차기를 배우면 웅전 보조가 가능하다.',
       '피카츄는 상록숲에서 포획해 이슬전까지 육성한다.',
     ],
   },
@@ -329,7 +329,7 @@ export const FIRERED_STORY_STAGES: PartyStage[] = [
     goals: [
       '쥬피썬더: 10만볼트 준비',
       '라프라스: 파도타기, 냉동빔 준비',
-      '니드킹: 지진, 깨트리다 준비',
+      '니드킹: 지진, 깨뜨리다 준비',
       '잠만보: 섀도볼, 은혜갚기 또는 누르기 준비',
       '나시: 사이코키네시스, 기가드레인, 수면가루 준비',
       '리자몽: 화염방사, 공중날기, 베어가르기 준비',
@@ -347,12 +347,12 @@ export const FIRERED_STORY_GYMS: BossSection[] = [
   {
     title: '회색체육관 웅',
     rows: [
-      { opponent: '꼬마돌', answer: '망키 로우킥 / 파이리 메탈크로우 / 니드런♂ 두번치기' },
-      { opponent: '롱스톤', answer: '망키 로우킥 / 파이리 메탈크로우 / 니드런♂ 두번치기' },
+      { opponent: '꼬마돌', answer: '망키 로우킥 / 파이리 메탈클로 / 니드런♂ 두번차기' },
+      { opponent: '롱스톤', answer: '망키 로우킥 / 파이리 메탈클로 / 니드런♂ 두번차기' },
     ],
     notes: [
       '파이리 단독으로도 가능하지만 안정성은 망키가 가장 높다.',
-      '니드런♂을 레벨 12까지 올려 두번치기를 배우면 웅전 난도가 크게 내려간다.',
+      '니드런♂을 레벨 12까지 올려 두번차기를 배우면 웅전 난도가 크게 내려간다.',
     ],
   },
   {
@@ -366,7 +366,7 @@ export const FIRERED_STORY_GYMS: BossSection[] = [
   {
     title: '갈색체육관 마티스',
     rows: [
-      { opponent: '찌리리공', answer: '니드킹 구멍파기 / 두번치기' },
+      { opponent: '찌리리공', answer: '니드킹 구멍파기 / 두번차기' },
       { opponent: '피카츄', answer: '니드킹 구멍파기' },
       { opponent: '라이츄', answer: '니드킹 구멍파기' },
     ],
@@ -502,7 +502,7 @@ export const FIRERED_STORY_CHAMPION_NOTES = [
 ]
 
 export const FIRERED_STORY_SUMMARY_TABLE: { stage: string; strategy: string }[] = [
-  { stage: '웅전', strategy: '망키 로우킥, 니드런♂ 두번치기, 파이리 메탈크로우로 돌파' },
+  { stage: '웅전', strategy: '망키 로우킥, 니드런♂ 두번차기, 파이리 메탈클로로 돌파' },
   { stage: '이슬전', strategy: '뚜벅쵸 수면가루와 피카츄 전기 기술로 보완' },
   { stage: '중반', strategy: '니드킹과 쥬피썬더 완성으로 타입 대응 폭 확장' },
   { stage: '후반', strategy: '라프라스 합류 후 물·얼음 타입 전력 완성' },
@@ -694,13 +694,13 @@ export const FIRERED_STORY_NAME_TO_ID = new Map(
  * 기술로 잘못 링크된다. 본문에 새 기술을 쓰면 여기에도 추가해야 링크가 걸린다.
  */
 export const FIRERED_STORY_MOVE_NAMES: ReadonlySet<string> = new Set([
-  '사이코키네시스', '10만볼트', '기가드레인', '난동부리기', '드래곤크루', '메탈크로우',
+  '사이코키네시스', '10만볼트', '기가드레인', '난동부리기', '드래곤클로', '메탈클로',
   '멸망의노래', '바늘미사일', '베어가르기', '스피드스타', '잎날가르기', '전기자석파',
-  '폭포오르기', 'HP회복', '강철날개', '공중날기', '구멍파기', '깨트리다',
-  '날개치기', '두번치기', '바위깨기', '불대문자', '비바라기', '빛의장막',
+  '폭포오르기', 'HP회복', '강철날개', '공중날기', '구멍파기', '깨뜨리다',
+  '날개치기', '두번차기', '바위깨기', '불대문자', '비바라기', '빛의장막',
   '뿔찌르기', '수면가루', '스톤샤워', '씨뿌리기', '암석봉인', '오로라빔',
   '은혜갚기', '이상한빛', '작아지기', '전광석화', '파도타기', '화염방사',
-  '냉동빔', '누르기', '메가폰', '섀도볼', '솔라빔', '잠자기',
+  '냉동빔', '누르기', '메가혼', '섀도볼', '솔라빔', '잠자기',
   '전격파', '풀베기', '플래시', '괴력', '물기', '번개',
   '봉인', '분화', '지진', '쾌청',
 ])
