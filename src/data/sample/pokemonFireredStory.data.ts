@@ -347,8 +347,8 @@ export const FIRERED_STORY_GYMS: BossSection[] = [
   {
     title: '회색체육관 웅',
     rows: [
-      { opponent: '꼬마돌', answer: '망키 로우킥 / 파이리 메탈클로 / 니드런♂ 두번차기' },
-      { opponent: '롱스톤', answer: '망키 로우킥 / 파이리 메탈클로 / 니드런♂ 두번차기' },
+      { opponent: '꼬마돌 Lv.12 (선두, 바위/땅)', answer: '망키 로우킥 (격투 2배) / 파이리 메탈클로 / 니드런♂ 두번차기' },
+      { opponent: '롱스톤 Lv.14 (바위/땅)', answer: '망키 로우킥 (격투 2배) / 니드런♂ 두번차기' },
     ],
     notes: [
       '파이리 단독으로도 가능하지만 안정성은 망키가 가장 높다.',
@@ -358,35 +358,36 @@ export const FIRERED_STORY_GYMS: BossSection[] = [
   {
     title: '블루체육관 이슬',
     rows: [
-      { opponent: '별가사리', answer: '피카츄 / 뚜벅쵸' },
-      { opponent: '아쿠스타', answer: '뚜벅쵸 수면가루 + 흡수계 기술 / 피카츄 전기 기술' },
+      { opponent: '별가사리 Lv.18 (선두)', answer: '피카츄 전기 기술 (2배) / 뚜벅쵸 풀 기술 (2배)' },
+      { opponent: '아쿠스타 Lv.21 (물/에스퍼)', answer: '뚜벅쵸 수면가루 + 흡수계 / 피카츄 전기 기술' },
     ],
     notes: ['파이리 스타팅의 최대 초반 고비다.', '뚜벅쵸의 수면가루와 피카츄의 전기 기술을 함께 쓰면 안정적이다.'],
   },
   {
     title: '갈색체육관 마티스',
     rows: [
-      { opponent: '찌리리공', answer: '니드킹 구멍파기 / 두번차기' },
-      { opponent: '피카츄', answer: '니드킹 구멍파기' },
-      { opponent: '라이츄', answer: '니드킹 구멍파기' },
+      { opponent: '찌리리공 Lv.21 (선두)', answer: '니드킹 구멍파기 (땅 2배)' },
+      { opponent: '피카츄 Lv.18', answer: '니드킹 구멍파기' },
+      { opponent: '라이츄 Lv.24', answer: '니드킹 구멍파기' },
     ],
     notes: ['니드킹이 있으면 매우 쉽다.', '전기 타입 기술은 니드킹에게 통하지 않으므로 안정적으로 처리 가능하다.'],
   },
   {
     title: '무지개체육관 민화',
     rows: [
-      { opponent: '우츠동', answer: '리자몽 / 리자드 불꽃 기술' },
-      { opponent: '덩쿠리', answer: '리자몽 / 리자드 불꽃 기술' },
-      { opponent: '라플레시아', answer: '리자몽 / 리자드 불꽃 기술' },
+      { opponent: '우츠보트 Lv.29 (선두, 풀/독)', answer: '리자몽·리자드 불꽃 기술 (2배)' },
+      { opponent: '덩쿠리 Lv.24 (풀)', answer: '리자몽·리자드 불꽃 기술 (2배)' },
+      { opponent: '라플레시아 Lv.29 (풀/독)', answer: '리자몽·리자드 불꽃 기술 (2배)' },
     ],
     notes: ['파이리 스타팅이 가장 편해지는 구간이다.', '민화 격파 후 기가드레인을 얻어 냄새꼬 또는 나시에게 줄 수 있다.'],
   },
   {
     title: '연분홍체육관 독수',
     rows: [
-      { opponent: '또도가스', answer: '리자몽 화염방사 / 나시 사이코키네시스 / 잠만보' },
-      { opponent: '질뻐기', answer: '니드킹 지면 기술 / 나시 사이코키네시스' },
-      { opponent: '또도가스', answer: '리자몽 화염방사 / 나시 사이코키네시스 / 잠만보' },
+      { opponent: '또가스 Lv.37 (선두)', answer: '나시 사이코키네시스 (에스퍼가 독에 2배) / 리자몽 화염방사' },
+      { opponent: '질뻐기 Lv.39', answer: '나시 사이코키네시스 / 니드킹 지면 기술' },
+      { opponent: '또가스 Lv.37', answer: '나시 사이코키네시스 / 리자몽 화염방사' },
+      { opponent: '또도가스 Lv.43', answer: '에이스. 나시 사이코키네시스 (에스퍼 2배)' },
     ],
     notes: [
       '3세대 또도가스 계열은 부유 특성 때문에 지면 기술이 통하지 않는다.',
@@ -396,10 +397,10 @@ export const FIRERED_STORY_GYMS: BossSection[] = [
   {
     title: '노랑체육관 초련',
     rows: [
-      { opponent: '윤겔라', answer: '잠만보 섀도볼 / 쥬피썬더 물기' },
-      { opponent: '마임맨', answer: '잠만보 섀도볼 / 리자몽 화염방사' },
-      { opponent: '도나리', answer: '리자몽 화염방사' },
-      { opponent: '후딘', answer: '잠만보 섀도볼 / 쥬피썬더 전기자석파 후 처리' },
+      { opponent: '윤겔라 Lv.38 (선두)', answer: '잠만보 섀도볼 (고스트 2배) / 쥬피썬더 물기 (악 2배)' },
+      { opponent: '마임맨 Lv.37', answer: '잠만보 섀도볼 / 리자몽 화염방사' },
+      { opponent: '도나리 Lv.38 (벌레/독)', answer: '리자몽 화염방사 (불꽃 2배)' },
+      { opponent: '후딘 Lv.43', answer: '에이스. 잠만보 섀도볼 / 쥬피썬더 전기자석파 후 처리' },
     ],
     notes: [
       '후딘의 특수 공격이 강하므로 잠만보의 특수내구가 매우 유용하다.',
@@ -409,21 +410,21 @@ export const FIRERED_STORY_GYMS: BossSection[] = [
   {
     title: '홍련체육관 강연',
     rows: [
-      { opponent: '가디', answer: '라프라스 파도타기 / 니드킹 지진' },
-      { opponent: '포니타', answer: '라프라스 파도타기 / 니드킹 지진' },
-      { opponent: '날쌩마', answer: '라프라스 파도타기 / 니드킹 지진' },
-      { opponent: '윈디', answer: '라프라스 파도타기 / 니드킹 지진' },
+      { opponent: '가디 Lv.42 (선두)', answer: '라프라스 파도타기 (물 2배) / 니드킹 지진 (땅 2배)' },
+      { opponent: '포니타 Lv.40', answer: '라프라스 파도타기 / 니드킹 지진' },
+      { opponent: '날쌩마 Lv.42', answer: '라프라스 파도타기 / 니드킹 지진' },
+      { opponent: '윈디 Lv.47', answer: '에이스. 라프라스 파도타기 / 니드킹 지진' },
     ],
     notes: ['라프라스 합류 후라면 매우 안정적이다.', '니드킹의 지면 기술도 강력하지만 화상 변수에 주의한다.'],
   },
   {
     title: '상록체육관 비주기',
     rows: [
-      { opponent: '뿔카노', answer: '라프라스 파도타기 / 나시 기가드레인' },
-      { opponent: '닥트리오', answer: '라프라스 파도타기 / 나시 기가드레인' },
-      { opponent: '니드퀸', answer: '라프라스 파도타기 / 나시 사이코키네시스' },
-      { opponent: '니드킹', answer: '라프라스 파도타기 / 나시 사이코키네시스' },
-      { opponent: '뿔카노', answer: '라프라스 파도타기 / 나시 기가드레인' },
+      { opponent: '뿔카노 Lv.45 (선두, 땅/바위)', answer: '라프라스 파도타기 (물 4배!) / 나시 기가드레인 (풀 4배!)' },
+      { opponent: '닥트리오 Lv.42 (땅)', answer: '라프라스 파도타기 / 나시 기가드레인' },
+      { opponent: '니드퀸 Lv.44', answer: '라프라스 파도타기 / 나시 사이코키네시스' },
+      { opponent: '니드킹 Lv.45', answer: '라프라스 파도타기 / 나시 사이코키네시스' },
+      { opponent: '뿔카노 Lv.50', answer: '에이스. 파이어레드는 마지막도 뿔카노다(1세대는 코뿌리). 라프라스 파도타기 4배' },
     ],
     notes: ['라프라스와 나시가 모두 활약한다.', '격파 후 지진을 얻으면 니드킹에게 배정한다.'],
   },
