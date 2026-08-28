@@ -229,7 +229,7 @@ export const GOLD_STORY_TM_PRIORITY: TmRow[] = [
 ]
 
 export const GOLD_STORY_TM_OPTIONAL: TmRow[] = [
-  { tm: 'TM24', move: '용의숨결', target: '갸라도스', location: '검은먹시티 체육관, 이향 격파 보상', priority: '중간', desc: '드래곤 견제 보조. 필수는 아님' },
+  { tm: 'TM24', move: '용의숨결', target: '갸라도스', location: '용의 굴 — 이향 격파 후 용의이빨을 얻으면 이향에게 받는다', priority: '중간', desc: '드래곤 견제 보조. 필수는 아님' },
   { tm: 'TM29', move: '사이코키네시스', target: '윤겔라 / 고우스트', location: '노랑시티 Mr. Psychic 집 / 무지개시티 게임코너 3,500코인', priority: '낮음', desc: '윤겔라는 레벨업으로 습득 가능하므로 보통 아껴도 됨' },
   { tm: 'TM30', move: '섀도볼', target: '고우스트 비추천', location: '인주시티 체육관, 유빈 격파 보상', priority: '낮음', desc: '2세대 고스트 기술은 물리 판정이라 고우스트와 궁합이 좋지 않음' },
   { tm: 'TM36', move: '오물폭탄', target: '우츠동 / 우츠보트', location: '43번도로, 로켓단 사건 해결 후 NPC', priority: '선택', desc: '우츠동을 끝까지 사용할 경우에만 고려' },
