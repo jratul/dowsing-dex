@@ -106,6 +106,13 @@ export const router = createBrowserRouter([
           })),
       },
       {
+        path: '/guides/pokemon-platinum-walkthrough',
+        lazy: () =>
+          import('./pages/guides/PokemonPlatinumWalkthroughGuidePage').then((m) => ({
+            Component: m.PokemonPlatinumWalkthroughGuidePage,
+          })),
+      },
+      {
         path: '/guides/pokemon-platinum-progress',
         lazy: () =>
           import('./pages/guides/PokemonPlatinumProgressGuidePage').then((m) => ({

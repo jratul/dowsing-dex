@@ -121,6 +121,15 @@ export const SAMPLE_GUIDES: Guide[] = [
     bannerImageUrl: '/images/guides/platinum-boxart.png',
   },
   {
+    slug: 'pokemon-platinum-walkthrough',
+    category: '공략',
+    title: 'Pt 기라티나 6인 완결형 최적화 공략',
+    iconPokemonId: 445,
+    relatedPokemonIds: [392, 398, 405, 419, 407, 445],
+    summary: '비전머신 8개를 최종 6마리 안에서 모두 소화해 전용 비전요원 없이 난천까지 미는 단일 루트. STEP별 진행과 리그 담당표 포함.',
+    bannerImageUrl: '/images/guides/platinum-boxart.png',
+  },
+  {
     slug: 'pokemon-platinum-progress',
     category: '공략',
     title: '플래티넘 진행 조건 가이드 — 어디서 뭘 해야 길이 열리나',

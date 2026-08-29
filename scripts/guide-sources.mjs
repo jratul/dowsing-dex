@@ -18,6 +18,7 @@ const DATA_GAMES = {
   'pokemonHeartgoldStones.data.ts': ['4세대', '하트골드·소울실버'],
   'pokemonHeartgoldMoves.data.ts': ['4세대', '하트골드·소울실버'],
   'pokemonPlatinumStory.data.ts': ['4세대', '플래티넘'],
+  'pokemonPlatinumWalkthrough.data.ts': ['4세대', '플래티넘'],
   'pokemonUnown.data.ts': [null, null], // 여러 게임을 묶은 종합 공략
 }
 
