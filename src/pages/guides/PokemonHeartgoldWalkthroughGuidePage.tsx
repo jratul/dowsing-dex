@@ -355,22 +355,24 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                   </div>
                 )}
 
-                {/* 관장/보스 공략 */}
-                {phase.boss && (
+                {/* 관장/보스 공략 — 관동처럼 연속 체육관은 bosses 배열로 온다 */}
+                {[...(phase.boss ? [phase.boss] : []), ...(phase.bosses ?? [])].map((boss) => (
+                  <div key={boss.leader}>
+                
                   <div className="rounded-lg border border-border bg-surface-hover p-3">
                     <div className="mb-2 flex flex-wrap items-center gap-2">
                       <span className="font-bold text-ink">
-                        {phase.boss.leader} — {phase.boss.gym}
+                        {boss.leader} — {boss.gym}
                       </span>
                       <span className="rounded bg-brand-red/10 px-2 py-0.5 text-xxs font-bold text-brand-red">
-                        {phase.boss.gymType} 타입
+                        {boss.gymType} 타입
                       </span>
-                      <span className="text-xs text-ink-muted">{phase.boss.levels}</span>
+                      <span className="text-xs text-ink-muted">{boss.levels}</span>
                     </div>
-                    <p className="mb-2 text-sm text-ink">{L(phase.boss.note)}</p>
+                    <p className="mb-2 text-sm text-ink">{L(boss.note)}</p>
                     <GuideTable
                       headers={['상대 포켓몬', '대응 방법']}
-                      rows={phase.boss.rows.map((r) => [
+                      rows={boss.rows.map((r) => [
                         <span key="opponent" className="flex flex-wrap items-center gap-1.5">
                           {r.lead && (
                             <span
@@ -386,10 +388,11 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
                       ])}
                     />
                     <p className="mt-2 text-xs font-bold text-brand-red">
-                      획득: {phase.boss.badge}
+                      획득: {boss.badge}
                     </p>
                   </div>
-                )}
+                  </div>
+                ))}
               </div>
             ))}
           </div>
@@ -512,7 +515,7 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
               '헤라크로스는 박치기가 가능한 포켓몬 보유 후 33번도로 나무를 반복 박치기. 확률이 낮으므로 30~50회 시도가 필요할 수 있다.',
               'TM26 지진은 챔피언로드에서 획득. 맘모꾸리가 Lv.40에 지진을 자력 습득하므로 TM을 보존할 수 있다. 블레이범에 배정하면 레드 피카츄 대응이 수월하지만 선택 사항.',
               '맘모꾸리는 얼음샛길 꾸꾸리 → Lv.33 메꾸리 → 원시의힘 소지 상태 레벨업 순으로 진화. TM72 눈사태를 배정하면 목호 망나뇽에 4배 피해.',
-              '관동 이동 시 깨비드릴조 공중날기로 각 도시를 빠르게 순환. 이슬(블루) → 마티스(갈색) → 웅(회색) → 민화(무지개) → 도희(연분홍) → 초련(노랑) → 강연(소용돌이섬) → 블루(상록) 순이 효율적.',
+              '관동 이동 시 깨비드릴조 공중날기로 각 도시를 빠르게 순환. 웅(회색) → 이슬(블루) → 마티스(갈색) → 민화(무지개) → 도희(연분홍) → 초련(노랑) → 강연(소용돌이섬) → 그린(상록) 순이 효율적. 상록 체육관은 앞 7개 배지를 모두 모아야 열리므로 그린이 마지막이다.',
               '레드전은 파티 Lv.70 이상 강력 권장. 은빛산 야생 포켓몬(Lv.35~45)으로 레벨업 가능.',
             ].map((tip, i) => (
               <li key={i} className="flex min-h-7 items-center gap-2 text-sm leading-loose text-ink">
