@@ -138,7 +138,7 @@ const ACHAMO_GUIDE: StarterGuideData = {
     {
       pokemonId: 257,
       pokemon: '번치코',
-      finalMoves: ['화염방사', '깨뜨리다 / 제비반환', '지진 / 바위깨기', '화염방사 / 스피드스타'],
+      finalMoves: ['화염방사', '깨뜨리다 / 제비반환', '지진', '바위깨기 / 스피드스타'],
       moveTable: [
         { move: '화염방사', how: 'TM35', usage: '주력 불꽃 특수기. 3세대에서는 불꽃이 특수 분류' },
         { move: '깨뜨리다', how: 'Lv.습득', usage: '격투 물리기. 방어/특방 하락 있지만 강력' },
@@ -154,7 +154,7 @@ const ACHAMO_GUIDE: StarterGuideData = {
     {
       pokemonId: 282,
       pokemon: '가디안',
-      finalMoves: ['사이코키네시스', '섀도볼', '전기자석파', '사이코키네시스 / 잠자기'],
+      finalMoves: ['사이코키네시스', '섀도볼', '전기자석파', '잠자기'],
       moveTable: [
         { move: '사이코키네시스', how: 'Lv.26', usage: '주력 에스퍼 특수기. 레벨업으로 자연 습득' },
         { move: '섀도볼', how: 'TM30', usage: '고스트/에스퍼 견제. TM30으로 획득' },
@@ -202,18 +202,17 @@ const ACHAMO_GUIDE: StarterGuideData = {
     {
       pokemonId: 279,
       pokemon: '패리퍼',
-      finalMoves: ['파도타기', '공중날기', '물대포', '물의파동 / 공중날기'],
+      finalMoves: ['파도타기', '공중날기', '물대포', '물의파동'],
       moveTable: [
         { move: '파도타기', how: 'HM03', usage: 'HM03 공유. 보조 물 기술' },
         { move: '공중날기', how: 'HM02', usage: 'HM02. 이동 편의성' },
         { move: '물대포', how: 'Lv.1', usage: '물 특수기. 초반 바위 타입 처리' },
         { move: '물의파동', how: 'TM03', usage: '물 특수기. 패리퍼는 풀베기를 못 배운다' },
-        { move: '파도타기', how: 'HM08', usage: 'HM08. 수중 다이브 진행용' },
       ],
       notes: [
         '갈모매(278)를 이른 시점에 포획. 레벨 25에서 패리퍼로 진화.',
         '패리퍼는 HM 담당 포켓몬. 씨카이저가 주력 물 딜러를 맡는다.',
-        '수중 진행에 필수인 다이빙(HM08)을 배정한다.',
+        '★ 패리퍼는 다이빙(HM08)을 배우지 못한다. 수중 진행은 씨카이저가 맡는다.',
       ],
     },
     {
@@ -406,7 +405,7 @@ const MUDKIP_GUIDE: StarterGuideData = {
       pokemon: '보만다',
       finalMoves: ['드래곤클로', '불대문자 / 화염방사', '지진', '공중날기'],
       moveTable: [
-        { move: '드래곤클로', how: 'TM02', usage: '드래곤 물리기. E4 드레이크 파티 처리' },
+        { move: '드래곤클로', how: 'TM02', usage: '드래곤 특수기 — 3세대는 타입으로 물리·특수가 갈린다. E4 드레이크 파티 처리' },
         { move: '불대문자 / 화염방사', how: 'TM38', usage: '불꽃 기술. 강철·풀·얼음 타입 처리' },
         { move: '지진', how: 'TM26', usage: '땅 물리기. 전기·독 처리. 대짱이와 분담 가능' },
         { move: '공중날기', how: 'HM02', usage: 'HM02. 이동 + 비행 물리기' },
@@ -420,12 +419,12 @@ const MUDKIP_GUIDE: StarterGuideData = {
     {
       pokemonId: 354,
       pokemon: '다크펫',
-      finalMoves: ['섀도볼', '혹독한빛', '염원구슬', '밤의소란'],
+      finalMoves: ['섀도볼', '도깨비불', '속여때리기', '탁쳐서떨구기'],
       moveTable: [
-        { move: '섀도볼', how: 'TM30', usage: '주력 고스트 특수기' },
-        { move: '혹독한빛', how: 'Lv.습득', usage: '특수 공격력 하락. 보스전 안정화' },
-        { move: '염원구슬', how: 'Lv.습득', usage: '고스트 물리기. 선택지' },
-        { move: '밤의소란', how: 'Lv.습득', usage: '노말 특수기. 구매하기 쉬운 기술' },
+        { move: '섀도볼', how: 'TM30', usage: '주력 고스트 물리기 — 3세대의 고스트는 물리 분류다. Lv.48 에 자력으로도 배운다' },
+        { move: '도깨비불', how: 'Lv.32', usage: '상대를 화상 — 물리 공격력이 반감된다. 보스전 안정화' },
+        { move: '속여때리기', how: 'Lv.39', usage: '악 특수기. 반드시 명중한다' },
+        { move: '탁쳐서떨구기', how: 'Lv.1', usage: '악 특수기. 상대가 지닌 도구를 떨어뜨린다' },
       ],
       notes: [
         '어둠대신(353)→다크펫(354). 어둠대신은 주로 밤에 출현. 121번도로 등에서 포획.',
@@ -604,8 +603,8 @@ const TREECKO_GUIDE: StarterGuideData = {
       finalMoves: ['리프블레이드', '따라가때리기 / 누르기', '바위깨기', '기가드레인 / 번개펀치'],
       moveTable: [
         { move: '리프블레이드', how: 'Lv.습득', usage: '풀 특수기. 주력 기술' },
-        { move: '따라가때리기', how: 'Lv.습득', usage: '노말 물리기. 3세대 전용기. 상대 능력 변화를 역이용' },
-        { move: '바위깨기', how: 'TM23', usage: '강철 물리기. 바위·얼음 타입 처리. TM23' },
+        { move: '따라가때리기', how: 'Lv.17', usage: '악 특수기. 교체하려는 상대에게 위력이 2배가 된다. 에스퍼·고스트 견제' },
+        { move: '바위깨기', how: 'HM06', usage: '격투 물리기. 바위·얼음·강철 타입 처리' },
         { move: '기가드레인', how: 'TM', usage: '풀 특수기. 잎날가르기보다 위력이 높은 버전' },
       ],
       notes: [
@@ -617,12 +616,12 @@ const TREECKO_GUIDE: StarterGuideData = {
     {
       pokemonId: 365,
       pokemon: '씨카이저',
-      finalMoves: ['파도타기', '냉동빔', '폭포오르기', '아이언테일 / 누르기'],
+      finalMoves: ['파도타기', '냉동빔', '폭포오르기', '다이빙'],
       moveTable: [
         { move: '파도타기', how: 'HM03', usage: 'HM03. 물 특수기 + 이동' },
         { move: '냉동빔', how: 'TM13', usage: '얼음 특수기. E4 드레이크 파티 핵심' },
         { move: '폭포오르기', how: 'HM07', usage: 'HM07. 후반 진행 필수' },
-        { move: '바위깨기', how: 'TM23', usage: '바위 타입 물리 견제' },
+        { move: '다이빙', how: 'HM08', usage: 'HM08. 수중 진행 필수. 패리퍼가 못 배우므로 씨카이저가 맡는다' },
       ],
       notes: [
         '나무지기 파티에서 씨카이저의 역할이 특히 중요하다. 불꽃(나무킹 약점)을 파도타기로 커버.',
@@ -667,8 +666,8 @@ const TREECKO_GUIDE: StarterGuideData = {
       moveTable: [
         { move: '칼춤', how: 'Lv.26', usage: '공격력 2배 상승. 물리 딜러 준비 기술' },
         { move: '물기', how: 'Lv.습득', usage: '선제 물리 악 기술. 칼춤 후 강력' },
-        { move: '도둑질', how: 'Lv.습득', usage: '에스퍼 물리기. 격투·독 타입 견제' },
-        { move: '바위깨기', how: 'TM23', usage: '강철 물리기. 바위·얼음 견제' },
+        { move: '도둑질', how: 'TM46', usage: '악 특수기. 에스퍼·고스트 견제 + 상대의 지닌 도구를 빼앗는다' },
+        { move: '바위깨기', how: 'HM06', usage: '격투 물리기. 바위·얼음·강철 견제' },
       ],
       notes: [
         '앱솔은 120번도로에서 포획. 악 타입 물리 딜러.',

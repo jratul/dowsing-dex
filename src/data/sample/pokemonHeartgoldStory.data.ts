@@ -57,7 +57,7 @@ export const HG_STORY_MOVESETS: MoveSetSection[] = [
     moveTable: [
       { move: '화염방사', how: 'Lv.42', usage: '주력 불꽃 특수기. 4세대에서도 여전히 안정적' },
       { move: '솔라빔', how: 'TM22', usage: '물·바위 타입 처리. 맑은날씨 TM 연계 가능' },
-      { move: '번개펀치', how: '기술가르침', usage: '물·비행 타입 물리 견제기' },
+      { move: '번개펀치', how: '기술가르침', usage: '전기 물리기. 물·비행 타입 견제' },
       { move: '지진', how: 'TM26', usage: '레드 피카츄 처리. 독·바위·전기 타입 견제' },
       { move: '화염바퀴', how: 'Lv.20', usage: '화염방사 전까지 주력 불꽃기' },
     ],
@@ -91,9 +91,9 @@ export const HG_STORY_MOVESETS: MoveSetSection[] = [
       { move: '파도타기', how: 'HM03', usage: 'HM03. 주력 물 특수기 겸 이동' },
       { move: '폭포오르기', how: 'HM07', usage: 'HM07. 후반 진행 필수' },
       { move: '괴력', how: 'HM04', usage: 'HM04. 이동 및 물리 공격' },
-      { move: '바다회오리', how: 'HM06', usage: '소용돌이섬 진행용 임시 비전. 이후 삭제' },
+      { move: '바다회오리', how: 'HM05', usage: '소용돌이섬 진행용 임시 비전. 이후 삭제' },
       { move: '얼음엄니', how: 'Lv.32', usage: '얼음 물리기. 드래곤·비행 견제' },
-      { move: '얼어붙은바람', how: 'TM16', usage: '목호 드래곤 보조 견제. 류옹 격파 보상' },
+      { move: '얼어붙은바람', how: '기술가르침', usage: '얼음 특수기. 목호 드래곤 보조 견제. HGSS 에서는 TM 이 아니라 기술가르침이다' },
     ],
     notes: [
       '갸라도스는 파도타기·폭포오르기·괴력을 배워 HM 담당으로 최적이다.',
@@ -109,7 +109,7 @@ export const HG_STORY_MOVESETS: MoveSetSection[] = [
       { move: '메가혼', how: 'Lv.55', usage: '벌레 물리기 위력 120·명중 85. 습득이 Lv.55라 첫 리그에는 못 쓴다' },
       { move: '인파이트', how: 'Lv.37', usage: '격투 물리기. 방어/특방이 낮아지지만 매우 강력' },
       { move: '스톤에지', how: 'TM71', usage: '바위 물리기. 비행·불꽃 견제' },
-      { move: '스톤에지', how: 'TM', usage: '독 물리기. 독 상태이상 효과' },
+      { move: '제비반환', how: 'Lv.13', usage: '비행 물리기. 반드시 명중한다' },
     ],
     notes: [
       '헤라크로스는 HG 전용 박치기 나무 포획 포켓몬. SS에서는 쁘사이저가 나온다.',

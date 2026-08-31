@@ -202,14 +202,14 @@ export const FIRERED_STORY_MOVESETS: MoveSetSection[] = [
   {
     pokemonId: 103,
     pokemon: '나시',
-    finalMoves: ['사이코키네시스', '기가드레인', '기가드레인', '솔라빔 / 빛의장막 / 폭발'],
+    finalMoves: ['사이코키네시스', '기가드레인', '수면가루', '솔라빔 / 빛의장막 / 대폭발'],
     moveTable: [
       { move: '사이코키네시스', how: 'TM29', usage: '주력 에스퍼 기술. 독·격투 타입 처리' },
       { move: '기가드레인', how: 'TM19', usage: '물·땅·바위 타입 견제 및 회복' },
-      { move: '기가드레인', how: 'Lv.37 (나시라)', usage: '포획 및 보스전 보조' },
-      { move: '솔라빔', how: 'Lv.13 (나시라)', usage: '장기전 보조' },
+      { move: '수면가루', how: 'Lv.37 (나시라)', usage: '상대를 잠재운다. 포획 및 보스전 보조' },
+      { move: '씨뿌리기', how: 'Lv.13 (나시라)', usage: '매 턴 상대 HP를 흡수한다. 장기전 보조' },
       { move: '솔라빔', how: 'TM22', usage: '고위력 풀 타입 기술. 쾌청과 연계 시 선택 가능' },
-      { move: '빛의장막', how: 'TM', usage: '특수 공격 대응 보조' },
+      { move: '빛의장막', how: 'TM16', usage: '특수 공격 대응 보조' },
     ],
     notes: [
       '나시는 후반 합류지만 풀 타입과 에스퍼 타입을 동시에 제공한다.',
