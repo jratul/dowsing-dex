@@ -1,6 +1,7 @@
 import type { Learnset, Move } from '../../types/move'
 import { ALL_MOVES } from '../moves/all-moves.generated'
 import { MOVE_DESCRIPTIONS } from '../moves/move-descriptions.generated'
+import { canonicalMoveName } from '../moves/move-aliases'
 
 const MOVE_MAP = new Map(
   ALL_MOVES.map((m) => [m.id, MOVE_DESCRIPTIONS[m.id] ? { ...m, effectKo: MOVE_DESCRIPTIONS[m.id] } : m]),
@@ -13,10 +14,14 @@ export function findMove(id: number): Move | undefined {
   return MOVE_MAP.get(id)
 }
 
-/** 한국어 기술명으로 기술을 찾는다. '기술A / 기술B' 형태의 복합 표기도 처리한다. */
+/**
+ * 한국어 기술명으로 기술을 찾는다. '기술A / 기술B' 형태의 복합 표기도 처리한다.
+ * 세대가 바뀌며 개명된 기술(락클라임 → 록클라임)은 옛 표기로도 찾아진다.
+ */
 export function findMoveByName(nameKo: string): Move | undefined {
   for (const part of nameKo.split(' / ')) {
-    const found = MOVE_NAME_MAP.get(part.trim())
+    const key = part.trim()
+    const found = MOVE_NAME_MAP.get(key) ?? MOVE_NAME_MAP.get(canonicalMoveName(key))
     if (found) return found
   }
   return undefined

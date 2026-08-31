@@ -13,6 +13,7 @@ const load = async (rel) => import(pathToFileURL(new URL(rel, ROOT).pathname.rep
 
 const { TM_INDEX } = await load('src/data/moves/tm-index.generated.ts')
 const { ALL_MOVES } = await load('src/data/moves/all-moves.generated.ts')
+const { MOVE_NAME_ALIASES } = await load('src/data/moves/move-aliases.ts')
 const MOVE = new Map(ALL_MOVES.map((m) => [m.id, m.nameKo]))
 const MOVE_NAMES = new Set(ALL_MOVES.map((m) => m.nameKo))
 
@@ -46,6 +47,9 @@ for (const src of guideSources(ROOT)) {
       checked++
       // "지진은", "냉동빔을"처럼 조사가 붙은 형태는 정상이다.
       if (claimed === actual || claimed.startsWith(actual)) continue
+      // 그 세대의 옛 정식 명칭이면 정상이다 (4~8세대 락클라임 = 9세대 록클라임)
+      const alias = MOVE_NAME_ALIASES[claimed] ?? MOVE_NAME_ALIASES[claimed.slice(0, -1)]
+      if (alias && alias.canonical === actual && alias.gens.includes(src.gen)) continue
       const where = `${src.label}:${n + 1}`
       if (MOVE_NAMES.has(claimed)) wrong.push(`${where}  ${tag}(${ver}) → 공략 "${claimed}" / 실제 "${actual}"`)
       else if (!PROSE.has(claimed)) suspect.push(`${where}  ${tag}(${ver}) → 공략 "${claimed}" / 실제 "${actual}"`)

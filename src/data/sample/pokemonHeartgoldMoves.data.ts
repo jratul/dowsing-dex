@@ -293,7 +293,7 @@ export const HGM_HM_PLAN: HmPlan[] = [
   },
   {
     hm: 'HM08',
-    move: '록클라임',
+    move: '락클라임',
     category: '물리',
     holder: '임시 담당',
     holderIds: [],
@@ -419,7 +419,7 @@ export const HGM_CHECKLIST: { group: string; items: string[] }[] = [
       '파도타기는 라프라스 같은 특수형 물 포켓몬에게',
       '폭포오르기는 갸라도스·장크로다일 같은 물리형에게',
       '공중날기는 비행 타입 주력에게',
-      '록클라임은 임시 담당에게 배정',
+      '락클라임은 임시 담당에게 배정',
       '주력에게 불필요한 HM을 무작정 넣지 않기',
     ],
   },

@@ -402,19 +402,8 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
         </div>
       </Card>
 
-      {/* 진화 타이밍 가이드 */}
-      <Card className="mb-6">
-        <div className="p-4">
-          <SectionHeading>진화 타이밍 가이드</SectionHeading>
-          <GuideTable
-            headers={['포켓몬', '진화 조건', '목표 시기', '비고']}
-            rows={HGW_LEVEL_MILESTONES.map((m) => [L(m.member), L(m.evolution), m.byWhen, L(m.note)])}
-          />
-        </div>
-      </Card>
-
       {/* 바톤터치 — 깨비드릴조 → 칠색조 */}
-      <Card className="mb-6">
+      <Card className="mb-6 border-2 border-brand-red/40" id="baton-hooh">
         <div className="p-4">
           <SectionHeading>바톤터치 — 깨비드릴조 → 칠색조</SectionHeading>
           <p className="mb-4 text-sm text-ink-muted">
@@ -473,6 +462,17 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
           <p className="mt-4 rounded-lg border border-border bg-surface-hover p-3 text-sm text-ink">
             {L(HGW_HOOH_TRADEOFF.verdict)}
           </p>
+        </div>
+      </Card>
+
+      {/* 진화 타이밍 가이드 */}
+      <Card className="mb-6">
+        <div className="p-4">
+          <SectionHeading>진화 타이밍 가이드</SectionHeading>
+          <GuideTable
+            headers={['포켓몬', '진화 조건', '목표 시기', '비고']}
+            rows={HGW_LEVEL_MILESTONES.map((m) => [L(m.member), L(m.evolution), m.byWhen, L(m.note)])}
+          />
         </div>
       </Card>
 
@@ -581,7 +581,8 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
               '헤라크로스는 박치기가 가능한 포켓몬 보유 후 33번도로 나무를 반복 박치기. 확률이 낮으므로 30~50회 시도가 필요할 수 있다.',
               'TM26 지진은 챔피언로드에서 획득. 맘모꾸리가 Lv.40에 지진을 자력 습득하므로 TM을 보존할 수 있다. 블레이범에 배정하면 레드 피카츄 대응이 수월하지만 선택 사항.',
               '맘모꾸리는 얼음샛길 꾸꾸리 → Lv.33 메꾸리 → 원시의힘 소지 상태 레벨업 순으로 진화. TM72 눈사태를 배정하면 목호 망나뇽에 4배 피해.',
-              '관동 이동 시 깨비드릴조 공중날기로 각 도시를 빠르게 순환. 웅(회색) → 이슬(블루) → 마티스(갈색) → 민화(무지개) → 도희(연분홍) → 초련(노랑) → 강연(소용돌이섬) → 그린(상록) 순이 효율적. 상록 체육관은 앞 7개 배지를 모두 모아야 열리므로 그린이 마지막이다.',
+              '관동은 상륙 직후 공중날기가 거의 쓸모없다 — 가 본 곳에만 날 수 있는데 처음 아는 곳이 갈색시티뿐이다. 첫 한 바퀴는 걸어서 지도를 넓히고, 그 뒤 되돌아갈 때부터 깨비드릴조를 쓴다.',
+              '관동 이동 순서는 지형이 정해 준다 — 갈색(마티스) → 노랑(초련) → 블루(이슬) → 무인발전소 → 회색(웅) → 무지개(민화) → 연분홍(도희) → 쌍둥이섬(강연) → 홍련섬(그린 대면) → 상록(그린). 상록 체육관은 7배지와 홍련섬 대면을 모두 채워야 열린다.',
               '레드전은 파티 Lv.70 이상 강력 권장. 은빛산 야생 포켓몬(Lv.35~45)으로 레벨업 가능.',
             ].map((tip, i) => (
               <li key={i} className="flex min-h-7 items-center gap-2 text-sm leading-loose text-ink">

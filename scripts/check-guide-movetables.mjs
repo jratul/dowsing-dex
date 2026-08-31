@@ -21,6 +21,7 @@ const load = async (rel) => import(pathToFileURL(abs(rel)).href)
 const { TM_INDEX } = await load('src/data/moves/tm-index.generated.ts')
 const { ALL_MOVES } = await load('src/data/moves/all-moves.generated.ts')
 const { ALL_POKEMON, ALL_EVOLUTION_LINES } = await load('src/data/pokedex/pokedex.generated.ts')
+const { MOVE_NAME_ALIASES } = await load('src/data/moves/move-aliases.ts')
 
 const MOVE_NAME = new Map(ALL_MOVES.map((m) => [m.id, m.nameKo]))
 const MOVE_NAMES = new Set(ALL_MOVES.map((m) => m.nameKo))
@@ -104,7 +105,9 @@ for (const src of guideSources(ROOT)) {
     if (fm && curId) {
       const seen = new Set()
       for (const raw of [...fm[1].matchAll(/'([^']+)'/g)].map((m) => m[1])) {
-        for (const nm of splitMoves(raw)) {
+        for (const raw2 of splitMoves(raw)) {
+          const al = MOVE_NAME_ALIASES[raw2]
+          const nm = al && al.gens.includes(src.gen) ? al.canonical : raw2
           if (seen.has(nm)) dupFinal.push(`${src.label}:${n + 1} ${POKE_NAME.get(curId)} — "${nm}" 중복`)
           seen.add(nm)
           if (!MOVE_NAMES.has(nm)) noMove.push(`${src.label}:${n + 1} finalMoves "${nm}"`)
@@ -120,7 +123,11 @@ for (const src of guideSources(ROOT)) {
     checked++
 
     // "불대문자 / 화염방사" 처럼 대안을 함께 적은 칸이 있다. 첫 기술을 기준으로 본다.
-    const parts = splitMoves(rawMove)
+    // 세대에 맞는 옛 정식 명칭(락클라임 등)은 현재 이름으로 되돌려 대조한다
+    const parts = splitMoves(rawMove).map((p) => {
+      const a = MOVE_NAME_ALIASES[p]
+      return a && a.gens.includes(src.gen) ? a.canonical : p
+    })
     const unknown = parts.filter((p) => !MOVE_NAMES.has(p))
     if (unknown.length) {
       unknown.forEach((p) => noMove.push(`${where} — "${p}"`))
