@@ -61,9 +61,29 @@ const findings = []
 let checked = 0
 
 for (const src of guideSources(ROOT)) {
+  // 마크다운 원문은 상대를 제목에 두고 대응만 본문에 적는다.
+  //   ### 갸라도스
+  //   > **렌트라 전기 4배**
+  // 이때 배율의 상대는 그 줄이 아니라 바로 위 제목에 있다.
+  // 게다가 주어가 바로 앞 줄에만 있는 경우도 흔하다.
+  //   포푸니라 사용 금지.        ← 주어
+  //   (빈 줄)
+  //   격투 4배 약점.             ← 배율
+  // 그래서 직전 몇 줄에 나온 포켓몬도 후보로 함께 본다.
+  let headingMons = []
+  let recentMons = []
   src.text.split(String.fromCharCode(10)).forEach((line, n) => {
+    if (line.trimStart().startsWith('#')) {
+      const found = POKE_BY_LEN.filter((nm) => line.includes(nm))
+      headingMons = found.length ? found : headingMons
+      recentMons = []
+    }
     const claims = [...line.matchAll(RE_CLAIM)]
-    if (claims.length === 0) return
+    if (claims.length === 0) {
+      const here = POKE_BY_LEN.filter((nm) => line.includes(nm))
+      if (here.length) recentMons = [...here, ...recentMons].slice(0, 6)
+      return
+    }
     // 그 줄에 등장하는 상대 포켓몬과, 대응으로 언급된 기술
     // 배율은 보통 상대 포켓몬 이야기지만, "갸라도스를 내면 전기 4배로 위험하다"처럼
     // 아군 포켓몬을 가리키기도 한다. 상대에서 못 찾으면 줄 전체로 넓힌다.
@@ -72,15 +92,16 @@ for (const src of guideSources(ROOT)) {
     const allMons = POKE_BY_LEN.filter((nm) => line.includes(nm))
     const mons = oppMons.length ? oppMons : allMons
     const moves = MOVE_BY_LEN.filter((nm) => line.includes(nm))
-    if (mons.length === 0 && moves.length === 0) return
+    if (mons.length === 0 && moves.length === 0 && headingMons.length === 0 && recentMons.length === 0) return
 
     for (const c of claims) {
       const [, type, nStr] = c
       const want = Number(nStr)
       checked++
       // (가) 공격 타입으로 읽기 — 줄에 나온 상대 중 하나에게 want 배
-      const asAttack = mons.some((nm) => against(type, typesOf(nm, src.gen)) === want)
-        || allMons.some((nm) => against(type, typesOf(nm, src.gen)) === want)
+      const asAttack = [...mons, ...allMons, ...headingMons, ...recentMons].some(
+        (nm) => against(type, typesOf(nm, src.gen)) === want,
+      )
       // (나) 방어 타입으로 읽기 — 줄에 나온 기술 중 하나가 그 타입에게 want 배
       const asDefend = moves.some((mv) => mult(MOVE.get(mv).type, type) === want)
       // (다) 타입 대 타입 — "드래곤에 얼음 2배"처럼 상대가 포켓몬이 아니라 타입으로 적힌 경우.

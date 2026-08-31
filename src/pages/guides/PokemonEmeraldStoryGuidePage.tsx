@@ -248,7 +248,7 @@ export function PokemonEmeraldStoryGuidePage() {
         <ul className="list-disc space-y-1 pl-5 text-sm text-ink">
           <li>대상 게임: 포켓몬스터 에메랄드버전</li>
           <li>세대 기준: 3세대 원본(루비·사파이어·에메랄드). 오메가루비·알파사파이어 제외</li>
-          <li>특이사항: 에메랄드는 챔피언이 루비/사파이어의 쓰루기 대신 미라(물 타입)임</li>
+          <li>특이사항: 에메랄드는 챔피언이 루비·사파이어의 쓰루기 대신 윤진(물 타입)임</li>
           <li>물리/특수 분류: 3세대에서는 타입 전체가 물리 또는 특수로 구분됨 (기술별 아님)</li>
         </ul>
         <p className="mt-3 text-sm font-bold text-ink-faint">목적</p>

@@ -30,6 +30,18 @@ function resolveMove(word) {
   return undefined
 }
 
+// 마크다운 원문은 "헤라크로스는 Lv.19에 ..." 처럼 주어에 조사가 붙는다.
+function resolvePoke(word) {
+  if (!word) return undefined
+  if (NAME_ID.has(word)) return NAME_ID.get(word)
+  for (const j of JOSA) {
+    if (!word.endsWith(j)) continue
+    const base = word.slice(0, -j.length)
+    if (NAME_ID.has(base)) return NAME_ID.get(base)
+  }
+  return undefined
+}
+
 const cache = new Map()
 async function learnset(id, gen, ver) {
   if (!cache.has(id)) {
@@ -39,7 +51,7 @@ async function learnset(id, gen, ver) {
 }
 
 // 기술명에는 영문·숫자가 섞인다(HP회복, 10만볼트). 한글이 최소 한 글자는 있어야 한다.
-const RE = /(?:([A-Za-z0-9가-힣]*[가-힣][A-Za-z0-9가-힣]*)\s+)?Lv\.(\d+)(?:에|에서)?\s+([A-Za-z0-9가-힣]*[가-힣][A-Za-z0-9가-힣]*)/g
+const RE = /(?:([A-Za-z0-9가-힣]*[가-힣][A-Za-z0-9가-힣]*)\s+)?(?:Lv\.|레벨\s*)(\d+)(?:에|에서)?\s+([A-Za-z0-9가-힣]*[가-힣][A-Za-z0-9가-힣]*)/g
 
 const findings = []
 let checked = 0
@@ -50,7 +62,8 @@ for (const src of guideSources(ROOT)) {
   const ver = src.version
   const lines = src.text.split(LF)
   for (let n = 0; n < lines.length; n++) {
-    const line = lines[n]
+    // 마크다운 강조(**·`)는 이름과 레벨 사이에 끼어들어 패턴을 깨뜨린다
+    const line = lines[n].replace(/[*`]/g, '')
     const pid = line.match(/pokemonId:\s*(\d+)/)
     const before = line.match(/before:\s*'([^']+)'/)
     const after = line.match(/after:\s*'([^']+)'/)
@@ -58,11 +71,11 @@ for (const src of guideSources(ROOT)) {
       const moveId = resolveMove(m[3])
       if (moveId === undefined) continue
       const lv = Number(m[2])
-      const subj = m[1] && NAME_ID.get(m[1])
+      const subj = resolvePoke(m[1])
       // 주어: Lv 바로 앞의 포켓몬 이름이 최우선. 없으면 그 줄이 다루는 포켓몬들로 넓힌다.
       const candidates = subj
         ? [subj]
-        : [before && NAME_ID.get(before[1]), after && NAME_ID.get(after[1]), pid && Number(pid[1])].filter(Boolean)
+        : [resolvePoke(before?.[1]), resolvePoke(after?.[1]), pid && Number(pid[1])].filter(Boolean)
       if (candidates.length === 0) continue
       checked++
       let ok = false

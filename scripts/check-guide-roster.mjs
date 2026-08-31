@@ -16,7 +16,7 @@ const BY_LEN = [...NAMES].sort((a, b) => b.length - a.length)
 const MOVES = new Set(ALL_MOVES.map((m) => m.nameKo))
 
 // 트레이너·라이벌 이름이 포켓몬 이름과 겹치는 경우. 세대 검사에서 제외한다.
-const TRAINER_ALIAS = new Set(['블루', '삐', '글레이시아', '시드니', '일목'])
+const TRAINER_ALIAS = new Set(['블루', '삐', '글레이시아', '시드니', '일목', '지우', '레드', '그린', '실버', '블랙', '랙츠'])
 // 타입명·기술명 조각처럼 포켓몬 나열 사이에 섞여 들어오는 일반 단어.
 const PROSE = new Set([
   '노말', '불꽃', '물', '전기', '풀', '얼음', '격투', '독', '땅', '비행',
