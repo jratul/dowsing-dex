@@ -20,6 +20,9 @@ import {
   HGW_ROLE_COMPARISONS,
   HGW_NAME_TO_ID,
   HGW_MOVE_NAMES,
+  HGW_HOOH_PREREQS,
+  HGW_HOOH_HANDOVER,
+  HGW_HOOH_TRADEOFF,
 } from '../../data/sample/pokemonHeartgoldWalkthrough.data'
 
 // 본문의 포켓몬 이름과 기술 이름을 한 번에 링크로 바꾼다.
@@ -407,6 +410,69 @@ export function PokemonHeartgoldWalkthroughGuidePage() {
             headers={['포켓몬', '진화 조건', '목표 시기', '비고']}
             rows={HGW_LEVEL_MILESTONES.map((m) => [L(m.member), L(m.evolution), m.byWhen, L(m.note)])}
           />
+        </div>
+      </Card>
+
+      {/* 바톤터치 — 깨비드릴조 → 칠색조 */}
+      <Card className="mb-6">
+        <div className="p-4">
+          <SectionHeading>바톤터치 — 깨비드릴조 → 칠색조</SectionHeading>
+          <p className="mb-4 text-sm text-ink-muted">
+            성도 8배지를 모으고 나면 <PokemonLink id={22} />의 남은 역할은 사실상 HM02{' '}
+            <MoveLink name="공중날기" /> 하나입니다. 마침 이 시점에 <PokemonLink id={250} /> Lv.45가
+            열리고, 칠색조도 공중날기를 배웁니다. 슬롯 하나를 그대로 갈아끼우면 남은 구간
+            전체를 더 강한 몸으로 넘어갈 수 있습니다.
+          </p>
+
+          <div className="mb-4 flex flex-wrap items-center gap-2 rounded-lg border border-border bg-surface-hover p-3 text-sm text-ink">
+            <PokemonLink id={22} />
+            <span className="font-bold text-ink-muted">→</span>
+            <PokemonLink id={250} />
+            <span className="text-xs text-ink-muted">
+              성도 8배지 직후 · 사천왕 진입 전 · 인계 항목은 HM02 공중날기 하나
+            </span>
+          </div>
+
+          <p className="mb-2 text-sm font-bold text-ink">1. 칠색조를 잡기까지</p>
+          <GuideTable
+            headers={['순서', '장소', '내용']}
+            rows={HGW_HOOH_PREREQS.map((p) => [p.step, L(p.where), L(p.detail)])}
+          />
+
+          <p className="mt-5 mb-2 text-sm font-bold text-ink">2. 무엇이 인계되고 무엇이 안 되는가</p>
+          <GuideTable
+            headers={['항목', '기존', '칠색조', '비고']}
+            rows={HGW_HOOH_HANDOVER.map((h) => [L(h.item), L(h.before), L(h.after), L(h.note)])}
+          />
+
+          <div className="mt-5 grid gap-3 md:grid-cols-2">
+            <div className="rounded-lg border border-border p-3">
+              <p className="mb-2 text-sm font-bold text-ink">바꾸면 좋은 점</p>
+              <ul className="space-y-1">
+                {HGW_HOOH_TRADEOFF.pros.map((t) => (
+                  <li key={t} className="flex min-h-6 gap-2 text-xs leading-loose text-ink">
+                    <span className="shrink-0 self-start leading-6 font-bold text-brand-red">＋</span>
+                    <span>{L(t)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-lg border border-border p-3">
+              <p className="mb-2 text-sm font-bold text-ink">감수해야 하는 점</p>
+              <ul className="space-y-1">
+                {HGW_HOOH_TRADEOFF.cons.map((t) => (
+                  <li key={t} className="flex min-h-6 gap-2 text-xs leading-loose text-ink">
+                    <span className="shrink-0 self-start leading-6 font-bold text-ink-muted">－</span>
+                    <span>{L(t)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <p className="mt-4 rounded-lg border border-border bg-surface-hover p-3 text-sm text-ink">
+            {L(HGW_HOOH_TRADEOFF.verdict)}
+          </p>
         </div>
       </Card>
 
