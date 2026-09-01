@@ -67,10 +67,10 @@ export const SAMPLE_GUIDES: Guide[] = [
   {
     slug: 'pokemon-heartgold-stones',
     category: '진화',
-    title: '하트골드 진화의 돌 완전 공략 — 9종 입수 방법',
+    title: '하트골드 진화의 돌 완전 공략 — 9종 입수와 진화 시점',
     iconPokemonId: 468,
     relatedPokemonIds: [36, 34, 59, 121, 135, 192, 468, 430, 475],
-    summary: '하트골드·소울실버에서 얻을 수 있는 진화의 돌 9종 전체. 포켓슬론 돔·이수재의 할아버지·포충대회 등 입수 방법과 돌별 진화 대상 정리.',
+    summary: '하트골드·소울실버의 진화의 돌 9종 전체. 입수 방법과 진화 대상은 물론, 25개 진화 하나하나를 언제 시켜야 하는지까지 학습셋으로 대조해 정리했다.',
     bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
   },
   {

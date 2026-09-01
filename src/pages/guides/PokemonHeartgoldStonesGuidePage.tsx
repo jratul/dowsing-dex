@@ -4,7 +4,44 @@ import { Card } from '../../components/ui/Card'
 import { GuideTable } from '../../components/guide/GuideTable'
 import { PokemonLink } from '../../components/guide/PokemonLink'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
-import { HGS_STONES, type StoneEntry } from '../../data/sample/pokemonHeartgoldStones.data'
+import { linkifyGuideText } from '../../lib/linkifyGuideText'
+import {
+  HGS_STONES,
+  HGS_TIMING_RULES,
+  HGS_TIMING_SUMMARY,
+  HGS_TIMING_COMPARISONS,
+  HGS_STONES_NAME_TO_ID,
+  HGS_MOVE_NAMES,
+  type StoneEntry,
+  type StoneTimingRow,
+} from '../../data/sample/pokemonHeartgoldStones.data'
+
+// 본문의 포켓몬 이름과 기술 이름을 한 번에 링크로 바꾼다.
+function L(text: string) {
+  return linkifyGuideText(text, HGS_STONES_NAME_TO_ID, HGS_MOVE_NAMES)
+}
+
+const TIMING_BADGE: Record<StoneTimingRow['timing'], string> = {
+  즉시: 'bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300',
+  조건부: 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300',
+  지연: 'bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300',
+}
+
+function TimingBadge({ timing }: { timing: StoneTimingRow['timing'] }) {
+  return (
+    <span className={`inline-block rounded px-1.5 py-0.5 text-xxs font-bold ${TIMING_BADGE[timing]}`}>
+      {timing}
+    </span>
+  )
+}
+
+function TierBadge({ tier }: { tier: StoneTimingRow['tier'] }) {
+  return (
+    <span className="inline-block rounded bg-surface-hover px-1.5 py-0.5 text-xxs font-bold text-ink-muted">
+      {tier}
+    </span>
+  )
+}
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return <h2 className="mb-3 text-lg font-black text-ink">{children}</h2>
@@ -59,13 +96,20 @@ export function PokemonHeartgoldStonesGuidePage() {
 
       <h1 className="mb-2 text-2xl font-black text-ink">하트골드 진화의 돌 완전 공략</h1>
       <p className="mb-6 text-sm text-ink-muted">
-        하트골드·소울실버(HGSS)에서 얻을 수 있는 진화의 돌 9종 전체 — 진화 대상 포켓몬과 돌별 입수 방법 정리.
+        하트골드·소울실버(HGSS)에서 얻을 수 있는 진화의 돌 9종 전체 — 진화 대상 포켓몬, 돌별
+        입수 방법, 그리고 <b>어떤 포켓몬을 언제 진화시켜야 하는지</b>까지 정리했습니다.
       </p>
 
       {/* 빠른 이동 */}
       <Card className="mb-6 p-4">
         <SectionHeading>돌 목록 (빠른 이동)</SectionHeading>
         <div className="flex flex-wrap gap-2">
+          <a
+            href="#timing"
+            className="rounded-chip border border-brand-red px-2 py-1 text-xs font-bold text-brand-red transition-colors hover:bg-brand-red hover:text-white"
+          >
+            언제 진화시킬 것인가
+          </a>
           {HGS_STONES.map((s) => (
             <a
               key={s.apiName}
@@ -123,6 +167,89 @@ export function PokemonHeartgoldStonesGuidePage() {
             ))}
           </tbody>
         </table>
+      </Card>
+
+      {/* 언제 진화시킬 것인가 */}
+      <Card className="mb-6 border-2 border-brand-red/40 p-4" id="timing">
+        <SectionHeading>언제 진화시킬 것인가</SectionHeading>
+        <p className="mb-4 text-sm text-ink">
+          돌은 아무 때나 쓰면 되는 게 아닙니다. 진화 전에만 배울 수 있는 기술이 있고, 반대로
+          진화해야 표가 열리는 포켓몬도 있습니다. 아래 판단 기준 네 가지를 먼저 보고, 그다음
+          25개 진화의 권장 시점을 확인하세요. 레벨은 모두 하트골드·소울실버 학습셋으로
+          대조했습니다.
+        </p>
+
+        <div className="mb-5 grid gap-3 md:grid-cols-2">
+          {HGS_TIMING_RULES.map((r) => (
+            <div key={r.title} className="rounded-lg border border-border p-3">
+              <p className="mb-1 font-bold text-ink">{r.title}</p>
+              <p className="text-sm text-ink">{L(r.body)}</p>
+            </div>
+          ))}
+        </div>
+
+        <SubHeading>진화 시점 한눈에 보기</SubHeading>
+        <p className="mb-2 text-sm text-ink-muted">
+          <TimingBadge timing="즉시" /> 돌이 생기는 대로 바로 ·{' '}
+          <TimingBadge timing="조건부" /> 특정 기술을 배운 뒤 ·{' '}
+          <TimingBadge timing="지연" /> 최대한 미룬다
+        </p>
+        <div className="mb-5 overflow-x-auto rounded-card border border-border">
+          <table className="w-full border-collapse text-sm">
+            <thead>
+              <tr className="border-b border-border bg-surface-hover">
+                <th className="p-3 text-left font-semibold text-ink">돌</th>
+                <th className="p-3 text-left font-semibold text-ink">진화</th>
+                <th className="p-3 text-center font-semibold text-ink">판단</th>
+                <th className="p-3 text-left font-semibold text-ink">권장 시점</th>
+                <th className="p-3 text-left font-semibold text-ink">이유</th>
+              </tr>
+            </thead>
+            <tbody>
+              {HGS_TIMING_SUMMARY.map((row) => (
+                <tr
+                  key={`${row.stone}-${row.fromId}-${row.toId}`}
+                  className="border-b border-border align-top hover:bg-surface-hover/50"
+                >
+                  <td className="whitespace-nowrap p-3 text-xs font-bold text-ink-muted">{row.stone}</td>
+                  <td className="whitespace-nowrap p-3">
+                    <PokemonLink id={row.fromId} label={row.from} />
+                    <EvoArrow />
+                    <PokemonLink id={row.toId} label={row.to} />
+                  </td>
+                  <td className="whitespace-nowrap p-3 text-center">
+                    <TimingBadge timing={row.timing} />
+                    <div className="mt-1">
+                      <TierBadge tier={row.tier} />
+                    </div>
+                  </td>
+                  <td className="p-3 text-sm font-semibold text-ink">{L(row.when)}</td>
+                  <td className="p-3 text-sm text-ink-muted">{L(row.reason)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <SubHeading>갈리는 선택</SubHeading>
+        <div className="flex flex-col gap-3">
+          {HGS_TIMING_COMPARISONS.map((c) => (
+            <div key={c.title} className="rounded-lg border border-border p-3">
+              <p className="mb-1 font-bold text-ink">{c.title}</p>
+              <p className="mb-2 text-sm text-ink">{L(c.body)}</p>
+              <div className="grid gap-2 md:grid-cols-3">
+                {c.options.map((o) => (
+                  <div key={o.name} className="rounded-lg bg-surface-hover p-2">
+                    <p className="mb-0.5 text-sm font-bold text-ink">
+                      <PokemonLink id={o.pokemonId} label={o.name} />
+                    </p>
+                    <p className="text-xs text-ink">{L(o.verdict)}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </Card>
 
       {/* 공통 입수처: 포켓슬론 돔 */}
