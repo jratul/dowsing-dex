@@ -259,6 +259,7 @@ scripts/
 | `/guides/pokemon-red-evolution` | PokemonRedEvolutionGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-heartgold-story` | PokemonHeartgoldStoryGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-heartgold-walkthrough` | PokemonHeartgoldWalkthroughGuidePage | 정적 전용 라우트 |
+| `/guides/pokemon-heartgold-weekly` | PokemonHeartgoldWeeklyGuidePage | 정적 전용 라우트 (오늘 요일 자동 강조) |
 | `/guides/pokemon-heartgold-stones` | PokemonHeartgoldStonesGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-hgss-collection` | PokemonHGSSCollectionGuidePage | 정적 전용 라우트 (마크다운 원문 파싱) |
 | `/guides/pokemon-heartgold-moves` | PokemonHeartgoldMovesGuidePage | 정적 전용 라우트 (TM/HM 관리) |

@@ -16,6 +16,7 @@ const DATA_GAMES = {
   'pokemonHeartgoldStory.data.ts': ['4세대', '하트골드·소울실버'],
   'pokemonHeartgoldWalkthrough.data.ts': ['4세대', '하트골드·소울실버'],
   'pokemonHeartgoldStones.data.ts': ['4세대', '하트골드·소울실버'],
+  'pokemonHeartgoldWeekly.data.ts': ['4세대', '하트골드·소울실버'],
   'pokemonHeartgoldMoves.data.ts': ['4세대', '하트골드·소울실버'],
   'pokemonPlatinumStory.data.ts': ['4세대', '플래티넘'],
   'pokemonPlatinumWalkthrough.data.ts': ['4세대', '플래티넘'],
