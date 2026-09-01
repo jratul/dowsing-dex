@@ -1,5 +1,7 @@
 import { useState, useMemo } from 'react'
 import { EVOLUTION_ITEMS, BATTLE_ITEMS, type ItemEntry } from '../../data/items.generated'
+import { evolutionsForItem, type ItemEvolution } from '../../lib/evolutionItems'
+import { PokemonLink } from '../../components/guide/PokemonLink'
 
 type TabKey = 'evolution' | 'battle'
 
@@ -28,10 +30,34 @@ function GenBadge({ gen }: { gen: number | null }) {
   )
 }
 
-function ItemRow({ item }: { item: ItemEntry }) {
+/** 이 아이템으로 일어나는 진화를 "이전 → 이후" 한 줄씩 보여준다. */
+function EvolutionCell({ evolutions }: { evolutions: ItemEvolution[] }) {
+  if (evolutions.length === 0) return <span className="text-ink-faint">—</span>
+  return (
+    <ul className="flex flex-col gap-0.5">
+      {evolutions.map((e) => (
+        <li
+          key={`${e.fromId}-${e.toId}`}
+          className="flex min-h-7 flex-wrap items-center gap-1 text-sm leading-loose whitespace-nowrap text-ink"
+        >
+          <PokemonLink id={e.fromId} label={e.from} />
+          <span className="text-ink-faint">→</span>
+          <PokemonLink id={e.toId} label={e.to} />
+          {e.condition && (
+            <span className="rounded bg-surface-hover px-1.5 py-0.5 text-xxs font-bold text-ink-muted">
+              {e.condition}
+            </span>
+          )}
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+function ItemRow({ item, showEvolutions }: { item: ItemEntry; showEvolutions: boolean }) {
   return (
     <tr className="border-b border-border transition-colors hover:bg-surface-hover">
-      <td className="p-3">
+      <td className="p-3 align-top">
         <div className="flex items-center gap-2">
           {item.sprite && (
             <img
@@ -49,7 +75,7 @@ function ItemRow({ item }: { item: ItemEntry }) {
           </div>
         </div>
       </td>
-      <td className="p-3 text-center">
+      <td className="p-3 text-center align-top">
         <div className="flex flex-col items-center gap-1">
           <GenBadge gen={item.generation} />
           <span
@@ -59,7 +85,12 @@ function ItemRow({ item }: { item: ItemEntry }) {
           </span>
         </div>
       </td>
-      <td className="p-3 text-sm text-ink-muted">{item.descKo ?? '—'}</td>
+      <td className="p-3 align-top text-sm text-ink-muted">{item.descKo ?? '—'}</td>
+      {showEvolutions && (
+        <td className="p-3 align-top">
+          <EvolutionCell evolutions={evolutionsForItem(item.nameKo)} />
+        </td>
+      )}
     </tr>
   )
 }
@@ -74,6 +105,9 @@ function ItemTable({ items, label }: { items: ItemEntry[]; label: string }) {
     ) as number[]
     return gens
   }, [items])
+
+  // 그 표에 진화를 일으키는 아이템이 하나도 없으면 열 자체를 만들지 않는다.
+  const showEvolutions = useMemo(() => items.some((i) => evolutionsForItem(i.nameKo).length > 0), [items])
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase()
@@ -135,11 +169,14 @@ function ItemTable({ items, label }: { items: ItemEntry[]; label: string }) {
               <th className="p-3 text-left font-semibold text-ink">아이템명</th>
               <th className="p-3 text-center font-semibold text-ink">세대 / 종류</th>
               <th className="p-3 text-left font-semibold text-ink">효과</th>
+              {showEvolutions && (
+                <th className="p-3 text-left font-semibold text-ink">진화시키는 포켓몬</th>
+              )}
             </tr>
           </thead>
           <tbody>
             {filtered.map((item) => (
-              <ItemRow key={item.id} item={item} />
+              <ItemRow key={item.id} item={item} showEvolutions={showEvolutions} />
             ))}
           </tbody>
         </table>
@@ -183,7 +220,9 @@ export function ItemsPage() {
       {tab === 'evolution' && (
         <>
           <p className="mb-4 text-sm text-ink-muted">
-            진화에 사용되거나 교환 진화 시 지닌 채로 진화하는 아이템 목록.
+            진화에 사용되거나 교환 진화 시 지닌 채로 진화하는 아이템 목록. 오른쪽 칸에 그
+            아이템으로 진화하는 포켓몬을 「이전 → 이후」로 정리했습니다. 알로라·히스이 등
+            리전폼은 이름 앞에 지방을 붙여 원종과 구분했습니다.
           </p>
           <ItemTable items={EVOLUTION_ITEMS} label="진화 아이템" />
         </>
@@ -194,6 +233,8 @@ export function ItemsPage() {
           <p className="mb-4 text-sm text-ink-muted">
             배틀 중 지니게 해서 효과를 발휘하는 아이템 목록.
             구애 아이템, 타입 강화 아이템, 상태이상 유발 아이템 포함.
+            금속코트·왕의징표석·예리한손톱처럼 지닌 채로 진화를 일으키는 아이템은
+            오른쪽 칸에 그 대상을 함께 적었습니다.
           </p>
           <ItemTable items={BATTLE_ITEMS} label="배틀 지니기" />
         </>

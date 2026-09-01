@@ -136,6 +136,16 @@ npm run build:abilities        # PokeAPI에서 특성 한국어 데이터 수집
 
 > `scripts/build-items.mjs`(items.generated.ts 생성)는 npm script 미등록 상태다.
 > 필요하면 `node scripts/build-items.mjs` 로 직접 실행한다.
+> PokeAPI 의 `evolution` 카테고리만 긁으면 **심해의비늘·심해의이빨·축복받은갑옷이 빠진다**
+> (각각 species-specific·picnic 으로 분류돼 있다). 스크립트 안 `EXTRA_EVOLUTION_ITEMS` 에
+> 따로 적어 두었다. 또 PokeAPI 는 신작 아이템의 한국어명을 뒤늦게 채우므로, 생성 파일에
+> `nameKo: null` 이 남아 있으면 다시 돌려 본다 — 2026-09 재생성에서 검은휘석·피트블록·
+> 복합금속 등 8종의 한글명이 그때서야 붙었다.
+>
+> 아이템 → 진화 대상 매핑은 별도 데이터가 아니라 `src/lib/evolutionItems.ts` 가
+> `ALL_EVOLUTION_LINES` 의 트리거 문자열(`"불꽃의돌 사용"`, `"교환 · 소지: 금속코트"`)에서
+> 아이템 이름을 찾아 런타임에 만든다. 그래서 도감을 재생성하면 자동으로 따라온다.
+> 리전폼은 원종과 이름이 같아 `formLabel` 을 앞에 붙여 구분한다(알로라 라이츄).
 
 > `scripts/refresh-levelup-learnsets.mjs`는 by-id 파일의 `levelUp` 배열만 PokeAPI에서
 > 다시 받아 덧씌운다. `fetch:pokedex` 전체 실행(위키 스크래핑 포함, 약 3분)을 돌리지 않고
@@ -240,7 +250,7 @@ scripts/
 | `/encounter` | EncounterPage | 세대·버전별 야생 출현 및 포획 불가 포켓몬 |
 | `/natures` | NaturesPage | 25종 성격 5×5 매트릭스 + 전체 표 |
 | `/abilities` | AbilitiesPage | 특성 313종 세대 필터·검색 |
-| `/items` | ItemsPage | 진화 아이템·배틀 지니기 탭 분리 |
+| `/items` | ItemsPage | 진화 아이템·배틀 지니기 탭 분리 + 아이템별 진화 대상 |
 | `/guides` | GuideListPage | 공략 카드 목록 |
 | `/guides/pokemon-gold-story` | PokemonGoldStoryGuidePage | 정적 전용 라우트 (표/이미지 중심) |
 | `/guides/pokemon-red-story` | PokemonRedStoryGuidePage | 정적 전용 라우트 |

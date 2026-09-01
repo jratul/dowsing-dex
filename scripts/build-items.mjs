@@ -10,6 +10,10 @@ const OUT = resolve(__dirname, '../src/data/items.generated.ts')
 // 진화 아이템 카테고리
 const EVOLUTION_CATEGORIES = ['evolution']
 
+// 'evolution' 카테고리에는 없지만 실제로 진화를 일으키는 아이템.
+// 심해의비늘·심해의이빨은 PokeAPI 에서 species-specific 으로 분류돼 카테고리 수집에 안 걸린다.
+const EXTRA_EVOLUTION_ITEMS = ['deep-sea-scale', 'deep-sea-tooth', 'auspicious-armor']
+
 // 배틀 지니기 카테고리
 const BATTLE_CATEGORIES = ['held-items', 'choice', 'type-enhancement', 'bad-held-items']
 
@@ -59,9 +63,14 @@ async function mapWithConcurrency(items, limit, fn) {
 
 async function fetchCategory(catName) {
   const catData = await fetchJson(`${BASE}/item-category/${catName}/`)
+  return fetchItems(catData.items, catName)
+}
+
+/** @param entries {{name: string, url: string}[]} */
+async function fetchItems(entries, catName) {
   const items = []
 
-  await mapWithConcurrency(catData.items, 20, async (item) => {
+  await mapWithConcurrency(entries, 20, async (item) => {
     try {
       const d = await fetchJson(item.url)
       const id = d.id
@@ -109,6 +118,14 @@ for (const cat of EVOLUTION_CATEGORIES) {
   const items = await fetchCategory(cat)
   evolutionItems.push(...items)
   console.error(`  ${cat}: ${items.length}개`)
+}
+{
+  const extra = await fetchItems(
+    EXTRA_EVOLUTION_ITEMS.map((name) => ({ name, url: `${BASE}/item/${name}/` })),
+    'evolution',
+  )
+  evolutionItems.push(...extra)
+  console.error(`  (카테고리 밖 추가): ${extra.length}개`)
 }
 
 console.error('배틀 지니기 아이템 수집 중...')
