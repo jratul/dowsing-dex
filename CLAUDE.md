@@ -26,6 +26,22 @@ npm run build:move-descriptions  # PokeAPI에서 기술 한국어 설명 수집 
 npm run build:abilities        # PokeAPI에서 특성 한국어 데이터 수집 → abilities.generated.ts
 ```
 
+> `scripts/build-encounter-times.mjs`는 **야생 출현의 시간대 제한**만 따로 수집한다.
+> 출현 장소 문자열은 한국어 위키에서 오는데(PokeAPI 는 지역명 한글이 없다) **위키는
+> 시간대를 거의 안 적어 둔다 — 전 세대를 통틀어 12건뿐이다.** 반면 PokeAPI 는
+> `condition_values` 에 `time-morning`/`time-day`/`time-night` 을 구조적으로 갖고 있어,
+> 장소는 위키에서 시간대는 여기서 받아 합친다. 약 15초 걸린다.
+>
+> ```bash
+> node scripts/build-encounter-times.mjs            # 전체
+> node scripts/build-encounter-times.mjs --limit 60 # 표본만 빠르게 확인
+> ```
+>
+> 판정 규칙 두 가지가 중요하다 — **시간 조건이 없는 조우가 하나라도 있으면 태그를 안 붙인다**
+> (아무 때나 나온다는 뜻). 그리고 **사파리존·대습초원은 아예 제외한다**: 그 구역은 플레이어가
+> 놓은 블록에 따라 달라지는데 PokeAPI 가 "아침·낮·밤 전부"로 적어 두어, 그대로 두면 사파리에
+> 나오는 종이 전부 "아무 때나"로 뭉개진다(니로우가 밤 표시를 못 받았다).
+
 > `scripts/build-hgss-encounter-rates.mjs`(HGSS 수집 가이드의 야생 출현 확률)도 npm script
 > 미등록 상태다. `node scripts/build-hgss-encounter-rates.mjs` 로 직접 실행한다.
 > `hgss-collection.md`의 지역·방법 라벨을 파싱해 PokeAPI 4세대 조우 확률을 붙인다.
@@ -203,6 +219,7 @@ src/
     items.generated.ts                # 진화/배틀 아이템 (build-items.mjs 생성)
     guides/hgss-collection.md         # HGSS·기라티나PT 수집 가이드 원문 (?raw 임포트 후 런타임 파싱)
     guides/hgss-encounter-rates.generated.ts  # 위 가이드의 야생 출현 확률 (build-hgss-encounter-rates.mjs 생성)
+    encounter-times.generated.ts      # 야생 출현의 시간대 제한 (build-encounter-times.mjs 생성)
     sample/                           # 도우미 함수 (findSamplePokemon, findMove 등) + 공략 데이터
       flavorTexts.ts                  # PokeAPI 도감 설명 온디맨드 fetch 유틸
       pokemonHeartgoldWalkthrough.data.ts  # 하트골드 최고효율 진행 공략 데이터 (11 Phase)
@@ -214,6 +231,7 @@ scripts/
   build-move-descriptions.mjs # PokeAPI 기술 한국어 설명 수집 → move-descriptions.generated.ts 출력
   build-abilities.mjs         # PokeAPI 특성 한국어 데이터 수집 → abilities.generated.ts 출력
   build-items.mjs             # PokeAPI 진화/배틀 아이템 데이터 수집 → items.generated.ts 출력
+  build-encounter-times.mjs   # PokeAPI 조우 조건에서 시간대 제한만 수집 → encounter-times.generated.ts 출력
   refresh-levelup-learnsets.mjs # by-id/*.generated.ts 의 levelUp만 PokeAPI에서 재동기화
   version-groups.mjs          # 세대별 게임판 라벨 ↔ PokeAPI version group 매핑 (위 두 스크립트가 공유)
 ```
@@ -247,7 +265,7 @@ scripts/
 | `/pokemon/:id` | PokemonDetailPage | 도감 상세 (스탯·기술·출현) |
 | `/types` | TypeChartPage | 18×18 타입 상성표 + 계산기 |
 | `/tm` | TmListPage | 세대·버전별 TM/HM 목록 + 배울 수 있는 포켓몬 |
-| `/encounter` | EncounterPage | 세대·버전별 야생 출현 및 포획 불가 포켓몬 |
+| `/encounter` | EncounterPage | 세대·버전별 야생 출현 및 포획 불가 포켓몬 + 시간대 제한 표시 |
 | `/natures` | NaturesPage | 25종 성격 5×5 매트릭스 + 전체 표 |
 | `/abilities` | AbilitiesPage | 특성 313종 세대 필터·검색 |
 | `/items` | ItemsPage | 진화 아이템·배틀 지니기 탭 분리 + 아이템별 진화 대상 |

@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { SAMPLE_POKEMON } from '../../data/sample/pokemon.sample'
+import { ENCOUNTER_TIMES } from '../../data/encounter-times.generated'
 import { TypeBadge } from '../../components/pokemon/TypeBadge'
 import { cn } from '../../lib/cn'
 import type { Pokemon } from '../../types/pokemon'
@@ -32,10 +33,25 @@ const GEN_VERSION_ORDER: Record<number, string[]> = (() => {
   return result
 })()
 
+interface EncounterInfo {
+  version: string
+  location: string
+  /** 그 시간대에만 나올 때만 값이 있다. "밤", "아침·낮" 등 */
+  time?: string
+}
+
 interface PokemonEntry {
   pokemon: Pokemon
   catchable: boolean
-  info: string[]     // 출현 장소 / 획득 방법 (버전명 포함)
+  info: EncounterInfo[]
+}
+
+/**
+ * 출현 장소 문자열(한국어 위키)에는 시간대가 거의 안 적혀 있어서, PokeAPI 의
+ * 조우 조건에서 따로 뽑아 둔 표를 본다. 값이 있으면 그 시간대에만 나온다는 뜻이다.
+ */
+function timeTag(pokemonId: number, version: string): string | undefined {
+  return ENCOUNTER_TIMES[pokemonId]?.[version]
 }
 
 export function EncounterPage() {
@@ -65,22 +81,17 @@ export function EncounterPage() {
       const hasCatch = locs.some((l) => !l.unavailable)
       const prev = seen.get(p.id)
 
+      const rows: EncounterInfo[] = locs
+        .filter((l) => l.location)
+        .map((l) => ({ version: l.version, location: l.location!, time: timeTag(p.id, l.version) }))
+
       if (!prev) {
-        seen.set(p.id, {
-          pokemon: p,
-          catchable: hasCatch,
-          info: locs
-            .filter((l) => l.location)
-            .map((l) => (selectedVersion === 'ALL' ? `[${l.version}] ${l.location}` : l.location!)),
-        })
+        seen.set(p.id, { pokemon: p, catchable: hasCatch, info: rows })
       } else {
         // 같은 포켓몬이 여러 버전에 중복 등장 → 병합
         if (hasCatch) prev.catchable = true
-        for (const l of locs) {
-          if (l.location) {
-            const label = selectedVersion === 'ALL' ? `[${l.version}] ${l.location}` : l.location
-            if (!prev.info.includes(label)) prev.info.push(label)
-          }
+        for (const r of rows) {
+          if (!prev.info.some((x) => x.version === r.version && x.location === r.location)) prev.info.push(r)
         }
       }
     }
@@ -99,7 +110,17 @@ export function EncounterPage() {
   return (
     <div className="mx-auto w-full lg:w-4/5 px-4 py-6">
       <h1 className="mb-1 text-2xl font-black text-ink">출현 포켓몬</h1>
-      <p className="mb-5 text-sm text-ink-faint">세대·버전별 야생 출현 포켓몬과 포획 불가 포켓몬 목록</p>
+      <p className="mb-2 text-sm text-ink-faint">세대·버전별 야생 출현 포켓몬과 포획 불가 포켓몬 목록</p>
+      <p className="mb-5 flex flex-wrap items-center gap-1.5 text-xs text-ink-muted">
+        <span className="rounded bg-indigo-100 px-1 font-bold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">
+          (밤)
+        </span>
+        <span className="rounded bg-amber-100 px-1 font-bold text-amber-700 dark:bg-amber-900/40 dark:text-amber-300">
+          (아침·낮)
+        </span>
+        처럼 붙은 것은 <b>그 시간대에만</b> 나온다는 뜻입니다. 표시가 없으면 시간과 무관하게 나옵니다.
+        사파리존처럼 플레이어가 배치를 정하는 구역은 판단에서 제외했습니다.
+      </p>
 
       {/* 세대 탭 */}
       <div className="mb-3 flex flex-wrap gap-1.5">
@@ -220,9 +241,28 @@ export function EncounterPage() {
               <div className="ml-auto min-w-0 flex-1 pt-1.5 text-right">
                 {info.length > 0 ? (
                   <ul className="space-y-0.5">
-                    {info.map((s) => (
-                      <li key={s} className="truncate text-xs text-ink-muted" title={s}>
-                        {s}
+                    {info.map((r) => (
+                      <li
+                        key={`${r.version}|${r.location}`}
+                        className="flex items-baseline justify-end gap-1 text-xs text-ink-muted"
+                        title={`${selectedVersion === 'ALL' ? `[${r.version}] ` : ''}${r.location}${r.time ? ` (${r.time})` : ''}`}
+                      >
+                        {/* 시간대는 줄이 잘려도 안 사라지게 장소 텍스트 밖에 둔다 */}
+                        {r.time && (
+                          <span
+                            className={cn(
+                              'shrink-0 rounded px-1 font-bold',
+                              r.time === '밤'
+                                ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300'
+                                : 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300',
+                            )}
+                          >
+                            ({r.time})
+                          </span>
+                        )}
+                        <span className="truncate">
+                          {selectedVersion === 'ALL' ? `[${r.version}] ${r.location}` : r.location}
+                        </span>
                       </li>
                     ))}
                   </ul>
