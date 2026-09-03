@@ -4,33 +4,53 @@ import { SAMPLE_POKEMON } from '../../data/sample/pokemon.sample'
 import { ENCOUNTER_DETAILS, type EncounterDetail } from '../../data/encounter-details.generated'
 import { TypeBadge } from '../../components/pokemon/TypeBadge'
 import { cn } from '../../lib/cn'
+import { gamesForLabel } from '../../lib/encounterVersions'
 import type { Pokemon } from '../../types/pokemon'
 
 const GENERATIONS = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-// 세대별 대표 버전 순서 (데이터에 등장하는 버전명 그대로 사용, 많이 등장하는 것 우선)
-// 모듈 로드 시 한 번 계산
-const GEN_VERSION_ORDER: Record<number, string[]> = (() => {
+// 세대별 게임 목록. 위키 라벨(「하트골드·소울실버」)을 게임 단위로 풀어서 모은다 —
+// 라벨을 그대로 필터로 쓰면 「하트골드」 전용 33종이 「하트골드·소울실버」와 따로 놀아
+// 하트골드를 하는 사람에게 안 보인다. 많이 나오는 게임을 앞에 둔다.
+const SEP = String.fromCharCode(1)
+const GEN_GAME_ORDER: Record<number, string[]> = (() => {
   const cnt = new Map<string, number>()
   for (const p of SAMPLE_POKEMON) {
     for (const l of p.encounterLocations ?? []) {
-      const k = `${l.generation}__${l.version}`
-      cnt.set(k, (cnt.get(k) ?? 0) + 1)
+      for (const game of gamesForLabel(l.version)) {
+        const k = `${l.generation}${SEP}${game}`
+        cnt.set(k, (cnt.get(k) ?? 0) + 1)
+      }
     }
   }
   const result: Record<number, string[]> = {}
+  for (const g of GENERATIONS) result[g] = []
   for (const [k, c] of cnt) {
-    const [gen, ver] = k.split('__')
-    const g = Number(gen)
-    if (!result[g]) result[g] = []
-    result[g].push(ver + '\0' + c)
+    const [gen, game] = k.split(SEP)
+    result[Number(gen)]?.push(`${game}${SEP}${c}`)
   }
   for (const g of GENERATIONS) {
-    result[g] = (result[g] ?? [])
-      .sort((a, b) => Number(b.split('\0')[1]) - Number(a.split('\0')[1]))
-      .map((x) => x.split('\0')[0])
+    result[g] = result[g]
+      .sort((a, b) => Number(b.split(SEP)[1]) - Number(a.split(SEP)[1]))
+      .map((x) => x.split(SEP)[0])
   }
   return result
+})()
+
+/**
+ * 짝 라벨(「A·B」)로도 등장하는 게임들. 이 목록에 있는 게임에서만 「전용」 표시가 뜻이 있다 —
+ * 「하트골드」는 「하트골드·소울실버」라는 짝이 있으니 단독 라벨이 곧 전용이지만,
+ * 「플라티나」는 짝 라벨이 없고 「기라티나」가 같은 게임의 다른 이름일 뿐이라 전용이 아니다.
+ */
+const PAIRED_GAMES: ReadonlySet<string> = (() => {
+  const out = new Set<string>()
+  for (const p of SAMPLE_POKEMON) {
+    for (const l of p.encounterLocations ?? []) {
+      const g = gamesForLabel(l.version)
+      if (g.length > 1) for (const x of g) out.add(x)
+    }
+  }
+  return out
 })()
 
 interface EncounterInfo {
@@ -57,14 +77,14 @@ function detailsFor(pokemonId: number, version: string): EncounterDetail[] {
 
 export function EncounterPage() {
   const [selectedGen, setSelectedGen] = useState(1)
-  const [selectedVersion, setSelectedVersion] = useState<string>('ALL')
+  const [selectedGame, setSelectedGame] = useState<string>('ALL')
   const [tab, setTab] = useState<'catchable' | 'uncatchable'>('catchable')
 
-  const versions = GEN_VERSION_ORDER[selectedGen] ?? []
+  const games = GEN_GAME_ORDER[selectedGen] ?? []
 
   function handleGenChange(gen: number) {
     setSelectedGen(gen)
-    setSelectedVersion('ALL')
+    setSelectedGame('ALL')
     setTab('catchable')
   }
 
@@ -74,7 +94,8 @@ export function EncounterPage() {
     for (const p of SAMPLE_POKEMON) {
       const locs = (p.encounterLocations ?? []).filter((l) => {
         if (l.generation !== selectedGen) return false
-        if (selectedVersion !== 'ALL' && l.version !== selectedVersion) return false
+        // 「하트골드」를 고르면 「하트골드·소울실버」 공통분도 함께 보여야 한다
+        if (selectedGame !== 'ALL' && !gamesForLabel(l.version).includes(selectedGame)) return false
         return true
       })
       if (locs.length === 0) continue
@@ -104,14 +125,14 @@ export function EncounterPage() {
       catchableList: sorted.filter((e) => e.catchable),
       uncatchableList: sorted.filter((e) => !e.catchable),
     }
-  }, [selectedGen, selectedVersion])
+  }, [selectedGen, selectedGame])
 
   const list = tab === 'catchable' ? catchableList : uncatchableList
 
   return (
     <div className="mx-auto w-full lg:w-4/5 px-4 py-6">
       <h1 className="mb-1 text-2xl font-black text-ink">출현 포켓몬</h1>
-      <p className="mb-2 text-sm text-ink-faint">세대·버전별 야생 출현 포켓몬과 포획 불가 포켓몬 목록</p>
+      <p className="mb-2 text-sm text-ink-faint">게임별 야생 출현 포켓몬과 포획 불가 포켓몬 목록</p>
       <p className="mb-5 text-xs leading-relaxed text-ink-muted">
         장소 아래의{' '}
         <span className="rounded bg-surface-hover px-1 font-bold">풀숲 45%</span> 같은 칸은{' '}
@@ -125,11 +146,16 @@ export function EncounterPage() {
         </span>{' '}
         이 붙으면 <b>그 시간대에만</b> 나온다는 뜻이고, 없으면 시간과 무관합니다. 사파리존처럼
         플레이어가 배치를 정하는 구역은 시간대 판단에서 제외했습니다.
+        <br />
+        게임은 <b>짝이 아니라 한 편씩</b> 고릅니다 — 하트골드를 고르면 소울실버와 공통으로 나오는
+        것과 하트골드에만 나오는 것이 함께 보이고, 후자에는{' '}
+        <span className="rounded bg-brand-red/10 px-1 font-bold text-brand-red">하트골드 전용</span>{' '}
+        표시가 붙습니다.
       </p>
 
       {/* 세대 탭 */}
       <div className="mb-3 flex flex-wrap gap-1.5">
-        {GENERATIONS.filter((g) => (GEN_VERSION_ORDER[g]?.length ?? 0) > 0).map((gen) => (
+        {GENERATIONS.filter((g) => (GEN_GAME_ORDER[g]?.length ?? 0) > 0).map((gen) => (
           <button
             key={gen}
             type="button"
@@ -150,24 +176,24 @@ export function EncounterPage() {
       <div className="scrollbar-hide mb-4 flex gap-1.5 overflow-x-auto pb-1">
         <button
           type="button"
-          onClick={() => setSelectedVersion('ALL')}
+          onClick={() => setSelectedGame('ALL')}
           className={cn(
             'shrink-0 rounded-chip border px-3 py-1 text-xs font-bold transition-colors',
-            selectedVersion === 'ALL'
+            selectedGame === 'ALL'
               ? 'border-brand-red bg-brand-red/10 text-brand-red'
               : 'border-border text-ink-muted hover:border-brand-red hover:text-brand-red',
           )}
         >
           전체
         </button>
-        {versions.map((v) => (
+        {games.map((v) => (
           <button
             key={v}
             type="button"
-            onClick={() => setSelectedVersion(v)}
+            onClick={() => setSelectedGame(v)}
             className={cn(
               'shrink-0 rounded-chip border px-3 py-1 text-xs font-bold transition-colors',
-              selectedVersion === v
+              selectedGame === v
                 ? 'border-brand-red bg-brand-red/10 text-brand-red'
                 : 'border-border text-ink-muted hover:border-brand-red hover:text-brand-red',
             )}
@@ -248,11 +274,21 @@ export function EncounterPage() {
                   <ul className="space-y-1">
                     {info.map((r) => (
                       <li key={`${r.version}|${r.location}`}>
-                        <div
-                          className="truncate text-xs text-ink-muted"
-                          title={selectedVersion === 'ALL' ? `[${r.version}] ${r.location}` : r.location}
-                        >
-                          {selectedVersion === 'ALL' ? `[${r.version}] ${r.location}` : r.location}
+                        <div className="flex items-baseline justify-end gap-1">
+                          {/* 짝 라벨이 있는 게임에서, 단독 라벨로 나오면 그 버전 전용이다 */}
+                          {selectedGame !== 'ALL' &&
+                            PAIRED_GAMES.has(selectedGame) &&
+                            gamesForLabel(r.version).length === 1 && (
+                              <span className="shrink-0 rounded bg-brand-red/10 px-1 text-xxs font-bold text-brand-red">
+                                {selectedGame} 전용
+                              </span>
+                            )}
+                          <span
+                            className="truncate text-xs text-ink-muted"
+                            title={selectedGame === 'ALL' ? `[${r.version}] ${r.location}` : r.location}
+                          >
+                            {selectedGame === 'ALL' ? `[${r.version}] ${r.location}` : r.location}
+                          </span>
                         </div>
                         {/* 확률·시간대는 장소가 잘려도 안 사라지게 별도 줄에 둔다 */}
                         {r.details.length > 0 && (
