@@ -26,21 +26,31 @@ npm run build:move-descriptions  # PokeAPI에서 기술 한국어 설명 수집 
 npm run build:abilities        # PokeAPI에서 특성 한국어 데이터 수집 → abilities.generated.ts
 ```
 
-> `scripts/build-encounter-times.mjs`는 **야생 출현의 시간대 제한**만 따로 수집한다.
-> 출현 장소 문자열은 한국어 위키에서 오는데(PokeAPI 는 지역명 한글이 없다) **위키는
-> 시간대를 거의 안 적어 둔다 — 전 세대를 통틀어 12건뿐이다.** 반면 PokeAPI 는
-> `condition_values` 에 `time-morning`/`time-day`/`time-night` 을 구조적으로 갖고 있어,
-> 장소는 위키에서 시간대는 여기서 받아 합친다. 약 15초 걸린다.
+> `scripts/build-encounter-details.mjs`는 **야생 출현의 방법별 확률·시간대**를 수집한다.
+> 출현 장소 문자열은 한국어 위키에서 오는데(PokeAPI 는 **지역명·방법명에 한글이 아예 없다**)
+> 위키에는 확률도 시간대도 없다 — 시간대는 전 세대를 통틀어 12건뿐이다. 그래서 장소는
+> 위키에서, 확률·시간대는 PokeAPI 에서 받아 합친다. 약 13초.
+>
+> 지역명을 한글로 못 쓰므로 **"어느 도로에서 몇 %" 가 아니라 방법별 최대 확률**로 묶는다
+> (「풀숲 45% (밤)」). 레벨은 넣지 않는다 — 전 지역을 합치면 Lv.2~34 같은 범위가 되어
+> 오히려 오해를 부른다.
 >
 > ```bash
-> node scripts/build-encounter-times.mjs            # 전체
-> node scripts/build-encounter-times.mjs --limit 60 # 표본만 빠르게 확인
+> node scripts/build-encounter-details.mjs            # 전체
+> node scripts/build-encounter-details.mjs --limit 60 # 표본만 빠르게 확인
 > ```
 >
-> 판정 규칙 두 가지가 중요하다 — **시간 조건이 없는 조우가 하나라도 있으면 태그를 안 붙인다**
-> (아무 때나 나온다는 뜻). 그리고 **사파리존·대습초원은 아예 제외한다**: 그 구역은 플레이어가
-> 놓은 블록에 따라 달라지는데 PokeAPI 가 "아침·낮·밤 전부"로 적어 두어, 그대로 두면 사파리에
-> 나오는 종이 전부 "아무 때나"로 뭉개진다(니로우가 밤 표시를 못 받았다).
+> 확률은 `build-hgss-encounter-rates.mjs` 와 같은 규칙이다 — **같은 조건 안의 슬롯은 합산,
+> 조건이 다르면 최댓값**. 함정이 셋 있다.
+>
+> - **시간대는 방법별로 따로 본다.** 종 단위로 보면 박치기·꿀나무처럼 시간 조건이 없는
+>   방법 하나 때문에 풀숲의 밤 제한이 통째로 사라진다(부우부가 그래서 밤 표시를 못 받았다).
+> - **사파리존·대습초원은 시간대 판정에서 뺀다.** 플레이어가 놓은 블록에 따라 달라지는데
+>   PokeAPI 가 "아침·낮·밤 전부"로 적어 두어, 두면 사파리에 나오는 종이 전부 "아무 때나"로
+>   뭉개진다(니로우가 그랬다).
+> - **`unknown-*` 구역은 통째로 뺀다.** 벌레잡기 대회 같은 자리에 PokeAPI 가 만들어 둔
+>   가짜 구역이라 한 종이 표를 다 차지해 확률이 100% 로 부풀어 오른다(캐터피가 100% 였다).
+>   `build-hgss-encounter-rates.mjs` 도 `unknown-all-poliwag` 로 같은 함정을 겪었다.
 
 > `scripts/build-hgss-encounter-rates.mjs`(HGSS 수집 가이드의 야생 출현 확률)도 npm script
 > 미등록 상태다. `node scripts/build-hgss-encounter-rates.mjs` 로 직접 실행한다.
@@ -219,7 +229,7 @@ src/
     items.generated.ts                # 진화/배틀 아이템 (build-items.mjs 생성)
     guides/hgss-collection.md         # HGSS·기라티나PT 수집 가이드 원문 (?raw 임포트 후 런타임 파싱)
     guides/hgss-encounter-rates.generated.ts  # 위 가이드의 야생 출현 확률 (build-hgss-encounter-rates.mjs 생성)
-    encounter-times.generated.ts      # 야생 출현의 시간대 제한 (build-encounter-times.mjs 생성)
+    encounter-details.generated.ts    # 야생 출현의 방법별 확률·시간대 (build-encounter-details.mjs 생성)
     sample/                           # 도우미 함수 (findSamplePokemon, findMove 등) + 공략 데이터
       flavorTexts.ts                  # PokeAPI 도감 설명 온디맨드 fetch 유틸
       pokemonHeartgoldWalkthrough.data.ts  # 하트골드 최고효율 진행 공략 데이터 (11 Phase)
@@ -231,7 +241,7 @@ scripts/
   build-move-descriptions.mjs # PokeAPI 기술 한국어 설명 수집 → move-descriptions.generated.ts 출력
   build-abilities.mjs         # PokeAPI 특성 한국어 데이터 수집 → abilities.generated.ts 출력
   build-items.mjs             # PokeAPI 진화/배틀 아이템 데이터 수집 → items.generated.ts 출력
-  build-encounter-times.mjs   # PokeAPI 조우 조건에서 시간대 제한만 수집 → encounter-times.generated.ts 출력
+  build-encounter-details.mjs # PokeAPI 조우에서 방법별 확률·시간대 수집 → encounter-details.generated.ts 출력
   refresh-levelup-learnsets.mjs # by-id/*.generated.ts 의 levelUp만 PokeAPI에서 재동기화
   version-groups.mjs          # 세대별 게임판 라벨 ↔ PokeAPI version group 매핑 (위 두 스크립트가 공유)
 ```
@@ -265,7 +275,7 @@ scripts/
 | `/pokemon/:id` | PokemonDetailPage | 도감 상세 (스탯·기술·출현) |
 | `/types` | TypeChartPage | 18×18 타입 상성표 + 계산기 |
 | `/tm` | TmListPage | 세대·버전별 TM/HM 목록 + 배울 수 있는 포켓몬 |
-| `/encounter` | EncounterPage | 세대·버전별 야생 출현 및 포획 불가 포켓몬 + 시간대 제한 표시 |
+| `/encounter` | EncounterPage | 세대·버전별 야생 출현 및 포획 불가 포켓몬 + 방법별 출현 확률·시간대 |
 | `/natures` | NaturesPage | 25종 성격 5×5 매트릭스 + 전체 표 |
 | `/abilities` | AbilitiesPage | 특성 313종 세대 필터·검색 |
 | `/items` | ItemsPage | 진화 아이템·배틀 지니기 탭 분리 + 아이템별 진화 대상 |

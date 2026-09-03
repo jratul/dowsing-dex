@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { SAMPLE_POKEMON } from '../../data/sample/pokemon.sample'
-import { ENCOUNTER_TIMES } from '../../data/encounter-times.generated'
+import { ENCOUNTER_DETAILS, type EncounterDetail } from '../../data/encounter-details.generated'
 import { TypeBadge } from '../../components/pokemon/TypeBadge'
 import { cn } from '../../lib/cn'
 import type { Pokemon } from '../../types/pokemon'
@@ -36,8 +36,8 @@ const GEN_VERSION_ORDER: Record<number, string[]> = (() => {
 interface EncounterInfo {
   version: string
   location: string
-  /** 그 시간대에만 나올 때만 값이 있다. "밤", "아침·낮" 등 */
-  time?: string
+  /** 방법별 출현 확률·시간대. 확률 내림차순 */
+  details: EncounterDetail[]
 }
 
 interface PokemonEntry {
@@ -47,11 +47,12 @@ interface PokemonEntry {
 }
 
 /**
- * 출현 장소 문자열(한국어 위키)에는 시간대가 거의 안 적혀 있어서, PokeAPI 의
- * 조우 조건에서 따로 뽑아 둔 표를 본다. 값이 있으면 그 시간대에만 나온다는 뜻이다.
+ * 출현 장소 문자열(한국어 위키)에는 확률도 시간대도 없어서, PokeAPI 조우 데이터에서
+ * 따로 뽑아 둔 표를 본다. PokeAPI 는 지역명에 한글이 없으므로 "어느 도로에서 몇 %"
+ * 가 아니라 방법별 최대 확률로 묶여 있다.
  */
-function timeTag(pokemonId: number, version: string): string | undefined {
-  return ENCOUNTER_TIMES[pokemonId]?.[version]
+function detailsFor(pokemonId: number, version: string): EncounterDetail[] {
+  return ENCOUNTER_DETAILS[pokemonId]?.[version] ?? []
 }
 
 export function EncounterPage() {
@@ -83,7 +84,7 @@ export function EncounterPage() {
 
       const rows: EncounterInfo[] = locs
         .filter((l) => l.location)
-        .map((l) => ({ version: l.version, location: l.location!, time: timeTag(p.id, l.version) }))
+        .map((l) => ({ version: l.version, location: l.location!, details: detailsFor(p.id, l.version) }))
 
       if (!prev) {
         seen.set(p.id, { pokemon: p, catchable: hasCatch, info: rows })
@@ -111,15 +112,19 @@ export function EncounterPage() {
     <div className="mx-auto w-full lg:w-4/5 px-4 py-6">
       <h1 className="mb-1 text-2xl font-black text-ink">출현 포켓몬</h1>
       <p className="mb-2 text-sm text-ink-faint">세대·버전별 야생 출현 포켓몬과 포획 불가 포켓몬 목록</p>
-      <p className="mb-5 flex flex-wrap items-center gap-1.5 text-xs text-ink-muted">
+      <p className="mb-5 text-xs leading-relaxed text-ink-muted">
+        장소 아래의{' '}
+        <span className="rounded bg-surface-hover px-1 font-bold">풀숲 45%</span> 같은 칸은{' '}
+        <b>그 방법으로 한 자리에서 나올 최대 확률</b>입니다. 지역별이 아니라 방법별 최댓값이라,
+        같은 방법이라도 장소에 따라 더 낮을 수 있습니다.{' '}
         <span className="rounded bg-indigo-100 px-1 font-bold text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">
           (밤)
-        </span>
+        </span>{' '}
         <span className="rounded bg-amber-100 px-1 font-bold text-amber-700 dark:bg-amber-900/40 dark:text-amber-300">
           (아침·낮)
-        </span>
-        처럼 붙은 것은 <b>그 시간대에만</b> 나온다는 뜻입니다. 표시가 없으면 시간과 무관하게 나옵니다.
-        사파리존처럼 플레이어가 배치를 정하는 구역은 판단에서 제외했습니다.
+        </span>{' '}
+        이 붙으면 <b>그 시간대에만</b> 나온다는 뜻이고, 없으면 시간과 무관합니다. 사파리존처럼
+        플레이어가 배치를 정하는 구역은 시간대 판단에서 제외했습니다.
       </p>
 
       {/* 세대 탭 */}
@@ -237,32 +242,38 @@ export function EncounterPage() {
                 ))}
               </div>
 
-              {/* 출현 장소 */}
+              {/* 출현 장소 + 방법별 확률 */}
               <div className="ml-auto min-w-0 flex-1 pt-1.5 text-right">
                 {info.length > 0 ? (
-                  <ul className="space-y-0.5">
+                  <ul className="space-y-1">
                     {info.map((r) => (
-                      <li
-                        key={`${r.version}|${r.location}`}
-                        className="flex items-baseline justify-end gap-1 text-xs text-ink-muted"
-                        title={`${selectedVersion === 'ALL' ? `[${r.version}] ` : ''}${r.location}${r.time ? ` (${r.time})` : ''}`}
-                      >
-                        {/* 시간대는 줄이 잘려도 안 사라지게 장소 텍스트 밖에 둔다 */}
-                        {r.time && (
-                          <span
-                            className={cn(
-                              'shrink-0 rounded px-1 font-bold',
-                              r.time === '밤'
-                                ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300'
-                                : 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300',
-                            )}
-                          >
-                            ({r.time})
-                          </span>
-                        )}
-                        <span className="truncate">
+                      <li key={`${r.version}|${r.location}`}>
+                        <div
+                          className="truncate text-xs text-ink-muted"
+                          title={selectedVersion === 'ALL' ? `[${r.version}] ${r.location}` : r.location}
+                        >
                           {selectedVersion === 'ALL' ? `[${r.version}] ${r.location}` : r.location}
-                        </span>
+                        </div>
+                        {/* 확률·시간대는 장소가 잘려도 안 사라지게 별도 줄에 둔다 */}
+                        {r.details.length > 0 && (
+                          <div className="mt-0.5 flex flex-wrap items-center justify-end gap-1">
+                            {r.details.map((d) => (
+                              <span
+                                key={d.method}
+                                className={cn(
+                                  'inline-flex shrink-0 items-center gap-0.5 rounded px-1 py-px text-xxs font-bold',
+                                  d.time === '밤'
+                                    ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300'
+                                    : d.time
+                                      ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300'
+                                      : 'bg-surface-hover text-ink-muted',
+                                )}
+                              >
+                                {d.method} {d.chance}%{d.time && ` (${d.time})`}
+                              </span>
+                            ))}
+                          </div>
+                        )}
                       </li>
                     ))}
                   </ul>
