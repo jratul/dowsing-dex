@@ -12,6 +12,9 @@ import {
   HGW_DAY_ORDER,
   HGW_WEEKLY_NAME_TO_ID,
   HGW_WEEKLY_MOVE_NAMES,
+  HGW_LEADER_REMATCH,
+  HGW_REMATCH_RULES,
+  HGW_TIME_BANDS,
   type TaskKind,
   type WeekDay,
 } from '../../data/sample/pokemonHeartgoldWeekly.data'
@@ -91,6 +94,17 @@ export function PokemonHeartgoldWeeklyGuidePage() {
                 </li>
               ))}
             </ul>
+            {HGW_LEADER_REMATCH.filter((r) => r.day === today).length > 0 && (
+              <p className="mt-2 border-t border-border pt-2 text-sm text-ink">
+                <b>오늘 재대결 가능한 관장</b> —{' '}
+                {HGW_LEADER_REMATCH.filter((r) => r.day === today)
+                  .map((r) => `${r.leader}(${r.band})`)
+                  .join(' · ')}
+                <a href="#rematch" className="ml-1 text-xs font-bold text-brand-red hover:underline">
+                  전화 거는 법 →
+                </a>
+              </p>
+            )}
           </div>
         ))}
       </Card>
@@ -171,9 +185,95 @@ export function PokemonHeartgoldWeeklyGuidePage() {
                   </li>
                 ))}
               </ul>
+              {HGW_LEADER_REMATCH.filter((r) => r.day === d.day).length > 0 && (
+                <p className="mt-2 border-t border-border pt-2 text-xs text-ink">
+                  <span className="font-bold">재대결 전화</span> —{' '}
+                  {HGW_LEADER_REMATCH.filter((r) => r.day === d.day)
+                    .map((r) => `${r.leader}(${r.band})`)
+                    .join(' · ')}
+                </p>
+              )}
             </div>
           ))}
         </div>
+      </Card>
+
+      {/* 관장 재대결 */}
+      <Card className="mb-6 p-4" id="rematch">
+        <SectionHeading>관장 재대결 — 번호를 딴 뒤 언제 전화할까</SectionHeading>
+        <p className="mb-3 text-sm text-ink">
+          위 요일별 목록의 「전화번호」는 <b>번호를 받는</b> 요일입니다. 정작 싸우려면{' '}
+          <b>다른 요일·시간대에 전화를 걸어야</b> 하고, 그러면 관장이 관동 노랑시티의{' '}
+          <b>격투도장</b>으로 나옵니다. 16명 전원이 주 1회, 한 시간대만 전화를 받습니다.
+        </p>
+
+        <div className="mb-4 grid gap-2 md:grid-cols-2">
+          {HGW_REMATCH_RULES.map((r) => (
+            <div key={r.title} className="rounded-lg border border-border p-3">
+              <p className="mb-0.5 font-bold text-ink">{r.title}</p>
+              <p className="text-xs text-ink">{L(r.body)}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mb-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-ink-muted">
+          {HGW_TIME_BANDS.map((b) => (
+            <span key={b.band}>
+              <b className="text-ink">{b.band}</b> {b.hours}
+              {b.note && <span className="text-brand-red"> — {b.note}</span>}
+            </span>
+          ))}
+        </div>
+
+        <div className="overflow-x-auto rounded-card border border-border">
+          <table className="w-full border-collapse text-sm">
+            <thead>
+              <tr className="border-b border-border bg-surface-hover">
+                <th className="p-2 text-left font-semibold text-ink">요일</th>
+                {HGW_TIME_BANDS.map((b) => (
+                  <th key={b.band} className="p-2 text-left font-semibold text-ink">
+                    {b.band}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {(['월', '화', '수', '목', '금', '토', '일'] as WeekDay[]).map((d) => (
+                <tr
+                  key={d}
+                  className={`border-b border-border ${d === today ? 'bg-brand-red/10' : 'hover:bg-surface-hover/50'}`}
+                >
+                  <td className="whitespace-nowrap p-2 font-bold text-ink">
+                    {d}
+                    {d === today && (
+                      <span className="ml-1 rounded bg-brand-red px-1 py-0.5 text-xxs font-bold text-white">오늘</span>
+                    )}
+                  </td>
+                  {HGW_TIME_BANDS.map((b) => {
+                    const hit = HGW_LEADER_REMATCH.find((r) => r.day === d && r.band === b.band)
+                    return (
+                      <td key={b.band} className="p-2">
+                        {hit ? (
+                          <span className="whitespace-nowrap">
+                            <b className="text-ink">{hit.leader}</b>{' '}
+                            <span className="text-xxs text-ink-muted">
+                              {hit.region} · {hit.gymType}
+                            </span>
+                          </span>
+                        ) : (
+                          <span className="text-ink-faint">—</span>
+                        )}
+                      </td>
+                    )
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-2 text-xs text-ink-muted">
+          목요일은 낮 한 명뿐이고, 월요일 밤·화요일 아침·목요일 아침과 밤은 비어 있습니다.
+        </p>
       </Card>
 
       {/* 매일 */}

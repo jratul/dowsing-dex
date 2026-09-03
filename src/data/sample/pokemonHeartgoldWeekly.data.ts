@@ -202,3 +202,73 @@ export const HGW_WEEKLY_NAME_TO_ID: Map<string, number> = new Map(
 export const HGW_WEEKLY_MOVE_NAMES: ReadonlySet<string> = new Set([
   '은혜갚기', '화풀이', '파도타기',
 ])
+
+// ──────────────────────────────────────────────────────────────
+// 관장 재대결 — 번호를 딴 뒤 언제 전화할 것인가
+// ──────────────────────────────────────────────────────────────
+// 번호를 받는 요일과 재대결하는 요일은 **서로 다르다**. 비상은 월요일에 번호를 주지만
+// 재대결은 토요일 아침이다.
+//
+// 출처: 포켓몬 위키(ko) 「포켓기어/전화번호 — 체육관 관장과의 재대결」과
+// Bulbapedia 「Fighting Dojo/Generation IV」의 Rematch schedule 이 16명 모두 일치했다.
+
+export type TimeBand = '아침' | '낮' | '밤'
+
+/** 게임 안의 시간대 구분. 밤만 두 토막이라는 점이 함정이다. */
+export const HGW_TIME_BANDS: { band: TimeBand; hours: string; note?: string }[] = [
+  { band: '아침', hours: '4:00 ~ 9:59' },
+  { band: '낮', hours: '10:00 ~ 19:59' },
+  { band: '밤', hours: '20:00 ~ 23:59 · 0:00 ~ 3:59', note: '연속이 아니라 두 토막이다' },
+]
+
+export interface LeaderRematch {
+  day: WeekDay
+  band: TimeBand
+  leader: string
+  region: '성도' | '관동'
+  gymType: string
+}
+
+/** 16명 전원. 각자 주 1회, 한 시간대에만 전화를 받는다. */
+export const HGW_LEADER_REMATCH: LeaderRematch[] = [
+  { day: '월', band: '아침', leader: '류옹', region: '성도', gymType: '얼음' },
+  { day: '월', band: '낮', leader: '도희', region: '관동', gymType: '독' },
+  { day: '화', band: '낮', leader: '강연', region: '관동', gymType: '불꽃' },
+  { day: '화', band: '밤', leader: '유빈', region: '성도', gymType: '고스트' },
+  { day: '수', band: '아침', leader: '이슬', region: '관동', gymType: '물' },
+  { day: '수', band: '낮', leader: '규리', region: '성도', gymType: '강철' },
+  { day: '수', band: '밤', leader: '사도', region: '성도', gymType: '격투' },
+  { day: '목', band: '낮', leader: '호일', region: '성도', gymType: '벌레' },
+  { day: '금', band: '아침', leader: '마티스', region: '관동', gymType: '전기' },
+  { day: '금', band: '밤', leader: '이향', region: '성도', gymType: '드래곤' },
+  { day: '토', band: '아침', leader: '비상', region: '성도', gymType: '비행' },
+  { day: '토', band: '낮', leader: '꼭두', region: '성도', gymType: '노말' },
+  { day: '토', band: '밤', leader: '웅', region: '관동', gymType: '바위' },
+  { day: '일', band: '아침', leader: '민화', region: '관동', gymType: '풀' },
+  { day: '일', band: '낮', leader: '초련', region: '관동', gymType: '에스퍼' },
+  { day: '일', band: '밤', leader: '그린', region: '관동', gymType: '혼합' },
+]
+
+/** 전화를 걸기 전에 알아야 할 것. */
+export const HGW_REMATCH_RULES: { title: string; body: string }[] = [
+  {
+    title: '번호를 받는 요일과 싸우는 요일이 다르다',
+    body: '이 둘을 헷갈리면 아무리 기다려도 안 된다. 비상은 월요일에 무지개시티 백화점에서 번호를 주지만, 재대결은 토요일 아침에 전화해야 성사된다. 각 관장의 번호 입수 요일은 위 요일별 목록의 「전화번호」 항목에 있다.',
+  },
+  {
+    title: '16배지를 다 모아야 응한다',
+    body: '★ 번호가 있고 시간대까지 맞아도 배지가 16개가 아니면 「너에게는 더 강한 상대가 있을 것」이라는 말만 하고 끝난다. 번호 등록 자체는 성도 리그를 이긴 뒤부터 되지만, 관동 관장의 번호는 상록시티에서 그린을 이겨야 모을 수 있다.',
+  },
+  {
+    title: '전화를 걸면 노랑시티 격투도장으로 온다',
+    body: '관장이 자기 체육관에서 기다리는 게 아니다. 관동 노랑시티의 격투도장에 16명이 모이는 구조라, 전화를 건 뒤 그리로 가야 한다.',
+  },
+  {
+    title: '한 번 부르면 시간대가 끝나도 기다린다',
+    body: '전화만 걸어 두면 그 시간대가 지나도 이길 때까지 도장에 남아 있다. 반대로 같은 시간대 안이라면 이기고 다시 전화해 몇 번이든 반복해서 싸울 수 있다.',
+  },
+  {
+    title: '「밤」은 두 토막이다',
+    body: '★ 게임은 0시~3시 59분도 밤으로 친다. 그래서 밤 시간대 관장은 20:00~23:59 뿐 아니라 0:00~3:59 에도 전화가 된다. 연속된 구간이 아니라는 점만 기억하면 된다.',
+  },
+]

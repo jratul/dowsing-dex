@@ -70,7 +70,7 @@ export const SAMPLE_GUIDES: Guide[] = [
     title: '하트골드 요일별 챙길 것 완전 정리',
     iconPokemonId: 131,
     relatedPokemonIds: [131, 35, 123, 359, 403, 438],
-    summary: '요일은 DS 본체 시계를 그대로 따른다. 금요일 라프라스, 수·목 호연·신오 사운드, 월요일 밤 달의돌처럼 놓치면 한 주를 기다려야 하는 것부터 요일남매 7인·매일 리셋까지 한 장에 정리했다.',
+    summary: '요일은 DS 본체 시계를 그대로 따른다. 금요일 라프라스, 수·목 호연·신오 사운드, 월요일 밤 달의돌처럼 놓치면 한 주를 기다려야 하는 것부터 요일남매 7인, 관장 16명 재대결 전화 시간표, 매일 리셋까지 한 장에 정리했다.',
     bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
   },
   {
