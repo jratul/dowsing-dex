@@ -208,6 +208,22 @@
 | 판티나 | 멜리사 | Fantina (3관, 고스트) |
 | 분열세계 | 깨어진세계 | Distortion World (Bulbapedia "In other languages" 의 ko 표기) |
 
+### 게임 타이틀의 한국 정발명 — 디아루가·펄기아 / 기라티나
+
+한국닌텐도가 낸 정식 한글판 타이틀은 **「포켓몬스터DP 디아루가·펄기아」**와
+**「포켓몬스터Pt 기라티나」**다. 흔히 쓰는 「다이아몬드·펄」은 대원씨아이가 들여온
+**일본어판 수입** 명칭이고, 「플라티나」·「플래티넘」은 일본판/국제판 이름이다.
+(Bulbapedia 「Pokémon Diamond and Pearl Versions」의 ko 항목이 두 계통을 나눠 적고,
+포켓몬 위키(ko)도 「포켓몬스터 다이아몬드·펄」을 디아루가·펄기아로 넘겨준다.)
+
+- **출현 페이지의 버전 칩은 정발명으로 표시한다** — `src/lib/encounterVersions.ts` 의
+  `PIECE_ALIAS` 가 다이아몬드→디아루가, 펄→펄기아, 플라티나/플래티넘→기라티나로 모은다.
+- **공략·학습셋 탭의 「플래티넘」은 그대로 둔다.** 학습셋 버전 라벨은 생성 데이터에
+  박혀 있고 `GuidePageLayout` 의 `version` prop·검사기의 `GUIDE_GAME` 표와 맞물려 있어,
+  이름만 바꾸면 조용히 어긋난다. 위 표에 「다이아몬드→디아루가」 같은 행을
+  **넣지 않는 이유도 이것** — `check-guide-vocab.mjs` 가 이 표를 사전으로 삼으므로
+  넣는 순간 정상적인 「브릴리언트 다이아몬드」·「플래티넘」까지 전부 오표기로 잡힌다.
+
 정확한 표기: 강석(Roark) · 유채(Gardenia) · 자두(Maylene) · 맥실러(Crasher Wake) ·
 동관(Byron) · 무청(Candice) · 전진(Volkner) · 난천(Cynthia).
 
