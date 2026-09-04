@@ -3,6 +3,8 @@ import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
 import { Card } from '../../components/ui/Card'
 import { GuideTable } from '../../components/guide/GuideTable'
 import { linkifyGuideText } from '../../lib/linkifyGuideText'
+import { PokemonLink } from '../../components/guide/PokemonLink'
+import { MoveLink } from '../../components/guide/MoveLink'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
 import {
   HGW_SIBLINGS,
@@ -13,6 +15,7 @@ import {
   HGW_WEEKLY_NAME_TO_ID,
   HGW_WEEKLY_MOVE_NAMES,
   HGW_LEADER_REMATCH,
+  HGW_REMATCH_TEAMS,
   HGW_REMATCH_RULES,
   HGW_TIME_BANDS,
   type TaskKind,
@@ -273,6 +276,73 @@ export function PokemonHeartgoldWeeklyGuidePage() {
         </div>
         <p className="mt-2 text-xs text-ink-muted">
           목요일은 낮 한 명뿐이고, 월요일 밤·화요일 아침·목요일 아침과 밤은 비어 있습니다.
+        </p>
+      </Card>
+
+      {/* 재대결 엔트리 */}
+      <Card className="mb-6 p-4" id="rematch-teams">
+        <SectionHeading>관장 재대결 엔트리 — 누가 뭘 데려오는가</SectionHeading>
+        <p className="mb-3 text-sm text-ink">
+          재대결 팀은 <b>첫 대결과 전혀 다릅니다.</b> 비상은 도라지시티에서 구구·피죤을 쓰지만
+          재대결에서는 Lv.50대 여섯 마리가 나옵니다. 전원 회복약(풀회복 등)을 들고 있으므로
+          화력이 어중간하면 오래 끌립니다. 순서는 위 시간표와 같습니다.
+        </p>
+        <div className="flex flex-col gap-3">
+          {HGW_REMATCH_TEAMS.map((t) => {
+            const slot = HGW_LEADER_REMATCH.find((r) => r.leader === t.leader)
+            return (
+              <div key={t.leader} className="defer-offscreen rounded-card border border-border p-3">
+                <div className="mb-2 flex flex-wrap items-center gap-x-2 gap-y-1">
+                  <span className="text-base font-black text-ink">{t.leader}</span>
+                  {slot && (
+                    <span className="text-xs text-ink-muted">
+                      {slot.region} · {slot.gymType} · {slot.day}요일 {slot.band}
+                    </span>
+                  )}
+                  <span className="ml-auto rounded-chip bg-surface-hover px-2 py-0.5 text-xxs font-bold text-ink-muted">
+                    최고 Lv.{t.topLevel}
+                  </span>
+                </div>
+                <div className="overflow-x-auto">
+                  <table className="w-full min-w-max border-collapse text-xs">
+                    <thead>
+                      <tr className="border-b border-border">
+                        <th className="py-1.5 pr-3 text-left text-xxs font-bold whitespace-nowrap text-ink-faint">포켓몬</th>
+                        <th className="py-1.5 pr-3 text-right text-xxs font-bold whitespace-nowrap text-ink-faint">레벨</th>
+                        <th className="py-1.5 pr-3 text-left text-xxs font-bold whitespace-nowrap text-ink-faint">특성</th>
+                        <th className="py-1.5 text-left text-xxs font-bold whitespace-nowrap text-ink-faint">기술</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {t.team.map((p, i) => (
+                        <tr key={`${p.pokemonId}-${i}`} className="border-b border-border/50 last:border-0">
+                          <td className="py-1.5 pr-3 whitespace-nowrap">
+                            <PokemonLink id={p.pokemonId} />
+                          </td>
+                          <td className="py-1.5 pr-3 text-right font-bold whitespace-nowrap text-ink">
+                            Lv.{p.level}
+                          </td>
+                          <td className="py-1.5 pr-3 whitespace-nowrap text-ink-muted">{p.ability}</td>
+                          <td className="py-1.5 text-ink">
+                            {p.moves.map((m, mi) => (
+                              <span key={m} className="whitespace-nowrap">
+                                {mi > 0 && <span className="text-ink-faint"> · </span>}
+                                <MoveLink name={m} />
+                              </span>
+                            ))}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )
+          })}
+        </div>
+        <p className="mt-3 text-xs text-ink-muted">
+          유빈이 <b>팬텀을 두 마리</b> 데려오는 것은 오타가 아닙니다 — 둘 다 Lv.57이고 기술 배치만 다릅니다.
+          레벨대는 류옹·꼭두 쪽이 Lv.50대 초반, 그린이 Lv.67~72로 가장 높습니다.
         </p>
       </Card>
 

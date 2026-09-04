@@ -272,3 +272,229 @@ export const HGW_REMATCH_RULES: { title: string; body: string }[] = [
     body: '★ 게임은 0시~3시 59분도 밤으로 친다. 그래서 밤 시간대 관장은 20:00~23:59 뿐 아니라 0:00~3:59 에도 전화가 된다. 연속된 구간이 아니라는 점만 기억하면 된다.',
   },
 ]
+
+// ──────────────────────────────────────────────────────────────
+// 관장 재대결 엔트리 — 16명 전원의 팀·레벨·기술 배치
+// ──────────────────────────────────────────────────────────────
+// 출처: Bulbapedia 각 관장 문서의 「HeartGold and SoulSilver → Rematch」 파티 표를
+// 위키텍스트(action=raw)로 받아 그대로 옮겼다. 요약 과정을 거치지 않아 기술명이
+// 뭉개지지 않는다. 포켓몬·기술·특성의 한국어 표기는 전국도감 번호와 PokeAPI 영문
+// slug 로 프로젝트 생성 데이터(pokedex / all-moves / abilities)에 대조해 붙였다 —
+// 96마리 384기술 전부 매칭됐다.
+//
+// 배열 순서는 위 시간표(요일·시간대)와 같다.
+//
+// 함정 둘.
+// - 재대결 팀은 첫 대결과 전혀 다르다. 비상은 도라지시티에서 구구·피죤을 쓰지만
+//   재대결에서는 무장조·독수리검 같은 Lv.50대 6마리로 나온다.
+// - 유빈은 팬텀을 두 마리 데려온다(둘 다 Lv.57, 기술 배치만 다르다). 오타가 아니다.
+
+export interface RematchPokemon {
+  pokemonId: number
+  pokemon: string
+  level: number
+  ability: string
+  moves: string[]
+}
+
+export interface LeaderRematchTeam {
+  leader: string
+  /** 그 팀의 최고 레벨. 준비 수준을 가늠하는 기준이 된다. */
+  topLevel: number
+  team: RematchPokemon[]
+}
+
+export const HGW_REMATCH_TEAMS: LeaderRematchTeam[] = [
+  {
+    leader: '류옹',
+    topLevel: 60,
+    team: [
+      { pokemonId: 460, pokemon: '눈설왕', level: 56, ability: '눈퍼뜨리기', moves: ['얼음뭉치', '우드해머', '지진', '눈보라'] },
+      { pokemonId: 87, pokemon: '쥬레곤', level: 58, ability: '두꺼운지방', moves: ['다이빙', '잠자기', '잠꼬대', '절대영도'] },
+      { pokemonId: 362, pokemon: '얼음귀신', level: 52, ability: '정신력', moves: ['트집', '보복', '헤롱헤롱', '눈보라'] },
+      { pokemonId: 478, pokemon: '눈여아', level: 52, ability: '눈숨기', moves: ['얼음뭉치', '이상한빛', '헤롱헤롱', '눈보라'] },
+      { pokemonId: 365, pokemon: '씨카이저', level: 54, ability: '아이스바디', moves: ['뽐내기', '싸라기눈', '누르기', '눈보라'] },
+      { pokemonId: 473, pokemon: '맘모꾸리', level: 60, ability: '눈숨기', moves: ['지진', '그림자분신', '스톤에지', '눈사태'] },
+    ],
+  },
+  {
+    leader: '도희',
+    topLevel: 59,
+    team: [
+      { pokemonId: 169, pokemon: '크로뱃', level: 52, ability: '정신력', moves: ['열풍', '크로스포이즌', '이상한빛', '유턴'] },
+      { pokemonId: 110, pokemon: '또도가스', level: 56, ability: '부유', moves: ['10만볼트', '오물폭탄', '맹독', '대폭발'] },
+      { pokemonId: 454, pokemon: '독개굴', level: 52, ability: '건조피부', moves: ['크로스촙', '독찌르기', '헤롱헤롱', '대타출동'] },
+      { pokemonId: 168, pokemon: '아리아도스', level: 58, ability: '불면', moves: ['뛰어오르기', '맹독', '뽐내기', '나이트헤드'] },
+      { pokemonId: 49, pokemon: '도나리', level: 59, ability: '색안경', moves: ['사이코키네시스', '벌레의야단법석', '수면가루', '그림자분신'] },
+      { pokemonId: 452, pokemon: '드래피온', level: 55, ability: '스나이퍼', moves: ['이상한빛', '칼춤', '크로스포이즌', '깨물어부수기'] },
+    ],
+  },
+  {
+    leader: '강연',
+    topLevel: 62,
+    team: [
+      { pokemonId: 324, pokemon: '코터스', level: 54, ability: '하얀연기', moves: ['하품', '쾌청', '누르기', '오버히트'] },
+      { pokemonId: 323, pokemon: '폭타', level: 57, ability: '하드록', moves: ['분화', '지진', '솔라빔', '쾌청'] },
+      { pokemonId: 78, pokemon: '날쌩마', level: 60, ability: '타오르는불꽃', moves: ['플레어드라이브', '메가혼', '전광석화', '오버히트'] },
+      { pokemonId: 219, pokemon: '마그카르고', level: 58, ability: '불꽃몸', moves: ['저주', '자이로볼', '오버히트', '스톤에지'] },
+      { pokemonId: 229, pokemon: '헬가', level: 54, ability: '타오르는불꽃', moves: ['악의파동', '화염방사', '섀도볼', '기습'] },
+      { pokemonId: 467, pokemon: '마그마번', level: 62, ability: '불꽃몸', moves: ['화염방사', '10만볼트', '안다리걸기', '이상한빛'] },
+    ],
+  },
+  {
+    leader: '유빈',
+    topLevel: 57,
+    team: [
+      { pokemonId: 426, pokemon: '둥실라이드', level: 52, ability: '곡예', moves: ['섀도볼', '대타출동', '10만볼트', '길동무'] },
+      { pokemonId: 477, pokemon: '야느와르몽', level: 52, ability: '프레셔', moves: ['도깨비불', '대타출동', '아픔나누기', '보복'] },
+      { pokemonId: 302, pokemon: '깜까미', level: 52, ability: '시간벌기', moves: ['속이기', '냉동펀치', '깨뜨리다', '기습'] },
+      { pokemonId: 429, pokemon: '무우마직', level: 54, ability: '부유', moves: ['놀래키기', '검은눈빛', '멸망의노래', '이상한빛'] },
+      { pokemonId: 94, pokemon: '팬텀', level: 57, ability: '부유', moves: ['섀도볼', '최면술', '기합구슬', '이상한빛'] },
+      { pokemonId: 94, pokemon: '팬텀', level: 57, ability: '부유', moves: ['섀도볼', '대타출동', '10만볼트', '길동무'] },
+    ],
+  },
+  {
+    leader: '이슬',
+    topLevel: 60,
+    team: [
+      { pokemonId: 121, pokemon: '아쿠스타', level: 60, ability: '자연회복', moves: ['10만볼트', '냉동빔', '사이코키네시스', '파도타기'] },
+      { pokemonId: 195, pokemon: '누오', level: 56, ability: '저수', moves: ['비바라기', '망각술', '물의파동', '지진'] },
+      { pokemonId: 131, pokemon: '라프라스', level: 56, ability: '조가비갑옷', moves: ['비바라기', '멸망의노래', '눈보라', '파도타기'] },
+      { pokemonId: 171, pokemon: '랜턴', level: 54, ability: '발광', moves: ['10만볼트', '전기자석파', '이상한빛', '파도타기'] },
+      { pokemonId: 419, pokemon: '플로젤', level: 54, ability: '쓱쓱', moves: ['고속이동', '폭포오르기', '얼음엄니', '배턴터치'] },
+      { pokemonId: 350, pokemon: '밀로틱', level: 60, ability: '이상한비늘', moves: ['하이드로펌프', '냉동빔', '잠자기', '잠꼬대'] },
+    ],
+  },
+  {
+    leader: '규리',
+    topLevel: 62,
+    team: [
+      { pokemonId: 376, pokemon: '메타그로스', level: 52, ability: '클리어바디', moves: ['코멧펀치', '중력', '불릿펀치', '대폭발'] },
+      { pokemonId: 462, pokemon: '자포코일', level: 56, ability: '옹골참', moves: ['금속음', '미러코트', '록온', '전자포'] },
+      { pokemonId: 227, pokemon: '무장조', level: 52, ability: '옹골참', moves: ['강철날개', '깜짝베기', '에어슬래시', '압정뿌리기'] },
+      { pokemonId: 437, pokemon: '동탁군', level: 50, ability: '내열', moves: ['자이로볼', '중력', '최면술', '꿈먹기'] },
+      { pokemonId: 395, pokemon: '엠페르트', level: 52, ability: '급류', moves: ['하이드로펌프', '눈보라', '아쿠아제트', '울부짖기'] },
+      { pokemonId: 208, pokemon: '강철톤', level: 62, ability: '옹골참', moves: ['아이언테일', '스톤에지', '스텔스록', '울부짖기'] },
+    ],
+  },
+  {
+    leader: '사도',
+    topLevel: 60,
+    team: [
+      { pokemonId: 308, pokemon: '요가램', level: 54, ability: '순수한힘', moves: ['헤롱헤롱', '사이코커터', '번개펀치', '무릎차기'] },
+      { pokemonId: 107, pokemon: '홍수몬', level: 52, ability: '철주먹', moves: ['뽐내기', '그림자분신', '마하펀치', '힘껏펀치'] },
+      { pokemonId: 106, pokemon: '시라소몬', level: 55, ability: '이판사판', moves: ['속이기', '벌크업', '블레이즈킥', '무릎차기'] },
+      { pokemonId: 286, pokemon: '버섯모', level: 54, ability: '포이즌힐', moves: ['대타출동', '스톤에지', '드레인펀치', '힘껏펀치'] },
+      { pokemonId: 57, pokemon: '성원숭', level: 56, ability: '분노의경혈', moves: ['뽐내기', '보복', '번개펀치', '인파이트'] },
+      { pokemonId: 62, pokemon: '강챙이', level: 60, ability: '저수', moves: ['대타출동', '그림자분신', '폭포오르기', '힘껏펀치'] },
+    ],
+  },
+  {
+    leader: '호일',
+    topLevel: 56,
+    team: [
+      { pokemonId: 212, pokemon: '핫삼', level: 56, ability: '테크니션', moves: ['시저크로스', '칼춤', '불릿펀치', '엄청난힘'] },
+      { pokemonId: 292, pokemon: '껍질몬', level: 48, ability: '불가사의부적', moves: ['시저크로스', '야습', '뽐내기', '맹독'] },
+      { pokemonId: 469, pokemon: '메가자리', level: 52, ability: '색안경', moves: ['벌레의야단법석', '에어슬래시', '판별', '원시의힘'] },
+      { pokemonId: 127, pokemon: '쁘사이저', level: 55, ability: '틀깨기', moves: ['시저크로스', '암석봉인', '지진', '가위자르기'] },
+      { pokemonId: 214, pokemon: '헤라크로스', level: 54, ability: '근성', moves: ['메가혼', '카운터', '스톤에지', '인파이트'] },
+      { pokemonId: 416, pokemon: '비퀸', level: 52, ability: '프레셔', moves: ['공격지령', '방어지령', '방어', '이상한빛'] },
+    ],
+  },
+  {
+    leader: '마티스',
+    topLevel: 60,
+    team: [
+      { pokemonId: 26, pokemon: '라이츄', level: 60, ability: '정전기', moves: ['10만볼트', '풀묶기', '전광석화', '전기자석파'] },
+      { pokemonId: 310, pokemon: '썬더볼트', level: 52, ability: '정전기', moves: ['자연의은혜', '방전', '전기자석파', '오버히트'] },
+      { pokemonId: 462, pokemon: '자포코일', level: 52, ability: '자력', moves: ['10만볼트', '전자부유', '그림자분신', '미러샷'] },
+      { pokemonId: 101, pokemon: '붐볼', level: 52, ability: '정전기', moves: ['전기자석파', '그림자분신', '10만볼트', '대폭발'] },
+      { pokemonId: 417, pokemon: '파치리스', level: 58, ability: '픽업', moves: ['전광석화', '천사의키스', '분노의앞니', '방전'] },
+      { pokemonId: 466, pokemon: '에레키블', level: 56, ability: '전기엔진', moves: ['10만볼트', '냉동펀치', '크로스촙', '지진'] },
+    ],
+  },
+  {
+    leader: '이향',
+    topLevel: 60,
+    team: [
+      { pokemonId: 130, pokemon: '갸라도스', level: 56, ability: '위협', moves: ['용의춤', '폭포오르기', '지진', '용의파동'] },
+      { pokemonId: 148, pokemon: '신뇽', level: 52, ability: '탈피', moves: ['드래곤다이브', '전기자석파', '10만볼트', '화염방사'] },
+      { pokemonId: 142, pokemon: '프테라', level: 52, ability: '돌머리', moves: ['스톤샤워', '번개엄니', '지진', '울부짖기'] },
+      { pokemonId: 230, pokemon: '킹드라', level: 56, ability: '스나이퍼', moves: ['용의숨결', '하이드로펌프', '냉동빔', '하품'] },
+      { pokemonId: 6, pokemon: '리자몽', level: 52, ability: '맹화', moves: ['드래곤클로', '섀도클로', '불꽃엄니', '에어슬래시'] },
+      { pokemonId: 149, pokemon: '망나뇽', level: 60, ability: '정신력', moves: ['용의숨결', '신비의부적', '번개', '파괴광선'] },
+    ],
+  },
+  {
+    leader: '비상',
+    topLevel: 56,
+    team: [
+      { pokemonId: 398, pokemon: '찌르호크', level: 50, ability: '위협', moves: ['유턴', '인파이트', '브레이브버드', '헤롱헤롱'] },
+      { pokemonId: 164, pokemon: '야부엉', level: 52, ability: '불면', moves: ['에어슬래시', '섀도볼', '깃털댄스', '날개쉬기'] },
+      { pokemonId: 277, pokemon: '스왈로', level: 52, ability: '근성', moves: ['방어', '그림자분신', '객기', '죽기살기'] },
+      { pokemonId: 430, pokemon: '돈크로우', level: 54, ability: '불면', moves: ['악의파동', '깜짝베기', '기습', '전기자석파'] },
+      { pokemonId: 279, pokemon: '패리퍼', level: 48, ability: '날카로운눈', moves: ['파도타기', '냉동빔', '잠재파워', '순풍'] },
+      { pokemonId: 18, pokemon: '피죤투', level: 56, ability: '날카로운눈', moves: ['은혜갚기', '그림자분신', '뽐내기', '날개쉬기'] },
+    ],
+  },
+  {
+    leader: '꼭두',
+    topLevel: 58,
+    team: [
+      { pokemonId: 203, pokemon: '키링키', level: 52, ability: '정신력', moves: ['명상', '배턴터치', '섀도볼', '사이코키네시스'] },
+      { pokemonId: 463, pokemon: '내룸벨트', level: 50, ability: '마이페이스', moves: ['쥐어짜기', '화염방사', '10만볼트', '냉동빔'] },
+      { pokemonId: 400, pokemon: '비버통', level: 54, ability: '단순', moves: ['그림자분신', '파도타기', '차지빔', '냉동빔'] },
+      { pokemonId: 301, pokemon: '델케티', level: 54, ability: '노말스킨', moves: ['속이기', '배턴터치', '조수', '명상'] },
+      { pokemonId: 36, pokemon: '픽시', level: 52, ability: '매직가드', moves: ['명상', '불대문자', '번개', '눈보라'] },
+      { pokemonId: 241, pokemon: '밀탱크', level: 58, ability: '배짱', moves: ['누르기', '헤롱헤롱', '잠자기', '잠꼬대'] },
+    ],
+  },
+  {
+    leader: '웅',
+    topLevel: 61,
+    team: [
+      { pokemonId: 76, pokemon: '딱구리', level: 55, ability: '옹골참', moves: ['모래바람', '스톤샤워', '록커트', '지진'] },
+      { pokemonId: 369, pokemon: '시라칸', level: 54, ability: '돌머리', moves: ['양날박치기', '아쿠아테일', '지진', '잠자기'] },
+      { pokemonId: 139, pokemon: '암스타', level: 56, ability: '조가비갑옷', moves: ['방어', '모래바람', '소금물', '원시의힘'] },
+      { pokemonId: 141, pokemon: '투구푸스', level: 55, ability: '전투무장', moves: ['스톤샤워', '아쿠아제트', '버티기', '기가드레인'] },
+      { pokemonId: 95, pokemon: '롱스톤', level: 61, ability: '옹골참', moves: ['스텔스록', '스톤샤워', '록커트', '모래바람'] },
+      { pokemonId: 409, pokemon: '램펄드', level: 57, ability: '틀깨기', moves: ['지진', '스톤에지', '눈사태', '록커트'] },
+    ],
+  },
+  {
+    leader: '민화',
+    topLevel: 60,
+    team: [
+      { pokemonId: 275, pokemon: '다탱구', level: 54, ability: '엽록소', moves: ['리프스톰', '기습', '쾌청', '대폭발'] },
+      { pokemonId: 189, pokemon: '솜솜코', level: 53, ability: '엽록소', moves: ['유턴', '추억의선물', '수면가루', '기가드레인'] },
+      { pokemonId: 71, pokemon: '우츠보트', level: 56, ability: '엽록소', moves: ['자연의은혜', '오물폭탄', '리프스톰', '리프블레이드'] },
+      { pokemonId: 182, pokemon: '아르코', level: 56, ability: '엽록소', moves: ['쾌청', '솔라빔', '기가드레인', '헤롱헤롱'] },
+      { pokemonId: 465, pokemon: '덩쿠림보', level: 60, ability: '엽록소', moves: ['칼춤', '파워휩', '스톤샤워', '지진'] },
+      { pokemonId: 407, pokemon: '로즈레이드', level: 55, ability: '자연회복', moves: ['웨더볼', '에너지볼', '오물폭탄', '저리가루'] },
+    ],
+  },
+  {
+    leader: '초련',
+    topLevel: 60,
+    team: [
+      { pokemonId: 65, pokemon: '후딘', level: 60, ability: '싱크로', moves: ['중력', '사이코키네시스', '기합구슬', '에너지볼'] },
+      { pokemonId: 196, pokemon: '에브이', level: 58, ability: '싱크로', moves: ['명상', '사이코키네시스', '섀도볼', '배턴터치'] },
+      { pokemonId: 122, pokemon: '마임맨', level: 56, ability: '필터', moves: ['리플렉터', '스킬스왑', '번개', '사이코키네시스'] },
+      { pokemonId: 124, pokemon: '루주라', level: 54, ability: '예지몽', moves: ['사이코키네시스', '기합구슬', '눈보라', '멸망의노래'] },
+      { pokemonId: 202, pokemon: '마자용', level: 53, ability: '그림자밟기', moves: ['카운터', '미러코트', '길동무', '앙코르'] },
+      { pokemonId: 475, pokemon: '엘레이드', level: 53, ability: '불굴의마음', moves: ['스톤에지', '사이코커터', '깜짝베기', '인파이트'] },
+    ],
+  },
+  {
+    leader: '그린',
+    topLevel: 72,
+    team: [
+      { pokemonId: 103, pokemon: '나시', level: 67, ability: '엽록소', moves: ['리프스톰', '사이코키네시스', '대폭발', '트릭룸'] },
+      { pokemonId: 68, pokemon: '괴력몬', level: 69, ability: '노가드', moves: ['폭발펀치', '스톤에지', '내던지기', '헤롱헤롱'] },
+      { pokemonId: 464, pokemon: '거대코뿌리', level: 70, ability: '하드록', moves: ['메가혼', '스톤에지', '번개엄니', '지진'] },
+      { pokemonId: 59, pokemon: '윈디', level: 68, ability: '타오르는불꽃', moves: ['플레어드라이브', '신속', '번개엄니', '깨물어부수기'] },
+      { pokemonId: 248, pokemon: '마기라스', level: 70, ability: '모래날림', moves: ['안다리걸기', '불꽃엄니', '스톤샤워', '지진'] },
+      { pokemonId: 18, pokemon: '피죤투', level: 72, ability: '갈지자걸음', moves: ['은혜갚기', '그림자분신', '에어슬래시', '강철날개'] },
+    ],
+  },
+]
