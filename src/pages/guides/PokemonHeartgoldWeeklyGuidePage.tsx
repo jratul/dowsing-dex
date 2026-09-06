@@ -20,6 +20,7 @@ import {
   HGW_TIME_BANDS,
   type TaskKind,
   type WeekDay,
+  type WeeklyTask,
 } from '../../data/sample/pokemonHeartgoldWeekly.data'
 
 // 본문의 포켓몬 이름과 기술 이름을 한 번에 링크로 바꾼다.
@@ -29,6 +30,26 @@ function L(text: string) {
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return <h2 className="mb-3 text-lg font-black text-ink">{children}</h2>
+}
+
+/**
+ * 요일 항목 한 줄. "오늘" 카드와 아래 요일별 목록이 같은 컴포넌트를 쓴다.
+ * 예전에는 두 곳이 각자 마크업을 갖고 있었는데, "오늘" 쪽에만 detail 렌더가 빠져 있어
+ * 정작 제일 눈에 띄는 자리에서 "낮 3시~5시" 같은 핵심 조건이 통째로 안 보였다.
+ */
+function TaskItem({ task }: { task: WeeklyTask }) {
+  return (
+    <li className="flex flex-col gap-0.5">
+      <span className="flex flex-wrap items-baseline gap-1.5 text-sm leading-loose text-ink">
+        <KindBadge kind={task.kind} />
+        <span className={task.priority ? 'font-bold text-brand-red' : 'font-semibold'}>
+          {L(task.title)}
+        </span>
+      </span>
+      <span className="text-xs text-ink-muted">{L(task.place)}</span>
+      {task.detail && <span className="text-xs text-ink">{L(task.detail)}</span>}
+    </li>
+  )
 }
 
 const KIND_LABEL: Record<TaskKind, string> = {
@@ -90,11 +111,7 @@ export function PokemonHeartgoldWeeklyGuidePage() {
             <p className="mb-2 text-lg font-black text-ink">{d.headline}</p>
             <ul className="flex flex-col gap-1">
               {d.tasks.map((t) => (
-                <li key={t.title} className="flex min-h-7 flex-wrap items-baseline gap-1.5 text-sm leading-loose text-ink">
-                  <KindBadge kind={t.kind} />
-                  <span className={t.priority ? 'font-bold text-brand-red' : 'font-semibold'}>{L(t.title)}</span>
-                  <span className="text-xs text-ink-muted">— {L(t.place)}</span>
-                </li>
+                <TaskItem key={t.title} task={t} />
               ))}
             </ul>
             {HGW_LEADER_REMATCH.filter((r) => r.day === today).length > 0 && (
@@ -176,16 +193,7 @@ export function PokemonHeartgoldWeeklyGuidePage() {
               </div>
               <ul className="flex flex-col gap-2">
                 {d.tasks.map((t) => (
-                  <li key={t.title} className="flex flex-col gap-0.5">
-                    <span className="flex flex-wrap items-baseline gap-1.5 text-sm leading-loose text-ink">
-                      <KindBadge kind={t.kind} />
-                      <span className={t.priority ? 'font-bold text-brand-red' : 'font-semibold'}>
-                        {L(t.title)}
-                      </span>
-                    </span>
-                    <span className="text-xs text-ink-muted">{L(t.place)}</span>
-                    {t.detail && <span className="text-xs text-ink">{L(t.detail)}</span>}
-                  </li>
+                  <TaskItem key={t.title} task={t} />
                 ))}
               </ul>
               {HGW_LEADER_REMATCH.filter((r) => r.day === d.day).length > 0 && (
