@@ -21,7 +21,10 @@ const unknown = new Map()
 let checked = 0
 
 for (const src of guideSources(ROOT)) {
-  src.text.split(LF).forEach((line, n) => {
+  src.text.split(LF).forEach((rawLine, n) => {
+    // ability 는 특성 이름이다. 밀로틱의 '이상한비늘'처럼 아이템과 형태가 같은 것이
+    // 있어 그대로 두면 오탐이 난다.
+    const line = rawLine.replace(/ability:\s*'[^']*'/g, '')
     for (const re of [/stone:\s*'([^']+)'/g, /([가-힣]{2,6}돌)(?![가-힣])/g, /([가-힣]{1,5}비늘)(?![가-힣])/g]) {
       for (const m of line.matchAll(re)) {
         const name = m[1]
