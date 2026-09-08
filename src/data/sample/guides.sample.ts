@@ -93,6 +93,26 @@ export const SAMPLE_GUIDES: Guide[] = [
     bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
   },
   {
+    slug: 'pokemon-heartgold-friendship',
+    category: '진화',
+    title: '하트골드 친밀도 완전 정리 — 220을 어떻게 채울 것인가',
+    iconPokemonId: 133,
+    relatedPokemonIds: [133, 196, 197, 175, 447, 42],
+    summary:
+      '화면에 안 보이는 0~255 내부 수치. 구간별 증가량, 평온의방울·프렌드볼·럭셔리볼의 차이, 이발소와 그린의 누나, 은혜갚기 위력표까지 정리.',
+    bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
+  },
+  {
+    slug: 'pokemon-heartgold-bug-contest',
+    category: '포획',
+    title: '곤충채집 대회 1등 공략 — 진화용 돌을 반복해서 캔다',
+    iconPokemonId: 123,
+    relatedPokemonIds: [123, 127, 12, 401, 265],
+    summary:
+      'HP를 깎으면 그만큼 감점되는 대회. 복안 버터플로 수면가루만 걸어 풀피 Lv.28 스라크·쁘사이저를 잡는 법과 요일별 출현표.',
+    bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
+  },
+  {
     slug: 'pokemon-unown',
     category: '포획',
     title: '안농 종합 가이드 — 28종 전체와 출현 조건',

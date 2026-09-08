@@ -85,6 +85,20 @@ export const router = createBrowserRouter([
           })),
       },
       {
+        path: '/guides/pokemon-heartgold-friendship',
+        lazy: () =>
+          import('./pages/guides/PokemonHeartgoldFriendshipGuidePage').then((m) => ({
+            Component: m.PokemonHeartgoldFriendshipGuidePage,
+          })),
+      },
+      {
+        path: '/guides/pokemon-heartgold-bug-contest',
+        lazy: () =>
+          import('./pages/guides/PokemonHeartgoldBugContestGuidePage').then((m) => ({
+            Component: m.PokemonHeartgoldBugContestGuidePage,
+          })),
+      },
+      {
         path: '/guides/pokemon-unown',
         lazy: () =>
           import('./pages/guides/PokemonUnownGuidePage').then((m) => ({

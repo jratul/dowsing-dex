@@ -291,7 +291,7 @@ export const HGW_REMATCH_RULES: { title: string; body: string }[] = [
 //
 // 함정 둘.
 // - 재대결 팀은 첫 대결과 전혀 다르다. 비상은 도라지시티에서 구구·피죤을 쓰지만
-//   재대결에서는 무장조·독수리검 같은 Lv.50대 6마리로 나온다.
+//   재대결에서는 찌르호크·돈크로우·피죤투 같은 Lv.48~56 여섯 마리로 나온다.
 // - 유빈은 팬텀을 두 마리 데려온다(둘 다 Lv.57, 기술 배치만 다르다). 오타가 아니다.
 
 export interface RematchPokemon {
