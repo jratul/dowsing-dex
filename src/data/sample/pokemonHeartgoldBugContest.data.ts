@@ -20,6 +20,11 @@ export interface ContestRule {
 export const HGB_RULES: ContestRule[] = [
   { label: '장소', value: '자연공원 (금빛시티 북쪽)' },
   { label: '개최 요일', value: '화 · 목 · 토요일' },
+  {
+    label: '참가 가능 시간',
+    value: '20:00 이전까지',
+    note: '★ 20시에 접수하러 가면 「오늘 곤충채집 대회는 끝났다」며 돌려보낸다(실제 플레이로 확인). 게임의 밤 시간대가 20:00에 시작하므로 낮이 끝나면 대회도 닫히는 구조로 보인다. 시작 시각은 확인하지 못했다.',
+  },
   { label: '참가비', value: '없음' },
   { label: '하루 참가 횟수', value: '1회' },
   { label: '제한 시간', value: '20분' },
