@@ -3,6 +3,12 @@
 // 원문: 옵시디언 볼트 「하트골드_곤충채집대회_공략.md」
 // 출처: Bulbapedia (Bug-Catching Contest / Sport Ball), Serebii (National Park)
 //
+// 출현표 40행(종·레벨·확률·희귀도)과 점수 계산식은 pret/pokeheartgold 디스어셈블리로
+// 교차 검증했다 — files/data/mushi/mushi_encount.csv 와 src/overlay_bug_contest.c 의
+// BugContest_JudgePlayerMon(). 전부 일치했다.
+// CSV 의 rate 컬럼은 확률이 아니라 누적 임계값(80,60,50,...,0)이라 차이를 내야
+// 실제 확률(20,20,10,...,5)이 된다.
+//
 // 기준은 **전국도감 획득 이후**다. 도감을 얻기 전에는 출현 포켓몬과 1등 상품이 다르다.
 // 2세대 금·은·크리스탈은 점수 계산식 자체가 달라 이 문서를 그대로 적용하면 안 된다.
 
@@ -56,9 +62,9 @@ export interface ScoreComponent {
 
 /** 점수는 최대 400점이고 네 항목으로 나뉜다. */
 export const HGB_SCORE: ScoreComponent[] = [
-  { item: '레벨', max: '100', meaning: '그 종이 대회에서 나올 수 있는 최고 레벨에 얼마나 가까운가' },
-  { item: '개체값', max: '100', meaning: '여섯 능력치 개체값의 합 (최대 186)' },
-  { item: '현재 HP', max: '100', meaning: '잡은 순간의 HP 비율' },
+  { item: '레벨', max: '100', meaning: '잡은 레벨 × 100 ÷ 그 종의 대회 최고 레벨 (스라크·쁘사이저는 28)' },
+  { item: '개체값', max: '100', meaning: '여섯 개체값의 합 × 100 ÷ 186 (31 × 6)' },
+  { item: '현재 HP', max: '100', meaning: '현재 HP × 100 ÷ 최대 HP' },
   { item: '희귀도', max: '60 / 80 / 100', meaning: '종별로 정해진 고정 점수' },
 ]
 
