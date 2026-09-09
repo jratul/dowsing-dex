@@ -365,6 +365,7 @@ export function PokemonDetailPage() {
           <EvolutionTree
             stages={evolutionLine}
             currentPokemonId={pokemon.id}
+            generation={activeGenNum}
             renderPokemon={findSamplePokemon}
             linkState={{ backTo }}
           />

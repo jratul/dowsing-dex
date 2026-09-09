@@ -62,6 +62,11 @@ export interface FriendshipEvolution {
  * HGSS의 친밀도 진화 전체.
  * 조건은 공통으로 「친밀도 220 이상 + 레벨업」이다. 220에 닿는 순간 진화하는 게 아니라
  * 그 뒤에 레벨이 한 번 올라야 한다.
+ *
+ * 220 은 **2~7세대 기준**이다. 8세대(소드·실드)부터는 문턱이 160 으로 낮아졌다.
+ * 종에 따라 다른 게 아니라 세대에 따라 갈리는 값이라, 다른 세대 자료를 그대로 가져오면
+ * 조용히 틀린다. 도감 상세의 진화 조건은 lib/evolutionTrigger.ts 가 보고 있는 세대에
+ * 맞춰 이 수치를 바꿔 준다.
  */
 export const HGF_EVOLUTIONS: FriendshipEvolution[] = [
   { fromId: 42, from: '골뱃', toId: 169, to: '크로뱃' },

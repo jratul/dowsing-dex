@@ -88,6 +88,10 @@ export function PokemonHeartgoldFriendshipGuidePage() {
         <p className="text-xs text-ink-muted">
           HGSS가 따로 구분하는 「아침」 시간대는 진화 판정에서 <b>낮에 포함</b>됩니다. 낮·밤 두 갈래뿐입니다.
         </p>
+        <p className="mt-1 text-xs text-ink-muted">
+          이 220은 <b>2~7세대 기준</b>입니다. 8세대(소드·실드)부터는 문턱이 <b>160</b>으로 낮아졌습니다 —
+          종마다 다른 값이 아니라 세대에 따라 갈리는 값이라, 최신 세대 자료를 그대로 가져오면 조용히 틀립니다.
+        </p>
       </Card>
 
       {/* 시작 친밀도 */}

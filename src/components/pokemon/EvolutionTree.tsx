@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import type { EvolutionStage } from '../../types/pokemon'
 import { cn } from '../../lib/cn'
+import { normalizeEvolutionTrigger } from '../../lib/evolutionTrigger'
 import { SpriteImage } from './SpriteImage'
 
 export interface EvolutionTreeProps {
@@ -8,6 +9,8 @@ export interface EvolutionTreeProps {
   currentPokemonId: number
   renderPokemon: (id: number) => { nameKo: string; formLabel?: string; spriteUrl?: string }
   linkState?: object
+  /** 보고 있는 세대. 친밀도 진화 기준이 세대마다 달라(2~7세대 220 / 8세대~ 160) 필요하다. */
+  generation?: number
 }
 
 function StageNode({
@@ -15,11 +18,13 @@ function StageNode({
   currentPokemonId,
   renderPokemon,
   linkState,
+  generation,
 }: {
   stage: EvolutionStage
   currentPokemonId: number
   renderPokemon: (id: number) => { nameKo: string; formLabel?: string; spriteUrl?: string }
   linkState?: object
+  generation?: number
 }) {
   const info = renderPokemon(stage.pokemonId)
   const isCurrent = stage.pokemonId === currentPokemonId
@@ -55,9 +60,9 @@ function StageNode({
                 {child.triggerIconUrl && (
                   <img src={child.triggerIconUrl} alt={child.trigger ?? ''} width={24} height={24} />
                 )}
-                {child.trigger && <span>{child.trigger}</span>}
+                {child.trigger && <span>{normalizeEvolutionTrigger(child.trigger, generation)}</span>}
               </div>
-              <StageNode stage={child} currentPokemonId={currentPokemonId} renderPokemon={renderPokemon} linkState={linkState} />
+              <StageNode stage={child} currentPokemonId={currentPokemonId} renderPokemon={renderPokemon} linkState={linkState} generation={generation} />
             </div>
           ))}
         </div>
@@ -66,7 +71,7 @@ function StageNode({
   )
 }
 
-export function EvolutionTree({ stages, currentPokemonId, renderPokemon, linkState }: EvolutionTreeProps) {
+export function EvolutionTree({ stages, currentPokemonId, renderPokemon, linkState, generation }: EvolutionTreeProps) {
   return (
     <div className="scrollbar-hide overflow-x-auto">
       <div className="flex flex-col gap-4 py-1">
@@ -77,6 +82,7 @@ export function EvolutionTree({ stages, currentPokemonId, renderPokemon, linkSta
             currentPokemonId={currentPokemonId}
             renderPokemon={renderPokemon}
             linkState={linkState}
+            generation={generation}
           />
         ))}
       </div>
