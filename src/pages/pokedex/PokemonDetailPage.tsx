@@ -3,6 +3,7 @@ import { Link, useLocation, useParams, useSearchParams } from 'react-router-dom'
 import { Card } from '../../components/ui/Card'
 import { TypeBadge } from '../../components/pokemon/TypeBadge'
 import { StatChart } from '../../components/pokemon/StatChart'
+import { statsForGeneration } from '../../lib/baseStats'
 import { TypeDefense } from '../../components/pokemon/TypeDefense'
 import { EvolutionTree } from '../../components/pokemon/EvolutionTree'
 import { MoveList } from '../../components/pokemon/MoveList'
@@ -214,6 +215,7 @@ export function PokemonDetailPage() {
   const prevPokemon = pokemonIndex > 0 ? SAMPLE_POKEMON[pokemonIndex - 1] : undefined
   const nextPokemon = pokemonIndex < SAMPLE_POKEMON.length - 1 ? SAMPLE_POKEMON[pokemonIndex + 1] : undefined
 
+  const generationStats = statsForGeneration(pokemon.dexNumber, pokemon.stats, activeGenNum)
   const hasMoves = (learnsets?.length ?? 0) > 0
   const hasEncounters = (pokemon.encounterLocations?.length ?? 0) > 0
   const sectionTitle = [hasMoves && '기술', hasEncounters && '출현 장소'].filter(Boolean).join(' · ')
@@ -350,7 +352,12 @@ export function PokemonDetailPage() {
       <div className="mb-6 grid gap-4 sm:grid-cols-2">
         <Card className="p-4">
           <h2 className="mb-3 text-sm font-black text-ink-faint">종족값 (스탯)</h2>
-          <StatChart stats={pokemon.stats} />
+          <StatChart stats={generationStats.stats} />
+          {generationStats.changed && (
+            <p className="mt-2 text-xs text-ink-muted">
+              ★ {activeGenNum}세대 당시 값입니다. 이 포켓몬은 이후 세대에서 종족값이 조정됐습니다.
+            </p>
+          )}
         </Card>
 
         <Card className="p-4">

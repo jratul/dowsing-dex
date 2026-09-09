@@ -16,3 +16,4 @@ export function normalizeEvolutionTrigger(trigger: string, generation?: number):
   const threshold = generation >= 8 ? 160 : 220
   return trigger.replace(/친밀도\s*\d+\s*이상/g, `친밀도 ${threshold} 이상`)
 }
+
