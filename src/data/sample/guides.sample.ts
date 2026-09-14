@@ -113,6 +113,16 @@ export const SAMPLE_GUIDES: Guide[] = [
     bannerImageUrl: '/images/guides/heartgold-boxart.jpg',
   },
   {
+    slug: 'pokemon-sword-story',
+    category: '공략',
+    title: '소드 스토리 파티 가이드 — 교체 한 번으로 챔피언까지',
+    iconPokemonId: 815,
+    relatedPokemonIds: [815, 823, 834, 849, 530, 858],
+    summary:
+      '에이스번·아머까오·갈가부기·스트린더·몰드류·브리무음. 멍파치→일레즌 한 번만 바꾸는 입수 순서, 기술 배치, 체육관 8곳과 단델 대응.',
+    bannerImageUrl: '/images/guides/sword-boxart.png',
+  },
+  {
     slug: 'pokemon-unown',
     category: '포획',
     title: '안농 종합 가이드 — 28종 전체와 출현 조건',

@@ -302,6 +302,9 @@ scripts/
 | `/guides/pokemon-heartgold-stones` | PokemonHeartgoldStonesGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-hgss-collection` | PokemonHGSSCollectionGuidePage | 정적 전용 라우트 (마크다운 원문 파싱) |
 | `/guides/pokemon-heartgold-moves` | PokemonHeartgoldMovesGuidePage | 정적 전용 라우트 (TM/HM 관리) |
+| `/guides/pokemon-heartgold-friendship` | PokemonHeartgoldFriendshipGuidePage | 정적 전용 라우트 (친밀도 시스템) |
+| `/guides/pokemon-heartgold-bug-contest` | PokemonHeartgoldBugContestGuidePage | 정적 전용 라우트 (곤충채집 대회) |
+| `/guides/pokemon-sword-story` | PokemonSwordStoryGuidePage | 정적 전용 라우트 (8세대 소드 스토리 파티) |
 | `/guides/pokemon-unown` | PokemonUnownGuidePage | 정적 전용 라우트 (안농 28종 종합) |
 | `/guides/pokemon-emerald-story` | PokemonEmeraldStoryGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-platinum-story` | PokemonPlatinumStoryGuidePage | 정적 전용 라우트 |

@@ -31,6 +31,7 @@ const REAL_NAMES = [...new Set([...ALL_POKEMON.map((p) => p.nameKo), ...ALL_MOVE
 const SECTION_GENS = [
   [/호연지방/, [3]],
   [/신오지방/, [4]],
+  [/가라르지방/, [8]],
 ]
 
 // 사전에 넣기엔 너무 짧거나 일반 낱말과 겹쳐 오탐만 만드는 자리.

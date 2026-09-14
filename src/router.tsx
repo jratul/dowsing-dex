@@ -99,6 +99,13 @@ export const router = createBrowserRouter([
           })),
       },
       {
+        path: '/guides/pokemon-sword-story',
+        lazy: () =>
+          import('./pages/guides/PokemonSwordStoryGuidePage').then((m) => ({
+            Component: m.PokemonSwordStoryGuidePage,
+          })),
+      },
+      {
         path: '/guides/pokemon-unown',
         lazy: () =>
           import('./pages/guides/PokemonUnownGuidePage').then((m) => ({

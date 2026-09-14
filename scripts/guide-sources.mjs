@@ -20,6 +20,7 @@ const DATA_GAMES = {
   'pokemonHeartgoldMoves.data.ts': ['4세대', '하트골드·소울실버'],
   'pokemonHeartgoldFriendship.data.ts': ['4세대', '하트골드·소울실버'],
   'pokemonHeartgoldBugContest.data.ts': ['4세대', '하트골드·소울실버'],
+  'pokemonSwordStory.data.ts': ['8세대', '소드·실드'],
   'pokemonPlatinumStory.data.ts': ['4세대', '플래티넘'],
   'pokemonPlatinumWalkthrough.data.ts': ['4세대', '플래티넘'],
   'pokemonUnown.data.ts': [null, null], // 여러 게임을 묶은 종합 공략
@@ -42,6 +43,7 @@ const EXTERNAL_GAMES = {
   '포켓몬_하트골드_필수_기술_관리_가이드.md': ['4세대', '하트골드·소울실버'],
   '하트골드_친밀도_시스템_종합_가이드.md': ['4세대', '하트골드·소울실버'],
   '하트골드_곤충채집대회_공략.md': ['4세대', '하트골드·소울실버'],
+  'pokemon_sword_story_party_guide.md': ['8세대', '소드·실드'],
   '포켓몬스터_하트골드_스토리_최적화_완전공략.md': ['4세대', '하트골드·소울실버'],
   '포켓몬스터_Pt_기라티나_스토리_최적화_완전공략.md': ['4세대', '플래티넘'],
   '포켓몬스터_Pt_기라티나_DS2대_하트골드_통신진화_바톤터치_최적화_완전공략.md': ['4세대', '플래티넘'],
