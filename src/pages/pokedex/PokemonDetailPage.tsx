@@ -4,6 +4,8 @@ import { Card } from '../../components/ui/Card'
 import { TypeBadge } from '../../components/pokemon/TypeBadge'
 import { StatChart } from '../../components/pokemon/StatChart'
 import { statsForGeneration } from '../../lib/baseStats'
+import { ABILITY_INTRODUCED_GENERATION, abilitiesForGeneration, typesForGeneration } from '../../lib/pastForms'
+import { filterEvolutionByGeneration } from '../../lib/evolutionLine'
 import { TypeDefense } from '../../components/pokemon/TypeDefense'
 import { EvolutionTree } from '../../components/pokemon/EvolutionTree'
 import { MoveList } from '../../components/pokemon/MoveList'
@@ -33,7 +35,10 @@ function flattenEvolutionIds(stages: EvolutionStage[]): number[] {
   return ids
 }
 
-const GENERATION_ORDER: Generation[] = ['1세대', '2세대', '3세대', '4세대', '5세대', '6세대', '7세대', '8세대', '9세대']
+/** 진화 트리에서 그 세대에 없던 포켓몬을 거를 때 쓴다 (리전폼은 id가 달라 폼이 나온 세대가 잡힌다) */
+const GENERATION_BY_ID = new Map(SAMPLE_POKEMON.map((p) => [p.id, p.generation]))
+
+const GENERATION_ORDER: Generation[] =['1세대', '2세대', '3세대', '4세대', '5세대', '6세대', '7세대', '8세대', '9세대']
 
 export function PokemonDetailPage() {
   const location = useLocation()
@@ -218,7 +223,14 @@ export function PokemonDetailPage() {
   const generationStats = statsForGeneration(pokemon.dexNumber, pokemon.stats, activeGenNum)
   // 타입 데이터는 현재 타입이다. 피피(현재 페어리)를 1세대 상성표로 계산하면 페어리가 없는
   // 세대라 전부 보통 데미지로 떨어져 칸이 통째로 빈다. 그럴 땐 현재 상성표로 보여 주고 알린다.
-  const missingEraTypes = pokemon.types.filter(
+  const generationTypes = typesForGeneration(pokemon.id, pokemon.types, activeGenNum)
+  const generationAbilities = abilitiesForGeneration(pokemon.id, pokemon.abilities ?? [], activeGenNum)
+  // 본인이 아직 없던 세대(알로라꼬렛 페이지의 1세대 탭)에서는 트리를 거르지 않는다 — 본인이 사라진다.
+  const visibleEvolutionLine =
+    evolutionLine && pokemon.generation <= activeGenNum
+      ? filterEvolutionByGeneration(evolutionLine, activeGenNum, (famId) => GENERATION_BY_ID.get(famId))
+      : evolutionLine
+  const missingEraTypes = generationTypes.types.filter(
     (t) => !TYPES_BY_ERA[typeEraForGeneration(activeGenNum)].includes(t),
   )
   const typeEra = missingEraTypes.length > 0 ? '6세대 이후' : typeEraForGeneration(activeGenNum)
@@ -332,10 +344,15 @@ export function PokemonDetailPage() {
               {pokemon.nameKo} <span className="text-base font-bold text-ink-faint">{pokemon.nameEn}</span>
             </h1>
           </div>
-          <div className="flex gap-2">
-            {pokemon.types.map((type) => (
+          <div className="flex flex-wrap items-center gap-2">
+            {generationTypes.types.map((type) => (
               <TypeBadge key={type} type={type} />
             ))}
+            {generationTypes.changed && (
+              <span className="text-xs text-ink-muted">
+                ★ {activeGenNum}세대 당시 타입 · 현재 {pokemon.types.join('·')}
+              </span>
+            )}
           </div>
           <div className="grid grid-cols-3 gap-2">
             <Card className="p-3">
@@ -355,8 +372,16 @@ export function PokemonDetailPage() {
           {pokemon.abilities && pokemon.abilities.length > 0 && (
             <Card className="p-3">
               <p className="mb-1.5 text-xs font-bold text-ink-faint">특성</p>
+              {activeGenNum < ABILITY_INTRODUCED_GENERATION && (
+                <p className="text-xs text-ink-muted">
+                  특성은 {ABILITY_INTRODUCED_GENERATION}세대에 생긴 시스템이라 {activeGenNum}세대에는 없습니다.
+                </p>
+              )}
+              {activeGenNum >= ABILITY_INTRODUCED_GENERATION && generationAbilities.changed && (
+                <p className="mb-1.5 text-xs text-ink-muted">★ {activeGenNum}세대 당시 특성입니다. 이후 세대에서 바뀌거나 추가됐습니다.</p>
+              )}
               <div className="flex flex-col gap-1.5">
-                {pokemon.abilities.map((ability) => (
+                {generationAbilities.abilities.map((ability) => (
                   <div key={ability.nameEn}>
                     <span className="text-sm font-bold text-ink">
                       {ability.nameKo}
@@ -416,7 +441,7 @@ export function PokemonDetailPage() {
 
         <Card className="p-4">
           <h2 className="mb-3 text-sm font-black text-ink-faint">방어 상성</h2>
-          <TypeDefense types={pokemon.types} era={typeEra} />
+          <TypeDefense types={generationTypes.types} era={typeEra} />
           {missingEraTypes.length > 0 && (
             <p className="mt-2 text-xs text-ink-muted">
               ★ {missingEraTypes.join('·')} 타입은 {activeGenNum}세대에 아직 없었습니다. 현재 타입·상성표 기준이라
@@ -426,11 +451,11 @@ export function PokemonDetailPage() {
         </Card>
       </div>
 
-      {evolutionLine && (
+      {visibleEvolutionLine && (
         <Card className="p-4">
           <h2 className="mb-3 text-sm font-black text-ink-faint">진화</h2>
           <EvolutionTree
-            stages={evolutionLine}
+            stages={visibleEvolutionLine}
             currentPokemonId={pokemon.id}
             generation={activeGenNum}
             renderPokemon={findSamplePokemon}

@@ -544,8 +544,18 @@ function HowBadge({ how }: { how: string }) {
 - 탭은 **페이지 맨 위**(이전/다음 버튼 아래)에 있다. 기술·출현뿐 아니라 종족값
   (`statsForGeneration`), 방어 상성(`typeEraForGeneration`), 진화 조건의 친밀도 문턱
   (`normalizeEvolutionTrigger`)도 이 선택을 따르기 때문이다.
-- 방어 상성은 **현재 타입**으로 계산한다. 그 세대에 없던 타입(1세대 피피의 페어리)이 섞이면
+- **타입·특성도 세대 값으로 되돌린다**(`lib/pastForms.ts`). 도감 데이터는 현재 값이라 피피가
+  1세대에도 페어리, 팬텀이 3세대에도 저주받은바디로 보였다. 이력은
+  `scripts/build-past-types-abilities.mjs`가 PokeAPI CSV(`pokemon_types_past`·`pokemon_abilities_past`)에서
+  뽑아 `past-types-abilities.generated.ts`로 쓴다(npm script 미등록, 직접 실행). CSV의
+  `generation_id`는 "이 값이 **마지막으로** 쓰인 세대"이고, 특성 `ability_id`가 비면 그 슬롯이
+  아직 없었다는 뜻이다. 특성은 3세대, 숨겨진 특성은 5세대에 생겼다 — 4세대 이전 숨겨진 특성
+  제거는 모든 종이 같아 "★ 당시 특성" 안내를 띄우지 않는다(띄우면 420종에 전부 붙는다).
+- 방어 상성은 위의 **세대 타입**으로 계산한다. 이력에 없는 종에 그 세대에 없던 타입이 섞이면
   옛 상성표로는 전부 보통 데미지가 되어 칸이 빈다 — 그때는 현재 상성표로 그리고 안내 문구를 붙인다.
+- 진화 트리는 그 세대에 없던 포켓몬을 뺀다(`lib/evolutionLine.ts`). 1세대 삐삐에 삐가, 1세대
+  이브이에 님피아가 붙지 않게 한다. 빠진 단계의 자식은 한 칸 올린다. 단 **본인이 아직 없던
+  세대**(알로라 폼 페이지의 1세대 탭)에서는 거르지 않는다 — 거르면 본인이 사라진다.
 
 - 페이지가 활성 세대·버전을 정해 `generation`·`version`(비교표는 `activeGen`·`activeVersion`)으로
   내려준다. 탭 상태는 로컬 state가 아니라 **URL 쿼리**(`?gen=4&ver=하트골드·소울실버`)에 있다.
