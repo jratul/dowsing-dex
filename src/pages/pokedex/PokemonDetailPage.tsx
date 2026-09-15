@@ -23,7 +23,7 @@ import type { FlavorTextEntry } from '../../types/pokemon'
 import { EvolutionMoveComparison } from '../../components/pokemon/EvolutionMoveComparison'
 import type { EvolutionStage } from '../../types/pokemon'
 import type { Generation, Learnset } from '../../types/move'
-import { COLOR } from '../../lib/typeChart'
+import { COLOR, TYPES_BY_ERA, typeEraForGeneration } from '../../lib/typeChart'
 import { cn } from '../../lib/cn'
 
 function flattenEvolutionIds(stages: EvolutionStage[]): number[] {
@@ -216,6 +216,12 @@ export function PokemonDetailPage() {
   const nextPokemon = pokemonIndex < SAMPLE_POKEMON.length - 1 ? SAMPLE_POKEMON[pokemonIndex + 1] : undefined
 
   const generationStats = statsForGeneration(pokemon.dexNumber, pokemon.stats, activeGenNum)
+  // 타입 데이터는 현재 타입이다. 피피(현재 페어리)를 1세대 상성표로 계산하면 페어리가 없는
+  // 세대라 전부 보통 데미지로 떨어져 칸이 통째로 빈다. 그럴 땐 현재 상성표로 보여 주고 알린다.
+  const missingEraTypes = pokemon.types.filter(
+    (t) => !TYPES_BY_ERA[typeEraForGeneration(activeGenNum)].includes(t),
+  )
+  const typeEra = missingEraTypes.length > 0 ? '6세대 이후' : typeEraForGeneration(activeGenNum)
   const hasMoves = (learnsets?.length ?? 0) > 0
   const hasEncounters = (pokemon.encounterLocations?.length ?? 0) > 0
   const sectionTitle = [hasMoves && '기술', hasEncounters && '출현 장소'].filter(Boolean).join(' · ')
@@ -252,7 +258,55 @@ export function PokemonDetailPage() {
         </div>
       </div>
 
-      <div className="mb-6 grid gap-4 sm:grid-cols-2">
+      {/* 세대·버전 탭 — 종족값·방어 상성·진화 조건·기술·출현 장소가 모두 이 선택을 따른다 */}
+      {generationNums.length > 0 && (
+        <Card className="mb-6 flex flex-wrap items-center gap-2 p-3">
+          <span className="shrink-0 text-xs font-black text-ink-faint">보고 있는 게임</span>
+          {/* min-w-0 max-w-full: flex 자식은 기본 min-width가 내용 너비라, 없으면 모바일에서
+              탭 줄이 화면보다 넓어져 페이지 전체가 가로로 스크롤된다. */}
+          <div className="flex max-w-full min-w-0 gap-1.5 overflow-x-auto">
+            {generationNums.map((gen) => (
+              <button
+                key={gen}
+                type="button"
+                onClick={() => {
+                  // 세대가 바뀌면 버전 목록이 통째로 달라진다. 그 세대의 첫 버전으로 맞춘다.
+                  selectTab(gen, versionsByGen.get(gen)?.[0] ?? null)
+                }}
+                className={cn(
+                  'shrink-0 rounded-chip border px-3 py-1.5 text-xs font-bold transition-colors',
+                  activeGenNum === gen
+                    ? 'border-brand-red bg-brand-red text-white'
+                    : 'border-border-strong text-ink hover:border-brand-red hover:text-brand-red',
+                )}
+              >
+                {gen}세대
+              </button>
+            ))}
+          </div>
+          {versionsForActiveGen.length > 1 && (
+            <div className="flex max-w-full min-w-0 gap-1.5 overflow-x-auto">
+              {versionsForActiveGen.map((version) => (
+                <button
+                  key={version}
+                  type="button"
+                  onClick={() => selectTab(activeGenNum, version)}
+                  className={cn(
+                    'shrink-0 rounded-chip px-3 py-1.5 text-xs font-bold transition-colors',
+                    activeVersion === version
+                      ? 'bg-brand-red/10 text-brand-red'
+                      : 'bg-surface-hover text-ink-muted hover:text-ink',
+                  )}
+                >
+                  {version}
+                </button>
+              ))}
+            </div>
+          )}
+        </Card>
+      )}
+
+      <div className="mb-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <Card className="relative flex items-center justify-center overflow-hidden p-6" style={{ backgroundColor: `${accentColor}1a` }}>
           <span className="absolute inset-0 flex items-center justify-center text-8xl font-black text-ink/5 select-none">
             {dexNumber}
@@ -269,7 +323,7 @@ export function PokemonDetailPage() {
           />
         </Card>
 
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 lg:col-span-3">
           <div>
             <span className="text-sm font-bold text-ink-faint">
               #{dexNumber} · {pokemon.generation}세대{pokemon.formLabel && ` · ${pokemon.formLabel}`}
@@ -362,7 +416,13 @@ export function PokemonDetailPage() {
 
         <Card className="p-4">
           <h2 className="mb-3 text-sm font-black text-ink-faint">방어 상성</h2>
-          <TypeDefense types={pokemon.types} />
+          <TypeDefense types={pokemon.types} era={typeEra} />
+          {missingEraTypes.length > 0 && (
+            <p className="mt-2 text-xs text-ink-muted">
+              ★ {missingEraTypes.join('·')} 타입은 {activeGenNum}세대에 아직 없었습니다. 현재 타입·상성표 기준이라
+              당시와 다를 수 있습니다.
+            </p>
+          )}
         </Card>
       </div>
 
@@ -382,50 +442,10 @@ export function PokemonDetailPage() {
       {/* 기술 · 진화 계열 비교 · 출현 장소가 세대·버전 탭 하나를 공유한다 */}
       {(hasMoves || hasEncounters) && (
         <Card className="mt-6 p-4">
-          <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
-            <h2 className="text-sm font-black text-ink-faint">{sectionTitle}</h2>
-            <div className="flex flex-wrap items-center gap-2">
-              <div className="flex gap-1.5 overflow-x-auto">
-                {generationNums.map((gen) => (
-                  <button
-                    key={gen}
-                    type="button"
-                    onClick={() => {
-                      // 세대가 바뀌면 버전 목록이 통째로 달라진다. 그 세대의 첫 버전으로 맞춘다.
-                      selectTab(gen, versionsByGen.get(gen)?.[0] ?? null)
-                    }}
-                    className={cn(
-                      'shrink-0 rounded-chip border px-3 py-1.5 text-xs font-bold transition-colors',
-                      activeGenNum === gen
-                        ? 'border-brand-red bg-brand-red text-white'
-                        : 'border-border-strong text-ink hover:border-brand-red hover:text-brand-red',
-                    )}
-                  >
-                    {gen}세대
-                  </button>
-                ))}
-              </div>
-              {versionsForActiveGen.length > 1 && (
-                <div className="flex gap-1.5 overflow-x-auto">
-                  {versionsForActiveGen.map((version) => (
-                    <button
-                      key={version}
-                      type="button"
-                      onClick={() => selectTab(activeGenNum, version)}
-                      className={cn(
-                        'shrink-0 rounded-chip px-3 py-1.5 text-xs font-bold transition-colors',
-                        activeVersion === version
-                          ? 'bg-brand-red/10 text-brand-red'
-                          : 'bg-surface-hover text-ink-muted hover:text-ink',
-                      )}
-                    >
-                      {version}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-          </div>
+          <h2 className="mb-4 text-sm font-black text-ink-faint">
+            {sectionTitle}
+            {activeVersion && <span className="ml-1.5 font-bold text-ink-muted">· {activeVersion}</span>}
+          </h2>
 
           <div className="flex flex-col gap-6">
             {/* 진화하는 포켓몬은 계열 비교표가 레벨업 기술을 대신하고,

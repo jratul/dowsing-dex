@@ -34,6 +34,13 @@ export const CHART: TypeChart = {
  */
 export type TypeEra = '1세대' | '2~5세대' | '6세대 이후'
 
+/** 세대 번호 → 그 세대가 쓰는 상성표 */
+export function typeEraForGeneration(generation: number): TypeEra {
+  if (generation <= 1) return '1세대'
+  if (generation <= 5) return '2~5세대'
+  return '6세대 이후'
+}
+
 const GEN1_EXCLUDED: TypeName[] = ['악', '강철', '페어리']
 const GEN2_5_EXCLUDED: TypeName[] = ['페어리']
 

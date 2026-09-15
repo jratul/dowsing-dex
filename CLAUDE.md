@@ -541,6 +541,12 @@ function HowBadge({ how }: { how: string }) {
 `EvolutionMoveComparison` / `MoveList` / `EncounterLocationList`는 **탭을 그리지 않는다.**
 셋 다 한 카드 안에 들어가므로 각자 탭을 가지면 같은 화면에 세대 탭이 세 벌 생긴다.
 
+- 탭은 **페이지 맨 위**(이전/다음 버튼 아래)에 있다. 기술·출현뿐 아니라 종족값
+  (`statsForGeneration`), 방어 상성(`typeEraForGeneration`), 진화 조건의 친밀도 문턱
+  (`normalizeEvolutionTrigger`)도 이 선택을 따르기 때문이다.
+- 방어 상성은 **현재 타입**으로 계산한다. 그 세대에 없던 타입(1세대 피피의 페어리)이 섞이면
+  옛 상성표로는 전부 보통 데미지가 되어 칸이 빈다 — 그때는 현재 상성표로 그리고 안내 문구를 붙인다.
+
 - 페이지가 활성 세대·버전을 정해 `generation`·`version`(비교표는 `activeGen`·`activeVersion`)으로
   내려준다. 탭 상태는 로컬 state가 아니라 **URL 쿼리**(`?gen=4&ver=하트골드·소울실버`)에 있다.
 - **탭을 바꾸는 `setSearchParams`에는 `preventScrollReset: true`가 반드시 있어야 한다.**
