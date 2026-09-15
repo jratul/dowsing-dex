@@ -136197,6 +136197,40 @@ export const ALL_POKEMON: Pokemon[] = [...POKEMON_CHUNK_0, ...POKEMON_CHUNK_1, .
 export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   [
     {
+      "pokemonId": 16,
+      "children": [
+        {
+          "pokemonId": 17,
+          "trigger": "레벨 18",
+          "children": [
+            {
+              "pokemonId": 18,
+              "trigger": "레벨 36"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 13,
+      "children": [
+        {
+          "pokemonId": 14,
+          "trigger": "레벨 7",
+          "children": [
+            {
+              "pokemonId": 15,
+              "trigger": "레벨 10"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 1,
       "children": [
         {
@@ -136214,15 +136248,15 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 10,
+      "pokemonId": 7,
       "children": [
         {
-          "pokemonId": 11,
-          "trigger": "레벨 7",
+          "pokemonId": 8,
+          "trigger": "레벨 16",
           "children": [
             {
-              "pokemonId": 12,
-              "trigger": "레벨 10"
+              "pokemonId": 9,
+              "trigger": "레벨 36"
             }
           ]
         }
@@ -136231,14 +136265,14 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 13,
+      "pokemonId": 10,
       "children": [
         {
-          "pokemonId": 14,
+          "pokemonId": 11,
           "trigger": "레벨 7",
           "children": [
             {
-              "pokemonId": 15,
+              "pokemonId": 12,
               "trigger": "레벨 10"
             }
           ]
@@ -136276,34 +136310,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 16,
+      "pokemonId": 23,
       "children": [
         {
-          "pokemonId": 17,
-          "trigger": "레벨 18",
-          "children": [
-            {
-              "pokemonId": 18,
-              "trigger": "레벨 36"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 7,
-      "children": [
-        {
-          "pokemonId": 8,
-          "trigger": "레벨 16",
-          "children": [
-            {
-              "pokemonId": 9,
-              "trigger": "레벨 36"
-            }
-          ]
+          "pokemonId": 24,
+          "trigger": "레벨 22"
         }
       ]
     }
@@ -136326,17 +136337,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 10092,
           "trigger": "레벨 20 · 밤"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 23,
-      "children": [
-        {
-          "pokemonId": 24,
-          "trigger": "레벨 22"
         }
       ]
     }
@@ -136372,41 +136372,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 32,
-      "children": [
-        {
-          "pokemonId": 33,
-          "trigger": "레벨 16",
-          "children": [
-            {
-              "pokemonId": 34,
-              "trigger": "달의돌 사용",
-              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 41,
-      "children": [
-        {
-          "pokemonId": 42,
-          "trigger": "레벨 22",
-          "children": [
-            {
-              "pokemonId": 169,
-              "trigger": "레벨업 · 친밀도 160 이상"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 172,
       "children": [
         {
@@ -136430,23 +136395,18 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 10101,
+      "pokemonId": 32,
       "children": [
         {
-          "pokemonId": 10102,
-          "trigger": "얼음의돌 사용",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/ice-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 46,
-      "children": [
-        {
-          "pokemonId": 47,
-          "trigger": "레벨 24"
+          "pokemonId": 33,
+          "trigger": "레벨 16",
+          "children": [
+            {
+              "pokemonId": 34,
+              "trigger": "달의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/moon-stone.png"
+            }
+          ]
         }
       ]
     }
@@ -136471,11 +136431,12 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 48,
+      "pokemonId": 10101,
       "children": [
         {
-          "pokemonId": 49,
-          "trigger": "레벨 31"
+          "pokemonId": 10102,
+          "trigger": "얼음의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/ice-stone.png"
         }
       ]
     }
@@ -136500,33 +136461,39 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 50,
+      "pokemonId": 48,
       "children": [
         {
-          "pokemonId": 51,
-          "trigger": "레벨 26"
+          "pokemonId": 49,
+          "trigger": "레벨 31"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 10105,
+      "pokemonId": 41,
       "children": [
         {
-          "pokemonId": 10106,
-          "trigger": "레벨 26"
+          "pokemonId": 42,
+          "trigger": "레벨 22",
+          "children": [
+            {
+              "pokemonId": 169,
+              "trigger": "레벨업 · 친밀도 160 이상"
+            }
+          ]
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 54,
+      "pokemonId": 46,
       "children": [
         {
-          "pokemonId": 55,
-          "trigger": "레벨 33"
+          "pokemonId": 47,
+          "trigger": "레벨 24"
         }
       ]
     }
@@ -136551,6 +136518,28 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
           "pokemonId": 10104,
           "trigger": "얼음의돌 사용",
           "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/ice-stone.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 50,
+      "children": [
+        {
+          "pokemonId": 51,
+          "trigger": "레벨 26"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 10105,
+      "children": [
+        {
+          "pokemonId": 10106,
+          "trigger": "레벨 26"
         }
       ]
     }
@@ -136590,23 +136579,28 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 43,
+      "pokemonId": 56,
       "children": [
         {
-          "pokemonId": 44,
-          "trigger": "레벨 21",
+          "pokemonId": 57,
+          "trigger": "레벨 28",
           "children": [
             {
-              "pokemonId": 45,
-              "trigger": "리프의돌 사용",
-              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
-            },
-            {
-              "pokemonId": 182,
-              "trigger": "태양의돌 사용",
-              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
+              "pokemonId": 979,
+              "trigger": "특정 기술 사용"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 54,
+      "children": [
+        {
+          "pokemonId": 55,
+          "trigger": "레벨 33"
         }
       ]
     }
@@ -136637,33 +136631,15 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 69,
+      "pokemonId": 63,
       "children": [
         {
-          "pokemonId": 70,
-          "trigger": "레벨 21",
+          "pokemonId": 64,
+          "trigger": "레벨 16",
           "children": [
             {
-              "pokemonId": 71,
-              "trigger": "리프의돌 사용",
-              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 56,
-      "children": [
-        {
-          "pokemonId": 57,
-          "trigger": "레벨 28",
-          "children": [
-            {
-              "pokemonId": 979,
-              "trigger": "특정 기술 사용"
+              "pokemonId": 65,
+              "trigger": "교환"
             }
           ]
         }
@@ -136689,15 +136665,16 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 63,
+      "pokemonId": 69,
       "children": [
         {
-          "pokemonId": 64,
-          "trigger": "레벨 16",
+          "pokemonId": 70,
+          "trigger": "레벨 21",
           "children": [
             {
-              "pokemonId": 65,
-              "trigger": "교환"
+              "pokemonId": 71,
+              "trigger": "리프의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
             }
           ]
         }
@@ -136717,44 +136694,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 10166,
+      "pokemonId": 43,
       "children": [
         {
-          "pokemonId": 865,
-          "trigger": "한 전투에서 급소 3회"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 77,
-      "children": [
-        {
-          "pokemonId": 78,
-          "trigger": "레벨 40"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 10162,
-      "children": [
-        {
-          "pokemonId": 10163,
-          "trigger": "레벨 40"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 86,
-      "children": [
-        {
-          "pokemonId": 87,
-          "trigger": "레벨 34"
+          "pokemonId": 44,
+          "trigger": "레벨 21",
+          "children": [
+            {
+              "pokemonId": 45,
+              "trigger": "리프의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
+            },
+            {
+              "pokemonId": 182,
+              "trigger": "태양의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
+            }
+          ]
         }
       ]
     }
@@ -136806,33 +136762,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 60,
+      "pokemonId": 77,
       "children": [
         {
-          "pokemonId": 61,
-          "trigger": "레벨 25",
-          "children": [
-            {
-              "pokemonId": 62,
-              "trigger": "물의돌 사용",
-              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/water-stone.png"
-            },
-            {
-              "pokemonId": 186,
-              "trigger": "교환 · 소지: 왕의징표석"
-            }
-          ]
+          "pokemonId": 78,
+          "trigger": "레벨 40"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 84,
+      "pokemonId": 10162,
       "children": [
         {
-          "pokemonId": 85,
-          "trigger": "레벨 31"
+          "pokemonId": 10163,
+          "trigger": "레벨 40"
         }
       ]
     }
@@ -136847,9 +136792,54 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
           "children": [
             {
               "pokemonId": 462,
-              "trigger": "레벨업"
+              "trigger": "천둥의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/thunder-stone.png",
+              "triggerByGeneration": [
+                {
+                  "fromGeneration": 4,
+                  "trigger": "자기장이 강한 곳에서 레벨업"
+                },
+                {
+                  "fromGeneration": 8,
+                  "trigger": "천둥의돌 사용",
+                  "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/thunder-stone.png"
+                }
+              ]
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 10166,
+      "children": [
+        {
+          "pokemonId": 865,
+          "trigger": "한 전투에서 급소 3회"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 86,
+      "children": [
+        {
+          "pokemonId": 87,
+          "trigger": "레벨 34"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 84,
+      "children": [
+        {
+          "pokemonId": 85,
+          "trigger": "레벨 31"
         }
       ]
     }
@@ -136883,6 +136873,50 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 88,
+      "children": [
+        {
+          "pokemonId": 89,
+          "trigger": "레벨 38"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 10112,
+      "children": [
+        {
+          "pokemonId": 10113,
+          "trigger": "레벨 38"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 60,
+      "children": [
+        {
+          "pokemonId": 61,
+          "trigger": "레벨 25",
+          "children": [
+            {
+              "pokemonId": 62,
+              "trigger": "물의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/water-stone.png"
+            },
+            {
+              "pokemonId": 186,
+              "trigger": "교환 · 소지: 왕의징표석"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 92,
       "children": [
         {
@@ -136894,6 +136928,28 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "교환"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 96,
+      "children": [
+        {
+          "pokemonId": 97,
+          "trigger": "레벨 26"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 98,
+      "children": [
+        {
+          "pokemonId": 99,
+          "trigger": "레벨 28"
         }
       ]
     }
@@ -136923,28 +136979,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 96,
-      "children": [
-        {
-          "pokemonId": 97,
-          "trigger": "레벨 26"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 95,
-      "children": [
-        {
-          "pokemonId": 208,
-          "trigger": "교환 · 소지: 금속코트"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 102,
       "children": [
         {
@@ -136962,33 +136996,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 88,
+      "pokemonId": 95,
       "children": [
         {
-          "pokemonId": 89,
-          "trigger": "레벨 38"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 10112,
-      "children": [
-        {
-          "pokemonId": 10113,
-          "trigger": "레벨 38"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 98,
-      "children": [
-        {
-          "pokemonId": 99,
-          "trigger": "레벨 28"
+          "pokemonId": 208,
+          "trigger": "교환 · 소지: 금속코트"
         }
       ]
     }
@@ -137004,47 +137016,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 10172,
           "trigger": "가라두구머리장식 사용"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 109,
-      "children": [
-        {
-          "pokemonId": 110,
-          "trigger": "레벨 35"
-        },
-        {
-          "pokemonId": 10167,
-          "trigger": "레벨 35"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 104,
-      "children": [
-        {
-          "pokemonId": 105,
-          "trigger": "레벨 28"
-        },
-        {
-          "pokemonId": 10115,
-          "trigger": "레벨 28 · 밤"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 108,
-      "children": [
-        {
-          "pokemonId": 463,
-          "trigger": "레벨업 · 구르기 습득"
         }
       ]
     }
@@ -137070,6 +137041,47 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 104,
+      "children": [
+        {
+          "pokemonId": 105,
+          "trigger": "레벨 28"
+        },
+        {
+          "pokemonId": 10115,
+          "trigger": "레벨 28 · 밤"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 109,
+      "children": [
+        {
+          "pokemonId": 110,
+          "trigger": "레벨 35"
+        },
+        {
+          "pokemonId": 10167,
+          "trigger": "레벨 35"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 108,
+      "children": [
+        {
+          "pokemonId": 463,
+          "trigger": "레벨업 · 구르기 습득"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 111,
       "children": [
         {
@@ -137081,6 +137093,28 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "교환 · 소지: 프로텍터"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 114,
+      "children": [
+        {
+          "pokemonId": 465,
+          "trigger": "레벨업 · 원시의힘 습득"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 118,
+      "children": [
+        {
+          "pokemonId": 119,
+          "trigger": "레벨 33"
         }
       ]
     }
@@ -137133,157 +137167,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 118,
-      "children": [
-        {
-          "pokemonId": 119,
-          "trigger": "레벨 33"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 114,
-      "children": [
-        {
-          "pokemonId": 465,
-          "trigger": "레벨업 · 원시의힘 습득"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 238,
       "children": [
         {
           "pokemonId": 124,
           "trigger": "레벨 30"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 123,
-      "children": [
-        {
-          "pokemonId": 212,
-          "trigger": "교환 · 소지: 금속코트"
-        },
-        {
-          "pokemonId": 900,
-          "trigger": "검은휘석 사용"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 129,
-      "children": [
-        {
-          "pokemonId": 130,
-          "trigger": "레벨 20"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 239,
-      "children": [
-        {
-          "pokemonId": 125,
-          "trigger": "레벨 30",
-          "children": [
-            {
-              "pokemonId": 466,
-              "trigger": "교환 · 소지: 에레키부스터"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 133,
-      "children": [
-        {
-          "pokemonId": 134,
-          "trigger": "물의돌 사용",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/water-stone.png"
-        },
-        {
-          "pokemonId": 135,
-          "trigger": "천둥의돌 사용",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/thunder-stone.png"
-        },
-        {
-          "pokemonId": 136,
-          "trigger": "불꽃의돌 사용",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/fire-stone.png"
-        },
-        {
-          "pokemonId": 196,
-          "trigger": "레벨업 · 친밀도 160 이상 · 낮"
-        },
-        {
-          "pokemonId": 197,
-          "trigger": "레벨업 · 친밀도 160 이상 · 밤"
-        },
-        {
-          "pokemonId": 470,
-          "trigger": "레벨업"
-        },
-        {
-          "pokemonId": 471,
-          "trigger": "레벨업"
-        },
-        {
-          "pokemonId": 700,
-          "trigger": "레벨업 · 어픽션 2 이상 · 페어리 타입 기술 습득"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 240,
-      "children": [
-        {
-          "pokemonId": 126,
-          "trigger": "레벨 30",
-          "children": [
-            {
-              "pokemonId": 467,
-              "trigger": "교환 · 소지: 마그마부스터"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 138,
-      "children": [
-        {
-          "pokemonId": 139,
-          "trigger": "레벨 40"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 140,
-      "children": [
-        {
-          "pokemonId": 141,
-          "trigger": "레벨 40"
         }
       ]
     }
@@ -137322,28 +137210,169 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 446,
+      "pokemonId": 239,
       "children": [
         {
-          "pokemonId": 143,
-          "trigger": "레벨업 · 친밀도 160 이상"
+          "pokemonId": 125,
+          "trigger": "레벨 30",
+          "children": [
+            {
+              "pokemonId": 466,
+              "trigger": "교환 · 소지: 에레키부스터"
+            }
+          ]
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 147,
+      "pokemonId": 123,
       "children": [
         {
-          "pokemonId": 148,
+          "pokemonId": 212,
+          "trigger": "교환 · 소지: 금속코트"
+        },
+        {
+          "pokemonId": 900,
+          "trigger": "검은휘석 사용"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 129,
+      "children": [
+        {
+          "pokemonId": 130,
+          "trigger": "레벨 20"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 240,
+      "children": [
+        {
+          "pokemonId": 126,
           "trigger": "레벨 30",
           "children": [
             {
-              "pokemonId": 149,
-              "trigger": "레벨 55"
+              "pokemonId": 467,
+              "trigger": "교환 · 소지: 마그마부스터"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 133,
+      "children": [
+        {
+          "pokemonId": 134,
+          "trigger": "물의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/water-stone.png"
+        },
+        {
+          "pokemonId": 135,
+          "trigger": "천둥의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/thunder-stone.png"
+        },
+        {
+          "pokemonId": 136,
+          "trigger": "불꽃의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/fire-stone.png"
+        },
+        {
+          "pokemonId": 196,
+          "trigger": "레벨업 · 친밀도 160 이상 · 낮"
+        },
+        {
+          "pokemonId": 197,
+          "trigger": "레벨업 · 친밀도 160 이상 · 밤"
+        },
+        {
+          "pokemonId": 470,
+          "trigger": "리프의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png",
+          "triggerByGeneration": [
+            {
+              "fromGeneration": 4,
+              "trigger": "이끼바위 근처에서 레벨업"
+            },
+            {
+              "fromGeneration": 8,
+              "trigger": "리프의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
+            }
+          ]
+        },
+        {
+          "pokemonId": 471,
+          "trigger": "얼음의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/ice-stone.png",
+          "triggerByGeneration": [
+            {
+              "fromGeneration": 4,
+              "trigger": "얼음바위 근처에서 레벨업"
+            },
+            {
+              "fromGeneration": 8,
+              "trigger": "얼음의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/ice-stone.png"
+            }
+          ]
+        },
+        {
+          "pokemonId": 700,
+          "trigger": "레벨업 · 친밀도 160 이상 · 페어리 타입 기술 습득",
+          "triggerByGeneration": [
+            {
+              "fromGeneration": 6,
+              "trigger": "레벨업 · 어픽션 2 이상 · 페어리 타입 기술 습득"
+            },
+            {
+              "fromGeneration": 8,
+              "trigger": "레벨업 · 친밀도 160 이상 · 페어리 타입 기술 습득"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 138,
+      "children": [
+        {
+          "pokemonId": 139,
+          "trigger": "레벨 40"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 140,
+      "children": [
+        {
+          "pokemonId": 141,
+          "trigger": "레벨 40"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 446,
+      "children": [
+        {
+          "pokemonId": 143,
+          "trigger": "레벨업 · 친밀도 160 이상"
         }
       ]
     }
@@ -137359,6 +137388,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
             {
               "pokemonId": 154,
               "trigger": "레벨 32"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 147,
+      "children": [
+        {
+          "pokemonId": 148,
+          "trigger": "레벨 30",
+          "children": [
+            {
+              "pokemonId": 149,
+              "trigger": "레벨 55"
             }
           ]
         }
@@ -137405,61 +137451,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 161,
-      "children": [
-        {
-          "pokemonId": 162,
-          "trigger": "레벨 15"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 165,
-      "children": [
-        {
-          "pokemonId": 166,
-          "trigger": "레벨 18"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 163,
-      "children": [
-        {
-          "pokemonId": 164,
-          "trigger": "레벨 20"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 170,
-      "children": [
-        {
-          "pokemonId": 171,
-          "trigger": "레벨 27"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 167,
-      "children": [
-        {
-          "pokemonId": 168,
-          "trigger": "레벨 22"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 137,
       "children": [
         {
@@ -137477,17 +137468,55 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 179,
+      "pokemonId": 161,
       "children": [
         {
-          "pokemonId": 180,
-          "trigger": "레벨 15",
-          "children": [
-            {
-              "pokemonId": 181,
-              "trigger": "레벨 30"
-            }
-          ]
+          "pokemonId": 162,
+          "trigger": "레벨 15"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 163,
+      "children": [
+        {
+          "pokemonId": 164,
+          "trigger": "레벨 20"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 165,
+      "children": [
+        {
+          "pokemonId": 166,
+          "trigger": "레벨 18"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 167,
+      "children": [
+        {
+          "pokemonId": 168,
+          "trigger": "레벨 22"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 170,
+      "children": [
+        {
+          "pokemonId": 171,
+          "trigger": "레벨 27"
         }
       ]
     }
@@ -137499,6 +137528,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 178,
           "trigger": "레벨 25"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 179,
+      "children": [
+        {
+          "pokemonId": 180,
+          "trigger": "레벨 15",
+          "children": [
+            {
+              "pokemonId": 181,
+              "trigger": "레벨 30"
+            }
+          ]
         }
       ]
     }
@@ -137568,6 +137614,29 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 191,
+      "children": [
+        {
+          "pokemonId": 192,
+          "trigger": "태양의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 193,
+      "children": [
+        {
+          "pokemonId": 469,
+          "trigger": "레벨업 · 원시의힘 습득"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 194,
       "children": [
         {
@@ -137590,18 +137659,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 191,
-      "children": [
-        {
-          "pokemonId": 192,
-          "trigger": "태양의돌 사용",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 190,
       "children": [
         {
@@ -137613,11 +137670,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 193,
+      "pokemonId": 204,
       "children": [
         {
-          "pokemonId": 469,
-          "trigger": "레벨업 · 원시의힘 습득"
+          "pokemonId": 205,
+          "trigger": "레벨 31"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 360,
+      "children": [
+        {
+          "pokemonId": 202,
+          "trigger": "레벨 15"
         }
       ]
     }
@@ -137648,33 +137716,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 360,
-      "children": [
-        {
-          "pokemonId": 202,
-          "trigger": "레벨 15"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 203,
       "children": [
         {
           "pokemonId": 981,
           "trigger": "레벨업 · 트윈빔 습득"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 204,
-      "children": [
-        {
-          "pokemonId": 205,
-          "trigger": "레벨 31"
         }
       ]
     }
@@ -137692,17 +137738,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 206,
-      "children": [
-        {
-          "pokemonId": 982,
-          "trigger": "레벨업 · 하이퍼드릴 습득"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 207,
       "children": [
         {
@@ -137714,11 +137749,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 10234,
+      "pokemonId": 206,
       "children": [
         {
-          "pokemonId": 904,
-          "trigger": "강함 스타일 기술 사용"
+          "pokemonId": 982,
+          "trigger": "레벨업 · 하이퍼드릴 습득"
         }
       ]
     }
@@ -137753,6 +137788,28 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 10234,
+      "children": [
+        {
+          "pokemonId": 904,
+          "trigger": "레벨업 · 독침천발 습득"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 10173,
+      "children": [
+        {
+          "pokemonId": 864,
+          "trigger": "레벨 38"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 215,
       "children": [
         {
@@ -137769,23 +137826,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 903,
           "trigger": "레벨업 · 낮 · 소지: 예리한손톱"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 216,
-      "children": [
-        {
-          "pokemonId": 217,
-          "trigger": "레벨 30",
-          "children": [
-            {
-              "pokemonId": 901,
-              "trigger": "피트블록 사용 · 밤"
-            }
-          ]
         }
       ]
     }
@@ -137814,11 +137854,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 10173,
+      "pokemonId": 216,
       "children": [
         {
-          "pokemonId": 864,
-          "trigger": "레벨 38"
+          "pokemonId": 217,
+          "trigger": "레벨 30",
+          "children": [
+            {
+              "pokemonId": 901,
+              "trigger": "피트블록 사용 · 밤"
+            }
+          ]
         }
       ]
     }
@@ -137875,23 +137921,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 258,
-      "children": [
-        {
-          "pokemonId": 259,
-          "trigger": "레벨 16",
-          "children": [
-            {
-              "pokemonId": 260,
-              "trigger": "레벨 36"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 252,
       "children": [
         {
@@ -137909,17 +137938,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 261,
-      "children": [
-        {
-          "pokemonId": 262,
-          "trigger": "레벨 18"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 255,
       "children": [
         {
@@ -137931,6 +137949,34 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "레벨 36"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 258,
+      "children": [
+        {
+          "pokemonId": 259,
+          "trigger": "레벨 16",
+          "children": [
+            {
+              "pokemonId": 260,
+              "trigger": "레벨 36"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 261,
+      "children": [
+        {
+          "pokemonId": 262,
+          "trigger": "레벨 18"
         }
       ]
     }
@@ -138021,6 +138067,24 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 273,
+      "children": [
+        {
+          "pokemonId": 274,
+          "trigger": "레벨 14",
+          "children": [
+            {
+              "pokemonId": 275,
+              "trigger": "리프의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 276,
       "children": [
         {
@@ -138043,24 +138107,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 273,
-      "children": [
-        {
-          "pokemonId": 274,
-          "trigger": "레벨 14",
-          "children": [
-            {
-              "pokemonId": 275,
-              "trigger": "리프의돌 사용",
-              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/leaf-stone.png"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 283,
       "children": [
         {
@@ -138077,28 +138123,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 286,
           "trigger": "레벨 23"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 280,
-      "children": [
-        {
-          "pokemonId": 281,
-          "trigger": "레벨 20",
-          "children": [
-            {
-              "pokemonId": 282,
-              "trigger": "레벨 30"
-            },
-            {
-              "pokemonId": 475,
-              "trigger": "각성의돌 사용 · 수컷",
-              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/dawn-stone.png"
-            }
-          ]
         }
       ]
     }
@@ -138154,6 +138178,28 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 280,
+      "children": [
+        {
+          "pokemonId": 281,
+          "trigger": "레벨 20",
+          "children": [
+            {
+              "pokemonId": 282,
+              "trigger": "레벨 30"
+            },
+            {
+              "pokemonId": 475,
+              "trigger": "각성의돌 사용 · 수컷",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/dawn-stone.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 296,
       "children": [
         {
@@ -138169,7 +138215,19 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
       "children": [
         {
           "pokemonId": 476,
-          "trigger": "레벨업"
+          "trigger": "천둥의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/thunder-stone.png",
+          "triggerByGeneration": [
+            {
+              "fromGeneration": 4,
+              "trigger": "자기장이 강한 곳에서 레벨업"
+            },
+            {
+              "fromGeneration": 9,
+              "trigger": "천둥의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/thunder-stone.png"
+            }
+          ]
         }
       ]
     }
@@ -138227,28 +138285,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 316,
-      "children": [
-        {
-          "pokemonId": 317,
-          "trigger": "레벨 26"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 318,
-      "children": [
-        {
-          "pokemonId": 319,
-          "trigger": "레벨 30"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 406,
       "children": [
         {
@@ -138267,11 +138303,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 322,
+      "pokemonId": 316,
       "children": [
         {
-          "pokemonId": 323,
-          "trigger": "레벨 33"
+          "pokemonId": 317,
+          "trigger": "레벨 26"
         }
       ]
     }
@@ -138283,6 +138319,28 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 321,
           "trigger": "레벨 40"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 318,
+      "children": [
+        {
+          "pokemonId": 319,
+          "trigger": "레벨 30"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 322,
+      "children": [
+        {
+          "pokemonId": 323,
+          "trigger": "레벨 33"
         }
       ]
     }
@@ -138317,17 +138375,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 333,
-      "children": [
-        {
-          "pokemonId": 334,
-          "trigger": "레벨 35"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 331,
       "children": [
         {
@@ -138339,11 +138386,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 341,
+      "pokemonId": 333,
       "children": [
         {
-          "pokemonId": 342,
-          "trigger": "레벨 30"
+          "pokemonId": 334,
+          "trigger": "레벨 35"
         }
       ]
     }
@@ -138354,6 +138401,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
       "children": [
         {
           "pokemonId": 340,
+          "trigger": "레벨 30"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 341,
+      "children": [
+        {
+          "pokemonId": 342,
           "trigger": "레벨 30"
         }
       ]
@@ -138372,10 +138430,10 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 347,
+      "pokemonId": 345,
       "children": [
         {
-          "pokemonId": 348,
+          "pokemonId": 346,
           "trigger": "레벨 40"
         }
       ]
@@ -138383,10 +138441,10 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 345,
+      "pokemonId": 347,
       "children": [
         {
-          "pokemonId": 346,
+          "pokemonId": 348,
           "trigger": "레벨 40"
         }
       ]
@@ -138409,7 +138467,21 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
       "children": [
         {
           "pokemonId": 350,
-          "trigger": "레벨업 · 아름다움 170 이상"
+          "trigger": "교환 · 소지: 고운비늘",
+          "triggerByGeneration": [
+            {
+              "fromGeneration": 3,
+              "trigger": "레벨업 · 아름다움 170 이상"
+            },
+            {
+              "fromGeneration": 5,
+              "trigger": "교환 · 소지: 고운비늘"
+            },
+            {
+              "fromGeneration": 6,
+              "trigger": "레벨업 · 아름다움 170 이상 또는 교환 · 소지: 고운비늘"
+            }
+          ]
         }
       ]
     }
@@ -138511,21 +138583,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 366,
-      "children": [
-        {
-          "pokemonId": 367,
-          "trigger": "교환 · 소지: 심해의이빨"
-        },
-        {
-          "pokemonId": 368,
-          "trigger": "교환 · 소지: 심해의비늘"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 387,
       "children": [
         {
@@ -138537,6 +138594,21 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "레벨 32"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 366,
+      "children": [
+        {
+          "pokemonId": 367,
+          "trigger": "교환 · 소지: 심해의이빨"
+        },
+        {
+          "pokemonId": 368,
+          "trigger": "교환 · 소지: 심해의비늘"
         }
       ]
     }
@@ -138560,23 +138632,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 396,
-      "children": [
-        {
-          "pokemonId": 397,
-          "trigger": "레벨 14",
-          "children": [
-            {
-              "pokemonId": 398,
-              "trigger": "레벨 34"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 393,
       "children": [
         {
@@ -138586,6 +138641,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
             {
               "pokemonId": 395,
               "trigger": "레벨 36"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 396,
+      "children": [
+        {
+          "pokemonId": 397,
+          "trigger": "레벨 14",
+          "children": [
+            {
+              "pokemonId": 398,
+              "trigger": "레벨 34"
             }
           ]
         }
@@ -138616,17 +138688,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 408,
-      "children": [
-        {
-          "pokemonId": 409,
-          "trigger": "레벨 30"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 403,
       "children": [
         {
@@ -138638,6 +138699,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "레벨 30"
             }
           ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 408,
+      "children": [
+        {
+          "pokemonId": 409,
+          "trigger": "레벨 30"
         }
       ]
     }
@@ -138714,6 +138786,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 425,
+      "children": [
+        {
+          "pokemonId": 426,
+          "trigger": "레벨 28"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 427,
       "children": [
         {
@@ -138741,17 +138824,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 435,
           "trigger": "레벨 34"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 425,
-      "children": [
-        {
-          "pokemonId": 426,
-          "trigger": "레벨 28"
         }
       ]
     }
@@ -138797,22 +138869,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 449,
+      "pokemonId": 451,
       "children": [
         {
-          "pokemonId": 450,
-          "trigger": "레벨 34"
+          "pokemonId": 452,
+          "trigger": "레벨 40"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 451,
+      "pokemonId": 449,
       "children": [
         {
-          "pokemonId": 452,
-          "trigger": "레벨 40"
+          "pokemonId": 450,
+          "trigger": "레벨 34"
         }
       ]
     }
@@ -138907,6 +138979,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 504,
+      "children": [
+        {
+          "pokemonId": 505,
+          "trigger": "레벨 20"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 506,
       "children": [
         {
@@ -138918,17 +139001,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "레벨 32"
             }
           ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 504,
-      "children": [
-        {
-          "pokemonId": 505,
-          "trigger": "레벨 20"
         }
       ]
     }
@@ -139129,18 +139201,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 546,
-      "children": [
-        {
-          "pokemonId": 547,
-          "trigger": "태양의돌 사용",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 548,
       "children": [
         {
@@ -139150,6 +139210,18 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         },
         {
           "pokemonId": 10237,
+          "trigger": "태양의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 546,
+      "children": [
+        {
+          "pokemonId": 547,
           "trigger": "태양의돌 사용",
           "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
         }
@@ -139220,28 +139292,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 564,
-      "children": [
-        {
-          "pokemonId": 565,
-          "trigger": "레벨 37"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 566,
-      "children": [
-        {
-          "pokemonId": 567,
-          "trigger": "레벨 37"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 562,
       "children": [
         {
@@ -139264,11 +139314,72 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 564,
+      "children": [
+        {
+          "pokemonId": 565,
+          "trigger": "레벨 37"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 566,
+      "children": [
+        {
+          "pokemonId": 567,
+          "trigger": "레벨 37"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 568,
       "children": [
         {
           "pokemonId": 569,
           "trigger": "레벨 36"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 570,
+      "children": [
+        {
+          "pokemonId": 571,
+          "trigger": "레벨 30"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 10238,
+      "children": [
+        {
+          "pokemonId": 10239,
+          "trigger": "레벨 30"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 574,
+      "children": [
+        {
+          "pokemonId": 575,
+          "trigger": "레벨 32",
+          "children": [
+            {
+              "pokemonId": 576,
+              "trigger": "레벨 41"
+            }
+          ]
         }
       ]
     }
@@ -139304,15 +139415,15 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 574,
+      "pokemonId": 582,
       "children": [
         {
-          "pokemonId": 575,
-          "trigger": "레벨 32",
+          "pokemonId": 583,
+          "trigger": "레벨 35",
           "children": [
             {
-              "pokemonId": 576,
-              "trigger": "레벨 41"
+              "pokemonId": 584,
+              "trigger": "레벨 47"
             }
           ]
         }
@@ -139332,45 +139443,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 570,
-      "children": [
-        {
-          "pokemonId": 571,
-          "trigger": "레벨 30"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 10238,
-      "children": [
-        {
-          "pokemonId": 10239,
-          "trigger": "레벨 30"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 582,
-      "children": [
-        {
-          "pokemonId": 583,
-          "trigger": "레벨 35",
-          "children": [
-            {
-              "pokemonId": 584,
-              "trigger": "레벨 47"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 585,
       "children": [
         {
@@ -139382,22 +139454,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 588,
+      "pokemonId": 590,
       "children": [
         {
-          "pokemonId": 589,
-          "trigger": "교환"
+          "pokemonId": 591,
+          "trigger": "레벨 39"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 590,
+      "pokemonId": 588,
       "children": [
         {
-          "pokemonId": 591,
-          "trigger": "레벨 39"
+          "pokemonId": 589,
+          "trigger": "교환"
         }
       ]
     }
@@ -139437,6 +139509,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 599,
+      "children": [
+        {
+          "pokemonId": 600,
+          "trigger": "레벨 38",
+          "children": [
+            {
+              "pokemonId": 601,
+              "trigger": "레벨 49"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 602,
       "children": [
         {
@@ -139447,23 +139536,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "pokemonId": 604,
               "trigger": "천둥의돌 사용",
               "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/thunder-stone.png"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 599,
-      "children": [
-        {
-          "pokemonId": 600,
-          "trigger": "레벨 38",
-          "children": [
-            {
-              "pokemonId": 601,
-              "trigger": "레벨 49"
             }
           ]
         }
@@ -139518,22 +139590,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 616,
+      "pokemonId": 613,
       "children": [
         {
-          "pokemonId": 617,
-          "trigger": "교환"
+          "pokemonId": 614,
+          "trigger": "레벨 37"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 613,
+      "pokemonId": 616,
       "children": [
         {
-          "pokemonId": 614,
-          "trigger": "레벨 37"
+          "pokemonId": 617,
+          "trigger": "교환"
         }
       ]
     }
@@ -139667,15 +139739,15 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 664,
+      "pokemonId": 656,
       "children": [
         {
-          "pokemonId": 665,
-          "trigger": "레벨 9",
+          "pokemonId": 657,
+          "trigger": "레벨 16",
           "children": [
             {
-              "pokemonId": 666,
-              "trigger": "레벨 12"
+              "pokemonId": 658,
+              "trigger": "레벨 36"
             }
           ]
         }
@@ -139695,23 +139767,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 656,
-      "children": [
-        {
-          "pokemonId": 657,
-          "trigger": "레벨 16",
-          "children": [
-            {
-              "pokemonId": 658,
-              "trigger": "레벨 36"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 661,
       "children": [
         {
@@ -139721,6 +139776,23 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
             {
               "pokemonId": 663,
               "trigger": "레벨 35"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 664,
+      "children": [
+        {
+          "pokemonId": 665,
+          "trigger": "레벨 9",
+          "children": [
+            {
+              "pokemonId": 666,
+              "trigger": "레벨 12"
             }
           ]
         }
@@ -139758,22 +139830,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 674,
+      "pokemonId": 672,
       "children": [
         {
-          "pokemonId": 675,
-          "trigger": "레벨 32 · 파티에 악 타입 동반"
+          "pokemonId": 673,
+          "trigger": "레벨 32"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 672,
+      "pokemonId": 674,
       "children": [
         {
-          "pokemonId": 673,
-          "trigger": "레벨 32"
+          "pokemonId": 675,
+          "trigger": "레벨 32 · 파티에 악 타입 동반"
         }
       ]
     }
@@ -139809,22 +139881,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 688,
+      "pokemonId": 686,
       "children": [
         {
-          "pokemonId": 689,
-          "trigger": "레벨 39"
+          "pokemonId": 687,
+          "trigger": "레벨 30 · 기기를 거꾸로"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 686,
+      "pokemonId": 688,
       "children": [
         {
-          "pokemonId": 687,
-          "trigger": "레벨 30 · 기기를 거꾸로"
+          "pokemonId": 689,
+          "trigger": "레벨 39"
         }
       ]
     }
@@ -139864,11 +139936,12 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 682,
+      "pokemonId": 694,
       "children": [
         {
-          "pokemonId": 683,
-          "trigger": "교환 · 소지: 향기주머니"
+          "pokemonId": 695,
+          "trigger": "태양의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
         }
       ]
     }
@@ -139886,23 +139959,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 694,
+      "pokemonId": 698,
       "children": [
         {
-          "pokemonId": 695,
-          "trigger": "태양의돌 사용",
-          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/sun-stone.png"
+          "pokemonId": 699,
+          "trigger": "레벨 39 · 밤"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 698,
+      "pokemonId": 682,
       "children": [
         {
-          "pokemonId": 699,
-          "trigger": "레벨 39 · 밤"
+          "pokemonId": 683,
+          "trigger": "교환 · 소지: 향기주머니"
         }
       ]
     }
@@ -140086,7 +140158,19 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
           "children": [
             {
               "pokemonId": 738,
-              "trigger": "레벨업"
+              "trigger": "천둥의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/thunder-stone.png",
+              "triggerByGeneration": [
+                {
+                  "fromGeneration": 7,
+                  "trigger": "자기장이 강한 곳에서 레벨업"
+                },
+                {
+                  "fromGeneration": 8,
+                  "trigger": "천둥의돌 사용",
+                  "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/thunder-stone.png"
+                }
+              ]
             }
           ]
         }
@@ -140099,7 +140183,19 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
       "children": [
         {
           "pokemonId": 740,
-          "trigger": "레벨업"
+          "trigger": "얼음의돌 사용",
+          "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/ice-stone.png",
+          "triggerByGeneration": [
+            {
+              "fromGeneration": 7,
+              "trigger": "라나키라마운틴에서 레벨업"
+            },
+            {
+              "fromGeneration": 9,
+              "trigger": "얼음의돌 사용",
+              "triggerIconUrl": "https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/items/ice-stone.png"
+            }
+          ]
         }
       ]
     }
@@ -140128,17 +140224,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 747,
-      "children": [
-        {
-          "pokemonId": 748,
-          "trigger": "레벨 38"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 749,
       "children": [
         {
@@ -140150,11 +140235,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 753,
+      "pokemonId": 747,
       "children": [
         {
-          "pokemonId": 754,
-          "trigger": "레벨 34 · 낮"
+          "pokemonId": 748,
+          "trigger": "레벨 38"
         }
       ]
     }
@@ -140172,11 +140257,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 757,
+      "pokemonId": 753,
       "children": [
         {
-          "pokemonId": 758,
-          "trigger": "레벨 33 · 암컷"
+          "pokemonId": 754,
+          "trigger": "레벨 34 · 낮"
         }
       ]
     }
@@ -140194,6 +140279,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 757,
+      "children": [
+        {
+          "pokemonId": 758,
+          "trigger": "레벨 33 · 암컷"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 759,
       "children": [
         {
@@ -140205,11 +140301,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 769,
+      "pokemonId": 767,
       "children": [
         {
-          "pokemonId": 770,
-          "trigger": "레벨 42"
+          "pokemonId": 768,
+          "trigger": "레벨 30"
         }
       ]
     }
@@ -140233,11 +140329,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 767,
+      "pokemonId": 769,
       "children": [
         {
-          "pokemonId": 768,
-          "trigger": "레벨 30"
+          "pokemonId": 770,
+          "trigger": "레벨 42"
         }
       ]
     }
@@ -140321,14 +140417,14 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 816,
+      "pokemonId": 813,
       "children": [
         {
-          "pokemonId": 817,
+          "pokemonId": 814,
           "trigger": "레벨 16",
           "children": [
             {
-              "pokemonId": 818,
+              "pokemonId": 815,
               "trigger": "레벨 35"
             }
           ]
@@ -140338,14 +140434,14 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 813,
+      "pokemonId": 816,
       "children": [
         {
-          "pokemonId": 814,
+          "pokemonId": 817,
           "trigger": "레벨 16",
           "children": [
             {
-              "pokemonId": 815,
+              "pokemonId": 818,
               "trigger": "레벨 35"
             }
           ]
@@ -140411,6 +140507,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 829,
+      "children": [
+        {
+          "pokemonId": 830,
+          "trigger": "레벨 20"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 831,
       "children": [
         {
@@ -140422,11 +140529,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 829,
+      "pokemonId": 835,
       "children": [
         {
-          "pokemonId": 830,
-          "trigger": "레벨 20"
+          "pokemonId": 836,
+          "trigger": "레벨 25"
         }
       ]
     }
@@ -140461,17 +140568,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 835,
-      "children": [
-        {
-          "pokemonId": 836,
-          "trigger": "레벨 25"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 843,
       "children": [
         {
@@ -140494,22 +140590,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 850,
+      "pokemonId": 848,
       "children": [
         {
-          "pokemonId": 851,
-          "trigger": "레벨 28"
+          "pokemonId": 849,
+          "trigger": "레벨 30"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 848,
+      "pokemonId": 850,
       "children": [
         {
-          "pokemonId": 849,
-          "trigger": "레벨 30"
+          "pokemonId": 851,
+          "trigger": "레벨 28"
         }
       ]
     }
@@ -140550,22 +140646,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 852,
+      "pokemonId": 868,
       "children": [
         {
-          "pokemonId": 853,
-          "trigger": "레벨업 · 도발 습득"
+          "pokemonId": 869,
+          "trigger": "특정 동작(스핀)"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 868,
+      "pokemonId": 852,
       "children": [
         {
-          "pokemonId": 869,
-          "trigger": "특정 동작(스핀)"
+          "pokemonId": 853,
+          "trigger": "레벨업 · 도발 습득"
         }
       ]
     }
@@ -140583,22 +140679,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 854,
+      "pokemonId": 878,
       "children": [
         {
-          "pokemonId": 855,
-          "trigger": "깨진포트 사용"
+          "pokemonId": 879,
+          "trigger": "레벨 34"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 878,
+      "pokemonId": 854,
       "children": [
         {
-          "pokemonId": 879,
-          "trigger": "레벨 34"
+          "pokemonId": 855,
+          "trigger": "깨진포트 사용"
         }
       ]
     }
@@ -140647,11 +140743,32 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 884,
+      "children": [
+        {
+          "pokemonId": 1018,
+          "trigger": "복합금속 사용"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 891,
       "children": [
         {
           "pokemonId": 892,
-          "trigger": "특정 장소를 데미지 입은 채 통과"
+          "trigger": "악의 족자 사용",
+          "triggerByGeneration": [
+            {
+              "fromGeneration": 8,
+              "trigger": "특정 장소를 데미지 입은 채 통과"
+            },
+            {
+              "fromGeneration": 9,
+              "trigger": "악의 족자 사용"
+            }
+          ]
         }
       ]
     }
@@ -140692,17 +140809,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 884,
-      "children": [
-        {
-          "pokemonId": 1018,
-          "trigger": "복합금속 사용"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 912,
       "children": [
         {
@@ -140720,22 +140826,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 917,
+      "pokemonId": 915,
       "children": [
         {
-          "pokemonId": 918,
-          "trigger": "레벨 15"
+          "pokemonId": 916,
+          "trigger": "레벨 18"
         }
       ]
     }
   ],
   [
     {
-      "pokemonId": 915,
+      "pokemonId": 917,
       "children": [
         {
-          "pokemonId": 916,
-          "trigger": "레벨 18"
+          "pokemonId": 918,
+          "trigger": "레벨 15"
         }
       ]
     }
@@ -140761,7 +140867,7 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
           "children": [
             {
               "pokemonId": 923,
-              "trigger": "레벨업"
+              "trigger": "레벨업 · 함께 1,000걸음 걷기"
             }
           ]
         }
@@ -140775,6 +140881,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
         {
           "pokemonId": 927,
           "trigger": "레벨 26"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 924,
+      "children": [
+        {
+          "pokemonId": 925,
+          "trigger": "특수 조건"
         }
       ]
     }
@@ -140798,17 +140915,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 924,
-      "children": [
-        {
-          "pokemonId": 925,
-          "trigger": "특수 조건"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 932,
       "children": [
         {
@@ -140820,28 +140926,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
               "trigger": "레벨 38"
             }
           ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 942,
-      "children": [
-        {
-          "pokemonId": 943,
-          "trigger": "레벨 30"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "pokemonId": 940,
-      "children": [
-        {
-          "pokemonId": 941,
-          "trigger": "레벨 25"
         }
       ]
     }
@@ -140860,6 +140944,17 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 940,
+      "children": [
+        {
+          "pokemonId": 941,
+          "trigger": "레벨 25"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 944,
       "children": [
         {
@@ -140871,11 +140966,22 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
+      "pokemonId": 942,
+      "children": [
+        {
+          "pokemonId": 943,
+          "trigger": "레벨 30"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "pokemonId": 946,
       "children": [
         {
           "pokemonId": 947,
-          "trigger": "레벨업"
+          "trigger": "레벨업 · 함께 1,000걸음 걷기"
         }
       ]
     }
@@ -140905,17 +141011,6 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 953,
-      "children": [
-        {
-          "pokemonId": 954,
-          "trigger": "레벨업"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "pokemonId": 955,
       "children": [
         {
@@ -140927,11 +141022,26 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 960,
+      "pokemonId": 953,
       "children": [
         {
-          "pokemonId": 961,
-          "trigger": "레벨 26"
+          "pokemonId": 954,
+          "trigger": "레벨업 · 함께 1,000걸음 걷기"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "pokemonId": 935,
+      "children": [
+        {
+          "pokemonId": 936,
+          "trigger": "축복받은갑옷 사용"
+        },
+        {
+          "pokemonId": 937,
+          "trigger": "저주받은갑옷 사용"
         }
       ]
     }
@@ -140955,15 +141065,11 @@ export const ALL_EVOLUTION_LINES: EvolutionStage[][] = [
   ],
   [
     {
-      "pokemonId": 935,
+      "pokemonId": 960,
       "children": [
         {
-          "pokemonId": 936,
-          "trigger": "축복받은갑옷 사용"
-        },
-        {
-          "pokemonId": 937,
-          "trigger": "저주받은갑옷 사용"
+          "pokemonId": 961,
+          "trigger": "레벨 26"
         }
       ]
     }

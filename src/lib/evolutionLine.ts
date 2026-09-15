@@ -19,7 +19,7 @@ export function filterEvolutionByGeneration(
     const children = (stage.children ?? []).flatMap(walk)
     if (exists(stage.pokemonId)) return [{ ...stage, children }]
     // 이 단계가 없으면 자식들이 이 자리를 대신한다. 진화 조건은 빠진 단계에서 오는 것이라 버린다.
-    return children.map((child) => ({ ...child, trigger: undefined, triggerIconUrl: undefined }))
+    return children.map((child) => ({ ...child, trigger: undefined, triggerIconUrl: undefined, triggerByGeneration: undefined }))
   }
   return stages.flatMap(walk)
 }

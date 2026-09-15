@@ -3,6 +3,16 @@
 import fs from 'node:fs/promises'
 import { VERSIONS_BY_GEN, levelUpLevelsFor } from './version-groups.mjs'
 
+/** PokeAPI version group → 세대. 진화 조건이 게임마다 다를 때 세대별로 묶는 데 쓴다 */
+const GEN_BY_GROUP = Object.fromEntries(
+  Object.entries(VERSIONS_BY_GEN).flatMap(([gen, versions]) => versions.flatMap((v) => v.groups.map((g) => [g, Number(gen)]))),
+)
+
+// 장소 진화는 PokeAPI 가 게임별 지역명(eterna-forest 등)만 주고 한글명이 없다. 게임마다 장소가
+// 다를 뿐 조건의 성격은 같으므로 성격으로 적는다.
+const ICE_ROCK_LOCATIONS = new Set(['sinnoh-route-217', 'twist-mountain', 'frost-cavern', 'shoal-cave', 'mount-lanakila'])
+const MAGNETIC_LOCATIONS = new Set(['mt-coronet', 'chargestone-cave', 'kalos-route-13', 'blush-mountain', 'vast-poni-canyon', 'new-mauville'])
+
 const BASE = 'https://pokeapi.co/api/v2'
 const TOTAL_SPECIES = 1025
 
@@ -340,9 +350,18 @@ async function describeEvolutionDetail(detail) {
   let triggerIconUrl
 
   switch (detail.trigger?.name) {
-    case 'level-up':
-      parts.push(detail.min_level ? `레벨 ${detail.min_level}` : '레벨업')
+    case 'level-up': {
+      // 장소 조건을 빼먹으면 리피아·글레이시아·자포코일이 그냥 "레벨업"으로 남는다
+      const loc = detail.location?.name
+      if (detail.near_special_rock) parts.push(`${ICE_ROCK_LOCATIONS.has(loc) ? '얼음바위' : '이끼바위'} 근처에서 레벨업`)
+      else if (MAGNETIC_LOCATIONS.has(loc)) parts.push('자기장이 강한 곳에서 레벨업')
+      else if (loc === 'mount-lanakila') parts.push('라나키라마운틴에서 레벨업')
+      else if (loc) parts.push(`특정 장소(${loc})에서 레벨업`)
+      else parts.push(detail.min_level ? `레벨 ${detail.min_level}` : '레벨업')
+      // 빠르모트·브리두라스·킬라플로르: 몬스터볼 밖에 꺼내 함께 걸은 걸음 수
+      if (detail.min_steps) parts.push(`함께 ${detail.min_steps.toLocaleString('ko-KR')}걸음 걷기`)
       break
+    }
     case 'trade':
       parts.push('교환')
       break
@@ -408,6 +427,45 @@ async function describeEvolutionDetail(detail) {
   if (detail.gender === 2) parts.push('수컷')
 
   return { trigger: parts.join(' · '), triggerIconUrl }
+}
+
+/**
+ * 게임별 진화 조건을 세대 단위로 묶는다. 조건이 세대에 따라 달라질 때만 배열을 돌려준다.
+ * 목록에 없는 세대는 앞 세대 조건이 이어진다고 본다(리피아 9세대 = 8세대 리프의돌).
+ * version_group 이 없는 항목이 섞이면 세대를 알 수 없으므로 포기한다.
+ */
+async function describeByGeneration(allDetails) {
+  if (allDetails.length < 2 || allDetails.some((d) => !GEN_BY_GROUP[d.version_group?.name])) return undefined
+  // 레전드 아르세우스는 진화 규칙이 본편과 따로 논다(마그케인 Lv.17). 8세대 전체 조건으로 퍼뜨리면
+  // 브릴리언트다이아몬드·샤이닝펄과 9세대까지 틀리므로, 본편 조건이 있으면 뺀다.
+  const mainline = allDetails.filter((d) => d.version_group.name !== 'legends-arceus')
+  const details = mainline.length > 0 ? mainline : allDetails
+
+  // 같은 세대에 방법이 둘 이상이면 "또는"으로 잇는다. 하나만 고르면 밀로틱처럼
+  // 고운비늘 교환과 아름다움 진화 중 하나가 세대 목록에서 사라진다.
+  const byGen = new Map()
+  for (const d of [...details].sort((a, b) => Number(Boolean(b.is_default)) - Number(Boolean(a.is_default)))) {
+    const gen = GEN_BY_GROUP[d.version_group.name]
+    const described = await describeEvolutionDetail(d)
+    const bucket = byGen.get(gen)
+    if (!bucket) byGen.set(gen, { triggers: [described.trigger], triggerIconUrl: described.triggerIconUrl })
+    else if (!bucket.triggers.includes(described.trigger)) bucket.triggers.push(described.trigger)
+  }
+  const entries = []
+  // 교환 진화는 한번 생기면 이후 세대에서도 계속 된다. PokeAPI 는 게임별로 대표 조건만 적어서
+  // 밀로틱 ORAS 항목에 아름다움 진화만 있다 — 그대로 두면 6세대부터 고운비늘 교환이 사라진다.
+  const persistentTrades = []
+  for (const gen of [...byGen.keys()].sort((a, b) => a - b)) {
+    const { triggers: own, triggerIconUrl } = byGen.get(gen)
+    for (const t of own) if (t.startsWith('교환') && !persistentTrades.includes(t)) persistentTrades.push(t)
+    const triggers = [...own, ...persistentTrades.filter((t) => !own.includes(t))]
+    const trigger = triggers.join(' 또는 ')
+    if (entries.at(-1)?.trigger === trigger) continue
+    const entry = { fromGeneration: gen, trigger }
+    if (triggerIconUrl) entry.triggerIconUrl = triggerIconUrl
+    entries.push(entry)
+  }
+  return entries.length > 1 ? entries : undefined
 }
 
 // ---------- 기술(무브셋) ----------
@@ -673,18 +731,27 @@ async function main() {
         const matchingDetails = (childNode.evolution_details ?? []).filter((d) =>
           d.base_form ? d.base_form.name === varietyName : isDefaultVariety,
         )
-        const seenTargets = new Set()
+        // 한 진화 대상에 게임별 조건이 여러 개 온다(리피아: DP 영원의숲 · BW 바람개비숲 · 소드실드 리프의돌 …).
+        // 예전엔 첫 항목만 써서 DP 조건 하나로 굳었고, 장소를 못 읽어 "레벨업"만 남았다.
+        const detailsByTarget = new Map()
         for (const detail of matchingDetails) {
           const childVarietyName = detail.evolved_form?.name ?? childInfo.defaultVarietyName
           const childPokemonId = idByVarietyName.get(childVarietyName)
-          if (!childPokemonId || seenTargets.has(childPokemonId)) continue
-          seenTargets.add(childPokemonId)
+          if (!childPokemonId) continue
+          if (!detailsByTarget.has(childPokemonId)) detailsByTarget.set(childPokemonId, { childVarietyName, details: [] })
+          detailsByTarget.get(childPokemonId).details.push(detail)
+        }
 
-          const { trigger, triggerIconUrl } = await describeEvolutionDetail(detail)
+        for (const [childPokemonId, { childVarietyName, details }] of detailsByTarget) {
+          // 기본 조건은 PokeAPI 가 is_default 로 표시한 최신 조건. 세대를 모르는 화면(아이템 페이지)이 쓴다.
+          const primary = details.find((d) => d.is_default) ?? details[0]
+          const { trigger, triggerIconUrl } = await describeEvolutionDetail(primary)
+          const triggerByGeneration = await describeByGeneration(details)
           const grandChildren = await buildChildren(childNode, childVarietyName, childVarietyName === childInfo.defaultVarietyName)
           const stage = { pokemonId: childPokemonId }
           if (trigger) stage.trigger = trigger
           if (triggerIconUrl) stage.triggerIconUrl = triggerIconUrl
+          if (triggerByGeneration) stage.triggerByGeneration = triggerByGeneration
           if (grandChildren.length > 0) stage.children = grandChildren
           children.push(stage)
         }

@@ -63,4 +63,10 @@ export interface EvolutionStage {
   children?: EvolutionStage[] // 분기 진화(이브이 등)는 children이 2개 이상
   trigger?: string // 예: "레벨 16", "달의돌"
   triggerIconUrl?: string // 진화의돌 등 아이템 트리거일 때의 아이콘 (레벨업/교환 등은 없음)
+  /**
+   * 세대마다 진화 방법이 다른 경우만 채운다. fromGeneration 부터 다음 항목 전까지 그 조건이다.
+   * 리피아: 4~7세대 이끼바위 근처에서 레벨업 → 8세대부터 리프의돌 사용.
+   * trigger 는 최신(기본) 조건이라 세대를 모르는 화면(아이템 페이지)은 그대로 쓴다.
+   */
+  triggerByGeneration?: { fromGeneration: number; trigger: string; triggerIconUrl?: string }[]
 }

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import type { EvolutionStage } from '../../types/pokemon'
 import { cn } from '../../lib/cn'
-import { normalizeEvolutionTrigger } from '../../lib/evolutionTrigger'
+import { normalizeEvolutionTrigger, triggerForGeneration } from '../../lib/evolutionTrigger'
 import { SpriteImage } from './SpriteImage'
 
 export interface EvolutionTreeProps {
@@ -53,18 +53,19 @@ function StageNode({
 
       {stage.children && stage.children.length > 0 && (
         <div className="flex flex-col gap-3">
-          {stage.children.map((child) => (
+          {stage.children.map((child) => {
+            const { trigger, triggerIconUrl } = triggerForGeneration(child, generation)
+            return (
             <div key={child.pokemonId} className="flex items-center gap-3">
               <div className="flex shrink-0 flex-col items-center whitespace-nowrap text-xxs font-bold text-ink-faint">
                 <span>→</span>
-                {child.triggerIconUrl && (
-                  <img src={child.triggerIconUrl} alt={child.trigger ?? ''} width={24} height={24} />
-                )}
-                {child.trigger && <span>{normalizeEvolutionTrigger(child.trigger, generation)}</span>}
+                {triggerIconUrl && <img src={triggerIconUrl} alt={trigger ?? ''} width={24} height={24} />}
+                {trigger && <span>{normalizeEvolutionTrigger(trigger, generation)}</span>}
               </div>
               <StageNode stage={child} currentPokemonId={currentPokemonId} renderPokemon={renderPokemon} linkState={linkState} generation={generation} />
             </div>
-          ))}
+            )
+          })}
         </div>
       )}
     </div>

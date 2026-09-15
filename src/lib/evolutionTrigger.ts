@@ -1,3 +1,5 @@
+import type { EvolutionStage } from '../types/pokemon'
+
 /**
  * 진화 조건 문자열을 보고 있는 세대에 맞게 정규화한다.
  *
@@ -11,6 +13,20 @@
  *
  * 생성 파일을 직접 고치면 재생성 때 되돌아오므로, 화면에 그릴 때 세대에 맞춰 바꾼다.
  */
+/**
+ * 보고 있는 세대의 진화 조건을 고른다. 세대별 조건이 없으면 기본 조건,
+ * 첫 항목보다 이른 세대면 가장 이른 조건을 쓴다.
+ */
+export function triggerForGeneration(
+  stage: EvolutionStage,
+  generation?: number,
+): { trigger?: string; triggerIconUrl?: string } {
+  const list = stage.triggerByGeneration
+  if (generation === undefined || !list?.length) return { trigger: stage.trigger, triggerIconUrl: stage.triggerIconUrl }
+  const hit = [...list].reverse().find((e) => e.fromGeneration <= generation) ?? list[0]
+  return { trigger: hit.trigger, triggerIconUrl: hit.triggerIconUrl }
+}
+
 export function normalizeEvolutionTrigger(trigger: string, generation?: number): string {
   if (generation === undefined) return trigger
   const threshold = generation >= 8 ? 160 : 220
