@@ -149,11 +149,13 @@ export function EvolutionMoveComparison({
                         <td className="py-1.5 pr-3 text-right text-ink-muted">{move.accuracy ?? '—'}</td>
                         <td className="py-1.5 pr-4 text-right text-ink-muted">{move.pp}</td>
                         {activeMembers.map(({ member, learnset: ls }) => {
-                          // 같은 기술이 여러 레벨에 있을 수 있다. 행 정렬 기준과 맞추려면 최소 레벨을 쓴다.
-                          const levels = ls.levelUp.filter((m) => m.moveId === moveId).map((m) => m.level)
+                          // 같은 기술을 여러 레벨에서 배우면 전부 보여 준다. 최소 레벨만 쓰면 1세대 니드킹
+                          // 난동부리기가 Lv.1(처음부터 아는 기술)로만 보여, 달의돌로 먼저 진화시킨 뒤
+                          // Lv.23 에 배운다는 정보가 사라진다. 행 정렬은 위에서 최소 레벨로 따로 한다.
+                          const levels = [...new Set(ls.levelUp.filter((m) => m.moveId === moveId).map((m) => m.level))].sort((a, b) => a - b)
                           return (
-                            <td key={member.id} className="px-2 py-1.5 text-center font-bold text-ink">
-                              {levels.length > 0 ? `Lv.${Math.min(...levels)}` : <span className="text-ink-faint">—</span>}
+                            <td key={member.id} className="px-2 py-1.5 text-center font-bold whitespace-nowrap text-ink">
+                              {levels.length > 0 ? `Lv.${levels.join(', ')}` : <span className="text-ink-faint">—</span>}
                             </td>
                           )
                         })}
