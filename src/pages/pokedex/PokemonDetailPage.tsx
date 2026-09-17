@@ -6,6 +6,7 @@ import { StatChart } from '../../components/pokemon/StatChart'
 import { statsForGeneration } from '../../lib/baseStats'
 import { ABILITY_INTRODUCED_GENERATION, abilitiesForGeneration, typesForGeneration } from '../../lib/pastForms'
 import { filterEvolutionByGeneration } from '../../lib/evolutionLine'
+import { moveForVersion } from '../../lib/pastMoves'
 import { TypeDefense } from '../../components/pokemon/TypeDefense'
 import { EvolutionTree } from '../../components/pokemon/EvolutionTree'
 import { MoveList } from '../../components/pokemon/MoveList'
@@ -173,6 +174,15 @@ export function PokemonDetailPage() {
       if (version) writeLearnsetVersion({ generation: `${genNumber}세대` as Generation, version })
     },
     [searchParams, setSearchParams],
+  )
+
+  /** 기술표도 보고 있는 게임 당시의 위력·명중·PP·타입·분류로 보여 준다 (1세대 난동부리기 위력 90) */
+  const findMoveForTab = useCallback(
+    (moveId: number) => {
+      const move = findMove(moveId)
+      return move && moveForVersion(move, activeGenNum, activeVersion || undefined)
+    },
+    [activeGenNum, activeVersion],
   )
 
   // 공략에서 버전을 달고 들어온 링크도 "직접 고른 것"으로 취급한다.
@@ -480,7 +490,7 @@ export function PokemonDetailPage() {
                 title="진화 계열 기술 비교"
                 familyMembers={evolutionFamilyIds.map((famId) => ({ id: famId, ...findSamplePokemon(famId) }))}
                 familyLearnsets={familyLearnsets}
-                findMove={findMove}
+                findMove={findMoveForTab}
                 activeGen={activeGeneration}
                 activeVersion={activeVersion}
               />
@@ -490,7 +500,7 @@ export function PokemonDetailPage() {
               <MoveList
                 title={hasEvolutionComparison ? '기술머신·가르침' : '기술'}
                 learnsets={learnsets}
-                findMove={findMove}
+                findMove={findMoveForTab}
                 recommendedMoveIds={moveData?.recommended}
                 generation={activeGeneration}
                 version={activeVersion}
