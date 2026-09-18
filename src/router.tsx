@@ -106,6 +106,13 @@ export const router = createBrowserRouter([
           })),
       },
       {
+        path: '/guides/pokemon-ev-vitamins',
+        lazy: () =>
+          import('./pages/guides/PokemonEvVitaminsGuidePage').then((m) => ({
+            Component: m.PokemonEvVitaminsGuidePage,
+          })),
+      },
+      {
         path: '/guides/pokemon-unown',
         lazy: () =>
           import('./pages/guides/PokemonUnownGuidePage').then((m) => ({

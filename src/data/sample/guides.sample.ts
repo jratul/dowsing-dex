@@ -123,6 +123,16 @@ export const SAMPLE_GUIDES: Guide[] = [
     bannerImageUrl: '/images/guides/sword-boxart.png',
   },
   {
+    slug: 'pokemon-ev-vitamins',
+    category: '대전',
+    title: '타우린은 공격을 10 올리지 않는다 — 비타민과 노력치, 세대별 정리',
+    iconPokemonId: 113,
+    relatedPokemonIds: [113, 242, 440],
+    summary:
+      '맥스업·타우린·리보플라빈 등 비타민 6종은 노력치 +10. 1~2세대 능력치 경험치, 3~7세대 100 제한, 8세대 이후 252까지. 깃털·감소 열매·파워 계열까지.',
+    bannerImageUrl: '/images/guides/vitamins-banner.png',
+  },
+  {
     slug: 'pokemon-unown',
     category: '포획',
     title: '안농 종합 가이드 — 28종 전체와 출현 조건',

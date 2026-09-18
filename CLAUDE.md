@@ -305,6 +305,7 @@ scripts/
 | `/guides/pokemon-heartgold-friendship` | PokemonHeartgoldFriendshipGuidePage | 정적 전용 라우트 (친밀도 시스템) |
 | `/guides/pokemon-heartgold-bug-contest` | PokemonHeartgoldBugContestGuidePage | 정적 전용 라우트 (곤충채집 대회) |
 | `/guides/pokemon-sword-story` | PokemonSwordStoryGuidePage | 정적 전용 라우트 (8세대 소드 스토리 파티) |
+| `/guides/pokemon-ev-vitamins` | PokemonEvVitaminsGuidePage | 정적 전용 라우트 (비타민·노력치 세대별 정리) |
 | `/guides/pokemon-unown` | PokemonUnownGuidePage | 정적 전용 라우트 (안농 28종 종합) |
 | `/guides/pokemon-emerald-story` | PokemonEmeraldStoryGuidePage | 정적 전용 라우트 |
 | `/guides/pokemon-platinum-story` | PokemonPlatinumStoryGuidePage | 정적 전용 라우트 |

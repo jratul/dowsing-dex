@@ -24,6 +24,7 @@ const DATA_GAMES = {
   'pokemonPlatinumStory.data.ts': ['4세대', '플래티넘'],
   'pokemonPlatinumWalkthrough.data.ts': ['4세대', '플래티넘'],
   'pokemonUnown.data.ts': [null, null], // 여러 게임을 묶은 종합 공략
+  'pokemonEvVitamins.data.ts': [null, null], // 세대 공통 시스템 정리
 }
 
 // 마크다운 원문 공략.
@@ -51,6 +52,7 @@ const EXTERNAL_GAMES = {
   '하트골드_소울실버_기라티나PT_스토리순서_포켓몬수집가이드.md': ['4세대', null],
   '하트골드_소울실버_기라티나PT_전국도감_493_수집표.md': ['4세대', null],
   // 게임 공략이 아니다. 이름 검사만 받는다.
+  'pokemon_vitamins_ev_generation_guide.md': [null, null], // 세대 공통 시스템 정리
   '넷플릭스 포켓몬 시리즈 타임라인.md': [null, null],
   '포켓몬 세대별 정리.md': [null, null],
   'Pokemon_Special_주인공_엔트리_총정리.md': [null, null],
