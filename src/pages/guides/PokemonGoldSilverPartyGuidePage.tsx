@@ -8,6 +8,7 @@ import { CATEGORY_STYLE } from '../../lib/guideCategory'
 import { cn } from '../../lib/cn'
 import {
   GSP_ELITE,
+  GSP_FIELD_MOVES,
   GSP_GYMS,
   GSP_HGSS_COMPARE,
   GSP_HM_TABLE,
@@ -144,6 +145,24 @@ export function PokemonGoldSilverPartyGuidePage() {
             <Wrap key="n">{h.need}</Wrap>,
           ])}
         />
+        <p className="mt-3 text-sm text-ink">
+          HM은 아니지만 필드기가 하나 더 있습니다. <b>TM08 <MoveLink name="바위깨기" /></b>는 36번도로에서 물뿌리개로
+          꼬지모를 치운 뒤 동쪽 남자에게 받고, 그 뒤로는 금빛시티 백화점에서 1,000원에 다시 살 수 있습니다.
+          배지 제한 없이 바로 쓸 수 있고 담당은 <PokemonLink id={181} />입니다. 하트골드·소울실버에서는 같은 기술이
+          HM06으로 바뀝니다.
+        </p>
+
+        <h3 className="mt-4 mb-2 text-sm font-black text-ink-faint">필드기 전체 담당</h3>
+        <GuideTable
+          headers={['필드기', '번호', '담당', '비고']}
+          rows={GSP_FIELD_MOVES.map((f) => [
+            <MoveLink key={f.move} name={f.move} />,
+            <HowBadge key={`${f.move}-code`} how={f.code} />,
+            f.owner,
+            <Wrap key={`${f.move}-note`}>{f.note}</Wrap>,
+          ])}
+        />
+
         <h3 className="mt-4 mb-2 text-sm font-black text-ink-faint">폭포오르기는 정확히 어디에서 필요한가</h3>
         <div className="flex flex-col gap-2">
           {GSP_WATERFALL_SPOTS.map((s) => (
@@ -193,6 +212,31 @@ export function PokemonGoldSilverPartyGuidePage() {
             </div>
           ))}
         </div>
+      </Card>
+
+      {/* 전룡 기술칸 */}
+      <Card className="mb-6 p-4">
+        <SectionHeading>전룡의 네 번째 칸 — 바위깨기에서 빛의장막으로</SectionHeading>
+        <div className="grid gap-3 sm:grid-cols-2">
+          <div className="rounded-card border border-border p-3">
+            <p className="mb-1 text-sm font-black text-ink">진행 중 (Lv.42 전)</p>
+            <p className="text-sm text-ink">번개펀치 · 전기자석파 · 플래시 · <b>바위깨기</b></p>
+          </div>
+          <div className="rounded-card border border-border p-3">
+            <p className="mb-1 text-sm font-black text-ink">최종</p>
+            <p className="text-sm text-ink">번개펀치 · 전기자석파 · 플래시 · <b>빛의장막</b></p>
+          </div>
+        </div>
+        <p className="mt-3 text-sm text-ink">
+          빛의장막은 Lv.42라 초중반에는 어차피 비는 칸입니다. 거기에 바위깨기를 넣어 두고, 바위를 더 깰 일이 없어지면
+          덮어씁니다. <b>금·은에서는 바위깨기가 TM이라 기술삭제 NPC 없이 다른 기술로 덮어쓸 수 있습니다.</b>
+          (하트골드·소울실버에서는 HM06이라 지우려면 기술삭제 NPC가 필요합니다.)
+        </p>
+        <p className="mt-2 text-sm text-ink-muted">
+          엔트리에서 바위깨기를 배울 수 있는 건 블레이범·전룡·골덕·괴력몬 넷뿐입니다(후딘·깨비드릴조는 못 배웁니다).
+          블레이범은 이미 풀베기를 들고 있고, 골덕은 수상 비전머신으로 4칸이 차고, 괴력몬은 크로스촙·받아던지기·지진·괴력이
+          기다리고 있어 전룡이 가장 부담이 적습니다. 2세대 바위깨기는 위력 20이라 전투 성능은 사실상 없습니다(4세대부터 40).
+        </p>
       </Card>
 
       {/* TM */}

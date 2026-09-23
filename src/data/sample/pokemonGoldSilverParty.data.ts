@@ -15,7 +15,7 @@ export interface PartyMember {
 
 export const GSP_PARTY: PartyMember[] = [
   { pokemonId: 157, pokemon: '블레이범', role: '불꽃 특수 딜러', strength: '특공 109·스피드 100. 2세대 불꽃은 전부 특수라 특공을 그대로 쓴다', hm: 'HM01 풀베기' },
-  { pokemonId: 181, pokemon: '전룡', role: '전기 특수 딜러 · 마비 지원', strength: '번개펀치가 특수. 전기자석파로 포획과 강적전을 받친다', hm: 'HM05 플래시' },
+  { pokemonId: 181, pokemon: '전룡', role: '전기 특수 딜러 · 마비 지원', strength: '번개펀치가 특수. 전기자석파로 포획과 강적전을 받친다', hm: 'HM05 플래시 · TM08 바위깨기' },
   { pokemonId: 55, pokemon: '골덕', role: '물·얼음 딜러 + 수상 HM 전담', strength: '특공 95. 파도타기·폭포오르기·냉동펀치가 전부 특수', hm: 'HM03 파도타기 · HM06 바다회오리 · HM07 폭포오르기' },
   { pokemonId: 65, pokemon: '후딘', role: '초고속 특수 에이스', strength: '특공 135·스피드 120. 3색 펀치가 전부 특수라 커버리지가 넓다', hm: '없음' },
   { pokemonId: 22, pokemon: '깨비드릴조', role: '물리 비행 딜러 + 이동', strength: '비행이 물리 판정이라 공격을 자속으로 쓴다', hm: 'HM02 공중날기' },
@@ -59,6 +59,21 @@ export const GSP_HM_TABLE: HmRow[] = [
   { code: 'HM05', move: '플래시', where: '모다피탑', badge: '윙배지', owner: '전룡', need: '선택 · 탐색용' },
   { code: 'HM06', move: '바다회오리', where: '황토마을 로켓단 아지트', badge: '아이스배지', owner: '골덕', need: '선택 · 루기아 탐색' },
   { code: 'HM07', move: '폭포오르기', where: '얼음샛길', badge: '라이징배지', owner: '골덕', need: '사천왕 진입 필수' },
+]
+
+/**
+ * 필드기 전체 담당. 바위깨기는 금·은에서 비전머신이 아니라 기술머신(TM08)이라 위 비전머신 표에는 없지만
+ * 필드에서 바위를 깨는 데 쓰므로 함께 배치해야 한다(하트골드·소울실버에서는 HM06).
+ */
+export const GSP_FIELD_MOVES: { move: string; code: string; owner: string; note: string }[] = [
+  { move: '풀베기', code: 'HM01', owner: '블레이범', note: '' },
+  { move: '공중날기', code: 'HM02', owner: '깨비드릴조', note: '' },
+  { move: '파도타기', code: 'HM03', owner: '골덕', note: '' },
+  { move: '괴력', code: 'HM04', owner: '괴력몬', note: '' },
+  { move: '플래시', code: 'HM05', owner: '전룡', note: '' },
+  { move: '바다회오리', code: 'HM06', owner: '골덕', note: '' },
+  { move: '폭포오르기', code: 'HM07', owner: '골덕', note: '' },
+  { move: '바위깨기', code: 'TM08', owner: '전룡', note: '비전머신이 아니라 기술머신이라 배지 제한 없이 바로 쓸 수 있다' },
 ]
 
 /** 폭포오르기가 실제로 필요한 곳 */
@@ -129,10 +144,11 @@ export const GSP_MOVESETS: MoveSetSection[] = [
     moveTable: [
       { move: '번개펀치', how: 'Lv.30', usage: '자력으로 배우므로 TM41을 쓸 필요가 없다. 번개보다 명중이 안정적' },
       { move: '전기자석파', how: 'Lv.18', usage: '마비로 포획과 강적전을 받친다' },
-      { move: '빛의장막', how: 'Lv.42', usage: '특수 딜러가 많은 사천왕전에서 유용' },
+      { move: '빛의장막', how: 'Lv.42', usage: '특수 딜러가 많은 사천왕전에서 유용. 초중반에는 이 칸이 비어 있다' },
       { move: '플래시', how: 'HM05', usage: '필드 전용' },
+      { move: '바위깨기', how: 'TM08', usage: '필드 전용. 빛의장막을 배우는 Lv.42 전까지 빈 칸에 넣어 두고 나중에 덮어쓴다' },
     ],
-    note: '번개는 위력이 높지만 명중 70이다. 스토리에서는 번개펀치 쪽이 편하다.',
+    note: '번개는 위력이 높지만 명중 70이다. 스토리에서는 번개펀치 쪽이 편하다. 바위깨기는 전룡이 맡는다 — 배울 수 있는 건 블레이범·전룡·골덕·괴력몬 넷뿐이고, 나머지 셋은 기술칸이 이미 찼고, 전룡만 초중반에 빈 칸이 생긴다.',
   },
   {
     pokemonId: 55,
@@ -212,6 +228,7 @@ export const GSP_TMS: TmRow[] = [
   { code: 'TM48', move: '불꽃펀치', where: '금빛시티 백화점 5층 · 3,000원', to: '블레이범', note: '화염방사가 Lv.60이라 중반 주력기로 쓴다' },
   { code: 'TM41', move: '번개펀치', where: '금빛시티 백화점 5층 · 3,000원', to: '블레이범 · 후딘', note: '전룡은 Lv.30에 자력으로 배우니 TM을 쓰지 않는다' },
   { code: 'TM33', move: '냉동펀치', where: '금빛시티 백화점 5층 · 3,000원', to: '골덕 · 후딘', note: '목호 대비로 두 마리 모두 배워도 된다. 반복 구매가 가능하다' },
+  { code: 'TM08', move: '바위깨기', where: '36번도로에서 꼬지모를 치운 뒤 동쪽 남자 · 이후 금빛시티 백화점 1,000원', to: '전룡', note: '필드용. 2세대 위력은 20이라 전투에는 기대하지 않는다(4세대부터 40)' },
   { code: 'TM26', move: '지진', where: '챔피언로드', to: '괴력몬', note: '이 파티의 최우선 TM' },
   { code: 'TM27', move: '은혜갚기', where: '금빛시티 백화점 5층 · 일요일, 선두 포켓몬의 친밀도가 높을 때', to: '깨비드릴조', note: '친밀도가 낮으면 대신 TM21 화풀이를 준다' },
   { code: 'TM47', move: '강철날개', where: '28번도로 유명인의 집(풀베기 필요) · 바위터널', to: '깨비드릴조', note: '후반 자유 슬롯용' },
