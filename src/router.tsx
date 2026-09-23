@@ -106,6 +106,13 @@ export const router = createBrowserRouter([
           })),
       },
       {
+        path: '/guides/pokemon-gold-silver-party',
+        lazy: () =>
+          import('./pages/guides/PokemonGoldSilverPartyGuidePage').then((m) => ({
+            Component: m.PokemonGoldSilverPartyGuidePage,
+          })),
+      },
+      {
         path: '/guides/pokemon-ev-vitamins',
         lazy: () =>
           import('./pages/guides/PokemonEvVitaminsGuidePage').then((m) => ({

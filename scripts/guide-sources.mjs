@@ -25,6 +25,7 @@ const DATA_GAMES = {
   'pokemonPlatinumWalkthrough.data.ts': ['4세대', '플래티넘'],
   'pokemonUnown.data.ts': [null, null], // 여러 게임을 묶은 종합 공략
   'pokemonEvVitamins.data.ts': [null, null], // 세대 공통 시스템 정리
+  'pokemonGoldSilverParty.data.ts': ['2세대', '골드·실버'],
 }
 
 // 마크다운 원문 공략.
@@ -37,6 +38,7 @@ const MD_GAMES = { 'hgss-collection.md': ['4세대', '하트골드·소울실버
 const EXTERNAL_GAMES = {
   'heartgold_pokemon_experience.md': ['4세대', '하트골드·소울실버'],
   '골드버전 스토리 엔트리 공략.md': ['2세대', '골드·실버'],
+  '금은공략.md': ['2세대', '골드·실버'],
   '레드버전 스토리 엔트리 공략.md': ['1세대', '레드·블루'],
   '레드버전 진화 공략.md': ['1세대', '레드·블루'],
   '파이어레드 스토리 엔트리 공략.md': ['3세대', '파이어레드·리프그린'],

@@ -123,6 +123,16 @@ export const SAMPLE_GUIDES: Guide[] = [
     bannerImageUrl: '/images/guides/sword-boxart.png',
   },
   {
+    slug: 'pokemon-gold-silver-party',
+    category: '공략',
+    title: '금·은 6마리로 비전머신 7개 다 쓰기 — 레드까지 가는 원작 파티',
+    iconPokemonId: 157,
+    relatedPokemonIds: [157, 181, 55, 65, 22, 68],
+    summary:
+      '블레이범·전룡·골덕·후딘·깨비드릴조·괴력몬. 2세대는 타입으로 물리·특수가 갈리므로 3색 펀치 특수형이 핵심. 비전머신 7개 배치, 체육관·사천왕·관동·레드 대응까지.',
+    bannerImageUrl: '/images/guides/gold-silver-party.png',
+  },
+  {
     slug: 'pokemon-ev-vitamins',
     category: '대전',
     title: '타우린은 공격을 10 올리지 않는다 — 비타민과 노력치, 세대별 정리',
