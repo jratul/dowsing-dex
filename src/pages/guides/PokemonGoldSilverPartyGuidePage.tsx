@@ -44,7 +44,7 @@ function HowBadge({ how }: { how: string }) {
 
 /** GuideTable 은 min-w-max 라 셀이 줄바꿈되지 않는다. 설명이 긴 칸만 폭을 묶어 PC 가로 스크롤을 막는다. */
 function Wrap({ children }: { children: string }) {
-  return <span className="block max-w-44 whitespace-normal sm:max-w-52">{children}</span>
+  return <span className="block max-w-36 whitespace-normal sm:max-w-40">{children}</span>
 }
 
 function Roster({ roster }: { roster: { pokemonId: number; pokemon: string; level: number }[] }) {

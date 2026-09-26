@@ -530,9 +530,9 @@ function HowBadge({ how }: { how: string }) {
 />
 ```
 
-### 공략 기술 표의 타입·분류·위력·PP
+### 공략 기술 표의 타입·분류·위력·명중·PP
 
-기술이 나오는 표에는 `moveStatCells(기술명)`(`lib/moveStatCells.tsx`)로 **타입·분류·위력·PP** 네 칸을
+기술이 나오는 표에는 `moveStatCells(기술명)`(`lib/moveStatCells.tsx`)로 **타입·분류·위력·명중·PP** 다섯 칸을
 붙인다. 헤더는 `MOVE_STAT_HEADERS` 를 펼쳐 쓴다. TM/HM 표처럼 이미 칸이 많은 표는 칸을 늘리는 대신
 `<MoveLink ... stats />` 로 기술명 아래에 한 줄로 적는다.
 

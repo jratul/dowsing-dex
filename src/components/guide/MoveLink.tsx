@@ -10,7 +10,7 @@ export interface MoveLinkProps {
   /** 화면에 보일 텍스트. 생략하면 name 을 그대로 쓴다. */
   label?: string
   className?: string
-  /** 표 안처럼 공간이 있는 자리에서 타입·분류·위력·PP를 아랫줄에 함께 보여준다. */
+  /** 표 안처럼 공간이 있는 자리에서 타입·분류·위력·명중·PP를 아랫줄에 함께 보여준다. */
   stats?: boolean
 }
 
@@ -56,8 +56,8 @@ export function MoveLink({ name, label, className, stats }: MoveLinkProps) {
   return (
     <span className="inline-block align-top">
       {link}
-      <span className="block text-xxs whitespace-nowrap text-ink-muted">
-        {move.type} · {move.category} · {move.power ? `위력 ${move.power}` : '위력 —'} · PP {move.pp}
+      <span className="block max-w-36 text-xxs text-ink-muted">
+        {move.type} · {move.category} · {move.power ? `위력 ${move.power}` : '위력 —'} · {move.accuracy ? `명중 ${move.accuracy}` : '명중 —'} · PP {move.pp}
       </span>
     </span>
   )

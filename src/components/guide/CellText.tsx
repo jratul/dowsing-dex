@@ -7,5 +7,5 @@ import type { ReactNode } from 'react'
  * 표에서 설명까지 한 줄로 늘어나면 PC 에서도 표가 가로로 스크롤된다.
  */
 export function CellText({ children }: { children: ReactNode }) {
-  return <span className="block max-w-56 whitespace-normal sm:max-w-72">{children}</span>
+  return <span className="block max-w-52 whitespace-normal sm:max-w-56">{children}</span>
 }

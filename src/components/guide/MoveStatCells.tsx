@@ -45,6 +45,12 @@ export function MovePowerCell({ name }: { name: string }) {
   return <>{move?.power ?? '—'}</>
 }
 
+export function MoveAccuracyCell({ name }: { name: string }) {
+  const move = useMove(name)
+  // 명중률이 없는 기술은 필중이거나(받아던지기) 명중 판정 자체가 없는 변화기다.
+  return <>{move?.accuracy ?? '—'}</>
+}
+
 export function MovePpCell({ name }: { name: string }) {
   const move = useMove(name)
   return <>{move?.pp ?? '—'}</>
