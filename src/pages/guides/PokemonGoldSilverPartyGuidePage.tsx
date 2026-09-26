@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
 import { Card } from '../../components/ui/Card'
 import { GuideTable } from '../../components/guide/GuideTable'
+import { MOVE_STAT_HEADERS, moveStatCells } from '../../lib/moveStatCells'
 import { PokemonLink } from '../../components/guide/PokemonLink'
 import { MoveLink } from '../../components/guide/MoveLink'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
@@ -115,11 +116,10 @@ export function PokemonGoldSilverPartyGuidePage() {
           </div>
         </div>
         <GuideTable
-          headers={['기술', '타입', '2세대 분류', '그래서']}
+          headers={['기술', ...MOVE_STAT_HEADERS, '그래서']}
           rows={GSP_SPLIT_EXAMPLES.map((e) => [
             <MoveLink key={e.move} name={e.move} />,
-            e.type,
-            e.category,
+            ...moveStatCells(e.move),
             <Wrap key="n">{e.note}</Wrap>,
           ])}
         />
@@ -138,7 +138,7 @@ export function PokemonGoldSilverPartyGuidePage() {
           headers={['번호', '기술', '입수처', '필드 사용 배지', '담당', '진행 필요도']}
           rows={GSP_HM_TABLE.map((h) => [
             <HowBadge key={h.code} how={h.code} />,
-            <MoveLink key={h.move} name={h.move} />,
+            <MoveLink key={h.move} name={h.move} stats />,
             <Wrap key="w">{h.where}</Wrap>,
             h.badge,
             h.owner,
@@ -201,9 +201,10 @@ export function PokemonGoldSilverPartyGuidePage() {
                 </span>
               </div>
               <GuideTable
-                headers={['기술', '습득', '용도']}
+                headers={['기술', ...MOVE_STAT_HEADERS, '습득', '용도']}
                 rows={s.moveTable.map((m) => [
                   <MoveLink key={m.move} name={m.move} />,
+                  ...moveStatCells(m.move),
                   <HowBadge key={`${m.move}-how`} how={m.how} />,
                   <Wrap key={`${m.move}-use`}>{m.usage}</Wrap>,
                 ])}

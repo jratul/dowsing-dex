@@ -3,14 +3,14 @@ import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
 import { Card } from '../../components/ui/Card'
 import { PokemonCard } from '../../components/pokemon/PokemonCard'
 import { SpriteImage } from '../../components/pokemon/SpriteImage'
-import { TypeBadge } from '../../components/pokemon/TypeBadge'
 import { GuideTable } from '../../components/guide/GuideTable'
+import { CellText } from '../../components/guide/CellText'
+import { MOVE_STAT_HEADERS, moveStatCells } from '../../lib/moveStatCells'
 import { PokemonLink } from '../../components/guide/PokemonLink'
 import { MoveLink } from '../../components/guide/MoveLink'
 import { linkifyGuideText } from '../../lib/linkifyGuideText'
 import { SAMPLE_POKEMON, findSamplePokemon } from '../../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
-import { findMoveByName } from '../../data/sample/moves.sample'
 import {
   HG_STORY_ALT_HERACROSS,
   HG_STORY_ALT_TOGEKISS,
@@ -142,11 +142,13 @@ export function PokemonHeartgoldStoryGuidePage() {
                 ))}
               </div>
               <GuideTable
-                headers={['기술', '타입', '위력', 'PP', '습득', '용도']}
-                rows={s.moveTable.map((m) => {
-                  const mv = findMoveByName(m.move)
-                  return [<MoveLink key={`${m.move}-link`} name={m.move} />, mv ? <TypeBadge key={`${m.move}-type`} type={mv.type} size="sm" /> : '—', mv?.power ?? '—', mv?.pp ?? '—', <HowBadge key={m.move} how={m.how} />, m.usage]
-                })}
+                headers={['기술', ...MOVE_STAT_HEADERS, '습득', '용도']}
+                rows={s.moveTable.map((m) => [
+                  <MoveLink key={`${m.move}-link`} name={m.move} />,
+                  ...moveStatCells(m.move),
+                  <HowBadge key={m.move} how={m.how} />,
+                  <CellText key={`${m.move}-use`}>{m.usage}</CellText>,
+                ])}
               />
               {s.notes.length > 0 && (
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-ink-muted">
@@ -165,7 +167,7 @@ export function PokemonHeartgoldStoryGuidePage() {
         <SectionHeading>HM 배분</SectionHeading>
         <GuideTable
           headers={['HM', '기술', '담당', '획득처', '필요배지', '메모']}
-          rows={HG_STORY_HM_TABLE.map((r) => [r.hm, <MoveLink key={`${r.hm}-mv`} name={r.move} withPp />, L(r.pokemon), r.location, r.badge, r.note])}
+          rows={HG_STORY_HM_TABLE.map((r) => [r.hm, <MoveLink key={`${r.hm}-mv`} name={r.move} stats />, L(r.pokemon), r.location, r.badge, r.note])}
         />
       </Card>
 
@@ -174,14 +176,14 @@ export function PokemonHeartgoldStoryGuidePage() {
         <SectionHeading>TM 우선순위</SectionHeading>
         <GuideTable
           headers={['TM', '기술', '배정 대상', '획득처', '우선순위', '설명']}
-          rows={HG_STORY_TM_PRIORITY.map((r) => [r.tm, <MoveLink key={`${r.tm}-mv`} name={r.move} withPp />, L(r.target), r.location, r.priority, r.desc])}
+          rows={HG_STORY_TM_PRIORITY.map((r) => [r.tm, <MoveLink key={`${r.tm}-mv`} name={r.move} stats />, L(r.target), r.location, r.priority, r.desc])}
         />
         {HG_STORY_TM_OPTIONAL.length > 0 && (
           <>
             <p className="mb-2 mt-4 text-sm font-bold text-ink-faint">선택 TM</p>
             <GuideTable
               headers={['TM', '기술', '배정 대상', '획득처', '우선순위', '설명']}
-              rows={HG_STORY_TM_OPTIONAL.map((r) => [r.tm, <MoveLink key={`${r.tm}-mv`} name={r.move} withPp />, L(r.target), r.location, r.priority, r.desc])}
+              rows={HG_STORY_TM_OPTIONAL.map((r) => [r.tm, <MoveLink key={`${r.tm}-mv`} name={r.move} stats />, L(r.target), r.location, r.priority, r.desc])}
             />
           </>
         )}

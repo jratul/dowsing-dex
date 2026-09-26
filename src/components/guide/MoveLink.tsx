@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import { findMoveByName } from '../../data/sample/moves.sample'
+import { genNum, useGuideVersion } from '../../lib/learnsetVersion'
+import { moveForVersion } from '../../lib/pastMoves'
 import { cn } from '../../lib/cn'
 
 export interface MoveLinkProps {
@@ -8,8 +10,8 @@ export interface MoveLinkProps {
   /** 화면에 보일 텍스트. 생략하면 name 을 그대로 쓴다. */
   label?: string
   className?: string
-  /** 표 안처럼 공간이 있는 자리에서 PP를 함께 보여준다. */
-  withPp?: boolean
+  /** 표 안처럼 공간이 있는 자리에서 타입·분류·위력·PP를 아랫줄에 함께 보여준다. */
+  stats?: boolean
 }
 
 /**
@@ -19,12 +21,16 @@ export interface MoveLinkProps {
  *   MovesPage가 그 기술을 검색·펼친 상태로 열도록 한다.
  * - 데이터에 없는 이름(비공식 표기, "보조 기술" 같은 서술)은 링크로 만들지 않고
  *   글자만 그대로 둔다. 죽은 링크를 만드는 것보다 낫다.
+ * - 수치는 **그 공략이 다루는 게임 기준**이다. `GuidePageLayout` 에 넘긴 세대·버전을 읽어
+ *   당시 값으로 바꾼다(2세대 물기 = 악·특수, 4세대 이전 바위깨기 위력 20).
  */
-export function MoveLink({ name, label, className, withPp }: MoveLinkProps) {
-  const move = findMoveByName(name)
+export function MoveLink({ name, label, className, stats }: MoveLinkProps) {
+  const guide = useGuideVersion()
+  const base = findMoveByName(name)
   const text = label ?? name
 
-  if (!move) return <>{text}</>
+  if (!base) return <>{text}</>
+  const move = guide ? moveForVersion(base, genNum(guide.generation), guide.version) : base
 
   const link = (
     <Link
@@ -45,12 +51,14 @@ export function MoveLink({ name, label, className, withPp }: MoveLinkProps) {
     </Link>
   )
 
-  if (!withPp) return link
+  if (!stats) return link
   // 표 셀에서만 쓴다. 본문 문장에 블록을 넣으면 줄바꿈이 어긋난다.
   return (
     <span className="inline-block align-top">
       {link}
-      <span className="block text-xxs whitespace-nowrap text-ink-muted">PP {move.pp}</span>
+      <span className="block text-xxs whitespace-nowrap text-ink-muted">
+        {move.type} · {move.category} · {move.power ? `위력 ${move.power}` : '위력 —'} · PP {move.pp}
+      </span>
     </span>
   )
 }

@@ -4,15 +4,15 @@ import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
 import { Card } from '../../components/ui/Card'
 import { PokemonCard } from '../../components/pokemon/PokemonCard'
 import { SpriteImage } from '../../components/pokemon/SpriteImage'
-import { TypeBadge } from '../../components/pokemon/TypeBadge'
 import { GuideTable } from '../../components/guide/GuideTable'
+import { CellText } from '../../components/guide/CellText'
+import { MOVE_STAT_HEADERS, moveStatCells } from '../../lib/moveStatCells'
 import { PokemonLink } from '../../components/guide/PokemonLink'
 import { MoveLink } from '../../components/guide/MoveLink'
 import { linkifyGuideText } from '../../lib/linkifyGuideText'
 import { SAMPLE_POKEMON, findSamplePokemon } from '../../data/sample/pokemon.sample'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
 import { cn } from '../../lib/cn'
-import { findMoveByName } from '../../data/sample/moves.sample'
 import type { StarterGuideData } from '../../data/sample/pokemonPlatinumStory.data'
 import {
   PLATINUM_EVOLUTION_TIMING,
@@ -115,11 +115,13 @@ function StarterContent({ starter }: { starter: StarterGuideData }) {
                 ))}
               </div>
               <GuideTable
-                headers={['기술', '타입', '위력', 'PP', '습득', '용도']}
-                rows={s.moveTable.map((m) => {
-                  const mv = findMoveByName(m.move)
-                  return [<MoveLink key={`${m.move}-link`} name={m.move} />, mv ? <TypeBadge key={`${m.move}-type`} type={mv.type} size="sm" /> : '—', mv?.power ?? '—', mv?.pp ?? '—', <HowBadge key={m.move} how={m.how} />, m.usage]
-                })}
+                headers={['기술', ...MOVE_STAT_HEADERS, '습득', '용도']}
+                rows={s.moveTable.map((m) => [
+                  <MoveLink key={`${m.move}-link`} name={m.move} />,
+                  ...moveStatCells(m.move),
+                  <HowBadge key={m.move} how={m.how} />,
+                  <CellText key={`${m.move}-use`}>{m.usage}</CellText>,
+                ])}
               />
               {s.notes.length > 0 && (
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-xs text-ink-muted">
@@ -337,7 +339,7 @@ export function PokemonPlatinumStoryGuidePage() {
         <SectionHeading>HM 배분 (공통)</SectionHeading>
         <GuideTable
           headers={['HM', '기술', '담당', '획득처', '필요배지', '메모']}
-          rows={PLATINUM_HM_TABLE.map((r) => [r.hm, <MoveLink key={`${r.hm}-mv`} name={r.move} withPp />, L(r.pokemon), r.location, r.badge, r.note])}
+          rows={PLATINUM_HM_TABLE.map((r) => [r.hm, <MoveLink key={`${r.hm}-mv`} name={r.move} stats />, L(r.pokemon), r.location, r.badge, r.note])}
         />
         <ul className="mt-3 list-disc space-y-1 pl-5 text-xs text-ink-muted">
           {PLATINUM_TM_NOTES.map((n) => (

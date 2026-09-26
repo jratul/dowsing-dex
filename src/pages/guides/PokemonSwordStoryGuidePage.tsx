@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
 import { Card } from '../../components/ui/Card'
 import { GuideTable } from '../../components/guide/GuideTable'
+import { CellText } from '../../components/guide/CellText'
+import { MOVE_STAT_HEADERS, moveStatCells } from '../../lib/moveStatCells'
 import { PokemonLink } from '../../components/guide/PokemonLink'
 import { MoveLink } from '../../components/guide/MoveLink'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
@@ -93,11 +95,12 @@ export function PokemonSwordStoryGuidePage() {
                 <span className="text-xs text-ink-muted">{p.role}</span>
               </div>
               <GuideTable
-                headers={['기술', '습득', '용도']}
+                headers={['기술', ...MOVE_STAT_HEADERS, '습득', '용도']}
                 rows={p.moveTable.map((m) => [
                   <MoveLink key={m.move} name={m.move} />,
+                  ...moveStatCells(m.move),
                   <HowBadge key={`${m.move}-how`} how={m.how} />,
-                  m.usage,
+                  <CellText key={`${m.move}-use`}>{m.usage}</CellText>,
                 ])}
               />
               <p className="mt-1.5 text-xs text-ink-muted">
@@ -178,12 +181,12 @@ export function PokemonSwordStoryGuidePage() {
         </p>
         <GuideTable
           headers={['번호', '기술', '입수', '용도']}
-          rows={SWS_TMS.map((t) => [t.code, <MoveLink key={t.code} name={t.move} />, t.where, t.use])}
+          rows={SWS_TMS.map((t) => [t.code, <MoveLink key={t.code} name={t.move} stats />, t.where, t.use])}
         />
         <h3 className="mt-4 mb-2 text-sm font-black text-ink-faint">쓸 만한 TR</h3>
         <GuideTable
           headers={['번호', '기술', '입수', '용도']}
-          rows={SWS_TRS.map((t) => [t.code, <MoveLink key={t.code} name={t.move} />, t.where, t.use])}
+          rows={SWS_TRS.map((t) => [t.code, <MoveLink key={t.code} name={t.move} stats />, t.where, t.use])}
         />
         <p className="mt-2 text-xs text-ink-muted">
           TR은 맥스레이드 보상이라 입수 시점이 운에 달려 있습니다. 이 파티는 TR 없이도 진행되게 짰습니다.

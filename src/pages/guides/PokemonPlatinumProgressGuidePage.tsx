@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
 import { Card } from '../../components/ui/Card'
 import { GuideTable } from '../../components/guide/GuideTable'
+import { MoveLink } from '../../components/guide/MoveLink'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
 
 function SectionHeading({ children }: { children: string }) {
@@ -252,7 +253,7 @@ export function PokemonPlatinumProgressGuidePage() {
             headers={['HM', '기술', '입수처', '배지 조건', '열리는 경로']}
             rows={HM_TABLE.map((r) => [
               <span key={r.id} className="font-bold text-brand-red">{r.id}</span>,
-              r.move,
+              <MoveLink key={`${r.id}-mv`} name={r.move} stats />,
               r.obtain,
               r.badge,
               r.unlocks,

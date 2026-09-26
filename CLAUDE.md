@@ -530,6 +530,21 @@ function HowBadge({ how }: { how: string }) {
 />
 ```
 
+### 공략 기술 표의 타입·분류·위력·PP
+
+기술이 나오는 표에는 `moveStatCells(기술명)`(`lib/moveStatCells.tsx`)로 **타입·분류·위력·PP** 네 칸을
+붙인다. 헤더는 `MOVE_STAT_HEADERS` 를 펼쳐 쓴다. TM/HM 표처럼 이미 칸이 많은 표는 칸을 늘리는 대신
+`<MoveLink ... stats />` 로 기술명 아래에 한 줄로 적는다.
+
+- 값은 **그 공략의 게임 기준**이다. 2세대 공략의 물기는 악·특수, 하트골드의 폭포오르기는 물·물리로
+  나온다(`lib/pastMoves.ts` 의 `moveForVersion`).
+- **반드시 셀 컴포넌트(`components/guide/MoveStatCells.tsx`)로 렌더한다 — 페이지에서 훅으로 읽으면 안 된다.**
+  세대·버전은 `GuidePageLayout` **안쪽**의 `GuideVersionProvider` 가 내려주는데 페이지 컴포넌트는 그
+  바깥이라, 페이지에서 `useGuideVersion()` 을 부르면 항상 null 이고 조용히 현재 세대 값이 찍힌다.
+  실제로 이 방식으로 만들었다가 금·은 공략의 물기가 악·**물리**로 나왔다.
+- 설명이 긴 칸은 `<CellText>` 로 감싼다. `GuideTable` 이 `min-w-max` 라 안 감싸면 PC 에서도 표가
+  가로로 스크롤된다.
+
 ## 진화 계열 기술 비교
 
 `src/components/pokemon/EvolutionMoveComparison.tsx` — 포켓몬 상세 페이지에서 진화 가족이 2명 이상일 때 자동 노출되는 전체 비교 테이블.

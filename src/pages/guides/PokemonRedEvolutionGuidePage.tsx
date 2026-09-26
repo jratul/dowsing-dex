@@ -3,6 +3,9 @@ import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
 import { Card } from '../../components/ui/Card'
 import { SpriteImage } from '../../components/pokemon/SpriteImage'
 import { GuideTable } from '../../components/guide/GuideTable'
+import { CellText } from '../../components/guide/CellText'
+import { MoveLink } from '../../components/guide/MoveLink'
+import { MOVE_STAT_HEADERS, moveStatCells } from '../../lib/moveStatCells'
 import { PokemonLink } from '../../components/guide/PokemonLink'
 import { linkifyGuideText } from '../../lib/linkifyGuideText'
 import { findSamplePokemon } from '../../data/sample/pokemon.sample'
@@ -152,8 +155,12 @@ export function PokemonRedEvolutionGuidePage() {
                   <>
                     <p className="mb-1 text-xs font-bold text-ink-faint">기술 비교</p>
                     <GuideTable
-                      headers={['기술', '설명']}
-                      rows={detail.moveComparisons.map((mc) => [mc.move, L(mc.desc)])}
+                      headers={['기술', ...MOVE_STAT_HEADERS, '설명']}
+                      rows={detail.moveComparisons.map((mc) => [
+                        <MoveLink key={mc.move} name={mc.move} />,
+                        ...moveStatCells(mc.move),
+                        <CellText key={`${mc.move}-desc`}>{L(mc.desc)}</CellText>,
+                      ])}
                     />
                   </>
                 )}
@@ -213,8 +220,12 @@ export function PokemonRedEvolutionGuidePage() {
                   <>
                     <p className="mb-1 text-xs font-bold text-ink-faint">기술 비교</p>
                     <GuideTable
-                      headers={['기술', '설명']}
-                      rows={detail.moveComparisons.map((mc) => [mc.move, L(mc.desc)])}
+                      headers={['기술', ...MOVE_STAT_HEADERS, '설명']}
+                      rows={detail.moveComparisons.map((mc) => [
+                        <MoveLink key={mc.move} name={mc.move} />,
+                        ...moveStatCells(mc.move),
+                        <CellText key={`${mc.move}-desc`}>{L(mc.desc)}</CellText>,
+                      ])}
                     />
                   </>
                 )}
@@ -240,8 +251,13 @@ export function PokemonRedEvolutionGuidePage() {
             <div key={guide.title}>
               <SubHeading>{guide.title}</SubHeading>
               <GuideTable
-                headers={['기술', '장점', '단점']}
-                rows={guide.options.map((o) => [o.move, o.pros, o.cons])}
+                headers={['기술', ...MOVE_STAT_HEADERS, '장점', '단점']}
+                rows={guide.options.map((o) => [
+                  <MoveLink key={o.move} name={o.move} />,
+                  ...moveStatCells(o.move),
+                  <CellText key={`${o.move}-pros`}>{o.pros}</CellText>,
+                  <CellText key={`${o.move}-cons`}>{o.cons}</CellText>,
+                ])}
               />
               <p className="mt-2 text-sm font-bold text-ink">{guide.recommendation}</p>
               <p className="mt-1 text-xs text-ink-faint">

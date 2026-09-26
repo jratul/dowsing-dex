@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
 import { Card } from '../../components/ui/Card'
 import { GuideTable } from '../../components/guide/GuideTable'
+import { MOVE_STAT_HEADERS, moveStatCells } from '../../lib/moveStatCells'
 import { PokemonLink } from '../../components/guide/PokemonLink'
 import { MoveLink } from '../../components/guide/MoveLink'
 import { CATEGORY_STYLE } from '../../lib/guideCategory'
@@ -214,8 +215,8 @@ export function PokemonHeartgoldFriendshipGuidePage() {
           220으로는 부족합니다.
         </p>
         <GuideTable
-          headers={['기술', '대상']}
-          rows={HGF_TUTOR_MOVES.map((t) => [<MoveLink key={t.move} name={t.move} />, t.target])}
+          headers={['기술', ...MOVE_STAT_HEADERS, '대상']}
+          rows={HGF_TUTOR_MOVES.map((t) => [<MoveLink key={t.move} name={t.move} />, ...moveStatCells(t.move), t.target])}
         />
       </Card>
 

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { GuidePageLayout } from '../../components/guide/GuidePageLayout'
 import { Card } from '../../components/ui/Card'
 import { GuideTable } from '../../components/guide/GuideTable'
+import { MoveLink } from '../../components/guide/MoveLink'
 import { linkifyGuideText } from '../../lib/linkifyGuideText'
 import { SAMPLE_POKEMON } from '../../data/sample/pokemon.sample'
 import { PokemonLink } from '../../components/guide/PokemonLink'
@@ -141,7 +142,7 @@ export function PokemonPlatinumWalkthroughGuidePage() {
             <span key="hm" className="inline-block rounded bg-red-100 px-1.5 py-0.5 text-xxs font-bold text-red-700 dark:bg-red-900/40 dark:text-red-300">
               {r.hm}
             </span>,
-            L(r.move),
+            <MoveLink key={`${r.hm}-mv`} name={r.move} stats />,
             r.obtainedAt,
             L(r.holder),
             r.note,
@@ -161,7 +162,7 @@ export function PokemonPlatinumWalkthroughGuidePage() {
             <span key="tm" className="inline-block rounded bg-blue-100 px-1.5 py-0.5 text-xxs font-bold text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">
               {r.tm}
             </span>,
-            L(r.move),
+            <MoveLink key={`${r.tm}-mv`} name={r.move} stats />,
             L(r.target),
             r.where,
             L(r.note),

@@ -205,7 +205,7 @@ export function PokemonHeartgoldMovesGuidePage() {
           headers={['TM', '기술', '반복 획득처', '관리']}
           rows={HGM_REPEATABLE.map((r) => [
             r.tm,
-            <MoveLink key={r.tm} name={r.move} withPp />,
+            <MoveLink key={r.tm} name={r.move} stats />,
             r.source,
             r.policy,
           ])}
@@ -250,7 +250,7 @@ export function PokemonHeartgoldMovesGuidePage() {
             headers={['HM', '기술', '분류', '담당', '이유']}
             rows={HGM_HM_PLAN.map((h) => [
               h.hm,
-              <MoveLink key={h.hm + 'm'} name={h.move} withPp />,
+              <MoveLink key={h.hm + 'm'} name={h.move} stats />,
               <CategoryBadge key={h.hm} category={h.category} />,
               h.holderIds.length > 0 ? (
                 <span key={h.hm + 'h'} className="inline-flex flex-wrap items-center gap-1">
