@@ -26,6 +26,17 @@ npm run build:move-descriptions  # PokeAPI에서 기술 한국어 설명 수집 
 npm run build:abilities        # PokeAPI에서 특성 한국어 데이터 수집 → abilities.generated.ts
 ```
 
+> `scripts/build-move-descriptions.mjs`는 기술 설명을 **최신 작품 우선**으로 받는다. 그런데
+> **그 작품에서 삭제된 기술은 flavor text 가 설명이 아니라 「사용할 수 없는 기술입니다. 다시
+> 배우게 할 수 없지만...」이라는 안내문**이다. 우선순위가 스칼렛·바이올렛부터라 8·9세대에서
+> 잘린 기술 80종의 설명이 통째로 이 안내문으로 덮여 있었다(주술·은혜갚기·플래시·잠재파워 등
+> 하트골드에서 흔히 쓰는 기술이 다수). 지금은 이 문구가 든 항목을 건너뛰고 더 옛 작품으로
+> 내려가 실제 설명을 받는다. 재생성 후에는 아래로 0 건인지 확인한다.
+>
+> ```bash
+> grep -c "사용할 수 없는 기술입니다" src/data/moves/move-descriptions.generated.ts
+> ```
+
 > `scripts/build-encounter-details.mjs`는 **야생 출현의 방법별 확률·시간대**를 수집한다.
 > 출현 장소 문자열은 한국어 위키에서 오는데(PokeAPI 는 **지역명·방법명에 한글이 아예 없다**)
 > 위키에는 확률도 시간대도 없다 — 시간대는 전 세대를 통틀어 12건뿐이다. 그래서 장소는

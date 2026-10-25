@@ -61,7 +61,13 @@ await mapWithConcurrency(moveIds, 20, async (id) => {
     const data = await fetchJson(`${BASE}/move/${id}`)
 
     // 한국어 flavor_text_entries 중 최신 버전 우선
-    const koEntries = data.flavor_text_entries.filter((e) => e.language.name === 'ko')
+    // 최신 작품에서 삭제된 기술은 그 작품의 flavor text 가 설명이 아니라
+    // "사용할 수 없는 기술입니다..." 라는 안내문이다. 우선순위가 스칼렛·바이올렛부터라
+    // 그대로 받으면 8·9세대에서 잘린 기술 80종이 전부 이 안내문으로 덮였다(주술·칼춤 등).
+    // 안내문은 건너뛰고 실제 설명이 있는 더 옛 작품으로 내려간다.
+    const koEntries = data.flavor_text_entries.filter(
+      (e) => e.language.name === 'ko' && !e.flavor_text.includes('사용할 수 없는 기술'),
+    )
     let effectKo = null
 
     if (koEntries.length > 0) {

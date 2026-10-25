@@ -25,18 +25,24 @@ export interface MoveListProps {
 function MoveRow({ leading, move }: { leading: string; move: Move }) {
   const [open, setOpen] = useState(false)
   return (
-    <div
-      className={cn('border-b border-border/50 last:border-0', move.effectKo && 'cursor-pointer')}
-      onClick={move.effectKo ? () => setOpen((v) => !v) : undefined}
-    >
+    <div className="border-b border-border/50 last:border-0">
       <div className="grid grid-cols-[3rem_minmax(6rem,2fr)_3.5rem_minmax(2.5rem,1fr)_minmax(2.5rem,1fr)_minmax(2.5rem,1fr)_minmax(2rem,1fr)] items-center gap-2 py-1.5 text-xs">
         <span className="font-bold text-ink-faint">{leading}</span>
-        <span className="flex items-center gap-1 font-bold text-ink">
-          {move.nameKo}
-          {move.effectKo && (
+        {/* 펼침 토글은 기술명에만 건다. 행 전체에 걸면 펼쳐진 설명을 읽다가
+            눌러도 다시 접혀 버린다. */}
+        {move.effectKo ? (
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            className="flex cursor-pointer items-center gap-1 text-left font-bold text-ink"
+          >
+            {move.nameKo}
             <span className="text-xxs text-ink-faint">{open ? '▲' : '▼'}</span>
-          )}
-        </span>
+          </button>
+        ) : (
+          <span className="font-bold text-ink">{move.nameKo}</span>
+        )}
         <TypeBadge type={move.type} size="sm" />
         <span className="text-ink-muted">{move.category}</span>
         <span className="text-right text-ink-muted">{move.power ?? '-'}</span>
