@@ -71,11 +71,19 @@
   --shadow-card: 0 2px 10px rgba(20, 20, 30, 0.05);
 }
 
+/* 스크롤바 자리를 항상 비워 둬 페이지마다 콘텐츠 폭이 흔들리지 않게 한다.
+   **반드시 html(루트)에 줘야 한다** — body 에 주면 body 자신의 스크롤 박스에만 적용되고
+   뷰포트 스크롤바에는 영향이 없다(overflow 와 달리 뷰포트로 전파되지 않는다).
+   실제로 body 에만 걸어 둔 동안 긴 페이지 1,243px ↔ 짧은 페이지 1,258px 로 15px 씩
+   밀렸고, 전환 스피너처럼 짧은 화면이 끼면 그때마다 화면이 움찔했다. */
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   font-family: var(--font-sans);
   color: var(--color-ink);
   background: #fff;
-  scrollbar-gutter: stable;
 }
 
 /* Tailwind v4 프리플라이트는 button에 cursor:pointer를 자동으로 넣어주지 않으므로,
